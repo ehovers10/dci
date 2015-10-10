@@ -14,6 +14,9 @@ If so, what implications for the nature of knowledge does this idea carry? I pro
 
 It turns out that this idea has important consequences for explaining the distinctive value of knowledge over true belief, and for the contextualism/relativism debate in epistemology.
 
+* * * * *
+{: class="divider"}
+
 ## The structure of knowledge
 
 The *knowledge rule of assertion* is the proposal that it is a constitutive norm of assertion that one only assert what one knows. Jonathan Schaffer (2008) asks what comes of knowledge when we take the knowledge rule of assertion seriously. His answer is that, since assertion is best seen as taking place within a discourse context structured by the question under discussion (QUD), and the QUD is best represented by the set of its alternative answers, knowledge is similarly relativized to a set of alternatives to the proposition known. And this makes knowledge look a lot like the contrastivist proposal would have it.
@@ -26,7 +29,7 @@ In addition, if the conjecture/correction process is an essential element of inq
 
 ### From epistemic logic to information states
 
-Isaac Levi denies Peirce's characterization of the ultimate end of inquiry as "approaching the true complete story of the world" (Levi 1980, p. 70). His concern is with the idea that ordinary inquiry can be understood in terms of such far-reaching objectives. Instead, he understands the aim of inquiry as *error-avoidance* (p. 71). For Levi, inquiry involves the change of bodies of belief, and the criterion for appropriate such changes is care taken against importing error into one's belief corpus. One need only concern herself with this immediate change.
+Isaac Levi (esp. 1980), too, thinks that we can extract information regarding the nature of knowledge from our representation of the nature of inquiry, but he has a very different view of the nature of inquiry. Levi denies Peirce's characterization of the ultimate end of inquiry as "approaching the true complete story of the world" (Levi 1980, p. 70). His concern is with the idea that ordinary inquiry can be understood in terms of such far-reaching objectives. Instead, he understands the aim of inquiry as *error-avoidance* (p. 71). For Levi, inquiry involves the change of bodies of belief, and the criterion for appropriate such changes is care taken against importing error into one's belief corpus. One need only concern herself with this immediate change.
 
 Though his characterization of the aim of inquiry is different, the end result is the same. Assuming that proper inquiry doesn't result in the expansion of one's belief corpus with merely incidentally error free information, the end of inquiry is knowledge.
 
@@ -50,7 +53,75 @@ There is more room for nuance in specifying the contraction operation, for there
 
 On the picture of inquiry developed by Levi, inquiry both begins and ends in knowledge. As such, each state is as valuable as any other, and there is no inherent impetus to revise one's state. That's true so long as one avoids falling into the trivial state, in which deductive closure forces an expansion of the information state to properly include &#x1d50f;, a state referred to as *epistemic hell*. As long as one avoids epistemic hell, the specification of states of information plus a revision operator tells us nothing about when one ought to revise.
 
-This is perhaps fine with Levi, whose stated view of inquiry is as a means to error avoidance. If one never revises, one never risks importing error. But, following William James, error avoidance is only one epistemic virtue; there is also the goal of acquiring truth.
+This is perhaps fine with Levi, whose stated view of inquiry is as a means to error avoidance. If one never revises, one never risks importing error. And if one must revise, then do so by the precepts of expansion and contraction. 
+
+This is perhaps where Levi parts ways with Peirce. Levi's rational inquirer can be content to maintain a static belief state, for he knows the only criticism potentially comes when he decides to revise. Of course, revision may be forced upon him by quotidian interaction with the world. One's belief state is constantly updated involuntarily by way of one's perceptual input. These updates require maintenance using the same principles of revision. But there is no mechanism, in Levi's system, for initiating inquiry. 
+
+Peirce, on the other hand, and William James following him, ackowledge that error avoidance is only one epistemic duty. There is, in addition, a drive to acquire truth. To take this stance is to hold that no information state, aside from those of complete information (and maybe not even those, if we heed Mill's edicts on expressive freedom), is stable; there is always a call for revision.
+
+To accommodate this idea, we need to represent both *information state inadequacy* and the *impetus for revision of inadequate states*. To have a call for revision of one's information state is to recognize an inadequacy therein. 
+
+Levi grants that striving for truth can play a role in inquiry. He suggests that an inquirer *X* 
+
+> "should be concerned not merely to avoid error but to acquire new information. The promise of obtaining new information may sometimes (though not always) compensate *X*, from his initial point of view, for the risk to be incurred" (1980 p.35).
+
+Lip service is certainly being paid to the goal of acquiring truths, but this goal is given second class standing when it comes to the structure of inquiry. Levi draws a distinction between what he calls *equilibrium conditions* on rationality, which represent commitments that an agent acquires as a basis of logic given that they possess a particular belief corpus; and commitments that the individual bears in virtue of her cognitive goals. The commitment to believing *p &amp; q* when you believe *p* and believe *q* qualifies as an equilibrium condition. But the commitment to maintaining a consistent belief corpus does not. Levi sees no reason to deny the inconsistent information state status as a viable state. But he agrees that one would be well advised both to revise away from it when one finds oneself in that state and also to avoid revising into it when one is considering a transition. The difference is that this advice stems from the goal of inquiry as avoiding error. The inconsistent state is guaranteed to contain error, so in so far as one is motivated by the goal of inquiry, one ought to be motivated to avoid it.
+
+The implication is that while equilibrium conditions receive direct representation in the inquiry structure, by way of the deductive closure constraint on viable information states and the properties of the revision operator, mere cognitive goal-generated constraints do not.
+
+I don't see a non-question begging motivation for this distinction. It is true that equilibrium conditions are directly represented in Levi's characterization of inquiry by way of the rules on the revision operator, whereas commitments generated from an agents cognitive goals are not so represented. But the question of how to represent inquiry is the very topic of investigation, and principles of consistency, for instance, seem antecedently as central to proper inquiry as conjunctive syllogism. 
+
+Perhaps equilibrium conditions are to be understood as invoking isolated adjustments to a portion of an information state, whereas cognitive goal generated commitments are holistic in that they make essential reference to an information state as a whole. Even if this distinction can be upheld, it does not carry the weight needed to exclude cognitive goal commitments from representation in the structure of inqury. Inquiry is a complex and dilated process, and it is intended to be a topic-neutral characterization of knowledge incrementation. As such, there is nothing precluding inquiry from being self-referential. We may even find that that there are gains in efficiency to be had by being able to reference entire information states in the course of inquiry.
+
+Nor is the atomic/holistic distinction adhered to in Levi's explicit position on inquiry. He thinks it is a fault of other discussions of inquiry that they treat revisions as adding or subtracting individual belief from a corpus. Instead, for Levi, revision does not take place by adding or subtracting single sentences from a corpus, it is always a "set of sentences of propositions added to a corpus to make a deductively closed set" (p.27).
+
+Levi worries that the goal of truth acquisition is topic-specific while the goal of error avoidance is universal. Perhaps we could motivate the distinction as one of topic-neutrality. The inquiry structure is meant to have universal application, but if there is no universal way to represent the goal of truth acquisition, then it is not a structural element of inquiry. Levi is right that the particular demands of acquiring truth will depend on the topic of investigation, but so too do the demands of error avoidance. What matters is whether we can introduce structural elements to model the process of truth acquisition, just as the revision operator models the process of error avoidance. If a theoretically virtuous (simple, unifying, productive) model can be provided, there seems to be no principled reason of barring the antecedently motivated goal of truth acquisition from the inquiry representation.
+
+We ought to let the demands of empirical coverage guide our thoeretical posits. I take it that conversation realizes inquiry, and as such analysis of the distribution of expressions in conversation bears on the nature of inquiry. If our best theories of particular lingusitic expressions reference semantic structures that walk and quack like cognitive goal-generated commitments, then inquiry ought to accommodate them. Such expressions are waddling all over the place:
+  
++ Modals
++ Evidentials
++ Speach acts
++ Conditionals
+
+### Issues and partitions
+
+Inadequacies can be of the sort in which a state contains too much information; that is, it involves a contradiction.[^1] Revision of this sort of inadequacy is accommodated on the Levi model. While all information states are, for Levi, equal in terms of adequacy, we can set the trivial state aside as the one state that always demands revision, and in particular, revision by contraction out of epistemic hell. 
+
+Inadequacies can also arise when one acknowledges that their information state contains too little information; that is, one becomes aware of an issue that is not settled by their state of information. This sort of inadequacy is not to be accommodated in Levi's model. Primarily, all non-trival information states are equivalently adequate. But additionally, all states of information are is their members, and there is no means of ranking states based on their membership.[^2] Each state contains infinitely many points. Aside from the situation in which one state strictly contains another, there is no way of saying that one state is more informative than another. Even in the case of containment, having more information does not necessarily make the state more desirable. The more informative state involves one way of expanding from the less informative one. But independent of knowledge of the *alternative* expansions, there is no saying that such an expansion ought to be carried out.
+
+For a state to represent itself as containing unsettled issues, we need to add structure to the information state. To have an unsettled issue is to have a non-uniformity across the information state with respect to a particular subject matter; certain points represent one resolution of the subject matter, other points a different resolution. 
+
+### Dilated processes
+
+Levi sees the process of inquiry as a binary relation between state of information. We can import information about the genesis of a sentence during the revision phase, but once the revision takes place, all that information is lost. All sentences in an information state have the same infallible status. It is as if the information state was formed from whole cloth.
+
+But once we open the door to incorporating the goal of truth acquisition into our representation of inquiry, we see inquiry as a dilated process. Inter-revision state are not complete states of knowledge. Instead, they are way-stations on the road to knowledge. States are integrated such that it is possible to reference past states in our revision rules. Since the properties of the revision operator represent the diachronic justification of belief, proper revision in a dilated structure of integrated states requires respecting a *plan of inquiry*.
+
+### Grades of self-reference
+
++ Inquiry is both synchronically and diachronically self-referential.
++ Synchronic self-reference is represented by tests on information states. The state as a whole is checked for some property, rather than directly adjusting its membership
++ Diachronic self-reference involves revision on the basis of phases of the state evolution either prior to or in the future of the state at which the revision is applied.
++ The most common diachronic self-referential mechanism is presupposition. 
++ But conjecture and correction are also diachronicly self-referential mechanisms. Conjecture demands a future (perhaps trivial) revision, and correction references past states in its revision.
++ Assertion and questioning, too, are diachronic, but they are predominantly trivially so, they require only acceptance or rejection.
+
+### Joint inquiry
+
+Dilated inquiry is a collaborative effort, either between different inquirers working together, or a single inquirer working on past progress at a later time. Viable use of the inquiry over the course of time (with different contributors) requires an ability to track the changes the inquiry imposes on the information state.  That is, we need a *revision history*.
+
+Inquiry is not a monotonic process. It moves in starts and spurts. The impetus to revise occassionaly moves the information state into a problematic position, which can only be recognized as needing remedy later on. Remedy requires revision, but there are an infinite number of ways to revise. Directed revision requires a *revision history*.
+
+Knowledge is not, as Levi suggests, merely infallible belief. It requires inter-revision justification. Knowledge requires an account. This too is represented in inquiry (here, I'm flipping the grounding order). Inquiry carries a *revision history*, by way of treating structuring updates as relations-in-intension, instead of directly imposing the structure on the inforamtion state.
+
+
+
+[^1]: We set aside the issue in which one *knows too much* in the sense that they have information that it would be in their other interests to remain ignorant of. 
+[^2]: Not true. We can make sense of one state strictly containing another.
+
+* * * * *
+{: class="divider"}
 
 ## The Meno problem
 
@@ -155,3 +226,17 @@ Subjective certainty cannot replace knowing. Fixation of belief must allow for u
   
   + Making an agent worthy of praise for belief
   + Making a belief justified
+  
+* * * * *
+{: .divider}
+
+## The discourse contribution of *knows that*
+
+If knowledge is represented by discourse level information states, and "knows that" expresses the knowledge relation, then "knows that" makes a self-referential contribution to discourse. 
+
+There is a lot of precedent for this sort of expression
+
+* * *
+{: .divider}
+
+#### Footnotes:
