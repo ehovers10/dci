@@ -1,9 +1,10 @@
 # Site settings
 title: Knowledge in the image of inquiry
 author: Erik Hoversten
+description:
+  It is commonly suggested that knowledge is the end of inquiry. But what implications are 
+  there for the nature of knowledge if we take this idea seriously?
 
-description: >
-  It is commonly suggested that knowledge is the end of inquiry. But what implications are there for the nature of knowledge if we take this idea seriously?
 baseurl: "/kitioi"
 url: "http://erikhoversten.org"
 

@@ -1,3 +1,5 @@
+# Building a collaborative semantics
+
 We start with a basic update semantics, in which the conversational scoreboard is represented by a set-theoretic structure (the info state), and discourse dynamics is implemented by means of operations on this structure (updates).
 
 Following Murray (2012), info states are articulated to account for different types of update that are relevant to discourse dynamics. Informative updates place conditions on the common ground, a possibility space represented by a set of possible worlds considered to be ways the world could be according to the conversational participants. Formally, informative updates function by intersection of the common ground with the content of the utterance from which they stem. Informative updates are used to model the speech act of *assertion*.

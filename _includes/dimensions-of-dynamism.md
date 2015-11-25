@@ -1,5 +1,3 @@
-# Dimensions of dynamism
-
 Questions and imperatives are non-trivial structuring updates conjoined with a preference relation defined over the partition. Conjecture essentially presumes a response in a way that questions and imperatives do not. That is, it is a non-trivial^[Whether it is genuinely non-trivial depends on our answer to the *relevant domain* question], non-definitive, structuring update.
 
 Correction frequently targets what has been called a *homogeneity presupposition*; this is the idea that assertions involving plural subjects generally presume that the members of the denoted set are uniform with respect to the content of the predication (See von Fintel, Swarzschild 1994. See also Fodor 1970:159-67, Loebner 1987:183-5, Krifka 1996, Barker 1996). In our framework correction thus amounts to replacing a trivial partition with a non-trivial one.
@@ -37,3 +35,15 @@ We, as conversationalists, track proposals as well as impositions. To account fo
 + Preparatory conditions
 + Sincerity conditions
 + Strength of sincerity conditions
+
+### Wherein is semantics dynamic?
+
+Let's understand a *semantic system* as a theory of informational exchange employed by language users. Classic, static semantics isolate the *informational content* of language bits from the *conversational role* for which language users employ them.
+
+But it isn't so clear that theories of content and use can be successfully developed independent of eachother, and a primary movitivation of dynamic semantic theories is the goal of expanding coverage by assimilating elements of conversational role within the theory of informational content.
+
+But even understanding the dynamic turn as shifting focus from propositions to functions on context, there are different ways to understand the dynamism of semantics.
+
+For instance, the original dynamic frameworks developed by Hans Kamp and Irene Heim are built upon a classic, static model theory of semantic content. Evaluation of linguistic elements is static, the dynamics comes in in the development of the representation of the discourse to which the model is applied. Because evaluation is postponed until the discourse is fully developed, we get more restrictions on the appropriate models for the discourse, but there is no dynamism *within* the semantic system.
+
+In contrast, Groenendijk and Stokhoff's *Dynamic Predicate Logic* builds dynamism into the definition of the semantic elements. Linguistic bits are associated with functions that take in the current conversational state and output a different state. This basic procedure represents 
