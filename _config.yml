@@ -1,11 +1,10 @@
 # Site settings
-title: Knowledge in the image of inquiry
+title: Discourse as collaborative inquiry
 author: Erik Hoversten
-description:
-  It is commonly suggested that knowledge is the end of inquiry. But what implications are 
-  there for the nature of knowledge if we take this idea seriously?
+description: 
+  I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>. 
 
-baseurl: "/kitioi"
+baseurl: "/dci"
 url: "http://erikhoversten.org"
 
 email: ehovers10@gmail.com
@@ -14,3 +13,28 @@ copy: true
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+      type: "appendices"
+    values:
+      layout: "article"
+
+collections:
+  chapters:
+    output: true
+    render: true
+  appendices:
+    output: true
+    render: true

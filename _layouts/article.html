@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html> 
 <html>
 
@@ -9,16 +13,20 @@
 <div class="wrapper">
 
 <div class="page-heading">
-<h1>{{ page.title }}</h1>
-<h2>{{ site.author }}</h2>
-</div>
 
-{% if page.abstract != "" %}
+{% include mark.html title='navigation' %}
+
+<h1>{{ page.title }}</h1>
+<h3>{% if page.subtitle %}{{ page.subtitle | append: '&nbsp;' }}{% endif %}{% if page.author %}{{ page.author | prepend: 'by&nbsp;' }}{% endif %}</h3>
+</div>
+<div style="clear:right;border-bottom:1px solid #aaa;"></div>
+{% if page.abstract %}
 <div class="abstract">
-<h3>Abstract:</h3>
 {% include mark.html title=page.abstract %}
 </div>
 {% endif %}
+
+{% assign ex = 0 %}
 
 <div class="page-content">
   {{ content }}

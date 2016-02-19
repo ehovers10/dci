@@ -1,4 +1,6 @@
-# Building a collaborative semantics
+---
+title: Collaborative update
+---
 
 We start with a basic update semantics, in which the conversational scoreboard is represented by a set-theoretic structure (the info state), and discourse dynamics is implemented by means of operations on this structure (updates).
 

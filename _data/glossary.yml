@@ -1,0 +1,248 @@
+- name: common ground
+  definition:
+    The sum total of information taken for granted by participants to a discourse, perhaps with the addition of structural elements to organize the information. Cooperative discourse both responds to and amends the common ground.
+  related:
+    - scoreboard
+    - sandbox
+    - conversational platform
+    - conversational space
+    - context set
+    - work space
+
+- name: scoreboard
+  definition:
+    The structural recording platform for the semantico-pragmantic features of a conversation. Interpretation in discourse takes place relative to a scoreboard, and dicourse contributions serve to update the scoreboard. Scoreboards may be accessable to a single discursant, or they may be shared.
+  related:
+    - common ground
+    - context set
+    - question under discussion
+    - plan of inquiry
+    
+- name: assertion
+  definition:
+    A conversational contribution that adds information to the common ground (either provisionally or automatically). An interlocutor undertakes certain commitments related to the truth of the content asserted in offering this contribution.
+  related:
+    - conjecture
+    - question
+    - command
+    - speech act
+    
+- name: question
+  definition:
+    A conversational contribution that adds an issue to the common ground with the implication that the issue is to be resolved in the course of the inquiry. Acceptance of the question commits interlocutors to providing contributions that offer at least partial answers to it.
+  related:
+    - speech act
+    - contribution
+    - assertion
+    - conjecture
+    - correction
+    
+- name: issue
+  definition:
+    An uncertainty within the common ground. A bit of information that is lacking. A set of alternatives none of which is settled upon as correct.
+  related:
+    - question
+    - topic
+
+- name: conjecture
+  definition:
+    A conversational move that initiates an uncertain but potentially viable proposal for further investigation in the inquiry.
+  related:
+    - assertion
+    - question
+    - command
+    - speech act
+    - speculation
+    
+- name: inquiry
+  definition:
+    The enterprise of forming, testing, and revising beliefs (Stalnaker 1987).
+  related:
+    - discourse
+    
+- name: collaboration
+  definition:
+    Integrated action of two or more individuals engaged in a joint activity. Each person provides an essential element to the contribution.
+  related:
+    - cooperation
+    - competition
+    
+- name: correction
+  definition:
+  related:
+    - assertion
+    - question
+    - command
+    - speech act
+    - conjecture
+    - contrast
+    
+- name: contrastive topic
+  definition: 
+  related:
+    - focus
+    - plan of inquiry
+    - question under discussion
+    
+- name: plan of inquiry
+  definition: 
+    The structure of issues and proposals governing the inquiry at hand. The POI places constraints on appropriate future moves; in order to be relevant, they must fit into the plan in some way.
+  related:
+    - focus
+    - contrastive topic
+    - question under dicussion
+    
+- name: question under discussion
+  definition:
+    The governing issue for the inquiry at hand. The QUD places constraints on appropriate future moves; in order to be relevant, they must at least partially resolve the issue.
+  related: 
+    - focus
+    - scoreboard
+    - conversational record
+    - plan of inquiry
+    
+- name: disagreement
+  definition:
+  related:
+    - relativism
+    - contextualism
+    - correction
+    
+- name: relativism
+  definition:
+    The thesis that semantic value is, at least occasionally, determined in some way by the context of the interpreter of an utterance. Usually contrasted to contextualism and absolutism.
+  related: 
+    - contextualism
+    - disagreement
+    - context
+    - absolutism
+    
+- name: contextualism
+  definition:
+    The thesis that semantic value is, at least occasionally, determined in some way by the context of the speaker of an utterance. May encompass the broader thesis that semantic value is determined by features of context generally. Usually contrasted to relativism and absolutism.
+  related:
+    - relativism
+    - absolutism
+    - context
+    - disagreement
+    
+- name: absolutism
+  definition:
+    The thesis that semantic value is fully determined by the semantic value of expressions in the utterance. Extra-linguistic context plays no role in fixing the meaning of an utterance. Usually contrasted to contextualism.
+  related:
+    - contextualism
+    - relativism
+    - semantic value
+    - semantic content
+    - context
+    
+- name: discourse
+  definition:
+    A communicative exchange among two or more people.
+  related:
+    - inquiry
+    - discussion
+    - speaker
+    - hearer
+    - interlocutor
+    - sentence
+    - conversation
+    
+- name: interlocutor
+  definition:
+    Any participant in a discourse.
+  related:
+    - speaker
+    - hearer
+
+- name: semantics
+  definition:
+    The domain of linguistic interpretation pertaining to the core meaning of expressions and their means of combination into larger expressions, independent of their use in conversation.
+  related:
+    - pragmatics
+    - meaning
+    - content
+    - interpretation
+    
+- name: pragmatics
+  definition:
+    The domain of linguistic interpretation pertaining to the features of the meanings of expressions that is derived from their use in conversation. Pragmatic meanings are usually given by reference to extra-linguistic context of the utterance.
+  related:
+    - semantics
+    - interpretation
+    - context
+    - content
+    
+- name: weakly interacting meaning particles
+  definition:
+    Elements of the meaning of expressions that belong to different interpretive modules but that nevertheless stand in dependency relations to each other.
+
+- name: update semantics
+  definition: 
+    Any of a family of theories of formal semantics that treat contributions in discourse as ordered sets of additions to and operations on the discourse platform.
+  related:
+    - dynamic semantics
+    - static semantics
+    - semantics
+    - conditions
+    - discourse referents
+    
+- name: discourse referent
+  definition:
+  related:
+    
+- name: cooperation
+  definition:
+    Alignment of the contributions of two or more individuals engaged in a joint activity. Each person ensures that their contribution accords with the contributions that have come previously and anticipates contributions to come.
+  related:
+    - collaboration
+    - competition
+    
+- name: information
+  definition:
+    Any bit of data about the world (an event or state-of-affairs) that is communicable and available to cognition. Also, the content of a contribution in discourse.
+  related:
+    - content
+    
+- name: content
+  definition:
+  related:
+    - information
+    - context
+    
+- name: end of inquiry
+  definition: 
+    The goal state of the process of inquiry, generally resolution of the issue(s) for which the inquiry was undertaken, as well as any sub-issues raised during course of the inquiry.
+  related:
+    - plan of inquiry
+    - issue
+    
+- name: discourse dynamics
+  definition:
+  related:
+    - semantics
+    - pragmatics
+    
+- name: contribution
+  definition:
+    Any linguistic performance, or the semantico-pragmatic structure associated with it, that advances the inquiry realized by the discourse of which it is a part.
+  related:
+    - content
+    - utterance
+    - inquiry
+    - conversational move
+    - speech act
+    
+- name: speech act
+  definition:
+    Any action performed by way of uttering meaningful words in discourse.
+  related:
+    - contribution
+    - conversational move
+    - content
+    - illocutionary act
+
+- name: wide content
+  definition:
+    Mental content that essentially involves a part of the mind-external world.
+  related:

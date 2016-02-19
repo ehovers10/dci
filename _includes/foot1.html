@@ -4,7 +4,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
-        <span>{{ site.title }}</span>
+        <span><a href="{{ site.baseurl | append: '/' }}">{{ site.title }}</a></span>
         <ul class="social-media-list">
           {% if site.email %}
           <li>
@@ -50,7 +50,7 @@
 <div class="footer-col  footer-col-2"></div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
+        <span>{% if page.abstract %}<strong>{{ page.title }}</strong>{% include mark.html title=page.abstract %}{% else %}{{ site.description }}{% endif %}</span>
       </div>
     </div>
 

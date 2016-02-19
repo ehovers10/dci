@@ -1,0 +1,73 @@
+---
+title: Bibliography
+level: 6
+type: chapter
+---
+
+{% assign biblio = site.data.dissbib %}
+
+<ul>
+{% for item in (biblio | sort: "id") %}
+  {% assign name = item.Author | split: ' ' %}
+  {% assign len = name | size %}
+  {% assign arrlen = len | minus: 1 %}
+  {% assign skip = '' %}
+  {% assign last = '' %}
+  {% assign alsoskip = '' %}
+  <li style="list-style-type:none;margin-bottom:0.5em;padding-left:1em;text-indent:-1em;"><a name="ref-{{ name[1] }}"></a>
+<span>
+{% if item.Author contains ' and ' %}
+  {% assign last = arrlen %}
+  {% if name[2] == 'and' %}
+    <span>{{ name[1] | append: "," }}</span>
+    {% assign skip = 1 %}
+  {% else %}
+    {% if name[1] == 'von' or name[1] == 'van' or name[1] == 'ver' %}
+      <span>{{ name[1] }}</span>
+      {% assign alsoskip = 1 %}
+    {% endif %}
+    <span>{{ name[2] | append: "," }}</span>
+    {% assign skip = 2 %}
+  {% endif %}
+{% else %}
+  {% if len == 3 %}
+    {% if name[1] == 'von' or name[1] == 'van' or name[1] == 'ver' %}
+      <span>{{ name[1] | append: ' ' }}{{ name[2] | append: "," }}</span>
+      {% assign skip = 2 %}
+      {% assign alsoskip = 1 %}
+      {% assign last = 0 %}      
+    {% else %}
+      <span>{{ name[2] | append: "," }}</span>
+      {% assign skip = 2 %}
+      {% assign last = 1 %}
+    {% endif %}
+  {% else %}
+    <span>{{ name[1] | append: "," }}</span>
+    {% assign skip = 1 %}
+    {% assign last = 0 %}
+  {% endif %}
+{% endif %}
+{% for i in (0..arrlen) %}
+  {% if i == skip or i == alsoskip %}
+    {% continue %}
+  {% elsif i == last %}
+    {% if name[i] contains '.' %}
+      {{ name[i] }}
+    {% else %}
+      {{ name[i] | append: '.' }}
+    {% endif %}
+  {% else %}
+    {{ name[i] }}
+  {% endif %}
+{% endfor %}</span>
+
+<span><em>{{ item.Title | append: '.' }}</em></span>
+
+<span>{% if item.Journal %}{{ item.Journal | append: '.' }}{% elsif item.Publisher %}{{ item.Publisher | append: '.' }}{% elsif item.Booktitle %}{{ item.Booktitle | append: '.' }}{% endif %}</span>
+
+<span>{{ item.Year | append: '.' }}</span>
+
+{% if item.Url %}<a href="{{ item.Url }}">{{ item.Url }}</a>{% endif %}
+  </li>
+{% endfor %}
+</ul>

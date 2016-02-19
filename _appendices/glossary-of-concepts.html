@@ -1,0 +1,25 @@
+---
+title: Glossary
+type: chapter
+level: 5
+---
+
+{% assign words = site.data.glossary | sort: 'name' %}
+<ul>
+{% for word in words %}
+  <li style="list-style-type:none;">
+    <a name="{{ word.name | slugify }}"></a>
+    <span style="font-weight:600;font-size:1.1em;">{{ word.name }}</span>
+    <blockquote style="margin-left:0.75em;margin-top:0.5em;">{{ word.definition }}</blockquote>
+    <span style="font-size:0.8em;margin-left:0.75em;"><span>Related concepts:</span>
+    <ul>
+      {% for item in word.related %}
+      <li style="display:inline-block;"><a href="#{{ item | slugify }}">{{ item }}</a></li>
+      {% unless forloop.last %}
+      <li style="display:inline-block;">|</li>
+      {% endunless %}
+      {% endfor %}
+    </ul></span>
+  </li>
+{% endfor %}
+</ul>
