@@ -1,0 +1,57 @@
+/* Set list format */
+ul.setlist {
+  text-align:center;
+
+  li {
+    list-style-type:none;
+    display:inline;
+    border-right:1px solid #000;
+    padding:3px 10px;
+
+    &:last-child {
+      border-right:none;
+    }
+  }
+}
+
+ul.seqlist {
+  text-align:center;
+
+  li {
+    list-style-type:none;
+    display:inline;
+    padding-left:2px;
+
+    &:last-child {
+      padding-left:0;
+    }
+  }
+}
+
+.eqn {
+  width: 100%;
+  
+  
+  .lhs {
+    float:left;
+    width: calc(40% - 20px);
+    width: -webkit-calc(40% - 20px);
+  }
+
+  .conn {
+    float: left;
+    width: 40px;
+    margin-top:5px;
+    line-height:0.95;
+  }
+
+  .rhs {
+    float:left;
+    width: calc(60% - 20px);
+    width: -webkit-calc(60% - 20px);
+  }
+}
+
+.subdef {
+  margin-left: 2em;
+}

@@ -1,15 +1,32 @@
 -
+  Type: article
+  id: agm1985
+  Title: "On the logic of theory change: Partial meet contraction and revision functions"
+  Author: Carlos Alcho&#x0301;urron and Peter Ga&#x0308;rdenfors and David Makinson
+  Journal: Journal of Symbolic Logic
+  Year: 1985
+  Number: 2
+  Pages: 510--530
+  Volume: 50
+  File: :agm1985.pdf:PDF
+  Owner: erik
+  Timestamp: 2011.11.22
+  Url: https://app.box.com/s/mbzd0np4md371ghes0et
+
+-
   id: anderbois2010 
   Title: Sluicing as anaphora to issues
   Author: Scott AnderBois
-  Booktitle: Proceedings of SALT 20
+  BookTitle: Proceedings of SALT 20
+  Type: chapter
   Year: 2010
   File: anderbois2010.pdf
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/files/0/f/2064160750/1/f_17941715426
+  Url: https://app.box.com/s/8xc9ruau39i5vlxfut65
 
 -
+  Type: article
   id: anderbois2013
   Title: At-issue Proposals and Appositive Impositions in Discourse
   Author: Scott Anderbois and Adrian Brasoveanu and R. Henderson
@@ -25,18 +42,64 @@
   Url: http://dx.doi.org/10.1093/jos/fft014
 
 -
+  Type: article
+  id: bach1994
+  Year: 1994
+  Number: 2
+  Publisher: Wiley Online Library
+  Journal: Mind and Language
+  Volume: 9
+  Author: Kent Bach
+  Pages: 124-162
+  Title: Conversational Impliciture
+  Url: http://userwww.sfsu.edu/kbach/impliciture.htm
+
+-
+  id: bittner2011
+  Title: Time and modality without tenses or modals
+  Author: Maria Bittner
+  BookTitle: Tenses across Languages
+  Type: chapter
+  Publisher: Niemeyer, Tubingen
+  Year: 2011
+  Editor: R. Musan and M. Rathert
+  File: :bittner2011.pdf:PDF
+  Keywords: semantics-drefs, language, semantics-attitudes
+  Owner: Erik
+  Timestamp: 2010.12.21
+  Url: 
+    - https://app.box.com/s/fafymrmxm8qw7zgzfq9p
+    - http://www.rci.rutgers.edu/~mbittner/bittner11_tam.pdf
+-
+  id: bontly2005
+  Title: "Modified Occam's Razor: Parsimony, Pragmatics, and the Acquisition of Word Meaning"
+  Author: Thomas Bontly
+  Journal: Mind &amp; Language
+  Type: article
+  Year: 2005
+  Number: 3
+  Pages: 288--312
+  Volume: 20
+  File: :bontly2005.pdf:PDF
+  Owner: erik
+  Timestamp: 2011.11.22
+  Url: https://app.box.com/s/bho29orwrbfkopnolx5l
+
+-
   id: buering2008
   Title: What's New and What's Given in the Theory of Focus
   Author: Daniel Bu&#x0308;ring
-  Booktitle: Berkeley Linguistics Society
+  BookTitle: Berkeley Linguistics Society
+  Type: chapter
   Year: 2008
   File: :buering2008.pdf:PDF
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.07.09
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/b4xlfe6e57jyx2znq207
 
 -
+  Type: article
   id: buering2003
   Title: On d-trees, beans, and b-accents
   Author: Daniel Bu&#x0308;ring
@@ -47,18 +110,20 @@
   File: :buering2003.pdf:PDF
   Owner: erik
   Timestamp: 2014.10.05
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/a11v7a9ky4cmg8czisxv
 
 -
   id: bengson2012
   Title: Non-propositional intellectualism
   Author: John Bengson and Marc Moffett
-  Booktitle: "Know How: Essays on knowledge, mind, and action"
+  BookTitle: "Know How: Essays on knowledge, mind, and action"
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2012
   Editor: John Bengson and Marc Moffett
   Owner: erik
   Timestamp: 2014.12.09
+  Url: https://app.box.com/s/kouygcj0gya1631kuywithtdqy3c43y8
 
 -
   id: brasoveanua
@@ -73,18 +138,20 @@
   id: brasoveanu-a
   Title: "Structured discourse reference to propositions: Entailment particles and modal subordination in dynamic type logic"
   Author: Adrien Brasoveanu
-  Booktitle: LoLa 9
+  BookTitle: LoLa 9
+  Type: chapter
   Year: 2013
   File: :brasoveanu-a.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/s4t8t1ftc6qvjuq4f2d6
 
 -
   id: bratman2009
   Title: Shared agency
   Author: Michael Bratman
-  Booktitle: "Philosophy of the social sciences: Philosophical theory and scientific practice"
+  BookTitle: "Philosophy of the social sciences: Philosophical theory and scientific practice"
+  Type: chapter
   Publisher: Cambridge University Press
   Year: 2009
   Editor: Chris Mantzavinos
@@ -92,6 +159,7 @@
   Timestamp: 2014.12.09
 
 -
+  Type: article
   id: bratman1988
   Title: Plans and resource-bounded practical reasoning
   Author: Michael Bratman and David Israel and Martha Pollack
@@ -104,6 +172,7 @@
   Timestamp: 2014.12.09
 
 -
+  Type: article
   id: camp2006
   Title: Contextualism, metaphor, and what is said
   Author: Elizabeth Camp
@@ -114,21 +183,24 @@
   Volume: 21
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/sg03wyp0b0bh73wppglyrlh4nj270g7a
 
 -
   id: cappelen2010
   Title: Against assertion
   Author: Herman Cappelen
-  Booktitle: Assertion
+  BookTitle: Assertion
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2010
   Editor: J. Brown and H. Cappelen
   File: cappelen against assertion.pdf:cappelen2010.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/bn2cck2mq2a195k5dau3y2v0gvde7fgl
 
 -
+  Type: article
   id: Cappelen2008
   Title: "The Creative Interpreter: Content Relativism and Assertion"
   Author: Herman Cappelen
@@ -155,13 +227,14 @@
   File: cappelen2009.pdf:cappelen2009.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/soyenxubix12tkyopi175392wvaoepf2
 
 -
   id: cappelen2006a
   Title: Shared Content
   Author: Herman Cappelen and Ernest Lepore
-  Booktitle: The Oxford Handbook of Philosophy of Language
+  BookTitle: The Oxford Handbook of Philosophy of Language
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2006
   Chapter: 40
@@ -170,7 +243,7 @@
   File: cappelen2006a.pdf:cappelen2006a.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/hkkgroy69yrlxoqjjie84sgljs9wddtv
 
 -
   id: cappelen2005
@@ -183,6 +256,7 @@
   Timestamp: 2009.09.22
 
 -
+  Type: article
   id: Cappelen2003
   Title: Context Shifting Arguments
   Author: Cappelen, Herman and Lepore, Ernie
@@ -208,7 +282,7 @@
   File: chalmers-ms.pdf:chalmers-ms.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/tye1xt5wv76v70j6n4sx01mgitsx1xuj
 
 -
   id: chalmers2006
@@ -219,7 +293,30 @@
   File: chalmers2006.pdf:chalmers2006.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/1x1ooq65aek85yznc9q6hlssdcngw04k
+
+-
+  id: churchland1982
+  Number: 3
+  Title: "The Anti-Realist Epistemology of van Fraasen's 'The Scientific Image'"
+  Author: Paul M. Churchland
+  Pages: 226
+  Journal: Pacific Philosophical Quarterly
+  Year: 1982
+  Volume: 63
+  Publisher: Wiley-Blackwell
+
+-
+  Type: article
+  id: clark1986
+  Title: Referring as a collaborative process
+  Author: Herbert H. Clark and Deanna Wilkes-Gibbs
+  Year: 1986
+  Journal: Cognition
+  Pages: 1-39
+  Volume: 22
+  Abstract: "In conversation, speakers and addressees work together in the making of a definite reference. In the model we propose, the speaker initiates the process by presenting or inviting a noun phrase. Before going on to the next contribution, the participants, if necessary, repair, expand on, or replace the noun phrase in an iterative process until they reach a version they mutually accept. In doing so they try to minimize their joint effort. The preferred procedure is for the speaker to present a simple noun phrase and for the addressee to accept it by allowing the next contribution to begin. We describe a communication task in which pairs of people conversed about arranging complex figures and show how the proposed model accounts for many features of the references they produced. The model follows, we suggest, from the mutual responsibility that participants in conversation bear toward the understanding of each utterance."
+  Url: https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0
 
 -
   id: clark1992
@@ -239,7 +336,8 @@
   Pages: 366-380
   Publisher: University of Chicago Press
   Year: 1992
-  Note: In Arenas of Language Use
+  BookTitle: Arenas of Language Use
+  Type: chapter
   Owner: erik
   Timestamp: 2014.11.11
 
@@ -251,7 +349,8 @@
   Pages: 144-175
   Publisher: University of Chicago Press
   Year: 1992
-  Note: in Arenas of Language Use
+  BookTitle: Arenas of Language Use
+  Type: chapter
   Owner: erik
   Timestamp: 2014.11.11
 
@@ -259,25 +358,28 @@
   id: dekker-pla
   Title: Predicate logic with anaphora
   Author: Paul Dekker
-  Note: university of amsterdam
+  Affiliation: University of Amsterdam
   Year: n/a
   File: dekker predicate logic with anaphora.pdf:dekker-pla.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/nydgj88v9d0m1qqkxcnhx3dxg1qog37i
 
 -
+  Type: article
   id: dekker2001
   Title: The pragmatic dimension of indefinites
   Author: Paul Dekker
-  Journal: L\&C
+  Journal: L&amp;C
   Year: 2001
   Pages: 1-32
   Volume: 1-3
   Owner: erik
   Timestamp: 2011.11.22
+  Url: https://app.box.com/s/n3ls5geko2scalsj4kaim4lfhulx6037
 
 -
+  Type: article
   id: devault2006
   Title: Scorekeeping in an Uncertain Language Game
   Author: David DeVault and Matthew Stone
@@ -285,8 +387,10 @@
   Year: 2006
   Owner: erik
   Timestamp: 2011.11.22
+  Url: https://app.box.com/s/rce3q2551mwtnbc173zcko1h948npud5
 
 -
+  Type: article
   id: dretske1972
   Title: Contrastive Statements
   Author: Fred Dretske
@@ -300,13 +404,14 @@
   Keywords: language
   Owner: erik
   Timestamp: 2010.07.09
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/buzjuijpkz1ufni4jkrd72c8r0frd4cd
 
 -
   id: egan2010
   Title: Disputing about taste
   Author: Andy Egan
-  Booktitle: Disagreement
+  BookTitle: Disagreement
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2010
   Editor: Ted Warfield and Richard Feldman
@@ -314,9 +419,10 @@
   File: egan2010.pdf:egan2010.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/bs108cxmvnztk22ge480lzvg6mq7fy9h
 
 -
+  Type: article
   id: eg2007b
   Title: "Review: Relativism"
   Author: Andy Egan
@@ -329,6 +435,7 @@
   Timestamp: 2014.10.05
 
 -
+  Type: article
   id: egan2007a
   Title: Epistemic Modals, Relativism and Assertion
   Author: Andy Egan
@@ -341,19 +448,21 @@
   File: egan2007a.pdf:egan2007a.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/iuee3fw6ppj2bb3oirle4w36wyx3c8vj
 
 -
   id: egan2005a
   Title: Epistemic Modals in Context
   Author: Andy Egan and John Hawthorne and Brian Weatherson
-  Booktitle: Contextualism in Philosophy
+  BookTitle: Contextualism in Philosophy
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2005
   Pages: 131--170
   Abstract: "A very simple contextualist treatment of a sentence containing an epistemic modal, e.g. a might be F, is that it is true iff for all the contextually salient community knows, a is F. It is widely agreed that the simple theory will not work in some cases, but the counterexamples produced so far seem amenable to a more complicated contextualist theory. We argue, however, that no contextualist theory can capture the evaluations speakers naturally make of sentences containing epistemic modals. If we want to respect these evaluations, our best option is a relativist theory of epistemic modals. On a relativist theory, an utterance of a might be F can be true relative to one context of evaluation and false relative to another. We argue that such a theory does better than any rival approach at capturing all the behaviour of epistemic modals."
   Owner: erik
   Timestamp: 2014.10.05
+  Url: https://app.box.com/s/eoulvw509q5bi8iot2nmyue0fxjn4bxq
 
 -
   id: eijck
@@ -365,23 +474,46 @@
   Timestamp: 2014.10.05
 
 -
-  id: fintel1997
+  id: vonfintel1997
   Title: Bare plurals, bare conditionals, and only
   Author: Kai von Fintel
   Journal: Journal of Semantics
+  Type: article
   Year: 1997
   Pages: 1-56
   Volume: 14
   File: fintel1997.pdf:fintel1997.pdf:PDF
   Owner: erik
   Timestamp: 2014.10.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z
 
 -
-  id: fintel2010
+  id: vonfintel1999
+  Title: NPI-Licensing, Strawson-Entailment, and Context-Dependency
+  Author: Kai von Fintel
+  Journal: Journal of Semantics
+  Type: article
+  Year: 1999
+  Volume: 16
+  Number: 1
+  Url: https://app.box.com/s/2j4o189qfpf4178t5e79ruu973tj4l79
+
+-
+  id: vonfintel2004
+  Author: Kai von Fintel
+  Publisher: Oxford University Press
+  Title: "Would You Believe It? The King of France is Back! Presuppositions and Truth-Value Intuitions"
+  Editor: Anne Bezuidenhout and Marga Reimer
+  Booktitle: Descriptions and Beyond
+  Year: 2004
+  Type: chapter
+
+-
+  id: vonfintel2010
   Title: Must...Stay...Strong!
   Author: Kai von Fintel and Thony Gillies
   Journal: Natural Language Semantics
+  Type: article
   Year: 2010
   Number: 4
   Pages: 351--383
@@ -391,13 +523,14 @@
   Keywords: language
   Owner: erik
   Timestamp: 2014.10.05
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/n42oupi6xm04gu7psmq4rrx28w2t8iot
 
 -
-  id: fintel2008
+  id: vonfintel2008
   Title: CIA Leaks
   Author: Kai von Fintel and Thony Gillies
   Journal: Philosophical Review
+  Type: article
   Year: 2008
   Number: 1
   Pages: 77--98
@@ -407,24 +540,35 @@
   Keywords: language, semantics
   Owner: erik
   Timestamp: 2014.12.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/vof10p8m563yppok2axqotygs6ki0vrk
+
+-
+  id: frege1884
+  Title: The Foundations of Arithmetic
+  Author: Gottlob Frege
+  Year: 1884 (1997)
+  BookTitle: The Frege Reader
+  Type: chapter
+  Editor: Michael Beaney
+  Publisher: Blackwell Publishing
 
 -
   id: friend2003
   Title: "DISAGREEMENT AND DEFERENCE: IS DIVERSITY OF OPINION A PRECONDITION FOR THOUGHT?"
   Author: Stacie Friend and Peter Ludlow
   Journal: Philosophical Perspectives
+  Type: article
   Year: 2003
   Owner: erik
   Timestamp: 2014.12.08
-
-
+  Url: https://app.box.com/s/upsv9g8kpgbjbzfnsbzfqa1riqd5hbvo
 
 -
   id: geurts1998
   Title: Presuppositions and Anaphors in Attitude Contexts
   Author: Bart Geurts
   Journal: Linguistics and Philosophy
+  Type: article
   Year: 1998
   Number: 6
   Pages: 545--601
@@ -439,11 +583,12 @@
   Title: The mechanisms of denial
   Author: Bart Geurts
   Journal: Language
+  Type: article
   Year: 1998
   File: geurts1998a.pdf:geurts1998a.pdf:PDF
   Owner: erik
   Timestamp: 2014.10.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds
 
 -
   id: geurtsa
@@ -459,6 +604,7 @@
   Title: Interpreting Focus
   Author: Bart Geurts and Rob van der Sandt
   Journal: Theoretical Linguistics
+  Type: article
   Year: 2004
   Month: September
   Number: 1
@@ -468,13 +614,14 @@
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.07.09
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/lbxka04ocuew0h25of66qevtnoaqanqd
 
 -
   id: gillies2010
   Title: Iffiness
   Author: Anthony S. Gillies
   Journal: Semantics and Pragmatics
+  Type: article
   Year: 2010
   Month: January
   Number: 4
@@ -485,13 +632,14 @@
   Keywords: indicative conditionals, epistemic modality, if-clauses, conditionals, strict conditionals, dynamic semantics
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/m4ge1zrd1gmeobx6lmdu86q2mmbc6on5
 
 -
   id: gillies2007
   Title: Counterfactual Scorekeeping
   Author: Thony Gillies
   Journal: Linguistics and Philosophy
+  Type: article
   Year: 2007
   Pages: 329--360
   Volume: 30
@@ -500,13 +648,14 @@
   Keywords: language, logic
   Owner: erik
   Timestamp: 2014.12.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4
 
 -
   id: gillies2006
   Title: What Might be the Case After a Change in View
   Author: Thony Gillies
   Journal: Journal of Philosophical Logic
+  Type: article
   Year: 2006
   Number: 2
   Pages: 117--145
@@ -516,13 +665,14 @@
   Keywords: epistemology, language, logic
   Owner: erik
   Timestamp: 2014.12.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/6o0zxrqjjp45ks58pbbgw8t313fkj541
 
 -
   id: glanzberg2009
   Title: Descriptions, Negation, and Focus
   Author: Michael Glanzberg
-  Booktitle: "Compositionality, Context, and Semantic Values: Essays in Honor of Ernie Lepore"
+  BookTitle: "Compositionality, Context, and Semantic Values: Essays in Honor of Ernie Lepore"
+  Type: chapter
   Publisher: Springer
   Year: 2009
   Editor: Robert Stainton and Christopher Viger
@@ -530,13 +680,14 @@
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.07.09
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/90fmmnsy9h2a9p8q4n4703y11s738f17
 
 -
   id: glanzberg2005
   Title: "Focus: A Case Study on the Semantics-Pragmatics Boundary"
   Author: Michael Glanzberg
-  Booktitle: Semantics versus Pragmatics
+  BookTitle: Semantics versus Pragmatics
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2005
   Chapter: 3
@@ -546,13 +697,14 @@
   Keywords: language
   Owner: Erik
   Timestamp: 2009.09.21
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/9n9kn1ufyymjp6xqzu4lwwt918aih835
 
 -
   id: glanzberg2007
   Title: Context, content and relativism
   Author: Michael Glanzberg
   Journal: Philosophical Studies
+  Type: article
   Year: 2007
   Number: 1
   Pages: 1-29
@@ -560,7 +712,14 @@
   File: glanzberg2007.pdf:glanzberg2007.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/85fi58m68g4vhj8285rocfi1643uhc9e
+
+-
+  id: goodman1983
+  Title: Fact, Fiction, and Forecast
+  Year: 1983
+  Publisher: Harvard University Press
+  Author: Nelson Goodman
 
 -
   id: grice1989
@@ -570,6 +729,18 @@
   Year: 1989
   Owner: erik
   Timestamp: 2015.01.07
+  Url:
+    - https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611
+    - https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce
+
+-
+  id: groenendijk1984
+  Title: Studies in the Semantics of Questions and the Pragmatics of Answers
+  Author: Jeroen Groenendijk and Martin Stokhof
+  Department: Department of Natural Sciences
+  Affiliation: University of Amsterdam
+  Year: 1984
+  Url: https://app.box.com/s/2uf0shh0xuddygsbaq8ondesf3kw4h5o
 
 -
   id: groenendijk1991
@@ -577,6 +748,7 @@
   Author: Jeroen Groenendijk and Martin Stokhof
   Journal: Linguistics and Philosophy
   Year: 1991
+  Type: article
   Number: 1
   Pages: 39--100
   Volume: 14
@@ -584,13 +756,45 @@
   File: groenendijk1991.pdf:groenendijk1991.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.23
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/ordtsi00dz6qr0ih0t3xkmrysyezwcpe
+
+-
+  id: groenendijk1999
+  Title: Meaning in Motion
+  Author: Jeroen Groenendijk and Martin Stokhof
+  Year: 1999
+  Department: ILLC/Department of Philosophy
+  Affiliation: University of Amsterdam
+  Abstract: "The paper sketches the place of dynamic semantics within a broader picture of developments in philosophical and linguistic theories of mean-ing. Some basic concepts of dynamic semantics are illustrated by means of a detailed analysis of anaphoric deﬁnite and indeﬁnite descrip-tions, which are treated as contextually dependent quantiﬁcational ex-pressions. It is shown how a dynamic view sheds new light on the contextual nature of interpretation, on the diﬀerence between mono-logue and dialogue, and on the interplay between direct and indirect information."
+  Url: https://app.box.com/s/hkpx4vzrr7hvmiybb374vo5lu50cawk2
+
+-
+  id: groenendijk2009
+  Title: Inquisitive Semantics and Pragmatics
+  Author: Jeroen Groenendijk and Floris Roelofsen
+  Year: 2009
+  Platform: "Workshop on Language, Communication, and Agency: Stanford, May 30-31, 2009"
+  Department: ILLC/Department of Philosophy
+  Affiliation: University of Amsterdam
+  Type: presentation
+  Url: http://bit.ly/1LkQpib
+
+-
+  id: grosz1995
+  Title: "Centering: A framework for modelling the local coherence of discourse"
+  Author: Barbara J. Grosz and Aravind K. Joshi and Scott Weinstein
+  Department: Institute for Reseach in Cognitive Science
+  Affiliation: University of Pennsylvania
+  Year: 1995
+  Abstract: "This paper concerns relationships among focus of attention, choice of referring expression, and perceived coherence of utterances within a discourse segment. It presents a framework and initial theory of centering which are intended to model the local component of attentional state. The paper examines interactions between local coherence and choice of referring expressions; it argues that differences in coherence correspond in part to the inference demands made by different types of referring expressions given a particular attentional state. It demonstrats that the attentional state properties modelled by centering can account fo these differences."
+  Url: https://app.box.com/s/zxme3mt53vqp15qogrj2y4eyw8masxd2
 
 -
   id: gundel1999-1
   Title: On Different Kinds of Focus
   Author: Jeanette Gundel
-  Booktitle: "Focus: Linguistic, Cognitive, and Computational Perspectives"
+  BookTitle: "Focus: Linguistic, Cognitive, and Computational Perspectives"
+  Type: chapter
   Publisher: Cambridge University Press
   Year: 1999
   Editor: Peter Bosch and Rob van der Sandt
@@ -604,6 +808,7 @@
   Title: Topic, Focus, and the Grammar Pragmatics Interface
   Author: Jeanette Gundel
   Journal: "Proceedings of the 23rd Annual Penn Linguistics Colloquium: Penn Working Papers in Linguistics"
+  Type: article
   Year: 1999
   Number: 1
   Pages: 185--200
@@ -611,24 +816,28 @@
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.07.09
+  Url: https://app.box.com/s/cxq18x2fxfuodeec0zusa6912plboh0t
 
 -
   id: gundel2001
   Title: Topic and Focus
   Author: Jeanette Gundel and Thorsten Fretheim
-  Booktitle: Handbook of Pragmatic Theory
+  BookTitle: Handbook of Pragmatic Theory
+  Type: chapter
   Publisher: Blackwell Publishing
   Year: 2001
   Editor: Laurence Horn and Gregory Ward
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.07.09
+  Url: https://app.box.com/s/z6rpgw0sxstkpt9oi950n5s5v3xdw3z9
 
 -
   id: hamblin1958
   Title: Questions
   Author: Charles Hamblin
   Journal: Australasian Journal of Philosophy
+  Type: article
   Year: 1958
   Pages: 159-168
   Volume: 36
@@ -640,18 +849,28 @@
   Title: E-Type Pronouns and Donkey Anaphora
   Author: Irene Heim
   Journal: Linguistics and Philosophy
+  Type: article
   Year: 1990
   Number: 2
   Pages: 137--77
   Volume: 13
   Owner: erik
   Timestamp: 2014.10.05
+  Url: https://app.box.com/s/jzklk0qur857xue7ijitq0r68b6slov2
+
+-
+  id: hicks2014
+  Title: The Epistemic Role Account of Lawhood
+  Author: M. Townsen Hicks
+  Title: Article
+  Year: ms
 
 -
   id: hintikk1998
   Title: What is abduction? The fundamental problems of contemporary epistemology
   Author: Jaakko Hintikka
   Journal: Transactions of the Charles S. Peirce Society
+  Type: article
   Year: 1998
   Number: 3
   Volume: 34
@@ -668,12 +887,20 @@
   Timestamp: 2014.12.07
 
 -
+  id: hume1777
+  Year: 1999 (1777)
+  Author: David Hume 
+  Title: An Enquiry Concerning Human Understanding
+  Publisher: Oxford University Press Uk
+
+-
   id: ciardelli2009
   Title: Attention! Might in inquisitive semantics
   Author: Ivano Ciardelli and Jeroen Groenendijk and Floris Roelofsen
   Year: 2009
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/31du6xa4znegwh3nel55mkact91lid6o
 
 -
   id: james1896
@@ -687,20 +914,45 @@
   Timestamp: 2014.12.09
 
 -
+  Type: chapter
+  id: kamp1981
+  Pages: 189-222
+  Author: Hans Kamp
+  Booktitle: "Formal Semantics: the Essential Readings"
+  Publisher: Blackwell
+  Editor: P. Portner and B. H. Partee
+  Year: 1981
+  Title: A Theory of Truth and Semantic Representation
+
+-
   id: karttunen1977
   Title: Syntax and semantics of questions
   Author: Lauri Karttunen
-  Journal: Linguistics and
+  Journal: Linguistics and Philosophy
+  Type: article
   Year: 1977
   Volume: 1
   Owner: erik
   Timestamp: 2014.12.08
+  Url: https://app.box.com/s/hdl61kj7e7aj08n8b8i41c8aw7lj2qny
+
+-
+  id: kehler2000
+  Year: 2000
+  Journal: Linguistics and Philosophy
+  Number: 6
+  Volume: 23
+  Title: Coherence and the Resolution of Ellipsis
+  Author: Andrew Kehler
+  Pages: 533-575
+  Publisher: Springer Netherlands
 
 -
   id: kiss1998
   Title: Identification Focus versus Information Focus
   Author: Katalin Kiss
   Journal: Language
+  Type: article
   Year: 1998
   Month: June
   Number: 2
@@ -725,7 +977,8 @@
   id: kratzer2008a
   Title: Situations in Natural Language Semantics
   Author: Angelika Kratzer
-  Booktitle: Stanford Encyclopedia of Philosophy
+  BookTitle: Stanford Encyclopedia of Philosophy
+  Type: chapter
   Year: 2008
   Abstract: "Situation semantics was developed as an alternative to possible worlds semantics. In situation semantics, linguistic expressions are evaluated with respect to partial, rather than complete, worlds. There is no consensus about what situations are, just as there is no consensus about what possible worlds or events are. According to some, situations are structured entities consisting of relations and individuals standing in those relations. According to others, situations are particulars. In spite of unresolved foundational issues, the partiality provided by situation semantics has led to some genuinely new approaches to a variety of phenomena in natural language semantics. In the way of illustration, this article includes relatively detailed overviews of a few selected areas where situation semantics has been successful: implicit quantifier domain restrictions, donkey pronouns, and exhaustive interpretations. It moreover addresses the question of how Davidsonian event semantics can be embedded in a semantics based on situations. Other areas where a situation semantics perspective has led to progress include attitude ascriptions, questions, tense, aspect, nominalizations, implicit arguments, point of view, counterfactual conditionals, and discourse relations."
   Owner: erik
@@ -736,6 +989,7 @@
   Title: "Interpreting Focus: Presupposed or Expressive Meanings? A Comment on Geurts and Van der Sandt"
   Author: Angelika Kratzer
   Journal: Theoretical Linguistics
+  Type: article
   Year: 2004
   Pages: 123--136
   Volume: 30
@@ -744,13 +998,14 @@
   Keywords: language
   Owner: erik
   Timestamp: 2014.10.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/xojqxgi7uaw4resdx83v0ky1qh11acsc
 
 -
   id: kratzer1981
   Title: "Partition and Revision: The Semantics of Counterfactuals"
   Author: Angelika Kratzer
   Journal: Journal of Philosophical Logic
+  Type: article
   Year: 1981
   Number: 2
   Pages: 201--216
@@ -763,6 +1018,7 @@
   Title: What Must and Can Must and Can Mean
   Author: Angelika Kratzer
   Journal: Linguistics and Philosophy
+  Type: article
   Year: 1977
   Number: 3
   Pages: 337--355
@@ -772,15 +1028,16 @@
   Keywords: language
   Owner: erik
   Timestamp: 2014.10.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/ujo6mdn6rkjmb20rgb0ttrunrwgze2m0
 
 -
   id: krifka-ms
-  Title: Acompositional semantics for multiple focus constructions
+  Title: A compositional semantics for multiple focus constructions
   Author: Manfred Krifka
   Year: n/a
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/v76fpb4w9187u3w0sfn5va5uc8x08kr6
 
 -
   id: krifka2006
@@ -789,6 +1046,7 @@
   Year: 2006
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/5sxirxk10opqiqca62pgiwszcly0cq5t
 
 -
   id: krifka2001
@@ -823,9 +1081,11 @@
   Title: Relative truth, speaker commitment, and control of implicit arguments
   Author: Peter Lasersohn
   Journal: Synthese
+  Type: article
   Year: 2007
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/7cgll5i29mqbiak6whypfvwhd3xmix36
 
 -
   id: lasersohn2005
@@ -834,12 +1094,23 @@
   Year: 2005
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/qotplpbzs7la7qs82b0vo6ungh2vf152
+
+-
+  id: levi1980
+  Title: The Enterprise of Knowledge
+  Subtitle: An Essay on Knowledge, Credal Probability, and Chance
+  Author: Isaac Levi
+  Year: 1980
+  Publisher: MIT Press
+  Location: Cambridge, MA
 
 -
   id: lewis1979f
   Title: Scorekeeping in a Language Game
   Author: David Lewis
   Journal: Journal of Philosophical Logic
+  Type: article
   Year: 1979
   Note: \PPI 233-249
   Number: 1
@@ -848,25 +1119,40 @@
   File: :lewis1979f.pdf:PDF
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/ah5uylb4a8pktexm9apeqxz70z8vto3u
+
+-
+  id: lewis1979
+  Title: Attitudes de dicto and de se
+  Author: David Lewis
+  Journal: Philosophical Review
+  Type: article
+  Year: 1979
+  Number: 4
+  Pages: 513--543
+  Volume: 88
+  File: lewis1979.pdf:lewis1979.pdf:PDF
+  Keywords: language, metaphysics
+  Url: https://app.box.com/s/37hv7j8f07ajn0gfoogo79s1tyf3w30e
 
 -
   id: Lewis1975a
   Title: Adverbs of Quantification
   Author: David Lewis
-  Booktitle: Formal Semantics of Natural Language
+  BookTitle: Formal Semantics of Natural Language
+  Type: chapter
   Publisher: Cambridge University Press
   Year: 1975
   Address: Cambridge
   Note: \PPL 5-20
   Pages: 3--15
-  Owner: erik
-  Timestamp: 2014.12.07
 
 -
   id: Lewis1975b
   Title: Languages and Language
   Author: David Lewis
-  Booktitle: Minnesota Studies in the Philosophy of Science
+  BookTitle: Minnesota Studies in the Philosophy of Science
+  Type: chapter
   Publisher: University of Minnesota Press
   Year: 1975
   Address: Minneapolis
@@ -883,22 +1169,26 @@
   Year: 2012
   Owner: erik
   Timestamp: 2014.12.08
+  Url: https://app.box.com/s/p5sdu5mp5juevyw7hn8u1oy28dobhsjs
 
 -
   id: ludlow2008
   Title: Cheap contextualism
   Author: Peter Ludlow
   Journal: Philosophical issues
+  Type: article
   Year: 2008
   Volume: 18
   Owner: erik
   Timestamp: 2014.12.08
+  Url: https://app.box.com/s/23tpmfuhbwma32y18kbt2sa605m3w2be
 
 -
   id: macfarlane2011a
   Title: What is assertion?
   Author: John MacFarlane
-  Booktitle: Assertion
+  BookTitle: Assertion
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2011
   Editor: Jessican Brown and Herman Cappelen
@@ -910,10 +1200,11 @@
   id: macfarlane2011
   Title: Epistemic Modals are Assessment-Sensitive
   Author: John MacFarlane
-  Booktitle: Epistemic Modality
+  BookTitle: Epistemic Modality
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2011
-  Editor: Brian Weatherson \& Andy Egan
+  Editor: Brian Weatherson and Andy Egan
   Keywords: language
   Owner: Erik
   Timestamp: 2010.12.21
@@ -922,10 +1213,11 @@
   id: macfarlane2008
   Title: Truth in the garden of forking paths
   Author: John MacFarlane
-  Booktitle: Relative Truth
+  BookTitle: Relative Truth
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2008
-  Editor: Max K\ " { o } lbel and Manuel Garc\ { i } a-Carpintero
+  Editor: Max Ko&#x0308;lbel and Manuel Garci&#x0301;a-Carpintero
   Pages: 81-102
   Owner: erik
   Timestamp: 2014.12.09
@@ -935,6 +1227,7 @@
   Title: Nonindexical Contextualism
   Author: John MacFarlane
   Journal: Synthese
+  Type: article
   Year: 2009
   Pages: 231-250
   Volume: 166
@@ -946,17 +1239,20 @@
   Title: Relativism and disagreement
   Author: John MacFarlane
   Journal: Philosophical Studies
+  Type: article
   Year: 2007
   Pages: 17-31
   Volume: 132
   Owner: erik
   Timestamp: 2014.12.09
+  Url: https://app.box.com/s/pkt1f14gl208ky03z4ajgt6nyx037af6
 
 -
   id: macfarlane2005
   Title: Making sense of relative truth
   Author: John MacFarlane
   Journal: Proceedings of the Aristotelian Society
+  Type: article
   Year: 2005
   Pages: 321-339
   Volume: 105
@@ -978,11 +1274,23 @@
   Title: Reasonable disagreement and rational group inquiry
   Author: Marc Moffett
   Journal: "Episteme: A journal of social epistemology"
+  Type: article
   Year: 2007
   Pages: 352-367
   Volume: 4
   Owner: erik
   Timestamp: 2014.12.09
+
+-
+  id: montague1974a
+  Title: The Proper Treatment of Quantification in Ordinary English
+  Author: Richard Montague
+  BookTitle: Formal Philosophy
+  Type: chapter
+  Publisher: Yale University
+  Year: 1974
+  File: montague1974a.pdf:montague1974a.pdf:PDF
+  Url: https://app.box.com/s/s5503joh3gshi09kygue2dhdk7xbq68o
 
 -
   id: murray2010
@@ -999,6 +1307,7 @@
   Title: Varieties of update
   Author: Sarah E. Murray
   Journal: Semantics and Pragmatics
+  Type: article
   Year: 2014
   Month: March
   Number: 2
@@ -1009,27 +1318,98 @@
   Keywords: update semantics, evidentials, parentheticals, appositives, mood, hedges
   Owner: erik
   Timestamp: 2014.06.03
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/gksdg1ul62z37h56uu2gioyb45pjqkuo
+
+-
+  id: nunberg1995
+  Title: Transfers of Meaning
+  Author: Geoffrey Nunberg
+  Journal: Journal of Semantics
+  Type: article
+  Year: 1995
+  Pages: 109--132
+  Volume: 12
+  File: nunberg1995.pdf:nunberg1995.pdf:PDF
+  Keywords: language
+  Owner: Erik
+  Timestamp: 2009.09.21
+  Url: https://app.box.com/s/xd50rjgnkcunkjlmk84u8c9g0g1a79iw
+
+-
+  id: partee1991
+  Title: Topic, Focus, and Quantification
+  Author: Barbara H. Partee
+  BookTitle: SALT I
+  Type: chapter
+  Year: 1991
+  Editor: Steve Moore and Adam Wyner
+  File: :partee1991.pdf:PDF
+  Keywords: language
+  Owner: EHOVERSTEN
+  Timestamp: 2010.07.09
+  Url: https://app.box.com/s/o7ct366divwsukezgfuth20nsw2opujs
+
+-
+  id: partee1973
+  Title: Some Structural Analogies between Tenses and Pronouns in English
+  Author: Barbara Hall Partee
+  Journal: The Journal of Philosophy
+  Type: article
+  Year: 1973
+  Volume: 70
+  Number: 18
+  Pages: 601-609
+  Url:
+    - http://www.jstor.org/stable/2025024
+    - https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur
+
+-
+  id: peirce1877
+  Title: The Fixation of Belief
+  Journal: Popular Science Monthly
+  BookTitle: Philosophical Writings of Peirce
+  Type: chapter
+  Author: Charles Sanders Peirce
+  Editor: Justus Buchler
+  Year: 1877
+  Publisher: Dover Publications, Inc.
+  Location: New York
 
 -
   id: plunkett2013
   Title: Disagreement and the semantics of normative and evaluative terms
   Author: David Plunkett and Timothy Sundell
-  Journal: Philosopher s Imprint
+  Journal: Philosopher's Imprint
+  Type: article
   Year: 2013
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/m62bim7eu2y6cu6y8swk6fsa7uzn43uz
 
 -
   id: portner1997
   Title: The Semantics of Mood, Completion, and Conversational Force
   Author: Paul Portner
   Journal: Natural Language Semantics
+  Type: article
   Year: 1997
   Pages: 167-212
   Volume: 5
   Owner: erik
   Timestamp: 2015.03.07
+
+-
+  id: portner2007
+  Title: Imperative and modals
+  Author: Paul Portner
+  Journal: Natural Language Semantics
+  Type: article
+  Year: 2007
+  Volume: 15
+  Pages: 351-383
+  DOI: 10.1007/s11050-007-9022-y
+  Abstract: "Imperatives may be interpreted with many subvarieties of directive force, for example as orders, invitations, or pieces of advice. I argue that the range of meanings that imperatives can convey should be identiﬁed with the variety of interpretations that are possible for non-dynamic root modals (what I call ‘priority modals’), including deontic, bouletic, and teleological readings. This paper presents an analysis of the relationship between imperatives and priority modals in discourse which asserts that, just as declaratives contribute to the Common Ground and thus provide information relevant to the interpre-tation of epistemic modals in subsequent discourse, imperatives contribute to another component of the discourse context, the addressee’s To-Do List, which serves as a contextual resource for the interpretation of priority modals. This analysis predicts that the interpretation of imperatives and modals in discourse is constrained in surprising ways; these predictions are borne out."
+  Url: https://app.box.com/s/10nh6c5013mlrll5nw3ktmnuhmv0lbty
 
 -
   id: potts2005
@@ -1038,6 +1418,7 @@
   Year: 2005
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/e1gsru1h0pfxxi8m9kfv4ohgfqlnumqb
 
 -
   id: rawls1971
@@ -1061,26 +1442,31 @@
   Title: Plurals
   Author: Augustin Rayo
   Journal: Philosophical Compass
+  Type: article
   Year: 2006
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/rb7jo3a7aa1q0pz7rkhrhkx028cu1a68
 
 -
   id: richard2004
   Title: Contextualism and relativism
   Author: Mark Richard
   Journal: Philosophical Studies
+  Type: article
   Year: 2004
   Pages: 215-242
   Volume: 119
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/px3nntvtxwx5zj8ze8szp2dsawxmjf67
 
 -
   id: roberts1998
   Title: Focus, the Flow of Information, and Universal Grammar
   Author: Craige Roberts
-  Booktitle: "Syntax and Semantics: The Limits of Syntax"
+  BookTitle: "Syntax and Semantics: The Limits of Syntax"
+  Type: chapter
   Publisher: Academic Press
   Year: 1998
   Editor: Peter Culicover and Louise McNally
@@ -1088,12 +1474,14 @@
   Keywords: language
   Owner: erik
   Timestamp: 2010.07.09
+  Url: https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno
 
 -
   id: roberts2004
   Title: Context in Dynamic Interpretation
   Author: Craige Roberts
-  Booktitle: The Handbook of Pragmatics
+  BookTitle: The Handbook of Pragmatics
+  Type: chapter
   Publisher: Black
   Year: 2004
   Editor: Laurence Horn and Gregory Ward
@@ -1101,13 +1489,14 @@
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.06.20
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/u9gnpxwsijzixsbwcg39qquypxcydgy9
 
 -
   id: rooth1992
   Title: A Theory of Focus Interpretation
   Author: Mats Rooth
   Journal: Natural Language Semantics
+  Type: article
   Year: 1992
   Pages: 75--116
   Volume: 1
@@ -1115,7 +1504,7 @@
   Keywords: language
   Owner: Erik
   Timestamp: 2009.09.21
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw
 
 -
   id: rooth1985
@@ -1134,6 +1523,7 @@
   Year: 2014
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/07oo1en1x7yzewexrrvbonapq7sqlxfx
 
 -
   id: schaffer2014a
@@ -1142,6 +1532,7 @@
   Year: 2014
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/gdn22aczfacoht4riaf1l9iwhpauj1xg
 
 -
   id: schaffer-ms
@@ -1151,15 +1542,17 @@
   Year: 2014
   File: schaffer-ms.pdf:schaffer-ms.pdf:PDF
   Journal: Forthcoming
+  Type: article
   Owner: erik
   Timestamp: 2014.12.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/wd1n4150u0f5c4hxug61ac9x0cy4c4x6
 
 -
   id: schurz2008
   Title: Patterns of abduction
   Author: G. Schurz
   Journal: Synthese
+  Type: article
   Year: 2008
   Pages: 201-234
   Volume: 164
@@ -1172,6 +1565,7 @@
   Title: "Focus Interpretations: Comments on Geurts and van der Sandt"
   Author: Roger Schwarzschild
   Journal: Theoretical Linguistics
+  Type: article
   Year: 2004
   Number: 1
   Pages: 137--147
@@ -1180,13 +1574,14 @@
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.07.09
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/hzc7htd8khcp5g0jquaqjzlnxaxdm79d
 
 -
   id: schwarzschild1999
   Title: Givenness, AvoidF, and Other Constraints on the Placement of Accent
   Author: Roger Schwarzschild
   Journal: Natural Language Semantics
+  Type: article
   Year: 1999
   Pages: 141--177
   Volume: 7
@@ -1194,13 +1589,34 @@
   Keywords: language
   Owner: EHOVERSTEN
   Timestamp: 2010.07.09
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/c47sqov0a4gmmv46vnpu0drn61a73xx8
+
+-
+  id: schwarzschild1994
+  Title: Plurals, Presuppositions, and the Sources of Distributivity
+  Author: Roger Schwarzschild
+  Journal: Natural Language Semantics
+  Type: article
+  Year: 1994
+  Volume: 2
+  Pages: 201-248
+  Publisher: Kluwer Academic Publishers
+  Abstract: "This paper begins with a discussion of CUMULATIVITY (e.g., 'P(a) & P(b) implies P(a+b)'), formalized using a verb phrase operator. Next, the meanings of distribu- tivity markers such as each and non-distributivity indicators such as together are considered. An existing analysis of each in terms of quantification over parts of a plurality is adopted. However, together is problematic, for it involves a cancellation or negation of the quantification associated with each. (The four boys together owned exactly three cars could not be true if each of the boys owned three cars, though the same sentence without together could be.) A refinement of this idea of negated quantification over parts is proposed as an analysis for non-distributivity operators. It is then worked out in the system described in Cooper (1983), in which positive and negative extensions are assigned. Presuppositions connected with plural refer- ence are considered at this point as well. Finally, the cumulativity operator is argued to be quantificational and therefore sensitive to contextual domain selection. This context sensitivity is claimed to be the source of distributive readings that appear in the absence of modifiers like each and non-distributive or collective readings that arise without together."
+  Url: https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2
+
+-
+  id: sider2013
+  Title: Writing the Book of the World
+  Author: Theodore Sider
+  Publisher: Oxford University Press Uk
+  Year: 2013
 
 -
   id: spenader2003
   Title: Factive Presuppositions, Accommodation and Information Structure
   Author: Jennifer Spenader
   Journal: Journal of Logic, Language and Information
+  Type: article
   Year: 2003
   Number: 3
   Pages: 351--368
@@ -1215,18 +1631,21 @@
   Title: Contrast as Denial in Multi-Dimensional Semantics
   Author: Jennifer Spenader and Emar Maier
   Journal: Journal of Pragmatics
+  Type: article
   Year: 2009
   Pages: 1707--26
   Volume: 41
   Abstract: "We argue that contrastive statements have the same underlying semantics and affect the context in the same way as denials. We substantiate this claim by giving a unified account of the two phenomena that treats contrast as a subtype of denial. This analysis crucially requires a dynamic semantics view of context-dependence with a multi-dimensional representation of information."
   Owner: erik
   Timestamp: 2014.10.05
+  Url: https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel
 
 -
   id: stalnaker2002
   Title: Common Ground
   Author: Robert Stalnaker
   Journal: Linguistics and Philosophy
+  Type: article
   Year: 2002
   Number: 5-6
   Pages: 701--721
@@ -1240,6 +1659,7 @@
   Title: On the Representation of Context
   Author: Robert Stalnaker
   Journal: Journal of Logic, Language and Information
+  Type: article
   Year: 1998
   Number: 1
   Pages: 3--19
@@ -1264,6 +1684,7 @@
   Title: Possible worlds and situations
   Author: Robert Stalnaker
   Journal: Journal of Philosophical Logic
+  Type: article
   Year: 1986
   Number: 1
   Pages: 109--123
@@ -1271,16 +1692,40 @@
   File: stalnaker1986.pdf:stalnaker1986.pdf:PDF
   Owner: erik
   Timestamp: 2014.12.07
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/deugrupb5gc7enn4ynyo0cqqb0ctcxkn
+
+-
+  Type: article
+  id: stalnaker1978
+  Year: 1978
+  Publisher: New York Academic Press
+  Author: Robert Stalnaker
+  Pages: 315-332
+  Volume: 9
+  Journal: Syntax and Semantics New York Academic Press
+  Title: Assertion
+
+-
+  id: starr2010
+  Title: Conditionals, meaning, and mood
+  Author: William B. Starr
+  Department: Philosophy
+  Affiliation: Rutgers University
+  Year: 2010
+  Url: https://app.box.com/s/eeozbemt8rihbeu67pwnvtnvw3igb1ij
 
 -
   id: starr2014
-  Title: What If ?
+  Title: What If?
   Author: William Starr
-  Journal: Philosopher s Imprint
+  Journal: Philosopher's Imprint
+  Type: article
   Year: 2014
   Owner: erik
   Timestamp: 2014.12.08
+  Url: 
+    - https://app.box.com/s/w8b4n3cknragrw0hdceh0uwgr9k5vnw2
+    - http://quod.lib.umich.edu/cgi/p/pod/dod-idx/what-if.pdf?c=phimp;idno=3521354.0014.010
 
 -
   id: starr2014a
@@ -1304,32 +1749,37 @@
   Title: Reference to possible worlds
   Author: Matthew Stone
   Journal: Technical Report 49, Rutgers University Center for Cognitive Science
+  Type: article
   Year: 1999
   File: stone1999.PDF:stone1999.PDF:PDF
   Keywords: language
   Owner: Erik
   Timestamp: 2010.12.21
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/o6pk81wn5kb201sgqcju1r5ag1gvl893
 
 -
   id: sundell2011
   Title: Disagreement, error, and an alternative to reference magnetism
   Author: Timothy Sundell
   Journal: Australasian Journal of Philosophy
+  Type: article
   Year: 2011
   Pages: 1-17
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/ov8x1rpt5sxeq18hg4g5yw175jouqobd
 
 -
   id: szabo2005
   Title: The distinction between semantics and pragmatics
   Author: Zolta&#x0301;n Gendler Szabo&#x0301;
-  Booktitle: The Oxford Handbook of the Philosophy of Language
+  BookTitle: The Oxford Handbook of the Philosophy of Language
+  Type: chapter
   Publisher: Oxford University Press
   Year: 2005
   Owner: erik
   Timestamp: 2014.12.07
+  Url: https://app.box.com/s/7sjilmbprwny5lz1g7ls62bpjgmlwst6
 
 -
   id: thomason
@@ -1340,7 +1790,7 @@
   File: thomason.pdf:thomason.pdf:PDF
   Owner: erik
   Timestamp: 2011.11.23
-  Url: https://app.box.com/language-library
+  Url: https://app.box.com/s/1ij581mylhax7m5but72l06dttvkr6xf
 
 -
   id: veltmg
@@ -1356,6 +1806,7 @@
   Title: Defaults in Update Semantics
   Author: Frank Veltman
   Journal: Journal of Philosophical Logic
+  Type: article
   Year: 1996
   Number: 3
   Pages: 221--261
@@ -1364,6 +1815,7 @@
   File: veltman1996.pdf:veltman1996.pdf:PDF
   Owner: erik
   Timestamp: 2014.10.05
+  Url: https://app.box.com/s/bv4966xcvl23hm6niswip2das9g99ilr
 
 -
   id: wagner-ms1
@@ -1380,6 +1832,17 @@
   Year: 2014
   Owner: erik
   Timestamp: 2014.12.07
+
+-
+  id: westera2012
+  Title: "Meanings as proposals: a new semantic foundation for Gricean pragmatics"
+  Author: Matthijs Westera
+  Department: Institute for Logic, Language, and Computation
+  Affiliation: University of Amsterdam
+  Journal: SemDial
+  Year: 2012
+  Type: article
+  Url: http://bit.ly/1QjHzBr
 
 -
   id: williamson2000
@@ -1400,35 +1863,13 @@
   Timestamp: 2014.12.07
 
 -
-  id: bittner2011
-  Title: Time and modality without tenses or modals
-  Author: Maria Bittner
-  Booktitle: Tenses across Languages
-  Publisher: Niemeyer, Tubingen
-  Year: 2011
-  Editor: R. Musan \& M. Rathert
-  File: :bittner2011.pdf:PDF
-  Keywords: semantics-drefs, language, semantics-attitudes
-  Owner: Erik
-  Timestamp: 2010.12.21
-  Url: https://app.box.com/language-library
-
--
-  id: bontly2005
-  Title: "Modified Occam { \textquoteright } s Razor: Parsimony, Pragmatics, and the Acquisition of Word Meaning"
-  Author: Thomas Bontly
-  Journal: Mind \& Language
-  Year: 2005
-  Number: 3
-  Pages: 288--312
-  Volume: 20
-  File: :bontly2005.pdf:PDF
-  Owner: erik
-  Timestamp: 2011.11.22
-  Url: https://app.box.com/language-library
-
--
-  id: hicks2014
-  Title: The Epistemic Role Account of Lawhood
-  Author: M. Townsen Hicks
-  Year: ms
+  Type: article
+  id: zagzebski2003
+  Year: 2003
+  Pages: 12-28
+  Journal: Metaphilosophy
+  Number: 1-2
+  Publisher: Wiley-Blackwell
+  Author: Linda Zagzebski 
+  Bolume: 34
+  Title: The Search for the Source of Epistemic Good

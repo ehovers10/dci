@@ -6,6 +6,8 @@ There is no shortage of responses to the Meno Problem. Some have tried to take t
 
 Others have denied the presupposition, suggesting that value need not attach to intrinsic properties of states. For instance, it is natural to maintain that knowledge is not a mere product, but a product *of this reliable belief forming process*. This approach is similar to that advocated by those who take personal identity to determined by mental states arising *from this brain*, or those who take just distributive policies to be those that follow from principles settled upon *by the participants in the original position*. On this view, knowledge is operationally defined. It's value is grounded in its formation history, but this is not an independent feature, for knowledge is a state conjoined with a causal history.
 
++ The problem is that *possessing* knowledge is what is thought to be of value, but possessing a reliably formed true belief does one nothing that is not provided by possession of any old true belief.
+
 ### Zagzebski on the value problem
 
 Linda Zagzebski's characterization of what she calls *the value problem* is that all definitions of knowledge that take it to be a value conferring property conjoined to a state of true belief will end up having the value of the conjoined property swamped by the value provided merely by the truth of the belief.

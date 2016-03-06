@@ -3,26 +3,30 @@ title: Knowledge in the image of inquiry
 date: 2015-10-08
 level: 2
 type: chapter
-abstract: kitioi-abs
+abstract: 
+  It is commonly held that knowledge is the end of inquiry, but if we take this connection seriously, there are significant implications for our understanding of the nature of knowledge. I propose to take at face value the idea that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, and so, then is knowledge. This idea has important consequences for explaining the distinctive value of knowledge over true belief and for the contextualism/relativism debate in epistemology.
+toc: yes
 ---
 
-## Knowledge in the image of inquiry
+## The end of inquiry
 
-It is commonly held that truth is the end of inquiry. But it isn't truth itself that is to be found at the end of inquiry; instead, it is recognition and acceptance of the truth that the inquirer is after. The end of inquiry is being in some *cognitive* state with true propositions as its content.[^Truth]
+Inquiry is, according to Robert Stalnaker {% include ref.html id="stalnaker1987" o="" e="," %} "the enterprise of forming, testing, and revising beliefs". This is a goal-directed enterprise. Both the impetus for forming, testing, and revising beliefs and the procedure of doing so are understood in terms of their contribution to the achievement of some end. 
 
-[^Truth]: Peirce, and others following in his wake, suggested that the most we can hope for at the end of inquiry is the *settlement of opinion*, for:
+It is tempting to maintain that the {% include concept.html word='end of inquiry' %} is truth. While possession of the truth may be what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. The goal of engaging in inquiry is to achieve a *cognitive* state with true propositions as its content.
+
+In contrast, C.S. Peirce and others following in his wake {% include ref.html id="levi1980" o="n" e="," %} have suggested that truth is too lofty a goal; that the most we can genuinely hope for at the end of inquiry is the *settlement of opinion*, for:
   
-    > "as soon as a firm belief is reached we are entirely satisfied, whether the belief be true or false. And it is clear that nothing out of the sphere of our knowlege can be our object, for nothing which does not affect the mind can be the motive for mental effort. The most that can be maintained is, that we seek for a belief that we shall *think* to be true. But we think each one of our beliefs to be true, and indeed, it is mere tautology to say so." (*The Fixation of Belief*, p. 11)
+> "it is clear that nothing out of the sphere of our knowlege can be our object, for nothing which does not affect the mind can be the motive for mental effort. The most that can be maintained is, that we seek for a belief that we shall *think* to be true. But we think each one of our beliefs to be true, and indeed, it is mere tautology to say so." {% include ref.html id="peirce1877" o="n" e="" p="11" %}
     
-    We could save save the common line of thinking by *defining* truth as the end of inquiry. Or we could have our correspondence-truth cake and eat it, too, by defining a restricted category of *proper* inquiry that can be reliably expected to result in true belief. I propose to take this second line.
+In response, we could take the pragmatist bait and insist that truth is the end of inquiry simply because whatever is output from the process of inquiry *just is* truth. But we needn't take this line. We can cleave to a correspondence account of truth while maintaining that final aim of inquiry involves {% include concept.html word='wide content' %} by delimiting a natural, restricted category of *proper* inquiry that can be reliably expected to produce true propositions. 
 
-Proper inquiry is a rule governed process. Following time tested rules in one's inquiry has the practical advantage of more frequently leading one to the goal, but in addition, the cognitive state that the inquirer seeks is *praiseworthy*, and one does not garner praise simply by stumbling onto true propositions. One must undertake the process, following the rules along the way, to reach the end of inquiry.[^Norm] The end of inquiry is a *normative*, cognitive state with true propositions as its content. As such, inquiry is a process that reliably produces justified, true beliefs. Modulo Gettier-type complications, the end of inquiry is *knowledge*.
+Principally, proper inquiry is a rule governed process. Rule-following has the practical advantage of improving the reliability of the inquiry, but the connection to rule following is a conceptual one. The cognitive state that the inquirer seeks is *praiseworthy*, and one does not garner praise simply by stumbling onto true propositions. Undertaking the process of inquiry is important to earning the accolades that come with possessing the truth. 
 
-[^Norm]: Undertaking the process of inquiry is important to earning the accolades that come with possessing the truth.
+The end of inquiry, then is a valuable, cognitive state with true propositions as its content. Specifically, proper inquiry is a process that reliably produces justified, true belief. Modulo Gettier-type complications, the end of inquiry is *knowledge*.
 
-This is not a novel idea. In fact, it is a natural starting point for investigation of the nature of inquiry. If we have a solid understanding of the nature of knowledge, we can use the *end of* connection to extend our understanding to encompass inquiry. But we don't have a solid understanding of the nature of knowledge, and connections go both ways. I propose to use the model of discourse dynamics developed earlier as characterizing the basic structure of proper inquiry, to take at face value the idea that the outputs of the process of inquiry are knowledge, and thereby to provide insight into the structure of the knowledge relation.
+If we had a solid understanding of the nature of knowledge, we could use the *end of* connection to extend our understanding to encompass inquiry as well. But the nature of knowledge is highly contested, and connections go both ways. I propose to investigate the basic structure of proper inquiry by looking to specific historical accounts of its importance, to take at face value the idea that the outputs of the process of inquiry are knowledge, and thereby to provide insight into the structure of the knowledge relation.
 
-It will turn out along the way that this idea has important consequences for explaining the distinctive value of knowledge over true belief, and for the contextualism/relativism debate in epistemology.
+The key insight that arises from this investigation into proper inquiry is that it is a deeply collaborative process. By way of the *end of* connection, we have reason to represent the knowledge relation as similarly collaborative. In one sense, this idea is quite radical, in that it seems to eliminate the potential for solipsitic knowledge. But we can perhaps buff a few of the burrs off this conceptual edge, and the proposal garners support from the puzzles it can help to solve.
 
 * * * * *
 {: class="divider"}

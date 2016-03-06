@@ -1,7 +1,17 @@
 {% assign chlist = site.chapters | where: "type","chapter" | sort: "level" %}
+<ul class="nav">
+<li>{{ site.title | append: '<br />by ' | append: site.author }}</li>
+<li><a href="{{ '/toc.html' | prepend: site.baseurl }}">Table of contents</a></li>
+<li><a href="#" id="chap" class="open">Chapters</a></li>
+<ul class="nav2 hid" id="chap-hid">
 {% for chapter in chlist %}
-{% assign tone="" %}
-{% if chapter.title == page.title %}{% assign tone='red' %}{% endif %}
-+ [{{ chapter.title }}]({{ chapter.url | prepend: site.baseurl }}){% endfor %}
-+ {% for app in site.appendices %}[{{ app.title }}]({{ app.url | prepend: site.baseurl }}){% unless forloop.last %} | {% endunless %}{% endfor %}
-{: .nav}
+<li><a href="{{ chapter.url | prepend: site.baseurl }}">{{ chapter.title }}</a></li>
+{% endfor %}
+</ul>
+<li><a href="#" id="appen" class="open">Appendices</a></li> 
+<ul class="nav2 hid" id="appen-hid">
+{% for app in site.appendices %}
+<li><a href="{{ app.url | prepend: site.baseurl }}">{{ app.title }}</a></li>
+{% endfor %}
+</ul>
+</ul>

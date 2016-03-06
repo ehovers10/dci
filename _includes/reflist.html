@@ -1,7 +1,11 @@
 {% if carol %}
 {% assign betty = carol | split: ' ' | sort %}
+
 <ul>
 {% for ref in betty %}
+  {% if ref == previous %}
+    {% continue %}
+  {% else %}
   {% for item in site.data.dissbib %}
     {% if item.id == ref %}
       {% assign lucy = item %}
@@ -14,7 +18,7 @@
   {% assign skip = '' %}
   {% assign last = '' %}
   {% assign alsoskip = '' %}
-  <li style="list-style-type:none;margin-bottom:0.5em;padding-left:1em;text-indent:-1em;"><a name="lucy-{{ name[1] }}"></a>
+  <li style="list-style-type:none;margin-bottom:0.5em;padding-left:1em;text-indent:-1em;"><a name="ref-{{ name[1] }}"></a>
 <span>
 {% if lucy.Author contains ' and ' %}
   {% assign last = arrlen %}
@@ -68,6 +72,8 @@
 <span>{{ lucy.Year | append: '.' }}</span>
 
 {% if lucy.Url %}<a hlucy="{{ lucy.Url }}">{{ lucy.Url }}</a>{% endif %}</li>
+{% assign previous = ref %}
+{% endif %}
 {% endfor %}
 </ul>
 {% endif %}

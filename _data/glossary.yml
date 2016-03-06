@@ -8,6 +8,7 @@
     - conversational space
     - context set
     - work space
+  biblio: stalnaker2002
 
 - name: scoreboard
   definition:
@@ -17,6 +18,7 @@
     - context set
     - question under discussion
     - plan of inquiry
+  biblio: lewis1979f
     
 - name: assertion
   definition:
@@ -26,6 +28,9 @@
     - question
     - command
     - speech act
+  biblio:
+    - stalnaker1978
+    - williamson2000
     
 - name: question
   definition:
@@ -36,6 +41,34 @@
     - assertion
     - conjecture
     - correction
+  biblio:
+    - hamblin1958
+    - groenendijk1984
+    - roberts1998
+
+- name: focus
+  definition: 
+    An information structuring device of natural language. It serves to divide the content conveyed into parts based on the role they play in the broader dicourse. A principle such division is between given and new information. In English, focus is usually realized as intonational stress.
+  related:
+    - contrast
+    - theme
+    - rheme
+    - comment
+    - topic
+    - intonational stress
+  biblio:
+    - rooth1985
+    - glanzberg2005
+    
+- name: felicity
+  definition:
+    A pragmatic judgement that an utterance is approapriate in the discourse context.
+  related:
+    - pragmatic
+    - intuition
+    - 
+  biblio: rooth1985
+
     
 - name: issue
   definition:
@@ -43,6 +76,10 @@
   related:
     - question
     - topic
+  biblio:
+    - groenendijk2009
+    - ciardelli2009
+    - anderbois2010
 
 - name: conjecture
   definition:
@@ -54,11 +91,45 @@
     - speech act
     - speculation
     
-- name: inquiry
+- name: initiation
   definition:
-    The enterprise of forming, testing, and revising beliefs (Stalnaker 1987).
+    An utterance that constitutes the opening phase of a contribution to inquiry. An initiation is paired with a completion, and the resulting discourse pair provides the contribution to the inquiry.
+  related:
+    - completion
+    - discourse pair
+    - utterance
+    - contribution
+  biblio: clark1992a
+  
+- name: completion
+  definition:
+    An utterance that constitutes the closing phase of a contribution to inquiry. A completion is paired with an initiation, and the resulting discourse pair provides the contribution to the inquiry.
+  related:
+    - initiation
+    - discourse pair
+    - utterance
+    - contribution
+  biblio: clark1992a
+
+- name: coherence
+  definition:
+    Integration among utterances in a discourse. Coherence is related to truth conditional content and anaphora resolution in that language users have intutions about discourse coherence. Coherence is a gradeable concept.
   related:
     - discourse
+    - semantics
+    - contribution
+    - utterance
+  biblio: 
+    - grosz1995
+    - kehler2000
+
+
+- name: inquiry
+  definition:
+    The enterprise of forming, testing, and revising beliefs.
+  related:
+    - discourse
+  biblio: stalnaker1987
     
 - name: collaboration
   definition:
@@ -69,6 +140,7 @@
     
 - name: correction
   definition:
+    An attempted contribution to inquiry that involves a *denial* of some element of the preceding attempted contribution to discourse and a *positive contribution* that is related in a salient way to the preceding attempted contribution.
   related:
     - assertion
     - question
@@ -76,6 +148,15 @@
     - speech act
     - conjecture
     - contrast
+    
+- name: correctible
+  definition:
+    An utterance that initiates a coherent discourse involving correction.
+  related:
+    - correction
+    - conjecture
+    - coherence
+  biblio: 
     
 - name: contrastive topic
   definition: 
@@ -246,3 +327,32 @@
   definition:
     Mental content that essentially involves a part of the mind-external world.
   related:
+    - narrow content
+  biblio: williamson2000
+    
+- name: propositional radical
+  definition:
+    A semantically incompled or underspecified sentence content. The content requires filling out in order to be interpreable. Generally, the extra-linguistic context serves to complete the radical. 
+  related:
+    - proposition
+    - concept
+    - completion
+  biblio: bach1994
+
+- name: propositional completion
+  definition:
+    A semantic element that fills out a propositional radical to turn it into a semantically interpretable proposition. Generally supplied by extra-linguistic context.
+  related:
+    - saturation
+    - elaboration
+    - propositional radical
+  biblio: bach1994
+
+- name: repair strategy
+  definition:
+    A linguistic move to attempt to highlight and adjust for a failure in uptake of a previous element of discourse. Frequently used to accommodate a missing presupposition.
+  related:
+    - presupposition
+    - accommodation
+    - focus
+  biblio: vonfintel2004

@@ -1,0 +1,62 @@
+-
+  chapter: Knowledge in the image of inquiry
+  sections:
+  - title: Knowledge and the end of inquiry
+    subsections:
+  - title: Collaborative inquiry
+    subsections:
+    - title: Belief revision
+    - title: Error avoidance and seeking truth
+    - title: Millian inquiry
+  - title: The value of knowledge
+    subsections:
+    - title: Swamped by truth
+    - title: Justifying processes
+    - title: Knowledge and assertion
+    - title: Norms and commitments
+  - title: Dispute and relativism
+    subsections:
+    - title: Disagreement as linguistic data
+    - title: Contextualism and relativism
+    - title: The centrality of dispute
+    - title: A new argument for relativism
+
+-
+  chapter: Collaborative update semantics
+  sections:
+    - title: Scoreboards and best systems
+      subsections:
+        -title: Simplicity and realism
+    - title: General update semantics
+      subsections:
+        - title: Speech acts and contributions
+        - title: Content at different dimensions
+    - title: Collaborative contributions
+      subsections:
+        - title: Utterance determination and inquiry advancement
+        - title: Discourse pairs
+        - title: Accuracy and precision
+        - title: Conjecture and correction
+    - title: Sandboxes and versions
+      subsections: 
+        - title: Checkout, commit, merge
+        - title: Defaults and content evolution
+
+-
+  chapter: Dispute in discourse
+  sections:
+  - title: Disputative discourse
+    subsections:
+  - title: Contrastive topic
+    subsections:
+    - title: Focus and alternatives
+    - title: Questions under discussion
+    - title: Plans of inquiry
+  - title: Denial and correction
+    subsections:
+    - title: Layered discourse representation theory
+    - title: Binding retraction
+  - title: Collaborative update semantics
+    subsections:
+    - title: Plurals and precision
+    - title: Correction and nuance

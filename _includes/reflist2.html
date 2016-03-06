@@ -1,22 +1,18 @@
----
-title: Bibliography
-level: 6
-type: chapter
----
+  {% for item in site.data.dissbib %}
+    {% if item.id == include.id %}
+      {% assign lucy = item %}
+    {% endif %}
+  {% endfor %}
 
-{% assign biblio = site.data.dissbib %}
-
-<ul class="bib">
-{% for item in biblio | sort %}
-  {% assign name = item.Author | split: ' ' %}
+  {% assign name = lucy.Author | split: ' ' %}
   {% assign len = name | size %}
   {% assign arrlen = len | minus: 1 %}
   {% assign skip = '' %}
   {% assign last = '' %}
   {% assign alsoskip = '' %}
-  <li><a name="ref-{{ name[1] }}"></a>
+  <li style="list-style-type:none;margin-bottom:0.5em;padding-left:1em;text-indent:-1em;"><a name="ref-{{ name[1] }}"></a>
 <span>
-{% if item.Author contains ' and ' %}
+{% if lucy.Author contains ' and ' %}
   {% assign last = arrlen %}
   {% if name[2] == 'and' %}
     <span>{{ name[1] | append: "," }}</span>
@@ -61,41 +57,10 @@ type: chapter
   {% endif %}
 {% endfor %}</span>
 
-{% assign tend = item.Title | slice: -1, 1 %}
-<span><em>{{ item.Title | append: '.' }}</em></span>
+<span><em>{{ lucy.Title | append: '.' }}</em></span>
 
-<span>
-{% if item.Type == 'Article' or item.Type == 'article' %}
-  <span>{{ item.Journal }}</span>
-  {% if item.Volume %}
-    {% if item.Number %}
-    <span>{{ item.Volume | prepend: " " | append: '.' | append: item.Number | append: '.' }}</span>
-    {% else %}
-      <span>{{ item.Volume | prepend: " " | append: '.' }}</span>
-    {% endif %}
-  {% endif %}
-{% elsif item.Type == 'chapter' %}
-  {% if item.BookTitle %}
-    <span>{{ item.BookTitle | append: '.' }}</span>
-  {% endif %}
-  <span>{{ item.Publisher | append: '.' }}</span>
-  {% if item.Location %}
-    <span>{{ item.Location | append: "." }}</span>
-  {% endif %}
-{% elsif item.Booktitle %}
-  <span>{{ item.Booktitle | append: '.' }}</span>
-{% endif %}
-</span>
+<span>{% if lucy.Journal %}{{ lucy.Journal | append: '.' }}{% elsif lucy.Publisher %}{{ lucy.Publisher | append: '.' }}{% elsif lucy.Booktitle %}{{ lucy.Booktitle | append: '.' }}{% endif %}</span>
 
-<span>{{ item.Year | append: '.' }}</span>
+<span>{{ lucy.Year | append: '.' }}</span>
 
-{% if item.Url %}
-  <ul class="bib2">
-  {% for link in item.Url %}
-    <li><a href="{{ item.Url }}" target="_blank">{{ link }}</a></li>
-  {% endfor %}
-  </ul>
-{% endif %}
-{% endfor %}
-</li>
-</ul>
+{% if lucy.Url %}<a hlucy="{{ lucy.Url }}">{{ lucy.Url }}</a>{% endif %}</li>

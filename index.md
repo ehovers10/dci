@@ -1,6 +1,6 @@
 ---
 title: Discourse as collaborative inquiry
-subtitle: a dissertation in semantico-pragmatic theory
+subtitle: a dissertation
 author: Erik Hoversten
 type: home
 ---
@@ -12,6 +12,12 @@ In many ways, inquiry is a similar endeavor to wall-building. {% include concept
 I think that conversation commonly realizes a collaborative inquiry, in the sense that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to both motivate this idea and provide a model for how it is implemented. 
 
 The principle departure point for the discussion is the speech act of {% include concept.html word='conjecture.' base='conjecture' %} In the course of conversation, individuals will ocassionally put forward information for which they do not possess conclusive evidence. Sometimes, the basis for such a maneuver is laziness, deceit, or obstinance. But often, this kind of move is just what the conversation needs to move forward. For instance, in brainstorming sessions, the scientific context of discovery, or tip-of-the-tongue style paralysis, discurrsants set aside the restriction that all contributions be considered to be accurate in favor of entering into the {% include concept.html word='conversational record' base='common ground' %} something that the parties can use as a jumping off point. In these situations, speculative informational profferments form an important part in advancing the inquiry. 
+
+A conjecture needs to be vetted, and the canonical response to a conjecture is a move that provides this -- a {% include concept.html word="correction." %} Corrections can take many forms, but they normally involve two parts, a *denial* of some portion of the information previously put forward and a *substitution* for the denied information. The conjecture lays a rough foundation, and the correction builds upon it.
+
+The dual conversational moves of conjecture and correction are what I call a {% include concept.html word='discourse pair.' %} The key precept of collaborative discourse dynamics is that discourse pairs are the basic units by which {% include concept.html word="contributions" base="contribution" %} to the inquiry are made. That is, we do not represent the conjecturer and corrector as each providing indvidually complete and jointly cooperative contributions to the discourse. Instead, the conjecture/correction pair together contribute to the inquiry; the parts are individually inert.
+
+The project of using the notion of discourse pairs to develop and motivate a theory of collaborative {% include concept.html word='discourse dynamics' %} has 3 parts: an exploration of the conceptual ties between inquiry and knowledge, a development of a theoretical framework couched in the tradition of update semantics, and an application of the framework to some practical issues in the pragmatics of disagreement. It begins with a project overview: 
 
 {% assign chlist = site.chapters | where: "type","chapter" | sort: "level" %}
 {% for chapter in chlist %}
