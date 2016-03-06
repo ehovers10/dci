@@ -67,7 +67,7 @@ Sarah Murray's articulated information states {% include ref.html id="murray2014
 
 Murray has also used the articulated information state framework to account for the distinctive role of *evidentials* in discourse. But this extension reveals an issue with the assertion as proposal framework. Since assertions don't have any independent impact on the common ground, their function is essentially incomplete. Interpretation must wait until the proposal passes the acceptance phase of the discourse. This is a problem because single utterances can involve coordinated informative and structuring updates. For instance: 
 
-{% include ex.html sent="[Sue danced]<sub>heard</sub>, and [Jim sang]<sub>saw</sub>." name="sing" %}
+{% include ex.html type="ex" sent="[Sue danced]<sub>heard</sub>, and [Jim sang]<sub>saw</sub>." name="sing" %}
     
 The second conjunct of the assertion requires a direct imposition on the common ground, but we are still in limbo after the first conjunct, which is merely proposed.
 

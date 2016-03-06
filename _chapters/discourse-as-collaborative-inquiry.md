@@ -133,7 +133,7 @@ But dispute can also be a fruitful tool for people involved in an honest, cooper
 
 Consider the following little discourse:
 
-{% include ex.html sent="Bears are dangerous." sub="[Grizzly]<sub>cf</sub> bears are dangerous." link="bears" %}
+{% include ex.html type="ex" sent="Bears are dangerous." sub="[Grizzly]<sub>cf</sub> bears are dangerous." link="bears" %}
 
 Pretheoretically, the response utterance seems to do two things:
 
@@ -156,7 +156,7 @@ The [Bears](#bears) dialogue is an example of felicitous use of contrastive focu
 
 Equally salient in the [Bears](#bears) dialogue is the disputative nature of the response statement. It seems to simultaneously *deny* the original statement and *substitute* an alternative to it. Let's call utterances with this dual function *corrections*. Jennifer Spenader and Emar Maier {% include ref.html id="spenader2009" %}, expanding on work of Maier and Bart Geurts {% include ref.html id="geurts1998a,geurtsa" %}, attempt to treat corrections as *downdating* the information state. On this proposal, the function of corrections is to remove from the discourse representation something that was previous added to it. A wrinkle is that corrections do not eliminate information wholesale. Consider, fo example:
 
-{% include ex.html sent="The movie was funny." sub="The movie wasn't [funny]<sub>f</sub>, it was [hilarious]<sub>f</sub>." %}
+{% include ex.html type="ex" sent="The movie was funny." sub="The movie wasn't [funny]<sub>f</sub>, it was [hilarious]<sub>f</sub>." %}
 
 Crucially, the correction above does not eliminate the information that the movie was funny. In fact, the replacement is perfectly compatible with this information. What the correction denies is the presupposition of the initial statement that the moview was *merely* funny. To account for the nuanced nature of corrections, Spendader and Maier develop their proposal within the framework of Layered Discourse Representation Theory (LDRT), in which information states are segmented and different information contributed to discourse is tagged and placed in different segments depending on its import. Corrections can eliminate information from one segment without affecting the information in any other segment.
 

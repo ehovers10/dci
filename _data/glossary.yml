@@ -356,3 +356,14 @@
     - accommodation
     - focus
   biblio: vonfintel2004
+
+- name: refinement
+  definition:
+    A connection among ideas in which the second idea highlights an over-looked distinction within the domain of the first idea. Belongs to the class of relative generality connections.
+  related:
+    - mereology
+    - resemblance
+    - coherence
+  biblio:
+    - kehler2000
+    - hume1777 

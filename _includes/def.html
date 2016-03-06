@@ -1,6 +1,6 @@
 {% assign defex = defex | plus: 1 %}
 
-<div style="margin:1em;" id="{{ term }}">
+<div style="margin:1em;" id="{{ include.term }}">
   <div style="margin-bottom:0.5em;">
   <span style="margin-right:0.5em;font-weight:600;">{{ defex | prepend: 'Definition ' }}</span><span>{{ include.term | prepend: ' (' | append: ') ' }}</span>
   </div>

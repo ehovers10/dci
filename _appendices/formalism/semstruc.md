@@ -78,4 +78,4 @@ is a *valuation* function that assigns type-relevant entities from **D** to each
 </div>
 
 {% endcapture %}
-{% include def.html term="Semantic structure" defn=semstrucdef link="semstruc" %}
+{% include ex.html type="def" term="Semantic structure" defn=semstrucdef link="semstruc" %}

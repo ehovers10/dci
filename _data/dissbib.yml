@@ -715,6 +715,17 @@
   Url: https://app.box.com/s/85fi58m68g4vhj8285rocfi1643uhc9e
 
 -
+  id: goodman1940
+  Journal: Journal of Symbolic Logic
+  Pages: 45-55
+  Title: The Calculus of Individuals and its Uses
+  Publisher: Association for Symbolic Logic
+  Number: 2
+  Author: Nelson Goodman and Henry Leonard
+  Year: 1940
+  Volume: 5
+
+-
   id: goodman1983
   Title: Fact, Fiction, and Forecast
   Year: 1983
@@ -1610,6 +1621,13 @@
   Author: Theodore Sider
   Publisher: Oxford University Press Uk
   Year: 2013
+
+-
+  id: simons1987
+  Publisher: Oxford University Press
+  Year: 1987
+  Author: Peter M. Simons
+  Title: "Parts: A Study in Ontology"
 
 -
   id: spenader2003

@@ -1,0 +1,21 @@
+{% assign ex = ex | plus: 1 %}
+{% if include.link %}<a name="{{ include.link }}"></a>{% endif %}
+<div style="margin:1em;" id="ex{{ ex }}">
+  <span style="margin-right:0.5em;">{{ ex }}.</span>
+{% if include.sub %}
+  <span style="margin-right:0.25em;">a.</span>
+  <span>{{ include.sent }}</span>
+  {% assign pop = 0 %}
+  {% assign snap = 'b,c,d' | split: ',' %}
+  {% assign subs = include.sub | split: ',' %}
+  {% for item in subs %}
+<div style="margin-left:1.6em;">
+  <span style="margin-right:0.25em;">{{ snap[forloop.index0] | append: '.' }}</span>
+  <span>{{ item }}</span>
+</div>
+  {% assign pop = pop | plus: 1 %}
+  {% endfor %}
+{% else %}
+  <span>{{ include.sent }}</span>
+{% endif %}
+</div>

@@ -152,7 +152,7 @@ The language of *collaborative update semantics* extends a first-order, model th
 {% include eqn.html lhs=somelhs rhs=somerhs mult=3 conn="=" %}
 
 {% endcapture %}
-{% include def.html term="Semantics" defn=semantics link="semantics" %}
+{% include ex.html type="def" term="Semantics" defn=semantics link="semantics" %}
 
 <!-- Notes -->
 The semantics provided above is largely standard. We highlight just a few specifics:

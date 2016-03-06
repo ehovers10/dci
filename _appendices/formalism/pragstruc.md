@@ -97,4 +97,4 @@ is sequence of *discourse referents* that provides a record of changes made to t
 </div>
 
 {% endcapture %}
-{% include def.html term="Pragmatic structure" defn=pragstrucdef link="pragstruc" %}
+{% include ex.html type="def" term="Pragmatic structure" defn=pragstrucdef link="pragstruc" %}

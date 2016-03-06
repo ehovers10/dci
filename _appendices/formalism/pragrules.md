@@ -35,7 +35,7 @@ u<sub>0</sub>..u<sub>n</sub> **&#x29c0;** &#x27e8; *dref* &#x27e9;
 {% include eqn.html lhs=drefupdatelhs rhs=drefupdaterhs mult=0 conn="&rArr;" %}
 
 {% endcapture %}
-{% include def.html term="Basic DRT" defn=basedrt link="basedrt" %}
+{% include ex.html type="def" term="Basic DRT" defn=basedrt link="basedrt" %}
 
 {% capture collabdynamics %}
 
@@ -84,7 +84,7 @@ u<sub>0</sub>..u<sub>n</sub> **&#x29c0;** &#x27e8; *dref* &#x27e9;
 {% include eqn.html lhs=mergelhs rhs=mergerhs mult=0 conn="&rArr;" %}
 
 {% endcapture %}
-{% include def.html term="Collaborative dynamics" defn=collabdynamics link="collabdynamics" %}
+{% include ex.html type="def" term="Collaborative dynamics" defn=collabdynamics link="collabdynamics" %}
     
 
 <!-- Notes -->

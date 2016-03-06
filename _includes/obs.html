@@ -1,15 +1,15 @@
 {% assign obsex = obsex | plus: 1 %}
 
-<div style="margin:1em;" id="obsex{{ obsex }}">
+<div style="margin:1em;" id="{{ include.term }}}}">
   <div style="margin-bottom:0.5em;">
   <span style="margin-right:0.5em;font-weight:600;">{{ obsex | prepend: 'Observation ' }}</span><span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
   </div>
 
   <blockquote>
-    <h3>Observation</h3>
+    <!--<h3>Observation</h3>-->
     <div>{{ include.defn | markdownify }}</div>
-    <h3>Explication</h3>
-    <div>{{ include.explic | markdownify }}</div>
+    <!--<h3>Explication</h3>
+    <div>{{ include.explic | markdownify }}</div>-->
   </blockquote>
 
 </div>
