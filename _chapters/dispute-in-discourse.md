@@ -81,7 +81,7 @@ While the completion in the [Bears](#bears) dialogue is a natural one, it certai
 
 The retrenchment in (c) strikes my ear as an acceptable response to the challenge in (b). It is similar to the data that Thony Gillies and Kai von Fintel {% include ref.html id="vonfintel2008" o="" %} analyze in regard to retraction of *might* claims. Consider the following, drawn from {% include ref.html id="vonfintel2008" o="n" p="81" e=":" %}
 
-{% include ex.html type="ex" term="keys" sent="Alex: The keys might be in the drawer." sub="Billy (<em>Looks in the drawer.</em>) They're not. Why did you say that?,Alex: I didn't say they <em>were</em> in the drawer. I said they <em>might be</em> there -- and they might have been. Sheesh." defn="Obs/Def" %}
+{% include ex.html type="ex" term="keys" sent="Alex: The keys might be in the drawer." sub="Billy: (<em>Looks in the drawer.</em>) They're not. Why did you say that?,Alex: I didn't say they <em>were</em> in the drawer. I said they <em>might be</em> there -- and they might have been. Sheesh." defn="Obs/Def" %}
 
 *Might* claims are sometimes retracted when presented with countervailing evidence available in a different context from the original utterance. But as [Keys](#keys) makes clear, *might* claims are ocassionally *resiliant* in the face of such challenges. The felicity of the exchange in [Teddy bears](#teddy-bears) suggests that correctible initiations exhibit similar resilliance.
 
@@ -93,7 +93,7 @@ The [Teddy bears](#teddy-bears) dialogue presents an alternative coherent contin
 {% endcapture %}
 {% include ex.html type="obs" term="resiliance" defn=resilianceobs explic=resilianceexplic %}
 
-A corrolary to the resiliance of correctible initiations is that completions that involve correction add to the discourse in a specific way. They don't just link back to previous discourse, but change in. That is, corrections are *productive*.
+A corrolary to the resiliance of correctible initiations is that completions that involve correction add to the discourse in a specific way. They don't just link back to previous discourse, but change it. That is, corrections are *productive*.
 
 {% capture productivityobs %}
 The [Bears](#bears) completion is *productive*. It does not merely refer back to the initiation but extends the discourse in a distinctive way.
@@ -107,31 +107,45 @@ I take it that an adequate account of the discourse dynamics of the [Bears](#bea
 
 # Correction as contrastive topic
 
-A salient feature of the [Bears](#bears) dialogue is the presence of {% include concept.html word="focus" %} on *grizzly* in the response utterance. Focus is a lingusitic tool whose use serves primarily to *package* information as opposed to providing its own contribution. It distinguishes the elements of a sentence that are new to the discussion from those that have already been introduced, thus showing to the other participants in the discourse how the contribution is intended to fit with what has preceeded. In this sense, focus has a distinctly *backward looking* function. It depends on, and responds to, previous moves in the conversation. So it makes sense that the most common analyses of focus interpretation assign it a *presuppositional* pragmatic function. Focus adds a *felicity condition* to the overall import of a sentence; the sentence is interpretable in situ only if material matching the focus semantic value of the sentence can be found in the previously constructed conversation.
+A salient feature of the [Bears](#bears) dialogue is the presence of {% include concept.html word="focus" %} on *grizzly* in the completion. Focus is a lingusitic tool whose use serves primarily to *package* information carried by other components as opposed to providing its own contribution. For instance, focus can be be used to divide the informational content of an utterance into that which is assumed to be part of the common ground and that which is newly contributed {% include ref.html id="jackendoff1972" o="n" %}. This presumably aids uptake for the other participants in the discourse by showing them how the contribution is intended to fit with what has preceeded. 
 
-Well established theories of focus interpretation exist. If these could be marshalled to explain the distinctive discourse-dynamical features of [Bears](#bears), we would not have to resort to positing drastic discourse-structural modification. In this section, I explore an alternative semantics account of focus interpretation in terms of its ability to capture the observations noted above.
+Well established theories of focus interpretation exist. If one of these could be marshalled to explain the distinctive discourse-dynamical features of [Bears](#bears), we would not have to resort to positing drastic discourse-structural modification. In this section, I explore an alternative semantics account of focus interpretation in terms of its ability to capture the observations noted above.
 
 ## Focus and alternatives
 
+One of the most influential accounts of focus interpretation is the *alternative semantics* developed by Mats Rooth {% include ref.html id="rooth1985,rooth1992" o="" e="." %} The idea behind alternative semantics is that focus-sensitive constructions have two semantic values, an *ordinary* semantic value ( {% include sem.html term='&#8729;' index="o" %}) and a *focus* semantic value ( {% include sem.html term='&#8729;' index="f" %}). The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with.  Since focus-related effects can influence interpretation at nearly any level of linguistic analysis, expressions of all types will also be associated with a focus semantic value of the appropriate type. According to alternative semantics, the focus semantic value for an expression is a set of *alternatives* to the ordinary semantic value. As an example, in the case of full sentences, alternative semantics suggests that "the focus semantic value for a phrase of category *S* [sentence] is the set of propositions obtainable from the ordinary semantic value by making a substitution in the position corresponding to the focused phrase'' {% include ref.html id="rooth1992" o="n" p="2" e="." %}
+
+{% capture fsem %}
+Where *t* is the type of the focused element, and **D** is the domain of discourse:
+  
+{% include sem.html term='&phi;' type='t' index='f' %} = { d &isin; **D**<sub>*t*</sub> }
+{% endcapture %}
+{% include ex.html type="def" term="Focus semantic value" sent="Example" sub="Sub-example" defn=fsem %}
+
+By adding this additional resource to the semanticist's tool bag, the alternative semantics account of focus promises to provide a unifying explanation of the various focus-related interpretive effects. The idea is that the two types of semantic value interact with various semantic and pragmatic rules to give the intended interpretations of focus-sensitive constructions. The principle job of the semanticist is then to discover the requisite rules governing the interaction between the two semantic values. 
+
+[^roothgen]: Rooth actually prefers a generalized version of the pragmatic constraint. This allows us to extract any reference to focus semantic values from the semantic theory, isolating it entirely within the pragmatics. For our purposes, the conspicuity of the specific QA-congruence rule is preferable. {% include ref.html id="rooth1992" o="" %}
+
 ## Questions under discussion
 
-The star bit of data that is marshalled in support of this proposal is that of question/answer congruence. Questions are generally understood to have as their semantic value, the set of propositions that constitute answers to the question; alternatively, a set of resulutions of the issue raised by the question {% include ref.html id="hamblin1958,groenendijk1984" o="n" e="," %}. The most popular account of focus, due to Mats Rooth {% include ref.html id="rooth1992" o="" e="," %} assigns as the semantic value of focus, an alternative set generated by replacing the focused element of a sentence with elements from the domain (of the same type as the focused element and constrained by context). The account predicts that a focused sentence will count as a felicitous response to a question only when the focus is positioned in such a way that the generated alternative set matches the semantic value of the preceeding question. And the prediction bears out.
+The star bit of data that is marshalled in support of alternative semantics is question/answer congruence. While the (b) answer in the following is appropriate, the (c) answer seems to miss the point of the disucssion proposal made in (a).
 
-The star bit of data that is marshalled in support of this proposal is that of question/answer congruence. Compare the responses to the following question:
+{% include ex.html type="ex" sent='Who ate the last cookie?' sub='[Caitlin]<sub>f</sub> ate the last cookie.|Caitlin ate the last [cookie]<sub>f</sub>.' term="cookie" %} 
 
-{% include ex.html type="ex" sent='Who ate the last cookie?' sub='[Caitlin]<sub>f</sub> ate the last cookie,Caitlin ate the last [cookie]<sub>f</sub>' term="cookie" %} 
+It would appear that there is a pragmatic rule dictating the form of reponse that can {% include concept.html word="felicitously" base="felicitous" e="" %} follow a question, and that focus plays a role in the pragmatic process. Roughly, the data suggests that the focused element in a response must correspond to the wh-word of the question to which it is a response.
 
-While response (i) is a perfectly natural answer, the placement of focus in (ii) makes it stand out as unacceptable.  Following {% include ref.html id="hamblin1958" o="n" e="," %} a (suitably contextually constrained) semantic value for question A might be:
+The alternative semantics for focus provides us with the framework needed to explain the presence of this pragmentic rule. Questions are generally understood to have as their semantic value the set of propositions that constitute answers to the question {% include ref.html id="hamblin1958,groenendijk1984" o="n" e="." %}  So, a (suitably contextually constrained) semantic value for the question in [Cookie](#cookie) might be as in (a) below, which is identical to the focus semantic value of the first response but differs from that of the second (represented in (b) and (c), respectively): 
 
-(A') {_Albert ate the last cookie_, _Betsy ate the last cookie_, _Caitlin ate the last cookie_, ...}
+{% include ex.html type="ex" term="Cookie semantic values" sub="{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }|{ <em>Caitlin ate the last apple</em>, <em>Caitlin ate the last beet</em>, <em>Caitlin ate the last cookie</em>, ... }" sent="{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }" %}
 
-And, the proposed analysis of focus renders the following focus semantic values for the given responses:
+We can then provide a formal characterization of the pragmatic rule:[^roothgen]
 
-a. {_Albert ate the last cookie_, _Betsy ate the last cookie_, _Caitlin ate the last cookie_, ...}
+{% capture qa %}
+In a question/answer pair &#x27e8; &psi;, &alpha; &#x27e9;, {% include sem.html term='&psi;' index="o"%} &sube; {% include sem.html term='&alpha;' index="f" %}
+{% endcapture %}
+{% include ex.html type="def" term="QA-Congruence" sent="Example" sub="Sub-example" defn=qa %}
 
-b. {_Caitlin ate the last apple_, _Caitlin ate the last beet_, _Caitlin ate the last cookie_, ...}
-
-The alternative set generated by the focus in (i) is the same as the semantic value for question A, and that generated by the focus in (ii) is not.  Add in the proposed felicity condition, and you have a great explanation of question/answer congruence.
+Craige Roberts suggests that questions and answers provide the principle organizing structure of discourse. 
 
 ## Plans of inquiry
 
@@ -149,7 +163,11 @@ This proposal certainly fits with the structure of the question under discussion
 
 But what I take to be the central issue with this sort of approach to the problem of contrastive topic in corrections is a conceptual one having to do with the role of corrections in discourse evolution. The question under discussion model of contrastive topic makes the discourse contribution of contrastive topic entirely backward looking. Whatever role the focus plays is just a matter of checking prior discourse for an antecedent to the focus generated alternative set. 
 
-## Limitations to corrections as contrastive topic
+## Advancement or accommodation
+
+Focus has a distinctly *backward looking* function; it depends on, and responds to, previous moves in the conversation. So it makes sense that the most common analyses of focus interpretation assign it a *presuppositional* pragmatic function. Focus adds a *felicity condition* to the overall import of a sentence; the sentence is interpretable in situ only if material matching the focus semantic value of the sentence can be found in the previously constructed conversation.
+
+Presuppositional analyses are frequently paired with principles of accommodation, which provides them with a semblance of *forward looking* power.
 
 # Denial as downdate
 
@@ -159,7 +177,11 @@ Equally salient in the [Bears](#bears) dialogue is the disputative nature of the
 
 In this section, I examine the downdate account of denial in terms of its ability to capture the observations about [Bears](#bears) noted earlier.
 
-## Correction as information state revision
+## Layered discourse representation theory
+
+
+
+## Information state revision
 
 The issue raised for the correction-as-revision approach is familiar from the literature on belief revision stemming from the work of Gardenfors (in AGM) -- namely, that there are multiple ways to coherently downdate an information state.
 
@@ -173,7 +195,7 @@ I can allow that such a response could be worked out and that it would have cert
 
 I think that the issue reveals the patchy nature of the dref binding fix. Corrective discourse is central enough to inquiry that it calls for an integrated implementation.
 
-## Application of revision theory to correction
+## Binding retractions
 
 Revision of an information state takes place when a state degrades into incoherence. The primary source of incoherence is an attempt to update with a proposition whose negation is entailed by the state. Revisions can be analyzed into two components: a downdate, in which the problem proposition as well as a subset of its entailments is removed from the information state; and an update, in which the negation of the proposition is added to the state and the state is appropraitely closed.
 
@@ -187,11 +209,23 @@ But information state coherence is insensiive to indexing. If a proposition is p
 
 Because the amended revision approach involves dividing content by way of indexing, we may be concerned that a binding problem will arise here as well. But the system has a built in fix that it acquires from the structure of DRSs. A discourse representation structure is formally a pair of sets. One set is the universe of the DRS; it contains all the abstract discourse referents (of whatever type) that are introduced in the conversation being represented by the DRS. The other is a set of conditions, which place constraints on elements of the universe in the form of properties and relations holding of and among them. In LDRT, while the conditions are indexed by their layer, the drefs are not. Thus, a single dref can be shared by conditions of different layers. 
 
-# Collaboration, plurals, and precision
+# Collaborative update semantics
 
 The general collaborative update framework forms the backbone of the analysis of [Bears](#bears) via the addition of sandboxes and evolving content (modifiable saturation). But the nature of the saturation is determined by the semantic structure of the particular utterance involved.
 
 Bare plurals are treated as generalized quantifiers with universal force subject to variable refinement. Bare plurals are, in this sense, variably strict.
+
+## Plurals and precision
+
+This resiliancy is also a defining characteristic of generics:
+
+\ex. \a. Cows give milk.
+\b. What about bulls?
+\a. I didn't mean $all$ cows!
+
+## Correction and nuance
+
+
 
 ## References
 

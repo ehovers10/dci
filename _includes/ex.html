@@ -24,10 +24,10 @@
   <span>{{ include.sent }}</span></div>
   {% assign pop = 0 %}
   {% assign snap = 'b,c,d' | split: ',' %}
-  {% assign subs = include.sub | split: ',' %}
+  {% assign subs = include.sub | split: '|' %}
   {% for item in subs %}
-  <div style="margin-right:0.25em;">{{ snap[forloop.index0] | append: '.' }}
-  <span>{{ item }}</span></div>
+  <div style="margin-right:0.25em;"><span>{{ snap[forloop.index0] | append: '.' }}
+  <span>{{ item }}</span></span></div>
   {% assign pop = pop | plus: 1 %}
   {% endfor %}
 {% else %}

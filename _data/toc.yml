@@ -47,15 +47,16 @@
   sections:
   - title: Disputative discourse
     subsections:
-  - title: Contrastive topic
+  - title: Correction as contrastive topic
     subsections:
     - title: Focus and alternatives
     - title: Questions under discussion
     - title: Plans of inquiry
-  - title: Denial and correction
+  - title: Denial as downdate
     subsections:
     - title: Layered discourse representation theory
-    - title: Binding retraction
+    - title: Information state revision
+    - title: Binding retractions
   - title: Collaborative update semantics
     subsections:
     - title: Plurals and precision

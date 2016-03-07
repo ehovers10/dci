@@ -122,10 +122,6 @@ Plans so conceived are obviously valuable to Levi's project of determining the a
 
 Daniel Buring has also invoked plans of inquiry in a slightly different context. He suggests that plans of inquiry are valuable for making sense of the discourse contribution of *contrastive topic*.
 
-#### The problem of contrastive topic
-
-{% include_relative sections/sect.html title="the-problem-of-contrastive-topic" %}
-
 ### Grades of self-reference
 
 + Inquiry is both synchronically and diachronically self-referential.
