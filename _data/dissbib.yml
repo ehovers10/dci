@@ -1125,6 +1125,17 @@
   Location: Cambridge, MA
 
 -
+  id: lewis1973
+  Author: David Lewis
+  Title: Counterfactuals and Comparative Possibility
+  Journal: Journal of Philosophical Logic
+  Year: 1973
+  Volume: 2
+  Number: 4
+  Pages: 418-446
+  Url: https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/
+
+-
   id: lewis1979f
   Title: Scorekeeping in a Language Game
   Author: David Lewis
@@ -1481,6 +1492,17 @@
   Url: https://app.box.com/s/px3nntvtxwx5zj8ze8szp2dsawxmjf67
 
 -
+  id: roberts1996
+  Title: "Information structure in discourse: towards an integrated formal theory of pragmatics"
+  Author: Craige Roberts
+  Booktitle: Papers in semantics (Working papers in linguistics 49)
+  Editor: Jae-Hak Yoon and Andreas Kathol
+  Affiliation: The Ohio State University
+  Year: 1996
+  Type: chapter
+  Url: http://linguistics.osu.edu/sites/linguistics.osu.edu/files/workingpapers/osu_wpl_49.pdf
+
+-
   id: roberts1998
   Title: Focus, the Flow of Information, and Universal Grammar
   Author: Craige Roberts
@@ -1730,6 +1752,16 @@
   Volume: 9
   Journal: Syntax and Semantics New York Academic Press
   Title: Assertion
+
+-
+  id: stalnaker1968
+  Booktitle: Studies in Logical Theory
+  Author: Robert Stalnaker
+  Year: 1968
+  Publisher: Blackwell Publishing
+  Location: Oxford
+  Pages: 98-112
+  Title: A Theory of Conditionals
 
 -
   id: starr2010

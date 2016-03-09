@@ -217,6 +217,18 @@
     - semantic content
     - context
     
+- name: accommodation
+  definition:
+    A pragmatic device whereby a presupposition (or some other pragmatic content) that is needed to render an utterance interpretable or felicitous is incorporated automatically by the interpreter.
+  related:
+    - repair strategy
+    - pragmatics
+    - felicitous
+  biblio:
+    - lewis1979f
+    - roberts1996
+    - vonfintel2004
+    
 - name: discourse
   definition:
     A communicative exchange among two or more people.
