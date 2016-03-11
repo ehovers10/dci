@@ -944,6 +944,17 @@
   Title: A Theory of Truth and Semantic Representation
 
 -
+  id: kaplan1977
+  Year: 1977
+  Editor: Joseph Almog and John Perry and Howard Wettstein
+  Title: Demonstratives
+  Booktitle: Themes From Kaplan
+  Pages: 481-563
+  Author: David Kaplan
+  Publisher: Oxford University Press
+  Type: chapter
+
+-
   id: karttunen1977
   Title: Syntax and semantics of questions
   Author: Lauri Karttunen

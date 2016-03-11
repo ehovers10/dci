@@ -7,6 +7,7 @@ The set **T** of types is the smallest set containing:
 + [*t*][tv]
 + [&chi;][sat]
 + [&rho;][rec]
++ [&sigma;][info]
 + (&alpha;&beta;) \| &alpha;,&beta; &isin; **T**
 {: .setlist}
 

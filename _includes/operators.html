@@ -42,8 +42,14 @@
 {% include sem.html term='A<sub>pref</sub>' index="i" %} &sube; {% include sem.html term='B' index="i" %}
 {% endcapture %}
 
+<!-- English counterfactual -->
 {% capture counterfact %}
-If had *A*, would have *B*
+If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;
+{% endcapture %}
+
+<!-- English bare plural -->
+{% capture bareplural %}
+&#x231c;A&#x231d;s are &#x231c;B&#x231d;
 {% endcapture %}
 
 <!-- Variably strict conditional -->
