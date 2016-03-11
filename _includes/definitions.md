@@ -115,7 +115,7 @@ Where *t* is the type of the focused element, and **D** is the domain of discour
 In a question/answer pair &#x27e8; &psi;, &alpha; &#x27e9;, {% include sem.html term='&psi;' index="o"%} &sube; {% include sem.html term='&alpha;' index="f" %}
 {% endcapture %}
 
-<!-- Generics -->
+<!-- Generally universal quantifier -->
 {% capture generics %}
 {% capture gen %}
 
@@ -139,4 +139,40 @@ For *A*,*B*: *et* and &delta;(*i*): *et* &rarr; *et* a selection function determ
 {% include eqn.html lhs=genbareplural rhs=gbprhs mult=1 conn="=" %}
 {% endcapture %}
 {% include ex.html type="def" term="generic analysis" sent="Example" sub="Sub-example" defn=gen %}
+{% endcapture %}
+
+<!-- Structurally universal quantifier -->
+{% capture structure %}
+{% capture struc %}
+**Translations**
+
+{% include eqn.html lhs=bareplural rhs="&forall;<sub>**R**</sub>(A)(B)" mult=0 conn="=" %}
+
+**Semantics** 
+
+For **R**,
+
+{% include eqn.html lhs='&#x213f;(**R**)' rhs='&delta;(i)(A)' mult=0 conn="=" %}
+
+For *As*: *et* and *B*: (*et*)*t*,
+
+{% capture plural1lhs %}
+{% include sem.html term='&forall;<sub>**R**</sub>(A)(B)' index='i' %}
+{% endcapture %}
+{% capture plural1rhs %}
+
+{% capture plural11rhs %}
+{ {% include sem.html term='A' %} } &isin; &#x213f;(**R**)
+
+{% include sem.html term='A' %} &sube; {% include sem.html term='B' %}
+{% endcapture %}
+{% include eqn.html lhs="1" rhs=plural11rhs mult=1 conn="if" embed="" %}
+
+{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% endcapture %}
+<div style="padding:1em;"></div>
+{% include eqn.html lhs=plural1lhs rhs=plural1rhs mult=2 conn="=" %}
+
+{% endcapture %}
+{% include ex.html type="def" term="structurally universal quantifier" sent="Example" sub="Sub-example" defn=struc %}
 {% endcapture %}

@@ -49,7 +49,7 @@ If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;
 
 <!-- English bare plural -->
 {% capture bareplural %}
-&#x231c;A&#x231d;s are &#x231c;B&#x231d;
+&#x231c;As&#x231d; are &#x231c;B&#x231d;
 {% endcapture %}
 
 <!-- Variably strict conditional -->
