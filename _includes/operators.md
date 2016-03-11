@@ -19,7 +19,7 @@
 {% endcapture %}
 
 {% capture varstrictcond %}
-{% include sem.html term='*A* <span style="letter-spacing:-4px;">&#x25a1;&rarr;</span> B' index="i" %}
+{% include sem.html term='A <span style="letter-spacing:-4px;">&#x25a1;&rarr;</span> B' index="i" %}
 {% endcapture %} 
 
 {% capture acsubb %}
@@ -35,7 +35,7 @@
 {% endcapture %}
 
 {% capture aprefset %}
-{ *w* &isin; *A* : *w* &isin; &delta;(*i*) }
+{ *x* &isin; *A* : *x* &isin; &delta;(*i*) }
 {% endcapture %}
 
 {% capture aprefsubb %}

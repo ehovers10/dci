@@ -63,3 +63,18 @@
 {% capture honey %}
 {% include ex.html type="ex" term="Honey" sent="If Pooh had eaten less honey, he would have fit through the hole." sub="But if Pooh had eaten less honey and worn his puffy jacket, he would have gotten stuck." defn="Obs/Def" %}
 {% endcapture %}
+
+<!-- Mosquitoes -->
+{% capture mosquito %}
+{% include ex.html type="ex" term="mosquitoes" sent="Mosquitos carry disease." defn="Obs/Def" %}
+{% endcapture %}
+
+<!-- Hibernate -->
+{% capture hibernate %}
+{% include ex.html type="ex" term="hibernation" sent="Bears hibernate." defn="Obs/Def" %}
+{% endcapture %}
+
+<!-- Cuddly bears -->
+{% capture cuddly %}
+{% include ex.html type="ex" term="cuddly bears" sent="Bears are cuddly." defn="Obs/Def" %}
+{% endcapture %}

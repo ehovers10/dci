@@ -9,7 +9,7 @@
 
 **Semantic rules**
 
-For *A* and *B* of type *st*:
+For *A*,*B*: *st*,
 {% capture scrhs %}
 {% include eqn.html lhs="1" rhs=subset mult=0 conn="if" embed="" %}
 
@@ -17,7 +17,7 @@ For *A* and *B* of type *st*:
 {% endcapture %}
 {% include eqn.html lhs=strictcond rhs=scrhs mult=1 conn="=" %}
 
-For *A* and *B* of type *et*:
+For *A*,*B*: *et*,
 {% capture sbprhs %}
 {% include eqn.html lhs="1" rhs=subset mult=0 conn="if" embed="" %}
 
@@ -27,37 +27,6 @@ For *A* and *B* of type *et*:
 
 {% endcapture %}
 {% include ex.html type="def" term="strict analyses" sent="Example" sub="Sub-example" defn=stricties %}
-{% endcapture %}
-
-<!-- Shifty strict conditionals -->
-{% capture shiftystrictcond %}
-{% capture shiftstrict %}
-
-**Translations**
-
-{% include eqn.html lhs=counterfact rhs="A &#x297d;<sub>s</sub> B" mult=0 conn="&rArr;" %}
-{% capture bareplhs %}
-*A*s are B
-{% endcapture %}
-
-**Semantic rules**
-
-For *i* of type &sigma; and *A* of type *st*:
-{% capture plusrhs %}
-{ w &isin; i<sub>s</sub> &cap; A }
-{% endcapture %}
-{% include eqn.html lhs="i+A" rhs=plusrhs mult=0 conn="=" %}
-
-For *A* and *B* of type *st*:
-{% capture sscrhs %}
-{% include eqn.html lhs="1" rhs=plusrhs mult=0 conn="if" embed="" %}
-
-{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
-{% endcapture %}
-{% include eqn.html lhs=shiftstrictcond rhs=sscrhs mult=1 conn="=" %}
-
-{% endcapture %}
-{% include ex.html type="def" term="shifty strict analyses" sent="Example" sub="Sub-example" defn=shiftstrict %}
 {% endcapture %}
 
 <!-- Variably strict conditionals -->
@@ -70,17 +39,58 @@ For *A* and *B* of type *st*:
 
 **Semantic rule**
 
-For *A* and *B* of type *st*, and &delta;(*i*) the characteristic set of the selection function determined by context *i*:
-{% include eqn.html lhs=aprefsem rhs=aprefset mult=0 conn="=" %}
+For *A*,*B*: *st* and &delta;(*i*): *st* &rarr; *st* a selection function determined by context *i*,
+{% include eqn.html lhs=aprefsem rhs='&delta;(i)(A)' mult=0 conn="=" %}
 {% capture vscrhs %}
 {% include eqn.html lhs="1" rhs=aprefsubb mult=0 conn="if" embed="" %}
 
 {% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
 {% endcapture %}
-{% include eqn.html lhs=abvscsem rhs=vscrhs mult=1 conn="=" %}
+{% include eqn.html lhs=varstrictcond rhs=vscrhs mult=1 conn="=" %}
 
 {% endcapture %}
 {% include ex.html type="def" term="Variably strict analysis" sent="Example" sub="Sub-example" defn=varstrict %}
+{% endcapture %}
+
+<!-- Shifty strict conditionals -->
+{% capture shiftystrictcond %}
+{% capture shiftstrict %}
+
+**Translations**
+{% capture ssctest %}
+{% assign symname = '&#x297d;<sub>s</sub>' %}
+{% include formula.html style="in" symbol=symname op1="A" op2="B" sem="n" index="" assign="" model="" %}
+{% endcapture %}
+{% include eqn.html lhs=counterfact rhs=ssctest mult=0 conn="&rArr;" %}
+{% capture bareplhs %}
+*A*s are B
+{% endcapture %}
+
+**Semantic rules**
+
+For *i<sub>s</sub>*: *st*, *A*: *st*, and &delta;(*i*): *st* &rarr; *st* a selection function determined by context *i*,
+{% capture select %}
+{% include sem.html term='A' index='i' %}
+{% endcapture %}
+{% include eqn.html lhs="&delta;(i)(A)" rhs=select conn="&sube;" mult=0 %}
+{% capture plusrhs %}
+i<sub>s</sub> &cap; &delta;(i)(A)
+{% endcapture %}
+{% capture sscsem %}
+{% include sem.html term='A' index='i' %} &sube; {% include sem.html term='B' index='i[i<sub>s</sub>&rarr;i<sub>s</sub><sup>+</sup>(A)]' %}
+{% endcapture %}
+{% include eqn.html lhs="i<sub>s</sub><sup>+</sup>(A)" rhs=plusrhs mult=0 conn="=" %}
+
+For *A*,*B*: *st*,
+{% capture sscrhs %}
+{% include eqn.html lhs="1" rhs=sscsem mult=0 conn="if" embed="" %}
+
+{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% endcapture %}
+{% include eqn.html lhs=shiftstrictcond rhs=sscrhs mult=1 conn="=" %}
+
+{% endcapture %}
+{% include ex.html type="def" term="shifty strict analyses" sent="Example" sub="Sub-example" defn=shiftstrict %}
 {% endcapture %}
 
 <!-- Thinning -->
@@ -91,4 +101,42 @@ For *A* and *B* of type *st*, and &delta;(*i*) the characteristic set of the sel
 {% include eqn.html lhs='&nbsp;' rhs=acstrictb mult=0 conn="&rArr;" %}
 {% endcapture %}
 {% include ex.html type="def" term="Thinning" sent="Example" sub="Sub-example" defn=thin %}
+{% endcapture %}
+
+<!-- Focus semantic values -->
+{% capture fsem %}
+Where *t* is the type of the focused element, and **D** is the domain of discourse:
+  
+{% include sem.html term='&phi;' type='t' index='f' %} = { d &isin; **D**<sub>*t*</sub> }
+{% endcapture %}
+
+<!-- QA-congruence -->
+{% capture qa %}
+In a question/answer pair &#x27e8; &psi;, &alpha; &#x27e9;, {% include sem.html term='&psi;' index="o"%} &sube; {% include sem.html term='&alpha;' index="f" %}
+{% endcapture %}
+
+<!-- Generics -->
+{% capture generics %}
+{% capture gen %}
+
+**Translation**
+
+{% include eqn.html lhs=bareplural rhs="GEN(A)(B)" mult=0 conn="&rArr;" %}
+
+**Semantic rules**
+
+For *A*,*B*: *et* and &delta;(*i*): *et* &rarr; *et* a selection function determined by context *i*,
+{% include eqn.html lhs=aprefsem rhs='&delta;(i)(A)' mult=0 conn="=" %}
+
+{% capture gbprhs %}
+{% include eqn.html lhs="1" rhs=aprefsubb mult=0 conn="if" embed="" %}
+
+{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% endcapture %}
+{% capture genbareplural %}
+{% include sem.html term='GEN(A)(B)' index='i' %}
+{% endcapture %}
+{% include eqn.html lhs=genbareplural rhs=gbprhs mult=1 conn="=" %}
+{% endcapture %}
+{% include ex.html type="def" term="generic analysis" sent="Example" sub="Sub-example" defn=gen %}
 {% endcapture %}

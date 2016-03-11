@@ -1,0 +1,12 @@
+sc: 
+  name: "Strict conditional"
+  symbol: "&#x297d;"
+vsc: 
+  name: "Variably strict conditional"
+  symbol: "<span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span>"
+ssc: 
+  name: "Shifty strict conditional"
+  symbol: "&#x297d;<sub>s</sub>"
+uq: 
+  name: "Universal quantifier"
+  symbol: "&univ;"

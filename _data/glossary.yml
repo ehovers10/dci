@@ -379,3 +379,13 @@
   biblio:
     - kehler2000
     - hume1777 
+
+- name: metasemantics
+  definition:
+    The portion of the semantic machinery that assigns elements from the extra-linguistic context to variables in the representation of utterances.
+  related:
+    - context
+    - pragmatics
+    - semantics
+  biblio: glanzberg2007
+

@@ -8,7 +8,7 @@ abstract:
 ---
 
 <!-- Include extras -->
-{% include operators.html %}
+{% include operators.md %}
 {% include observations.md %}
 {% include examples.md %}
 {% include definitions.md %}
@@ -111,11 +111,7 @@ Well established theories of focus interpretation exist. If one of these could b
 
 One of the most influential accounts of focus interpretation is the *alternative semantics* developed by Mats Rooth {% include ref.html id="rooth1985,rooth1992" o="" e="." %} The idea behind alternative semantics is that focus-sensitive constructions have two semantic values, an *ordinary* semantic value ( {% include sem.html term='&#8729;' index="o" %}) and a *focus* semantic value ( {% include sem.html term='&#8729;' index="f" %}). The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with. And the focus semantic value for an expression is a set of *alternatives* to the ordinary semantic value. That is, the focus semantic value collects together all elements from the domain of discourse that are type-identical to the focused element of a phrase. More formally:
 
-{% capture fsem %}
-Where *t* is the type of the focused element, and **D** is the domain of discourse:
-  
-{% include sem.html term='&phi;' type='t' index='f' %} = { d &isin; **D**<sub>*t*</sub> }
-{% endcapture %}
+<!-- Focus semantic values -->
 {% include ex.html type="def" term="Focus semantic value" sent="Example" sub="Sub-example" defn=fsem %}
 
 Since focus-related effects can influence interpretation at nearly any level of linguistic analysis, expressions of all types will also be associated with a focus semantic value of the appropriate type. Rooth {% include ref.html id="rooth1985" o="" %} also provides a recursive definition that allows one to derive focus semantic values for expressions containing focused elements as proper parts. As an example, in the case of full sentences, alternative semantics suggests that "the focus semantic value for a phrase of category *S* [sentence] is the set of propositions obtainable from the ordinary semantic value by making a substitution in the position corresponding to the focused phrase'' {% include ref.html id="rooth1992" o="n" p="2" e="." %} 
@@ -141,9 +137,7 @@ The alternative semantics for focus provides us with the framework needed to exp
 
 Thus, we supplement the dual-semantic values framework of alternative semantics with a pragmatic rule to the effect that a felicitous response to a question must have a focus semantic value that matches the ordinary semantic value of the question.[^roothgen] Formally:
 
-{% capture qa %}
-In a question/answer pair &#x27e8; &psi;, &alpha; &#x27e9;, {% include sem.html term='&psi;' index="o"%} &sube; {% include sem.html term='&alpha;' index="f" %}
-{% endcapture %}
+<!-- QA-congruence -->
 {% include ex.html type="def" term="QA-Congruence" sent="Example" sub="Sub-example" defn=qa %}
 
 Craige Roberts {% include ref.html id="roberts1996" o="" %} develops an integrated theory of pragmatics centered on the question/answer relationship. Her idea is that questions and answers provide the principle organizing structure of discourse. The relevance of a new contribution to the conversation is thus judged in terms of how it fits into that structure. The central order of business in a discourse is to answer the question under discussion (*QUD*). But the path to reaching the answer may not be direct. It can involve providing merely partial anwsers, or it can involve introducing a sub-question, getting the answer to which would aid in getting the answer to the original question.
@@ -264,24 +258,51 @@ The antecedent of (b) in [Honey](#honey) is a conjunction involving the antecede
 
 The variably strict analysis avoids the sticky situation because it fails to verify thinning. The closest possible worlds in which Pooh eats less honey need not be a superset of the closest ones in which he both eats less honey and wears his puffy jacket. The ordering relation on the antecedent worlds opens an avenue for the antecedent sets coming apart.
 
-Despite its de-sticking success, Thony Gillies {% include ref.html id="gillies2007" o="" %} has argued that the standard response is not the preferred extraction method. We can preserve the strict analysis of counterfactuals if we allow them to act as monsters {% include ref.html id="kaplan1977" o="n" e="," %} shifting the index of evaluation in the course of interpretation. In particular, if the set determined by the consequent of the conditional is guaranteed to include some antecedant worlds, then the extraction is achieved.
+Despite its de-sticking success, Thony Gillies {% include ref.html id="gillies2007" o="" %} has argued that the standard response is not the preferred extraction method. We can preserve the strict analysis of counterfactuals if we allow them to act as monsters {% include ref.html id="kaplan1977" o="n" e="," %} shifting the index of evaluation in the course of interpretation. In particular, if the set determined by the consequent of the conditional is evaluated against a context that is fixed in part by the set determined by the antecedent, then the extraction is achieved.
 
 <!-- Shifty strict conditionals -->
 {{ shiftystrictcond }}
 
+The shifty strict analysis captures the same effect as the variably strict analysis. The selection function (&delta;(i)) picks a set of worlds from within the set determined by the antecedent, and the selection is then added to the domain against which the consequent is evaluated. The semantic rule still demands set inclusion between the antecedent worlds and consequent worlds, but the shifted contextual restriction on those sets takes effectively loosens the requirement of strictness. Since there are more worlds included in the set determined by the consequent relative to the domain i<sup>+</sup> than relative to i, the set inclusion demand is more easily met. But since the additionally included worlds are specifically antecedent-relevant, the inclusion demand is not wantonly loose. 
+
+The result is that the evaluation context for the claim that if Pooh had eaten less honey, he would have fit through the hole is different from the evaluation context for the claim that if he had eaten less honey and worn his puffy coat, he would have gotten stuck. And that difference makes a difference. 
+
+The formulation of shifty strict conditionals provided above differs from Gillies' formulation in a couple ways. Primarily, Gillies models evaluation contexts as *hyperdomains* -- nested sets of worlds centered on the evaluation world. The nesting is accomplished by an ordering relation supplied by context. The effect of the context shift enacted by the use of a counterfactual is dictated by this ordering in such a way that the particular set of worlds used to evaluate the counterfactual is the minimal hyperdomain (*closest* set of worlds to the evaluation world) that includes at least some antecedent worlds. Thus, Gillies' framework of choice directly implements the closeness account of counterfactuals.
+
+In contrast, the formulation I have chosen models evaluation domains as information states, and the context shift is enabled by a contextually determined selection function. I chose this formulation in order to highlight the parallel between counterfactual conditionals and my preferred analysis of bare plurals. But there is a lacuna in my formulation. Because there is no ordering on evaluation domains built into the framework, the operation of the selection function is left underspecified. The manner in which worlds are selected from the set of antecedent worlds and added to the evaluation context for the consequent must be fully determined by the context. We thus end up with a messier {% include concept.html word="metasemantics," base="" %} but I think this is preferable. The semantic rules should tell us what is required for truth (or other semantic concepts) but not how to get it. By not building expression-specific formalism (e.g., *hyperdomains*) into the semantic machinery, we keep it more general. Of course, the task of picking a selection function is a large one with which to burden the pragmatic machinery, and I grant that it would be nice to have a more complete story about how this is done. For now, I remain satisfied with specifying constraints on the selection function and leaving its complete definition unspecified.
+
+The other difference between Gillies' and my formulations involves the elements to which the context shift applies. Gillies takes the context shift to be instigated by an *entertainability presupposition* -- that the antecedent be possible relative to the evaluation domain -- carried by the antecedents of conditionals. The presupposition projects up to the whole counterfactual, and it occasionally requires {% include concept.html word="accommodation," base="" %} which is the mechanism by which the shift takes place. So, on Gillies proposal, uttering a counterfactual in context first enacts a context shift, taking us to an evaluation domain that includes the closest antecedent worlds to the evaluation world. Then, the entire counterfactual is evaluated relative to the shifted domain. The formulation I have chosen selectively applies the shifted domain to evaluation of the consequent. I believe that doing so has two benefits. First, it allows for a more integrated application of pragmatic and semantic rules. It needn't be that the semantic rules operate only after the context change rules have been exhaustively applied. The linguistic interpretation system is highly nuanced, and this formulation allows for potential feedback between the modules. Second, a virtue of the collaborative update framework is its ability to represent interlocutors selectively modifying previous contributions to discourse. Thus, the selective application of context shifting fits better with the collaborative framework that will form the basis of our analysis of bare plural sentences.
+
+### Plurals
+
+The natural treatment of sentences involving bare plurals as universally quantified runs into its own sticky situation. Consider:
+
+<!-- Hibernation -->
+{{ hibernate }}
+
+Most English speakers take [Hibernation](#hibernation) to be true, even when told that a fair number of bears don't hibernate. This poses a problem for the strict analysis of bare plurals.
+
+It won't work to loosen the strictness requirement and interpret bare plurals as bound by, say an existential quantifier or one that requires a few witnesses. For that would render true clearly false sentences such as the following:
+
+<!-- Cuddly bears -->
+{{ cuddly }}
+
+The existence of Winnie the Pooh and Paddington Bear don't serve to make [Cuddly bears](#cuddly-bears) true. The insight from sentences such as [Hibernation](#hibernation) is not simply that bare plurals carry less than universal force.
+
+As with counterfactuals, an alternative to the strict analysis exists, and, also as with counterfactuals, the alternative is based upon selection of a preferred class of entities within the set determined by the bare plural.
+
+<!-- Generic quantifier -->
+{{ generics }}
 
 
-## Plurals and precision
+
+## Precision and nuance
 
 This resiliancy is also a defining characteristic of generics:
 
 \ex. \a. Cows give milk.
 \b. What about bulls?
 \a. I didn't mean $all$ cows!
-
-## Correction and nuance
-
-
 
 ## References
 
