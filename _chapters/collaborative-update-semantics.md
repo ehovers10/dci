@@ -174,9 +174,19 @@ The first tool of collaborative update sematnics is the sandbox, a platofrm, iso
 + A merge, of type [information state + message/checksum], which intersects the information state with the sandbox state at the end of collaboration and adds to it a checksum as  way of tracking the changes that were made on the basis of the collaborative process. Useful for restoring past phases of the discourse.
     + Implemented by a sounds-good-marker, an acceptance of the end of collaboration.
     
-### Relations-in-intension
+### Structuring updates
 
-+ For purposes of tracking?
+One of the principal challenges of a set-theoretic model of discourse dynamics is capturing identity across stages of the discourse. Set identity is exhausted by membership, so aside from inclusion and shared membership, there is little that can be said about the relations between two sets. But a discourse can evolve drastically, perhaps to the point that the set representing a contribution at one stage may have very little in common with the set representing the same contribution at a later stage. Still, we may have interpretive reason to identify those sets. The problem is locating the resources to do so.
+
+This issue is particularly acute in the framework of collaborative update semantics, where contributions are themselves taken to be complexes of utterances, each of which operates on a shared platform.
+
+We can use the idea of structuring update and mine the resources of *relational algebra* to obtain the needed cross-utterance identity.
+
++ Extensional vs. intensional relations
++ 2 operations on tables (join and adjoin)
++ For purposes of tracking
+
+
 ### Information state
 + Common ground (set of worlds taken as genuine possibilities for the purposes of inquiry)
 + Issues set

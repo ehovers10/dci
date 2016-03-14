@@ -2,7 +2,19 @@ Relations in intension
 
 Not every relation in intension corresponds to a relation in extension.
 
+### Problem 
+
 Stanley and Szabo: the way quantifiers interact with counterfactuals suggests that we should take contexts to contribute properties for domain restriction as opposed to sets. This is because evaluation of the counterfactual may require taking different domains for different possible worlds.
+
+Relations, understood as structure imposed on the common ground, are purely extensional, and provide no way of representing evolution of the context through discourse. Once the relation is imposed, information is lost.
+
+(Within a sandbox, commits are joined to a shared table. This represents the collaborative nature of the sandbox situation.)
+
+(Upon merge, the sandbox table is adjoined to the info. state relation list. This represents the evolutionary nature of the inquiry.)
+
+### Solution
+
+An alternative solution is to find a way of linking sets across possibilities (trans-world identity of sets). The relational model specifies tables, which perform this exact task.
 
 You can get a relation-in-intension from an open sentence, but as a purely semantic object, there is no specification of a relation independent of a domain. But, we can have a meta-domain of which the common ground is a subset and have relations-in-intension defined in terms of that.
 
