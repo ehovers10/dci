@@ -25,3 +25,9 @@
 - id: cap
   name: Intersection
   code: "&#x22C2;"
+- id: anglel
+  name: Angle bracket left
+  code: "&#x27e8;"
+- id: angler
+  name: Angle bracket right
+  code: "&#x27e9;"

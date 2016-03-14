@@ -176,3 +176,16 @@ For *As*: *et* and *B*: (*et*)*t*,
 {% endcapture %}
 {% include ex.html type="def" term="structurally universal quantifier" sent="Example" sub="Sub-example" defn=struc %}
 {% endcapture %}
+
+<!-- von Fintel Homogeneity -->
+{% capture homovf %}
+{% capture homo %}
+[&forall; x &isin; f(w)(p): q(x)] &or; [&forall; x &isin; f(w)(p): &not;q(x)]
+{% endcapture %}
+{% include ex.html type="def" term="homogeneity<sub>von Fintel</sub>" sent="Example" sub="Sub-example" defn=homo %}
+{% endcapture %}
+
+<!-- Homogeneity -->
+{% capture homogen %}
+{% include ex.html type="def" term="Homogeneity" sent="Example" sub="Sub-example" defn="Utterances involving bare plural subjects present the set determined by the subject as homogenous with respect to the predicate. The predicate applies either to all members of the subject class or to none of them." %}
+{% endcapture %}

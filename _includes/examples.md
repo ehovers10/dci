@@ -78,3 +78,8 @@
 {% capture cuddly %}
 {% include ex.html type="ex" term="cuddly bears" sent="Bears are cuddly." defn="Obs/Def" %}
 {% endcapture %}
+
+<!-- Polar bears -->
+{% capture polar %}
+{% include ex.html type="ex" term="Polar bears" sent="I need a kind of bear which is always white (for my drawing of a bear in a snow storm). I'm considering polar bears, grizzly bears, and koala bears. I've seen white examples of each. Do you know whether any of them are consistently white?" sub="[Polar]<sub>f</sub> bears are white." defn="Obs/Def" %}
+{% endcapture %}

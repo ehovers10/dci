@@ -20,13 +20,13 @@
 {% case include.type %}
   {% when 'ex' %}
 {% if include.sub %}
-  <div style="margin-right:0.25em;">a.
+  <div style="margin-right:0.25em;padding-left:1.25em;text-indent:-1.25em;">a.
   <span>{{ include.sent }}</span></div>
   {% assign pop = 0 %}
   {% assign snap = 'b,c,d' | split: ',' %}
   {% assign subs = include.sub | split: '|' %}
   {% for item in subs %}
-  <div style="margin-right:0.25em;"><span>{{ snap[forloop.index0] | append: '.' }}
+  <div style="margin-right:0.25em;padding-left:1.25em;text-indent:-1.25em;"><span>{{ snap[forloop.index0] | append: '.' }}
   <span>{{ item }}</span></span></div>
   {% assign pop = pop | plus: 1 %}
   {% endfor %}
