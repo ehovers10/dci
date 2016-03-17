@@ -14,9 +14,94 @@ Relations, understood as structure imposed on the common ground, are purely exte
 
 ### Solution
 
+You can get a relation-in-intension from an open sentence, but as a purely semantic object, there is no specification of a relation independent of a domain. But, we can have a meta-domain of which the common ground is a subset and have relations-in-intension defined in terms of that.
+
 An alternative solution is to find a way of linking sets across possibilities (trans-world identity of sets). The relational model specifies tables, which perform this exact task.
 
-You can get a relation-in-intension from an open sentence, but as a purely semantic object, there is no specification of a relation independent of a domain. But, we can have a meta-domain of which the common ground is a subset and have relations-in-intension defined in terms of that.
+Define a *table* as a relation with attributes drawn from the available drefs and rows the values for these drefs determined by each element of the common ground.
+
++ Continuations join tables
+    + This represents the corrective (and refinement) nature of continuations.
+    + Consider using *bags* for joins that expand the relation.
++ A table is a radical *grouped by* the saturation
+    + That is, the radical determines the attributes (subject and predicate)
+    + The saturation places a constraint on the attribute values and groups them according to the partition it defines
++ The initiation provides the domain, continutations involve an asymmetric join, preferring the relation determined by the intitiation
++ Compare Basoveanu and Bittner (following Vandenberg?) on maximality 
++ We implement a &theta;-join, with the &theta; relation determined by the saturation. 
+    + It determines a cronstraint for accepting tuples in the join.
++ Is a join really a structuring update? It seems to eliminate possibilities.
+    + But no elimination from the common ground. All that is eliminated is *pairs* of worlds. 
+    + That is, we refine the relation.
+
++ Hash table, Associative array
+    + key determined by lexical element "bears"
+    + index determined by world (world buckets)
+    + hash function can pick out individual bears, but we mostly just need the entire set
+    + for each bucket, *bears* returns subset of *dangerous* return or *bears* return intersect *dangerous* return is null.
+    
++ || bears<sub>s(et)</sub> ||<sup>**M**</sup> can be seen as generating a table, bucketed by D<sub>s</sub> and indexed by D<sub>e</sub>. 
+    + Each bucket gives us the set of bears at that world. 
+    + Specific bears are the values of each index in a bucket.
+    + || &alpha; || is a *key*, but it is not a hash key, because the hash function does not return a unique value.
++ The relation just gives us world-element-value tuples, but the bucketing allows for plural relations.
+    + domain: world-element
+    + range: value
+
+1. Predication initiates *natural join*, expanding table attributes and limiting to world and entity values
+2. Presupposition performs query on the table
+3. Semantics evaluated relative to the query
+    + Return set of worlds with + dangerous
+4. Continuation performs *outer join*, expanding table attributes and adding null values if no witenss for an attribute
+    + Left outer join preserves initiation tuples based on relation from...
+
++ || bears<sub>s(et)</sub> are dangerous<sub>s(et)</sub>||<sup>**M**</sup> first performs a join.
+    + Presupposition next performs a Query: 
+    + *dangerous* = +, 
+    + if *bears* is uniform,
+    + then keep *s*
+    + The presupposition is thus acting as a structuring and eliminating update in one.
+    + The set of *s* such that, for all *e* such that *dangerous*(s)(e), *bears*(s)(e) or for all *e* such that *dangerous*(s)(e), not-*bears*(s)(e).
+    + Projection -> take only certain attributes
+    + Select -> take only certain tuples
+
+ Bears | Dangerous | Problem
+:-----:|:---------:|:-------:
+  +    |  +        |  
+  +    |  +        |  
+  +    |  -        |  x
+  -    |  +        |  
+  
++ Projection: *contracts* header
++ Select: *restricts* body
++ Join: *extends* header, *restricts* body by value identity on shared attributes
++ &theta;-join: requries *disjoint* headers, *extends* header, *restricts* body by value relation across an attribute from each table
++ Semi-join: does not extend header, restricts body of *perfered* table by value identity of shared attributes
+    + Same as taking natural join and *projecting* the attributes of the preferred table
++ Division: *contracts* header, *restricts* body by value identity across *all* tuples of shared attributes
+    + Maximal over denominator table
++ Outer-join: *extends* header, *expands* body, filling empty attribute values
+
+
+### Context evolution
+
+*bears* and *dangerous* are predicates of type s(et), which can be represented by tables with headers *situation*, *entity*, *trope* (*quality*) and body populated by **M**. 
+
+Plural predication is a *concatenation* function, which is represented by a *natural join* of the predicate tables. THe resulting table has header *situation*, *entity*, *trope*<sub>a</sub>, *trope*<sub>a</sub>. The tuple list is contracted (culled) to situation, entity pairs that the model represents as having both properties.
+
+The plural sentence expresses a propositional radical (*C*), which is an incomplete discourse object of type *s*. When uttered, it is supplied with a *homogeneity* presupposition (*k*) to the effect that either all *bears* are dangerous *or* no *bears* are. This presupposition is integrated in a two step manner:
+  
+The presupposition tells us how to *query* the the table for *C*. The form of the presupposition is a disjunction, so we will have a disjunctive query. As a global presupposition, it queries the entirety of an attribute relative to another attribute. 
+
+Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>b</sub>(+),*s*) where 
+First, we *project* the *dangerous* attribute of *C* and *divide* *C* by that. This leaves us with a table similar to the original *bears* table but with a body contracted by ...
+
+
+### A potential distinction to develop
+
+There is a difference between a correction that challenges the *accuracy* of a bare plural sentence and one that merely challenges its *precision*. For an inaccurate bare plural assertion, the subject set is not included in the predicate set. But in an imprecise bare plural assertion, the subject set is so included, its just that asserting this doesn't provide as informative an update as is warranted. 
+
+It seems that the correction in *Grizzly bears* is both. It challenges precision *as a way to* challenge accuracy. The claim went too far and overgeneralized to the point of falsity.
 
 It's possible that these update types are not mutually exclusive. It's also possible that theories that differ only in notational ways may assign updates to different types. For instance, one may take an update to directly alter an element of the common ground to reflect a relation among *its* elements, in which case we would consider it to be a structuring update. Or, one could add a specification of a domain and range as a new element of the state of information, thereby providing all the tools necessary for constructing the relation among elements of another element of the state of information. In this case, the update appears to be of the dref variety. In effect, the first option replaces one set of entities with a *relation-in-extension* among the same entities, and the second option adds a *relation-in-intension* to the information state. I don't think there is reason to bicker over the details here so long as both options equally account for intuitive interpretations of the linguistic item under consideration. 
 
