@@ -1,0 +1,9 @@
+{% for a1 in include.attr1 %}
+  {% for a2 in include. attr2 %}
+    <tr>
+      <td>{{ include.key }}</td>
+      <td>{{ a1 }}</td>
+      <td>{{ a2 }}</td>
+    </tr>
+  {% endfor %}
+{% endfor %}

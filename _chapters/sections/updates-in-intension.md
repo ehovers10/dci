@@ -1,8 +1,9 @@
-Relations in intension
-
-Not every relation in intension corresponds to a relation in extension.
+---
+---
 
 ### Problem 
+
+Not every relation in intension corresponds to a relation in extension.
 
 Stanley and Szabo: the way quantifiers interact with counterfactuals suggests that we should take contexts to contribute properties for domain restriction as opposed to sets. This is because evaluation of the counterfactual may require taking different domains for different possible worlds.
 
@@ -89,13 +90,25 @@ Define a *table* as a relation with attributes drawn from the available drefs an
 
 Plural predication is a *concatenation* function, which is represented by a *natural join* of the predicate tables. THe resulting table has header *situation*, *entity*, *trope*<sub>a</sub>, *trope*<sub>a</sub>. The tuple list is contracted (culled) to situation, entity pairs that the model represents as having both properties.
 
-The plural sentence expresses a propositional radical (*C*), which is an incomplete discourse object of type *s*. When uttered, it is supplied with a *homogeneity* presupposition (*k*) to the effect that either all *bears* are dangerous *or* no *bears* are. This presupposition is integrated in a two step manner:
+The plural sentence expresses a propositional radical (*C*), which is an incomplete discourse object of type *s*. When uttered, it is supplied with a *homogeneity* presupposition (*k*) to the effect that either all *bears* are dangerous *or* no *bears* are. 
   
 The presupposition tells us how to *query* the the table for *C*. The form of the presupposition is a disjunction, so we will have a disjunctive query. As a global presupposition, it queries the entirety of an attribute relative to another attribute. 
 
-Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>b</sub>(+),*s*) where 
-First, we *project* the *dangerous* attribute of *C* and *divide* *C* by that. This leaves us with a table similar to the original *bears* table but with a body contracted by ...
+This presupposition is integrated in a two step manner:
+  
+> Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>b</sub>(+),*s*). The model, represented in the table, ensures that this give us only situation/entity pairs that represent danger. This query effectively forms a parition over *dangerous* and selects a preferred cell.
+> 
+>Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>a</sub>(+),*s*) or COUNT(*entity*(\*),*s*) = 0. The concatenation join ensures alignment between *bears* and *dangerous*. This query returns only the situations uniform across the *bears* quality relative to the prefered cell of the *dangerous* partition.[^divide]
 
+This leaves us with the set of situations that are uniform across the *bears* dimension with respect to a positive value for the *dangerous* dimension. And it is this table that is submitted to the semantic machinery to evaluate *Bears are dangerous*.
+
+All of this takes place within a sandbox, and the utterance has been recorded as a dref, which allows us to rebuild the table from the Model at any point. No information has been lost.
+
+Continuations similarly present a propositional dref, but they do not establish a new table. Instead, they are integrated into the existing sandbox table in the following manner:
+  
+> 
+
+[^divide]: In effect, we are *dividing* *C* by *k*. First, we *project* the *dangerous* attribute of *C* and *divide* *C* by that. This leaves us with a table similar to the original *bears* table but with a body contracted by ...
 
 ### A potential distinction to develop
 

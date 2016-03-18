@@ -428,10 +428,7 @@ For A a bare plural,
 {% endcapture %}
 {% include ex.html type="def" term="Alternate set" sent="Example" sub="Sub-example" defn=alt %}
 
-**Relational algebra**
 
-+ Drefs as header, cg forms set of tuples (represents collaboration and links between drefs)
-+ The reason for relativizing predicate to the relation set is...
 
 # Outcome and observations obtained
 
