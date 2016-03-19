@@ -1,9 +1,23 @@
-{% for a1 in include.attr1 %}
-  {% for a2 in include. attr2 %}
-    <tr>
-      <td>{{ include.key }}</td>
-      <td>{{ a1 }}</td>
-      <td>{{ a2 }}</td>
-    </tr>
-  {% endfor %}
+{% assign attrib1 = include.attr1 | split: "|" %}
+{% assign attrib2 = include.attr2 | split: "|" %}
+{% if include.attr3 %}{% assign attrib3 = include.attr3 | split: "|" %}{% endif %}
+
+{% assign len = attrib1.size | minus: 1 %}
+
+{% if include.key != "" %}
+  <tr>
+    <td>{{ include.key }}</td>
+    <td>{{ attrib1[0] }}</td>   
+    <td>{{ attrib2[0] }}</td>
+    {% if include.attr3 %}<td>{{ attrib3[0] }}</td>{% endif %}
+    {% if include.comp %}<td rowspan="{{ len }}" class="label">{{ include.comp }}</td>{% endif %}
+  </tr>
+{% for i in (1..len) %}
+  <tr>
+    <td>&#10649;</td>
+    <td>{{ attrib1[i] }}</td>   
+    <td>{{ attrib2[i] }}</td>
+    {% if include.attr3 %}<td>{{ attrib3[i] }}</td>{% endif %}
+  </tr>
 {% endfor %}
+{% endif %}

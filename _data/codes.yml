@@ -31,3 +31,9 @@
 - id: angler
   name: Angle bracket right
   code: "&#x27e9;"
+- id: semijoinl
+  name: Semijoin left
+  code: ⋊
+- id: semijoinr
+  name: Semijoin right
+  code: ⋉

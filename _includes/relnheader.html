@@ -1,5 +1,6 @@
+{% assign header = include.attrs | split: "|" %}
 <tr>
-{% for attr in include.header %}
+{% for attr in header %}
   <th>{{ attr }}</th>
 {% endfor %}
 </tr>

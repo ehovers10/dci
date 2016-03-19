@@ -96,9 +96,12 @@ The presupposition tells us how to *query* the the table for *C*. The form of th
 
 This presupposition is integrated in a two step manner:
   
-> Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>b</sub>(+),*s*). The model, represented in the table, ensures that this give us only situation/entity pairs that represent danger. This query effectively forms a parition over *dangerous* and selects a preferred cell.
+> Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>b</sub>(+),*s*). The model, represented in the table, ensures that this give us only situation/entity pairs that represent danger. 
+>    + This query effectively forms a parition over *dangerous* and selects a preferred cell.
+>    + Acutally, I think it works as a right outer join, since I have introduced anti-extensions and null values.
 > 
->Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>a</sub>(+),*s*) or COUNT(*entity*(\*),*s*) = 0. The concatenation join ensures alignment between *bears* and *dangerous*. This query returns only the situations uniform across the *bears* quality relative to the prefered cell of the *dangerous* partition.[^divide]
+>Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>a</sub>(+),*s*) or COUNT(*entity*(\*),*s*) = 0. The concatenation join ensures alignment between *bears* and *dangerous*. 
+>    + This query returns only the situations uniform across the *bears* quality relative to the prefered cell of the *dangerous* partition.[^divide]
 
 This leaves us with the set of situations that are uniform across the *bears* dimension with respect to a positive value for the *dangerous* dimension. And it is this table that is submitted to the semantic machinery to evaluate *Bears are dangerous*.
 
@@ -108,7 +111,41 @@ Continuations similarly present a propositional dref, but they do not establish 
   
 > 
 
-[^divide]: In effect, we are *dividing* *C* by *k*. First, we *project* the *dangerous* attribute of *C* and *divide* *C* by that. This leaves us with a table similar to the original *bears* table but with a body contracted by ...
+### Capturing desiderata
+
++ Refinement/coherence
+    + An update-join of the coninutation table with the initiation table
+    + A new attribute linked to subject with more nuanced values
+    + Replaces subject values
++ Correction
+    + An outer-join of the continuation table to the initiation table
+    + This adds dummy values to missing elements, which allows for the possibility of a content change between initiation and continuation
++ Resiliance
+    + Presentation of utterance as dref
+    + This allows us to rebuild the table from the initial utterance, so the original speaker can retrench
++ Presupposition
+    + Global: table generation
+    + Homogeneity: aggregation function
+    + Update: contraction from join operation
+    + Table division?
++ Semantic value
+    + Evaluated relative to some table
+    + Relativism on the subset relation?
+    + The predicate partitioned by the table with subject contained in the approp. cell?
+
+### Translations
+
++ Contrastive focus
+    + Provides the alternative set, which serves to populate the rows of the subject modifier attribute
+    + It is an outer join update, which overrides the subject values and replaces them with the refined ones. (Positive values only?)
+    + Replaces the homogeneity presupposition for the completion join, which restricts the body by uniformity over the resulting alternative-set partition
++ Subject modifer
+    + Provides an outer/update join
+    + Adds a new attribute, which is linked to the subject attrib somehow.
+    + It serves as a refinement in virtue of its value-set, populated from the domain, in conjunction with its alternative set.
+    + It is then joined to the original table by an outer join to accommodate potential correction.
++ Plural predication
+    + A presupposition restricted inner join
 
 ### A potential distinction to develop
 
@@ -123,3 +160,9 @@ However, there may be empirical reasons to choose one over the other. If the upd
 One way in which a similar sort of difference has practical import is in the interaction of intensional particles. For instance, in providing their theory of quantifier domain restriction, Stanley and Szabo suggest that we ought to treat the entities contributed by context as properties rather than sets. The reason is that quantifiers can be embedded under counterfactuals, and adequately accounting for these complex sentences requires having access to different domain restrictions relative to different worlds of evaluation. If context provides a property, it can provide this; if it offers only a set, then it cannot.
 
 Intensional updates matter for purposes of tracking changes to the information state across the course of a conversation. If we think of semantics as truly dynamic, then extensional updates will not suffice. We can bring this point out be considering the possibility of implementing a downdate operation on information states.
+
+### Notes
+
+[^divide]: In effect, we are *dividing* *C* by *k*. First, we *project* the *dangerous* attribute of *C* and *divide* *C* by that. This leaves us with a table similar to the original *bears* table but with a body contracted by ...
+
+[^extensions]: We should not assume that if a model doesn't assign an entity to a predicate extension, it assigns it to its anti-extension. The model is silent on that fact, which could mean that it just hasn't come up, and in a refined model, it would be positively assigned. This means that we need a 3-valued system. And outer joins handily give us null values, which fits in with this idea.

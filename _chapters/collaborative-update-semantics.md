@@ -142,6 +142,11 @@ Intensional updates matter for purposes of tracking changes to the information s
 
 ## Accuracy and Precision
 
+Assertion lies at the extreme of two dimensions of commitment: the dimension of accuracy and that of precision.
+
+The accuracy dimension measures the level of commitment to the truth of the uttered content that the speech act carries. Assertion carries full commitment to truth, bullshit carries minimal commitment, and a lie, perhaps, carries negative commitment to truth. Questions and imperatives have no position on this dimension.
+
+
 How then do we understand the distinctive contribution of conjecture? It may seem that conjecture has the same information state altering role as assertion, and that their difference is simply a matter of the strength of commitment that they carry with them. While assertion commits the individual to the truth of the asserted content very strongly, perhaps requiring that they know the assertion to be true, appropriate conjecture requires merely that the speaker have good reason for thinking the content true. 
 
 Whatever the merits of the norm based approach to speech-act individuation, this proposal overlooks the fact that assertion stands on one corner of a two-dimensional spectrum of possible speech-acts. Assertions must be perfectly *accurate* in that they commit the speaker to their truth. They are also perfectly *precise* in that they commit the speaker to the truth of the exact proposition asserted. Conjecture allows the speaker a buffer against the commitment to precision for the potential value of striking on something gold.

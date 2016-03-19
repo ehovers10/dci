@@ -1,0 +1,50 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html> 
+<html>
+
+{% include head1.html %}
+
+<body>
+{% include mark.html title="attributes" %}
+
+<div class="tablewrap">
+
+<div class="page-heading">
+
+{% include mark.html title='navigation' %}
+
+<h1>{{ page.title }}</h1>
+<h3>{% if page.subtitle %}{{ page.subtitle | append: '&nbsp;' }}{% endif %}{% if page.author %}{{ page.author | prepend: 'by&nbsp;' }}{% endif %}</h3>
+</div>
+
+<div class="divider"></div>
+
+{% if page.abstract %}
+<h3>Abstract</h3>
+<blockquote>
+{{ page.abstract | markdownify }}
+</blockquote>
+{% endif %}
+
+{% if page.toc %}
+<h3>Table of contents</h3>
+<blockquote>
+{% include toc.html chapter=page.title %}
+</blockquote>
+{% endif %}
+
+{% assign ex = 0 %}
+
+<div class="page-content">
+  {{ content }}
+</div>
+
+</div>
+
+{% include foot1.html %}
+
+</body>
+</html>
