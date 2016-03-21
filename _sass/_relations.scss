@@ -4,7 +4,7 @@
 
 table.relation {
   border-collapse: collapse;
-  float: left;
+  float:left;
   margin: 0.5em;
 
   th {
@@ -49,11 +49,19 @@ table.relation {
 .red {
   color: red;
   font-weight: 600;
+  font-size: 1em;
 }
 
 .green {
   color: green;
   font-weight: 600;
+  font-size: 1em;
+}
+
+.blue {
+  color: blue;
+  font-weight: 600;
+  font-size: 1em;
 }
 
 @media print {

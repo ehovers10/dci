@@ -389,3 +389,81 @@
     - semantics
   biblio: glanzberg2007
 
+- name: database
+  definition:
+    A collection of data structured by a series of tables
+  related:
+    - table
+    - view
+    - relation set
+  biblio: codd1970
+
+- name: table
+  definition:
+    A structural element of a database that represents interrelations between points of data. A table consists of a header, which is a set of attributes, and a body which is a set of tuples of values for each of the attributes.
+  related:
+    - relation
+    - database
+    - view
+  biblio: 
+
+- name: view
+  definition:
+    A virtual table, which presents information culled from a database and allows a user to make use of that information without impacting the underlying structure of the database.
+  related:
+    - database
+    - relation
+    - table
+  biblio: 
+
+- name: projection
+  definition:
+    Selection of a subset of attributes from a header and presentation of the resulting restricted table.
+  related:
+    - outer join
+    - group
+    - count
+    - rename
+  biblio: 
+
+- name: outer join
+  definition:
+    An operation that takes two tables as input and outputs a table whose header is the union of the input headers and whose body includes the union of all tuples with shared values from each table. In addition, a tuple from a preferred table that has no overlap with any tuple from the other table is included with NULL values inserted for the attributes specific to the preferred table. In a 
+  related:
+    - projection
+    - group
+    - count
+    - rename
+  biblio: 
+
+- name: group
+  definition:
+    An operation that takes one table and returns the same table with tuples organized by the values of selected attributes. 
+  related:
+    - outer join
+    - projection
+    - count
+    - rename
+  biblio: 
+
+- name: count
+  definition:
+    An aggregation operation, which takes one table and returns the number of tuples satisfying some condition. Conditions are usually specified in terms of values for certain attributes and are optionally restricted by a grouping operation.
+  related:
+    - outer join
+    - group
+    - projection
+    - rename
+  biblio: 
+
+- name: rename
+  definition:
+    An opertaion that updates a table by changing the name of one or more of its attributes.
+  related:
+    - outer join
+    - group
+    - count
+    - rename
+  biblio: 
+
+

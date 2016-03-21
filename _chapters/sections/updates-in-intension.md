@@ -123,6 +123,7 @@ Continuations similarly present a propositional dref, but they do not establish 
 + Resiliance
     + Presentation of utterance as dref
     + This allows us to rebuild the table from the initial utterance, so the original speaker can retrench
+    + This is represented by the fact that sandbox operations are performed on *views*, which allow us to select information from the database and operate on it without changing the database structure.
 + Presupposition
     + Global: table generation
     + Homogeneity: aggregation function

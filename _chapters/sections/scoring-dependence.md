@@ -9,16 +9,20 @@ For, fans the most important values regarding player contributions are what lead
 
 Steals in baseball provide an excellent case in point. According to my own interest set, a suicide squeeze and an attempted steal of home are two immensely exciting plays in baseball game play, but most sabermatricians will tell you that they are rarely, if ever, advisable from a win percentage boosting perspective.
 
-We can find an analogue of this divergence in value metrics within conversational tactics.  There are many ways to try to get a point across in conversation, some of which have a greater chance of success than others. Relying on the semantic content of an utterance may be more boring than invoking metaphor, irnoy, and various maxim flouting, but it more rarely leads to miscommunication.
+We can find an analogue of this divergence in value metrics within conversational tactics.  There are many ways to try to get a point across in conversation, some of which have a greater chance of success than others. Relying on the direct, explicit semantic content of an utterance may be more boring than invoking metaphor, irnoy, and flouting various maxims, but it more rarely leads to miscommunication.
 
-## Value failings of traditional metrics ##
+## Value failings of traditional metrics
+
+Advancedmentrics have come under a fair amount of heat from current and former players of the game. A common explanation for their animosity is that the sabermetric movement threatens their perceived value in the game, whether this means a potential cut in their current earnings or a downgrading of their post-retirement status.
+
+
 
 + Metric is not highly corelated with wins
     - Steals
 + Metric does not represent the value of the individual to which it is attributed
     - ERA, RBI, QB Passing yards
 
-## Examples of value dependence ##
+## Examples of value dependence
 
 Obviously, whether a pitch becomes a strike or not depends on the behavior of the batter. He must either not swing on a well-located pitch, or swing and miss on it for the result to be a strike. This sort of dependence is parallel to the recognition conditions associated with speech acts in communication. Whether my utterance counts as an assertion in a particular conversation depends on whether the hearer recognizes and ackowledges my offering.
 
@@ -47,3 +51,5 @@ Whether an offering is evaluated as an assertion, as opposed to a conjecture or 
 One of the primary insights that the advanced metrics movement has brought to the experience of sports has been a recognition that not all ways of categorizing and recording events on the field of play equally well represents the value that individual players in the game contribute. 
 
 Sports recording is a distinctly value relative endeavor. 
+
+{% capture gus %}{% bibliography --file dissertation --cited %}{% endcapture %}

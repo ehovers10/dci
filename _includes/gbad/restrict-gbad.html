@@ -1,0 +1,16 @@
+<!-- Restrict -->
+<table class="relation">
+<tr>
+  <td class="label" colspan="4">{% include sem.html term='<em>Bears are dangerous</em>' model="M" %}(<em>hp</em>)</td>
+</tr>
+
+{% include relnheader.html attrs="sit|ent|subj|pred" %}
+
+{% include keylist.html key="s<sub>1</sub>" attr1="a|b|d" attr2="grizzly|koala|&omega;" attr3="+|+|+" %}
+{% include keylist.html key="s<sub>2</sub>" attr1="a" attr2="grizzly" attr3="+" %}
+{% include keylist.html key="s<sub>3</sub>" attr1="b|d" attr2="koala|&omega;" attr3="+|+" %}
+
+<tr>
+  <td class="label" colspan="4"><strong>&#10649;</strong></td>
+</tr>
+</table>

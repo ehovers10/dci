@@ -41,7 +41,8 @@ layout: table
 </tr>
 </table>
 
-<div style="clear:both;"></div>
+<!-- Page break -->
+<div style="clear:both;height:100px;">&nbsp;</div>
 
 <!-- Count bear(+) -->
 <table class="relation">
@@ -62,8 +63,7 @@ layout: table
 </tr>
 </table>
 
-<!-- Page break -->
-<div class="breaker" style="clear:both;"></div>
+<div style="clear:both;"></div>
 
 <!-- Count ent(*) -->
 <table class="relation">
@@ -85,7 +85,7 @@ layout: table
 </table>
 
 <!-- Page break -->
-<div class="breaker" style="clear:both;"></div>
+<div style="clear:both;height:200px;">&nbsp;</div>
 
 <!-- Compare -->
 <table class="relation">

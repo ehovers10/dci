@@ -1,0 +1,41 @@
+.groupwrap {
+  width: 100%;
+  text-align: center;
+  padding-left: calc(50% - 200px);
+  padding-left: -webkit-calc(50% - 200px);
+}
+
+.group {
+  position: relative;
+
+  .groupnav {
+    position: absolute;
+  }
+
+  ul.groupnav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 2px 5px;
+    margin:2;
+    text-align: center;
+    background: #555;
+    color: #fff;
+    border:none;
+    font-size: 0.85em;
+  }
+  ul.groupnav li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .space {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    display: none;
+  }
+
+  .space.T1 {
+    display: block;
+  }
+}

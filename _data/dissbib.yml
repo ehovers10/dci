@@ -355,6 +355,24 @@
   Timestamp: 2014.11.11
 
 -
+  id: codd1970
+  Author: E. F., Codd
+  Title: A Relational Model of Data for Large Shared Data Banks
+  Journal: Commun. ACM
+  Year: 1970
+  Volume: 13
+  Number: 6
+  Month: June
+  issn: 0001-0782
+  Pages: 377-387
+  Numpages: 11
+  Url: http://doi.acm.org/10.1145/362384.362685
+  Doi: 10.1145/362384.362685
+  acmid: 362685
+  Publisher: ACM
+  Location: New York, NY, USA
+
+-
   id: dekker-pla
   Title: Predicate logic with anaphora
   Author: Paul Dekker

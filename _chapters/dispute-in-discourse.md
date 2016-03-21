@@ -363,6 +363,8 @@ The function of an initiation utterance is two-fold: It *checks out* a new sandb
 Assuming the correctible inspires a corrective effort by a discourse participant, the continuation overrides the initiation commitment, replacing it with a substitution of the original saturation. This process can iterate until all participants are satisfied with the lastest commit. At this point, a completion utterance implements the latest commit, imposing its update effect upon the sandbox information state. Finally, the updated sandbox contents are *merged* into the primary information state.
 
 {% capture gencu %}
+
+**Initiation utterance**
 {% capture initlhs %}
 U<sub>*init*</sub>
 {% endcapture %}
@@ -371,6 +373,7 @@ U<sub>*init*</sub>
 {% endcapture %}
 {% include eqn.html lhs=initlhs rhs=initrhs mult=0 conn="&rArr;" %}
 
+**Continuation utterance**
 {% capture contlhs %}
 U<sub>*cont*</sub>
 {% endcapture %}
@@ -379,6 +382,7 @@ U<sub>*cont*</sub>
 {% endcapture %}
 {% include eqn.html lhs=contlhs rhs=contrhs mult=0 conn="&rArr;" %}
 
+**Completion utterance**
 {% capture complhs %}
 U<sub>*comp*</sub>
 {% endcapture %}
@@ -392,47 +396,48 @@ U<sub>*comp*</sub>
 
 ### Plurals specific formal story
 
-All contributions to discourse proceed in the manner of the general formalism outlined above. The specifics of the update procedure depend on the nature of the correctible presented in a sandbox. In the case of initiation utterances with bare plural subjects, the saturation is the homogeneity presupposition, which functions as a structuring update. In the framework of collaborative update semantics, structuring updates join a domain partitioning relation to the relation set.
+All contributions to discourse proceed in the manner of the general formalism outlined above. The specifics of the update procedure depend on the nature of the correctible presented in a sandbox. 
 
-The use of contrastive focus in the follow up performs two roles. First, it marks the utterance as a continuation, thus linking it to the previous presentation in the sandbox. Additionally, it indicates the nature of the substitute structuring update it proposes -- a partition along the lines of the alternative set of the focused element. Contrastive focus on the plural cancels the homogeneity presupposition, substituting the alternative set determined by the focus semantic value of the focused element.
+In the case of the [Bears](#bears) dialogue, we treat the evolution of discourse as introducing a series of queries on a *database* and introduce a framework of *relational algebra* to represent the particulars of plural predication.[^maximization]
 
-The homogeneity presupposition (or the focus interpretation in the case of the contrastive continuation) functions as a structuring update, which we represent as a partitioning on the domain. The set of partitions is held in the relation set **R**, and a new parition gets added by forming the **join** of the relevant alternative set with the existing **R**. It is this updated **R** against which the predicate set is evaluated.
+[^maximization]: Maria Bittner's system of UC<sub>&Omega;</sub>, which builds on the work of van den Berg on plural dynamics, captures many of the same phenomena, though the formulation is couched more centrally in the dynamic semantics tradition. I feel that database theory provides a natural implementation of these ideas. Plus, it strikes me as a potentially fruitful expansion of the update semantics tradition.
 
-{% capture alt %}
-For A a bare plural, 
+#### Basics of relational algebra
 
-{% capture altlhs %}
-&alpha;(A)
-{% endcapture %}
-{% capture altrhs %}
-{% capture altcflhs %}
-{% include sem.html term='A' %}<sub>f</sub>
-{% endcapture %}
-{% capture althplhs %}
-{ {% include sem.html term='A' %}, {% include sem.html term='&not;A' %} }
-{% endcapture %}
-{% include eqn.html lhs=altcflhs rhs="[A]<sub>cf</sub>" mult=0 conn="if"  %}
+A {% include concept.html word="database" base="" e="" %} is a collection of data structured by a series of {% include concept.html word="tables" base="table" e="" %}
+that represent interrelations among the points of data. The information contained in a database can be manipulated in a variety of ways principal among which is the {% include concept.html word="query," base="" e="" %} which pulls specific information from one or more tables, packaging it into a {% include concept.html word="view" base="" e="" %}, itself a table in form, but a mere image of the underlying database. Views allow the user to access and make use of data without impacting the underlying structure of the database. 
 
-{% include eqn.html lhs=althplhs rhs="" mult=0 conn="otherwise"  %}
-{% endcapture %}
-{% include eqn.html lhs=altlhs rhs=altrhs mult=1 conn="=" %}
+A {% include concept.html word="relational algebra" base="" e="" %} extends standard set theoretic operations with a set of operations on tables and provides a means of representing manipulations of structured data in a neat way {% include ref.html id="codd1970" o="n" e="." %} For the purposes of representing the discourse evolution of disputative dialogue involving plural predication, we add a subset of the relational algebra framework to collaborative update. Namely, we co-opt operations of: {% include concept.html word="projection" base="" e="," %} {% include concept.html word="outer join" base="" e="," %} {% include concept.html word="grouping" base="group" e="," %} {% include concept.html word="counting" base="count" e="," %} and {% include concept.html word="renaming" base="rename" e="." %}
 
-{% capture joinlhs %}
-[&forall;<sub>**R**</sub>(A)(B)]
-{% endcapture %}
-{% capture joinrhs %}
-&alpha;(A) &#x22CA; **R**
-{% endcapture %}
-{% include eqn.html lhs=joinlhs rhs=joinrhs mult=0 conn="&rArr;" %}
+#### Application to collaborative update
+  
+The initiation utterance of the [Bears](#bears) dialogue consists of a propositional radical, a plural predication, saturated by a homogeneity presupposition. The utterance serves to open a sandbox, within which the interpretive system treats the predication as a function taking the tables for subject and predicate as input and outputting their *right outer join*. 
 
-{% endcapture %}
-{% include ex.html type="def" term="Alternate set" sent="Example" sub="Sub-example" defn=alt %}
+The homogeneity presupposition operates on the result of the predication in three stages. First, it implements a structuring update, grouping the table by value of the **sit** attribute. Second, it performs an aggregation and comparisonfunction on the **ent** and **subj** attributes within each group. This consists of counting the number of **ent** of any value, and the number of **subj** of positive value, and comparing them. Groups for for which either the **ent** count equals the **subj** count or the **subj* count is zero pass through; other groups are rejected. The final phase is a restriction, where rejected groups are eliminated from the table.8
+{% include bad/index.html rows="7" %}
 
+The use of contrastive focus in the follow up performs three roles. The first two roles pertain to the modification of the subject. First, it introduces the alternative set of the modifier expression. The focus tells us to fill the modifer attribute with values drawn from the alternative set, rather than simple on/off values of an ordinary semantic value. Subject modification is implemented by a function that takes this focus derived modifier table and the unmodified subject table as inputs and outputs their *full outer join*. The full outer join is significant. Since it keeps rows from the modifier table even when there is no shared **ent** in the subject table, as well as vice versa, this is a way for the continuation utterance to genuinely *correct* the initiation. It may add rows to the table for which the original table made no evaluation. 
 
+The second role of contrastive focus is to mark the utterance as a continuation, thus linking it to the previous presentation in the sandbox. We represent this by a *refinement*, in which we **project** just the **sit**, **ent**, and **mod** attributes, renaming the **mod** attribute to **subj**. Thus, the continuation is fully integrated.
+
+{% include contrast/index.html rows="9" %}
+
+Once we have the refined subject in place, we can use it as input to the right outer join implemented by the plural predication of the continuation. The final role of contrastive focus is to overwrite the default homogeneity presupposition, indicating the nature of the structuring update it substitutes -- a partition along the lines of the alternative set of the focused element. This is performed by a grouping operation. In standard plural predication, we only needed to group by the **sit** attribute, but this simplification was made possible by the nature of the values in the **subj** attribute. Since being a bear was taken as an on/off property, and the model determines only its positive extension, there was no need to refine our grouping in order to implement the comparison. The situation is more complex, however, in the case of contrastive plural predication. Here, our presupposition demands that dangerousness be uniform across type of bear. This means that we must additionally group by **subj**
+values in order to get the appropriate comparison. We should thus view standard plural predication as a degenerative case of homogeneity presupposition, where there is only one value group within the **subj** attribute.
+
+{% include gbad/index.html rows="7" %}
+
+The final, presupposition-restricted table is stored in the structuring component **R** of the sandbox information state. And it is this relation against which the semantic value of the contribution will be evaluated.
+
+If the corrective continuation is accepted, and no further development is required, the state of the sandbox is merged into the primary information state. Generally, an acceptance will be effected by a nod of agreement or some other *Sounds good!* token. The merge operation involves updating each component of the primary information state with its cognate component from the sandbox state. The primary common ground is intersected with the sandbox common ground, which, recall, was initially seeded with the worlds from the primary common ground. The sandbox table is appended to the primary database. And any drefs introduced in the course of the sandbox procedure are likewise appended to the dref list of the primary information state. Since the propositional commits introduced in the course of the sandbox procedure have at this point either been incorporated into the sandbox table or have been overwritten, it is assumed that these are destroyed with the closing of the sandbox. However, some record of the fact that the sandbox procedure was carried out is valuable. To record this, the merge operation also adds a *version* token to the primary information state, housed in the **XX** component. This serves as a checksum, to allow interlocutors to test discourse integrity over the course of an extended dialogue, and also as a backup marker, which allows interlocutors to restore the conversation at a previous point if things start to go off the rails.
 
 # Outcome and observations obtained
 
+The sticky situation for the universal interpretation of bare plurals is that sentences like [Hibernate](#hibernate) can be true even though there are examples of non-hibernating bears, which is to say the the bare plural sentence can be true even though witnesses to its negation exist in the domain. We are alternately pulled between an inclination to view bare plural quantification as strict and an inclination to loosen it up.
 
+The CU extraction stands behind the strictness inclination. Bare plural sentences involve universal quantification, albeit a partitioned version thereof. The resulting puzzle is to explain (or explain away) the looseness inclination. This ultimately involves giving up on the claims that sentences such as [Hibernate](#hibernate) are true in any rigid sense, but the framework of CU gives us a substitute that makes it easier to let go.
+
+The key observation here is [Susceptibility](#susceptibility). Even if bare plural sentences can be true, their truth seems to be inherently unstable. A shift to a slightly different context 
 
 ## References
 
