@@ -11,7 +11,7 @@ Radical interpretation: **Given P, solve for the rest**
 
 > What are the constraints by which the problem of radical interpretation is to be solved? Roughly speaking, they are the fundamental principles of our general theory of persons. They tell us how beliefs and desires and meanings are normally related to one another, to behavioral output, and to sensory input.
   
-Principle of charity: THe system imputes to Karl beliefs and desires that are more or less the beliefs and desires we would have were we to be in Karl's shoes, broadly construed.
+Principle of charity: The system imputes to Karl beliefs and desires that are more or less the beliefs and desires we would have were we to be in Karl's shoes, broadly construed.
 
 Rationalization Principle: The system imputes to Karl beliefs and desires that represent him as rational; they give him good reason for performing the actions he does perform.
 

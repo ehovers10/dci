@@ -1,11 +1,15 @@
 ---
 title: Scoring dependence
-chapter: concept
-section: 03
 ---
 
+Call a *metric* any generalization of player behavior within a baseball game that attempts to characterize some component of the player's value in changing the score of the game. 
 
-For, fans the most important values regarding player contributions are what leads to axcitement during game play and and what leads to a lasting feeling of satisfaction after game play has ceased. A team win is probably the simplest and greatest contributor to lasting satisfaction for the fan. But there is no guarantee that what contributes to excitement value during game play will corelate strongly with team wins.
+Standard metrics include batting average, steals, runs batted in, strikeouts, home runs allowed, and earned run average. These metrics categorize and aggregate various player behavior with an eye toward providing an accurate representation of the impact the player has on changing the score of this (or future) games of which they are a part.
+(Their dispositions to change the score.)
+
+Relatively recent study into the evolution of game play in baseball has suggested that these standard metrics fail to measure player impact on the score, either because variations in the chosen metric do not correlate strongly with changes in game score or, while they do so the changes are not appropriately attributed to the player whose behavior is being aggregated.
+
+For fans the most important values regarding player contributions are what leads to excitement during game play and and what leads to a lasting feeling of satisfaction after game play has ceased. A team win is probably the simplest and greatest contributor to lasting satisfaction for the fan. But there is no guarantee that what contributes to excitement value during game play will corelate strongly with team wins.
 
 Steals in baseball provide an excellent case in point. According to my own interest set, a suicide squeeze and an attempted steal of home are two immensely exciting plays in baseball game play, but most sabermatricians will tell you that they are rarely, if ever, advisable from a win percentage boosting perspective.
 
@@ -14,6 +18,8 @@ We can find an analogue of this divergence in value metrics within conversationa
 ## Value failings of traditional metrics
 
 Advancedmentrics have come under a fair amount of heat from current and former players of the game. A common explanation for their animosity is that the sabermetric movement threatens their perceived value in the game, whether this means a potential cut in their current earnings or a downgrading of their post-retirement status.
+
+Certainly they are missing an important way of understanding the game. It is important because it is tied strongly to the economic interests of game runners. Advanced metrics uncover both under-appreciated and over-appreciated ways of impacting the game in terms of their data-backed correlation with game score, and game score, it turns out is highly correlated with wins, which are highly correlated with (though importantly not equivalent to) dollars in the owners' pockets.
 
 
 
@@ -51,5 +57,3 @@ Whether an offering is evaluated as an assertion, as opposed to a conjecture or 
 One of the primary insights that the advanced metrics movement has brought to the experience of sports has been a recognition that not all ways of categorizing and recording events on the field of play equally well represents the value that individual players in the game contribute. 
 
 Sports recording is a distinctly value relative endeavor. 
-
-{% capture gus %}{% bibliography --file dissertation --cited %}{% endcapture %}
