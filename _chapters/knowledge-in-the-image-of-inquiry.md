@@ -114,8 +114,6 @@ But once we open the door to incorporating the goal of truth acquisition into ou
 
 ### Plans in general
 
-{% include_relative sections/sect.html title="plans" %}
-
 ### Plans of inquiry
 
 Plans so conceived are obviously valuable to Levi's project of determining the appropriate rules for *the fixation of belief and its undoing*. I suggest that planning is a fully integrated element of inquiry deriving from their dilated nature. As such, our structure of inquiry ought to represent it as implementing a plan. 
@@ -149,7 +147,43 @@ Knowledge is not, as Levi suggests, merely infallible belief. It requires inter-
 
 ## The value of knowledge
 
-{% include_relative sections/sect.html title="value-of-knowledge" %}
+One way of understanding the Meno Problem is as presenting the challenge of explaining what makes the state of knowledge more valuable thatn the corresponding state of mere true belief. On this characterization, the presupposition is that there is an intrinsic value-relevant difference between knowledge and mere-true-belief. It is this presupposition that drives questions of the adequacy of reliabilist accounts of justification. For it is presumed that, intrinsically, the outputs of a reliable process are no different from those of an unreliable one. They are both just beliefs. 
+
+There is no shortage of responses to the Meno Problem. Some have tried to take the issue head on by suggesting that the state of knowledge is different from mere-true-belief, perhaps in terms of their modal profiles, and that this difference grounds the value difference in an intrinsic feature of knowledge.
+
+Others have denied the presupposition, suggesting that value need not attach to intrinsic properties of states. For instance, it is natural to maintain that knowledge is not a mere product, but a product *of this reliable belief forming process*. This approach is similar to that advocated by those who take personal identity to determined by mental states arising *from this brain*, or those who take just distributive policies to be those that follow from principles settled upon *by the participants in the original position*. On this view, knowledge is operationally defined. It's value is grounded in its formation history, but this is not an independent feature, for knowledge is a state conjoined with a causal history.
+
++ The problem is that *possessing* knowledge is what is thought to be of value, but possessing a reliably formed true belief does one nothing that is not provided by possession of any old true belief.
+
+### Zagzebski on the value problem
+
+Linda Zagzebski's characterization of what she calls *the value problem* is that all definitions of knowledge that take it to be a value conferring property conjoined to a state of true belief will end up having the value of the conjoined property swamped by the value provided merely by the truth of the belief.
+
+This is especially acute for what Zagzebski calls *machine-product* accounts of knowledge, on which knowledge is taken to be a state that is the output of some state generating process.
+
+But the externalist element of these accounts is not the source of the worry, because internalist accounts that interpret the difference between justified and merely true belief in terms of *truth-conduciveness* also submit to the value problem. Once truth is achieved, truth-conduciveness provides nothing extra. Zagzebski directly addresses Lawrence Bonjour's approach to justification, but the challenge would seemingly apply also to modal accounts such as Williamson's *safety* account. If my belief is true in this world, I get little more out of it also being true in nearby worlds.
+
+The moral Zagzebski takes from the value problem is that we must dismiss the machine-product view of knowledge and accept knowledge as a property of temporally extended agents.
+
+But the problem isn't with the machine-product model itself. The problem has to do with the nature of the product. We can imbue the product with the credit deserving feature --  the *account* of the state's genesis. The problem is not the product, but that the process is seen as external to the product. But the insight of dynamic semantics is that these need not be independent. The product encodes the process.
+
+Of course, there is still an issue with the unity of knowledge. Why don't we still have a swamping issue, just now with one part of knowledge swamping the value provided by another part? The answer has to do with the idea of truth-conduciveness as value adding. We have an operational account of knowledge; we also understand truth operationally.
+
+Conduciveness is not a modal property. It is dynamic. Take Meno's first take reposne to Socrates: "The man who has knowledge will get there every time, whereas the man with true opinion will get there only sometimes." I think this is the most natural characterization of the value of knowledge, and it is also the correct one. This is because knowledge isn't valuable as a destination; it is valuable as a means to a destination.
+
+A holistic, dynamic state encodes the process of inquiry, and this is knowledge. The individual beliefs abstracted from the state are known, but they are not the knowledge in so far as knowledge is value additive.
+
+In the belief update literature, knowledge is understood as the fixation of belief. It is the set of worlds to which one does not consider alternatives. This perspective is unlikely to capture the colloquial English use of the word "knowledge", for knowledge of this sort is not factive. But of additional concern for this account is the ability to set off a concept distinct from belief. 
+
+Knowledge is belief with an account.
+
+Zagzebski suggests that the problem is that the value adding function is also the function that produces the belief. But if its value comes from its proficiency at producing true beliefs, then it's value is also swamped by the truth of its product.
+
+We can then (i) deny the machine-product model, (ii) devise another value for the production mechanism that is independent of the intrinsic properties of the end product, or (iii) expand the product to include parts that are both independently valuable and dependent upon the production means.
+
+Ways Zagzebski explains the problem:
+  
++ The external nature of the value adding property (unity)
   
 * * * * * 
 {: .divider}
@@ -159,20 +193,6 @@ Knowledge is not, as Levi suggests, merely infallible belief. It requires inter-
 If knowledge is represented by discourse level information states, and "knows that" expresses the knowledge relation, then "knows that" makes a self-referential contribution to discourse. 
 
 There is a lot of precedent for this sort of expression
-
-* * *
-{: .divider}
-
-## Dimensions of dynamism
-
-  {% include_relative sections/sect.html title="dimensions-of-dynamism" %}
-
-* * *
-{: .divider}
-
-## Collaborative update
-
-  {% include_relative sections/sect.html title="collaborative-update" %}
 
 * * *
 {: .divider}

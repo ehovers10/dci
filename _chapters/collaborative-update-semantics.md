@@ -9,9 +9,7 @@ abstract:
 
 ## Scoreboards and best systems
 
-David Lewis' {% include ref.html id='lewis1979f' %} conversational {% include concept.html word='scoreboard' %} has been incredibly fruitful as a tool in understanding the interpretive effects of utterances in conversation. Many contemporary theoris of the semantico-pragmatic impact of utterances invoke the scoreboard model, with their differences being primarily in regards to the number, function, and arrangement of the various lights and placards that fill the recording surface.
-
-The scoreboard is the logical platform on which the conversation is built. It serves as a record of the contributions that have been made to the conversation, and it dictates both whether an utterance is deemed to provide an acceptable contribution to the conversation and how acceptable utterances are interpreted. A crucial feature of the scoreboard it is not merely a list of unstructured information; the information is formatted in such a way to maximize its robustness and simplicity as an interpretive tool. As a first pass, we can think of the scoreboard as a field of slots with participants to the conversation wielding a set of pegs. There is a many-to-one relationship between pegs and slots, but certain pegs can only fit in certain slots. The pegs represent the inquiry specific content of utterances, while the slots are features of conversation generally, determined by the nature of the inquiry that it implements.
+David Lewis' {% include ref.html id='lewis1979f' %} suggestion that utterances in a conversation function as updates to values housed in the various slots of a conversational {% include concept.html word='scoreboard' %} posits a logical platform on which the conversation is built. The scoreboard serves as a record of the contributions that have been made to the conversation, and it dictates both whether an utterance is deemed to provide an acceptable contribution to the conversation and how acceptable utterances are interpreted. A crucial feature of the scoreboard it is not merely a list of unstructured information; the information is formatted in such a way to maximize its robustness and simplicity as an interpretive tool. As a first pass, we can think of the scoreboard as a field of slots with participants to the conversation wielding a set of pegs. There is a many-to-one relationship between pegs and slots, but certain pegs can only fit in certain slots. The pegs represent the inquiry specific content of utterances, while the slots are features of conversation generally, determined by the nature of the inquiry that it implements.
 
 But before we get to the question of what bells and pulleys come attached to conversational scoreboards, we face the question of what the posit of such a recording surface amounts to, and where this crucial interpretive device would be instantiated. Lewis frames his preferred answer as such:
   
@@ -19,59 +17,91 @@ But before we get to the question of what bells and pulleys come attached to con
 
 Under this characterization, determination of the conversational score, and the structure of the board on which it is represented is a project of theory determination in the same vein as Lewis' account of natural law. Theoretical adequacy amounts to empirical adequacy subject to a series of constraints, principal among which are the criteria of *simplicity* and *strength* from the perspective of the theorizer.[^Bestsystem]
 
-It is easy to see the motivation for this "middle way" approach to scoreboards in the account of intentionality generally that Lewis gives in *Radical Interpretation* {% include ref.html id="lewis1974b" o="" e="." %} For Lewis, the problem of intentionality is to say how facts about speakers expressed in purely physical terms determine facts about the speakers' attitudes and the meanings of their utterances. This constitutes the *goal* of the enterprise of providing a theory of a language. To guide the theorist in their effort, we have the whole physical story past and present of a speaker's behavior as well as a *basic ideology* of intentional systems. For Lewis, the basic ideology is derived from a common sense theory of persons, and it supplies us with a mental store of *beliefs* and *desires* driving physically specifiable behavior and a collection of *truth conditions* associated with sentences, the principal meaningful elements of language.
+It is easy to see the motivation for this "middle way" approach to scoreboards in the account of intentionality generally that Lewis gives in *Radical Interpretation* {% include ref.html id="lewis1974b" o="" e="." %} For Lewis, the *goal* in theorizing about intentionality is to say how facts about speakers expressed in purely physical terms determine facts about the speakers' attitudes and the meanings of their utterances. The resources available to the theorist in this effort include the whole physical story, past and present, of a speaker's behavior as well as a *basic ideology* of intentional systems, derived from our common sense theory of persons. Lewis' basic ideology supplies the theorist with a store of *beliefs* and *desires* driving physically specifiable behavior and a collection of *truth conditions* to be associated with sentences, the principal meaningful elements of language.
 
-The methodology (or at least *a* methodology) for theory construction using these basic tools is to optimize the theory against a set of constraints, some general theoretical virtues, others specific to the domain of the intentional. Lewis' prefered constraints are "the fundamental principles of our general theory of persons. They tell us how beliefs and desires and meanings are normally related to one another, to behavioral output, and to sensory input" {% include ref.html id="lewis1974b" o="n" p="334" e=":" %}
+The *methodology*[^method] for theory construction using these basic tools is to optimize the theory against a set of constraints specific to the domain of the intentional in addition to the general theoretical virtues. Lewis' prefered constraints stem from "the fundamental principles of our general theory of persons. They tell us how beliefs and desires and meanings are normally related to one another, to behavioral output, and to sensory input" {% include ref.html id="lewis1974b" o="n" p="334" e=":" %}
 
 {% capture constraints %}
-The system imputes beliefs and desires to a speaker **charitably** -- the determined attitudes are more or less the beliefs and desires we would have were we to be in the speaker's shoes, broadly construed.
+**Charity**: The attitudes determined by the system are more or less the beliefs and desires we would have were we to be in the speaker's position, broadly construed.
 
-The system supplies beliefs and desires that represent the speaker as **rational** -- they give him good reason for performing the actions he does perform.
+**Rationalization**: The system supplies beliefs and desires that generally represent the speaker as having good reason for performing the actions he performs.
 
-The system assigns meanings that accord with the speaker participating in a convention of **truthfulness** with other speakers of his language.
+**Truthfulness**: The system assigns meanings that accord with the speaker participating in a convention of truthfulness with other speakers of his language.
 
-The complete system of meanings is **generative** -- it is at least finitely specifiable, and perhaps also "reasonably uniform and simple".
+**Generativity**: The complete system of meanings is at least finitely specifiable, and perhaps also reasonably uniform and simple.
 
-The beliefs and desires that the system maintains are held by the speaker are **manifest** in his dispositions to speech behavior.
+**Manifestation**: The beliefs and desires that the system maintains are held by the speaker are revealed in his dispositions to speech behavior.
 
-The system **triangulates** meanings with specifications of the speaker's beliefs and desires in both their language and the theorizer's.
+**Triangulation**: The system provides meanings that link the specifications of the speaker's beliefs and desires in both their language and the theorizer's.
 {% endcapture %}
-{% include ex.html type="def" term="Constraints on a theory of meaning" sent="Example" sub="Sub-example" defn="constraints" %}
+{% include ex.html type="def" term="Constraints on a theory of meaning" sent="Example" sub="Sub-example" defn=constraints %}
 
-Lewis grants that there is no quarantee that a theoretical process carried out along these lines will result in a unique best theory of a speaker's intentional system; it may be that no single theory fits the constraints perfectly, and many may be equally distant from perfection. Additionally, truth conditions almost certainly provide an incomplete reductive base for sentence meaning. But he wishes to hold his ground against the claim that there could be multiple distinct theories of meaning for a language, all of which perfectly meet the constraints: "*Credo*: if ever you prove to me that all the constraints we have yet found could permit two perfect solutions, differing otherwise than in the auxiliary apparatus of **M**, then you will have proved that we have not yet found all the constraints" {% include ref.html id="lewis1974b" o="" p="343" %}
+There is no quarantee that a theoretical process carried out along these lines will result in a unique best theory of a speaker's intentional system; it may be that no single theory fits the constraints perfectly, and many may be equally distant from perfection. Additionally, truth conditions almost certainly provide an incomplete reductive base for sentence meaning. Lewis is well aware of these potential indeterminacies, but he wishes to hold his ground against the claim that there could be multiple distinct theories of meaning for a language, all of which perfectly meet the constraints: "*Credo*: if ever you prove to me that all the constraints we have yet found could permit two perfect solutions, differing otherwise than in the auxiliary apparatus of **M**, then you will have proved that we have not yet found all the constraints" {% include ref.html id="lewis1974b" o="" p="343" e="." %}
 
-I think that Lewis' model of linguistic theory, grounded in the best systems account and realized in the conversational scoreboard, is the right approach, more or less. But I contest that we have, in Lewis' explicit proposal, the complete set of constraints to do the job. I don't base this challenge on a claim to have found multiple perfect theories of any speaker's intentional system viz a vis Lewis' constraints. I do so, instead, on the basis of a claim that we have not uncovered the complete basic ideology from which the constraints arise.
+I think that Lewis' model of linguistic theory, grounded in the best systems account and realized in the conversational scoreboard, is the right approach. But I contest that we have, in Lewis' explicit proposal, the complete set of constraints to do the job. I don't base this challenge on a claim to have found multiple perfect theories of any speaker's intentional system based on Lewis' constraints. I do so, instead, on the basis of a claim that we have not uncovered the complete basic ideology from which the constraints arise.
 
-I view the development in the previous chapter as providing an argument for the claim that intentional systems are collaborative through and through. And as such, there is more to speech behavior than what it reveals about an individual's beliefs and desires. It reveals, also, their status as elements of an extended, distributed process of advancing the inquiry. If the basic ideology, and in turn the constraints, come from our common sense theory of persons, then our theory is incomplete to the extent that it ignores the fact that persons are *social* beings.
+I view the development in the previous chapter as providing an argument for the claim that intentional systems are *collaborative* through and through. And as such, there is more to speech behavior than what it reveals about an individual's beliefs and desires. It reveals, also, their status as participants in an extended, distributed process of advancing the inquiry. If the basic ideology, and in turn the constraints, come from our common sense theory of persons, then our theory is incomplete to the extent that it ignores the fact that persons are *social* beings.
 
 How are we to incorporate this extension of the basic ideology of theorizing about the intentional? Do we add additional attitudes to the set of intentional elements whose content our theory is to specify? Conjectures and corrections as states of mind? Or do we reimagine the attitudes we already grant, imbuing them with collaborative features? Distributed beliefs and shared desires? Is the collaboration built into the content or is it a structural feature of the states?
 
-Rather than address these interesting (and pressing!) questions directly, I suggest that we satisfy ourselves with the claim that it is integrated. Our common sense theory of persons represents them as social creatures, and provides us with attitudes necessary to capture their collaborative efforts within the intentional. What we are after is an account of what speakers mean, and we can get at least part of the way there by assuming a mandate to account for collaboration and considering how this mandate exerts itself within our constraints.
-
-## Truthfulness
-
-Lewis envisions language use within a community as determined by a set of conventions
-they abide by. In particular, he thinks that language use is governed by dual conventions of *truth* and *trust*. Speakers agree (and presume others will agree, etc.) to utter only truths to the extent possible, and hearers agree (and ..., etc.) to take on beliefs on the basis of speakers' utterances.
-
-The collaborative integration implies that lingusitic conventions can not be presumed to be so easily partitioned on the basis of participants' roles. And the virtue of Jamesian striving for truth implies that the truthfulness convention is not so universally enacted. I suggest that we replace the convention of truth with one of *honesty*, in which speakers agree (and ..., etc) to utter only what they take to provide genuine advancement of the inquiry along the specified lines, and that the contention of *trust* be expanded to apply to speakers and hearers *mutually*. Hearers in taking on the attitudes required by the proposed advancement of the inquiry and speakers in speculating freely, trusting that hearer's will correct them to the extent they are able.
-
-Language use in a community is governed by dual conventions of *honesty* and *mutual trust*.
-
-## Rationality
-
-dynamic, principles of inquiry
-
+Rather than address these interesting (and pressing!) questions directly, I suggest that we satisfy ourselves with the claim that it is integrated. Our common sense theory of persons represents them as social creatures, and provides us with attitudes necessary to capture their collaborative efforts. What we are after is an account of what speakers mean, and we can get at least part of the way there by assuming a mandate to account for collaboration and considering how this mandate exerts itself within our constraints. It seems to me that at least two modifications of the Lewisian constraints are in order:
+  
 ## Generativity
 
 In his characterization of the constraints of language theorizing, Lewis presumes a criterion akin to Davidson's {% include concept.html word='learnability' %} thesis, that it a theory is out of the running if it cannot be specified in a finite representation {% include ref.html id="davidson1967" o="n" e="." %} But this acceptance seems unmotivated given Lewis' characterization of the nature of the project:
   
 > It should be obvious by now that my problem of radical interpretation is not any real-life task of finding out about Karl's beliefs, desires, and meanings. I am not really asking how *we* could determine these facts. Rather: how do *the facts* determine these facts? By what constraints, and to what extent, does the totality of physical facts about Karl determine what he believes, desires, and means? To speak of a mighty knower, who uses his knowledge of these constraints to advance from omniscience about the physical facts **P** to omniscience about the other facts determined thereby, is a way of dramatizing our problem.... The real-life knower has all the problems of our fictitious [omniscient] knower, and more besides: he does not have all of **P** to draw on, and he may be limited in endurance, intelligence, or memory.... But these further obstacles to his investigation are irrelevant to our real topic. (pp. 333-4)
 
-Presumably, the reason for requiring that a language be at minimum finitely specifiable is that it is something that *people* possess, and people are at best finite, cognitive beings. But nature isn't a cognitive being at all, let alone a finite one. And there is no antecdent reason to think that the physical facts do determine the mental facts in a reductive way.[^bealer] This suggests that the nature of the project isn't quite as Lewis characterizes it. It is a project of developing a theory *for* us not just a theory *of* us. And to provide this, we need to be more restrictive than to merely disallow infinitary definitions. We require a *usability* constraint.
+Presumably, the reason for requiring that a language be at minimum finitely specifiable is that it is something that *people* possess, and people are at best finite, cognitive beings. But nature isn't a cognitive being at all, let alone a finite one. And there is no antecdent reason to think that the physical facts do determine the mental facts in a reductive way.[^bealer] This suggests that the nature of the project isn't quite as Lewis characterizes it. It is a project of developing a theory *for* us not just a theory *of* us. And to provide this, we need to be more restrictive than to merely disallow infinitary definitions. We require a *usability* constraint.[^usability]
 
 We needn't say what the mechanisms are that carry out the operations of conversational exchange, but the operations ought to be specified in a way that it makes sense to think of interlocutors making use of them in the course of determining the development of the conversation.[^frameproblem]
 
-While there is a nice transcendental deduction speaking in favor of Davidson's constraint -- human's do possess a theory of language, and as cognitively finite individuals, they do not have infinite space to dedicate to language resources -- the usability constraint is more methodological.[^Bontly] Allow me to gesture at a motivation for it by way of a digression. It is an extension of Lewis' analogy to the score in a baseball game.
+While there is a simple, transcendental argument speaking in favor of Davidson's constraint -- human's do possess a theory of language, and as cognitively finite individuals, they do not have infinite space to dedicate to language resources -- the usability constraint is more methodological.[^Bontly] I'll gesture at a motivation for it by way of a digression; specifically, an extension of Lewis' analogy to the score in a baseball game.
+
+We can specify the nature of a game in a couple different ways. If we're happy to delay our play, we can sit down beforehand and outline in a legislative (*prescriptive*) fashion the necessary tools for engaging in the game and restrictions on behavior for proper engagement. Many games start with this sort of process, but the interesting one's are frequently not played exactly as the legislation demands. An alternative game-maker strategy is to record the game as it is played, and attempt to write down, in a *descriptive* fashion, generalizations about the specific behaviors we record. Whatever process we use, we call the regularities by which players abide in game play the *rules* of the game.[^constitutive] We can provide a *rulebook* for the game if we can consolidate those reglarities into a robust and simple list. Both strategies allow for divergences between the rulebook and actual game play. Players may disobey a prescriptive rulebook. The simplicity achieved by consolidating regularities of behavior in the descriptive strategy may buff out anomalous bumps in actual game play. 
+
+To the extent that we want a rulebook for the games that are of interest to us -- baseball and a language game -- we require a descriptive strategy. Both games are thought of as being understood by those that play the game. The players have an internal rulebook, but this rulebook does not match any pre-established legislative text. In the case of language, there never has been a rulebook laid out. Myriad style guides exist, and some of them take on the qualities of prescritive texts. But despite their strictures, the game is played the way it is played. Even if we want to distinguish variants of the game, and attach evaluative descriptors, such as *high*, *formal*, or *vulgar*, to them, there is still an interesting question of what it is that the players have internalized. 
+
+The case of baseball is different, but not very much so. The game started as an offshoot of similar bat oriented games, was developed by the individuals who gathered to play. Eventually, interested spectators began to record the players' movings about and codified a simple rule book. Future players conformed their play to the interpretation of these rule books they found pleasing, and the process iterated a few times. Eventually, interest in the game took off, and governing bodies were formed. As governing bodies do, they laid down more rigid legislation as the rule book, and game play began to more consistently conform to those regulations. But even today, game play departs in sometimes significant ways from what is laid down in the rule book. Perhaps the most salient departure is the way that pitches are determined to be balls or strikes. So, still those who are interested in the game of baseball have reason to study the movements of players in the game and ask what it is that they have internalized as the rules of the game.
+
+According to the descriptive account of rulebooks, games are just physical systems for which we attempt to provide a theory. And the best systems account of theoryhood is as good as any other. But games are unique systems in that their laws are *reflexive*.
+
+Players are agents in game play. We take them to understand the game, and to apply that understanding through the course of the game. If we cash out understanding as being in possession, mentally, of a rule book, and applying one's understanding as using the rule book to both understand the current game context and to decide on their next action, then, in generalizing over behavior, we implicitly build elements of the rule book into itself.
+
+This would be a distinction without a difference, if rule books completely determined behavior. But rule books that leave multiple permissible actions on the table in certain game contexts will evolve with each iteration of the game.[^reflexive]
+
+## Truthfulness
+
+(Millian correction, keep truth active by testing it, correctibles, honesty and trust in correction, Lewis *Language(s)*)
+
+Lewis envisions language use within a community as determined by a set of conventions {% include ref.html id="lewis1975b" o="" e="." %} In particular, he thinks that language use is governed by dual conventions of *truth* and *trust*, the first of which applies to speakers in the language community, the second to hearers. Speakers agree (and presume others also agree, etc.) to utter only truths to the extent they are able, and hearers agree to take on beliefs as their own in response to speakers' utterances.
+
+And the virtue of Jamesian striving for truth implies that the truthfulness convention is not so universally accepted. I suggest that we replace the convention of truth with one of *honesty*, in which speakers agree to utter only what they take to provide genuine advancement of the inquiry in accordance with the specified plan. 
+
+The collaborative extension also implies that lingusitic conventions can not be presumed to be easily factored on the basis of the role of a participant. And it is not merely hearer's who must rely on their interlocutors to properly advance the inquiry. The contention of *trust* must be expanded to apply to speakers and hearers *mutually* -- hearers in taking on the attitudes required by the proposed advancement of the inquiry and speakers in speculating freely, trusting that hearer's will correct them to the extent they are able.
+
+Language use in a community, I suggest, is governed by the dual conventions of *honesty* and *mutual trust*.
+
+## Rationality
+
+(Jamesian striving, coherence, need for propositions, Lewis *ICC*)
+
+To represent as rational is not just to represent as believing truths. For being rational is advancing the inquiry in suitable ways at suitable times, and advancing the inquiry is more than simply relating and accepting truths. Frequently, one advances the inquiry by taking up for consideration known falsehoods. (This is systematic, not an aberation to be swept under the rug.)
+
+A grammar, Lewis suggests, characterizes a fair amount of our shared linguistic knowledge. But not all of it. There are elements of pragmatics that it doesn't deal with. And why not? Because grammar is used when I know whether A or B, and I want to make it possible for you to come to know that, too. If I say the right thing, a convention of truthfulness and trust will get us there. The semantic value of a sentence is how I determine what is the right thing to say. And for that, all I need is that the semantic value get me the truth value of the sentence were I to say it in my current context.
+
+But this isn't all I want to do! I also want to use your knowledge to increase my own. And I want to help you bring up that knowledge even if it may not be at the tip of your mind. The grammar can help me fulfill these desires as well!
+
+The grammar provides more than just the makings for truth determination.[^compositionality] It also provides the makings for anaphora and coherence.
+
+We need propositions -- the middle ground after context is applied but before an index is -- because they are useful in getting us the things other than truth that the grammar assigns. 
+
+A *dynamic* grammar assigns anaphoric connections between sentences, and propositions can be anaphorically connected, as in modal subordination.
+
+A *collaborative* grammar assigns coherence connections between utterances, and propositions, or at least radicals thereof, are coherence connected, as in refinement.
+
+
+### Metrics
 
 Call a *metric* any generalization of player behavior within a baseball game that attempts to characterize some component of the player's value in changing the score of the game. 
 
@@ -84,6 +114,8 @@ This research offers alternatives to the standard metrics -- new metrics that go
 
 I would like to offer a diagnosis of the detractors' animosity to the advanced stats. It is not that the stats fail to characterize genuine trends in the game (true generalizations). Nor, as some have suggested, that they see the stats as a threat to their interests, either financially or in terms of fame.
 
+Baseball is a game that can be enjoyed from two perspectives. A third-party spectator can enjoy the performance of others within the game, and players can enjoy the game differently in virtue of their distinctive, first-personal perspective on it.
+
 It is that they fail to understand the stats. But this is not a failure of intellectual power. It is a prespectival mis-alignment. The stats fail to speak to them as characters in the game. The traditional stats at least appear to give them actionable directives, while the advanced stats provide no sense of how they could make use of them to improve their performance in the game.
 
 Some athletes are finding ways, but the requisite shift in perspective points to an important feature of characterizing games. They have rules that allow for better and worse play. And the generalizations are not intended just for interested third parties, but also for those that have a hand in shaping the data used in the generalization. 
@@ -92,6 +124,9 @@ The situations is similar, but different, for linguistic theorizing. For the gam
 
 This sets theorizing about intentional systems apart from other theorizing (though perhaps not so far apart, cf. collapse interpretations of quantum mechanics).
 
+
+
+To the extent that collaboration can be integrated into our constraints on language theorizing, we have reason to look for collaborative structure in the scoreboard representation of conversation. But what do collaborative score markers look like?
 
 ### Semantics and pragmatics
 
@@ -112,18 +147,6 @@ There are challenges to the best systems account in application to the governing
 This modicum of *irrealism* inherent in the best system account is a second issue for its application in the realm of physical structure. It is well-accepted that there are limits to what is available empirically to human observers of the world, and some extreme empiricists go so far as to infer that there is nothing to posit beyond the empirically verifiable elements of our scientific models {% include ref.html id="churchland1982" o="n" e="," %} but it is difficult to shake the idea that there is a physical reality out there that our theoretical efforts attempt to *describe* rather than *determine*.
 
 Despite these concerns in the realm of the physical sciences, the best systems account fares well in application to *linguistic interpretation*.
-
-[^Bestsystem]: Lewis also adds *fit* as a criterion for theorizing about non-deterministic systems. See {% include ref.html id="hicks2014" o="n" %} for an amendment of the best system account that incorporates the idea that the conditions of use of a theory may count as a criterion for adequacy of the theory. 
-
-[^frameproblem]: Think here of the challenge in artificial intelligence known as the *frame problem*. The issue is that good at data collection and processing as machines are, they have difficulty using their skills to engage tasks in the real world because there is simply too much data to sift through in order to process all of it before making a choice on how to act. Humans do this quite easily, despite the severe deficiency in our raw data processing ability. Presumably, we succeed on the basis of a set of frames, heuristics, and defaults, which allow us to filter the data, making the processing task much less onerous. Whatever the reductive link between the logical specification of language and its neurological realization may be, it seems evident that its rules must be specified in terms of these sorts of heuristics and defaults simply because it is a quotidian tool. 
-
-[^Semprag]: See the entries in [That sem/prag anthology].
-
-[^Bontly]: Same idea as the simplicity motivation in linguistic theory that {% include ref.html id="bontly2005" o='n' %} discusses? Something about semantic innocence?
-
-[^Morecriteria]: An additional criteria that seem to straddle the line between empirical coverage and theoretical virtue are is the distribution patterns of expressions throughout the language, such as an expression's embedding proclivities or the diversity of linguistic contexts in which it occurs
-
-[^bealer]: From *Self-consciousness*, reductive functionalist accounts require the content of our conscious experiences to be weird realizer properties rather than the normal mental properties that really are their contents.
 
 ## General update semantics
 
@@ -359,3 +382,28 @@ I like the idea of speech-act determination being in the hands of the interlocut
 
 ***
 {: style="border-bottom:1px solid #aaa;margin:1em;"}
+
+[^Bestsystem]: Lewis also adds *fit* as a criterion for theorizing about non-deterministic systems. See {% include ref.html id="hicks2014" o="n" %} for an amendment of the best system account that incorporates the idea that the conditions of use of a theory may count as a criterion for adequacy of the theory. 
+
+[^frameproblem]: Think here of the challenge in artificial intelligence known as the *frame problem*. The issue is that good at data collection and processing as machines are, they have difficulty using their skills to engage tasks in the real world because there is simply too much data to sift through in order to process all of it before making a choice on how to act. Humans do this quite easily, despite the severe deficiency in our raw data processing ability. Presumably, we succeed on the basis of a set of frames, heuristics, and defaults, which allow us to filter the data, making the processing task much less onerous. Whatever the reductive link between the logical specification of language and its neurological realization may be, it seems evident that its rules must be specified in terms of these sorts of heuristics and defaults simply because it is a quotidian tool. 
+
+[^Semprag]: See the entries in [That sem/prag anthology].
+
+[^Bontly]: Same idea as the simplicity motivation in linguistic theory that {% include ref.html id="bontly2005" o='n' %} discusses? Something about semantic innocence?
+
+[^Morecriteria]: An additional criteria that seem to straddle the line between empirical coverage and theoretical virtue are is the distribution patterns of expressions throughout the language, such as an expression's embedding proclivities or the diversity of linguistic contexts in which it occurs
+
+[^bealer]: From *Self-consciousness*, reductive functionalist accounts require the content of our conscious experiences to be weird realizer properties rather than the normal mental properties that really are their contents.
+
+[^method]: or at least *a* methodology. To fix ideas, I presume as operative Lewis' *Method 3* for linguistic theory construction. 
+
+[^constitutive]: Both constitutive and regulative rules count as rules in this sense as both are generalizations over singular game events. Their different status is a distinction without a difference in our framework. In this sense, they are like the differences between laws and initial conditions for best systems accounts of laws. 
+
+[^reflexive]: Games are reflexive systems in that specifications of the evolution of the system get applied throughout the evolution of the system by elements of the system. Call the application of metrics in the game evolution *strategies* and the elements of the system applying the strategies *players*.
+
+   Understanding rules as generalizations over singular game events, reflexive application of rules has no effect if the rules provide complete and determinate account of game play. But if the rulebook underspecifies permissible behavior in certain game contexts, which almost all interesting games do, then each iteration of game play updates the rulebook slightly. Over time, the system can evolve rather substantially.
+
+[^usability]: The claim is not that there is a direct correlation of grammatical structure with neuro-psychological structure. Or that a single scoreboard-plus-rulebook perfectly represents what a game player has internalized. But that understanding requires strucutral representation, we hold as determined. And that certain understanding-based capabilities depend on a specific structural representation is something I'm willing to insist on.
+
+[^compositionality]: Though we have to be careful. Truth determination can be shown to be compositional. For other grammatical roles, it may be harder to demonstrate this feature. We should be ok with refinement coherence, because we will represent it in terms of focus semantic values, which are compositional.
+

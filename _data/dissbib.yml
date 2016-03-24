@@ -373,6 +373,17 @@
   Location: New York, NY, USA
 
 -
+  id: davidson1967
+  Volume: 17
+  Journal: Synthese
+  Title: Truth and Meaning
+  Year: 1967
+  Author: Donald Davidson
+  Publisher: Springer
+  Number: 1
+  Pages: 304-323
+
+-
   id: dekker-pla
   Title: Predicate logic with anaphora
   Author: Paul Dekker
@@ -1195,7 +1206,7 @@
   Url: https://app.box.com/s/37hv7j8f07ajn0gfoogo79s1tyf3w30e
 
 -
-  id: Lewis1975a
+  id: lewis1975a
   Title: Adverbs of Quantification
   Author: David Lewis
   BookTitle: Formal Semantics of Natural Language
@@ -1207,7 +1218,7 @@
   Pages: 3--15
 
 -
-  id: Lewis1975b
+  id: lewis1975b
   Title: Languages and Language
   Author: David Lewis
   BookTitle: Minnesota Studies in the Philosophy of Science
