@@ -885,6 +885,17 @@
   Timestamp: 2014.12.09
 
 -
+  id: hawthorne2008
+  Author: John Hawthorne and Jason Stanley
+  Volume: 105
+  Pages: 571-590
+  Journal: Journal of Philosophy
+  Year: 2008
+  Title: Knowledge and Action
+  Number: 10
+  Publisher: Journal of Philosophy Inc
+
+-
   id: heim1990a
   Title: E-Type Pronouns and Donkey Anaphora
   Author: Irene Heim
@@ -1244,6 +1255,16 @@
   Note: PPI 108-118
   Url: https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/
 
+-
+  id: lewis1980
+  Author: David Lewis
+  Title: Index, Context, and Content
+  Booktitle: Philosophy and Grammar
+  Pages: 79-100
+  Editor: S. Kanger and S. O&#x0308;hman
+  Year: 1980
+  Publisher: Reidel Publishing Company
+  Type: chapter
 
 -
   id: lobner1987
@@ -1909,6 +1930,16 @@
   Timestamp: 2014.12.07
   Url: https://app.box.com/s/7sjilmbprwny5lz1g7ls62bpjgmlwst6
 
+-
+  id: thomason1990
+  Author: Richmond Thomason
+  Title: "Accommodation, meaning and implicature: interdisciplinary foundations for pragmatics"
+  Type: chapter
+  Booktitle: Intentions in communication
+  Editor: P. Cohen, J. Morgan, and M. Pollack
+  Publisher: MIT Press
+  Year: 1990
+  Abstract: "An attempt to sort out the basic concepts and mechanisms of language use."
 -
   id: thomason
   Title: "Enlightened Update: A Computational Architecture for Presupposition and Other Pragmatic Phenomena"

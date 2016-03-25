@@ -105,14 +105,29 @@ For *A*,*B*: *st*,
 
 <!-- Focus semantic values -->
 {% capture fsem %}
-Where *t* is the type of the focused element, and **D** is the domain of discourse:
+For a domain of discourse **D** and type *t*,
   
-{% include sem.html term='&phi;' type='t' index='f' %} = { d &isin; **D**<sub>*t*</sub> }
+{% capture fesmlhs %}
+{% include sem.html term='&phi;<sub>*t*</sub>' index='f' %}
+{% endcapture %}
+{% capture fesmrhs %}
+{ d &isin; **D**<sub>*t*</sub> }
+{% endcapture %}
+{% include eqn.html lhs=fesmlhs rhs=fesmrhs mult=0 conn="=" %}
 {% endcapture %}
 
 <!-- QA-congruence -->
 {% capture qa %}
-In a question/answer pair &#x27e8; &psi;, &alpha; &#x27e9;, {% include sem.html term='&psi;' index="o"%} &sube; {% include sem.html term='&alpha;' index="f" %}
+For a question/answer pair &#x27e8; &psi;, &alpha; &#x27e9;, 
+
+{% capture qalhs %}
+{% include sem.html term='&psi;' index="o"%}
+{% endcapture %}
+{% capture qarhs %}
+{% include sem.html term='&alpha;' index="f" %}
+{% endcapture %}
+{% include eqn.html lhs=qalhs rhs=qarhs mult=0 conn="&sube;" %}
+
 {% endcapture %}
 
 <!-- Generally universal quantifier -->

@@ -88,18 +88,27 @@ Language use in a community, I suggest, is governed by the dual conventions of *
 
 To represent as rational is not just to represent as believing truths. For being rational is advancing the inquiry in suitable ways at suitable times, and advancing the inquiry is more than simply relating and accepting truths. Frequently, one advances the inquiry by taking up for consideration known falsehoods. (This is systematic, not an aberation to be swept under the rug.)
 
-A grammar, Lewis suggests, characterizes a fair amount of our shared linguistic knowledge. But not all of it. There are elements of pragmatics that it doesn't deal with. And why not? Because grammar is used when I know whether A or B, and I want to make it possible for you to come to know that, too. If I say the right thing, a convention of truthfulness and trust will get us there. The semantic value of a sentence is how I determine what is the right thing to say. And for that, all I need is that the semantic value get me the truth value of the sentence were I to say it in my current context.
+> The foremost thing we do with words is to impart information, and this is how we do it. Suppose (1) that you do not know whether *A* or *B* or ...; and (2) that I do know; and (3) that I want you to know; and (4) that no extraneous reasons much constrain my choice of words; and (5) that we both know that the conditions (1)-(5) obtain. Then I will be truthful and you will be trusing and thereby you will come to share my knowledge.
 
-But this isn't all I want to do! I also want to use your knowledge to increase my own. And I want to help you bring up that knowledge even if it may not be at the tip of your mind. The grammar can help me fulfill these desires as well!
+A grammar, Lewis suggests, characterizes a fair amount of our shared linguistic knowledge. But not all of it. There are elements of pragmatics that it doesn't deal with. Which ones? "Conversational appropriateness and implicature, disambiguation, taxonomy of speech acts, or what it is about us that makes some grammars rights and others wrong" {% include ref.html id="lewis1980" o="n" p="80" e="." %} And why not? Because grammar's key role is in imparting information. To do that, I just need to say the right thing. A convention of truthfulness and trust (not part of the grammar) will ensure that the message gets across. The grammar supplies me with semantic values for sentences, which is how I determine what is the right thing to say. To impart information, all I need is that the semantic value get me the truth value of the sentence were I to say it in my current context.
 
-The grammar provides more than just the makings for truth determination.[^compositionality] It also provides the makings for anaphora and coherence.
+But this isn't *all* I want to do with words! I also want to use your knowledge to increase my own. And I want to help you bring up that knowledge even if it may not be at the tip of your mind. I want to engage in an *inquiry* with words. The grammar can help me fulfill this desire as well, but it needs more support than the convention of truthfulness and trust can provide.
 
-We need propositions -- the middle ground after context is applied but before an index is -- because they are useful in getting us the things other than truth that the grammar assigns. 
+Inquiry is an extended process. Carrying it out fruitfully requires us to maintain a record of what has transpired thus far in the inquiry. We can use this record to refer back to earlier discussion and connect bits of information into an extended web. Through a simple complication of the grammar, we greatly expand our information imparting capabilities. *Anaphora resolution* is one process that fits into an inquiry-extended picture of grammar. Natural language speakers have an ability to use explicit pronouns as well as implicit refering devices to link to previously introduced *discourse referents*. This ability is vital to the project of realizing inquiry in discourse. The grammar should help explain how it is done, but truth determination alone won't carry the load. Anaphora extends beyond linking individuals across sentence boundaries. The information web in a healthy inquiry has temporal ties between events {% include ref.html id="partee1973" o="n" p="602" e=":" %}
 
-A *dynamic* grammar assigns anaphoric connections between sentences, and propositions can be anaphorically connected, as in modal subordination.
+{% include ex.html type="ex" term="Tense" sent="I didn't turn off the stove." sub="" defn="Obs/Def" %}
 
-A *collaborative* grammar assigns coherence connections between utterances, and propositions, or at least radicals thereof, are coherence connected, as in refinement.
+It's quite likely that there is a stove turning off somewhere in my past. But this fact means little to the interpretation of [Tense](#tense) if no such event occured within the time frame it gestures at.
 
+The information web also ties states of affairs together via subordination relations between modalized sentences {% include ref.html id="stone1999" o="n" e=":" p="2" %}
+
+{% include ex.html type="ex" term="Modality" sent="A wolf might walk into the house. It would eat you." sub="" defn="Obs/Def" %}
+
+Anaphora resolution is an important interpretive tool for connecting utterances, but it is not the only one. Language users are also able to suss out conceptual connections between bits of information. Discourses lacking such *coherence* connections can be very difficult, or even impossible to process {% include ref.html id="kehler2000" o="n" e=":" %}
+
+{% include ex.html type="ex" term="Coherence" sent="Bill was about to be impeached. He called his lawyer." sub="? Bill was about to be impeached. He bought six pounds of zucchini." defn="Obs/Def" %}
+
+In virtue of its role in systematizing language users' shared knowledge about advancing an inquiry, a grammar for a language provides more than just the makings for truth determination.[^compositionality] It also provides the makings for anaphora and coherence relations. A *dynamic* grammar assigns anaphoric connections between sentences, and propositions can be anaphorically connected, as in modal subordination. A *collaborative* grammar assigns coherence connections between utterances.
 
 ### Metrics
 
@@ -130,7 +139,7 @@ To the extent that collaboration can be integrated into our constraints on langu
 
 ### Semantics and pragmatics
 
-Philosophers of language generally divides the project of interpretation into a number of modules, principal among which are the {% include concept.html word='semantic' base='semantics' %} and the {% include concept.html word='pragmatic' base='pragmatics' %} modules. Where to draw the line between semantic and pragmatic effects of utterances, as well as whether we ought to draw any dividing lines at all, is a theoretical issue dependent on the productivity the distinction[^Semprag]. 
+Philosophers of language generally divide the project of interpretation into a number of modules, principal among which are the {% include concept.html word='semantic' base='semantics' %} and the {% include concept.html word='pragmatic' base='pragmatics' %} modules. Where to draw the line between semantic and pragmatic effects of utterances, as well as whether we ought to draw any dividing lines at all, is a theoretical issue dependent on the productivity the distinction[^Semprag]. 
 
 But to a large extent, if an adequate formal representation of an interpretive effect is available, what category it falls in is irrelevant. This is especially so, since there are few instances of an interpretive effect being wholly isolated from other effects of the same utterance. Even certain effects that have often gone under the heading of conventional implicature, which Chris Potts {% include ref.html id="potts2005" %} has argued is a category of meaning distinct from the semantic domain based on its independence from standardly regarded semantic content, are seen to be at minimum {% include concept.html word='weakly interacting meaning particles' %} (WIMPS) with respect to semantic content. This is evident from crossover effects found with anaphora resolution across appositive lines {% include ref.html id='anderbois2013' o='n' e="." %}
 

@@ -30,7 +30,7 @@
 
 <!-- Cookie -->
 {% capture cookie %}
-{% include ex.html type="ex" sent='Who ate the last cookie?' sub='[Caitlin]<sub>f</sub> ate the last cookie.|Caitlin ate the last [cookie]<sub>f</sub>.' term="cookie" %} 
+{% include ex.html type="ex" sent='Who ate the last cookie?' sub='[Caitlin]<sub>f</sub> ate the last cookie.|# Caitlin ate the last [cookie]<sub>f</sub>.' term="cookie" %} 
 {% endcapture %}
 
 <!-- Cookie sem -->
@@ -46,12 +46,22 @@
 <!-- Picnic sem -->
 {% capture picnicsem %}
 {% capture confocus %}
-{% include sem.html term='Picnic' type='cf' index="f" %} = { <em>People brought potato salad</em>, <em>People brought frisbees</em>, <em>People brought unbridled enthusiasm</em>, ... }
+{% include sem.html term='Picnic<sub>cf</sub>' index="f" %} = { <em>People brought potato salad</em>, <em>People brought frisbees</em>, <em>People brought unbridled enthusiasm</em>, ... }
 {% endcapture %}
 {% capture focus %}
-{% include sem.html term='Picnic' type='f' index="f" %} = { <em>Everyone brought unbridled enthusiasm</em>, <em>The Robbins family brought unbridled enthusiasm</em>, <em>The children brought unbridled enthusiasm</em>, ... }
+{% include sem.html term='Picnic<sub>f</sub>' index="f" %} = { <em>Everyone brought unbridled enthusiasm</em>, <em>The Robbins family brought unbridled enthusiasm</em>, <em>The children brought unbridled enthusiasm</em>, ... }
 {% endcapture %}
 {% include ex.html type="ex" term="picnic alt sets" sent=confocus sub=focus defn="Obs/Def" %}
+{% endcapture %}
+
+<!-- Picnic structure -->
+{% capture picnicstruc %}
+{% include ex.html type="ex" term="Picnic structure" sent="What did people bring to the picnic?" sub="What did the Robbins family bring?|What did the children bring?|What did the francophiles bring?" defn="Obs/Def" %}
+{% endcapture %}
+
+<!-- Chew toys -->
+{% capture chewtoys %}
+{% include ex.html type="ex" sent="What did people bring to the picinic?" sub="The [Robertson's dogs]<sub>cf</sub> brought [their favorite chew toys]<sub>f</sub>." term="chew toys" %}
 {% endcapture %}
 
 <!-- Movie -->
