@@ -189,22 +189,95 @@ I take this to be an interesting and widespread discourse phenomenon, and one th
 
 Before we get to my preferred account, it is worth exploring another approach to discourses such as [Bears](#bears) that does give pride of linguistic place to the corrective element of the completion utterance.
 
-The completion utterance is distinctively *disputative*. It seems to simultaneously *deny* the original statement and *substitute* an alternative to it. Jennifer Spenader and Emar Maier {% include ref.html id="spenader2009" %}, expanding on work of Maier and Bart Geurts {% include ref.html id="geurts1998a,geurtsa" %}, attempt to treat corrections as *downdates* on the information state. On this proposal, the function of corrections is to remove from the discourse representation something that was previous added to it. A wrinkle is that corrections do not eliminate information wholesale. Consider, for example:
+The completion utterance is distinctively *disputative*. It seems to simultaneously *deny* the original statement and *substitute* an alternative to it. Jennifer Spenader and Emar Maier {% include ref.html id="spenader2009" e="," %} expanding on work of Maier and Bart Geurts {% include ref.html id="geurts1998a,geurtsa" e="," %} attempt to treat corrections as *downdates* on the information state. On this proposal, the function of corrections is to remove from the discourse representation something that was previous added to it. A wrinkle is that corrections do not eliminate information wholesale. Consider, for example:
+
+In this section, I examine the downdate account of denial in terms of its ability to capture the observations about [Bears](#bears) noted earlier.
+
+## Denial and LDRT
+
+In his discussion of negation in its denial making use, Bart Geurts {% include ref.html id="geurts1998a" o="" %} maintains that denial is neither *unitary* nor *swamping*. It is not unitary beacause there are a wide variety of ways in which negation can encode denial, and there is little reason to believe that a single mechanism subsumes tham all. It is not swamping in that negation selectively denies bits of information conveyed by an utterance, granting other bits space in the conversational record.
 
 <!-- Movie -->
 {{ movie }}
 
-In this section, I examine the downdate account of denial in terms of its ability to capture the observations about [Bears](#bears) noted earlier.
+In [Movie](#movie), the initiation carries a packet of information. In the responses, we alternately have denial of an implicature (a), a presupposition (b), and a choice of words (c). In each case, the rest of the packet remains untouched, and may even be available for anaphoric reference later on. 
 
-## Layered discourse representation theory
+In standard DRT, extended discourse is represented by a *discourse representation structure* (DRS), which is a pair of sequences of *discourse referents* (dref) and *conditions* (cond). Conditions place constraints on the model against which sentences are evaluated for truth, and drefs serve as the referents of pronouns and other anaphoric expressions invoked in the conditions. Sentences in context contribute conditions and drefs to the DRS by adding them to the appropriate sequence. 
 
+{% capture drsdef %}
+{% capture gus %}
+{% include ldrt/drs.md %}
+{% endcapture %}
+{{ gus | markdownify }}
+{% endcapture %}
+{% include ex.html type="def" term="DRS" sent="Example" sub="Sub-example" defn=drsdef %}
+
+Standard DRT, only defines an *update* function for sentences, but there is nothing preventing us from defining a *downdate*, whereby conditions or drefs are removed from the DRS. But in standard DRT, all information contributed by a sentence is added to the conditions sequence. Thus, removing information removes it wholesale, which is to say that standard DRT makes denial swamping. 
+
+To account for the selective nature of denial, Geurts and Maier {% include ref.html id="geurtsa" o="" %} develop *Layered Discourse Representation Theory* (LDRT). LDRT avoids swamping by indexing all information conveyed by a sentence (both conditions ad drefs) by its kind, which is a matter of the discourse function it performs. The system can recognize such kinds as asserted content (*fr*), presupposed content (*pr*), implicated content (*inf*), contextual information (*k*), and information about syntactic and phonological form (*fm*). The effect is that the information added to a DRS is segmented into different layers. Certain conditions and drefs may get reduplicated in different layers if that information plays multiple roles in the discourse. We will represent the layer to which a bit of information is assigned by a subscript on condition or dref it contributes.
+
+To downdate, then, is to remove information from the DRS, but removing information of the presuppositional variety does nothing to the same information duplicated at the propositional level. The result is non-swamping denial.
+
+There is an additional complication for the denial-as-downdate approach, familiar from the literature on belief revision {% include ref.html id="agm1985,levi1980" o="" e="." %} An information state is always downdated in response to some impetus. The principal reason for performing a downdate is that the state has just been updated into incoherence, which is to say that an update operation has introduced information that contradicts information already present in the state. The role of the downdate is to remove enough information from the state to restore it to coherence. The problem is that, in general, there are multiple ways to perform this operation. 
+
+Take a classic example from the belief revision literature:
+
+The standard solution in belief revision is to supplement the information state structure with an *entrenchment relation*, which serves to rank elements of the state in terms of their susceptibility to removal. This puts constraints on how belief state is revised in response to its falling into incoherence. But crucially, the entrenchment relation does not fix a unique revision strategy.
+
+
+{% capture downdate %}
+For DRSs &phi;, &psi;, &chi;,
+
+{% capture subdrslhs %}
+&chi; &#x2291; &phi;
+{% endcapture %}
+{% capture subdrsrhs %}
+&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> ) &or; ( m &isin; &phi;<sup>c</sup> &and; m &isin; &chi;<sup>c</sup> ) ]
+{% endcapture %}
+{% include eqn.html lhs=subdrslhs rhs=subdrsrhs mult=0 conn="iff" %}
+
+{% capture maxlhs %}
+&chi; = max(&phi;)
+{% endcapture %}
+{% capture maxrhs %}
+&chi;  &#x2291; &phi; &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; &psi; )
+{% endcapture %}
+{% include eqn.html lhs=maxlhs rhs=maxrhs mult=0 conn="iff" %}
+
+{% capture opluslhs %}
+&phi; &#x229E; &psi;
+{% endcapture %}
+{% capture oplusrhs %}
+[ &phi;<sup>d</sup> &oplus; &psi;<sup>d</sup> \| &phi;<sup>c</sup> &oplus; &psi;<sup>c</sup> ]
+{% endcapture %}
+{% include eqn.html lhs=opluslhs rhs=oplusrhs mult=0 conn="=" %}
+
+{% capture downlhs %}
+&phi; <span class="symbol">&darr;</span> &psi;
+{% endcapture %}
+{% capture downrhs %}
+&psi; &oplus; max( &chi; &#x2291; &phi; \| &chi; &#x229E; &phi; &ne; &empty; )
+{% endcapture %}
+{% include eqn.html lhs=downlhs rhs=downrhs mult=0 conn="=" %}
+
+{% endcapture %}
+{% include ex.html type="def" term="Downdate" sent="Example" sub="Sub-example" defn=downdate %}
+
+Jennifer Spenader {% include ref.html id="spenader2009" o="" %} extend this approach to account also for the corrective potential of *contrast*. According to the extension, contrast is a general means of preventing material from entering the common ground. Contrast is usually accompanied by both a *concession* and a *correction*. 
+
+<!-- Spanish -->
+{% include ex.html type="ex" term="Spanish" sent="Juan speaks Spanish." sub="Well, he is Argentinian, but he doesn't speak Spanish." defn="Obs/Def" %}
+
+In the completion of [Spanish](#spanish), the choice of connective (*but*) carries contrastive import, the first conjuct provides a concession to the initiation, and the second conjunct corrects it.
+
+{% capture spdd %}
+{% include ldrt/spanish.html %}
+{% endcapture %}
+{% include ex.html type="def" term="Spanish LDRT" sent="Example" sub="Sub-example" defn=spdd %}
 
 
 ## Information state revision
 
-The issue raised for the correction-as-revision approach is familiar from the literature on belief revision stemming from the work of Gardenfors (in AGM) -- namely, that there are multiple ways to coherently downdate an information state.
-
-The standard solution in belief revision is to supplement the belief state with an *entrenchment relation*, which serves to rank elements of the state (either sentences for the syntactic model or worlds in the semantic model) in terms of their susceptibility to downdate. This puts constraints on how belief state is revised in response to its falling into incoherence. But crucially, the entrenchment relation does not fix a unique revision strategy.
 
 Similarly, the LDRT approach to correction places constraints on downdate by linking drefs via the conditions they bind. But the constraints need not fix a unique downdate strategy. They do so only incidentally in the case of entity type drefs.
 

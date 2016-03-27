@@ -1,0 +1,28 @@
+table.ldrt {
+  border-collapse:collapse;
+
+  td.drs {
+    &.left {
+      border-left:1px solid #000;
+    }
+    &.right {
+      border-right:1px solid #000;
+    }
+    &.top {
+      border-top:1px solid #000;
+    }
+    &.bottom {
+      border-bottom:1px solid #000;
+    }
+    width:3px;
+  } 
+
+  td.dref {
+    border-right:1px solid #000;
+    padding-right:5px;
+  }
+
+  td.condition {
+    padding-left:10px;
+  }
+}

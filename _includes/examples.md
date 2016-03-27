@@ -66,7 +66,7 @@
 
 <!-- Movie -->
 {% capture movie %}
-{% include ex.html type="ex" term="movie" sent="The movie was funny." sub="The movie wasn't [funny]<sub>f</sub>, it was [hilarious]<sub>f</sub>." %}
+{% include ex.html type="ex" term="movie" sent="The movie was funny." sub="The movie wasn't [funny]<sub>f</sub>, it was [hilarious]<sub>f</sub>.|[The]<sub>f</sub> movie wasn't funny, they [all]<sub>f</sub> were.|The [movie]<sub>f</sub> wasn't funny, the [film]<sub>f</sub> was." %}
 {% endcapture %}
 
 <!-- Honey -->
