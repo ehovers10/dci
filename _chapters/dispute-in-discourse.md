@@ -195,7 +195,7 @@ In this section, I examine the downdate account of denial in terms of its abilit
 
 ## Denial and LDRT
 
-In his discussion of negation in its denial making use, Bart Geurts {% include ref.html id="geurts1998a" o="" %} maintains that denial is neither *unitary* nor *swamping*. It is not unitary beacause there are a wide variety of ways in which negation can encode denial, and there is little reason to believe that a single mechanism subsumes tham all. It is not swamping in that negation selectively denies bits of information conveyed by an utterance, granting other bits space in the conversational record.
+In his discussion of negation in its denial making use, Bart Geurts {% include ref.html id="geurts1998a" o="" %} maintains that denial is neither *unitary* nor *swamping*. It is not unitary beacause there are a wide variety of ways in which negation can encode denial, and there is little reason to believe that a single mechanism subsumes tham all. It is not swamping in that negation selectively denies bits of information conveyed by an utterance, granting other bits space in the conversational record.[^facets]
 
 <!-- Movie -->
 {{ movie }}
@@ -218,12 +218,15 @@ To account for the selective nature of denial, Geurts and Maier {% include ref.h
 
 To downdate, then, is to remove information from the DRS, but removing information of the presuppositional variety does nothing to the same information duplicated at the propositional level. The result is non-swamping denial.
 
-There is an additional complication for the denial-as-downdate approach, familiar from the literature on belief revision {% include ref.html id="agm1985,levi1980" o="" e="." %} An information state is always downdated in response to some impetus. The principal reason for performing a downdate is that the state has just been updated into incoherence, which is to say that an update operation has introduced information that contradicts information already present in the state. The role of the downdate is to remove enough information from the state to restore it to coherence. The problem is that, in general, there are multiple ways to perform this operation. 
+There is an additional complication for the denial-as-downdate approach, familiar from the literature on belief revision {% include ref.html id="agm1985,levi1980" o="n" e="." %} An information state is always downdated in response to some impetus. The principal reason for performing a downdate is that the state has just been updated into incoherence, which is to say that an update operation has introduced information that contradicts information already present in the state. The role of the downdate is to remove enough information from the state to restore it to coherence. The problem is that, in general, there are multiple ways to perform this operation.
+  
+As an example {% include ref.html id="gillies2004" o="n" e="," %} imagine I happen to believe both that at least one of coffeeshop A or B is open (*p*&or;*q*) and that coffeeshop A is open (*p*), which we represent as the deductive closure of the set containing these two beliefs: Cn({ *p*&or;*q*, *p* }). But I subsequently get strong evidence that coffeeshop A is not open, say I see a sign hanging in the door that reads "Closed all day for cleaning". Updating with this new evidence results in the belief state Cn({ *p*&or;*q*, *p*, &not;*p* }), which is just the universal set. I believe too much, and I must revise. But how much do I remove? Minimally, *p* will have to go. But what about *p*&or;*q*? The choice depends on the details of my epistemic situation.
+  
+Suppose I had seen you walking down the street carrying a cup of coffee. Knowing that there are only two coffee shops in town, I came to believe that at least one of them is open (*p*&or;*q*). Continuing along, I saw lights on in coffeeshop A, which led me to update my belief set with *p*. Only when I got closer did I see the sign. In this case, I have independent reason for my belief that one of the coffeeshops is open, and it seems that *p*&or;*q* deserves to remain. It seems that a *minimal* retraction, excising only the directly contradictory *p*, is the strategy that is called for.
 
-Take a classic example from the belief revision literature:
+But suppose, instead, that my first bit of evidence is the light coming from coffeeshop A. Since Cn({ *p* }) contains *p*&or;*q*, I similarly have to decide what to do with the disjunction when I read the sign. In this case, the natural response is that it gets swept out along with the removal of *p*. Minimal retraction fails to capture the derivative status of my belief in the disjunction. 
 
-The standard solution in belief revision is to supplement the information state structure with an *entrenchment relation*, which serves to rank elements of the state in terms of their susceptibility to removal. This puts constraints on how belief state is revised in response to its falling into incoherence. But crucially, the entrenchment relation does not fix a unique revision strategy.
-
+The upshot is that the propositional content of the evidence that initiates the downdate is not sufficient to determine the extent of the downdate; we need, also, a way of representing the source of certain propositions that are candidates for removal. The standard solution is to supplement the information state structure with an *entrenchment relation*, which serves to rank elements of the state in terms of their susceptibility to removal. This puts constraints on how and information state is revised in response to its falling into incoherence: remove the information needed to restore coherence as well as any unentrenched information relevant to the retracted information.[^entrench] Crucially, the entrenchment relation constrains appropriate retraction, but it does not fix a unique revision strategy.
 
 {% capture downdate %}
 For DRSs &phi;, &psi;, &chi;,
@@ -240,7 +243,7 @@ For DRSs &phi;, &psi;, &chi;,
 &chi; = max(&phi;)
 {% endcapture %}
 {% capture maxrhs %}
-&chi;  &#x2291; &phi; &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; &psi; )
+&chi;  &#x2291; &phi; &and; &forall;*c* &isin; &phi;<sup>c</sup> (entrench(*c*) ) &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; &psi; )
 {% endcapture %}
 {% include eqn.html lhs=maxlhs rhs=maxrhs mult=0 conn="iff" %}
 
@@ -263,6 +266,46 @@ For DRSs &phi;, &psi;, &chi;,
 {% endcapture %}
 {% include ex.html type="def" term="Downdate" sent="Example" sub="Sub-example" defn=downdate %}
 
+But once information is partitioned in the way that LDRT suggests, the system is exposed to binding concerns. The binding problem, as it has come to be known, was introduced in a famous footnote to Karttunen and Peters' *Conventional Implicature*. In the system expounded in that paper, conventional implicature is set apart as a distinct dimension of content from the standard semantic content derived from the meaning of the words in a sentence and the way they are put together. Cleaving implicature from semantic content allows us to explain a number of interesting features about how conventional implicatures work, but it also makes it more difficult to explain the ways in which elements of semantic content can interact with elements of the implicature. And it is finding such inroads between severed contents that is termed the binding problem. The separation between levels of content also provides a way around the swamping worry for denial, but because the LDRT approach involves dividing content by way of indexing, we may be concerned that a binding problem will arise here as well. 
+
+But the system has a built in fix that it acquires from the structure of DRSs. In LDRT, while conditions are isolated in their layer, drefs are not. While drefs are introduced in a layer, they transcend that position and are shared by conditions at all layers. Thus, they form a glue that binds layers together just enough to avoid the binding worries.
+
+At least, they avoid binding worries associated with drefs, such as Geurts and Maier's problem with madrigals.
+
+{% include ex.html type="ex" term="Madrigals" sent="Some of the madrigals are nice." sub="" defn="Obs/Def" %}
+
+[Madrigals](#madrigals) carries two implicatures in addition to its assertive content. It implicates first that *not all* of the madrigals are nice and also that the nice madrigals are *merely* nice. The first of these does not give rise to binding concerns, for there is no need to connect the discourse referent intdroduced by the existential quantifier to the variable bound by the implicated not-all quantifier. But the second does; if we represent implicated and asserted content as *fully* separated, then we fail to get capture the constraint that the *merely* nice madrigals are the same as the nice ones.
+
+{% capture madrigaldef %}
+
+{% capture madricaltranslhs %}
+Some of the madrigals are nice
+{% endcapture %}
+{% capture madricaltransrhs %}
+[ &exist;x ( madrigal(x) &and; nice(x) ) ]<sub>a</sub> [ &exist;x ( madrigal(x) &and; merely-nice(x) ) ]<sub>i</sub>
+
+[ x<sub>a</sub> y<sub>i</sub> \| madrigal<sub>a</sub>(x) &and; nice<sub>a</sub>(x) &and; merely-nice<sub>i</sub>(y) ]
+{% endcapture %}
+{% include eqn.html lhs=madricaltranslhs rhs=madricaltransrhs mult=0 conn="&rArr;" %}
+
+{% endcapture %}
+{% include ex.html type="def" term="Madrigals DRS" sent="Example" sub="Sub-example" defn=madrigaldef %}
+
+However, by allowing drefs to transcend layers, we can adequately link the conditions. Here is Geurts and Maier's analysis:[^madrigals]
+
+{% capture madrigalldrtdef %}
+
+{% capture madricaltranslhs %}
+Some of the madrigals are nice
+{% endcapture %}
+{% capture madricaltransrhs %}
+[ \| [ x \| madrigal<sub>p</sub> ] &#x27e8;some<sub>a</sub> x &#x27e9; [ \| nice<sub>a</sub>(x) merely-nice<sub>i</sub>(x) ] ]
+{% endcapture %}
+{% include eqn.html lhs=madricaltranslhs rhs=madricaltransrhs mult=0 conn="&rArr;" %}
+
+{% endcapture %}
+{% include ex.html type="def" term="Madrigals LDRS" sent="Example" sub="Sub-example" defn=madrigalldrtdef %}
+
 Jennifer Spenader {% include ref.html id="spenader2009" o="" %} extend this approach to account also for the corrective potential of *contrast*. According to the extension, contrast is a general means of preventing material from entering the common ground. Contrast is usually accompanied by both a *concession* and a *correction*. 
 
 <!-- Spanish -->
@@ -274,32 +317,6 @@ In the completion of [Spanish](#spanish), the choice of connective (*but*) carri
 {% include ldrt/spanish.html %}
 {% endcapture %}
 {% include ex.html type="def" term="Spanish LDRT" sent="Example" sub="Sub-example" defn=spdd %}
-
-
-## Information state revision
-
-
-Similarly, the LDRT approach to correction places constraints on downdate by linking drefs via the conditions they bind. But the constraints need not fix a unique downdate strategy. They do so only incidentally in the case of entity type drefs.
-
-It may be suggested that this is a feature rather than a bug in the LDRT proposal, as it allows for a more open-ended and interactive approach to correction. Different conversational participants' scoreboards can diverge based on their different, equally rational, downdate strategies. And this fact helps explain how corrective discourses occasionally degrade into confusion.
-
-I can allow that such a response could be worked out and that it would have certain merits. But it is not an approach I favor, because I am additionally swayed by conceptual motivations for working out a more natural integration of the components of corrective discourse.
-
-I think that the issue reveals the patchy nature of the dref binding fix. Corrective discourse is central enough to inquiry that it calls for an integrated implementation.
-
-## Binding retractions
-
-Revision of an information state takes place when a state degrades into incoherence. The primary source of incoherence is an attempt to update with a proposition whose negation is entailed by the state. Revisions can be analyzed into two components: a downdate, in which the problem proposition as well as a subset of its entailments is removed from the information state; and an update, in which the negation of the proposition is added to the state and the state is appropraitely closed.
-
-**First amendment:** The revision procedure must be amended because corrections do not in general force elimination of utterances whole-sail. Instead, utterances are multi-facted, and corrections tend to mar only a single face, allowing others through unchanged.
-
-To account for this, we add information to our state representations not as information full-stop, but indexed with an information type, where information types indicate the manner in which the information is added to the state. We can think of the information state as being divided into layers based on this indexing. Certain information may be present on multiple layers.
-
-But information state coherence is insensiive to indexing. If a proposition is present on one layer while its negation is present only on a distinct layer, the information state is still incoherent. The layers then provide us with an added means of constraining appropriate revision in the face of incoherence. Certain layers can be assumed to trump others, so that the information on one layer is always more entrenched than information on another.
-
-**Second amendment:** But once information is partitioned in this way, the system is exposed to binding concerns. The binding problem, as it has come to be known, was introduced in a famous footnote to Karttunen and Peters' *Conventional Implicature*. In the system expounded in that paper, conventional implicature is set apart as a distinct dimension of content from the standard semantic content derived from the meaning of the words in a sentence and the way they are put together. Cleaving implicature from semantic content allows us to explain a number of interesting features about how conventional implicatures work, but it also makes it more difficult to explain the ways in which elements of semantic content can interact with elements of the implicature. And it is finding such inroads between severed contents that is termed the binding problem.
-
-Because the amended revision approach involves dividing content by way of indexing, we may be concerned that a binding problem will arise here as well. But the system has a built in fix that it acquires from the structure of DRSs. A discourse representation structure is formally a pair of sets. One set is the universe of the DRS; it contains all the abstract discourse referents (of whatever type) that are introduced in the conversation being represented by the DRS. The other is a set of conditions, which place constraints on elements of the universe in the form of properties and relations holding of and among them. In LDRT, while the conditions are indexed by their layer, the drefs are not. Thus, a single dref can be shared by conditions of different layers. 
 
 ## Strictness, shifts, and structure
 
@@ -535,3 +552,9 @@ The key observation here is [Susceptibility](#susceptibility). Even if bare plur
 [^roothgen]: Rooth actually prefers a generalized version of the pragmatic constraint. This allows us to excise any reference to focus semantic values from the semantic theory, isolating it entirely within the pragmatics. For our purposes, the conspicuity of the specific QA-congruence rule is preferable. {% include ref.html id="rooth1992" o="" %}
 
 [^stratq]: How, if at all, does Buring's proposal differ from Roberts' *strategy of inquiry*?
+
+[^facets]: utterances are multi-facted, and corrections tend to mar only a single face.
+
+[^entrench]: We needn't specify the nature of the entrenchment relation here, but we can assume that the introduction of layers gives us a means of further constraining appropriate retraction in the face of incoherence. Certain layers can be assumed to trump others, so that the information on one layer is always more entrenched than information on another. Compare footnote 17 in {% include ref.html id="spenader2009" o="n" %}
+
+[^madrigals]: The representation includes an existence presupposition associated with the existential quantifier. I set aside their representation of the non-universality implicature.
