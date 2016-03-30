@@ -25,4 +25,13 @@ table.ldrt {
   td.condition {
     padding-left:10px;
   }
+
+  td.contribution {
+    width: 2em;
+    text-align: center;
+  }
+
+  td.downdate {
+    text-decoration: line-through;
+  }
 }

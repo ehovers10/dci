@@ -266,7 +266,27 @@ For DRSs &phi;, &psi;, &chi;,
 {% endcapture %}
 {% include ex.html type="def" term="Downdate" sent="Example" sub="Sub-example" defn=downdate %}
 
-But once information is partitioned in the way that LDRT suggests, the system is exposed to binding concerns. The binding problem, as it has come to be known, was introduced in a famous footnote to Karttunen and Peters' *Conventional Implicature*. In the system expounded in that paper, conventional implicature is set apart as a distinct dimension of content from the standard semantic content derived from the meaning of the words in a sentence and the way they are put together. Cleaving implicature from semantic content allows us to explain a number of interesting features about how conventional implicatures work, but it also makes it more difficult to explain the ways in which elements of semantic content can interact with elements of the implicature. And it is finding such inroads between severed contents that is termed the binding problem. The separation between levels of content also provides a way around the swamping worry for denial, but because the LDRT approach involves dividing content by way of indexing, we may be concerned that a binding problem will arise here as well. 
+### Binding retractions
+
+The LDRT approach provides an adequate explanation of certain cases of denial, but it does so by taking incidental advantage of an artefact of the DRT framework. A genuine solution would recognize that the value of DRSs is not that they allow for boundary crossing drefs specifically, but that they manage to interleave bits of information that play different interpretive roles. The dref/condition distinction is one such distinction in roles, but it is not the only one that potentially gives rise to binding-style problems. For example, BAF have shown that interaction between content types is also present for the at-issue/not-at-issue distinction:
+
+The binding problem, originally introduced in a endnote to Karttunen and Peters' *Conventional Implicature* {% include ref.html id="karttunen1979" o="" %}. In the system expounded in that paper, conventional implicature is set apart as a distinct dimension of content from the standard semantic content derived from the meaning of the words in a sentence and the way they are put together. Cleaving implicature from semantic content allows us to explain a number of interesting features about how conventional implicatures work, but it also makes it more difficult to explain the ways in which elements of semantic content can interact with elements of the implicature.
+
+{% include ex.html type="ex" term="Managed" sent="Someone managed to succeed George V on the throne of England." sub="If someone managed to succeed George V on the throne of England, then that country is still a monarchy." defn="Obs/Def" %}
+
+The (a) sentence in [Managed](#managed) seems to implicate that the person who succeeded George V on the throne had difficulty in doing so. But the most natural way of representing the implicature as derived from the utterred sentence is does not capture this.
+
+{% capture manageddef %}
+
+**Semantic content**: &exist;x,y ( george(x) &and; succeeded(y,x) )
+
+**Conventional implicature**: &exist;x,y ( george(x) &and; succeeded(y,x) &and; had-difficulty(x) )
+
+{% include ldrt/managed.html %}
+{% endcapture %}
+{% include ex.html type="def" term="Managed DRS" sent="Example" sub="Sub-example" defn=manageddef %}
+
+ And it is finding such inroads between severed contents that is termed the binding problem. The separation between levels of content also provides a way around the swamping worry for denial, but because the LDRT approach involves dividing content by way of indexing, we may be concerned that a binding problem will arise here as well. 
 
 But the system has a built in fix that it acquires from the structure of DRSs. In LDRT, while conditions are isolated in their layer, drefs are not. While drefs are introduced in a layer, they transcend that position and are shared by conditions at all layers. Thus, they form a glue that binds layers together just enough to avoid the binding worries.
 
@@ -275,21 +295,6 @@ At least, they avoid binding worries associated with drefs, such as Geurts and M
 {% include ex.html type="ex" term="Madrigals" sent="Some of the madrigals are nice." sub="" defn="Obs/Def" %}
 
 [Madrigals](#madrigals) carries two implicatures in addition to its assertive content. It implicates first that *not all* of the madrigals are nice and also that the nice madrigals are *merely* nice. The first of these does not give rise to binding concerns, for there is no need to connect the discourse referent intdroduced by the existential quantifier to the variable bound by the implicated not-all quantifier. But the second does; if we represent implicated and asserted content as *fully* separated, then we fail to get capture the constraint that the *merely* nice madrigals are the same as the nice ones.
-
-{% capture madrigaldef %}
-
-{% capture madricaltranslhs %}
-Some of the madrigals are nice
-{% endcapture %}
-{% capture madricaltransrhs %}
-[ &exist;x ( madrigal(x) &and; nice(x) ) ]<sub>a</sub> [ &exist;x ( madrigal(x) &and; merely-nice(x) ) ]<sub>i</sub>
-
-[ x<sub>a</sub> y<sub>i</sub> \| madrigal<sub>a</sub>(x) &and; nice<sub>a</sub>(x) &and; merely-nice<sub>i</sub>(y) ]
-{% endcapture %}
-{% include eqn.html lhs=madricaltranslhs rhs=madricaltransrhs mult=0 conn="&rArr;" %}
-
-{% endcapture %}
-{% include ex.html type="def" term="Madrigals DRS" sent="Example" sub="Sub-example" defn=madrigaldef %}
 
 However, by allowing drefs to transcend layers, we can adequately link the conditions. Here is Geurts and Maier's analysis:[^madrigals]
 
@@ -306,12 +311,12 @@ Some of the madrigals are nice
 {% endcapture %}
 {% include ex.html type="def" term="Madrigals LDRS" sent="Example" sub="Sub-example" defn=madrigalldrtdef %}
 
-Jennifer Spenader {% include ref.html id="spenader2009" o="" %} extend this approach to account also for the corrective potential of *contrast*. According to the extension, contrast is a general means of preventing material from entering the common ground. Contrast is usually accompanied by both a *concession* and a *correction*. 
+Jennifer Spenader joins Maier {% include ref.html id="spenader2009" o="" %} in extending this approach to account also for the corrective potential of *contrast*. According to the extension, contrast is a general means of preventing material from entering the common ground. It's presence signifies that the information in its scope is being presented for a downdate operation.
 
 <!-- Spanish -->
 {% include ex.html type="ex" term="Spanish" sent="Juan speaks Spanish." sub="Well, he is Argentinian, but he doesn't speak Spanish." defn="Obs/Def" %}
 
-In the completion of [Spanish](#spanish), the choice of connective (*but*) carries contrastive import, the first conjuct provides a concession to the initiation, and the second conjunct corrects it.
+In the completion of [Spanish](#spanish), the choice of connective (*but*) carries contrastive import; the second conjunct, in its scope, is a downdating correction of the initiation sentence. The first conjuct, preceded by the hedge term *well*, provides a concession to the initiation, indicating that the response is intended as a *refinement* rather than a swamping denial.
 
 {% capture spdd %}
 {% include ldrt/spanish.html %}
