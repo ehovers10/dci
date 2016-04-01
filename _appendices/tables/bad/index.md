@@ -1,8 +1,3 @@
----
-title: Bears are dangerous
-layout: table
----
-
 <div class="groupwrap">
 <div class="group">
 
@@ -36,3 +31,5 @@ layout: table
 
 </div>
 </div>
+
+<div style="margin-botton: 200px;"></div>

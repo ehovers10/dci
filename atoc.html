@@ -1,0 +1,26 @@
+---
+title: Annotated table of contents
+---
+
+<div class="toc" style="margin-left:2em;">
+{% for chap in site.data.toc %}
+{% assign url = chap.chapter | slugify | prepend: '/chapters/' | prepend: site.baseurl | append: '.html' %}
+<h3 class="chapter"><a href="{{ url }}">{{ chap.chapter }}</a></h3>  
+<blockquote>
+<ul class="section">
+  {% for sect in chap.sections %}
+    <li class="{% unless sect.subsections %}open{% endunless %}" id="{{ sect.title | slugify }}">{{ sect.title }} {% if sect.detail %}<img class="icon" src="{{ '/images/chevron-down.svg' | prepend: site.baseurl }}" title="Detail" />{% endif %}</li>
+    {% if sect.detail %}<blockquote class="hid item" id="{{ sect.title | slugify | append: '-hid' }}">{{ sect.detail }}</blockquote>{% endif %}
+    {% if sect.subsections %}
+    <ul class="subsection">
+      {% for subsect in sect.subsections %}
+      <li class="open" id="{{ subsect.title | slugify }}">{{ subsect.title }} {% if subsect.detail %}<img class="icon" src="{{ '/images/chevron-down.svg' | prepend: site.baseurl }}" title="Detail" />{% endif %}</li>
+      {% if subsect.detail %}<blockquote class="hid item" id="{{ subsect.title | slugify | append: '-hid' }}">{{ subsect.detail }}</blockquote>{% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% endfor %}
+</ul>
+</blockquote>
+{% endfor %}
+</div>

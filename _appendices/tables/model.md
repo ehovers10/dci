@@ -25,6 +25,7 @@
 
 {% endcomment %}
 
+<div style="float:left;width:400px;">
 {% capture dslhs %}
 **D**<sub>s</sub>
 {% endcapture %}
@@ -62,7 +63,8 @@ s<sub>2</sub> &rArr; { a }
 s<sub>3</sub> &rArr; { b, d }
 {% endcapture %}
 {% include eqn.html lhs=vdangerouslhs rhs=vdangerousrhs mult=3 conn="=" %}
-
+</div>
+<div style="float:left;width:400px;">
 {% capture vgrizzlylhs %}
 *V*(*grizzly*)
 {% endcapture %}
@@ -98,3 +100,5 @@ s<sub>2</sub> &rArr; { d }
 s<sub>3</sub> &rArr; { e }
 {% endcapture %}
 {% include eqn.html lhs=vpolarlhs rhs=vpolarrhs mult=3 conn="=" %}
+</div>
+<div style="clear:both;"></div>

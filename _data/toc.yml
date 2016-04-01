@@ -1,25 +1,39 @@
 -
   chapter: Knowledge in the image of inquiry
   sections:
-  - title: Knowledge and the end of inquiry
+  - title: The structure of knowledge
+    detail: "Jonathan Schaffer (Knowledge in the image of assertion) has argued that we can learn something about the structure of knowledge by investigating the nature of assertion, to which knowledge bears a substantive connection. Knowledge also bears a substantive connection to inquiry, and I maintain that we can similarly learn something about the nature of knowledge by investigating the nature of inquiry."
     subsections:
-  - title: Collaborative inquiry
+  - title: The nature of inquiry
     subsections:
-    - title: Belief revision
-    - title: Error avoidance and seeking truth
-    - title: Millian inquiry
+    - title: Error avoidance
+      detail: "Issac Levi develops an account of inquiry in terms of revision of information states. He takes the principal mandate of proper inquiry to be to avoid importing error into one's state of information. Since refusing to alter one's information state guarantees that no additional error will be imported, the maximally conservative inquirer is perfectly rational by the lights of Levi's account. An information state on this model is merely a set of worlds, representing the space of genuine (open) possibilities according to the inquiring agent."
+    - title: Impetus to revise
+      detail: "But we aren't satisfied to remain cogniively stationary. In C. S. Peirce's (Fixation of belief) words, we are constantly subject to the <em>irritation of doubt</em>. We can incorporate this impetus to revise our information state into a formal account of inquiry by way of William James' (Will to believe) dual inquiry mandate: avoid error and acquire truth. The impetus to revise stems from the second goal, and the rational inquirer strives for truth in addition to avoiding error.<br/><br/>To model this extension of the nature of inquiry, we add additional structure to the information states that are the objects of inquiry. We partition the space of possibilities based on the issue the agent is striving to resolve."
+    - title: Plans of inquiry
+      detail: "An inquiry is not simple transition from one state to the next. It is a dilated process, developing over the course of a number of steps, some of which, perhaps, involve false progress and require the inquirer to backtrack. The process of having reached a dead end in the inquiry often provides valuable information to the inquirer.<br/><br/>Plans require bookkeeping both in the form of preparing multiple lines of progress the inquiry might entertain as it runs its course as well as a record of past steps taken. To account for this, we must expand the information state structure again, modeling this bookkeeping operation."
+    - title: Joint activity
+      detail: "John Stuart Mill (On Liberty) maintained that the ability to defend one's beliefs against detractors is an essential element of the justification of those beliefs. As the principal justifying process of belief, inquiry thus carries the commitment to engage the best arguments one can find in pursuit of issue resolution. The result is that proper inquiry is essentially a joint activity -- one in which dispute plays a progressive role.<br/><br/>To model joint, disputative inquiry, we need a staging ground upon which attempted information state revisions can be proposed and vetted. I call this platorm a *sandbox*, and it is essentially a mini-information state embedded within the primary one. It allows for extended investigation of issues without potentially infecting the primary information state with false tries."
+    - title: Advancing the inquiry
+      detail: "We end up with a picture of inquiry as the productive evolution of an articulated information state. Productive evolution can take a variety of forms. These forms correspond to different types of contribution. Inquiry contribution types have direct analogues in discourse. There are possibility restricting <em>assertions</em> and state partitioning <em>questions</em> with which we are familiar. But there is also a contribution type corresponding to *conjecture*, which can be modeled by sandbox-level investigations. <em>Conjecture</em>, along with its natural pair <em>correction</em>, provides a distinctive means of advancing the inquiry."
   - title: The value of knowledge
     subsections:
     - title: Swamped by truth
+      detail: "Linda Zagzebski argues that many theories of knowledge -- notably <em>machine-product</em> accounts of knowledge, on which knowledge is taken to be a state that is the output of some state generating process -- are subject to a <em>swamping problem</em>. Possessing knowledge is more valuable than possessing merely true belief, but these accounts of knowledge have no explanation for the distinctive value that knowledge provides over and above the truth of output they produce."
     - title: Justifying processes
-    - title: Knowledge and assertion
-    - title: Norms and commitments
+      detail: "But the problem isn't with the machine-product model itself. The problem comes from focusing on the product and ignoring the process. The value of knwoledge is in grounding the credit the agent deserves for the belief. Knowledge provides, as Socrates suggested to Meno, an <em>account</em> of the product's genesis. So long as the process is seen as external to the product, the product will carry no value of its own. But the insight of the connection between inquiry and knowledge is that they need not be independent. The product encodes the process. The inquiry itself is the object of knowledge."
+    - title: Knowing the truth
+      detail: "This is a fairly substantial modification to the standard structure of knowledge for which its object is a simple proposition. How does this account make sense of our intuitive sense that the objects of knowledge are truths?"
   - title: Dispute and relativism
     subsections:
     - title: Disagreement as linguistic data
-    - title: Contextualism and relativism
-    - title: The centrality of dispute
-    - title: A new argument for relativism
+      detail: "A now common line of argument in the philosophy of language starts by pointing to an intuition that parties to a particular kind of discourse are engaged in a <em>genuine disagreement</em>. From there it is claimed that explaining this intuition requires a semantic theory that represents their utterances as expressing conflicting semantic contents. From here it is maintained that only one of <em>contextualist</em> or <em>relativist</em> accounts of the semantic value of certain expressions provides the requisite content.<br/><br/>Plunkett and Sundell have argued that the restriction of disagreement securing content to specifically <em>semantic</em> content is artificial. There is no principled reason that pragmatically generated content can't serve to ground intuitions of disagreement. And perhaps the disparaged semantic account can revive its status by hitching its wagon to such a pragmatic story."
+    - title: Commitment and contribution
+      detail: "Our discussion of the structure of inquiry suggests that the restriction of disagreement securing contributions to <em>assertive</em> contributions is itself unmotivated. Dispute is a central element of healthy inquiry, and as such it can potentially be grounded in any number of types of contribution to inquiry."
+    - title: The nature of relativism
+      detail: "John MacFarlane characterizes as relativistic any semantic theory that makes essential reference to the context of the <em>assessor</em> of an utterance. And much of the contextualism/relativism debate has centered on who's context matters. But Peter Lasersohn provided an interestingly different take on relativism. His support of relativism was not so much that certain expressions demand that the assessor's context be included but that whose context is important to evaluation is not <em>determined</em> at the point of utterance."
+    - title: Joint inquiry and relativism
+      detail: "Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An individuals utterance is incomplete in an important way, and it calls for completion from one's interlocutors. Thus, evaluation is delayed until the inquiry progresses.  Knowledge, it turns out, is relative; just not in the way we first suspected."
 
 -
   chapter: Collaborative update semantics
@@ -46,18 +60,34 @@
   chapter: Dispute in discourse
   sections:
   - title: Disputative discourse
+    detail: "Disputative discourse is rich with interpretive detail. I present a number of observations about a short dialogue involving disputative discourse. I take accounting for these observations to be a criterion of adequacy for an account of the discourse dynamics involved."
     subsections:
   - title: Correction as contrastive topic
     subsections:
     - title: Focus and alternatives
+      detail: "A salient feature of our example dialogue is the presence of focus in the response. An attempt to capture the observations by applying an account of focus interpretation is elaborated. Mats Rooth's <em>alternative</em> semantics for focus is introduced."
     - title: Questions under discussion
-    - title: Plans of inquiry
+      detail: "Craige Roberts' <em>QUD</em> model of discourse representation is introduced. Daniel Bu&#x0308;ring's extension of <em>QUD</em> to account for contrastive topic is explained."
+    - title: Advancement or accommodation
+      detail: "A question is raised as to the amount of reliance the <em>QUD</em> account places on accommodation."
+    - title: 
   - title: Denial as downdate
     subsections:
-    - title: Layered discourse representation theory
-    - title: Information state revision
+    - title: Denial and LDRT
+      detail: "Geurts and Maier's <em>Layered discourse representation theory</em> is introduced. It is explained how this account avoids <em>swamping</em> worries for denial."
+    - title: Denial and information state revision
+      detail: "Spenader and Maier extend LDRT with a downdate operation to account for the effect of contrast in discourse."
     - title: Binding retractions
-  - title: Collaborative update semantics
+      detail: "While LDRT can avoid the binding problem that plagued Karttunen and Peters, it can't get around all interaction effects between kinds of content. The susceptibility of the denial as downdate account to this extended class of binding-style worries is due to a mis-diagnosis of the nature of interaction between content types."
+  - title: Contrast as collaboration
     subsections:
     - title: Strictness, shifts, and structure
-    - title: Pragmatics of plurals and partitions
+      detail: "Both counterfactual conditionals and bare plural sentences have simple, strict analyses in terms of set-inclusion. But both face sticky situations that threaten to undermine the simple analysis. Each can be extracted from its sticky situation by better understanding the pragmatic principles in play."
+    - title: Pragmatics of plurals
+      detail: "Bare plural sentences carry a presupposition to the effect that the subject class is homogeneous with respect to the predicate. This is fairly well accepted; the novel bit is a representation of this presupposition as imposing a partition on the predicate class against which the predication is evaluated."
+    - title: "Plural predication and contrast, informally"
+      detail: "An informal characterization of how the information state evolves through the course of our example dialogue is presented."
+    - title: "Plural predication and contrast, formally"
+      detail: "First, an explication of the general collaborative update processes involved in the discourse is provided. This framework is then extended with collaborative update operations that are specific to bare plurals and contrastive focus. The story about plurals is couched in the language of <em>relational algebra</em>."
+  - title: Outcome and observations obtained
+    detail: "The collaborative update account exctracts a strict analysis of bare plurals from its sticky situation. It also provides a satisfying account of the observations about disputative discourse."

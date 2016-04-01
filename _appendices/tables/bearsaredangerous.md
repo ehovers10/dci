@@ -1,8 +1,3 @@
----
-title: Bear are dangerous
-layout: table
----
-
 <!-- Right-outer-join(Bears,Dangerous) -->
 <table class="relation">
 <tr>
