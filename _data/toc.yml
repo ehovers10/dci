@@ -1,7 +1,7 @@
 -
   chapter: Knowledge in the image of inquiry
   sections:
-  - title: The structure of knowledge
+  - title: Knowledge as the end of inquiry
     detail: "Jonathan Schaffer (Knowledge in the image of assertion) has argued that we can learn something about the structure of knowledge by investigating the nature of assertion, to which knowledge bears a substantive connection. Knowledge also bears a substantive connection to inquiry, and I maintain that we can similarly learn something about the nature of knowledge by investigating the nature of inquiry."
     subsections:
   - title: The nature of inquiry
@@ -16,15 +16,19 @@
       detail: "John Stuart Mill (On Liberty) maintained that the ability to defend one's beliefs against detractors is an essential element of the justification of those beliefs. As the principal justifying process of belief, inquiry thus carries the commitment to engage the best arguments one can find in pursuit of issue resolution. The result is that proper inquiry is essentially a joint activity -- one in which dispute plays a progressive role.<br/><br/>To model joint, disputative inquiry, we need a staging ground upon which attempted information state revisions can be proposed and vetted. I call this platorm a *sandbox*, and it is essentially a mini-information state embedded within the primary one. It allows for extended investigation of issues without potentially infecting the primary information state with false tries."
     - title: Advancing the inquiry
       detail: "We end up with a picture of inquiry as the productive evolution of an articulated information state. Productive evolution can take a variety of forms. These forms correspond to different types of contribution. Inquiry contribution types have direct analogues in discourse. There are possibility restricting <em>assertions</em> and state partitioning <em>questions</em> with which we are familiar. But there is also a contribution type corresponding to *conjecture*, which can be modeled by sandbox-level investigations. <em>Conjecture</em>, along with its natural pair <em>correction</em>, provides a distinctive means of advancing the inquiry."
+  - title: Knowledge and knowing
+    subsections:
+    - title: Solitary knowing
+      detail: "Those who do not belong to a community of inquirers have no one against whom to test their beliefs, but surely they are capable of possessing knowledge. Proper inquiry is doubly qualified to account for solitary knowledge: (i) an inquirer need only possess the ability to defend against challenges, and (ii) she need only defend against the best arguments available. Degenerative inquiry, in which the best available arguments are trivially defended, is still inquiry, its outputs still knowledge."
+    - title: Knowing the truth
+      detail: "Everything known is true, but the inquiry-first account posits complex objects that are not identical to truths. Fortunately, the factivity of knowledge is secured by any object that <em>entails</em> truth, as proper inquiry does. Unfortunately, proper inquiry does so only <em>in the long run</em>. But intermediate-stage inquiry still produces truth, in context."
   - title: The value of knowledge
     subsections:
     - title: Swamped by truth
       detail: "Linda Zagzebski argues that many theories of knowledge -- notably <em>machine-product</em> accounts of knowledge, on which knowledge is taken to be a state that is the output of some state generating process -- are subject to a <em>swamping problem</em>. Possessing knowledge is more valuable than possessing merely true belief, but these accounts of knowledge have no explanation for the distinctive value that knowledge provides over and above the truth of output they produce."
     - title: Justifying processes
       detail: "But the problem isn't with the machine-product model itself. The problem comes from focusing on the product and ignoring the process. The value of knwoledge is in grounding the credit the agent deserves for the belief. Knowledge provides, as Socrates suggested to Meno, an <em>account</em> of the product's genesis. So long as the process is seen as external to the product, the product will carry no value of its own. But the insight of the connection between inquiry and knowledge is that they need not be independent. The product encodes the process. The inquiry itself is the object of knowledge."
-    - title: Knowing the truth
-      detail: "This is a fairly substantial modification to the standard structure of knowledge for which its object is a simple proposition. How does this account make sense of our intuitive sense that the objects of knowledge are truths?"
-  - title: Dispute and relativism
+  - title: Contextualism and relativism
     subsections:
     - title: Disagreement as linguistic data
       detail: "A now common line of argument in the philosophy of language starts by pointing to an intuition that parties to a particular kind of discourse are engaged in a <em>genuine disagreement</em>. From there it is claimed that explaining this intuition requires a semantic theory that represents their utterances as expressing conflicting semantic contents. From here it is maintained that only one of <em>contextualist</em> or <em>relativist</em> accounts of the semantic value of certain expressions provides the requisite content.<br/><br/>Plunkett and Sundell have argued that the restriction of disagreement securing content to specifically <em>semantic</em> content is artificial. There is no principled reason that pragmatically generated content can't serve to ground intuitions of disagreement. And perhaps the disparaged semantic account can revive its status by hitching its wagon to such a pragmatic story."
@@ -36,25 +40,40 @@
       detail: "Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An individuals utterance is incomplete in an important way, and it calls for completion from one's interlocutors. Thus, evaluation is delayed until the inquiry progresses.  Knowledge, it turns out, is relative; just not in the way we first suspected."
 
 -
-  chapter: Collaborative update semantics
+  chapter: Collaborative discourse dynamics
   sections:
     - title: Scoreboards and best systems
       subsections:
-        -title: Simplicity and realism
+        - title: Constructing an interpretation
+          detail: "David Lewis' conception of the conversational scoreboard is grounded in his theory of radical interpretation. The scoreboard represents our theory and its bells and pulleys represent the theoretical posits and regularities. The structure we give the scoreboard depends on what serves as the most simple and robust representation of our shared linguistic knowledge, relative to domain specific constraints."
+        - title: Generativity and usability
+          detail: "One domain specific constraint on theory building is that inguistic interpretations be finitely specifiable. But this only makes sense as a constraint on language structure under the presumption that the theory is something possessed by human agents. And if that is our motivation, we need a stiffer constraint."
+        - title: Anaphora and coherence
+          detail: "In <em>Index, Context, and Content</em>, Lewis contends that an adequate characterization of our shared linguistic knowledge must provide us with truth values for sentences to account for our practice of using language to impart information. But this isn't all we do with language! We use it to resolve issues in the course of inquiry. And to capture this, our characterization must provide us with a means of resolving anaphora and determining coherence structure."
+        - title: Honesty and trust
+          detail: "In <em>Language and Languages</em>, Lewis suggests that linguistic communities abide by a convention of truth and trust, and that this is what secures the link between what they say and what they mean. But communities that use language to realize joint inquiry require a more integrative convention -- one in which speakers are <em>honest</em> and both speakers and hearers <em>trust</em> in the contributions of their interlocutors."
     - title: General update semantics
       subsections:
-        - title: Speech acts and contributions
+        - title: Discourse referents and conditions
+          detail: "Standard update semantics divides information added to the conversational platform into two categories: <em>referential</em> information -- functioning primarily to populate the universe of the discourse -- and <em>propositional</em> information -- placing constraints on the set of models that represents the discourse."
         - title: Content at different dimensions
+          detail: "But there is room to further articulate information states to capture more refined distinctions between the functions of additions to the conversational platform. Sarah Murray and Anderbois, Brasoveanu, and Farkas have developed accounts to capture the difference between the at-issue content and not-at-issue content expressed by utterances. But these proposals hit a wall when we attempt to apply them to extended discourse."
     - title: Collaborative contributions
       subsections:
-        - title: Utterance determination and inquiry advancement
         - title: Discourse pairs
+          detail: "Herb Clark argues that conversational contributions can be decomposed into an <em>initiation</em> phase and a <em>completion</em> phase, and that the completion is generally provided by someone other than the initiator. Contributions to discourse require not just cooperation, but collaboration."
         - title: Accuracy and precision
+          detail: "Standard discourse pairs are the assertion-assessment pair and the question-answer pair. These pairs earn their keep in virtue of the distinctive role they play in advancing inquiry. They can also be categorized within a two-dimensional concept space in terms of the <em>accuracy</em> and <em>precision</em> to which they commit the contributors."
         - title: Conjecture and correction
-    - title: Sandboxes and versions
+          detail: "Conjecture-correction is another discourse pair that earns its keep as a distinctive contribution to discourse. Conjecture differs from both assertion and interrogation in terms of its position on the accuracy/precision spectrum."
+    - title: Collaborative discourse dynamics
       subsections: 
+        - title: Sandbox discourse
+          detail: "Discourse pairs are the basic evaluative units discourse, but utterances aren't made in paralell. To address this worry, we need to introduce a staging area into the information state -- a place where information expressed by utterances can be held and manipulated without committing it to the primary information state. I call this staging area a <em>sandbox</em>."
         - title: Checkout, commit, merge
+          detail: "Collaborative update involves manipulation of information within a sandbox. In order to model collaborative activity of this sort, I incorporate concepts from <em>version control</em> in computer programming. Initiating utterances open up a new sandbox and populate it with needed information from the primary information state; this is known as a <em>checkout</em>. Continuation utterances add to sandbox and subject its contents to manipulation; these procedures involve a variety of <em>commits</em>. Finally, a completion utterance <em>merges</em> the finished sandbox product back into the primary information state."
         - title: Defaults and content evolution
+          detail: "It isn't strictly true that individual utterances are inevaluable in the absence of their complement utterance. Instead, context frequently determines a default saturation to allow for initial evaluation of the utterance. Defaults can be overridden by explicit completion utterances. This suggests that what a speaker expresses can change as the discourse progresses. Meaning is, in a very real sense, out of their hands, determined by the way in which their interlocutors choose to make use of their utterance."
 
 -
   chapter: Dispute in discourse

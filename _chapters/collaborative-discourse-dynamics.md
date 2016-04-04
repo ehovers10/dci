@@ -1,5 +1,5 @@
 ---
-title: Collaborative update semantics
+title: Collaborative discourse dynamcis
 level: 3
 type: chapter
 toc: yes
@@ -7,9 +7,11 @@ abstract:
   Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In *collaborative update semantics*, contribution operators attach to propositional radicals, and contributions initiated by one utterance may not be completed until a later utterance is added. In particular, conjecture operators function by opening a *sandbox* in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.
 ---
 
-## Scoreboards and best systems
+# Scoreboards and best systems
 
 David Lewis' {% include ref.html id='lewis1979f' %} suggestion that utterances in a conversation function as updates to values housed in the various slots of a conversational {% include concept.html word='scoreboard' %} posits a logical platform on which the conversation is built. The scoreboard serves as a record of the contributions that have been made to the conversation, and it dictates both whether an utterance is deemed to provide an acceptable contribution to the conversation and how acceptable utterances are interpreted. A crucial feature of the scoreboard it is not merely a list of unstructured information; the information is formatted in such a way to maximize its robustness and simplicity as an interpretive tool. As a first pass, we can think of the scoreboard as a field of slots with participants to the conversation wielding a set of pegs. There is a many-to-one relationship between pegs and slots, but certain pegs can only fit in certain slots. The pegs represent the inquiry specific content of utterances, while the slots are features of conversation generally, determined by the nature of the inquiry that it implements.
+
+## Constructing an interpretation
 
 But before we get to the question of what bells and pulleys come attached to conversational scoreboards, we face the question of what the posit of such a recording surface amounts to, and where this crucial interpretive device would be instantiated. Lewis frames his preferred answer as such:
   
@@ -46,7 +48,7 @@ How are we to incorporate this extension of the basic ideology of theorizing abo
 
 Rather than address these interesting (and pressing!) questions directly, I suggest that we satisfy ourselves with the claim that it is integrated. Our common sense theory of persons represents them as social creatures, and provides us with attitudes necessary to capture their collaborative efforts. What we are after is an account of what speakers mean, and we can get at least part of the way there by assuming a mandate to account for collaboration and considering how this mandate exerts itself within our constraints. It seems to me that at least two modifications of the Lewisian constraints are in order:
   
-## Generativity
+## Generativity and usability
 
 In his characterization of the constraints of language theorizing, Lewis presumes a criterion akin to Davidson's {% include concept.html word='learnability' %} thesis, that it a theory is out of the running if it cannot be specified in a finite representation {% include ref.html id="davidson1967" o="n" e="." %} But this acceptance seems unmotivated given Lewis' characterization of the nature of the project:
   
@@ -70,7 +72,7 @@ Players are agents in game play. We take them to understand the game, and to app
 
 This would be a distinction without a difference, if rule books completely determined behavior. But rule books that leave multiple permissible actions on the table in certain game contexts will evolve with each iteration of the game.[^reflexive]
 
-## Truthfulness
+## Honesty and trust
 
 (Millian correction, keep truth active by testing it, correctibles, honesty and trust in correction, Lewis *Language(s)*)
 
@@ -82,7 +84,7 @@ The collaborative extension also implies that lingusitic conventions can not be 
 
 Language use in a community, I suggest, is governed by the dual conventions of *honesty* and *mutual trust*.
 
-## Rationality
+## Anaphora and coherence
 
 (Jamesian striving, coherence, need for propositions, Lewis *ICC*)
 

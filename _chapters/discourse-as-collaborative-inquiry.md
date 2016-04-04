@@ -81,9 +81,7 @@ I consider accounting for conjecture to be an adequacy condition on semantic the
 
 ## Genuine contribution types
 
-A conjecture is a kind of conversational move. It is defined in terms of the role it plays in advancing the inquiry in which it occurs. While speech acts are finely individuated,[^SpeechActs] there is a small set of {% include concept.html word='contribution' %} types derivable from the goals of inqury.[^ConversationalForce] 
-
-[^SpeechActs]: According to Searle's six-dimensional classification of speech acts... For Bach and Harnish...
+A conjecture is a kind of conversational move. It is defined in terms of the role it plays in advancing the inquiry in which it occurs. While speech acts are finely individuated, there is a small set of {% include concept.html word='contribution' %} types derivable from the goals of inqury.[^ConversationalForce] 
 
 [^ConversationalForce]: The notion in the text of *contribution type* is related to Paul Portner's *conversational force*, which he sees of as a notion, distinct from illocutionary force, that has implications for aspects of the grammatical system relating to syntax, semantics, and pragmatics.
 

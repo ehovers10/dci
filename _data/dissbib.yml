@@ -755,6 +755,17 @@
   Url: https://app.box.com/s/85fi58m68g4vhj8285rocfi1643uhc9e
 
 -
+  id: goldman1976
+  Author: Alvin Goldman
+  Year: 1976
+  Pages: 771-791
+  Publisher: Journal of Philosophy Inc
+  Number: November
+  Volume: 73
+  Journal: Journal of Philosophy
+  Title: Discrimination and Perceptual Knowledge
+  Type: article
+-
   id: goodman1940
   Journal: Journal of Symbolic Logic
   Pages: 45-55
@@ -894,6 +905,13 @@
   Volume: 36
   Owner: erik
   Timestamp: 2014.12.09
+
+-
+  id: harman1973
+  Year: 1973
+  Author: Gilbert Harman
+  Publisher: Princeton University Press
+  Title: Thought
 
 -
   id: hawthorne2008
@@ -1672,6 +1690,28 @@
   Timestamp: 2009.09.21
 
 -
+  id: schaffer2005
+  Author: Jonathan Schaffer
+  Publisher: Oxford University Press
+  Title: Contrastive Knowledge
+  Booktitle: Oxford Studies in Epistemology 1
+  Editor: Tamar Szabo Gendler and John Hawthorne
+  Page: 235
+  Year: 2005
+  Type: chapter
+
+-
+  id: schaffer2008
+  Author: Jonathan Schaffer
+  Volume: 18
+  Journal: Philosophical Issues
+  Year: 2008
+  Pages: 1-19
+  Number: 1
+  Title: Knowledge in the Image of Assertion
+  Type: article
+
+-
   id: schaffer2014
   Title: "The schmentencite way out: towards an index free semantics"
   Author: Jonathan Schaffer
@@ -2034,6 +2074,18 @@
   Year: 2000
   Owner: erik
   Timestamp: 2014.12.07
+
+-
+  id: yablo1992
+  Year: 1992
+  Pages: 245-280
+  Publisher: Duke University Press
+  Title: Mental Causation
+  Number: 2
+  Volume: 101
+  Author: Stephen Yablo
+  Journal: Philosophical Review
+  Type: article
 
 -
   id: yatabe2006
