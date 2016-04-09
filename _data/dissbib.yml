@@ -186,6 +186,16 @@
   Url: https://app.box.com/s/sg03wyp0b0bh73wppglyrlh4nj270g7a
 
 -
+  id: campos2011
+  Year: 2011
+  Title: "On the Distinction Between Peirce's Abduction and Lipton's Inference to the Best Explanation"
+  Number: 3
+  Pages: 419-442
+  Volume: 180
+  Journal: Synthese
+  Author: Daniel G. Campos
+
+-
   id: cappelen2010
   Title: Against assertion
   Author: Herman Cappelen
@@ -968,7 +978,7 @@
 
 -
   id: hume1777
-  Year: 1999 (1777)
+  Year: 1777/1999
   Author: David Hume 
   Title: An Enquiry Concerning Human Understanding
   Publisher: Oxford University Press Uk
@@ -995,7 +1005,7 @@
   Title: The will to believe and other essays
   Author: William James
   Publisher: Project Gutenberg
-  Year: 2009
+  Year: 1896/2009
   Note: Original copyright 1896
   Number: 26659
   Owner: erik
@@ -1420,7 +1430,7 @@
   Title: On Liberty
   Author: John Stuart Mill
   Publisher: Project Gutenberg
-  Year: 2011
+  Year: 1859/2011
   Note: Original copyright 1859
   Owner: erik
   Timestamp: 2014.12.09
@@ -1527,7 +1537,7 @@
   Type: chapter
   Author: Charles Sanders Peirce
   Editor: Justus Buchler
-  Year: 1877
+  Year: 1877/1955
   Publisher: Dover Publications, Inc.
   Location: New York
 
@@ -1798,6 +1808,17 @@
   Publisher: Kluwer Academic Publishers
   Abstract: "This paper begins with a discussion of CUMULATIVITY (e.g., 'P(a) & P(b) implies P(a+b)'), formalized using a verb phrase operator. Next, the meanings of distribu- tivity markers such as each and non-distributivity indicators such as together are considered. An existing analysis of each in terms of quantification over parts of a plurality is adopted. However, together is problematic, for it involves a cancellation or negation of the quantification associated with each. (The four boys together owned exactly three cars could not be true if each of the boys owned three cars, though the same sentence without together could be.) A refinement of this idea of negated quantification over parts is proposed as an analysis for non-distributivity operators. It is then worked out in the system described in Cooper (1983), in which positive and negative extensions are assigned. Presuppositions connected with plural refer- ence are considered at this point as well. Finally, the cumulativity operator is argued to be quantificational and therefore sensitive to contextual domain selection. This context sensitivity is claimed to be the source of distributive readings that appear in the absence of modifiers like each and non-distributive or collective readings that arise without together."
   Url: https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2
+
+-
+  id: shanahan1986
+  Publisher: Indiana University Press
+  Pages: 449-466
+  Journal: Transactions of the Charles S. Peirce Society
+  Number: 4
+  Title: "The First Moment of Scientific Inquiry: C. S. Peirce on the Logic of Abduction"
+  Volume: 22
+  Year: 1986
+  Author: Timothy Shanahan
 
 -
   id: sider2013

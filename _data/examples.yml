@@ -1,0 +1,38 @@
+bears:
+  sent: "Bears are dangerous."
+
+grizzly:
+  sent: "[Grizzly]<sub>cf</sub> bears are dangerous."
+
+druggy:
+  sent: "Bears [in a drug-induced stupor]<sub>cf</sub> are dangerous."
+
+teddy:
+  sent:
+    - "What about Teddy bears?"
+    - "I didn't mean <em>all</em> bears."
+
+boars:
+  sent: "You mean <em>boars</em> are dangerous."
+
+presidents:
+  sent: Bill likes to play golf. George hates broccoli.
+
+keys:
+  sent: 
+    - "Alex: The keys might be in the drawer."
+    - "Billy: (<em>Looks in the drawer.</em>) They're not. Why did you say that?"
+    - "Alex: I didn't say they <em>were</em> in the drawer. I said they <em>might be</em>  
+      there -- and they might have been. Sheesh."
+
+cookie:
+  sent:
+    - "Who ate the last cookie?"
+    - "[Caitlin]<sub>f</sub> ate the last cookie."
+    - "Caitlin ate the last [cookie]<sub>f</sub>."
+  sem:
+    - "{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }"
+    - "{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }"
+    - "{ <em>Caitlin ate the last apple</em>, <em>Caitlin ate the last beet</em>, <em>Caitlin ate the last cookie</em>, ... }"
+    
+

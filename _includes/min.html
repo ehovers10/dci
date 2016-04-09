@@ -1,0 +1,26 @@
+{% assign title = include.id | slugify | prepend: 'extra/' | append: '.md' %}
+{% capture gus %}{% include {{ title }} %}{% endcapture %}
+
+<div class="max maxsize" id="{{ include.id | slugify | append: '-min' }}">
+{{ gus | markdownify }}
+</div>
+<a href="#" id="{{ include.id | slugify }}" class="reveal more"></a>
+
+<style>
+.maxsize {
+  	height: 250px;
+  	overflow-y: hidden;
+}
+
+.max {
+  border-bottom: 1px solid #aaa;
+	padding: 10px;
+}
+
+.reveal {
+  float: right;
+}
+
+.more:before { content: "Show more"; }
+.less:before { content: "Show less"; }
+</style>

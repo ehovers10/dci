@@ -1,0 +1,7 @@
+{% assign title = include.id | slugify | prepend: 'extra/' | append: '.md' %}
+{% capture gus %}{% include {{ title }} %}{% endcapture %}
+
+<a class="open" id="{{ include.id | slugify }}">{{ include.id }}</a>
+<div class="hid" id="{{ include.id | slugify | append: '-hid' }}">
+<blockquote>{{ gus | markdownify }}</blockquote>
+</div>

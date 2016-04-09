@@ -25,17 +25,17 @@
 
 <!-- Keys -->
 {% capture keys %}
-{% include ex.html type="ex" term="keys" sent="Alex: The keys might be in the drawer." sub="Billy: (<em>Looks in the drawer.</em>) They're not. Why did you say that?|Alex: I didn't say they <em>were</em> in the drawer. I said they <em>might be</em> there -- and they might have been. Sheesh." defn="Obs/Def" %}
+{% include ex.html type="ex" term="keys" sent="Alex: The keys might be in the drawer." sub=""Billy: (<em>Looks in the drawer.</em>) They're not. Why did you say that?"|"Alex: I didn't say they <em>were</em> in the drawer. I said they <em>might be</em> there -- and they might have been. Sheesh."" defn="Obs/Def" %}
 {% endcapture %}
 
 <!-- Cookie -->
 {% capture cookie %}
-{% include ex.html type="ex" sent='Who ate the last cookie?' sub='[Caitlin]<sub>f</sub> ate the last cookie.|# Caitlin ate the last [cookie]<sub>f</sub>.' term="cookie" %} 
+{% include ex.html type="ex" sent='"Who ate the last cookie?' sub='"[Caitlin]<sub>f</sub> ate the last cookie.|# Caitlin ate the last [cookie]<sub>f</sub>."' term="cookie" %} 
 {% endcapture %}
 
 <!-- Cookie sem -->
 {% capture cookiesem %}
-{% include ex.html type="ex" term="Cookie semantic values" sub="{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }|{ <em>Caitlin ate the last apple</em>, <em>Caitlin ate the last beet</em>, <em>Caitlin ate the last cookie</em>, ... }" sent="{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }" %}
+{% include ex.html type="ex" term="Cookie semantic values" sub=""{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }|{ <em>Caitlin ate the last apple</em>, <em>Caitlin ate the last beet</em>, <em>Caitlin ate the last cookie</em>, ... }" sent=""{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }" %}
 {% endcapture %}
 
 <!-- Picnic -->

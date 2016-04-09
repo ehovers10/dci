@@ -1,5 +1,5 @@
 ---
-title: Collaborative discourse dynamcis
+title: Collaborative discourse dynamics
 level: 3
 type: chapter
 toc: yes

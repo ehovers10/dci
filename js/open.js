@@ -8,4 +8,19 @@ $(document).ready( function() {
     return false;
   });
 
+  /* Toggle max size */
+  
+  $( ".reveal" ).click( function() {
+
+    var mini = $(this).attr('id') + '-min';
+    $('#' + mini).toggleClass( "maxsize",function() {
+      // Animation complete.
+    });
+
+    $(this).toggleClass( "more" );
+    $(this).toggleClass( "less" );
+
+    return false;
+  }); 
+
 });
