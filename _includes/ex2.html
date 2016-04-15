@@ -1,0 +1,40 @@
+{% assign ex = ex | plus: 1 %}
+
+{% if include.type %}
+  {% assign bits = include.type %}
+{% else %}
+  {% assign bits = 'sent' %}
+{% endif %}
+{% assign example = site.data.examples.[include.term].[bits] %}
+
+<div style="margin:1em;" id="{{ include.term | slugify }}">
+  <div style="margin-bottom:0.5em;">
+    <span style="margin-right:0.5em;font-weight:600;">{{ ex | prepend: 'Example ' }}</span>
+    <span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
+  </div>
+
+  <blockquote>
+      {% if example["external"] %}
+        {% for snip in site.snippets %}
+          {% if snip.label == example["external"] %}
+            {{ snip.content }}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+    <table>
+    {% for item in example %}
+      <tr>
+      {% if item.size == 1 %}
+      {% for i in item %}
+         <th>{{ i[0] | append: ':&nbsp;' }}</th>
+         <td align="top">{{ i[1] }}</td>
+      {% endfor %}
+      {% else %}
+        <td>{{ item }}</td>
+      {% endif %}
+      </tr>
+    {% endfor %}
+      {% endif %}
+    </table>
+  </blockquote>
+</div>

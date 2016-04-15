@@ -1,0 +1,304 @@
+# Knowledge in the image of inquiry
+
+levi identity:
+  def: "Conceived semantically, all rational information state revision is reducible to 
+       some combination of set intersection and union among information states and 
+       propositions."
+
+jamesian amendment:
+  def: "Rational information state revision is governed by two goals: avoiding error 
+       and acquiring truth."
+
+# Collaborative discourse dynamics
+
+constraints on a theory of meaning:
+  def: external
+
+# Dispute in discourse
+
+# Observations
+
+obs:
+  refinement: "The [Bears](#bears) dialogue is *coherent*, exhibiting a relation of 
+              *refinement* between the first and second utternace."
+
+  correction: "The completion phase of the [Bears](#bears) discourse serves to correct 
+              the initiation phase, a *correctible* utterance."
+
+  resiliance: "The [Bears](#bears) initiation is *resiliant*. In certain contexts, 
+              it is appropriate for the utterer of a correctible to refrain from 
+              retracting it in the face of a challenge."
+
+  productivity: "The [Bears](#bears) completion is *productive*. It does not merely 
+                refer back to the initiation but extends the discourse in a distinctive 
+                way."
+
+  susceptibility: "The [Bears](#bears) initiation is susceptible to challenge. In 
+                  certain contexts, it is appropriate for an initiator's interlocutors 
+                  to challenge their attempted contribution."
+
+# Definitions
+
+focus:
+  sem:
+  - 
+    cond: 
+      - "**D** a domain of discourse"
+      - "*t* a type"
+    lhs: "&phi;<sub>t</sub>"
+    conn: =
+    rhs: 
+      - "{ d &isin; **D**<sub>t</sub> }"
+
+qa-congruence:
+  sem:
+  -
+    cond: "&#x27e8; &psi;, &alpha; &#x27e9; a question/answer pair"
+    lhs: "&#x27e6;&nbsp;&psi;&nbsp;&#x27e7;<sup>o</sup>"
+    conn: "&sube;" 
+    rhs:
+      - "&#x27e6;&nbsp;&alpha;&nbsp;&#x27e7;<sup>f</sup>"
+
+homogeneity:
+  def: "Utterances involving bare plural subjects present the set determined by the 
+       subject as homogenous with respect to the predicate. The predicate applies 
+       either to all members of the subject class or to none of them."
+  form: "[&forall; x &isin; f(w)(p): q(x)] &or; [&forall; x &isin; f(w)(p): &not;q(x)]"
+
+counterfactual conditional:
+  eng: 
+    trans: "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
+
+  strict:
+    trans: "A &#x297d; B"
+    sem:
+    -
+      cond: "*A,B: st*"
+      lhs: "A &#x297d; B"
+      conn: =  
+      rhs:
+        - lhs: "1"
+          conn: if
+          rhs: 
+            - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>
+              &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+        - lhs: "0"
+          conn: otherwise
+
+  thinning:
+    sem:
+    -
+      lhs: "A &#x297d; B"
+      conn: "&rArr;"
+      rhs:
+        - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>
+          &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+    -
+      lhs: "&nbsp;"
+      conn: "&rArr;"
+      rhs:
+        - "&#x27e6;&nbsp;A &and; C&nbsp;&#x27e7;<sup>i</sup>
+          &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+    -
+      lhs: "&nbsp;"
+      conn: "&rArr;"
+      rhs:
+        - "&#x27e6;&nbsp;(A &and; C) &#x297d; B&nbsp;&#x27e7;<sup>i</sup>"
+      
+  variable:
+    trans: "A <span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span> B"
+    sem:
+    -
+      cond: 
+        - "*A,B: st*"
+        - "*&delta;(i): st* &rarr; *st* a selection function determined by context *i*"
+      lhs: "A<sub>pref</sub>"
+      conn: =
+      rhs:
+        - "&delta;(i)(A)"
+    -
+      lhs: "A <span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span> B"
+      conn: =
+      rhs:
+        - lhs: "1"
+          conn: if
+          rhs:
+            - "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>
+              &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+        - lhs: "0"
+          conn: otherwise
+
+  shifty:
+    trans: "A &#x297d;<sub>s</sub> B"
+    sem:
+    -
+      cond: 
+        - "*i<sub>s</sub>: st*"
+        - "*A: st*"
+        - "*&delta;(i): st* &rarr; *st* a selection function determined by context *i*"
+      lhs: "&delta;(i)(A)"
+      conn: "&sube;"
+      rhs:
+        - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>"
+    -
+      lhs: "i<sub>s</sub><sup>+</sup>(A)"
+      conn: =
+      rhs:
+        - "i<sub>s</sub><sup>+</sup>(A) &cap; &delta;(i)(A)"
+    -
+      cond: "*A,B: st*"
+      lhs: "A &#x297d;<sub>s</sub> B"
+      conn: =
+      rhs:
+        - lhs: "1"
+          conn: if
+          rhs:
+            - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>
+              &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;
+              <sup>i[i<sub>s</sub>&rarr;i<sub>s</sub><sup>+</sup>(A)]</sup>"
+        - lhs: "0"
+          conn: otherwise
+
+universal quantifier:
+  eng: 
+    trans: "&#x231c;As&#x231d; are &#x231c;B&#x231d;"
+  strict:
+    trans: "&forall;(A)(B)"
+    sem: 
+    - 
+      cond: "*A,B: et*"
+      lhs: "&forall;(A)(B)"
+      conn: =  
+      rhs:
+        - lhs: "1"
+          conn: if
+          rhs: 
+            - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>
+              &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+        - lhs: "0"
+          conn: otherwise
+
+  generic:
+    trans: "GEN(A)(B)"
+    sem:
+    -
+      cond: 
+        - "*A,B: et*"
+        - "*&delta;(i): et* &rarr; *et* a selection function determined by context *i*"
+      lhs: "A<sub>pref</sub>"
+      conn: =
+      rhs:
+        - "&delta;(i)(A)"
+    -
+      lhs: "GEN(A)(B)"
+      conn: =
+      rhs:
+        - lhs: "1"
+          conn: if
+          rhs: 
+            - "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>
+              &nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+        - lhs: "0"
+          conn: otherwise
+
+  structural:
+    trans: "&forall;<sub>**R**</sub>(A)(B)"
+    sem:
+    -
+      cond: 
+        - "A: et"
+        - "B: (et)t"
+      lhs: "&forall;<sub>**R**</sub>(A)(B)"
+      conn: =
+      rhs:
+        - lhs: "1"
+          conn: if
+          rhs: 
+            - "{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; **R**"
+            - "&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;"
+        - lhs: "0"
+          conn: otherwise
+
+drs:
+  sem:
+    - lhs: "&phi; = <span class='ldrt'><span class='drs left top bottom'></span>
+           <span class='dref'>&phi;<sup>d</sup></span>
+           <span class='condition'>&phi;<sup>c</sup></span>
+           <span class='drs right top bottom'></span></span>"
+      conn: "&nbsp;"
+      rhs:
+        - "is a *discourse representation structure* (DRS), where"
+    - lhs: "&phi;<sup>d</sup>"
+      conn: "&nbsp;"
+      rhs:
+        - "is a sequence of drefs introduced in the discourse, and"
+    - lhs: "&phi<sup>c</sup>"
+      conn: "&nbsp;"
+      rhs:
+        - "is a sequence of conditions, imposing constraints on the model against which 
+          sentences are evaluated."
+    - cond: "a sentence S uttered in discourse D represented by DRS &phi;"
+      lhs: "S<sup>d</sup>"
+      conn: "&nbsp;"
+      rhs:
+        - "is the sequence of drefs contributed by S,"
+    - lhs: "S<sup>c</sup>"
+      conn: "&nbsp;"
+      rhs:
+        - "is the sequence of conditions contributed by S."
+    - lhs: "D &rArr; S"
+      conn: "="
+      rhs:
+        - "<span class='ldrt'><span class='drs left top bottom'></span>
+          <span class='dref'>&phi;<sup>d</sup> &oplus; S<sup>d</sup></span>
+          <span class='condition'>&phi;<sup>c</sup> &oplus; S<sup>c</sup></span>
+          <span class='drs right top bottom'></span></span>"
+      
+downdate:
+  sem:
+    - subgroup:
+      cond: "&phi;,&psi;,&chi;: *drs*"
+      lhs: "&chi; &#x2291; &phi;"
+      conn: iff
+      rhs: 
+        - "&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> ) 
+          &or; ( m &isin; &phi;<sup>c</sup> &and; m &isin; &chi;<sup>c</sup> ) ]"
+    -
+      lhs: "&chi; = max(&phi;)"
+      conn: iff
+      rhs:
+        - "&chi;  &#x2291; &phi; &and; &forall;*c* &isin; &phi;<sup>c</sup> (entrench
+          (*c*) ) &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; 
+          &psi; )"
+    -
+      lhs: "&phi; &#x229E; &psi;"
+      conn: =
+      rhs: 
+        - "[ &phi;<sup>d</sup> &oplus; &psi;<sup>d</sup> | &phi;<sup>c</sup> &oplus; 
+          &psi;<sup>c</sup> ]"
+    -
+      lhs: "&phi; <span class='symbol'>&darr;</span> &psi;"
+      conn: =
+      rhs:
+        - "&psi; &oplus; max( &chi; &#x2291; &phi; | &chi; &#x229E; &phi; 
+          &ne; &empty; )"
+
+collaborative update:
+  initiation:
+    sem:
+    - lhs: "U<sub>*init*</sub>"
+      conn: "&rArr;"
+      rhs: 
+        - "[ C<sub>&xi;</sub>(j<sub>&chi;</sub>) &#x23aa; ]<sub>s</sub>"
+  continuation:
+    sem:
+    - lhs: "U<sub>*cont*</sub>"
+      conn: "&rArr;"
+      rhs: 
+        - "[ &#x27e8; C<sub>&xi;</sub>(k<sub>&chi;</sub>),C<sub>&xi;</sub>(j<sub>&chi;</sub>) &#x27e9; &#x23aa; ]<sub>s</sub>"
+  completion:
+    sem:
+    - lhs: "U<sub>*comp*</sub>"
+      conn: "&rArr;"
+      rhs: 
+        - "[ &#x27e8; C<sub>&xi;</sub>(k<sub>&chi;</sub>),... &#x27e9; &#x23aa; i<sub>s</sub> += | C<sub>&xi;</sub>(k<sub>&chi;</sub>) | ; i<sub>**R**</sub> += | C<sub>&xi;</sub>(k<sub>&chi;</sub>) | ]<sub>s</sub>"

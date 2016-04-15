@@ -204,3 +204,41 @@ For *As*: *et* and *B*: (*et*)*t*,
 {% capture homogen %}
 {% include ex.html type="def" term="Homogeneity" sent="Example" sub="Sub-example" defn="Utterances involving bare plural subjects present the set determined by the subject as homogenous with respect to the predicate. The predicate applies either to all members of the subject class or to none of them." %}
 {% endcapture %}
+
+<!-- Downdate -->
+{% capture downdate %}
+For DRSs &phi;, &psi;, &chi;,
+
+{% capture subdrslhs %}
+&chi; &#x2291; &phi;
+{% endcapture %}
+{% capture subdrsrhs %}
+&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> ) &or; ( m &isin; &phi;<sup>c</sup> &and; m &isin; &chi;<sup>c</sup> ) ]
+{% endcapture %}
+{% include eqn.html lhs=subdrslhs rhs=subdrsrhs mult=0 conn="iff" %}
+
+{% capture maxlhs %}
+&chi; = max(&phi;)
+{% endcapture %}
+{% capture maxrhs %}
+&chi;  &#x2291; &phi; &and; &forall;*c* &isin; &phi;<sup>c</sup> (entrench(*c*) ) &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; &psi; )
+{% endcapture %}
+{% include eqn.html lhs=maxlhs rhs=maxrhs mult=0 conn="iff" %}
+
+{% capture opluslhs %}
+&phi; &#x229E; &psi;
+{% endcapture %}
+{% capture oplusrhs %}
+[ &phi;<sup>d</sup> &oplus; &psi;<sup>d</sup> \| &phi;<sup>c</sup> &oplus; &psi;<sup>c</sup> ]
+{% endcapture %}
+{% include eqn.html lhs=opluslhs rhs=oplusrhs mult=0 conn="=" %}
+
+{% capture downlhs %}
+&phi; <span class="symbol">&darr;</span> &psi;
+{% endcapture %}
+{% capture downrhs %}
+&psi; &oplus; max( &chi; &#x2291; &phi; \| &chi; &#x229E; &phi; &ne; &empty; )
+{% endcapture %}
+{% include eqn.html lhs=downlhs rhs=downrhs mult=0 conn="=" %}
+
+{% endcapture %}

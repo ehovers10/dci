@@ -1,7 +1,8 @@
-table.ldrt {
+.ldrt {
   border-collapse:collapse;
+  margin: 0 5px;
 
-  td.drs {
+  .drs {
     &.left {
       border-left:1px solid #000;
     }
@@ -14,24 +15,24 @@ table.ldrt {
     &.bottom {
       border-bottom:1px solid #000;
     }
-    width:3px;
+    padding:2px;
   } 
 
-  td.dref {
+  .dref {
     border-right:1px solid #000;
     padding-right:5px;
   }
 
-  td.condition {
-    padding-left:10px;
+  .condition {
+    padding-left:5px;
   }
 
-  td.contribution {
+  .contribution {
     width: 2em;
     text-align: center;
   }
 
-  td.downdate {
+  .downdate {
     text-decoration: line-through;
   }
 }

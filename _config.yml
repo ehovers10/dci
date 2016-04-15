@@ -38,3 +38,6 @@ collections:
   appendices:
     output: true
     render: true
+  snippets:
+    render: true
+    output: false

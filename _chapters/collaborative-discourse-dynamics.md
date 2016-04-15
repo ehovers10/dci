@@ -288,7 +288,7 @@ We elaborate update semantics in two ways to capture collaboration:
 + Focus marking initiates a sandbox winthin which the collaboration can take place, isolated from the rest of the discourse platform.
     + Try-marking is a speaker's way of initiating a sandbox for her own utterance.
     + Contrastive topic is one way of initiating a sandbox to delve into a previous utterance.
-    + 
+
 ### New drefs
 The first tool of collaborative update sematnics is the sandbox, a platofrm, isolated from the primary information state, on which the collaborative process takes place. We introduce two discourse referents for manipulating sandboxes. 
 
