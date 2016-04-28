@@ -14,7 +14,7 @@ agm1985:
 anderbois2010:
   Title: Sluicing as anaphora to issues
   Author: Scott AnderBois
-  BookTitle: Proceedings of SALT 20
+  Booktitle: Proceedings of SALT 20
   Type: chapter
   Year: 2010
   File: anderbois2010.pdf
@@ -50,7 +50,7 @@ bach1994:
 bittner2011:
   Title: Time and modality without tenses or modals
   Author: Maria Bittner
-  BookTitle: Tenses across Languages
+  Booktitle: Tenses across Languages
   Type: chapter
   Publisher: Niemeyer, Tubingen
   Year: 2011
@@ -59,7 +59,7 @@ bittner2011:
   Keywords: semantics-drefs, language, semantics-attitudes
   Owner: Erik
   Timestamp: 2010.12.21
-  Url: 
+  Url:
     - https://app.box.com/s/fafymrmxm8qw7zgzfq9p
     - http://www.rci.rutgers.edu/~mbittner/bittner11_tam.pdf
 
@@ -80,7 +80,7 @@ bontly2005:
 buering2008:
   Title: What's New and What's Given in the Theory of Focus
   Author: Daniel Bu&#x0308;ring
-  BookTitle: Berkeley Linguistics Society
+  Booktitle: Berkeley Linguistics Society
   Type: chapter
   Year: 2008
   File: :buering2008.pdf:PDF
@@ -104,7 +104,7 @@ buering2003:
 bengson2012a:
   Title: Non-propositional intellectualism
   Author: John Bengson and Marc Moffett
-  BookTitle: "Know How: Essays on knowledge, mind, and action"
+  Booktitle: "Know How: Essays on knowledge, mind, and action"
   Type: chapter
   Publisher: Oxford University Press
   Year: 2012
@@ -115,7 +115,7 @@ bengson2012a:
 
 bengson2012:
   Author: John Bengson and Marc Moffett
-  BookTitle: "Know How: Essays on knowledge, mind, and action"
+  Booktitle: "Know How: Essays on knowledge, mind, and action"
   Publisher: Oxford University Press
   Year: 2012
   Editor: John Bengson and Marc Moffett
@@ -133,7 +133,7 @@ brasoveanua:
 brasoveanu-a:
   Title: "Structured discourse reference to propositions: Entailment particles and modal subordination in dynamic type logic"
   Author: Adrien Brasoveanu
-  BookTitle: LoLa 9
+  Booktitle: LoLa 9
   Type: chapter
   Year: 2013
   File: :brasoveanu-a.pdf:PDF
@@ -144,7 +144,7 @@ brasoveanu-a:
 bratman2009:
   Title: Shared agency
   Author: Michael Bratman
-  BookTitle: "Philosophy of the social sciences: Philosophical theory and scientific practice"
+  Booktitle: "Philosophy of the social sciences: Philosophical theory and scientific practice"
   Type: chapter
   Publisher: Cambridge University Press
   Year: 2009
@@ -187,7 +187,7 @@ campos2011:
 cappelen2010:
   Title: Against assertion
   Author: Herman Cappelen
-  BookTitle: Assertion
+  Booktitle: Assertion
   Type: chapter
   Publisher: Oxford University Press
   Year: 2010
@@ -227,7 +227,7 @@ cappelen2009:
 cappelen2006a:
   Title: Shared Content
   Author: Herman Cappelen and Ernest Lepore
-  BookTitle: The Oxford Handbook of Philosophy of Language
+  Booktitle: The Oxford Handbook of Philosophy of Language
   Type: chapter
   Publisher: Oxford University Press
   Year: 2006
@@ -328,7 +328,7 @@ clark1992b:
   Pages: 366-380
   Publisher: University of Chicago Press
   Year: 1992
-  BookTitle: Arenas of Language Use
+  Booktitle: Arenas of Language Use
   Type: chapter
   Owner: erik
   Timestamp: 2014.11.11
@@ -340,7 +340,7 @@ clark1992a:
   Pages: 144-175
   Publisher: University of Chicago Press
   Year: 1992
-  BookTitle: Arenas of Language Use
+  Booktitle: Arenas of Language Use
   Type: chapter
   Owner: erik
   Timestamp: 2014.11.11
@@ -420,7 +420,7 @@ dretske1972:
 egan2010:
   Title: Disputing about taste
   Author: Andy Egan
-  BookTitle: Disagreement
+  Booktitle: Disagreement
   Type: chapter
   Publisher: Oxford University Press
   Year: 2010
@@ -459,7 +459,7 @@ egan2007a:
 egan2005a:
   Title: Epistemic Modals in Context
   Author: Andy Egan and John Hawthorne and Brian Weatherson
-  BookTitle: Contextualism in Philosophy
+  Booktitle: Contextualism in Philosophy
   Type: chapter
   Publisher: Oxford University Press
   Year: 2005
@@ -545,7 +545,7 @@ frege1884:
   Title: The Foundations of Arithmetic
   Author: Gottlob Frege
   Year: 1884 (1997)
-  BookTitle: The Frege Reader
+  Booktitle: The Frege Reader
   Type: chapter
   Editor: Michael Beaney
   Publisher: Blackwell Publishing
@@ -676,7 +676,7 @@ gillies2004:
 glanzberg2009:
   Title: Descriptions, Negation, and Focus
   Author: Michael Glanzberg
-  BookTitle: "Compositionality, Context, and Semantic Values: Essays in Honor of Ernie Lepore"
+  Booktitle: "Compositionality, Context, and Semantic Values: Essays in Honor of Ernie Lepore"
   Type: chapter
   Publisher: Springer
   Year: 2009
@@ -690,7 +690,7 @@ glanzberg2009:
 glanzberg2005:
   Title: "Focus: A Case Study on the Semantics-Pragmatics Boundary"
   Author: Michael Glanzberg
-  BookTitle: Semantics versus Pragmatics
+  Booktitle: Semantics versus Pragmatics
   Type: chapter
   Publisher: Oxford University Press
   Year: 2005
@@ -817,7 +817,7 @@ grzankowski2012:
 gundel1999-1:
   Title: On Different Kinds of Focus
   Author: Jeanette Gundel
-  BookTitle: "Focus: Linguistic, Cognitive, and Computational Perspectives"
+  Booktitle: "Focus: Linguistic, Cognitive, and Computational Perspectives"
   Type: chapter
   Publisher: Cambridge University Press
   Year: 1999
@@ -844,7 +844,7 @@ gundel1999:
 gundel2001:
   Title: Topic and Focus
   Author: Jeanette Gundel and Thorsten Fretheim
-  BookTitle: Handbook of Pragmatic Theory
+  Booktitle: Handbook of Pragmatic Theory
   Type: chapter
   Publisher: Blackwell Publishing
   Year: 2001
@@ -906,7 +906,7 @@ heim1990a:
 hicks2014:
   Title: The Epistemic Role Account of Lawhood
   Author: M. Townsen Hicks
-  Type: Article
+  Type: article
   Year: ms
 
 hintikk1998:
@@ -930,7 +930,7 @@ horn1989:
 
 hume1777:
   Year: 1777/1999
-  Author: David Hume 
+  Author: David Hume
   Title: An Enquiry Concerning Human Understanding
   Publisher: Oxford University Press Uk
 
@@ -1039,7 +1039,7 @@ kratzerb:
 kratzer2008a:
   Title: Situations in Natural Language Semantics
   Author: Angelika Kratzer
-  BookTitle: Stanford Encyclopedia of Philosophy
+  Booktitle: Stanford Encyclopedia of Philosophy
   Type: chapter
   Editor: Edward N. Zalta
   Publisher: The Metaphysics Research Lab
@@ -1213,7 +1213,7 @@ lewis1979:
 lewis1975a:
   Title: Adverbs of Quantification
   Author: David Lewis
-  BookTitle: Formal Semantics of Natural Language
+  Booktitle: Formal Semantics of Natural Language
   Type: chapter
   Publisher: Cambridge University Press
   Year: 1975
@@ -1224,7 +1224,7 @@ lewis1975a:
 lewis1975b:
   Title: Languages and Language
   Author: David Lewis
-  BookTitle: Minnesota Studies in the Philosophy of Science
+  Booktitle: Minnesota Studies in the Philosophy of Science
   Type: chapter
   Publisher: University of Minnesota Press
   Year: 1975
@@ -1298,7 +1298,7 @@ ludlow2008:
 macfarlane2011a:
   Title: What is assertion?
   Author: John MacFarlane
-  BookTitle: Assertion
+  Booktitle: Assertion
   Type: chapter
   Publisher: Oxford University Press
   Year: 2011
@@ -1310,7 +1310,7 @@ macfarlane2011a:
 macfarlane2011:
   Title: Epistemic Modals are Assessment-Sensitive
   Author: John MacFarlane
-  BookTitle: Epistemic Modality
+  Booktitle: Epistemic Modality
   Type: chapter
   Publisher: Oxford University Press
   Year: 2011
@@ -1322,7 +1322,7 @@ macfarlane2011:
 macfarlane2008:
   Title: Truth in the garden of forking paths
   Author: John MacFarlane
-  BookTitle: Relative Truth
+  Booktitle: Relative Truth
   Type: chapter
   Publisher: Oxford University Press
   Year: 2008
@@ -1388,7 +1388,7 @@ moffett2007:
 montague1974a:
   Title: The Proper Treatment of Quantification in Ordinary English
   Author: Richard Montague
-  BookTitle: Formal Philosophy
+  Booktitle: Formal Philosophy
   Type: chapter
   Publisher: Yale University
   Year: 1974
@@ -1438,7 +1438,7 @@ nunberg1995:
 partee1991:
   Title: Topic, Focus, and Quantification
   Author: Barbara H. Partee
-  BookTitle: SALT I
+  Booktitle: SALT I
   Type: chapter
   Year: 1991
   Editor: Steve Moore and Adam Wyner
@@ -1464,7 +1464,7 @@ partee1973:
 peirce1877:
   Title: The Fixation of Belief
   Journal: Popular Science Monthly
-  BookTitle: Philosophical Writings of Peirce
+  Booktitle: Philosophical Writings of Peirce
   Type: chapter
   Author: Charles Sanders Peirce
   Editor: Justus Buchler
@@ -1577,7 +1577,7 @@ roberts1996:
 roberts1998:
   Title: Focus, the Flow of Information, and Universal Grammar
   Author: Craige Roberts
-  BookTitle: "Syntax and Semantics: The Limits of Syntax"
+  Booktitle: "Syntax and Semantics: The Limits of Syntax"
   Type: chapter
   Publisher: Academic Press
   Year: 1998
@@ -1591,7 +1591,7 @@ roberts1998:
 roberts2004:
   Title: Context in Dynamic Interpretation
   Author: Craige Roberts
-  BookTitle: The Handbook of Pragmatics
+  Booktitle: The Handbook of Pragmatics
   Type: chapter
   Publisher: Black
   Year: 2004
@@ -1771,6 +1771,7 @@ sinhababu2015:
   Pages: 165-180
   Author: Neil Sinhababu
   Year: 2015
+  Type: article
 
 sosa2003:
   Author: Ernest Sosa
@@ -1781,6 +1782,7 @@ sosa2003:
   Booktitle: "Intellectual Virtue: Perspectives From Ethics and Epistemology"
   Publisher: Oxford University Press
   Location: New York
+  Type: chapter
 
 spenader2003:
   Title: Factive Presuppositions, Accommodation and Information Structure
@@ -1903,7 +1905,7 @@ starr2014:
   Year: 2014
   Owner: erik
   Timestamp: 2014.12.08
-  Url: 
+  Url:
     - https://app.box.com/s/w8b4n3cknragrw0hdceh0uwgr9k5vnw2
     - http://bit.ly/starr2014
 
@@ -1948,7 +1950,7 @@ sundell2011:
 szabo2005:
   Title: The distinction between semantics and pragmatics
   Author: Zolta&#x0301;n Gendler Szabo&#x0301;
-  BookTitle: The Oxford Handbook of the Philosophy of Language
+  Booktitle: The Oxford Handbook of the Philosophy of Language
   Type: chapter
   Publisher: Oxford University Press
   Year: 2005
@@ -2056,6 +2058,7 @@ zagzebski2003:
   Journal: Metaphilosophy
   Number: 1-2
   Publisher: Wiley-Blackwell
-  Author: Linda Zagzebski 
+  Author: Linda Zagzebski
   Volume: 34
   Title: The Search for the Source of Epistemic Good
+  Type: article

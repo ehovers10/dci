@@ -228,7 +228,7 @@ The inquiry-first perspective on knowledge treats ascriptions such as that in [C
 
 ## The value of knowledge
 
-In the *Meno*, Socrates demonstrates that any value one accrues by possessing knowledge rather than merely true belief is not provided by its practical benefits.
+In the *Meno*, Socrates offers a demonstration that any value one accrues by possessing knowledge rather than merely true belief is not provided by its practical benefits.
 
 > **Socrates:** Let me explain. If someone knows the way to Larissa, or anywhere else you like, then when he goes there and takes others with him he will be a good and capable guide, you would agree?
 >
@@ -240,15 +240,17 @@ In the *Meno*, Socrates demonstrates that any value one accrues by possessing kn
 >
 > **Socrates:** Therefore true opinion is as good a guide as knowledge for the purpose of acting rightly. (97a-b)
 
-As an alternative proposal for the value differential, he likens mere true opinion to a statue sculpted by Daedalus. Both tend to fly away from their possessor, and their value is similarly limited as a result. The added value of possessing knowledge comes from the fact that it is tied down by an *account*. He admits, though, that a full acount of knowledge eludes him.
+In terms of its contribution to successful action, which seems to be a primary motivation for knowledge acquisition, true belief fits the bill no worse. Still, it seems clear that knowledge *is* better in some way than the corresponding merely true belief. Determining the nature of this added benefit is the *epistemic value problem*.
+
+As proposal for grounding the value differential, Socrates likens mere true opinion to a statue sculpted by Daedalus. Both tend to fly away from their possessor, and their value is similarly limited as a result. The added value of possessing knowledge comes from the fact that it is tied down by an *account*. He admits, though, that a full theory of knowledge eludes him.
 
 > **Socrates:** Well of course, I have only been using an analogy myself, not knowledge. But it is not, I am sure, a mere guess to say that right opinion and knowledge are different. There are few things that I should claim to know, but that at least is among them, whatever else it is. (98b)
 
-I think that Socrates proposal for what separates knowledge from true belief is basically correct. I hope in this section to show how, from the inquiry-first perspective on knowledge, knowledge as belief tied down by an account has more than just analogy on its side.
+I think that Socrates proposal for what separates knowledge from true belief is basically correct. I hope in this section to show how, from the inquiry-first perspective, knowledge as belief tied down by an account has more than just analogy on its side.
 
 ### Belief stability
 
-Meno's first stab at an answer to Socrates' probing regarding the value of possessing knowledge is a pretty good one. He suggests that the knower is better off than the merely fortunate believer because the knower will successfully navigate her way to Larissa *every time*.
+Meno's first stab at an answer to Socrates' probing regarding the value of possessing knowledge is a pretty good one. He suggests that the knower is better off than the fortunately successful believer because the knower will successfully navigate her way to Larissa *every time*.
 
 > **Socrates:** So right opinion is something no less useful than knowledge.
 >
@@ -258,70 +260,46 @@ Meno's first stab at an answer to Socrates' probing regarding the value of posse
 
 Socrates rightfully points out that, holding belief constant across times, she too will never fail to arrive at Larissa. But belief needn't be constant, and a more charitable reading of Meno's answer is that the value of knowledge is in providing an agent with greater belief *stability* than that accruing to mere true belief.
 
-Timothy Williamson {% include appendices/ref.html id="williamson2000" o="" p="62" %} suggests a similar line to Meno:
+Timothy Williamson {% include appendices/ref.html id="williamson2000" o="" p="62" %} suggests a similar line to this reading of Meno:
 
-> A burglar spends all night ransacking a house, risking discovery by staying so long. We ask what features of the situation when he entered the house let to that result. A reasonable answer is that he knew that there was a diamond in the house. To say just that he believed truly that there was a diamond in the house would be to give a worse explanation, one whose explanans and explanandum are less closely connected. For one possibility consistent with the new explanans is that the burglar entered the house with a true belief that there was a diamon in it derived from false premises. For example, his only reason for believing that there was a diamond in the house might have been that someone told him that there was a diamond under the bed, when in fact the only diamond was in a drawer. He would then very likely have given up his true belief that there was a diamond in the house on discovering the falsity of his belief that there was a diamond under the bed, and abandoned the search.
+> A burglar spends all night ransacking a house, risking discovery by staying so long. We ask what features of the situation when he entered the house led to that result. A reasonable answer is that he knew that there was a diamond in the house. To say just that he believed truly that there was a diamond in the house would be to give a worse explanation, one whose explanans and explanandum are less closely connected. For one possibility consistent with the new explanans is that the burglar entered the house with a true belief that there was a diamond in it derived from false premises. For example, his only reason for believing that there was a diamond in the house might have been that someone told him that there was a diamond under the bed, when in fact the only diamond was in a drawer. He would then very likely have given up his true belief that there was a diamond in the house on discovering the falsity of his belief that there was a diamond under the bed, and abandoned the search.
 
-The suggestion is that knowledge is valuable (in part) because it grounds explanations of behavior. Value, though, is always value *for* somebody, and the intuition that drives the epistemic value problem is that possessing knowledge is more valuable *for it possessor*. The appeal to the burglar's knowledge as an explanation of his ransaking the house all night may, perhaps, be of use to a detective investigating the robbery after the face. But explanation of the sort in evidence in Williamson's case is of no value to the burglar. Granted, since he knows that the diamonds are in the house, his belief will be stable, even in the event that his search under the bed leaves him empty handed. But now, the moral of Meno's initial response to Socrates appears at a higher level. His knowledge that the diamonds are in the house is only of use to the burglar (and therefore valuable to him) *so long as he retains it*. Though the truth and justification of his knowledge are not in doubt, his continued belief in it is. To the extent that the burglar reflectively continues his search, it will be on the basis of his confidence in the source of his belief that the diamonds are in the house. His purported knowledge is not enough to turn the trick; he also needs to have *access* to that knowledge. In other words, the value problem imposes an *internalist* constraint on knowledge.[^internalism]
+Knowledge stabilizes belief; this, it explains why individuals persist in their belief, even in the face of misleading defeaters. The suggestion is that knowledge is valuable (in part) because it grounds explanations of behavior.  Value, though, is always value *for* somebody, and the intuition that drives the epistemic value problem is that possessing knowledge is more valuable *for it possessor*. The appeal to the burglar's knowledge as an explanation of his ransacking the house all night may, perhaps, be of use to a detective investigating the robbery after the fact. But explanation of the sort in evidence in Williamson's case is of no value to the burglar. Granted, since he knows that the diamonds are in the house, his belief will be stable, even in the event that his search under the bed leaves him empty handed. But now, the moral of Meno's initial response to Socrates appears at a higher level. His knowledge that the diamonds are in the house is only of use to the burglar (and therefore valuable to him) *so long as he retains it*. Though the truth and justification of his knowledge are not in doubt, his continued belief in it is. To the extent that the burglar reflectively continues his search, it will be on the basis of his confidence in the source of his belief that the diamonds are in the house. His purported knowledge is not enough to turn the trick -- he also needs to have *access* to that knowledge. In other words, the epistemic value problem imposes an *internalist* constraint on knowledge.[^internalism]
 
-### Virtue
+### Cognitive virtue
 
-Truth is of basic epistemic value, but it isn't clear that it is the only value relevant to epistemic success. Ernest Sosa {% include appendices/ref.html id="sosa2003" o="" %} posits four distinct types of value involved in an individual possessing a bit of knowledge.
+Truth is of basic epistemic value, but it isn't clear that it is the only value relevant to knowledge. Ernest Sosa {% include appendices/ref.html id="sosa2003" o="" %} posits four distinct types of value involved in an individual possessing a bit of knowledge.
 
 <!-- Types of value -->
 {% include examples/sami.html title="types of value" %}
 
-*Success* is the fundamental epistemic value, but it does not exhaust the distinctively epistemic value of knowing, for the *praxis* values are genuine values, parasitic on *success*. But, Sosa suggests, the value of knowing is not limited to distinctively epistemic value. Knowing is a performance, and we can value it as such.
+*Success* is the fundamental epistemic value, but it does not exhaust the value to which the knower can lay claim. The *praxis* values, too, are genuine values. We think of a system that brings about knowledge as better than a similar system that fails to do so. But praxical value is parasitic on *success* value, both in the sense that it does not exist absent success, and that it adds no value for the knower that is not already provided by success. We, as third parties, can praise a system -- or the agent who implements that system -- for succeeding well. But, having so succeeded, the agent gets nothing more out of having done it well. Performance value seems to gain indepenedence from success, in that it is a measure of the dispositions of a belief forming system, and a disposition can be present even in the absence of its stimulus conditions. The performance value *for* the knower, though, is similarly nothing beyond that provided by success. Having witnessed success, the knower gets little else in knowing that we would also have praised him had the world so conspired to make his belief false.
 
-*Success* is achieved by mere true belief, and the *praxis* values are swamped by truth. So, the weight of the value problem must be carried by *performance* value. I think that the burden is too much, and *performance* value falters under the load.
+The additional value associated with knowledge, as nice as they may be for an evaluation of the world, are practically irrelevant for the knower. The intuition that drives the epistemic value problem -- the one that is behind Meno's initial response -- is that possessing knowledge makes a difference to a believer's life.[^epiphenomenalvalue]
 
-It is important that the virtue epistemologist deny the distinctive epistemic value of performances. If, instead, performance value is seen as a fundamental, intrinsical, epistemic value, then *all* knowledge has fundamental, intrinsic value, and this is just not the case. Sosa's beachcomber example elicits the needed intuition.
-
-
-
-> What precludes our conceiving of knowledge in a similar way, as a desideratum that includes an intrinsic success component, a hitting of the mark of truth, along with how one accomplishes that, how one succeeds in hitting the mark of truth? On this conception, knowledge is not just hitting the mark but hitting the mark somehow through means proper and skillful enough. There seems nothing “incoherent” in any pejorative sense in such a desideratum of “knowledge,” and there are plenty of analogous desiderata throughout the wide gamut of human endeavors.
->
-> To recognize that, moreover, may not require us to think that only some additional intrinsic value could account for the value in the skillful shot over and above the mere hitting of the bull’s-eye, nor need the additional value be fundamental. The further value might rather be just praxical value or the like.
-
-preferred solution to the value problem is a version of virtue epistemology.[^virtue] It proposes an expansion of the valuable beyond the practically useful. Knowledge is valuable because it is a virtue and possessing virtue makes an agent's life better, regardless of whether that value is realized in anything tangible.
-
-This is a pleasing response for certain kinds of knowledge, but it faces a problem familiar to virtue accounts generally. That is that knowledge is not universally valuable (Unworthy desires) Some knowledge is not worth having, no matter how virtuously achieved. This is because the value is in the *account* and An account that no one cares about is not valuable. (Externalism/relativism of knowledge to community of inquirers.)
-
-[But the question was what makes knowledge *as opposed to mere true belief* valuable. ]
-
-If what is valuable is arriving at Larissa, then true belief will get you there *so long as you retain the belief along the way*. The added practical value of knowledge is in providing one's belief with resiliance in the face of misleading defeaters.
+Of course, receiving praise can be of benefit to the believer, in a way that potentially goes beyond having achieved success. Praise breeds recognition, which leads others to seek one out as a source. Being known as a successful inquirer increases one's opportunity for engaging in inquiry, which in turn builds one's knowledge base. Knowledge is a principle example of success breeding success. Perhaps what is valuable about knowledge is not that it is *worthy* of praise, but simply that it is praised.
 
 ### Machines and products
 
-Linda Zagzebski's {% include appendices/ref.html id="zagzebski2003" o="" %} characterization Socrates' challenge is that all definitions of knowledge that take it to be a value conferring property conjoined to a state of true belief will end up having the value of the conjoined property swamped by the value of the belief being true.[^swamping]
+Linda Zagzebski {% include appendices/ref.html id="zagzebski2003" o="" %} suggests that the epistemic value problem is especially acute for what she calls *machine-product* accounts of knowledge, on which knowledge is taken to be a state that is the output of some state generating process. Principal among these are *reliabilist* accounts of justification, whereby a belief is justified on the basis of the nature of the process that brings the belief about. Knowledge has justified belief as a component, and justified belief comes from belief forming processes that reliably produce true beliefs. But possessing a reliably formed true belief does one nothing that is not provided by possession of any old true belief.
 
-This is especially acute for what Zagzebski calls *machine-product* accounts of knowledge, on which knowledge is taken to be a state that is the output of some state generating process. Principal among these accounts are *reliabilist* accounts of justification, whereby a belief is justified on the basis of the nature of the process that brings the belief about. Justified beliefs come from belief forming processes that reliably produce true beliefs. The problem is that *possessing* knowledge is what is thought to be of value, but possessing a reliably formed true belief does one nothing that is not provided by possession of any old true belief.
+> True belief arising from cognitive activity cannot be like espresso coming out of an espresso maker. Not only is the reliability of the machine insufficient to make the coffee in the cup any better; nothing about the machine makes the product any better. So if knowledge is true belief that is made better by something, knowledge cannot be the external product of the believer in the way the cup of espresso is the external product of the machine. {% include appendices/ref.html id="zagzebski2003" o="n" p="15" %}
 
-> If knowledge is true belief arising out of the exercise of good traits and skills, it cannot be the reliability of the agent’s traits and skills that adds the value. Those traits or skills must be good for some reason that does not wholly derive from the good of the product they produce: true belief.
-
-Zagzebski suggests that the problem is that the value adding function is also the function that produces the belief. But if its value comes from its proficiency at producing true beliefs, then it's value is also swamped by the truth of its product.
-
-Reliabilist accounts are *externalist* in that a belief can be justified even though the believing agent does not have access to the souce of the belief. But the externalist element of these accounts is not the source of the worry, because internalist accounts that interpret the difference between justified and merely true belief in terms of *truth-conduciveness* also submit to the value problem. Once truth is achieved, truth-conduciveness provides nothing extra. Zagzebski directly addresses Lawrence Bonjour's approach to justification.
+What is it about knowledge being an external product of a believer that renders impossible any attempt to produce an unswamped epistemic value? Reliabilist accounts are external in a couple different ways. Reliabilist accounts are *externalist* in that a belief can be justified even though the believing agent does not have access to the souce of the belief. But this externalist element of these accounts is not the source of the worry, because internalist accounts that interpret the difference between justified and merely true belief in terms of *truth-conduciveness* also submit to the value problem. Once truth is achieved, truth-conduciveness provides nothing extra. Zagzebski directly addresses Lawrence Bonjour's approach to justification.
 
 Reliabilist accounts are also *extrinsic* in that the justification inferring property is distinct from the belief it produces. Zagzebski seems to think that extrinsicness is the diagnosis of the value problem for reliabilism, but modal accounts show this isn't the case. The problem is that truth is a powerful value, and it's difficult to find another practical value that doesn't simply reduce to that.
 
-
-
 ### Justifying processes
 
-But the problem isn't with the machine-product model itself. The problem has to do with the nature of the product. We can imbue the product with the credit deserving feature --  the *account* of the state's genesis. The problem is not the product, but that the process is seen as external to the product. But the insight of dynamic semantics is that these need not be independent. The product encodes the process.
+But the problem isn't with the machine-product model itself. The problem has to do with the nature of the product. The solution is to imbue the product with the credit deserving feature --  the *account* of the state's genesis. Doing so injects the process into the product.
 
-Of course, there is still an issue with the unity of knowledge. Why don't we still have a swamping issue, just now with one part of knowledge swamping the value provided by another part? The answer has to do with the idea of truth-conduciveness as value adding. We have an operational account of knowledge; we also understand truth operationally.
+This only gets us part of the way. There is still an issue with the *unity* of knowledge. Why don't we still have a swamping issue, just now with one part of knowledge swamping the value provided by another part? Many parts would be so swamped, but the process as part is different because it provides independent, practical value.
 
-Conduciveness is not a modal property. It is dynamic. Take Meno's first take reposne to Socrates: "The man who has knowledge will get there every time, whereas the man with true opinion will get there only sometimes." I think this is the most natural characterization of the value of knowledge, and it is also the correct one. This is because knowledge isn't valuable as a destination; it is valuable as a means to a destination.
+Knowledge isn't just valuable because with it you arrive at Larissa. It is valuable because you can explain your route to others.
 
-A holistic, dynamic state encodes the process of inquiry, and this is knowledge. The individual beliefs abstracted from the state are known, but they are not the knowledge in so far as knowledge is value additive.
+Knowledge queries inquiry, and the query encodes the process of inquiry. The individual beliefs abstracted from the state are known, but they are not the knowledge in so far as knowledge is value additive.
 
-In the belief update literature, knowledge is understood as the fixation of belief. It is the set of worlds to which one does not consider alternatives. This perspective is unlikely to capture the colloquial English use of the word "knowledge", for knowledge of this sort is not factive. But of additional concern for this account is the ability to set off a concept distinct from belief.
-
-Knowledge is belief with an account. Knowledge is useful because having an account can assist you in an inquiry, and this has practical value. The process is valuable, and we cannot reduce knowledge to the abstracted information state (query). When the process is included as part of the knowledge, we do get something of genuine practical value.
-
-
+Knowledge is belief with an account. It is useful because having an account can assist you in an inquiry, and this has practical value. The process is valuable; it is included as part of the knowledge, we do get something of genuine practical value.
 
 ## Contextualism and relativism
 
@@ -358,48 +336,76 @@ Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An
 
 <!-- Footnotes -->
 
-[^knowtoomuch]: Set aside the sense of *knowing too much* in which an agent has information that it would be in their other interests to remain ignorant of.
+[^knowtoomuch]:
+    Set aside the sense of *knowing too much* in which an agent has information that it would be in their other interests to remain ignorant of.
 
-[^inclusion]: This is not completely true; we can make sense of one state strictly containing another.
+[^inclusion]:
+    This is not completely true; we can make sense of one state strictly containing another.
 
-[^brisco]: In one sense, Brisco and Green disagree in their beliefs. Brisco thinks it was the guy in room A that did it, while Green thinks it was the one in room B. They both think that the person who did it acted alone. In another sense, they agree in what they believe.  Belief is functionally tied to action, and Brisco and Green are acting in very similar ways. While Brisco is putting the screws to the guy in room A, Green has got the guy in room B under a hot lamp. They both have drafted warrant requests, and have finger prints running through the database checker.
+[^brisco]:
+    In one sense, Brisco and Green disagree in their beliefs. Brisco thinks it was the guy in room A that did it, while Green thinks it was the one in room B. They both think that the person who did it acted alone. In another sense, they agree in what they believe.  Belief is functionally tied to action, and Brisco and Green are acting in very similar ways. While Brisco is putting the screws to the guy in room A, Green has got the guy in room B under a hot lamp. They both have drafted warrant requests, and have finger prints running through the database checker.
 
-[^centeredworlds]: Perhaps not all relativists would be happy with this characterization, taking belief to be a three-place relation among a subject, proposition, and a perspective. But a perspectival proposition is itself a relation; curry that relation and you're left with a property.
+[^centeredworlds]:
+    Perhaps not all relativists would be happy with this characterization, taking belief to be a three-place relation among a subject, proposition, and a perspective. But a perspectival proposition is itself a relation; curry that relation and you're left with a property.
 
-[^contextualistflavor]: There are different flavors of contextualism (Stanley, DeRose, Glanzberg, etc) and the differences might make a difference for certain applications. But I'm happy to treat the version in the text as representative in regard to the issue of disagreement.
+[^contextualistflavor]:
+    There are different flavors of contextualism (Stanley, DeRose, Glanzberg, etc) and the differences might make a difference for certain applications. But I'm happy to treat the version in the text as representative in regard to the issue of disagreement.
 
-[^ConversationalForce]: The notion in the text of *contribution type* is related to Paul Portner's *conversational force*, which he sees of as a notion, distinct from illocutionary force, that has implications for aspects of the grammatical system relating to syntax, semantics, and pragmatics.
+[^ConversationalForce]:
+    The notion in the text of *contribution type* is related to Paul Portner's *conversational force*, which he sees of as a notion, distinct from illocutionary force, that has implications for aspects of the grammatical system relating to syntax, semantics, and pragmatics.
 
-[^QACongruence]: We'll revisit the anticipation and restriction of questions later on when we discuss focus and Q/A Congruence in [Dispute in Discourse](/chapters/dispute-in-discourse.html)
+[^QACongruence]:
+    We'll revisit the anticipation and restriction of questions later on when we discuss focus and Q/A Congruence in [Dispute in Discourse](/chapters/dispute-in-discourse.html)
 
-[^supposition]: They are also similar to suppositions in that they seem to be less than fully committal on the part of the speaker. Assertion is generally associated with a commitment that it generates for the speaker.  This commitment involves some evidential relation between the asserter and the information conveyed, though it is controversial just what relation it is. But whatever the relation amounts to, it seems clear that we sometimes offer contributions to discourse that go beyond the evidence we have available. And we do this not just as a means of flouting the rules of discourse, but frequently in order to respect the project of the communicative exchange.
+[^supposition]:
+    They are also similar to suppositions in that they seem to be less than fully committal on the part of the speaker. Assertion is generally associated with a commitment that it generates for the speaker.  This commitment involves some evidential relation between the asserter and the information conveyed, though it is controversial just what relation it is. But whatever the relation amounts to, it seems clear that we sometimes offer contributions to discourse that go beyond the evidence we have available. And we do this not just as a means of flouting the rules of discourse, but frequently in order to respect the project of the communicative exchange.
 
-[^connection]: Other explorations of the nature of knowledge in terms of its connection to inquiry include {% include appendices/ref.html id="schaffer2005" o="n" e="." %}
+[^connection]:
+    Jonathan Schaffer {% include appendices/ref.html id="schaffer2005" o="" %} also explores of the nature of knowledge in terms of its connection to inquiry, though his development of the nature of inquiry differs from that in the text.
 
-[^command]: Sometimes added to this list of contribution types is the *command*, which proposes a non-linguistic demand upon a participant in the inquiry. The appropriate response to such a contribution is to make the world such that the demand is met (or to reject the demand itself).
+[^command]:
+    Sometimes added to this list of contribution types is the *command*, which proposes a non-linguistic demand upon a participant in the inquiry. The appropriate response to such a contribution is to make the world such that the demand is met (or to reject the demand itself).
 
-[^mood]: Each of these contribution types has an associated linguistic mood. Inquiry is a structured process, in which it is important not only what information is available but also how it is to be put to use in reaching the goal. As an implementation of inquiry, linguistic discourse has conventional means of representing how the information is being put to use by a contribution. But the scope of contribution types is not limited by the set of conventional moods. Nor do I think the concept of *linguistic mood* cuts along the same joints as that of *contribution type*. What is important for a contribution type is that there is a recognizably unique way in which information is put to use to further the goals of the inquiry.
+[^mood]:
+    Each of these contribution types has an associated linguistic mood. Inquiry is a structured process, in which it is important not only what information is available but also how it is to be put to use in reaching the goal. As an implementation of inquiry, linguistic discourse has conventional means of representing how the information is being put to use by a contribution. But the scope of contribution types is not limited by the set of conventional moods. Nor do I think the concept of *linguistic mood* cuts along the same joints as that of *contribution type*. What is important for a contribution type is that there is a recognizably unique way in which information is put to use to further the goals of the inquiry.
 
-[^ability]: Is this true? Haven't I build *actual* collaboration into the framework by way of the sandbox?
+[^ability]:
+    Is this true? Haven't I build *actual* collaboration into the framework by way of the sandbox?
 
-[^goldman]: As would Alvin Goldman's {% include appendices/ref.html id="goldman1976" o="" %} fake barn cases among others.
+[^goldman]:
+    As would Alvin Goldman's {% include appendices/ref.html id="goldman1976" o="" %} fake barn cases among others.
 
-[^refinement]: This picture is fitting for our account of refinement to be addressed in the last chapter.
+[^refinement]:
+    This picture is fitting for our account of refinement to be addressed in the last chapter.
 
-[^multiknowledge]: It is thus a consequence of Levi's approach to inquiry as transition between states of knowledge following the dictates of a revision operator that there can be multiple, incompatible states of knowledge.
+[^multiknowledge]:
+    It is thus a consequence of Levi's approach to inquiry as transition between states of knowledge following the dictates of a revision operator that there can be multiple, incompatible states of knowledge.
 
-[^agm]: The classic treatment of contraction is AGM (Alchourron 1985), and I refer the reader there for details on the relation.
+[^agm]:
+    The classic treatment of contraction is AGM (Alchourron 1985), and I refer the reader there for details on the relation.
 
-[^contain]: Even in the case of containment, having more information does not necessarily make the state more desirable. The more informative state involves one way of expanding from the less informative one. But independent of knowledge of the *alternative* expansions, there is no saying that such an expansion ought to be carried out.
+[^contain]:
+    Even in the case of containment, having more information does not necessarily make the state more desirable. The more informative state involves one way of expanding from the less informative one. But independent of knowledge of the *alternative* expansions, there is no saying that such an expansion ought to be carried out.
 
-[^factivity]: For a dissenting opinion, see {% include appendices/ref.html id="hazlett2012" o="n" e="." %}
+[^factivity]:
+    For a dissenting opinion, see {% include appendices/ref.html id="hazlett2012" o="n" e="." %}
 
-[^intellectualism]: I focus here on *intellectualist* accounts of knowledge, setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% include appendices/ref.html id="ryle1949,lewis1988,bengson2012" o="n" e="." %}
+[^intellectualism]:
+    I focus here on *intellectualist* accounts of knowledge , setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% include appendices/ref.html id="ryle1949,lewis1988,bengson2012" o="n" e="." %}
 
-[^informationpotential]: In other work, Levi has attempted to incorporate the truth acquisition element of the Jamesian amendment. He defines a sentence's *information potential* -- defined as a real-number value normalized to [0,1]. This value can then be used with an inquirer's subjective probability function to determined whether the sentence is worth adding to their information state. {% include appendices/ref.html id="rott2006,levi1967" o="n" %}
+[^informationpotential]:
+    In other work, Levi has attempted to incorporate the truth acquisition element of the Jamesian amendment {% include appendices/ref.html id="levi1967,rott2006" o="n" e="." %} He defines a sentence's *information potential* -- a real-number value normalized to [0,1]. This value can then be used with an inquirer's subjective probability function to determined whether the sentence is worth adding to their information state.
 
-[^internalism]: In yet other words, the stability of belief requires not just that the agent has knowledge, but that he *knows that* he does. And for someone else's words, directed toward modal conditions on knowledge generally, see {% include appendices/ref.html id="gardiner" o="n" e="." %}
+[^internalism]:
+    In yet other words, the stability of belief requires not just that the agent has knowledge, but that he *knows that* he does. And for someone else's words, directed toward modal conditions on knowledge generally, see {% include appendices/ref.html id="gardiner" o="n" e="." %}
 
-[^swamping]: Ernest Sosa also develops this worry for reliabilism {% include appendices/ref.html id="sosa2003" o="" e="." %}
+[^swamping]:
+    Ernest Sosa {% include appendices/ref.html id="sosa2003" o="" %} also develops this worry for reliabilism.
 
-[^virtue]: Other developments of virtue epistemology motivated by the purported value of knowledge are {% include appendices/ref.html id="riggs2009,sosa2003" o="n" e="." %}
+[^virtue]:
+    Other developments of virtue epistemology motivated by the purported value of knowledge can be found in {% include appendices/ref.html id="riggs2009,sosa2003" o="n" e="." %}
+
+[^epiphenomenalvalue]:
+    One may at this point simply put their foot down and claim that the epistemic value problem is solved when we finger a feature of knowledge that makes the knower better off than the mere believer, even if the betterness is epiphenomenal. This seems to be the idea behind many virtue epistemological solutions {% include appendices/ref.html id="riggs2009,zagzebski2003" o="n" e="." %} Knowledge is a virtue; it thus adds to a life, whether the knower cares about it or not. It's hard to say exactly what our intuition in the epistemic value problem is tracking, and I don't have an argument that it can't be such an epiphenomenal value. But I think we do have reason to think that knowledge adds practical value over mere true belief, and I hope that my positive account lends credence to my diagnosis of the value problem.
+
+    Virtue epistemological solutions, in so far as they posit a distinctive value possessed by knowledge, must also explain why not all knowledge is valuable. Sosa's {% include appendices/ref.html id="sosa2003" o="" %} example of the beachcomber who acquires knowledge of the number of grains of sand in his palm the hard way does not acquire something valuable. But he has knowledge just the same, and if there is a distinctive epistemic virtue, then his life ought to be better off for the counting.

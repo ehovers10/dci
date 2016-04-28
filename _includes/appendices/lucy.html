@@ -58,7 +58,7 @@
 <span><em>{{ lucy.Title | append: '.' }}</em></span>
 
 <span>
-{% if lucy.Type == 'Article' or lucy.Type == 'article' %}
+{% if lucy.Type == 'article' %}
   <span>{{ lucy.Journal }}</span>
   {% if lucy.Volume %}
     {% if lucy.Number %}
@@ -68,15 +68,18 @@
     {% endif %}
   {% endif %}
 {% elsif lucy.Type == 'chapter' %}
-  {% if lucy.BookTitle %}
-    <span>{{ lucy.BookTitle | append: '.' }}</span>
+  {% if lucy.Booktitle %}
+    <span>{{ lucy.Booktitle | append: '.' }}</span>
   {% endif %}
   <span>{{ lucy.Publisher | append: '.' }}</span>
   {% if lucy.Location %}
     <span>{{ lucy.Location | append: "." }}</span>
   {% endif %}
-{% elsif lucy.Booktitle %}
-  <span>{{ lucy.Booktitle | append: '.' }}</span>
+{% else %}
+  <span>{{ lucy.Publisher | append: '.' }}</span>
+  {% if lucy.Location %}
+    <span>{{ lucy.Location | append: "." }}</span>
+  {% endif %}
 {% endif %}
 </span>
 
