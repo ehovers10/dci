@@ -30,7 +30,7 @@
     clear: both;
     width: 100%;
     list-style-type:none;
-    
+
     font-size:0.9em;
     li {
       display:inline-block;
@@ -96,6 +96,25 @@ ul.bib2 {
   margin-left:0.25em;
 }
 
+.gloss {
+  color: #008000;
+}
+
+.tooltip {
+  position: fixed; /*leave this and next 3 values alone*/
+  z-index: 1000;
+  left: 1em;
+  top: 1em;
+  background: #272727;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  padding: 3px;
+  width: 50%; /*width of tooltip*/
+  max-width: 400px;
+  display: none;
+}
+
 /* Table of contents */
 
 .toc {
@@ -105,8 +124,8 @@ ul.bib2 {
   ul.section {
     margin-left: 1em;
   }
-  ul.subsection { 
-    margin-left: 2em; 
+  ul.subsection {
+    margin-left: 2em;
   }
   li {
     list-style-type: none;
@@ -193,4 +212,3 @@ ul.bib2 {
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-

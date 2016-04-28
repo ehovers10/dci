@@ -4,25 +4,25 @@ type: chapter
 level: 5
 ---
 
-{% assign words = site.data.glossary | sort: 'name' %}
+{% assign words = site.data.glossary | sort %}
 <ul>
 {% for word in words %}
   <li style="list-style-type:none;">
-    <a name="{{ word.name | slugify }}"></a>
-    <span style="font-weight:600;font-size:1.1em;">{{ word.name }}</span>
-    <blockquote style="margin-left:0.75em;margin-top:0.5em;">{{ word.definition }}
-    {% if word.related %}<div style="font-size:0.8em;margin-left:0.75em;margin-top:0.75em;"><span>Related concepts:</span>
+    <a name="{{ word[0] | slugify }}"></a>
+    <span style="font-weight:600;font-size:1.1em;">{{ word[0] }}</span>
+    <blockquote style="margin-left:0.75em;margin-top:0.5em;">{{ word[1].definition }}
+    {% if word[1].related %}<div style="font-size:0.8em;margin-left:0.75em;margin-top:0.75em;"><span>Related concepts:</span>
     <ul>
-      {% for item in word.related %}
+      {% for item in word[1].related %}
       <li style="display:inline-block;"><a href="#{{ item | slugify }}">{{ item }}</a></li>
       {% unless forloop.last %}
       <li style="display:inline-block;">|</li>
       {% endunless %}
       {% endfor %}
     </ul></div>{% endif %}
-    {% if word.biblio %}<div style="font-size:0.8em;margin-left:0.75em;"><span>Relevant resources:</span>
+    {% if word[1].biblio %}<div style="font-size:0.8em;margin-left:0.75em;"><span>Relevant resources:</span>
     <ul>
-      {% for item in word.biblio %}
+      {% for item in word[1].biblio %}
       <li style="list-style-type:none;">{% include appendices/lucy.html id=item %}</li>
       {% endfor %}
     </ul></div>{% endif %}

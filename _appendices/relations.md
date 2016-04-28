@@ -5,7 +5,7 @@ layout: table
 
 ## A model
 
-{% capture gus %}{% include_relative model.md %}{% endcapture %}
+{% capture gus %}{% include relations/model.md %}{% endcapture %}
 {{ gus | markdownify }}
 
 ## Predicates
@@ -61,14 +61,14 @@ layout: table
 </tr>
 </table>
 
-<!--------------------------------------------->
+<!---------------------- ----------------------->
 <div style="clear:both;"></div>
 
 ## Standard plural predication
 
 {% include relations/bad/index.html rows="7" %}
 
-<!------------------------------------------>
+<!---------------------- -------------------->
 <div style="clear:both;"></div>
 
 ## Contrastive modification
@@ -83,5 +83,3 @@ layout: table
 ## Contrastive plural predication
 
 {% include relations/gbad/index.html rows="7" %}
-
-

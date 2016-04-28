@@ -17,7 +17,7 @@
 
 <!-- Left hand side -->
 <div class="lhs">
-  
+
   <div style="float:right;">
     {% if defn.rhs.size > 1 %}<div style="line-height:0.95;">&nbsp;</div>{% endif %}
     {{ defn.lhs | markdownify }}
@@ -64,7 +64,7 @@
     </div>
     <div class="rhs">
       {% for thing in item.rhs %}
-        {{ thing | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+        {{ thing | markdownify }}
         <div style="clear:both;"></div>
       {% endfor %}
     </div>

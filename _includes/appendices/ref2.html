@@ -1,0 +1,8 @@
+{% assign madge = include.id | split: ',' %}
+<div style="display:inline-block;">(</div>
+{% for thing in madge %}{% assign sally = site.data.dissbib[thing] %}{% assign carol = carol | append: thing | append: ' ' %}{% assign sue = sally.Author | split: ' ' %}{% assign len = sue | size %}
+<div class="ref" style="float:left;">
+  <a id="{{ thing }}" class="tooled" href="#ref-{{ sue[1] }}">{% if include.o contains 'n' %}{% if len == 3 %}{{ sue[2] }}{% else %}{{ sue[1] }}{% endif %}&nbsp;{% endif %}{{ sally.Year }}{% if include.p %},&nbsp;{% if include.p contains '-' %}pp.&nbsp;{% else %}p.&nbsp;{% endif %}{{ include.p }}{% endif %}</a>
+  <div class="tooltip" id="{{ thing }}-tip" href="#">{% include appendices/lucy.html id=thing %}</div>
+</div>
+{% if forloop.rindex0 != 0 %},&nbsp;{% endif %}{% endfor %}){% if include.e != "" %}{{ include.e }}{% endif %}

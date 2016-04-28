@@ -257,10 +257,7 @@ universal quantifier:
 
 drs:
   sem:
-    - lhs: "&phi; = <span class='ldrt'><span class='drs left top bottom'></span>
-           <span class='dref'>&phi;<sup>d</sup></span>
-           <span class='condition'>&phi;<sup>c</sup></span>
-           <span class='drs right top bottom'></span></span>"
+    - lhs: "&phi; = <span class='ldrt'><span class='drs left top bottom'></span><span class='dref'>&phi;<sup>d</sup></span><span class='condition'>&phi;<sup>c</sup></span><span class='drs right top bottom'></span></span>"
       conn: "&nbsp;"
       rhs:
         - "is a *discourse representation structure* (DRS), where"
@@ -268,7 +265,7 @@ drs:
       conn: "&nbsp;"
       rhs:
         - "is a sequence of drefs introduced in the discourse, and"
-    - lhs: "&phi<sup>c</sup>"
+    - lhs: "&phi;<sup>c</sup>"
       conn: "&nbsp;"
       rhs:
         - "is a sequence of conditions, imposing constraints on the model against which
@@ -285,10 +282,7 @@ drs:
     - lhs: "D &rArr; S"
       conn: "="
       rhs:
-        - "<span class='ldrt'><span class='drs left top bottom'></span>
-          <span class='dref'>&phi;<sup>d</sup> &oplus; S<sup>d</sup></span>
-          <span class='condition'>&phi;<sup>c</sup> &oplus; S<sup>c</sup></span>
-          <span class='drs right top bottom'></span></span>"
+        - "<span class='ldrt'><span class='drs left top bottom'></span><span class='dref'>&phi;<sup>d</sup> &oplus; S<sup>d</sup></span><span class='condition'>&phi;<sup>c</sup> &oplus; S<sup>c</sup></span><span class='drs right top bottom'></span></span>"
 
 downdate:
   sem:
@@ -310,8 +304,7 @@ downdate:
       lhs: "&phi; &#x229E; &psi;"
       conn: =
       rhs:
-        - "[ &phi;<sup>d</sup> &oplus; &psi;<sup>d</sup> | &phi;<sup>c</sup> &oplus;
-          &psi;<sup>c</sup> ]"
+        - "<span class='ldrt'><span class='drs left top bottom' style='height:26px;'></span><span class='dref'>&phi;<sup>d</sup> &oplus; S<sup>d</sup></span><span class='condition'>&phi;<sup>c</sup> &oplus; S<sup>c</sup></span><span class='drs right top bottom'></span></span>"
     -
       lhs: "&phi; <span class='symbol'>&darr;</span> &psi;"
       conn: =

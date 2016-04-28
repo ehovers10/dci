@@ -382,7 +382,7 @@ Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An
 
 [^ability]: Is this true? Haven't I build *actual* collaboration into the framework by way of the sandbox?
 
-[^goldman]: As would Alvin Goldman's fake barn cases among others. {% include appendices/ref.html id="goldman1976" o="n" %}
+[^goldman]: As would Alvin Goldman's {% include appendices/ref.html id="goldman1976" o="" %} fake barn cases among others.
 
 [^refinement]: This picture is fitting for our account of refinement to be addressed in the last chapter.
 

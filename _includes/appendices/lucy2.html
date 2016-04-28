@@ -1,3 +1,4 @@
+<div class="tooltip" id="{{ include.id }}-tip">
 {% assign lucy = site.data.dissbib[include.id] %}
 
   {% assign name = lucy.Author | split: ' ' %}
@@ -6,8 +7,6 @@
   {% assign skip = '' %}
   {% assign last = '' %}
   {% assign alsoskip = '' %}
-  <li style="list-style-type:none;margin-bottom:0.5em;padding-left:1em;text-indent:-1em;"><a name="ref-{{ name[1] }}"></a>
-<span>
 {% if lucy.Author contains ' and ' %}
   {% assign last = arrlen %}
   {% if name[2] == 'and' %}
@@ -82,7 +81,6 @@
 
 <span>{{ lucy.Year | append: '.' }}</span>
 
-{% unless include.nourl %}
 {% if lucy.Url %}
   <ul class="bib2">
   {% for link in lucy.Url %}
@@ -90,5 +88,4 @@
   {% endfor %}
   </ul>
 {% endif %}
-{% endunless %}
-</li>
+</div>
