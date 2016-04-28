@@ -8,55 +8,55 @@ The language of *collaborative update semantics* extends a first-order, model th
 
 <!-- Cons -->
 {% capture conslhs %}
-{% include sem.html term='c' type='&alpha;' model="**M**"%}
+{% include examples/sem.html term='c' type='&alpha;' model="**M**"%}
 {% endcapture %}
 {% capture consrhs %}
 **V**(c{{ type }})
 {% endcapture %}
-{% include eqn.html lhs=conslhs rhs=consrhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=conslhs rhs=consrhs mult=0 conn="=" %}
 
 <!-- Vars -->
 {% capture varlhs %}
-{% include sem.html term='u' type='&alpha;' assign="*g*"%}
+{% include examples/sem.html term='u' type='&alpha;' assign="*g*"%}
 {% endcapture %}
 {% capture varrhs %}
 *g*(u{{ type }})
 {% endcapture %}
-{% include eqn.html lhs=varlhs rhs=varrhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=varlhs rhs=varrhs mult=0 conn="=" %}
 
 <!-- Top -->
 {% capture toplhs %}
-{% include sem.html term='&#x22A4;' type='&alpha;' %}
+{% include examples/sem.html term='&#x22A4;' type='&alpha;' %}
 {% endcapture %}
 {% capture toprhs %}
 **D**<sub>&alpha;</sub>
 {% endcapture %}
-{% include eqn.html lhs=toplhs rhs=toprhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=toplhs rhs=toprhs mult=0 conn="=" %}
 
 **Application:** For all &alpha; &isin; **T**, u{{ type }} &isin; *Vars*, d{{ type }} &isin; **D**, and terms A:
 
 {% capture applilhs %}
-{% include sem.html term='&lambda;u<sub>&alpha;</sub>(A)' assign="*g*" %}(d{{ type }})
+{% include examples/sem.html term='&lambda;u<sub>&alpha;</sub>(A)' assign="*g*" %}(d{{ type }})
 {% endcapture %}
 {% capture applirhs %}
-{% include sem.html term='A' assign='*g*[u<sub>&alpha;</sub>&rarr;d]'%} 
+{% include examples/sem.html term='A' assign='*g*[u<sub>&alpha;</sub>&rarr;d]'%} 
 {% endcapture %}
-{% include eqn.html lhs=applilhs rhs=applirhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=applilhs rhs=applirhs mult=0 conn="=" %}
 
 **Identity:** For all &alpha; &isin; **T**, and terms *A* and *B*,
 
 {% capture identlhs %}
-{% include sem.html term='*A*<sub>&alpha;</sub> = *B*<sub>&alpha;</sub>' %}
+{% include examples/sem.html term='*A*<sub>&alpha;</sub> = *B*<sub>&alpha;</sub>' %}
 {% endcapture %}
 {% capture identrhs %}
 {% capture ident1rhs %}
-{% include sem.html term='*A*' type='&alpha;' %} = {% include sem.html term='*B*' type='&alpha;' %}
+{% include examples/sem.html term='*A*' type='&alpha;' %} = {% include examples/sem.html term='*B*' type='&alpha;' %}
 {% endcapture %}
-{% include eqn.html lhs="1" rhs=ident1rhs mult=0 conn="if" embed="" %}
+{% include examples/eqn.html lhs="1" rhs=ident1rhs mult=0 conn="if" embed="" %}
 
-{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% include examples/eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
 {% endcapture %}
-{% include eqn.html lhs=identlhs rhs=identrhs mult=1 conn="=" %}
+{% include examples/eqn.html lhs=identlhs rhs=identrhs mult=1 conn="=" %}
 
 **Bare plurals:** For all *As*: &#x27e8; *e*, *t* &#x27e9;, *B*: &#x27e8; &#x27e8; *e*, *t* &#x27e9;, *t* &#x27e9;
 
@@ -66,16 +66,16 @@ The language of *collaborative update semantics* extends a first-order, model th
 {% capture plural1rhs %}
 
 {% capture plural11rhs %}
-{ {% include sem.html term='A' %} } &isin; &#x213f;(**R**)
+{ {% include examples/sem.html term='A' %} } &isin; &#x213f;(**R**)
 
-{% include sem.html term='A' %} &sube; {% include sem.html term='B' %}
+{% include examples/sem.html term='A' %} &sube; {% include examples/sem.html term='B' %}
 {% endcapture %}
-{% include eqn.html lhs="1" rhs=plural11rhs mult=1 conn="if" embed="" %}
+{% include examples/eqn.html lhs="1" rhs=plural11rhs mult=1 conn="if" embed="" %}
 
-{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% include examples/eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
 {% endcapture %}
 <div style="padding:1em;"></div>
-{% include eqn.html lhs=plural1lhs rhs=plural1rhs mult=2 conn="=" %}
+{% include examples/eqn.html lhs=plural1lhs rhs=plural1rhs mult=2 conn="=" %}
 
 {% capture plural2lhs %}
 &#x27e6; [C]<sub>cf</sub> *AB* &#x27e7;
@@ -83,76 +83,76 @@ The language of *collaborative update semantics* extends a first-order, model th
 {% capture plural2rhs %}
 
 {% capture plural21rhs %}
-{ {% include sem.html term='A' %} } &isin; [ C ]
+{ {% include examples/sem.html term='A' %} } &isin; [ C ]
 
-{% include sem.html term='A' %} &sube; {% include sem.html term='B' %}
+{% include examples/sem.html term='A' %} &sube; {% include examples/sem.html term='B' %}
 {% endcapture %}
-{% include eqn.html lhs="1" rhs=plural21rhs mult=1 conn="if" embed="" %}
+{% include examples/eqn.html lhs="1" rhs=plural21rhs mult=1 conn="if" embed="" %}
 
-{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% include examples/eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
 {% endcapture %}
 <div style="padding:1em;"></div>
-{% include eqn.html lhs=plural2lhs rhs=plural2rhs mult=2 conn="=" %}
+{% include examples/eqn.html lhs=plural2lhs rhs=plural2rhs mult=2 conn="=" %}
 
 **Booleans:** For all propositions &phi; and &psi;,
 <!-- not -->
 {% capture notlhs %}
-{% include sem.html term='&not;&phi;' %}
+{% include examples/sem.html term='&not;&phi;' %}
 {% endcapture %}
 {% capture notrhs %}
-{% include sem.html term='&#x22A4;' type="*st*" %} / {% include sem.html term='&phi;' %}
+{% include examples/sem.html term='&#x22A4;' type="*st*" %} / {% include examples/sem.html term='&phi;' %}
 {% endcapture %}
-{% include eqn.html lhs=notlhs rhs=notrhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=notlhs rhs=notrhs mult=0 conn="=" %}
  
 <!-- and -->
 {% capture andlhs %}
-{% include sem.html term='&phi;&and;&psi;' %}
+{% include examples/sem.html term='&phi;&and;&psi;' %}
 {% endcapture %}
 {% capture andrhs %}
-{% include sem.html term='&phi;' %} &#x22C2; {% include sem.html term='&psi;' %}
+{% include examples/sem.html term='&phi;' %} &#x22C2; {% include examples/sem.html term='&psi;' %}
 {% endcapture %}
-{% include eqn.html lhs=andlhs rhs=andrhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=andlhs rhs=andrhs mult=0 conn="=" %}
 <!-- or -->
 {% capture orlhs %}
-{% include sem.html term='&phi;&or;&psi;' %}
+{% include examples/sem.html term='&phi;&or;&psi;' %}
 {% endcapture %}
 {% capture orrhs %}
-{% include sem.html term='&phi;' %} &#x22C3; {% include sem.html term='&psi;' %}
+{% include examples/sem.html term='&phi;' %} &#x22C3; {% include examples/sem.html term='&psi;' %}
 {% endcapture %}
-{% include eqn.html lhs=orlhs rhs=orrhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=orlhs rhs=orrhs mult=0 conn="=" %}
     
 **Quantifiers:** For all variables u<sub>e</sub>, and propositions &phi;,
 
 <!-- For all -->
 {% capture alllhs %}
-{% include sem.html term='&forall;u<sub>e</sub>&phi;' assign="*g*" %}
+{% include examples/sem.html term='&forall;u<sub>e</sub>&phi;' assign="*g*" %}
 {% endcapture %}
 {% capture allrhs %}
 {% capture all1rhs %}
-{% include sem.html term='&phi;' assign='*g*[x&rarr;u<sub>e</sub>]' %} = 1 <br />for all u<sub>e</sub>
+{% include examples/sem.html term='&phi;' assign='*g*[x&rarr;u<sub>e</sub>]' %} = 1 <br />for all u<sub>e</sub>
 {% endcapture %}
-{% include eqn.html lhs="1" rhs=all1rhs mult=0 conn="if" embed="" %}
+{% include examples/eqn.html lhs="1" rhs=all1rhs mult=0 conn="if" embed="" %}
 
-{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% include examples/eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
 {% endcapture %}
-{% include eqn.html lhs=alllhs rhs=allrhs mult=3 conn="=" %}
+{% include examples/eqn.html lhs=alllhs rhs=allrhs mult=3 conn="=" %}
 
 <!-- Some -->
 {% capture somelhs %}
-{% include sem.html term='&exist;u<sub>e</sub>&phi;' assign='*g*' %}
+{% include examples/sem.html term='&exist;u<sub>e</sub>&phi;' assign='*g*' %}
 {% endcapture %}
 {% capture somerhs %}
 {% capture some1rhs %}
-{% include sem.html term='&phi;' assign='*g*[x&rarr;u<sub>e</sub>]' %} = 1 <br />for some u<sub>e</sub>
+{% include examples/sem.html term='&phi;' assign='*g*[x&rarr;u<sub>e</sub>]' %} = 1 <br />for some u<sub>e</sub>
 {% endcapture %}
-{% include eqn.html lhs="1" rhs=some1rhs mult=0 conn="if" embed="" %}
+{% include examples/eqn.html lhs="1" rhs=some1rhs mult=0 conn="if" embed="" %}
 
-{% include eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
+{% include examples/eqn.html lhs="0" rhs="" mult=0 conn="otherwise" embed="" %}
 {% endcapture %}
-{% include eqn.html lhs=somelhs rhs=somerhs mult=3 conn="=" %}
+{% include examples/eqn.html lhs=somelhs rhs=somerhs mult=3 conn="=" %}
 
 {% endcapture %}
-{% include ex.html type="def" term="Semantics" defn=semantics link="semantics" %}
+{% include examples/ex.html type="def" term="Semantics" defn=semantics link="semantics" %}
 
 <!-- Notes -->
 The semantics provided above is largely standard. We highlight just a few specifics:

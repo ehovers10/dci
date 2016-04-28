@@ -4,20 +4,20 @@ title: Definitions
 
 ### Counterfactual conditional
 
-{% include eqn2.html genus="counterfactual conditional" term="strict" %}
-{% include eqn2.html genus="counterfactual conditional" term="variable" %}
-{% include eqn2.html genus="counterfactual conditional" term="shifty" %}
+{% include examples/eqn2.html genus="counterfactual conditional" term="strict" %}
+{% include examples/eqn2.html genus="counterfactual conditional" term="variable" %}
+{% include examples/eqn2.html genus="counterfactual conditional" term="shifty" %}
 
 ### Focus semantic value
 
-{% include eqn2.html term="focus" %}
+{% include examples/eqn2.html term="focus" %}
 
 ### Universal quantifier
 
-{% include eqn2.html genus="universal quantifier" term="strict" %}
-{% include eqn2.html genus="universal quantifier" term="generic" %}
-{% include eqn2.html genus="universal quantifier" term="structural" %}
+{% include examples/eqn2.html genus="universal quantifier" term="strict" %}
+{% include examples/eqn2.html genus="universal quantifier" term="generic" %}
+{% include examples/eqn2.html genus="universal quantifier" term="structural" %}
 
 ### Downdate
 
-{% include eqn2.html term="downdate" %}
+{% include examples/eqn2.html term="downdate" %}

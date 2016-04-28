@@ -1,0 +1,14 @@
+<div class="toc">
+<ul class="section">
+  {% for sect in chapter.sections %}
+    <li><a href="{{ sect.title | slugify | prepend: '#' }}">{{ sect.title }}</a></li>
+    {% if sect.subsections %}
+    <ul class="subsection">
+      {% for subsect in sect.subsections %}
+      <li><a href="{{ subsect.title | slugify | prepend: '#' }}">{{ subsect.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% endfor %}
+</ul>
+</div>

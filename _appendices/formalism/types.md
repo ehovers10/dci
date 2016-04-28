@@ -38,4 +38,4 @@ A set **dref** of highlighted *discourse referent* types is defined as:
 {: onclick="return false;"}
 
 {% endcapture %}
-{% include ex.html type="def" term="Types" defn=typedef %}
+{% include examples/ex.html type="def" term="Types" defn=typedef %}

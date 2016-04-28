@@ -9,7 +9,7 @@ The nature of inquiry
 + **Error avoidance** 
 {: .open #error }
 
-Issac Levi {% include ref.html id="levi1980" o="" %} develops an account of inquiry in terms of revision of information states. He takes the principal mandate of proper inquiry to be to avoid importing error into one's state of information. Since refusing to alter one's information state guarantees that no additional error will be imported, the maximally conservative inquirer is perfectly rational by the lights of Levi's account. An information state on this model is merely a set of worlds, representing the space of genuine (open) possibilities according to the inquiring agent.
+Issac Levi {% include appendices/ref.html id="levi1980" o="" %} develops an account of inquiry in terms of revision of information states. He takes the principal mandate of proper inquiry to be to avoid importing error into one's state of information. Since refusing to alter one's information state guarantees that no additional error will be imported, the maximally conservative inquirer is perfectly rational by the lights of Levi's account. An information state on this model is merely a set of worlds, representing the space of genuine (open) possibilities according to the inquiring agent.
 {: .hid #error-hid }
 
 + **Impetus to revise**

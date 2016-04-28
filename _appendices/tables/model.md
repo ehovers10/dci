@@ -32,14 +32,14 @@
 {% capture dsrhs %}
 { s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub>, ... }
 {% endcapture %}
-{% include eqn.html lhs=dslhs rhs=dsrhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=dslhs rhs=dsrhs mult=0 conn="=" %}
 {% capture lhs %}
 **D**<sub>e</sub>
 {% endcapture %}
 {% capture rhs %}
 { a, b, c, d, e, ... }
 {% endcapture %}
-{% include eqn.html lhs=lhs rhs=rhs mult=0 conn="=" %}
+{% include examples/eqn.html lhs=lhs rhs=rhs mult=0 conn="=" %}
 {% capture vbearslhs %}
 *V*(*bears*)
 {% endcapture %}
@@ -50,7 +50,7 @@ s<sub>2</sub> &rArr; { a, b, c, d }
 
 s<sub>3</sub> &rArr; { a }
 {% endcapture %}
-{% include eqn.html lhs=vbearslhs rhs=vbearsrhs mult=3 conn="=" %}
+{% include examples/eqn.html lhs=vbearslhs rhs=vbearsrhs mult=3 conn="=" %}
 
 {% capture vdangerouslhs %}
 *V*(*dangerous*)
@@ -62,7 +62,7 @@ s<sub>2</sub> &rArr; { a }
 
 s<sub>3</sub> &rArr; { b, d }
 {% endcapture %}
-{% include eqn.html lhs=vdangerouslhs rhs=vdangerousrhs mult=3 conn="=" %}
+{% include examples/eqn.html lhs=vdangerouslhs rhs=vdangerousrhs mult=3 conn="=" %}
 </div>
 <div style="float:left;width:400px;">
 {% capture vgrizzlylhs %}
@@ -75,7 +75,7 @@ s<sub>2</sub> &rArr; { a, c }
 
 s<sub>3</sub> &rArr; { a }
 {% endcapture %}
-{% include eqn.html lhs= vgrizzlylhs rhs= vgrizzlyrhs mult=3 conn="=" %}
+{% include examples/eqn.html lhs= vgrizzlylhs rhs= vgrizzlyrhs mult=3 conn="=" %}
 
 {% capture vkoalalhs %}
 *V*(*koala*)
@@ -87,7 +87,7 @@ s<sub>2</sub> &rArr; { b }
 
 s<sub>3</sub> &rArr; { b }
 {% endcapture %}
-{% include eqn.html lhs=vkoalalhs rhs=vkoalarhs mult=3 conn="=" %}
+{% include examples/eqn.html lhs=vkoalalhs rhs=vkoalarhs mult=3 conn="=" %}
 
 {% capture vpolarlhs %}
 *V*(*polar*)
@@ -99,6 +99,6 @@ s<sub>2</sub> &rArr; { d }
 
 s<sub>3</sub> &rArr; { e }
 {% endcapture %}
-{% include eqn.html lhs=vpolarlhs rhs=vpolarrhs mult=3 conn="=" %}
+{% include examples/eqn.html lhs=vpolarlhs rhs=vpolarrhs mult=3 conn="=" %}
 </div>
 <div style="clear:both;"></div>

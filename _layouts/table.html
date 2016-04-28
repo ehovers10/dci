@@ -2,19 +2,18 @@
 layout: compress
 ---
 
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 
-{% include head1.html %}
+{% include page-elements/head1.html %}
 
 <body>
-{% include mark.html title="attributes" %}
 
 <div class="tablewrap">
 
 <div class="page-heading">
 
-{% include mark.html title='navigation' %}
+{% include appendices/mark.html title='page-elements/navigation' %}
 
 <h1>{{ page.title }}</h1>
 <h3>{% if page.subtitle %}{{ page.subtitle | append: '&nbsp;' }}{% endif %}{% if page.author %}{{ page.author | prepend: 'by&nbsp;' }}{% endif %}</h3>
@@ -32,7 +31,7 @@ layout: compress
 {% if page.toc %}
 <h3>Table of contents</h3>
 <blockquote>
-{% include toc.html chapter=page.title %}
+{% include page-elements/toc.html chapter=page.title %}
 </blockquote>
 {% endif %}
 
@@ -44,7 +43,7 @@ layout: compress
 
 </div>
 
-{% include foot1.html %}
+{% include page-elements/foot1.html %}
 
 </body>
 </html>

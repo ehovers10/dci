@@ -1,0 +1,18 @@
+<!-- Right-outer-join(Grizzly bears,Dangerous) -->
+<table class="relation">
+<tr>
+  <td class="label" colspan="4"><strong>T</strong>(<strong>ent</strong>,&lowast;), <strong>T</strong>(<strong>subj</strong>,??)</td>
+</tr>
+
+{% include relations/relnheader.html attrs="sit|ent|subj|pred" %}
+
+{% include relations/keylist.html key="s<sub>1</sub>" attr1="<span class='red'>a</span>|<span class='green'>b</span>|<span class='blue'>d</span>" attr2="<span class='red'>grizzly</span>|<span class='green'>koala</span>|<span class='blue'>&omega;</span>" attr3="+|+|+" group="012" %}
+<tr><td class="label" colspan="4" style="border-bottom:1px solid #000;"></td></tr>
+{% include relations/keylist.html key="s<sub>2</sub>" attr1="<span class='red'>a</span>" attr2="<span class='red'>grizzly</span>" attr3="+" group="0" %}
+<tr><td class="label" colspan="4" style="border-bottom:1px solid #000;"></td></tr>
+{% include relations/keylist.html key="s<sub>3</sub>" attr1="<span class='red'>b</span>|<span class='green'>d</span>" attr2="<span class='red'>koala</span>|<span class='green'>&omega;</span>" attr3="+|+" group="01" %}
+
+<tr>
+  <td class="label" colspan="4"><strong>&#10649;</strong></td>
+</tr>
+</table>

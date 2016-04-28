@@ -1,0 +1,8 @@
+{% capture sami %}
+{% assign thing = site.data.definitions[include.title] %}
+{% assign name = include.title | capitalize %}
+{% for bit in thing %}
+**{{ bit[0] | capitalize }}:** {{ bit[1] }}
+{% endfor %}
+{% endcapture %}
+{% include examples/ex.html type="def" term=name defn=sami %}

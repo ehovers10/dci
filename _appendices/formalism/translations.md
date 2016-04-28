@@ -32,4 +32,4 @@
 
 [?] *Interrogative update:* joins proposition to R.
 {% endcapture %}
-{% include ex.html type="def" term="Translations" defn=trans link="translations" %}
+{% include examples/ex.html type="def" term="Translations" defn=trans link="translations" %}

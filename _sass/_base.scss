@@ -81,11 +81,17 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-family: $header-ff;
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+h1 {
+    font-size: $header-fs;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: $header-fs * 0.9;
 
     @include media-query($on-laptop) {
         font-size: 28px;
@@ -93,7 +99,7 @@ h2 {
 }
 
 h3 {
-    font-size: 26px;
+    font-size: $header-fs * 0.8;
 
     @include media-query($on-laptop) {
         font-size: 22px;
@@ -101,7 +107,7 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: $header-fs * 0.7;
 
     @include media-query($on-laptop) {
         font-size: 18px;
@@ -130,21 +136,42 @@ a {
 /**
  * Blockquotes
  */
-blockquote {
-    color: #000;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    padding-right: $spacing-unit;
-    font-size: 0.9em;
-    text-align: justify;
-    //letter-spacing: -1px;
+@media all and (min-width: 700px) {
+  blockquote {
+      color: #000;
+      border-left: 4px solid $grey-color-light;
+      padding-left: $spacing-unit / 2;
+      padding-right: $spacing-unit;
+      font-size: 0.9em;
+      text-align: justify;
+      //letter-spacing: -1px;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+      > :last-child {
+          margin-bottom: 0;
+      }
+  }
+}
+@media all and (max-width: 699px) {
+  blockquote {
+      color: #000;
+      border-left: 2px solid $grey-color-light;
+      padding-left: 8px;
+      font-size: 0.9em;
+      text-align: left;
+      //letter-spacing: -1px;
+      margin-left: 0;
+
+      > :last-child {
+          margin-bottom: 0;
+      }
+  }
 }
 
-
+.extitle {
+  margin-right:0.5em;
+  font-family: $header-ff;
+  font-size: $ex-fs;
+}
 
 /**
  * Code formatting

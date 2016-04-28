@@ -12,16 +12,16 @@ is a set of sets of constants for each type in **T**
 
 is a set of sets of variables for each type in **T**
 {% endcapture %}
-{% include eqn.html lhs=primlhs rhs=primrhs mult=0 conn="&nbsp;" %}
+{% include examples/eqn.html lhs=primlhs rhs=primrhs mult=0 conn="&nbsp;" %}
 
 <!-- Semantic value -->
 {% capture semvallhs %}
-{% include sem.html term='&#x2219;' index="*i*" assign="*g*" model="**M**" %}
+{% include examples/sem.html term='&#x2219;' index="*i*" assign="*g*" model="**M**" %}
 {% endcapture %}
 {% capture semvalrhs %}
 is the *semantic value* function, where
 {% endcapture %}
-{% include eqn.html lhs=semvallhs rhs=semvalrhs mult=0 conn='&nbsp;' %}
+{% include examples/eqn.html lhs=semvallhs rhs=semvalrhs mult=0 conn='&nbsp;' %}
 
 <div class="subdef" markdown="1">
 
@@ -32,7 +32,7 @@ is the *semantic value* function, where
 {% capture indexrhs %}
 is an *index* of evaluation,
 {% endcapture %}
-{% include eqn.html lhs=indexlhs rhs=indexrhs mult=0 conn="&nbsp;" %}
+{% include examples/eqn.html lhs=indexlhs rhs=indexrhs mult=0 conn="&nbsp;" %}
 
 <!-- Assignment -->
 {% capture assignlhs %}
@@ -41,7 +41,7 @@ is an *index* of evaluation,
 {% capture assignrhs %}
 is an *assignment* function from *Vars* to type-relevant entities of **D**, and
 {% endcapture %}
-{% include eqn.html lhs=assignlhs rhs=assignrhs mult=0 conn="&nbsp;" %}
+{% include examples/eqn.html lhs=assignlhs rhs=assignrhs mult=0 conn="&nbsp;" %}
 
 <!-- Model -->
 {% capture modellhs %}
@@ -50,7 +50,7 @@ is an *assignment* function from *Vars* to type-relevant entities of **D**, and
 {% capture modelrhs %}
 is a *model* for the language, where
 {% endcapture %}
-{% include eqn.html lhs=modellhs rhs=modelrhs mult=0 conn="&nbsp;" %}
+{% include examples/eqn.html lhs=modellhs rhs=modelrhs mult=0 conn="&nbsp;" %}
 
 <div class="subdef" markdown="1">
 
@@ -62,7 +62,7 @@ is a *model* for the language, where
 {% capture univrhs %}
 is a type-structured *universe* of the discourse, and
 {% endcapture %}
-{% include eqn.html lhs=univlhs rhs=univrhs mult=0 conn="&nbsp;" %}
+{% include examples/eqn.html lhs=univlhs rhs=univrhs mult=0 conn="&nbsp;" %}
 
 <!-- Valuation -->
 {% capture vallhs %}
@@ -71,11 +71,11 @@ is a type-structured *universe* of the discourse, and
 {% capture valrhs %}
 is a *valuation* function that assigns type-relevant entities from **D** to each constant in *Cons*.
 {% endcapture %}
-{% include eqn.html lhs=vallhs rhs=valrhs mult=0 conn="&nbsp;" %}
+{% include examples/eqn.html lhs=vallhs rhs=valrhs mult=0 conn="&nbsp;" %}
 
 </div>
 
 </div>
 
 {% endcapture %}
-{% include ex.html type="def" term="Semantic structure" defn=semstrucdef link="semstruc" %}
+{% include examples/ex.html type="def" term="Semantic structure" defn=semstrucdef link="semstruc" %}

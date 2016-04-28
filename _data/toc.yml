@@ -1,5 +1,5 @@
--
-  chapter: Knowledge in the image of inquiry
+Knowledge in the image of inquiry:
+  abstract: It is commonly held that knowledge is the end of inquiry, but if we take this connection seriously, there are significant implications for our understanding of the nature of knowledge. I propose to take at face value the idea that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, and so, then is knowledge. This idea has important consequences for explaining the distinctive value of knowledge over true belief and for the contextualism/relativism debate in epistemology.
   sections:
   - title: Knowledge as the end of inquiry
     detail: "Jonathan Schaffer (Knowledge in the image of assertion) has argued that we can learn something about the structure of knowledge by investigating the nature of assertion, to which knowledge bears a substantive connection. Knowledge also bears a substantive connection to inquiry, and I maintain that we can similarly learn something about the nature of knowledge by investigating the nature of inquiry."
@@ -37,8 +37,8 @@
     - title: Joint inquiry and relativism
       detail: "Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An individuals utterance is incomplete in an important way, and it calls for completion from one's interlocutors. Thus, evaluation is delayed until the inquiry progresses.  Knowledge, it turns out, is relative; just not in the way we first suspected."
 
--
-  chapter: Collaborative discourse dynamics
+Collaborative discourse dynamics:
+  abstract: Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In *collaborative update semantics*, contribution operators attach to propositional radicals, and contributions initiated by one utterance may not be completed until a later utterance is added. In particular, conjecture operators function by opening a *sandbox* in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.
   sections:
     - title: Scoreboards and best systems
       subsections:
@@ -73,8 +73,8 @@
         - title: Defaults and content evolution
           detail: "It isn't strictly true that individual utterances are inevaluable in the absence of their complement utterance. Instead, context frequently determines a default saturation to allow for initial evaluation of the utterance. Defaults can be overridden by explicit completion utterances. This suggests that what a speaker expresses can change as the discourse progresses. Meaning is, in a very real sense, out of their hands, determined by the way in which their interlocutors choose to make use of their utterance."
 
--
-  chapter: Dispute in discourse
+Dispute in discourse:
+  abstract: Disputing an utterance can be an important tool in collaborative inquiry. In this paper, I examine a simple dialogue involving dispute and consider two established proposals for analyzing the semantic and pragmatic import of the utterances it contains. While each provides valuable insight into the interpretation of the discourse, I maintain that each is lacking in a some regard and that collaborative update semantics, supplemented with a semantics for bare plurals, offers an extension that fully accounts for the natural interpretation of the dialogue.
   sections:
   - title: Disputative discourse
     detail: "Disputative discourse is rich with interpretive detail. I present a number of observations about a short dialogue involving disputative discourse. I take accounting for these observations to be a criterion of adequacy for an account of the discourse dynamics involved."

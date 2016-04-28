@@ -7,16 +7,16 @@ For A a bare plural,
 {% endcapture %}
 {% capture altrhs %}
 {% capture altcflhs %}
-{% include sem.html term='A' %}<sub>f</sub>
+{% include examples/sem.html term='A' %}<sub>f</sub>
 {% endcapture %}
 {% capture althplhs %}
-{ {% include sem.html term='A' %}, {% include sem.html term='&not;A' %} }
+{ {% include examples/sem.html term='A' %}, {% include examples/sem.html term='&not;A' %} }
 {% endcapture %}
-{% include eqn.html lhs=altcflhs rhs="[A]<sub>cf</sub>" mult=0 conn="if"  %}
+{% include examples/eqn.html lhs=altcflhs rhs="[A]<sub>cf</sub>" mult=0 conn="if"  %}
 
-{% include eqn.html lhs=althplhs rhs="" mult=0 conn="otherwise"  %}
+{% include examples/eqn.html lhs=althplhs rhs="" mult=0 conn="otherwise"  %}
 {% endcapture %}
-{% include eqn.html lhs=altlhs rhs=altrhs mult=1 conn="=" %}
+{% include examples/eqn.html lhs=altlhs rhs=altrhs mult=1 conn="=" %}
 
 {% capture joinlhs %}
 [&forall;<sub>**R**</sub>(A)(B)]
@@ -24,7 +24,7 @@ For A a bare plural,
 {% capture joinrhs %}
 &alpha;(A) &#x22CA; **R**
 {% endcapture %}
-{% include eqn.html lhs=joinlhs rhs=joinrhs mult=0 conn="&rArr;" %}
+{% include examples/eqn.html lhs=joinlhs rhs=joinrhs mult=0 conn="&rArr;" %}
 
 {% endcapture %}
-{% include ex.html type="def" term="Alternate set" sent="Example" sub="Sub-example" defn=alt %}
+{% include examples/ex.html type="def" term="Alternate set" sent="Example" sub="Sub-example" defn=alt %}

@@ -1,53 +1,89 @@
+# Introduction
+
+cooperative principle:
+  def: "Make your conversational contribution such as is required, at the stage at
+       which it occurs, by the accepted purpose or direction of the talk exchange in
+       which you are engaged."
+
+collaborative principle:
+  def: "Make your conversational effort such that, together with your interlocutors'
+       efforts, it advances the inquiry along the accepted purpose or direction of the
+       talk exchange in which you all are engaged."
+
 # Knowledge in the image of inquiry
 
 levi identity:
-  def: "Conceived semantically, all rational information state revision is reducible to 
-       some combination of set intersection and union among information states and 
+  def: "Conceived semantically, all rational information state revision is reducible to
+       some combination of set intersection and union among information states and
        propositions."
 
 jamesian amendment:
-  def: "Rational information state revision is governed by two goals: avoiding error 
+  def: "Rational information state revision is governed by two goals: avoiding error
        and acquiring truth."
+
+types of value:
+  success: "The fundamental value of having found a correct answer to a question of
+           interest."
+  extrinsic praxical: "Extrinsic value of a belief forming mechanism in being an
+                      instrument to brings about true beliefs."
+  intrinsic praxical: "Intrinsic to the believer on the basis of their attributively
+                      truly believing, having brought about a true belief from the
+                      exercise of excellences constitutive of their cognitive
+                      character."
+  performance: "Accruing to a belief forming mechanism, independently of the truth of
+               the belief brought about by the mechainism in this instance, measured by
+               how well the mechanism would deliver the goods were it properly
+               installed in a suitable environment."
 
 # Collaborative discourse dynamics
 
 constraints on a theory of meaning:
-  def: external
+  charity: "The attitudes determined by the system are more or less the beliefs and desires we would have were we to be in the speaker's position, broadly construed."
+
+  rationalization: "The system supplies beliefs and desires that generally represent the speaker as having good reason for performing the actions he performs."
+
+  truthfulness: "The system assigns meanings that accord with the speaker participating in a convention of truthfulness with other speakers of his language."
+
+  generativity: "The complete system of meanings is at least finitely specifiable, and perhaps also reasonably uniform and simple."
+
+  manifestation: "The beliefs and desires that the system maintains are held by the speaker are revealed in his dispositions to speech behavior."
+
+  triangulation: "The system provides meanings that link the specifications of the speaker's beliefs and desires in both their language and the theorizer's."
 
 # Dispute in discourse
 
 # Observations
 
 obs:
-  refinement: "The [Bears](#bears) dialogue is *coherent*, exhibiting a relation of 
+  refinement: "The [Bears](#bears) dialogue is *coherent*, exhibiting a relation of
               *refinement* between the first and second utternace."
 
-  correction: "The completion phase of the [Bears](#bears) discourse serves to correct 
+  correction: "The completion phase of the [Bears](#bears) discourse serves to correct
               the initiation phase, a *correctible* utterance."
 
-  resiliance: "The [Bears](#bears) initiation is *resiliant*. In certain contexts, 
-              it is appropriate for the utterer of a correctible to refrain from 
+  resiliance: "The [Bears](#bears) initiation is *resiliant*. In certain contexts,
+              it is appropriate for the utterer of a correctible to refrain from
               retracting it in the face of a challenge."
 
-  productivity: "The [Bears](#bears) completion is *productive*. It does not merely 
-                refer back to the initiation but extends the discourse in a distinctive 
+  productivity: "The [Bears](#bears) completion is *productive*. It does not merely
+                refer back to the initiation but extends the discourse in a distinctive
                 way."
 
-  susceptibility: "The [Bears](#bears) initiation is susceptible to challenge. In 
-                  certain contexts, it is appropriate for an initiator's interlocutors 
+  susceptibility: "The [Bears](#bears) initiation is susceptible to challenge. In
+                  certain contexts, it is appropriate for an initiator's interlocutors
                   to challenge their attempted contribution."
 
 # Definitions
 
 focus:
   sem:
-  - 
-    cond: 
+  -
+    cond:
       - "**D** a domain of discourse"
       - "*t* a type"
     lhs: "&phi;<sub>t</sub>"
     conn: =
-    rhs: 
+    rhs:
       - "{ d &isin; **D**<sub>t</sub> }"
 
 qa-congruence:
@@ -55,18 +91,18 @@ qa-congruence:
   -
     cond: "&#x27e8; &psi;, &alpha; &#x27e9; a question/answer pair"
     lhs: "&#x27e6;&nbsp;&psi;&nbsp;&#x27e7;<sup>o</sup>"
-    conn: "&sube;" 
+    conn: "&sube;"
     rhs:
       - "&#x27e6;&nbsp;&alpha;&nbsp;&#x27e7;<sup>f</sup>"
 
 homogeneity:
-  def: "Utterances involving bare plural subjects present the set determined by the 
-       subject as homogenous with respect to the predicate. The predicate applies 
+  def: "Utterances involving bare plural subjects present the set determined by the
+       subject as homogenous with respect to the predicate. The predicate applies
        either to all members of the subject class or to none of them."
   form: "[&forall; x &isin; f(w)(p): q(x)] &or; [&forall; x &isin; f(w)(p): &not;q(x)]"
 
 counterfactual conditional:
-  eng: 
+  eng:
     trans: "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
 
   strict:
@@ -75,11 +111,11 @@ counterfactual conditional:
     -
       cond: "*A,B: st*"
       lhs: "A &#x297d; B"
-      conn: =  
+      conn: =
       rhs:
         - lhs: "1"
           conn: if
-          rhs: 
+          rhs:
             - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>
               &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
         - lhs: "0"
@@ -104,12 +140,12 @@ counterfactual conditional:
       conn: "&rArr;"
       rhs:
         - "&#x27e6;&nbsp;(A &and; C) &#x297d; B&nbsp;&#x27e7;<sup>i</sup>"
-      
+
   variable:
     trans: "A <span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span> B"
     sem:
     -
-      cond: 
+      cond:
         - "*A,B: st*"
         - "*&delta;(i): st* &rarr; *st* a selection function determined by context *i*"
       lhs: "A<sub>pref</sub>"
@@ -132,7 +168,7 @@ counterfactual conditional:
     trans: "A &#x297d;<sub>s</sub> B"
     sem:
     -
-      cond: 
+      cond:
         - "*i<sub>s</sub>: st*"
         - "*A: st*"
         - "*&delta;(i): st* &rarr; *st* a selection function determined by context *i*"
@@ -160,19 +196,19 @@ counterfactual conditional:
           conn: otherwise
 
 universal quantifier:
-  eng: 
+  eng:
     trans: "&#x231c;As&#x231d; are &#x231c;B&#x231d;"
   strict:
     trans: "&forall;(A)(B)"
-    sem: 
-    - 
+    sem:
+    -
       cond: "*A,B: et*"
       lhs: "&forall;(A)(B)"
-      conn: =  
+      conn: =
       rhs:
         - lhs: "1"
           conn: if
-          rhs: 
+          rhs:
             - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>
               &nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
         - lhs: "0"
@@ -182,7 +218,7 @@ universal quantifier:
     trans: "GEN(A)(B)"
     sem:
     -
-      cond: 
+      cond:
         - "*A,B: et*"
         - "*&delta;(i): et* &rarr; *et* a selection function determined by context *i*"
       lhs: "A<sub>pref</sub>"
@@ -195,7 +231,7 @@ universal quantifier:
       rhs:
         - lhs: "1"
           conn: if
-          rhs: 
+          rhs:
             - "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>
               &nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
         - lhs: "0"
@@ -205,7 +241,7 @@ universal quantifier:
     trans: "&forall;<sub>**R**</sub>(A)(B)"
     sem:
     -
-      cond: 
+      cond:
         - "A: et"
         - "B: (et)t"
       lhs: "&forall;<sub>**R**</sub>(A)(B)"
@@ -213,7 +249,7 @@ universal quantifier:
       rhs:
         - lhs: "1"
           conn: if
-          rhs: 
+          rhs:
             - "{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; **R**"
             - "&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;"
         - lhs: "0"
@@ -235,7 +271,7 @@ drs:
     - lhs: "&phi<sup>c</sup>"
       conn: "&nbsp;"
       rhs:
-        - "is a sequence of conditions, imposing constraints on the model against which 
+        - "is a sequence of conditions, imposing constraints on the model against which
           sentences are evaluated."
     - cond: "a sentence S uttered in discourse D represented by DRS &phi;"
       lhs: "S<sup>d</sup>"
@@ -253,34 +289,34 @@ drs:
           <span class='dref'>&phi;<sup>d</sup> &oplus; S<sup>d</sup></span>
           <span class='condition'>&phi;<sup>c</sup> &oplus; S<sup>c</sup></span>
           <span class='drs right top bottom'></span></span>"
-      
+
 downdate:
   sem:
     - subgroup:
       cond: "&phi;,&psi;,&chi;: *drs*"
       lhs: "&chi; &#x2291; &phi;"
       conn: iff
-      rhs: 
-        - "&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> ) 
+      rhs:
+        - "&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> )
           &or; ( m &isin; &phi;<sup>c</sup> &and; m &isin; &chi;<sup>c</sup> ) ]"
     -
       lhs: "&chi; = max(&phi;)"
       conn: iff
       rhs:
         - "&chi;  &#x2291; &phi; &and; &forall;*c* &isin; &phi;<sup>c</sup> (entrench
-          (*c*) ) &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; 
+          (*c*) ) &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291;
           &psi; )"
     -
       lhs: "&phi; &#x229E; &psi;"
       conn: =
-      rhs: 
-        - "[ &phi;<sup>d</sup> &oplus; &psi;<sup>d</sup> | &phi;<sup>c</sup> &oplus; 
+      rhs:
+        - "[ &phi;<sup>d</sup> &oplus; &psi;<sup>d</sup> | &phi;<sup>c</sup> &oplus;
           &psi;<sup>c</sup> ]"
     -
       lhs: "&phi; <span class='symbol'>&darr;</span> &psi;"
       conn: =
       rhs:
-        - "&psi; &oplus; max( &chi; &#x2291; &phi; | &chi; &#x229E; &phi; 
+        - "&psi; &oplus; max( &chi; &#x2291; &phi; | &chi; &#x229E; &phi;
           &ne; &empty; )"
 
 collaborative update:
@@ -288,17 +324,17 @@ collaborative update:
     sem:
     - lhs: "U<sub>*init*</sub>"
       conn: "&rArr;"
-      rhs: 
+      rhs:
         - "[ C<sub>&xi;</sub>(j<sub>&chi;</sub>) &#x23aa; ]<sub>s</sub>"
   continuation:
     sem:
     - lhs: "U<sub>*cont*</sub>"
       conn: "&rArr;"
-      rhs: 
+      rhs:
         - "[ &#x27e8; C<sub>&xi;</sub>(k<sub>&chi;</sub>),C<sub>&xi;</sub>(j<sub>&chi;</sub>) &#x27e9; &#x23aa; ]<sub>s</sub>"
   completion:
     sem:
     - lhs: "U<sub>*comp*</sub>"
       conn: "&rArr;"
-      rhs: 
+      rhs:
         - "[ &#x27e8; C<sub>&xi;</sub>(k<sub>&chi;</sub>),... &#x27e9; &#x23aa; i<sub>s</sub> += | C<sub>&xi;</sub>(k<sub>&chi;</sub>) | ; i<sub>**R**</sub> += | C<sub>&xi;</sub>(k<sub>&chi;</sub>) | ]<sub>s</sub>"

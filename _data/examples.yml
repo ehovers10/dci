@@ -49,6 +49,16 @@ playing:
   sent:
     - A: "The cubs are playing."
     - B: "The cubs are boys."
+    
+varieties of knowledge:
+  sent:
+    - Propositional: "Fozzie knows that comedy is all about timing."
+    - Personal: "Pooh knows Piglet."
+    - Procedural: "Paddington knows how to spread orange marmalade."
+    
+conjunctive knowledge:
+  sent:
+    - "Yogi knows picnic baskets and that the bigger they are, the better."
 
 presidents:
   sent: "Bill likes to play golf. George hates broccoli."

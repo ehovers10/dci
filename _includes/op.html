@@ -1,6 +1,0 @@
-{% case include.kind %}
-  {% when 'op' %}
-<span>{{ include.op1 }}&nbsp;{{ include.conn }}&nbsp;{{ include.op2 }}</span>
-  {% when 'quant' %}
-{{ include.conn }}({{ include.op1 }})({{ include.op2 }})
-{% endcase %}

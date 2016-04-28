@@ -1,0 +1,18 @@
+<!-- Right-outer-join(Grizzly bears,Dangerous) -->
+<table class="relation">
+<tr>
+  <td class="label" colspan="4">Group(<strong>sit</strong>), Group(<strong>subj</strong>)</td>
+</tr>
+
+{% include relations/relnheader.html attrs="sit|ent|subj|pred" %}
+
+{% include relations/keylist.html key="s<sub>1</sub>" attr1="a|b|d" attr2="grizzly|koala|&omega;" attr3="+|+|+" group="012" %}
+<tr><td class="label" colspan="4" style="border-bottom:1px solid #000;"></td></tr>
+{% include relations/keylist.html key="s<sub>2</sub>" attr1="a" attr2="grizzly" attr3="+" group="0" %}
+<tr><td class="label" colspan="4" style="border-bottom:1px solid #000;"></td></tr>
+{% include relations/keylist.html key="s<sub>3</sub>" attr1="b|d" attr2="koala|&omega;" attr3="+|+" group="01" %}
+
+<tr>
+  <td class="label" colspan="4"><strong>&#10649;</strong></td>
+</tr>
+</table>

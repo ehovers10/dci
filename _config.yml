@@ -1,8 +1,8 @@
 # Site settings
 title: Discourse as collaborative inquiry
 author: Erik Hoversten
-description: 
-  I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>. 
+description:
+  I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.
 
 baseurl: "/dci"
 url: "http://erikhoversten.org"
@@ -41,3 +41,5 @@ collections:
   snippets:
     render: true
     output: false
+
+exclude: [deprecated,sections]

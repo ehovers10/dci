@@ -4,11 +4,12 @@ title: Annotated table of contents
 
 <div class="toc" style="margin-left:2em;">
 {% for chap in site.data.toc %}
-{% assign url = chap.chapter | slugify | prepend: '/chapters/' | prepend: site.baseurl | append: '.html' %}
-<h3 class="chapter"><a href="{{ url }}">{{ chap.chapter }}</a></h3>  
+  {% assign url = chap[0] | slugify | prepend: '/chapters/' | prepend: site.baseurl | append: '.html' %}
+<h3 class="chapter"><a href="{{ url }}">{{ chap[0] }}</a></h3> 
+<p>{{ chap[1].abstract }}</p> 
 <blockquote>
 <ul class="section">
-  {% for sect in chap.sections %}
+  {% for sect in chap[1].sections %}
     <li class="{% unless sect.subsections %}open{% endunless %}" id="{{ sect.title | slugify }}">{{ sect.title }} {% if sect.detail %}<img class="icon" src="{{ '/images/chevron-down.svg' | prepend: site.baseurl }}" title="Detail" />{% endif %}</li>
     {% if sect.detail %}<blockquote class="hid item" id="{{ sect.title | slugify | append: '-hid' }}">{{ sect.detail }}</blockquote>{% endif %}
     {% if sect.subsections %}
@@ -22,5 +23,6 @@ title: Annotated table of contents
   {% endfor %}
 </ul>
 </blockquote>
+<p>&nbsp;</p>
 {% endfor %}
 </div>

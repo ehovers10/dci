@@ -1,0 +1,17 @@
+{% if carol %}
+{% assign betty = carol | split: ' ' | sort %}
+
+<ul>
+{% for ref in betty %}
+  {% if ref == previous %}
+    {% continue %}
+  {% else %}
+
+    {% include appendices/lucy.html id=ref %}
+
+    {% assign previous = ref %}
+  {% endif %}
+
+{% endfor %}
+</ul>
+{% endif %}

@@ -1,5 +1,11 @@
 # Staging in conversation
 
+A complication with the analogy of discourse to other collaborative enterprises is that most collaborative efforts are such that the actors' efforts are performed in concert. But speech actions are, in general, performed serially. Still, the ability to be performed in paralell is not a determinative mark of joint action. We can get around this complication by treating individual utterances as providing essentially incomplete *contribution radicals*, which search out for a pair to complete them. To make this work, we need three distinctively collaborative framework elements in the representation of discourse dynamics:
+
++ An account of *discoruse contributions* that represents them as both incomplete and as calling out for completion. 
++ A *staging platform* on which contributions radicals are held as they wait for completion.
++ *Default completions* to account for the fact that completion sometimes requires preliminary interpretation of an initiating contribution radical.
+
 Conversation has a workflow, which involves a number of steps. These steps both address the limitations of the collaborative process and highlight the value that it provides.
 
 GIT reset SHA as a means of rewinding history.
