@@ -673,6 +673,14 @@ gillies2004:
   Title: New Foundations for Epistemic Change
   Journal: Synthese
 
+git:
+  Title: Pro Git
+  Author: Scott Chacon and Ben Straub
+  Year: 2014
+  Edition: 2nd
+  Publisher: Apress
+  Url: https://git-scm.com/book/en/v2
+
 glanzberg2009:
   Title: Descriptions, Negation, and Focus
   Author: Michael Glanzberg
@@ -743,6 +751,16 @@ goodman1983:
   Year: 1983
   Publisher: Harvard University Press
   Author: Nelson Goodman
+
+greco2003:
+  Title: Knowledge as Credit for True Belief
+  Editor: Michael DePaul and Linda Zagzebski
+  Year: 2003
+  Author: John Greco
+  Booktitle: "Intellectual Virtue: Perspectives From Ethics and Epistemology"
+  Pages: 111-134
+  Publisher: Oxford University Press
+  Type: chapter
 
 grice1989:
   Title: Studies in the Way of Words
@@ -1365,6 +1383,16 @@ macfarlane2005:
   Owner: erik
   Timestamp: 2014.12.09
 
+meno:
+  Title: Meno
+  Year: 1961
+  Booktitle: The Collected Dialogues of Plato, Including the Letters
+  Publisher: Pantheon Books
+  Location: New York
+  Author: Plato
+  Editor: Edith Hamilton and Huntington Cairns
+  Type: chapter
+
 mill1859:
   Title: On Liberty
   Author: John Stuart Mill
@@ -1915,6 +1943,16 @@ starr2014a:
   Year: 2014
   Owner: erik
   Timestamp: 2014.12.08
+
+stephenson2007:
+  Year: 2007
+  Journal: Linguistics and Philosophy
+  Title: Judge Dependence, Epistemic Modals, and Predicates of Personal Taste
+  Author: Tamina Stephenson
+  Volume: 30
+  Pages: 487-525
+  Publisher: Springer
+  Number: 4
 
 stokhof:
   Title: Changing the Context. Dynamic Semantics and Discourse

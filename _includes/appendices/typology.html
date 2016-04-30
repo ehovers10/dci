@@ -1,0 +1,43 @@
+{% assign dist = site.data.definitions[include.distinction] %}
+
+{% assign carol = '' %}
+
+<table class="typology">
+  <tr>
+    <th>Type</th>
+    {% for types in dist limit: 1 %}
+    {% for attrib in types[1] %}
+    <th>{{ attrib[0] | capitalize }}</th>
+    {% endfor %}
+    {% endfor %}
+  </tr>
+  {% for kind in dist %}
+  <tr class="type {% cycle 'odd', 'even' %}">
+    <td>{{ kind[0] | capitalize }}</td>
+    {% for bit in kind[1] %}
+    {% if bit[1][0] %}
+    <td class="embed">
+      <table>
+      {% for row in bit[1] %}
+      <tr><td>
+        {% if bit[0] == "reference" %}
+          {% for item in row %}
+          {% include appendices/ref.html id=item o="n" %}
+          {% endfor %}
+        {% else %}
+          {{ row }}
+        {% endif %}
+      </td></tr>
+      {% endfor %}
+      </table>
+    </td>
+    {% else %}
+    <td>{{ bit[1] }}</td>
+    {% endif %}
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+<h3>References</h3>
+{% include page-elements/reflist.html %}

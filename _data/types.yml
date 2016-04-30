@@ -1,0 +1,15 @@
+basic:
+  situations: s
+  individuals: e
+  truth values: t
+  propositional completions: "&chi;"
+  discourse change records: "&rho;"
+  conversational scoreboards: "&sigma"
+complex:
+  "(&alpha;&beta;) <span style='border-right:1px solid #000;'>&nbsp;</span> &alpha;,&beta; &isin; <span class='set'>T</span>"
+dref:
+  situations: s
+  common ground partitions: "&pi; = (st)t"
+  propositional completions: "&chi;"
+  propositional radicals: "&xi; = &chi;(st)"
+  discourse change records: "&rho;"

@@ -1,77 +1,136 @@
 # Introduction
 
 cooperative principle:
-  def: "Make your conversational contribution such as is required, at the stage at
-       which it occurs, by the accepted purpose or direction of the talk exchange in
-       which you are engaged."
+  "Make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged."
 
 collaborative principle:
-  def: "Make your conversational effort such that, together with your interlocutors'
-       efforts, it advances the inquiry along the accepted purpose or direction of the
-       talk exchange in which you all are engaged."
+  "Make your conversational effort such that, together with your interlocutors' efforts, it advances the inquiry along the accepted purpose or direction of the talk exchange in which you all are engaged."
 
 # Knowledge in the image of inquiry
 
 levi identity:
-  def: "Conceived semantically, all rational information state revision is reducible to
-       some combination of set intersection and union among information states and
-       propositions."
+  "Conceived semantically, all rational information state revision is reducible to some combination of set intersection and union among information states and propositions."
 
 jamesian amendment:
-  def: "Rational information state revision is governed by two goals: avoiding error
-       and acquiring truth."
+  "Rational information state revision is governed by two goals: avoiding error and acquiring truth."
 
-types of value:
-  success: "The fundamental value for a believer of having found a correct answer to a question of
-           interest."
-  extrinsic praxical: "Derivative value of a belief forming mechanism in being an
-                      instrument to bringing about true beliefs."
-  intrinsic praxical: "Accruing to a believer on the basis of their attributively
-                      truly believing, having brought about a true belief from the
-                      exercise of excellences constitutive of their cognitive
-                      character."
-  performance: "Accruing to a belief forming mechanism, independently of the truth of
-               the belief brought about by the mechainism in this instance, measured by
-               how well the mechanism would deliver the goods were it properly
-               installed in a suitable environment."
+structure of inquiry:
+  Deduction:
+    Function: [Expand,Contract]
+    Structure: Possibility space
+    Operation: Revision
+    reference: [levi1980]
+    Cognitive tool: Full belief
+  Abduction:
+    Function: [Partition,Prefer]
+    Structure: [Structured possibility space,Preference ranking]
+    Operation: [Partitioning relation,Ordering relation]
+    reference: [peirce1877,james1896]
+    Cognitive tool: [Iritation of doubt,Will to believe]
+  Induction:
+    Function: [Cohere,Correct]
+    Structure: [Sandbox,Radicals and completions]
+    Operation: [Dref introduction,Re-saturate]
+    reference: [bratman1988,[mill1859,moffett2007]]
+    Cognitive tool: [Dilated process,Collective criticism]
+  Implementation:
+    Function: Accept
+    Structure: Articulated info states
+    Operation: Merge
+    reference: [git]
+    Cognitive tool: Version control
+
+value of knowledge:
+  success:
+    description:
+      "Believing a correct answer to a question of interest."
+    nature: inherent
+    object: product
+    reference: [zagzebski2003,sosa2003,riggs2009]
+  praxical:
+    description:
+      - "Being an instrument to bringing about true beliefs."
+      - "Having brought about a true belief from the exercise of excellences constitutive of ones cognitive character."
+    nature: [instrumental,intrinsic]
+    object: [mechanism,system]
+    reference: [sosa2003]
+  performance:
+    description:
+      "Having the disposition to deliver true beliefs when properly installed in a suitable environment."
+    nature: extrinsic
+    object: mechanism
+    reference: [sosa2003]
+  credit:
+    description:
+      "Instantiating a skill in believing."
+    nature: intrinsic
+    object: system
+    reference: [riggs2009,greco2003]
+  stability:
+    description:
+      "Serving the retention of true belief in the face of misleading defeaters."
+    nature: intrinsic
+    object: product
+    reference: [meno,williamson2000,gardiner]
+
+context sensitivity:
+  attitudinal:
+    contextualism:
+      "Attitudes are relations between individuals and propositions. Belief, for instance, is a holding true of a proposition by a believer."
+    relativism:
+      "Attitudes are relations between individuals and properties. Belief, for instance, involves a believer self-ascribing a property."
+    reference:
+      [lewis1979,egan2007a]
+  perspectival:
+    contextualism:
+      "The speaker's context infects the evaluation of sentences for truth."
+    relativism:
+      "An assessor's context infects the evaluation of sentences for truth."
+    reference:
+      [macfarlane2009,macfarlane2011,egan2005a,cappelen2009,vonfintel2008]
+  stratigraphical:
+    contextualism:
+      "Context infects sentence interpretation by filling in elements that determine the proposition expressed by an utterance."
+    relativism:
+      "Context infects sentence interpretation by filling in elements that determine whether a proposition is evaluated as true."
+    reference:
+      [lasersohn2005,glanzberg2007,kaplan1977,lewis1980,stephenson2007]
 
 # Collaborative discourse dynamics
 
 constraints on a theory of meaning:
-  charity: "The attitudes determined by the system are more or less the beliefs and desires we would have were we to be in the speaker's position, broadly construed."
-
-  rationalization: "The system supplies beliefs and desires that generally represent the speaker as having good reason for performing the actions he performs."
-
-  truthfulness: "The system assigns meanings that accord with the speaker participating in a convention of truthfulness with other speakers of his language."
-
-  generativity: "The complete system of meanings is at least finitely specifiable, and perhaps also reasonably uniform and simple."
-
-  manifestation: "The beliefs and desires that the system maintains are held by the speaker are revealed in his dispositions to speech behavior."
-
-  triangulation: "The system provides meanings that link the specifications of the speaker's beliefs and desires in both their language and the theorizer's."
+  charity:
+    "The attitudes determined by the system are more or less the beliefs and desires we would have were we to be in the speaker's position, broadly construed."
+  rationalization:
+    "The system supplies beliefs and desires that generally represent the speaker as having good reason for performing the actions he performs."
+  truthfulness:
+    "The system assigns meanings that accord with the speaker participating in a convention of truthfulness with other speakers of his language."
+  generativity:
+    "The complete system of meanings is at least finitely specifiable, and perhaps also reasonably uniform and simple."
+  manifestation:
+    "The beliefs and desires that the system maintains are held by the speaker are revealed in his dispositions to speech behavior."
+  triangulation:
+    "The system provides meanings that link the specifications of the speaker's beliefs and desires in both their language and the theorizer's."
 
 # Dispute in discourse
 
 # Observations
 
 obs:
-  refinement: "The [Bears](#bears) dialogue is *coherent*, exhibiting a relation of
-              *refinement* between the first and second utternace."
+  refinement:
+    "The [Bears](#bears) dialogue is *coherent*, exhibiting a relation of *refinement* between the first and second utternace."
 
-  correction: "The completion phase of the [Bears](#bears) discourse serves to correct
-              the initiation phase, a *correctible* utterance."
+  correction:
+    "The completion phase of the [Bears](#bears) discourse serves to correct the initiation phase, a *correctible* utterance."
 
-  resiliance: "The [Bears](#bears) initiation is *resiliant*. In certain contexts,
-              it is appropriate for the utterer of a correctible to refrain from
-              retracting it in the face of a challenge."
+  resiliance:
+    "The [Bears](#bears) initiation is *resiliant*. In certain contexts, it is appropriate for the utterer of a correctible to refrain from retracting it in the face of a challenge."
 
-  productivity: "The [Bears](#bears) completion is *productive*. It does not merely
-                refer back to the initiation but extends the discourse in a distinctive
-                way."
+  productivity:
+    "The [Bears](#bears) completion is *productive*. It does not merely refer back to the initiation but extends the discourse in a distinctive way."
 
-  susceptibility: "The [Bears](#bears) initiation is susceptible to challenge. In
-                  certain contexts, it is appropriate for an initiator's interlocutors
-                  to challenge their attempted contribution."
+  susceptibility:
+    "The [Bears](#bears) initiation is susceptible to challenge. In certain contexts, it is appropriate for an initiator's interlocutors to challenge their attempted contribution."
 
 # Definitions
 

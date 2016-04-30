@@ -1,7 +1,7 @@
 The language of *collaborative update semantics* extends a first-order, model theoretic semantics with identity. The *terms* of the language are all those established in the semantic rules defined below.[^modelsuppress]
 
-[^modelsuppress]: For purposes of readability, reference to arguments of the semantic value function suppressed unless the function is non-constant over that argument.
-  
+[^modelsuppress]: For purposes of readability, reference to arguments of the semantic value function is suppressed unless the function is non-constant over that argument.
+
 {% capture semantics %}
 
 **Primitives:** For all &alpha; &isin; **T**, c{{ type }} &isin; *Cons*, and u{{ type }} &isin; *Vars*,
@@ -39,7 +39,7 @@ The language of *collaborative update semantics* extends a first-order, model th
 {% include examples/sem.html term='&lambda;u<sub>&alpha;</sub>(A)' assign="*g*" %}(d{{ type }})
 {% endcapture %}
 {% capture applirhs %}
-{% include examples/sem.html term='A' assign='*g*[u<sub>&alpha;</sub>&rarr;d]'%} 
+{% include examples/sem.html term='A' assign='*g*[u<sub>&alpha;</sub>&rarr;d]'%}
 {% endcapture %}
 {% include examples/eqn.html lhs=applilhs rhs=applirhs mult=0 conn="=" %}
 
@@ -103,7 +103,7 @@ The language of *collaborative update semantics* extends a first-order, model th
 {% include examples/sem.html term='&#x22A4;' type="*st*" %} / {% include examples/sem.html term='&phi;' %}
 {% endcapture %}
 {% include examples/eqn.html lhs=notlhs rhs=notrhs mult=0 conn="=" %}
- 
+
 <!-- and -->
 {% capture andlhs %}
 {% include examples/sem.html term='&phi;&and;&psi;' %}
@@ -120,7 +120,7 @@ The language of *collaborative update semantics* extends a first-order, model th
 {% include examples/sem.html term='&phi;' %} &#x22C3; {% include examples/sem.html term='&psi;' %}
 {% endcapture %}
 {% include examples/eqn.html lhs=orlhs rhs=orrhs mult=0 conn="=" %}
-    
+
 **Quantifiers:** For all variables u<sub>e</sub>, and propositions &phi;,
 
 <!-- For all -->
@@ -156,7 +156,7 @@ The language of *collaborative update semantics* extends a first-order, model th
 
 <!-- Notes -->
 The semantics provided above is largely standard. We highlight just a few specifics:
-  
+
 + Propositional radicals and saturations, for which **CU** requires a distinctive type.
-+ We will need different coordination rules to get conjunction etc. of propositional radicals, commits, and contributions. 
++ We will need different coordination rules to get conjunction etc. of propositional radicals, commits, and contributions.
 + Our language only has quantifiers for entity type. Bare plurals are treated as plural predications.

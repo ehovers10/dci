@@ -52,7 +52,9 @@ Levi's is a *conservatist* view. Justification is not a matter of *pedigree* (th
 
 Given the structure of information states as Levi understands them, all revisions are represented by set theoretic operations, principally set intersection and union. From the semantic perspective, intersection of an information state with the propositional content of a sentence represents an *expansion* of one's knowledge; acquiring information involves eliminating worlds from one's consideration as genuine possibilities. Set union represents *contraction*; withdrawing belief and thereby becoming uncertain about some proposition involves adding worlds to one's set of considered possibilities. According to Levi, and what has become known as the *Levi Identity*, all revisions are reducible to some combination of *expansion* and *contraction*.
 
-{% include examples/ex.html type="def" term="Levi Identity" sent="Example" sub="Sub-example" defn="Conceived semantically, all rational information state revision is reducible to some combination of set intersection and union among information states and propositions." %}
+<!-- Levi identity -->
+{% assign leviidentity = site.data.definitions["levi identity"] %}
+{% include examples/ex.html type="def" term="Levi Identity" defn=leviidentity %}
 
 The problem of justification is thus reduced to the problem of specifying properties of expansion and contraction operators such that all warranted changes in belief are subsumed under their operation. This captures the deductive phase of inquiry. Given as input a proposition with which an information state is to be revised, there is a set of rules specifying exactly how the revision ramifies through the information state.
 
@@ -68,7 +70,9 @@ William James {% include appendices/ref.html id="james1896" o="" %} carried this
 
 James famously argued that if one's belief choice is *live*, *momentous*, and *forced*, then the will to believe rationally outstrips the fear of being wrong. But as a set of necessary requirements, this restricts speculative endeavors too much. Inquiry need not be momentous or forced for jumping to a conclusion to be epistemically fruitful. Mere time-sensitivity may be enough. Inquiry is a process that is undertaken by fallible individuals in real time. Such agents have limited access to information and limited resources to dedicate to the process of inquiry. Frequently, action is required before certainty can be obtained. And on many quotidian decision points, the risk of being incorrect is fairly low. It is *because* not every inquiry is momentous that striving for truth (and risking falsehood) is sometimes to be prefered. Let us call this extended conception of the rational development of inquiry the *Jamesian amendment*.
 
-{% include examples/ex.html type="def" term="Jamesian amendment" sent="Example" sub="Sub-example" defn="Rational information state revision is governed by two goals: avoiding error and acquiring truth." %}
+<!-- Jamesian amendment -->
+{% assign jamesianamendment = site.data.definitions["jamesian amendment"] %}
+{% include examples/ex.html type="def" term="Jamesian amendment" defn=jamesianamendment %}
 
 The Jamesian amendment makes inquiry an optimization task between taking on too many falsehoods and leaving out too many truths. To accommodate this idea, we need to expand our structural representation of inquiry. The information state model from epistemic logic can account for the error-avoidance goal. But we need a way of representing two elements entailed by the goal of acquiring truth. The first is the *impetus to revise* -- information state structure that captures an inquirer's motivation to strive for knowledge. The second is the *will to believe* -- an account of acceptance of a belief in the absence of certainty in its truth, and an explanation of how this maneuver can be rationally viable.[^informationpotential]
 
@@ -271,7 +275,7 @@ Knowledge stabilizes belief; this, it explains why individuals persist in their 
 Truth is of basic epistemic value, but it isn't clear that it is the only value relevant to knowledge. Ernest Sosa {% include appendices/ref.html id="sosa2003" o="" %} posits four distinct types of value involved in an individual possessing a bit of knowledge.
 
 <!-- Types of value -->
-{% include examples/sami.html title="types of value" %}
+{% include examples/sami.html title="value of knowledge" %}
 
 *Success* is the fundamental epistemic value, but it does not exhaust the value to which the knower can lay claim. The *praxis* values, too, are genuine values. We think of a system that brings about knowledge as better than a similar system that fails to do so. But praxical value is parasitic on *success* value, both in the sense that it does not exist absent success, and that it adds no value for the knower that is not already provided by success. We, as third parties, can praise a system -- or the agent who implements that system -- for succeeding well. But, having so succeeded, the agent gets nothing more out of having done it well. Performance value seems to gain indepenedence from success, in that it is a measure of the dispositions of a belief forming system, and a disposition can be present even in the absence of its stimulus conditions. The performance value *for* the knower, though, is similarly nothing beyond that provided by success. Having witnessed success, the knower gets little else in knowing that we would also have praised him had the world so conspired to make his belief false.
 
@@ -308,6 +312,8 @@ If Brisco and Green both believe that they've got the culprit, then they will ac
 The fact that sameness of belief is two-sided in this way is brought out in the differences between a relativist and a contextualist approach to attitude ascriptions such as *Brisco believes that the culprit acted alone*. Relativists take belief to be a relation to a property -- one that a person stands in when she self-ascribes that property.[^centeredworlds] The agreement between Brisco and Green then comes from their both self-ascribing the property of *currently interrogating the culprit*. Their disagreement comes from the fact that Brisco self-ascribes the property of *inhabiting a world where the culprit is in interrogation room A* and Green self-ascribes the property of *inhabiting a world where the culprit is in interrogation room B*. Since individual people don't co-locate, they can't both possess their respective properties in actuality.
 
 The contextualist views the situation differently. Belief, for the contextualist, is a relation between an individual and a proposition. But context infects the relation as well, and the relations one bears to a proposition need not be stable across changes in context.[^contextualistflavor] So, Brisco and Green definitely disagree.  Hold the context fixed, and Brisco stands in the belief relation to the proposition that *the culprit is in interrogation room A*, while Green stands in the belief relation to the proposition that *the culprit is in interrogation room B*. Since individual people don't co-locate, they cannot both, in actuality, believe true things. But, it may yet *appear* that they agree. After all, both Brisco and Green would honestly tell the Liutenant "I'm subjecting the culprit to interrogation." But the contextualist denies that honest reporting tells the whole story. Our words are sensitive to context in a way that our beliefs are not. Their espousal of the same belief is merely superficial.
+
+The difference is one way of cashing out the difference between relativist and contextualist views of attitudes. But this is not the only way.
 
 ### Disagreement as lingusitic data
 
