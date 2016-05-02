@@ -1,24 +1,54 @@
 structure:
   primitives:
-    Cons: "a set of sets of constants of each type in <span class='set'>T</span>"
-    Vars: "a set of sets of variables of each type in <span class='set'>T</span>"
+    value:
+      constants:
+        value:
+          lhs: "<span class='var'>Cons</span>"
+          conn: "is"
+          rhs: "a set of sets of constants of each type in <span class='set'>T</span>"
+      variables:
+        value:
+          lhs: "<span class='var'>Vars</span>"
+          conn: "is"
+          rhs: "a set of sets of variables of each type in <span class='set'>T</span>"
   semantic value:
-    thing: semvalue
-    description: "the semantic value function"
+    value:
+      lhs:
+        external: semwrap
+        inside: "&middot;"
+        outside:
+          - "<span>i</span>"
+          - "<span class='var'>g</span>"
+          - "<span class='set'>M</span>"
+      conn: "is"
+      rhs: "the semantic value function"
     parts:
-      index of evaluation: "i : s"
-      assignment function: "g : Vars &rarr; D"
+      index of evaluation:
+        value: "i : s"
+      assignment function:
+        value: "g : Vars &rarr; D"
       model:
-        thing:
-          "<span class='set'>M</span> = &#x27e8; <span class='set'>D</span>, <span class='set'>V</span> &#x27e9;"
-        description: "a model for the language"
+        value:
+          lhs:
+            lhs: "<span class='set'>M</span>"
+            conn: =
+            rhs:
+              externl: seqwrap
+              inside: "<span class='set'>D</span>, <span class='set'>V</span>"
+          conn: "is"
+          rhs: "a model for the language"
         parts:
           universe:
-            thing: universe
-            description: "a type structured universe of the discourse"
+            value:
+              lhs:
+                external: universe
+              conn: "is"
+              rhs: "a type structured universe of the discourse"
           valuation:
-            thing: "<span class='set'>V</span> : Cons &rarr; <span class='set'>D</span>"
-            description: "a valuation function that assigns type-relevant objects to each constant"
+            value:
+              lhs: "<span class='set'>V</span> : Cons &rarr; <span class='set'>D</span>"
+              conn: "is"
+              rhs: "a valuation function that assigns type-relevant objects to each constant"
 rules:
   primitives:
     cond:
@@ -27,25 +57,28 @@ rules:
       - "<span>u</span><span>&alpha;</span><span>&isin;</span><span class='var'>Vars</span>"
     value:
       constants:
-        lhs:
-          external: semvalue
-          inside: "c<sub>&alpha;</sub>"
-          outside: "<sup><span class='set'>M</span></sup>"
-        conn: =
-        rhs: "<span class='set'>V</span>(c<sub>&alpha;</sub>)"
+        value:
+          lhs:
+            external: semwrap
+            inside: "c<sub>&alpha;</sub>"
+            outside: "<sup><span class='set'>M</span></sup>"
+          conn: =
+          rhs: "<span class='set'>V</span>(c<sub>&alpha;</sub>)"
       variables:
-        lhs:
-          external: semvalue
-          inside: "u<sub>&alpha;</sub>"
-          outside: "<sup><span class='var'>g</span></sup>"
-        conn: =
-        rhs: "<span class='var'>g</span>(u<sub>&alpha;</sub>)"
+        value:
+          lhs:
+            external: semwrap
+            inside: "u<sub>&alpha;</sub>"
+            outside: "<sup><span class='var'>g</span></sup>"
+          conn: =
+          rhs: "<span class='var'>g</span>(u<sub>&alpha;</sub>)"
       top:
-        lhs:
-          external: semvalue
-          inside: "&top;<sub>&alpha;</sub>"
-        conn: =
-        rhs: "<span class='set'>D</span><sub>&alpha;</sub>"
+        value:
+          lhs:
+            external: semwrap
+            inside: "&top;<sub>&alpha;</sub>"
+          conn: =
+          rhs: "<span class='set'>D</span><sub>&alpha;</sub>"
   application:
     cond:
       - "<span>&alpha;</span><span>&isin;</span><span>T</span>"
@@ -54,12 +87,12 @@ rules:
       - "<span>terms</span><span>A</span>"
     value:
       lhs:
-        external: semvalue
+        external: semwrap
         inside: "&lambda;u<sub>&alpha;</sub>(A)"
         outside: "<sup><span class='var'>g</span></sup>"
       conn: =
       rhs:
-        external: semvalue
+        external: semwrap
         inside: "A"
         outside: "<sup><span class='var'>g</span>[u<sub>&alpha;</sub>&rarr;d]</sup>"
   identity:
@@ -68,7 +101,7 @@ rules:
       - "<span>terms</span><span>A</span><span>and</span><span>B</span>"
     value:
       lhs:
-        external: semvalue
+        external: semwrap
         inside: "A<sub>&alpha;</sub> = B<sub>&alpha;</sub>"
       conn: =
       rhs:
@@ -76,11 +109,11 @@ rules:
           conn: if
           rhs:
             lhs:
-              external: semvalue
+              external: semwrap
               inside: "A<sub>&alpha;</sub>"
             conn: =
             rhs:
-              external: semvalue
+              external: semwrap
               inside: "B<sub>&alpha;</sub>"
         - lhs: "0"
           conn: otherwise
@@ -91,40 +124,40 @@ rules:
     value:
       -
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "&not;&phi;"
         conn: =
         rhs:
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&top;"
           conn: "/"
           rhs: "&phi;"
       -
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "&phi;&and;&psi;"
         conn: =
         rhs:
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&phi;"
           conn: "&#x22C2;"
           rhs:
-            external: semvalue
+            external: semwrap
             inside: "&psi;"
       -
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "&phi;&or;&psi;"
         conn: =
         rhs:
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&phi;"
           conn: "&#x22C3;"
           rhs:
-            external: semvalue
+            external: semwrap
             inside: "&psi;"
   quantifiers:
     cond:
@@ -133,7 +166,7 @@ rules:
     value:
       -
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "&forall;u<sub>e</sub>&phi;"
           outside: "<span class='var'>g</span>"
         conn: =
@@ -142,7 +175,7 @@ rules:
             conn: if
             rhs:
               lhs:
-                external: semvalue
+                external: semwrap
                 inside: "&phi;"
                 outside: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
               conn: =
@@ -151,7 +184,7 @@ rules:
             conn: otherwise
       -
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "&exist;u<sub>e</sub>&phi;"
           outside: "<span class='var'>g</span>"
         conn: =
@@ -160,7 +193,7 @@ rules:
             conn: if
             rhs:
               lhs:
-                external: semvalue
+                external: semwrap
                 inside: "&phi;"
                 outside: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
               conn: =
@@ -174,7 +207,7 @@ rules:
       - "<span class='set'>R</span> : &pi;"
     value:
       lhs:
-        external: semvalue
+        external: semwrap
         inside: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
       conn: =
       rhs:
@@ -183,17 +216,17 @@ rules:
           rhs:
             -
               lhs:
-                external: setsemvalue
+                external: setsemwrap
                 inside: "A"
               conn: "&isin;"
               rhs: "<span class='set'>R</span>"
             -
               lhs:
-                external: semvalue
+                external: semwrap
                 inside: "A"
               conn: "&sube;"
               rhs:
-                external: semvalue
+                external: semwrap
                 inside: "B"
         - lhs: "0"
           conn: otherwise

@@ -21,7 +21,7 @@ semantic:
       Cons: "a set of sets of constants of each type in <span class='set'>T</span>"
       Vars: "a set of sets of variables of each type in <span class='set'>T</span>"
     semantic value:
-      thing: semvalue
+      thing: semwrap
       description: "the semantic value function"
       parts:
         index of evaluation: "i : s"
@@ -46,21 +46,21 @@ semantic:
       value:
         constants:
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "c<sub>&alpha;</sub>"
             outside: "<sup><span class='set'>M</span></sup>"
           conn: =
           rhs: "<span class='set'>V</span>(c<sub>&alpha;</sub>)"
         variables:
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "u<sub>&alpha;</sub>"
             outside: "<sup><span class='var'>g</span></sup>"
           conn: =
           rhs: "<span class='var'>g</span>(u<sub>&alpha;</sub>)"
         top:
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&top;<sub>&alpha;</sub>"
           conn: =
           rhs: "<span class='set'>D</span><sub>&alpha;</sub>"
@@ -72,12 +72,12 @@ semantic:
         - "<span>terms</span><span>A</span>"
       value:
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "&lambda;u<sub>&alpha;</sub>(A)"
           outside: "<sup><span class='var'>g</span></sup>"
         conn: =
         rhs:
-          external: semvalue
+          external: semwrap
           inside: "A"
           outside: "<sup><span class='var'>g</span>[u<sub>&alpha;</sub>&rarr;d]</sup>"
     identity:
@@ -86,7 +86,7 @@ semantic:
         - "<span>terms</span><span>A</span><span>and</span><span>B</span>"
       value:
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "A<sub>&alpha;</sub> = B<sub>&alpha;</sub>"
         conn: =
         rhs:
@@ -94,11 +94,11 @@ semantic:
             conn: if
             rhs:
               lhs:
-                external: semvalue
+                external: semwrap
                 inside: "A<sub>&alpha;</sub>"
               conn: =
               rhs:
-                external: semvalue
+                external: semwrap
                 inside: "B<sub>&alpha;</sub>"
           - lhs: "0"
             conn: otherwise
@@ -109,40 +109,40 @@ semantic:
       value:
         -
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&not;&phi;"
           conn: =
           rhs:
             lhs:
-              external: semvalue
+              external: semwrap
               inside: "&top;"
             conn: "/"
             rhs: "&phi;"
         -
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&phi;&and;&psi;"
           conn: =
           rhs:
             lhs:
-              external: semvalue
+              external: semwrap
               inside: "&phi;"
             conn: "&#x22C2;"
             rhs:
-              external: semvalue
+              external: semwrap
               inside: "&psi;"
         -
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&phi;&or;&psi;"
           conn: =
           rhs:
             lhs:
-              external: semvalue
+              external: semwrap
               inside: "&phi;"
             conn: "&#x22C3;"
             rhs:
-              external: semvalue
+              external: semwrap
               inside: "&psi;"
     quantifiers:
       cond:
@@ -151,7 +151,7 @@ semantic:
       value:
         -
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&forall;u<sub>e</sub>&phi;"
             outside: "<span class='var'>g</span>"
           conn: =
@@ -160,7 +160,7 @@ semantic:
               conn: if
               rhs:
                 lhs:
-                  external: semvalue
+                  external: semwrap
                   inside: "&phi;"
                   outside: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
                 conn: =
@@ -169,7 +169,7 @@ semantic:
               conn: otherwise
         -
           lhs:
-            external: semvalue
+            external: semwrap
             inside: "&exist;u<sub>e</sub>&phi;"
             outside: "<span class='var'>g</span>"
           conn: =
@@ -178,7 +178,7 @@ semantic:
               conn: if
               rhs:
                 lhs:
-                  external: semvalue
+                  external: semwrap
                   inside: "&phi;"
                   outside: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
                 conn: =
@@ -192,7 +192,7 @@ semantic:
         - "<span class='set'>R</span> : &pi;"
       value:
         lhs:
-          external: semvalue
+          external: semwrap
           inside: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
         conn: =
         rhs:
@@ -201,17 +201,17 @@ semantic:
             rhs:
               -
                 lhs:
-                  external: setsemvalue
+                  external: setsemwrap
                   inside: "A"
                 conn: "&isin;"
                 rhs: "<span class='set'>R</span>"
               -
                 lhs:
-                  external: semvalue
+                  external: semwrap
                   inside: "A"
                 conn: "&sube;"
                 rhs:
-                  external: semvalue
+                  external: semwrap
                   inside: "B"
           - lhs: "0"
             conn: otherwise

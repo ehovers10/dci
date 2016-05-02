@@ -71,3 +71,16 @@ ul.seqlist {
 .set {
   font-weight: 600;
 }
+
+.speechact {
+  padding-right: 2px;
+
+  &.conjecture {
+    font-size: 1.25em;
+    line-height: 0.75em;
+  }
+  &.correct {
+    font-size: 1.25em;
+    line-height: 0.75em;
+  }
+}

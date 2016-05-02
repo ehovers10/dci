@@ -313,36 +313,6 @@ universal quantifier:
             - "&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;"
         - lhs: "0"
           conn: otherwise
-
-drs:
-  sem:
-    - lhs: "&phi; = <span class='ldrt'><span class='drs left top bottom'></span><span class='dref'>&phi;<sup>d</sup></span><span class='condition'>&phi;<sup>c</sup></span><span class='drs right top bottom'></span></span>"
-      conn: "&nbsp;"
-      rhs:
-        - "is a *discourse representation structure* (DRS), where"
-    - lhs: "&phi;<sup>d</sup>"
-      conn: "&nbsp;"
-      rhs:
-        - "is a sequence of drefs introduced in the discourse, and"
-    - lhs: "&phi;<sup>c</sup>"
-      conn: "&nbsp;"
-      rhs:
-        - "is a sequence of conditions, imposing constraints on the model against which
-          sentences are evaluated."
-    - cond: "a sentence S uttered in discourse D represented by DRS &phi;"
-      lhs: "S<sup>d</sup>"
-      conn: "&nbsp;"
-      rhs:
-        - "is the sequence of drefs contributed by S,"
-    - lhs: "S<sup>c</sup>"
-      conn: "&nbsp;"
-      rhs:
-        - "is the sequence of conditions contributed by S."
-    - lhs: "D &rArr; S"
-      conn: "="
-      rhs:
-        - "<span class='ldrt'><span class='drs left top bottom'></span><span class='dref'>&phi;<sup>d</sup> &oplus; S<sup>d</sup></span><span class='condition'>&phi;<sup>c</sup> &oplus; S<sup>c</sup></span><span class='drs right top bottom'></span></span>"
-
 downdate:
   sem:
     - subgroup:
@@ -370,23 +340,3 @@ downdate:
       rhs:
         - "&psi; &oplus; max( &chi; &#x2291; &phi; | &chi; &#x229E; &phi;
           &ne; &empty; )"
-
-collaborative update:
-  initiation:
-    sem:
-    - lhs: "U<sub>*init*</sub>"
-      conn: "&rArr;"
-      rhs:
-        - "[ C<sub>&xi;</sub>(j<sub>&chi;</sub>) &#x23aa; ]<sub>s</sub>"
-  continuation:
-    sem:
-    - lhs: "U<sub>*cont*</sub>"
-      conn: "&rArr;"
-      rhs:
-        - "[ &#x27e8; C<sub>&xi;</sub>(k<sub>&chi;</sub>),C<sub>&xi;</sub>(j<sub>&chi;</sub>) &#x27e9; &#x23aa; ]<sub>s</sub>"
-  completion:
-    sem:
-    - lhs: "U<sub>*comp*</sub>"
-      conn: "&rArr;"
-      rhs:
-        - "[ &#x27e8; C<sub>&xi;</sub>(k<sub>&chi;</sub>),... &#x27e9; &#x23aa; i<sub>s</sub> += | C<sub>&xi;</sub>(k<sub>&chi;</sub>) | ; i<sub>**R**</sub> += | C<sub>&xi;</sub>(k<sub>&chi;</sub>) | ]<sub>s</sub>"
