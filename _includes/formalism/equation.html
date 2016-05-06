@@ -1,0 +1,37 @@
+{% assign name = include.item %}
+<span>
+<!-- LHS -->
+{% assign element = '' %}
+{% if name.lhs contains 'lhs' %}
+  {% assign element = name.lhs %}
+  {% include formalism/equation.html item=element %}
+{% elsif name.lhs contains 'fxn' %}
+  {% assign element = name.lhs %}
+  {% include formalism/fxn.html item=element %}
+{% elsif name.lhs contains 'symbol' %}
+  {% assign element = site.data.symbols.name.lhs %}
+  <span>{{ element.symbol }}</span>
+{% else %}
+  <span>{{ name.lhs }}</span>
+{% endif %}
+
+{% assign name = include.item %}
+<!-- CONN -->
+<span>{{ name.conn }}</span>
+
+{% assign name = include.item %}
+<!-- RHS -->
+{% assign element = '' %}
+{% if name.rhs contains 'lhs' %}
+  {% assign element = name.rhs %}
+  {% include formalism/equation.html item=element %}
+{% elsif name.rhs contains 'fxn' %}
+  {% assign element = name.rhs %}
+  {% include formalism/fxn.html item=element %}
+{% elsif name.rhs contains 'symbol' %}
+  {% assign element = site.data.symbols.name.rhs %}
+  <span>{{ element.symbol }}</span>
+{% else %}
+  <span>{{ name.rhs }}</span>
+{% endif %}
+</span>

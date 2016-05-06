@@ -1,0 +1,11 @@
+{% assign element = include.item %}
+
+{% if element contains 'lhs' %}
+  <!-- Equation -->
+  {% include formalism/equation.html item=element %}
+{% elsif element contains 'fxn' %}
+  <!-- Function -->
+  {% include formalism/fxn.html item=element %}
+{% else %}
+  {% include formalism/subsection.html item=element %}
+{% endif %}

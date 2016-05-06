@@ -1,0 +1,10 @@
+{% if include.bit contains 'lhs' %}
+  {% assign test = 'equation' %}
+{% elsif include.bit contains 'external' %}
+  {% assign test = 'external' %}
+{% else %}
+{% elsif include.bit contains 'section' %}
+  {% assign test = 'section' %}
+{% else %}
+  {% assign test = 'categorical' %}
+{% endif %}

@@ -1,0 +1,23 @@
+{% assign name = include.item %}
+
+{% assign arg1 = '' %}
+{% assign arg2 = '' %}
+
+{% case name.fxn %}
+
+{% when 'semwrap' %}
+  {% assign arg1 = name.arg.inside %}
+  {% assign arg2 = name.arg.outside %}
+  {% include formalism/semwrap.html inside=arg1 outside=arg2 %}
+{% when 'seqwrap' %}
+  {% assign arg1 = name.arg.inside %}
+  {% include formalism/seqwrap.html inside=arg1 %}
+{% when 'drswrap' %}
+  {% assign arg1 = name.arg.dref %}
+  {% assign arg2 = name.arg.conditions %}
+  {% include formalism/drswrap.html dref=arg1 conditions=arg2 %}
+{% when 'upwrap' %}
+  {% assign arg1 = name.arg.before %}
+  {% assign arg2 = name.arg.update %}
+  {% include formalism/semwrap.html before=arg1 update=arg2 %}
+{% endcase %}

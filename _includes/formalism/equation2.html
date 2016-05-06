@@ -1,0 +1,62 @@
+{% assign name = include.item %}
+
+<!-- LHS -->
+  {% if name[1].lhs contains 'lhs' %}
+    {% assign element = name[1].lhs[1].lhs %}
+  <span>SOMETHING</span>
+    <!-- LHS -->
+    {% if name[1].lhs[1].lhs contains 'fxn' %}
+      {% include formalism/fxn.html item=element %}
+    {% elsif name[1].lhs.lhs contains 'symbol' %}
+      <span>{{ site.data.symbols[element[1].symbol[1]] }}</span>
+    {% else %}
+      <span>{{ name[1].lhs[1].lhs[1] }}</span>
+    {% endif %}
+    <!-- CONN -->
+    <span>{{ name[1].lhs[1].conn[1] }}</span>
+    <!-- RHS -->
+    {% if name.lhs.rhs contains 'fxn' %}
+      {% include formalism/fxn.html item=name.lhs.rhs %}
+    {% elsif name.lhs.rhs contains 'symbol' %}
+      <span>{{ site.data.symbols[name.lhs.rhs.symbol] }}</span>
+    {% else %}
+      <span>{{ name.lhs.rhs }}</span>
+    {% endif %}
+  {% elsif name.lhs contains 'fxn' %}
+    {% include formalism/fxn.html item=name.lhs %}
+  {% elsif name.lhs contains 'symbol' %}
+    <span>{{ site.data.symbols[name.lhs.symbol] }}</span>
+  {% else %}
+  <span>{{ name.lhs }}</span>
+  {% endif %}
+
+<!-- CONN -->
+  <span>{{ name.conn }}</span>
+
+<!-- RHS -->
+  {% if name.rhs contains 'lhs' %}
+    <!-- LHS -->
+    {% if name.rhs.lhs contains 'fxn' %}
+      {% include formalism/fxn.html item=name.rhs.lhs %}
+    {% elsif name.rhs.lhs contains 'symbol' %}
+      <span>{{ site.data.symbols[name.rhs.lhs.symbol] }}</span>
+    {% else %}
+      <span>{{ name.rhs.lhs }}</span>
+    {% endif %}
+    <!-- CONN -->
+    <span>{{ name.rhs.conn }}</span>
+    <!-- RHS -->
+    {% if name.rhs.rhs contains 'fxn' %}
+      {% include formalism/fxn.html item=name.rhs.rhs %}
+    {% elsif name.rhs.rhs contains 'symbol' %}
+      <span>{{ site.data.symbols[name.rhs.rhs.symbol] }}</span>
+    {% else %}
+      <span>{{ name.rhs.rhs }}</span>
+    {% endif %}
+  {% elsif name.rhs contains 'fxn' %}
+    {% include formalism/fxn.html item=name.rhs %}
+  {% elsif name.rhs contains 'symbol' %}
+    <span>{{ site.data.symbols[name.rhs.symbol] }}</span>
+  {% else %}
+  <span>{{ name.rhs }}</span>
+  {% endif %}

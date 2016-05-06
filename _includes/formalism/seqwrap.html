@@ -1,3 +1,14 @@
+<span>
 <span>&#x3008;</span>
-  <span>{{ include.inside }}</span>
+  {% for bit in include.inside %}
+  {% if bit.symbol %}
+  <span>{{ site.data.symbols[bit.symbol] }}</span>
+  {% else %}
+  <span>{{ bit }}</span>
+  {% endif %}
+  {% endfor %}
 <span>&#x3009;</span>
+{% if include.outside %}
+<span>{{ include.outside }}</span>
+{% endif %}
+</span>

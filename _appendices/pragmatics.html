@@ -1,0 +1,45 @@
+---
+title: Pragmatics
+---
+
+{% for item in site.data.pragmatics %}
+
+{% assign element = item %}
+<div>
+<!-- Title -->
+<h4>{{ element[0] | upcase }}</h4>
+
+{% assign element = item %}
+<!-- Conditions -->
+{% if element[1].cond %}
+<div class="cond">
+  <span>For</span>
+  {% for piece in element[1].cond %}
+    <span>{{ piece | append: ",&nbsp;" }}</span>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% assign element = item %}
+<!-- Body -->
+{% if element[1].body %}
+<div class="body">
+  {% assign element = element[1].body %}
+  {% include formalism/delegate.html item=element %}
+</div>
+{% endif %}
+
+{% assign element = item %}
+<!-- Parts -->
+{% if element[1].parts %}
+<div class="parts">
+  {% for piece in element[1].parts %}
+  <div class="part">
+    {% assign element = piece[1] %}
+    {% include formalism/delegate.html item=element %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+</div>
+{% endfor %}
