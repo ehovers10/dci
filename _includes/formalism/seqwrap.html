@@ -6,9 +6,10 @@
   {% else %}
   <span>{{ bit }}</span>
   {% endif %}
+  {% unless forloop.last %}<span>,</span>{% endunless %}
   {% endfor %}
 <span>&#x3009;</span>
 {% if include.outside %}
 <span>{{ include.outside }}</span>
-{% endif %}
+{% endif %}</span>
 </span>

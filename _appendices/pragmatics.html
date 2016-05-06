@@ -7,7 +7,7 @@ title: Pragmatics
 {% assign element = item %}
 <div>
 <!-- Title -->
-<h4>{{ element[0] | upcase }}</h4>
+<h3>{{ element[0] | upcase }}</h3>
 
 {% assign element = item %}
 <!-- Conditions -->
@@ -24,8 +24,38 @@ title: Pragmatics
 <!-- Body -->
 {% if element[1].body %}
 <div class="body">
-  {% assign element = element[1].body %}
-  {% include formalism/delegate.html item=element %}
+  {% for item in element[1].body %}
+    {% assign element = item %}
+    {% if element contains 'lhs' %}
+      {% include formalism/delegate.html item=element %}
+    {% elsif element[1].body %}
+      <div class="body">
+        {% assign thing = element[1].body %}
+        {% include formalism/delegate.html item=thing %}
+      </div>
+      {% if element[1].parts %}
+      <div class="parts">
+        {% for piece in element[1].parts %}
+        <div class="part">
+          {% for bit in piece[1] %}
+            {% assign element = bit %}
+            {% include formalism/delegate.html item=element %}
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    {% else %}
+      <h4>{{ element[0] | captialize }}</h4>
+      {% for thing in element[1] %}
+      <div>
+        {% assign element = thing %}
+        {% include formalism/delegate.html item=element %}
+      </div>
+      {% endfor %}
+    {% endif %}
+  <div style="clear:both;"></div>
+  {% endfor %}
 </div>
 {% endif %}
 
@@ -35,8 +65,10 @@ title: Pragmatics
 <div class="parts">
   {% for piece in element[1].parts %}
   <div class="part">
-    {% assign element = piece[1] %}
-    {% include formalism/delegate.html item=element %}
+    {% for bit in piece[1] %}
+      {% assign element = bit %}
+      {% include formalism/delegate.html item=element %}
+    {% endfor %}
   </div>
   {% endfor %}
 </div>

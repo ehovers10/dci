@@ -1,19 +1,10 @@
 {% assign name = include.item %}
 <span>
 <!-- LHS -->
-{% assign element = '' %}
-{% if name.lhs contains 'lhs' %}
-  {% assign element = name.lhs %}
-  {% include formalism/equation.html item=element %}
-{% elsif name.lhs contains 'fxn' %}
-  {% assign element = name.lhs %}
-  {% include formalism/fxn.html item=element %}
-{% elsif name.lhs contains 'symbol' %}
-  {% assign element = site.data.symbols.name.lhs %}
-  <span>{{ element.symbol }}</span>
-{% else %}
-  <span>{{ name.lhs }}</span>
-{% endif %}
+{% for thing in name.lhs %}
+  {% include formalism/delegate.html item=thing %}
+  {% unless forloop.last %}<br>{% endunless %}
+{% endfor %}
 
 {% assign name = include.item %}
 <!-- CONN -->
@@ -21,17 +12,8 @@
 
 {% assign name = include.item %}
 <!-- RHS -->
-{% assign element = '' %}
-{% if name.rhs contains 'lhs' %}
-  {% assign element = name.rhs %}
-  {% include formalism/equation.html item=element %}
-{% elsif name.rhs contains 'fxn' %}
-  {% assign element = name.rhs %}
-  {% include formalism/fxn.html item=element %}
-{% elsif name.rhs contains 'symbol' %}
-  {% assign element = site.data.symbols.name.rhs %}
-  <span>{{ element.symbol }}</span>
-{% else %}
-  <span>{{ name.rhs }}</span>
-{% endif %}
+{% for thing in name.rhs %}
+  {% include formalism/delegate.html item=thing %}
+  {% unless forloop.last %}<br>{% endunless %}
+{% endfor %}
 </span>
