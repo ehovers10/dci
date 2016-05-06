@@ -1,0 +1,23 @@
+<div class="body">
+  {% for item in include.item %}
+    {% assign element = item %}
+
+    {% if element contains 'lhs' %}
+    <!-- Equation -->
+      {% include formalism/delegate.html item=element %}
+
+    {% assign element = item %}
+    {% elsif element[1] contains 'body' %}
+    <!-- Body -->
+      {% include formalism/element.html argument=element level=2 %}
+
+    {% else %}
+    <!-- Name -->
+      <h4>{{ element[0] | capitalize }}</h4>
+      {% for thing in element[1] %}
+        {% assign element = thing %}
+        {% include formalism/delegate.html item=element %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</div>

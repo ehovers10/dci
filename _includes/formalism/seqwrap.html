@@ -1,15 +1,14 @@
-<span>
-<span>&#x3008;</span>
+<div>
+  <span>&#x3008;</span>
   {% for bit in include.inside %}
+  {% assign comma = '' %}
+  {% unless forloop.last %}{% assign comma = '<span>,</span>' %}{% endunless %}
   {% if bit.symbol %}
-  <span>{{ site.data.symbols[bit.symbol] }}</span>
+  <span>{{ site.data.symbols[bit.symbol] | append: comma }}</span>
   {% else %}
-  <span>{{ bit }}</span>
+  <span>{{ bit | append: comma }}</span>
   {% endif %}
-  {% unless forloop.last %}<span>,</span>{% endunless %}
   {% endfor %}
-<span>&#x3009;</span>
-{% if include.outside %}
-<span>{{ include.outside }}</span>
+<span>&#x3009;</span>{% if include.outside %}<span>{{ include.outside }}</span>
 {% endif %}</span>
-</span>
+</div>

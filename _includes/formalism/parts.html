@@ -1,0 +1,11 @@
+<div class="parts">
+  {% for piece in include.item %}
+  <div class="part">
+    <!--<h4>{{ piece[0] }}</h4>-->
+    {% for bit in piece[1] %}
+      {% assign element = bit %}
+      {% include formalism/delegate.html item=element %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

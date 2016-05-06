@@ -1,0 +1,34 @@
+{% assign element = include.argument %}
+
+<div class="element">
+
+<!-- Title -->
+<div class="title">
+{% if include.level == 2 %}
+<h4>{{ element[0] | capitalize }}</h4>
+{% else %}
+<h3>{{ element[0] | upcase }}</h3>
+{% endif %}
+</div>
+
+{% if element[1].cond %}
+<!-- Conditions -->
+  {% assign thing = element[1] %}
+  {% include formalism/cond.html item=thing %}
+{% endif %}
+
+{% assign element = include.argument %}
+{% if element[1].body %}
+<!-- Body -->
+{% assign thing = element[1].body %}
+{% include formalism/body.html item=thing %}
+{% endif %}
+
+{% assign element = include.argument %}
+{% if element[1].parts %}
+<!-- Parts -->
+{% assign thing = element[1].parts %}
+{% include formalism/parts.html item=thing %}
+{% endif %}
+
+</div>

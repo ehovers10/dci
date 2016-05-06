@@ -1,19 +1,25 @@
 {% assign name = include.item %}
-<span>
+<div class="eqn">
 <!-- LHS -->
+<div class="lhs">
 {% for thing in name.lhs %}
   {% include formalism/delegate.html item=thing %}
   {% unless forloop.last %}<br>{% endunless %}
 {% endfor %}
+</div>
 
 {% assign name = include.item %}
 <!-- CONN -->
-<span>{{ name.conn }}</span>
+<div class="conn">{{ name.conn }}</div>
 
 {% assign name = include.item %}
 <!-- RHS -->
+<div class="rhs">
 {% for thing in name.rhs %}
   {% include formalism/delegate.html item=thing %}
   {% unless forloop.last %}<br>{% endunless %}
 {% endfor %}
-</span>
+</div>
+
+</div>
+<div style="clear:both"></div>
