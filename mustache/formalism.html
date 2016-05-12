@@ -1,0 +1,116 @@
+---
+title: Formalism
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="{{ "/mustache/prag2.js" | prepend: site.baseurl }}"></script>
+
+<script id="formalism-template" type="text/x-handlebars-template">
+
+<table class="element">
+  {{#if name}}
+  <thead>
+    <tr class="title">
+      <th colspan="3">{{name}}</th>
+    </tr>
+  </thead>
+  {{/if}}
+  <tbody>
+  <!--{{#if body}}
+    {{> main body}}
+  {{/if}}
+  {{#if sub}}
+    {{> main sub class="parts"}}
+  {{/if}}
+
+  {{#if eqn}}
+    {{> equation eqn}}
+  {{else if fxn}}
+    {{#with fxn}}
+      {{> (name)}}
+    {{/with}}
+  {{else}}
+    <tr class="categorical">
+      <td colspan="3">{{this}}</td>
+    </tr>
+  {{/if}}-->
+  </tbody>
+</table>
+
+</script>
+
+<script id="main-partial" type="text/x-handlebars-template">
+{{#if name}}
+  <tr class="title">
+    <th colspan="3">{{name}}</th>
+  </tr>
+{{/if}}
+
+{{#if body}}
+  {{> main body}}
+{{/if}}
+{{#if sub}}
+  {{> main sub class="parts"}}
+{{/with}}
+
+{{#if eqn}}
+  {{> equation eqn}}
+{{else if fxn}}
+    {{> (name) fxn}}
+{{else}}
+  <tr class="categorical">
+    <td colspan="3">{{this}}</td>
+  </tr>
+{{/if}}
+</script>
+
+<script id="equation-partial" type="text/x-handlebars-template">
+<table class='eqn'>
+{{#each this}}
+  <tr>
+    <td class='lhs'>
+    {{#with lhs}}
+      {{#if eqn}}
+        {{> equation eqn}}
+      {{else if fxn}}
+        {{> (fxn.name)}}
+      {{else if symbol}}
+        {{> (symbol)}}
+      {{else}}
+        {{this}}
+      {{/if}}
+    {{/with}}
+    </td>
+    <td class='conn'>{{conn}}</td>
+    <td class='rhs'>
+    {{#with rhs}}
+      {{#if eqn}}
+        {{> equation eqn}}
+      {{else if fxn}}
+        {{> (fxn.name)}}
+      {{else if symbol}}
+        {{> (symbol)}}
+      {{else}}
+        {{this}}
+      {{/if}}
+    {{/with}}
+    </td>
+  </tr>
+{{/each}}
+</table>
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var source = $("#formalism-template").html();
+    var template = Handlebars.compile(source);
+    //Handlebars.registerPartial('main',$('#main-partial').html());
+    //Handlebars.registerPartial('equation',$('#equation-partial').html());
+
+    var context = {"name":"drs","body":{"eqn":{"lhs":{"eqn":{"lhs":"&phi;","conn":"=","rhs":{"fxn":{"name":"drswrap","arg":{"dref":"&phi;<sup>d</sup>","conditions":"&phi;<sup>c</sup>"}}}}},"conn":"is","rhs":"a discourse representation structure (DRS)"}},"sub":[{"name":"drefs","eqn":{"lhs":"&phi;<sup>d</sup>","conn":"is","rhs":"a sequence of drefs introduced in the discourse"}},{"name":"conditions","eqn":{"lhs":"&phi;<sup>c</sup>","conn":"is","rhs":"a sequence of conditions, imposing constraints on the model against which sentences are evaluated"}}]};
+    template({"name":"drs","body":{"eqn":{"lhs":{"eqn":{"lhs":"&phi;","conn":"=","rhs":{"fxn":{"name":"drswrap","arg":{"dref":"&phi;<sup>d</sup>","conditions":"&phi;<sup>c</sup>"}}}}},"conn":"is","rhs":"a discourse representation structure (DRS)"}},"sub":[{"name":"drefs","eqn":{"lhs":"&phi;<sup>d</sup>","conn":"is","rhs":"a sequence of drefs introduced in the discourse"}},{"name":"conditions","eqn":{"lhs":"&phi;<sup>c</sup>","conn":"is","rhs":"a sequence of conditions, imposing constraints on the model against which sentences are evaluated"}}]});
+  });
+</script>
+
+<!--<script src="{{ "/mustache/helpers.js" | prepend: site.baseurl }}"></script>
+-->

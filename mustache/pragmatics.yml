@@ -1,0 +1,211 @@
+cond:
+  - "a sentence S"
+  - "uttered in discourse D"
+  - "represented by DRS &phi;"
+body:
+  drefs:
+    - lhs: "S<sup>d</sup>"
+      conn: "is"
+      rhs: "the sequence of drefs contributed by S,"
+  conditions:
+    - lhs: "S<sup>c</sup>"
+      conn: "is"
+      rhs: "the sequence of conditions contributed by S."
+  sentences:
+    - lhs: "D &rArr; S"
+      conn: "="
+      rhs:
+        - fxn: drswrap
+          arg:
+            dref: "&phi;<sup>d</sup> &oplus; S<sup>d</sup>"
+            conditions: "&phi;<sup>c</sup> &oplus; S<sup>c</sup>"
+
+body:
+  - lhs:
+      - fxn: seqwrap
+        arg:
+          inside:
+            - i
+            - "<span class='set'>R</span>"
+            - symbol: dref
+            - symbol: sand
+            - symbol: rec
+    conn: "is"
+    rhs: "an information state for the discourse"
+parts:
+  common ground:
+    - lhs: "i : s"
+      conn: "is"
+      rhs: "the common ground"
+  relation set:
+    - lhs: "<span class='set'>R</span> : (&pi;t)"
+      conn: "is"
+      rhs: "a set of partitions of the common ground"
+  drefs:
+    - lhs:
+        symbol: dref
+      conn: "is"
+      rhs: "a sequence of discourse referents"
+  sandbox:
+    - lhs:
+        symbol: sand
+      conn: "is"
+      rhs: "a sequence propositional radical, completion pairs representing the collaborative space of the discourse"
+  record:
+    - lhs:
+        symbol: rec
+      conn: "is"
+      rhs: "a sequence of discourse referents of type &sigma; that provides a record of changes made to the information state throughout the discourse"
+
+body:
+  informative update:
+    - lhs:
+        - fxn: drswrap
+          arg:
+            dref: "&nbsp;"
+            conditions: "C<sub>st</sub>"
+      conn: "&rArr;"
+      rhs:
+        - lhs: "i"
+          conn: "&#x22C2;"
+          rhs:
+            - fxn: semwrap
+              arg:
+                inside: "C<sub>st</sub>"
+                outside: "<sup>i</sup>"
+        - "&lambda;&sigma;( i<sub>&sigma;</sub> &#x22C2; C<sub>s</sub> = i<sub>&sigma;</sub> )"
+  structuring update:
+    - lhs:
+        - fxn: drswrap
+          arg:
+            dref: "&nbsp;"
+            conditions: "C<sub>(st)t</sub>"
+      conn: "&rArr;"
+      rhs:
+        - lhs: "<span class='set'>R</span>"
+          conn: "&#x22Ca;"
+          rhs:
+            - fxn: semwrap
+              arg:
+                inside: "C<sub>(st)t</sub>"
+                outside: "<sup><span class='set'>R</span></sup>"
+        - "&lambda;&sigma;( <span class='set'>R</span><sup>&sigma;</sup> &#x22C2; C<sub>st</sub> = <span class='set'>R</span><sub>&sigma;</sub> )"
+  dref introduction:
+    - lhs:
+        - fxn: drswrap
+          arg:
+            dref: "u<sub>1</sub>..u<sub>n</sub>"
+            conditions: "&nbsp;"
+      conn: "&rArr;"
+      rhs:
+        - lhs: "u<sub>1</sub>..u<sub>n</sub>"
+          conn: "&#x29c0;"
+          rhs:
+            symbol: dref
+        - "&lambda;&sigma;( &forall;(k &isin; [0..n])( &delta;<sub>&sigma;</sub>[k] = <span class='var'>g</span>(u<sub>k</sub> ) )"
+
+body:
+  initialization:
+    - lhs: "U<sup>init</sup>"
+      conn: "&#x21a5;<sub>&sigma;</sub>"
+      rhs:
+        - fxn: seqwrap
+          arg:
+            inside:
+              - "i<sub>&sigma;</sub>"
+              - "&#x3008;dref&#x3009;<sub>&sigma;</sub>"
+            outside: "<sub>sand</sub>"
+  propagation:
+    body:
+      - lhs: "U<sup>prop</sup>"
+        conn: "&rArr;"
+        rhs:
+          - fxn: drswrap
+            arg:
+              dref: "U<sup>prop</sup><sub>st</sub>"
+              conditions: "U<sup>prop</sup><sub>(st)t</sub>"
+    parts:
+      present:
+        - lhs: "<span class='var'>dref</span><sup>prop</sup>"
+          conn: "&#x29c0;"
+          rhs: "<span class='set'>dref</span><sup>sand</sup>"
+      partition:
+        - lhs: "<span class='var'>R</span><sup>prop</sup>"
+          conn: "&#x22CA;"
+          rhs: "<span class='set'>R</span><sup>sand</sup>"
+  merge:
+    - lhs: "U<sup>merge</sup>"
+      conn: "&#x21a7;<sub>&sigma;</sub>"
+      rhs:
+        - fxn: seqwrap
+          arg:
+            inside:
+              - "i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)"
+              - "i<sub><span class='set'R</span></sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)"
+              - "dref<sub>&sigma;</sub> += dref<sub>sand</sub>"
+            outside: "<sub>&sigma;</sub>"
+
+cond:
+  - "<span class='var'>I</span> : &sigma;"
+  - "<span class='var'>U</span>, an utterance in discourse"
+body:
+  assert:
+    - lhs:
+      - lhs: "<span class='var'>I</span></sub>"
+        conn: "&rArr;"
+        rhs: "<span class='speechact'>!</span>U"
+      conn: =
+      rhs:
+        - fxn: upwrap
+          arg:
+            before: "<span class='var'>I</span>"
+            update:
+              - lhs: "i<sub><span class='var'>I</span></sub>"
+                conn: "&cap;"
+                rhs:
+                  symbol: uinf
+  question:
+    - lhs:
+        - lhs: "<span class='var'>I</span></sub>"
+          conn: "&rArr;"
+          rhs: "<span class='speechact'>?</span>U"
+      conn: =
+      rhs:
+        - fxn: upwrap
+          arg:
+            before: "<span class='var'>I</span>"
+            update:
+              - lhs: "i<sub><span class='var'>I</span></sub>"
+                conn: "&cap;"
+                rhs:
+                  symbol: uinf
+  conjecture:
+    - lhs:
+        - lhs: "<span class='var'>I</span></sub>"
+          conn: "&rArr;"
+          rhs: "<span class='speechact conjecture'>&#x25b5;&#x323;</span>U"
+      conn: "="
+      rhs:
+        - fxn: upwrap
+          arg:
+            before: "<span class='var'>I</span>"
+            update: "C<sub>&xi;</sub>(j<sub>&chi;</sub>)"
+  correct:
+    - lhs:
+        - lhs: "<span class='var'>I</span></sub>"
+          conn: "&rArr;"
+          rhs: "<span class='speechact correct'>&#x25bf;&#x323;</span>U"
+      conn: =
+      rhs:
+        - fxn: upwrap
+          arg:
+            before: "<span class='var'>I</span>"
+            update:
+              - lhs: "i<sub><span class='var'>I</span></sub>"
+                conn: "&cap;"
+                rhs:
+                  symbol: uinf
+
+cond:
+  - "Ps : et"
+  - "Q : et"

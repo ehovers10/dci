@@ -1,0 +1,21 @@
+---
+body:
+  - lhs:
+      - lhs: "&phi;"
+        conn: =
+        rhs:
+          - fxn: drswrap
+            arg:
+              dref: "&phi;<sup>d</sup>"
+              conditions: "&phi;<sup>c</sup>"
+    conn: "is"
+    rhs: "a discourse representation structure (DRS)"
+parts:
+  drefs:
+    - lhs: "&phi;<sup>d</sup>"
+      conn: "is"
+      rhs: "a sequence of drefs introduced in the discourse"
+  conditions:
+    - lhs: "&phi;<sup>c</sup>"
+      conn: "is"
+      rhs: "a sequence of conditions, imposing constraints on the model against which sentences are evaluated"

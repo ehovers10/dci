@@ -1,14 +1,9 @@
----
-title: Predication in <strong>CU</strong>
-layout: table
----
-
-## A model
+<h3>A model</h3>
 
 {% capture gus %}{% include relations/model.md %}{% endcapture %}
 {{ gus | markdownify }}
 
-## Predicates
+<h3>Predicates</h3>
 
 <!-- Bears -->
 <table class="relation">
@@ -64,14 +59,14 @@ layout: table
 <!---------------------- ----------------------->
 <div style="clear:both;"></div>
 
-## Standard plural predication
+<h3>Standard plural predication</h3>
 
 {% include relations/bad/index.html rows="7" %}
 
 <!---------------------- -------------------->
 <div style="clear:both;"></div>
 
-## Contrastive modification
+<h3>Contrastive modification</h3>
 
 <!-- introduce alt set, full outer join, overwrite -->
 {% include examples/sem.html term='<em>[Grizzly]<sub>cf</sub> bears</em>' model="M" %} = PROJ({**sit**,**ent**,**type &#x21a6; bear**}, {% include examples/sem.html term='[Grizzly]<sub>cf</sub>' model="M" %} <span class="symbol">&#x27d7;</span> {% include examples/sem.html term='bears' type='&alpha;' model="M" %})
@@ -80,6 +75,6 @@ layout: table
 
 <div style="clear:both;"></div>
 
-## Contrastive plural predication
+<h3>Contrastive plural predication</h3>
 
 {% include relations/gbad/index.html rows="7" %}

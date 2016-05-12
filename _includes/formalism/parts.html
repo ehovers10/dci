@@ -1,11 +1,15 @@
-<div class="parts">
-  {% for piece in include.item %}
-  <div class="part">
-    <!--<h4>{{ piece[0] }}</h4>-->
-    {% for bit in piece[1] %}
+{% for piece in include.item %}
+<tr class="part">
+  {% for bit in piece[1] %}
+    {% if bit contains 'lhs' %}
       {% assign element = bit %}
       {% include formalism/delegate.html item=element %}
-    {% endfor %}
-  </div>
+    {% elsif bit[1] contains 'body' %}
+      {% assign element = bit[1] %}
+      {% include formalism/element.html argument=element level=2 %}
+    {% else %}
+    {{ bit }}
+    {% endif %}
   {% endfor %}
-</div>
+</tr>
+{% endfor %}

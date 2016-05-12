@@ -1,0 +1,61 @@
+---
+title: Formalism
+---
+
+<div class="bunch">
+<ul class="body-nav">
+  <li><a href="#" class="pragmatics">Pragmatics</a></li>
+  <li><a href="#" class="semstructure">Semantic Structure</a></li>
+  <li><a href="#" class="semrules">Semantic Rules</a></li>
+  <li><a href="#" class="relations">Predication in <span class="set">CU</span></a></li>
+  <li><a href="#" class="definitions">Definitions</a></li>
+</ul>
+
+<div class="area pragmatics">
+<h2>Pragmatics</h2>
+{% for item in site.data.pragmatics %}
+{% include formalism/element.html argument=item %}
+{% endfor %}
+</div>
+
+<div class="area semstructure" style="display:none;">
+<h2>Semantic structure</h2>
+{% for item in site.data.semstructure %}
+{% include formalism/element.html argument=item %}
+{% endfor %}
+</div>
+
+<div class="area semrules" style="display:none;">
+<h2>Semantic rules</h2>
+{% for item in site.data.semrules %}
+{% include formalism/element.html argument=item %}
+{% endfor %}
+</div>
+
+<div class="area relations" style="display:none;">
+<h2>Predication in <span class='set'>CU</span></h2>
+{% include formalism/relations.html %}
+</div>
+
+<div class="area definitions" style="display:none;">
+<h2>Definitions</h2>
+{% include formalism/definitions.html %}
+</div>
+
+</div>
+
+<script>
+$(document).ready( function() {
+  $( ".body-nav a" ).click( function() {
+    var temp = $( this ).attr( "class" );
+    $( this ).closest( ".bunch" ).find( ".area" ).each( function() {
+      if ( $( this ).hasClass( temp ) ) {
+        $( this ).css( "display", "block" );
+      } else {
+        $( this ).css( "display", "none" );
+      }
+    });
+    return false;
+  });
+});
+</script>

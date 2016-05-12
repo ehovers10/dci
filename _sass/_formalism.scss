@@ -30,6 +30,10 @@ ul.seqlist {
 
 .element {
   margin-bottom:1em;
+
+  td {
+    border: 1px solid #000;
+  }
   .title {
     margin-bottom:0.5em;
   }
@@ -50,10 +54,10 @@ ul.seqlist {
 
   .lhs {
     margin: inherit;
-    float:left;
+    //float:left;
     text-align:right;
-    max-width: calc(40% - 1em);
-    max-width: -webkit-calc(40% - 1em);
+    //max-width: calc(40% - 1em);
+    //max-width: -webkit-calc(40% - 1em);
 
     &.level2 {
       width: calc(20% - 1em);
@@ -63,17 +67,17 @@ ul.seqlist {
 
   .conn {
     margin: inherit;
-    float: left;
-    width: 2em;
+    //float: left;
+    //width: 2em;
     //line-height:0.95;
     text-align: center;
   }
 
   .rhs {
     margin: inherit;
-    float:left;
-    max-width: calc(60% - 1em);
-    max-width: -webkit-calc(60% - 1em);
+    //float:left;
+    //max-width: calc(60% - 1em);
+    //max-width: -webkit-calc(60% - 1em);
     text-align:left;
   }
 }

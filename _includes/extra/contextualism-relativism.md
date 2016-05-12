@@ -1,4 +1,42 @@
-## Contextualism and relativism
+## Meaning and context
+
+Utterance meaning is sensitive to context, but who determines the context appropriate to evaluating an utterance? There is pressure to say that the speaker controls the meaning of her words. After all, Grice taught us that speaker meaning is intentional. The speaker is most intimately connected to what she has said, and must retain some right to determining what she meant by what she said.
+
+But Humpty Dumpty took things too far.
+
+> 'When I use a word,' Humpty Dumpty said, in rather a scornful tone, 'it means just what I choose it to mean — neither more nor less.'
+
+Convention determines the meaning of the words one utters, though context can be influential in determining what word it is that is uttered.
+
+But there is also pressure from the other side to say that utterance interpretation is relative. It is a common contention that words can mean different things to different people.
+
+There is a source of linguistic evidence that promises to break this stalemate.
+
+**The argument from disagreement**
+
+1. Intuitions about genuine disagreement are pertinent to theorizing about linguistic content.
+
+    + In this sense, facts about genuine disagreement are similar to facts about truth conditions and anaphora resolution.
+
+2. Genuine disagreement requires shared content on which the disputing parties take conflicting stances.
+
+    + A principal feature of content is that it is truth-conditional. In so far as uttering a sentence in context commits one to a belief in its content, one form of disagreement is realized when two parties are committed to conflicting beliefs with a single proposition as their base content. For instance, one individual believes *A* and another believes its negation *&not;A*.
+
+3. Relativism posits a *context neutral* content.
+
+    + There is a single content that is expressed in both party's speech or thought. Each party assigns to that content a different truth value; thus, the disagreement. But such contents are complex objects, and the conflicting assignments can each be accurate for the part to which they pertain; thus the sense that each party exerts a right in their assignment.
+
+4. Contextualism issues in context specific contents.
+
+    + Such contents build contextual features into them. Assignment of conflicting truth values to the same sentence amounts to assignment of truth values to distinct propositions. Each party can be correct in the assignment they make, but the sense of genuine disagreement is lost.
+
+The argument from disagreement is a schema that can be applied to specific questions regarding the nature of content as a means of helping to dscide between competing accounts, one *contextualist* the other *relativist*.
+
+But the argument from disagreement is a *non sequitur*. Even granting the value of intuition in this case {% include ref.html id="vonfintel2008,cappelen2009" o="n" e="," %}
+
+Lasersohn (pp. 35-43)
+
+## Two sides of belief
 
 In one sense, Brisco and Green's disagree in their beliefs. Brisco thinks it was the guy in room A that did it, while Green thinks it was the one in room B, and the person who did it acted alone. In another sense, they agree in what they believe.  Belief is functionally tied to action, and Brisco and Green are acting in very similar ways.
 

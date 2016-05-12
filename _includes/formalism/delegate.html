@@ -1,16 +1,11 @@
 {% assign element = include.item %}
-
 {% if element contains 'lhs' %}
-  <!-- Equation -->
   {% include formalism/equation.html item=element %}
 {% elsif element contains 'fxn' %}
-  <!-- Function -->
   {% include formalism/fxn.html item=element %}
 {% elsif element contains 'symbol' %}
-  <!-- Symbol -->
   {% assign symb = element[1] %}
   <span>{{ site.data.symbols[symb] }}</span>
 {% else %}
-  <!-- Categorical -->
   <span>{{ element }}</span>
 {% endif %}

@@ -1,4 +1,4 @@
-<div>
+<span>
   <span>&#x3008;</span>
   {% for bit in include.inside %}
   {% assign comma = '' %}
@@ -9,6 +9,8 @@
   <span>{{ bit | append: comma }}</span>
   {% endif %}
   {% endfor %}
-<span>&#x3009;</span>{% if include.outside %}<span>{{ include.outside }}</span>
-{% endif %}</span>
-</div>
+  <span>&#x3009;</span>
+  {% if include.outside %}
+  <span>{{ include.outside }}</span>
+  {% endif %}
+</span>
