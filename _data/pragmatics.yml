@@ -144,11 +144,11 @@ collaborative update:
     propagation:
       body:
         - lhs: "U<sup>prop</sup>"
-          conn: "&rArr;"
+          conn: "&#x21a6;<sub>&sigma;</sub>"
           rhs:
             - fxn: drswrap
               arg:
-                dref: "U<sup>prop</sup><sub>st</sub>"
+                dref: "<span class='var'>dref</span><sup>prop</sup>"
                 conditions: "U<sup>prop</sup><sub>(st)t</sub>"
       parts:
         present:

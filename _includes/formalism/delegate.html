@@ -1,11 +1,11 @@
-{% assign element = include.item %}
-{% if element contains 'lhs' %}
-  {% include formalism/equation.html item=element %}
-{% elsif element contains 'fxn' %}
-  {% include formalism/fxn.html item=element %}
-{% elsif element contains 'symbol' %}
-  {% assign symb = element[1] %}
-  <span>{{ site.data.symbols[symb] }}</span>
+{% assign delegateElement = include.item %}
+{% if include.level == 2 %}{% assign lev = 2 %}{% endif %}
+{% if delegateElement contains 'lhs' %}
+  {% include formalism/equation.html item=delegateElement level=lev %}
+{% elsif delegateElement contains 'fxn' %}
+  {% include formalism/fxn.html item=delegateElement %}
+{% elsif delegateElement contains 'symbol' %}
+  <span>{{ site.data.symbols[delegateElement.last] }}</span>
 {% else %}
-  <span>{{ element }}</span>
+  <span>{{ delegateElement }}</span>
 {% endif %}

@@ -36,6 +36,45 @@ But the argument from disagreement is a *non sequitur*. Even granting the value 
 
 Lasersohn (pp. 35-43)
 
+## Discourse role
+
+Participants in a conversation are differentiated in terms of their role in the discoruse. Principal among these roles are the *speaker* and the *audience*. Obviously, participant roles are not assigned once off at the outset of the discoruse; instead, the individual filling each role changes as the discourse evolves.
+
+Plausibly, interpretation is sensitive to features of the extra-lingusitic context. And context is not necessarily a monolithic thing. For instance, we can imagine different roles generating distinct elements of the context. And perhaps components supplied by one role may confict with components supplied by another. This picture makes salient the question whether discourse role is a determinative element of context that is relevant to interpretation.
+
+Certainly, there are expressions that reference the entity filling different discourse roles. The personal pronouns (in English, *I* and *you* as examples) are plausibly interpreted as refering to individuals on the basis of the role they fill. But the fact that a member of the *audience* is referred to by an expression in the language does not make the language *relativist* in nature. For in this guise, the role is merely an element of the context, and the context is plausibly fixed by the situation of utterance.
+
+But roles can also be seen as *context generators*, things that supply contextual features for interpretation. One interpretation of relativism is that audience role is an operative context generator for interpretation of certain expressions.
+
+An interesting relativism demands a notion of *supplying* a context. Otherwise, all features can be seen as elements of *the one* context. It's not that the contextual feature is at a distance from the speaker, but that the feature is *supplied* by something at a distance from the utterance. The framework must allow for *variable application* of contextual features. Genuine relativism is *non-determinate* context generation relevant to interpretation.
+
+### Two properties of relativism
+
+Rel/Con 1: Who's context matters? (MacFarlane's *relativism/contextualism*)
+Rel/Con 2: Context neutrality (MacFarlane's *indexicalism/non-indexicalism*)
+
+1. That there are multiple values for some contextual feature that are potentially relevant to interpretation.
+2. That which value is operative is not determined at the point of utterance. (Lasersohn pp.35-43)
+
+Participant role can ground both properties. It generates a context and expressions reference it in specification of their interpretation.
+
+But since role is dynamic, so too is interpretation. An addition to the information state can change value in response to further additions, if those additions reference participant role.
+
+This feature of relativism is brought out in two important elements of language:
++ Attitude verbs
++ Speech acts
+
+Disagreement (attitudinally, when mental, speech actly, when verbal) is not just about the nature of the content, it is about how evaluation of the content takes place. It needs both content neutrality and evaluation fixing (shiftyness).
+
+There is no essential connection between the two elements. We can have audience sensitivity without content neutrality (MacF indexical relativism), and we can have content neutrality without relativism (absolutism). But maybe content neutrality is closer to relativism than we thought. For determinate assessment sensitivity is not all that relative. What's relative is that evaluation is indeterminate -- that different people can evaluate differently the same content without fault (Koelbel, de Sa)
+
+CIA picture: what context is relevant?
++ Evidence suggests that the question is misplaced. Either can be relavant.
++ But the response of dismissing assessor sensitivity entirely is too swift.
++ Let's give some teeth to the *cloud of contexts* idea.
+
+
+
 ## Two sides of belief
 
 In one sense, Brisco and Green's disagree in their beliefs. Brisco thinks it was the guy in room A that did it, while Green thinks it was the one in room B, and the person who did it acted alone. In another sense, they agree in what they believe.  Belief is functionally tied to action, and Brisco and Green are acting in very similar ways.

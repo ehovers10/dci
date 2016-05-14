@@ -1,4 +1,4 @@
-var pragmatics = {
+{
 "defn": [{
   "name": "drs",
   "body": {
@@ -465,4 +465,4 @@ var pragmatics = {
     "Q : et"
   ]
 }]
-};
+}

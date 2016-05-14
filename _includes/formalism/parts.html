@@ -1,12 +1,12 @@
-{% for piece in include.item %}
+{% assign partsElement = include.item %}
+
+{% for piece in partsElement.parts %}
 <tr class="part">
   {% for bit in piece[1] %}
     {% if bit contains 'lhs' %}
-      {% assign element = bit %}
-      {% include formalism/delegate.html item=element %}
+      <td>{% include formalism/delegate.html item=bit %}</td>
     {% elsif bit[1] contains 'body' %}
-      {% assign element = bit[1] %}
-      {% include formalism/element.html argument=element level=2 %}
+      {% include formalism/element.html argument=bit.last level=2 %}
     {% else %}
     {{ bit }}
     {% endif %}

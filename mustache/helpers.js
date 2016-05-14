@@ -1,5 +1,3 @@
-$(document).ready(function(){
-
 // symbols
 
 Handlebars.registerPartial('dref',
@@ -71,11 +69,9 @@ Handlebars.registerHelper('drswrap', function() {
   );
 });
 
-  var source = $("#formalism-template").html();
-  var template = Handlebars.compile(source);
-  Handlebars.registerPartial('main',$('#main-partial').html());
-  Handlebars.registerPartial('equation',$('#equation-partial').html());
+// partials
 
-  var context = {"name":"drs","body":{"eqn":{"lhs":{"eqn":{"lhs":"&phi;","conn":"=","rhs":{"fxn":{"name":"drswrap","arg":{"dref":"&phi;<sup>d</sup>","conditions":"&phi;<sup>c</sup>"}}}}},"conn":"is","rhs":"a discourse representation structure (DRS)"}},"sub":[{"name":"drefs","eqn":{"lhs":"&phi;<sup>d</sup>","conn":"is","rhs":"a sequence of drefs introduced in the discourse"}},{"name":"conditions","eqn":{"lhs":"&phi;<sup>c</sup>","conn":"is","rhs":"a sequence of conditions, imposing constraints on the model against which sentences are evaluated"}}]};
-  template({"name":"drs","body":{"eqn":{"lhs":{"eqn":{"lhs":"&phi;","conn":"=","rhs":{"fxn":{"name":"drswrap","arg":{"dref":"&phi;<sup>d</sup>","conditions":"&phi;<sup>c</sup>"}}}}},"conn":"is","rhs":"a discourse representation structure (DRS)"}},"sub":[{"name":"drefs","eqn":{"lhs":"&phi;<sup>d</sup>","conn":"is","rhs":"a sequence of drefs introduced in the discourse"}},{"name":"conditions","eqn":{"lhs":"&phi;<sup>c</sup>","conn":"is","rhs":"a sequence of conditions, imposing constraints on the model against which sentences are evaluated"}}]});
-});
+Handlebars.registerPartial('main',
+  "{{#if name}}<tr class='title'><th colspan='3'>{{name}}</th></tr>{{/if}}{{#with body}}{{> main}}{{/with}}{{#with sub}}{{> main class='parts'}}{{/with}}{{#if eqn}}{{> equation eqn}}{{else if fxn}}{{#with fxn}}{{> (name)}}{{/with}}{{else}}<tr class='categorical'><td colspan='3'>{{this}}</td></tr>{{/if}}");
+Handlebars.registerPartial('equation',
+  "<table class='eqn'>{{#each this}}<tr><td class='lhs'>{{#with lhs}}{{#if eqn}}{{> equation eqn}}{{else if fxn}}{{> (fxn.name)}}{{else if symbol}}{{> (symbol)}}{{else}}{{this}}{{/if}}{{/with}}</td><td class='conn'>{{conn}}</td><td class='rhs'>{{#with rhs}}{{#if eqn}}{{> equation eqn}}{{else if fxn}}{{> (fxn.name)}}{{else if symbol}}{{> (symbol)}}{{else}}{{this}}{{/if}}{{/with}}</td></tr>{{/each}}</table>");

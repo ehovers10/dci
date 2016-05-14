@@ -1,18 +1,17 @@
-<table>
-<tr class="eqn">
-{% assign name = include.item %}
-<td class="lhs">
-{% for thing in name.lhs %}
-  {% include formalism/delegate.html item=thing %}
-{% endfor %}
-</td>
-{% assign name = include.item %}
-<td class="conn">{{ name.conn }}</td>
-{% assign name = include.item %}
-<td class="rhs">
-{% for thing in name.rhs %}
-  {% include formalism/delegate.html item=thing %}
-{% endfor %}
-</td>
-</tr>
+{% assign equationName = include.item %}
+{% assign level = include.level %}
+<table class="equation {% if level == 2 %}eqnn{% endif %}">
+  <tr class="eqn">
+    <td class="lhs">
+    {% for thing in equationName.lhs %}
+      {% include formalism/delegate.html item=thing level=2 %}
+    {% endfor %}
+    </td>
+    <td class="conn">{{ equationName.conn }}</td>
+    <td class="rhs">
+    {% for thing in equationName.rhs %}
+      {% include formalism/delegate.html item=thing %}
+    {% endfor %}
+    </td>
+  </tr>
 </table>

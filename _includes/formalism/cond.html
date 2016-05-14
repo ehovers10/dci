@@ -1,9 +1,5 @@
-{% assign element = include.item %}
-<tr class="cond">
-  <td colspan="3">
-    <span>For</span>
-    {% for piece in element.cond %}
-      <span>{{ piece | append: ",&nbsp;" }}</span>
-    {% endfor %}
-  </td>
-</tr>
+{% assign condElement = include.item %}
+<span>For</span>
+{% for piece in condElement.cond %}
+  <span>{{ piece | append: ",&nbsp;" }}</span>
+{% endfor %}

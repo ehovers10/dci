@@ -28,61 +28,6 @@ ul.seqlist {
   }
 }
 
-.element {
-  margin-bottom:1em;
-
-  td {
-    border: 1px solid #000;
-  }
-  .title {
-    margin-bottom:0.5em;
-  }
-  .cond {
-    margin: 0.5em 0;
-  }
-  .body {
-    margin-left:1em;
-    margin-bottom: 0.5em;
-  }
-  .parts {
-    margin-left: 2em;
-    margin-bottom: 0.5em;
-  }
-
-.eqn {
-  margin: auto;
-
-  .lhs {
-    margin: inherit;
-    //float:left;
-    text-align:right;
-    //max-width: calc(40% - 1em);
-    //max-width: -webkit-calc(40% - 1em);
-
-    &.level2 {
-      width: calc(20% - 1em);
-      width: -webkit-calc(20% - 1em);
-    }
-  }
-
-  .conn {
-    margin: inherit;
-    //float: left;
-    //width: 2em;
-    //line-height:0.95;
-    text-align: center;
-  }
-
-  .rhs {
-    margin: inherit;
-    //float:left;
-    //max-width: calc(60% - 1em);
-    //max-width: -webkit-calc(60% - 1em);
-    text-align:left;
-  }
-}
-}
-
 .set {
   font-weight: 600;
 }

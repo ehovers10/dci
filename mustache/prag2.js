@@ -1,8 +1,8 @@
 var pragmatics = {
-  "name": "drs",
-  "body": {
-    "eqn": {
-      "lhs": {
+  name: "drs",
+  body: {
+    eqn: {
+      lhs: {
         "eqn": {
           "lhs": "&phi;",
           "conn": "=",
@@ -17,11 +17,11 @@ var pragmatics = {
           }
         }
       },
-      "conn": "is",
-      "rhs": "a discourse representation structure (DRS)"
+      conn: "is",
+      rhs: "a discourse representation structure (DRS)"
     }
   },
-  "sub": [
+  sub: [
     {
       "name": "drefs",
       "eqn": {

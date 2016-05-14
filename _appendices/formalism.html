@@ -12,10 +12,14 @@ title: Formalism
 </ul>
 
 <div class="area pragmatics">
-<h2>Pragmatics</h2>
-{% for item in site.data.pragmatics %}
-{% include formalism/element.html argument=item %}
-{% endfor %}
+<table class="formalism">
+  <tr><td class="title">Pragmatics</td></tr>
+  {% for item in site.data.pragmatics %}
+  <tr>
+    <td>{% include formalism/element.html argument=item %}</td>
+  </tr>
+  {% endfor %}
+</table>
 </div>
 
 <div class="area semstructure" style="display:none;">
