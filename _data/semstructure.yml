@@ -1,47 +1,67 @@
 primitives:
-  body:
-    constants:
-      - lhs: "<span class='var'>Cons</span>"
+  - constants:
+    - fxn: eqn
+      arg:
+        lhs: "<span class='var'>Cons</span>"
         conn: "is"
         rhs: "a set of sets of constants of each type in <span class='set'>T</span>"
-    variables:
-      - lhs: "<span class='var'>Vars</span>"
+  - variables:
+    - fxn: eqn
+      arg:
+        lhs: "<span class='var'>Vars</span>"
         conn: "is"
         rhs: "a set of sets of variables of each type in <span class='set'>T</span>"
 
 semantic value:
-  body:
-    - lhs:
+  - fxn: eqn
+    arg:
+      lhs:
         - fxn: semwrap
           arg:
             inside: "&middot;"
             outside:
-              - "<span>i</span>"
-              - "<span class='var'>g</span>"
-              - "<span class='set'>M</span>"
+              - "<span class='var sup'>i</span>"
+              - "<span class='var sup'>g</span>"
+              - "<span class='set sup'>M</span>"
       conn: "is"
       rhs: "the semantic value function"
-  parts:
-    index of evaluation: "i : s"
-    assignment function: "g : Vars &rarr; D"
-    model:
-      body:
-        - lhs:
-            - lhs: "<span class='set'>M</span>"
+  - index of evaluation:
+    - fxn: eqn
+      arg:
+        lhs: "i : s"
+        conn: "is"
+        rhs: "an index of evaluation"
+  - assignment function:
+    - fxn: eqn
+      arg:
+        lhs: "g : Vars &rarr; D"
+        conn: "is"
+        rhs: "an assignment function"
+  - model:
+    - fxn: eqn
+      arg:
+        lhs:
+          - fxn: eqn
+            arg:
+              lhs: "<span class='set'>M</span>"
               conn: =
               rhs:
                 - fxn: seqwrap
                   arg:
-                    inside: "<span class='set'>D</span>, <span class='set'>V</span>"
+                    inside:
+                      - "<span class='set'>D</span>"
+                      - "<span class='set'>V</span>"
+        conn: "is"
+        rhs: "a model for the language"
+    - universe:
+      - fxn: eqn
+        arg:
+          lhs: universe
           conn: "is"
-          rhs: "a model for the language"
-      parts:
-        universe:
-          - lhs:
-              fxn: universe
-            conn: "is"
-            rhs: "a type structured universe of the discourse"
-        valuation:
-          - lhs: "<span class='set'>V</span> : Cons &rarr; <span class='set'>D</span>"
-            conn: "is"
-            rhs: "a valuation function that assigns type-relevant objects to each constant"
+          rhs: "a type structured universe of the discourse"
+    - valuation:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>V</span> : Cons &rarr; <span class='set'>D</span>"
+          conn: "is"
+          rhs: "a valuation function that assigns type-relevant objects to each constant"

@@ -1,0 +1,16 @@
+<span>
+  <span>&#x3008;</span>
+  <span>
+  {% for bit in include.argument.inside %}
+    {% include formalism/function.html argument=include.argument.inside %}
+    {% unless forloop.last %}<span>,</span>{% endunless %}
+  {% endfor %}
+  </span>
+  <span>&#x3009;</span>
+  <span>
+  {% for bit in include.argument.outside %}
+    {% include formalism/function.html argument=include.argument.outside %}
+    {% unless forloop.last %}<span>,</span>{% endunless %}
+  {% endfor %}
+  </span>
+</span>

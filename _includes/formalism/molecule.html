@@ -1,0 +1,23 @@
+{% assign molecule = include.argument %}
+{% assign moleculeName = molecule[0] %}
+{% assign atoms = molecule[1] %}
+{% assign cation = include.cation %}
+
+<div class="molecule" id="{{ moleculeName | slugify }}">
+
+  <div class="title">{{ moleculeName | capitalize }}</div>
+
+  {% for atom in atoms %}
+    <div class="atom">
+    {% if atom.fxn %}
+      {% include {{ atom.fxn | prepend: 'formalism/fxns/' | append: '.html' }} argument=atom.arg %}
+    {% elsif atom.first.last %}
+      {% include formalism/molecule.html argument=atom.first %}
+    {% else %}
+      {% for bit in atom %}
+        {% include {{ cation | prepend: 'formalism/' | append: '.html' }} %}
+      {% endfor %}
+    {% endif %}
+    </div>
+  {% endfor %}
+</div>

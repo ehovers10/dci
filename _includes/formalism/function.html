@@ -1,0 +1,5 @@
+{% if bit.fxn %}
+  {% include {{ bit.fxn | prepend: 'formalism/fxns/' | append: '.html' }} argument=bit.arg %}
+{% else %}
+  <div class="categorical">{{ bit }}</div>
+{% endif %}

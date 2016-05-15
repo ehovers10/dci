@@ -1,0 +1,13 @@
+<div class="eqn">
+  <div class="lhs">
+    {% for bit in include.argument.lhs %}
+      {% include formalism/function.html argument=include.argument.lhs %}
+    {% endfor %}
+  </div>
+  <div class="conn">{{ include.argument.conn }}</div>
+  <div class="rhs">
+  {% for bit in include.argument.rhs %}
+    {% include formalism/function.html argument=include.argument.rhs %}
+  {% endfor %}
+  </div>
+</div>
