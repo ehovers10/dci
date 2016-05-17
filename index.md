@@ -9,19 +9,19 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 
 But some of the stones are quite large; they require both of us to lift in unison and carefully place them into position on the wall. To get these stones in place, we must be willing to *collaborate* in our efforts. While placing these larger stones adds complication through the increased demand on coordination, the value of having such a stone in place is potentially great in reducing the overall effort required to bring our wall building task to a close.
 
-In many ways, inquiry is a similar endeavor to wall-building. {% include appendices/concept.html word="Information" base='information' %} takes the place of stones as the building blocks participants heft. Utterances take the place of hands and wheelbarrows as the conveyances of the building materials. And the finished wall maps to resolution of whatever {% include appendices/concept.html word='issues' base='issue' %} spurred our entering into the inquiry.
+In many ways, inquiry is a similar endeavor to wall-building. {% include appendices/word.html word="Information" base='information' %} takes the place of stones as the building blocks participants heft. Utterances take the place of hands and wheelbarrows as the conveyances of the building materials. And the finished wall maps to resolution of whatever {% include appendices/word.html word='issues' base='issue' %} spurred our entering into the inquiry.
 
 Discourse is a realization of joint inquiry, and as such, it is cooperative in the way that Paul Grice {% include appendices/ref.html id="grice1989" o="" p="26" %} conceives of it. Honestly engaged discourse participants seek to follow the *Cooperative principle*:
 
 <!-- Cooperative principle -->
 {% assign grice = site.data.definitions["cooperative principle"] %}
-{% include examples/ex.html type="def" term="Cooperative principle" sent="Example" sub="Sub-example" defn=grice %}
+{% include examples/def.html type="def" term="Cooperative principle" sent="Example" sub="Sub-example" defn=grice %}
 
 But interaction in discourse is more integrative than this. Helpful interlocutors work together, jointly hefting larger bits of information, with the goal of bringing the particular issue of the inquiry to a close. They obey what we might call the *Collaborative Principle*:
 
 <!-- Collaborative principle -->
 {% assign collab = site.data.definitions["collaborative principle"] %}
-{% include examples/ex.html type="def" term="Collaborative principle" sent="Example" sub="Sub-example" defn=collab %}
+{% include examples/def.html type="def" term="Collaborative principle" sent="Example" sub="Sub-example" defn=collab %}
 
 The purpose of the project contained in these pages is to develop and motivate a formal framework of *collaborative discourse interpretation*. To do so, I take a three-pronged approach:
 

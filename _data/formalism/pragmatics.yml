@@ -86,24 +86,33 @@ information state:
         lhs: "<span class='set'>R</span> : (&pi;t)"
         conn: "is"
         rhs: "a set of partitions of the common ground"
-    - drefs:
-      - fxn: eqn
-        arg:
-          lhs: dref
-          conn: "is"
-          rhs: "a sequence of discourse referents"
-    - sandbox:
-      - fxn: eqn
-        arg:
-          lhs: sand
-          conn: "is"
-          rhs: "a sequence propositional radical, completion pairs representing the collaborative space of the discourse"
-    - record:
-      - fxn: eqn
-        arg:
-          lhs: rec
-          conn: "is"
-          rhs: "a sequence of discourse referents of type &sigma; that provides a record of changes made to the information state throughout the discourse"
+  - drefs:
+    - fxn: eqn
+      arg:
+        lhs:
+          - fxn: seqwrap
+            arg:
+              inside: dref
+        conn: "is"
+        rhs: "a sequence of discourse referents"
+  - sandbox:
+    - fxn: eqn
+      arg:
+        lhs:
+          - fxn: seqwrap
+            arg:
+              inside: sand
+        conn: "is"
+        rhs: "a sequence propositional radical, completion pairs representing the collaborative space of the discourse"
+  - record:
+    - fxn: eqn
+      arg:
+        lhs:
+          - fxn: seqwrap
+            arg:
+              inside: rec
+        conn: "is"
+        rhs: "a sequence of discourse referents of type &sigma; that provides a record of changes made to the information state throughout the discourse"
 
 cooperative update:
   - informative update:
@@ -160,7 +169,10 @@ cooperative update:
             arg:
               lhs: "u<sub>1</sub>..u<sub>n</sub>"
               conn: "&#x29c0;"
-              rhs: dref
+              rhs:
+                - fxn: seqwrap
+                  arg:
+                    inside: "dref"
           - "&lambda;&sigma;( &forall;(k &isin; [0..n])( &delta;<sub>&sigma;</sub>[k] = <span class='var'>g</span>(u<sub>k</sub> ) )"
 
 collaborative update:
@@ -235,7 +247,10 @@ speech acts:
                   arg:
                     lhs: "i<sub><span class='var'>I</span></sub>"
                     conn: "&cap;"
-                    rhs: uinf
+                    rhs:
+                      - fxn: semwrap
+                        arg:
+                          inside: "<span class='var'>U</span><sup>inf</sup><span>"
   - question:
     - fxn: eqn
       arg:
@@ -255,7 +270,10 @@ speech acts:
                   arg:
                     lhs: "i<sub><span class='var'>I</span></sub>"
                     conn: "&cap;"
-                    rhs: uinf
+                    rhs:
+                      - fxn: semwrap
+                        arg:
+                          inside: "<span class='var'>U</span><sup>inf</sup><span>"
   - conjecture:
     - fxn: eqn
       arg:
@@ -290,7 +308,10 @@ speech acts:
                   arg:
                     lhs: "i<sub><span class='var'>I</span></sub>"
                     conn: "&cap;"
-                    rhs: uinf
+                    rhs:
+                      - fxn: semwrap
+                        arg:
+                          inside: "<span class='var'>U</span><sup>inf</sup><span>"
 
 bare plurals:
   -

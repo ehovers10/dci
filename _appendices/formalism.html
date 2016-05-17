@@ -1,49 +1,73 @@
 ---
 title: Formalism
+js: bunch
 ---
 
 <div class="bunch">
 <ul class="body-nav">
-  <li><a href="#" class="types">Types and translations</a></li>
+  <li><a href="#" class="types">Types</a></li>
   <li><a href="#" class="pragmatics">Pragmatics</a></li>
   <li><a href="#" class="semstructure">Semantic Structure</a></li>
   <li><a href="#" class="semrules">Semantic Rules</a></li>
+  <li><a href="#" class="model">A Model</a></li>
   <li><a href="#" class="relations">Predication in <span class="set">CU</span></a></li>
   <li><a href="#" class="definitions">Definitions</a></li>
 </ul>
 
 <div class="area types">
 <div class="formalism">
-  <h2>Types</h2>
-  {% for item in site.data.types %}
-    {% include formalism/molecule.html argument=item cation="condition" %}
+  <h3>All types</h3>
+
+  <ul class="setlist">
+  {% for item in site.data.formalism.types.basic %}
+    <li><a href="#" title="{{ item[0] }}" onclick="return false;">{{ item[1] }}</a></li>
   {% endfor %}
+  </ul>
 
-  <h2>Translations</h2>
+  <h3>Discourse referent types</h3>
+  <ul class="setlist">
+  {% for item in site.data.formalism.types.dref %}
+    <li><a href="#" title="{{ item[0] }}" onclick="return false;">{{ item[1] }}</a></li>
+  {% endfor %}
+  </ul>
+
 </div>
 </div>
 
-<div class="area pragmatics">
+<div class="area pragmatics" style="display:none;">
 <div class="formalism">
   <h2>Pragmatics</h2>
-  {% for item in site.data.pragmatics %}
+  {% for item in site.data.formalism.pragmatics %}
     {% include formalism/molecule.html argument=item cation="condition" %}
   {% endfor %}
 </div>
 </div>
 
 <div class="area semstructure" style="display:none;">
+<div class="formalism">
   <h2>Semantic structure</h2>
-  {% for item in site.data.semstructure %}
+  {% for item in site.data.formalism.semstructure %}
     {% include formalism/molecule.html argument=item cation="condition" %}
   {% endfor %}
 </div>
+</div>
 
 <div class="area semrules" style="display:none;">
+<div class="formalism">
   <h2>Semantic rules</h2>
-  {% for item in site.data.semrules %}
+  {% for item in site.data.formalism.semrules %}
     {% include formalism/molecule.html argument=item cation="condition" %}
   {% endfor %}
+</div>
+</div>
+
+<div class="area model" style="display:none;">
+<div class="formalism">
+  <h2>A model</h2>
+  {% for item in site.data.formalism.model %}
+    {% include formalism/molecule.html argument=item cation="condition" %}
+  {% endfor %}
+</div>
 </div>
 
 <div class="area relations" style="display:none;">
@@ -53,23 +77,9 @@ title: Formalism
 
 <div class="area definitions" style="display:none;">
   <h2>Definitions</h2>
-  {% include formalism/definitions.html %}
+  {% for item in site.data.definitions %}
+    {% include formalism/molecule.html argument=item cation="condition" %}
+  {% endfor %}
 </div>
 
 </div>
-
-<script>
-$(document).ready( function() {
-  $( ".body-nav a" ).click( function() {
-    var temp = $( this ).attr( "class" );
-    $( this ).closest( ".bunch" ).find( ".area" ).each( function() {
-      if ( $( this ).hasClass( temp ) ) {
-        $( this ).css( "display", "block" );
-      } else {
-        $( this ).css( "display", "none" );
-      }
-    });
-    return false;
-  });
-});
-</script>

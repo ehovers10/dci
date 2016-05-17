@@ -1,0 +1,204 @@
+domains:
+  - situations:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>D</span><sub><span class='var'>s</span></sub>"
+          conn: =
+          rhs:
+            - fxn: curlywrap
+              arg:
+                inside:
+                  - <span class='var'>s</span><sub>1</sub>
+                  - <span class='var'>s</span><sub>2</sub>
+                  - <span class='var'>s</span><sub>3</sub>
+                  - "&hellip;"
+  - individuals:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>D</span><sub><span class='var'>e</span></sub>"
+          conn: =
+          rhs:
+            - fxn: curlywrap
+              arg:
+                inside:
+                  - a
+                  - b
+                  - c
+                  - d
+                  - e
+                  - "&hellip;"
+predicates:
+  - bears:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>V</span>(<span class='var'>bears</span>)"
+          conn: =
+          rhs:
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>1</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+                        - b
+                        - e
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>2</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+                        - b
+                        - c
+                        - d
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>3</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+  - dangerous:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>V</span>(<span class='var'>dangerous</span>)"
+          conn: =
+          rhs:
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>1</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+                        - b
+                        - d
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>2</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>3</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - b
+                        - d
+  - grizzly:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>V</span>(<span class='var'>grizzly</span>)"
+          conn: =
+          rhs:
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>1</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>2</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+                        - c
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>3</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - a
+  - koala:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>V</span>(<span class='var'>koala</span>)"
+          conn: =
+          rhs:
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>1</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - b
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>2</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - b
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>3</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - b
+  - polar:
+      - fxn: eqn
+        arg:
+          lhs: "<span class='set'>V</span>(<span class='var'>polar</span>)"
+          conn: =
+          rhs:
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>1</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - "&nbsp;"
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>2</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - d
+            - fxn: eqn
+              arg:
+                lhs: <span class='var'>s</span><sub>3</sub>
+                conn: "&rArr;"
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - e

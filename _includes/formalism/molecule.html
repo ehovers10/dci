@@ -5,14 +5,14 @@
 
 <div class="molecule" id="{{ moleculeName | slugify }}">
 
-  <div class="title">{{ moleculeName | capitalize }}</div>
+  <div class="title{% if include.title == 'no' %} off{% endif %}">{{ moleculeName | capitalize }}</div>
 
   {% for atom in atoms %}
     <div class="atom">
     {% if atom.fxn %}
       {% include {{ atom.fxn | prepend: 'formalism/fxns/' | append: '.html' }} argument=atom.arg %}
     {% elsif atom.first.last %}
-      {% include formalism/molecule.html argument=atom.first %}
+      {% include formalism/molecule.html argument=atom.first cation=cation %}
     {% else %}
       {% for bit in atom %}
         {% include {{ cation | prepend: 'formalism/' | append: '.html' }} %}

@@ -6,12 +6,19 @@ div.molecule {
   margin-bottom: 1em;
 
   div.title {
+    font-family: glam;
+    font-size:1.5em;
     margin-bottom:0.5em;
     font-weight:600;
+
+    &.off {
+      display:none;
+    }
   }
 
   div.atom {
-    margin-left:0.5em;
+    margin-left:1em;
+    margin-bottom:0.5em;
   }
 
   div.eqn {
@@ -28,6 +35,20 @@ div.molecule {
     div.rhs {
       display: table-cell;
       text-align: left;
+
+      &.mult {
+        border-left: 2px solid #000;
+        border-radius: 5px;
+        padding: 2px 0 2px 5px;
+      }
+    }
+  }
+
+  div.wrap {
+    display: inline;
+
+    div {
+      display: inline;
     }
   }
 

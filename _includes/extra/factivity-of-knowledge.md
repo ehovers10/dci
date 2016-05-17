@@ -7,7 +7,7 @@ To the extent that knowledge ascriptions must embed truths[^factivity], all that
 Additionally, not all knowledge ascriptions are canonical. A variety of putative attributions of knowledge do not have, on their surface, sentential complement clauses, which indicates that they do not embed propositional objects.
 
 <!-- Varieties of knowledge -->
-{% include examples/ex2.html term="varieties of knowledge" type="sent" %}
+{% include examples/ex.html term="varieties of knowledge" type="sent" %}
 
 Surface appearances aren't always the whole story; perhaps a proper filling out will include cameos by propositions lurking under the surface {% include appendices/ref.html id="stanley2001" o="n" e="." %} But sometimes the best guide to what there is is exactly what appearances tell us; in the case of knowledge ascriptions, examples such as [Varieties of knowledge](#varieties-of-knowledge) tell us that an individual's knowledge can subsume more than just propositional information {% include appendices/ref.html id="bengson2012a,grzankowski2012" o="n" e="." %}[^intellectualism]
 
@@ -18,7 +18,7 @@ In unifying the varieties of knowledge, treating them as different queries on th
 We also get to avoid contorting surface form of knowledge ascriptions in interpreting them.
   
 <!-- Conjunctive knowledge -->
-{% include examples/ex2.html term="conjunctive knowledge" type="sent" %}
+{% include examples/ex.html term="conjunctive knowledge" type="sent" %}
 
 The inquiry-first perspective on knowledge treats ascriptions such as that in [Conjunctive knowledge](#conjunctive-knowledge) as posing a conjunctive query on an inquiry for the subject. Since the inquiry is a single complex process containing both objectual and propositional elements, we need only make one call to the inquiry and have it return a single information state. This is directly represented in the surface form of the ascription. An approach that treats personal knowledge as a distinct relation from propositional knowledge must appeal to elided material in the deep structure of the conjunctive ascription. An approach that attempts to reduce personal knowledge to propositional knowledge has already given up the game of respecting surface structure, positing additional, unvoiced material even in atomic knowledge ascriptions.
 

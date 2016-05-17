@@ -1,0 +1,20 @@
+<div style="margin:1em;{% if include.type == 'explic' %}margin-bottom:2em;padding:0.5em;border:1px solid #000;{% endif %}" id="{{ include.term | slugify }}">
+  <div style="margin-bottom:0.5em;">
+    <span class="extitle">
+    {% case include.type %}
+      {% when 'explic' %}
+        Critical explication
+      {% when 'obs' %}
+        {% assign obsex = obsex | plus: 1 %}
+        {{ obsex | prepend: 'Observation ' }}
+      {% when 'def' %}
+        {% assign defex = defex | plus: 1 %}
+        {{ defex | prepend: 'Definition ' }}
+    {% endcase %}
+    </span>
+    <span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
+  </div>
+  <blockquote {% if include.type == 'explic' %}style="border-left:none;"{% endif %}>
+    {{ include.defn | markdownify }}
+  </blockquote>
+</div>

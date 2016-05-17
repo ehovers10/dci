@@ -12,13 +12,13 @@ toc: yes
 
 Inquiry is, according to Robert Stalnaker {% include appendices/ref.html id="stalnaker1987" o="" e="," %} "the enterprise of forming, testing, and revising beliefs". This is a goal-directed enterprise. Both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
 
-It is tempting to maintain that the {% include appendices/concept.html word='end of inquiry' %} is truth. While possession of the truth may be what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. The goal of engaging in inquiry is to achieve a specific *cognitive* state with true propositions as its content.
+It is tempting to maintain that the {% include appendices/word.html word='end of inquiry' %} is truth. While possession of the truth may be what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. The goal of engaging in inquiry is to achieve a specific *cognitive* state with true propositions as its content.
 
 C.S. Peirce and others following in his wake {% include appendices/ref.html id="levi1980" o="n" e="," %} have suggested that so strong a cognitive tie to truth is too lofty a goal. They emphasize that assurance of truth is beyond our ken and that the most we can genuinely hope for at the end of inquiry is the *settlement of opinion*, for:
 
 > "it is clear that nothing out of the sphere of our knowlege can be our object, for nothing which does not affect the mind can be the motive for mental effort. The most that can be maintained is, that we seek for a belief that we shall *think* to be true. But we think each one of our beliefs to be true, and indeed, it is mere tautology to say so." {% include appendices/ref.html id="peirce1877" o="n" e="" p="11" %}
 
-It is possible to take the pragmatist bait and insist that truth is still the end of inquiry by accepting that whatever is output from the process of inquiry *just is* truth. More conservatively, we can cleave to a correspondence account of truth while maintaining that the final aim of inquiry involves {% include appendices/concept.html word='wide content' %} by delimiting a natural, restricted category of *proper* inquiry that can be reliably expected to produce true propositions. We then shift our focus to characterizing the nature of *proper inquiry*.
+It is possible to take the pragmatist bait and insist that truth is still the end of inquiry by accepting that whatever is output from the process of inquiry *just is* truth. More conservatively, we can cleave to a correspondence account of truth while maintaining that the final aim of inquiry involves {% include appendices/word.html word='wide content' %} by delimiting a natural, restricted category of *proper* inquiry that can be reliably expected to produce true propositions. We then shift our focus to characterizing the nature of *proper inquiry*.
 
 Proper inquiry is a rule governed process. Rule-following has the practical advantage of improving the reliability of the inquiry, but this is merely the icing. The principal connection to rule following is a conceptual one. The cognitive state that the inquirer seeks is a *praiseworthy* one, and one does not garner praise simply by stumbling onto true propositions. Undertaking the process of inquiry is important to earning the accolades that come with possessing the truth.
 
@@ -54,7 +54,7 @@ Given the structure of information states as Levi understands them, all revision
 
 <!-- Levi identity -->
 {% assign leviidentity = site.data.definitions["levi identity"] %}
-{% include examples/ex.html type="def" term="Levi Identity" defn=leviidentity %}
+{% include examples/def.html type="def" term="Levi Identity" defn=leviidentity %}
 
 The problem of justification is thus reduced to the problem of specifying properties of expansion and contraction operators such that all warranted changes in belief are subsumed under their operation. This captures the deductive phase of inquiry. Given as input a proposition with which an information state is to be revised, there is a set of rules specifying exactly how the revision ramifies through the information state.
 
@@ -72,7 +72,7 @@ James famously argued that if one's belief choice is *live*, *momentous*, and *f
 
 <!-- Jamesian amendment -->
 {% assign jamesianamendment = site.data.definitions["jamesian amendment"] %}
-{% include examples/ex.html type="def" term="Jamesian amendment" defn=jamesianamendment %}
+{% include examples/def.html type="def" term="Jamesian amendment" defn=jamesianamendment %}
 
 The Jamesian amendment makes inquiry an optimization task between taking on too many falsehoods and leaving out too many truths. To accommodate this idea, we need to expand our structural representation of inquiry. The information state model from epistemic logic can account for the error-avoidance goal. But we need a way of representing two elements entailed by the goal of acquiring truth. The first is the *impetus to revise* -- information state structure that captures an inquirer's motivation to strive for knowledge. The second is the *will to believe* -- an account of acceptance of a belief in the absence of certainty in its truth, and an explanation of how this maneuver can be rationally viable.[^informationpotential]
 
@@ -98,7 +98,7 @@ James' characterization of the motivation for the will to believe emphasizes tha
 {% capture levi %}
 {% include page-elements/min.html id="Levi on goal generated constraints" %}
 {% endcapture %}
-{% include examples/ex.html type="explic" term="Levi on goal generated constraints" sent="Example" sub="Sub-example" defn=levi %}
+{% include examples/def.html type="explic" term="Levi on goal generated constraints" sent="Example" sub="Sub-example" defn=levi %}
 
 This extension of inquiry based on the Jamesian amendment is intended to capture the abductive phase of inquiry. The two parts of the extension happen to map onto a commonly cited distinction within the abductive phase {% include appendices/ref.html id="campos2011,shanahan1986" o="n" e="." %} *Creative abduction* is associated with the scientific context of discovery. It is involved when an inquirer recognizes a scientifically fruitful question and develops a set of hypotheses that serve as potential answers to that question. Incompleteness, modeled as a partition on an information state, represents the output of creative abduction. The extension does not provide us, specifically, with an account of the conditions under which an agent comes to represent its own incompleteness. And this is all to the good, for creative abduction is notoriously unamenable to logical characterization. We don't have, nor do we want, a topic-neutral story of revision into incompleteness. But the extension does provide a uniform representation of what a state that *calls for* revision looks like.
 
@@ -130,7 +130,7 @@ Rational, dilated processes are governed by a system of structural constraints -
 {% capture bratman %}
 {% include page-elements/min.html id="Bratman et al. on plans" %}
 {% endcapture %}
-{% include examples/ex.html type="explic" term="Bratman et al. on plans" sent="Example" sub="Sub-example" defn=bratman %}
+{% include examples/def.html type="explic" term="Bratman et al. on plans" sent="Example" sub="Sub-example" defn=bratman %}
 
 Proper inquiry is no different. A plan of inquiry imposes *coherence* constraints on contributions to the inquiry. Future additions must follow the general course set by previous contributions. But, nature can so conspire to turn certain conjectures into dead ends, and a healthy plan of inquiry will accommodate mechanisms to adjust the plan on the fly.
 
@@ -170,15 +170,15 @@ Knowledge is not, as Levi suggests, merely infallible belief. It requires inter-
 
 ### Advancing the inquiry
 
-A conjecture is a kind of conversational move. It is defined in terms of the role it plays in advancing the inquiry in which it occurs. While speech acts are finely individuated, there is a small set of {% include appendices/concept.html word='contribution' %} types derivable from the goals of inqury.[^ConversationalForce]
+A conjecture is a kind of conversational move. It is defined in terms of the role it plays in advancing the inquiry in which it occurs. While speech acts are finely individuated, there is a small set of {% include appendices/word.html word='contribution' %} types derivable from the goals of inqury.[^ConversationalForce]
 
-The primary goal of inquiry is to come to know something one did not know at its outset. Thus, an individual can advance us toward that goal by submitting (proposing) information to be taken on as mutually accepted. We call this kind of contribution an {% include appendices/concept.html word='assertion.' %}
+The primary goal of inquiry is to come to know something one did not know at its outset. Thus, an individual can advance us toward that goal by submitting (proposing) information to be taken on as mutually accepted. We call this kind of contribution an {% include appendices/word.html word='assertion.' %}
 
-The end point of an inquiry depends in part on its starting point, which is the *issue* that is to be resolved by the process of inquiry. An individual can submit a new issue to the inquiry to be taken on as providing a new goal for the inquiry.  We call this contribution a {% include appendices/concept.html word='question' %}.[^command][^mood]
+The end point of an inquiry depends in part on its starting point, which is the *issue* that is to be resolved by the process of inquiry. An individual can submit a new issue to the inquiry to be taken on as providing a new goal for the inquiry.  We call this contribution a {% include appendices/word.html word='question' %}.[^command][^mood]
 
 These commonly cited examples do not provide an exhaustive list of conceptually possible contribution types. I don't intend to provide identity conditions for types of contribution, but the examples do share certain things in common, and their common traits can provide us with criteria for recognizing novel contribution types.
 
-+ Genuine contribution types *operate on* {% include appendices/concept.html word='*information*' %} in a distinctive way. Assertions expand the context set, and questions partition it. The currency of inquiry is information, and its value is tied to the ways in which information can be put to use to advance the inquiry toward its goal.
++ Genuine contribution types *operate on* {% include appendices/word.html word='*information*' %} in a distinctive way. Assertions expand the context set, and questions partition it. The currency of inquiry is information, and its value is tied to the ways in which information can be put to use to advance the inquiry toward its goal.
 + Conversational moves that contribute to inquiry *anticipate an appropriate response*, and *place constraints on the form of the response*. Assertion anticipates either acceptance or rejection of the asserted content, and (modulo repair tactics for failed presuppositions) restricts responses to either acceptance or rejection. Questions anticipate an answer, and restrict responses to those assertions that at least partially resolve the issue raised.[^QACongruence]
 + Genuine contribution types are performed by way of a *conventionalized linguistic tool*. If a contribution belongs to a specific type, language will have found a way to implement that type. Assertions and questions are stronly tied to linguistic mood, although the connection between these contribution types and mood is a tricky one {% include appendices/ref.html id="portner1997,starr2010" o="n" e="." %}
 
@@ -215,7 +215,7 @@ To the extent that knowledge ascriptions must embed truths,[^factivity] all that
 Importantly, though, not all knowledge ascriptions are canonical. A variety of putative attributions of knowledge do not have, on their surface, sentential complement clauses, which indicates that they do not embed propositional objects.
 
 <!-- Varieties of knowledge -->
-{% include examples/ex2.html term="varieties of knowledge" type="sent" %}
+{% include examples/ex.html term="varieties of knowledge" type="sent" %}
 
 Surface appearances aren't always the whole story; perhaps a proper filling out will include cameos by propositions lurking under the surface {% include appendices/ref.html id="stanley2001" o="n" e="." %} But sometimes the best guide to what there is is exactly what appearances tell us; in the case of knowledge ascriptions, it appears that an individual's knowledge can subsume more than just propositional information {% include appendices/ref.html id="bengson2012a,grzankowski2012" o="n" e="." %} [^intellectualism]
 
@@ -226,7 +226,7 @@ By unifying the varieties of knowledge -- treating them as different queries on 
 We also get to avoid contorting surface form of knowledge ascriptions in interpreting them.
 
 <!-- Conjunctive knowledge -->
-{% include examples/ex2.html term="conjunctive knowledge" type="sent" %}
+{% include examples/ex.html term="conjunctive knowledge" type="sent" %}
 
 The inquiry-first perspective on knowledge treats ascriptions such as that in [Conjunctive knowledge](#conjunctive-knowledge) as posing a conjunctive query on an inquiry being carried out by the subject. Since the inquiry is a single complex process containing both objectual and propositional elements, we need only make one call to the inquiry and have it return a single information state. This is directly represented in the surface form of the ascription. An approach that treats personal knowledge as a distinct relation from propositional knowledge must appeal to elided material in the deep structure of the conjunctive ascription. An approach that attempts to reduce personal knowledge to propositional knowledge has already given up the game of respecting surface structure, positing additional, unvoiced material even in atomic knowledge ascriptions.
 
@@ -275,8 +275,10 @@ Knowledge stabilizes belief; this, it explains why individuals persist in their 
 Truth is of basic epistemic value, but it isn't clear that it is the only value relevant to knowledge. Ernest Sosa {% include appendices/ref.html id="sosa2003" o="" %} posits four distinct types of value involved in an individual possessing a bit of knowledge.
 
 <!-- Types of value -->
-{% include examples/sami.html title="value of knowledge" %}
-
+{% capture valk %}
+{% include appendices/typology.html distinction="value of knowledge" biblio="no" %}
+{% endcapture %}
+{% include examples/def.html type="def" term="Value of knowledge typology" defn=valk %}
 *Success* is the fundamental epistemic value, but it does not exhaust the value to which the knower can lay claim. The *praxis* values, too, are genuine values. We think of a system that brings about knowledge as better than a similar system that fails to do so. But praxical value is parasitic on *success* value, both in the sense that it does not exist absent success, and that it adds no value for the knower that is not already provided by success. We, as third parties, can praise a system -- or the agent who implements that system -- for succeeding well. But, having so succeeded, the agent gets nothing more out of having done it well. Performance value seems to gain indepenedence from success, in that it is a measure of the dispositions of a belief forming system, and a disposition can be present even in the absence of its stimulus conditions. The performance value *for* the knower, though, is similarly nothing beyond that provided by success. Having witnessed success, the knower gets little else in knowing that we would also have praised him had the world so conspired to make his belief false.
 
 The additional value associated with knowledge, as nice as they may be for an evaluation of the world, are practically irrelevant for the knower. The intuition that drives the epistemic value problem -- the one that is behind Meno's initial response -- is that possessing knowledge makes a difference to a believer's life.[^epiphenomenalvalue]

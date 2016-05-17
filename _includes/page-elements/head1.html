@@ -14,5 +14,6 @@
   <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
   <script src="{{ 'open.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
   <script src="{{ 'group.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
+  {% if page.js contains "bunch" %}<script src="{{ 'bunch.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>{% endif %}
   <script src="{{ 'totop.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
 </head>

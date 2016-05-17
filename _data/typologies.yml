@@ -1,0 +1,81 @@
+structure of inquiry:
+  Deduction:
+    Function: [Expand,Contract]
+    Structure: Possibility space
+    Operation: Revision
+    reference: [levi1980]
+    Cognitive tool: Full belief
+  Abduction:
+    Function: [Partition,Prefer]
+    Structure: [Structured possibility space,Preference ranking]
+    Operation: [Partitioning relation,Ordering relation]
+    reference: [peirce1877,james1896]
+    Cognitive tool: [Iritation of doubt,Will to believe]
+  Induction:
+    Function: [Cohere,Correct]
+    Structure: [Sandbox,Radicals and completions]
+    Operation: [Dref introduction,Re-saturate]
+    reference: [bratman1988,[mill1859,moffett2007]]
+    Cognitive tool: [Dilated process,Collective criticism]
+  Implementation:
+    Function: Accept
+    Structure: Articulated info states
+    Operation: Merge
+    reference: [git]
+    Cognitive tool: Version control
+
+value of knowledge:
+  success:
+    description:
+      "Believing a correct answer to a question of interest."
+    nature: inherent
+    object: product
+    reference: [zagzebski2003,sosa2003,riggs2009]
+  praxical:
+    description:
+      - "Being an instrument to bringing about true beliefs."
+      - "Having brought about a true belief from the exercise of excellences constitutive of ones cognitive character."
+    nature: [instrumental,intrinsic]
+    object: [mechanism,system]
+    reference: [sosa2003]
+  performance:
+    description:
+      "Having the disposition to deliver true beliefs when properly installed in a suitable environment."
+    nature: extrinsic
+    object: mechanism
+    reference: [sosa2003]
+  credit:
+    description:
+      "Instantiating a skill in believing."
+    nature: intrinsic
+    object: system
+    reference: [riggs2009,greco2003]
+  stability:
+    description:
+      "Serving the retention of true belief in the face of misleading defeaters."
+    nature: intrinsic
+    object: product
+    reference: [meno,williamson2000,gardiner]
+
+context sensitivity:
+  attitudinal:
+    contextualism:
+      "Attitudes are relations between individuals and propositions. Belief, for instance, is a holding true of a proposition by a believer."
+    relativism:
+      "Attitudes are relations between individuals and properties. Belief, for instance, involves a believer self-ascribing a property."
+    reference:
+      [lewis1979,egan2007a]
+  perspectival:
+    contextualism:
+      "The speaker's context infects the evaluation of sentences for truth."
+    relativism:
+      "An assessor's context infects the evaluation of sentences for truth."
+    reference:
+      [macfarlane2009,macfarlane2011,egan2005a,cappelen2009,vonfintel2008]
+  stratigraphical:
+    contextualism:
+      "Context infects sentence interpretation by filling in elements that determine the proposition expressed by an utterance."
+    relativism:
+      "Context infects sentence interpretation by filling in elements that determine whether a proposition is evaluated as true."
+    reference:
+      [lasersohn2005,glanzberg2007,kaplan1977,lewis1980,stephenson2007]

@@ -56,7 +56,33 @@ semantic value:
     - universe:
       - fxn: eqn
         arg:
-          lhs: universe
+          lhs:
+            - fxn: eqn
+              arg:
+                lhs: "<span class='set'>D</span>"
+                conn: =
+                rhs:
+                  - fxn: curlywrap
+                    arg:
+                      inside:
+                        - fxn: eqn
+                          arg:
+                            lhs:
+                              - fxn: curlywrap
+                                arg:
+                                  inside:
+                                    - fxn: eqn
+                                      arg:
+                                        lhs: "<span class='var'>e</span>"
+                                        conn: "&isin;"
+                                        rhs: "<span class='set'>D</span><sub>&alpha;</sub>"
+                            conn: ":"
+                            rhs:
+                              - fxn: eqn
+                                arg:
+                                  lhs: "&alpha;"
+                                  conn: "&isin;"
+                                  rhs: "  <span class='set'>T</span>"
           conn: "is"
           rhs: "a type structured universe of the discourse"
     - valuation:

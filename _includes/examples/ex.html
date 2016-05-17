@@ -1,42 +1,40 @@
-<div style="margin:1em;{% if include.type == 'explic' %}margin-bottom:2em;padding:0.5em;border:1px solid #000;{% endif %}" id="{{ include.term | slugify }}">
-  <div style="margin-bottom:0.5em;">
-  <span class="extitle">
-{% case include.type %}
-  {% when 'ex' %}
 {% assign ex = ex | plus: 1 %}
-{{ ex | prepend: 'Example ' }}
-  {% when 'explic' %}
-Critical explication
-  {% when 'obs' %}
-{% assign obsex = obsex | plus: 1 %}
-{{ obsex | prepend: 'Observation ' }}
-  {% when 'def' %}
-{% assign defex = defex | plus: 1 %}
-{{ defex | prepend: 'Definition ' }}
-{% endcase %}
-  </span>
-<span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
+
+{% if include.type %}
+  {% assign bits = include.type %}
+{% else %}
+  {% assign bits = 'sent' %}
+{% endif %}
+{% assign example = site.data.examples.[include.term].[bits] %}
+
+<div style="margin:1em;" id="{{ include.term | slugify }}">
+  <div style="margin-bottom:0.5em;">
+    <span style="margin-right:0.5em;font-weight:600;">{{ ex | prepend: 'Example ' }}</span>
+    <span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
   </div>
 
-  <blockquote {% if include.type == 'explic' %}style="border-left:none;"{% endif %}>
-{% case include.type %}
-  {% when 'ex' %}
-{% if include.sub %}
-  <div style="margin-right:0.25em;padding-left:1.25em;text-indent:-1.25em;">a.
-  <span>{{ include.sent }}</span></div>
-  {% assign pop = 0 %}
-  {% assign snap = 'b,c,d' | split: ',' %}
-  {% assign subs = include.sub | split: '|' %}
-  {% for item in subs %}
-  <div style="margin-right:0.25em;padding-left:1.25em;text-indent:-1.25em;"><span>{{ snap[forloop.index0] | append: '.' }}
-  <span>{{ item }}</span></span></div>
-  {% assign pop = pop | plus: 1 %}
-  {% endfor %}
-{% else %}
-  <span>{{ include.sent }}</span>
-{% endif %}
-  {% else %}
-{{ include.defn | markdownify }}
-{% endcase %}
+  <blockquote>
+      {% if example["external"] %}
+        {% for snip in site.snippets %}
+          {% if snip.label == example["external"] %}
+            {{ snip.content }}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+    <table>
+    {% for item in example %}
+      <tr>
+      {% if item.size == 1 %}
+      {% for i in item %}
+         <th>{{ i[0] | append: ':&nbsp;' }}</th>
+         <td align="top">{{ i[1] }}</td>
+      {% endfor %}
+      {% else %}
+        <td>{{ item }}</td>
+      {% endif %}
+      </tr>
+    {% endfor %}
+      {% endif %}
+    </table>
   </blockquote>
 </div>

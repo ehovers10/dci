@@ -1,4 +1,4 @@
-{% assign dist = site.data.definitions[include.distinction] %}
+{% assign dist = site.data.typologies[include.distinction] %}
 
 {% assign carol = '' %}
 
@@ -39,5 +39,7 @@
   {% endfor %}
 </table>
 
-<h3>References</h3>
-{% include page-elements/reflist.html %}
+<div {% if include.biblio == "no" %}style="height:0;overflow-y:hidden;"{% endif %}>
+  <h3>References</h3>
+  {% include page-elements/reflist.html %}
+</div>

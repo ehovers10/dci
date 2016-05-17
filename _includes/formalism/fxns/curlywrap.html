@@ -1,12 +1,12 @@
 <div class="wrap">
-  <div>&#x27e8;</div>
+  <div>{</div>
   <div>
   {% for bit in include.argument.inside %}
     {% include formalism/function.html argument=include.argument.inside %}
     {% unless forloop.last %}<span>,</span>{% endunless %}
   {% endfor %}
   </div>
-  <div>&#x27e9;</div>
+  <div>}</div>
   <div>
   {% for bit in include.argument.outside %}
     {% include formalism/function.html argument=include.argument.outside %}
