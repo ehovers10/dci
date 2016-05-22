@@ -168,7 +168,7 @@ According to collaborative update semantics, the first utterance in the dialogue
 
 # References
 
-{% include page-elements/reflist.html %}
+{% include elements/reflist.html %}
 
 ***
 {: style="border-bottom:1px solid #aaa;margin:1em;"}

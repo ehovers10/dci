@@ -3,7 +3,7 @@
 <!-- Bears -->
 <table class="relation">
 <tr>
-  <td class="label" colspan="3">{% include examples/sem.html term='<em>bears</em>' model="M" %}</td>
+  <td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.bears %}</td>
 </tr>
 
 {% include relations/relnheader.html attrs="sit|ent|bear" %}
@@ -20,7 +20,7 @@
 <!-- Dangerous -->
 <table class="relation">
 <tr>
-  <td class="label" colspan="3">{% include examples/sem.html term='<em>dangerous</em>' model="M" %}</td>
+  <td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.dangerous %}</td>
 </tr>
 
 {% include relations/relnheader.html attrs="sit|ent|danger" %}
@@ -37,7 +37,7 @@
 <!-- Grizzly -->
 <table class="relation">
 <tr>
-  <td class="label" colspan="3">{% include examples/sem.html term='<em>grizzly</em>' model="M" %}</td>
+  <td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.grizzly %}</td>
 </tr>
 
 {% include relations/relnheader.html attrs="sit|ent|grizzly" %}
@@ -64,7 +64,9 @@
 <h3>Contrastive modification</h3>
 
 <!-- introduce alt set, full outer join, overwrite -->
-{% include examples/sem.html term='<em>[Grizzly]<sub>cf</sub> bears</em>' model="M" %} = PROJ({**sit**,**ent**,**type &#x21a6; bear**}, {% include examples/sem.html term='[Grizzly]<sub>cf</sub>' model="M" %} <span class="symbol">&#x27d7;</span> {% include examples/sem.html term='bears' type='&alpha;' model="M" %})
+<td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.grizzlyFbearsdangerous %}</td>
+
+{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %} = PROJ({sit,ent,type &#x21a6; bear}, {% include fxns/semwrap.html inside='[Grizzly]<sub>cf</sub>' outside=site.data.symbols.model %} <span class="symbol">&#x27d7;</span> {% include fxns/semwrap.html argument=site.data.meanings.bears %}
 
 {% include relations/contrast/index.html rows="9" %}
 

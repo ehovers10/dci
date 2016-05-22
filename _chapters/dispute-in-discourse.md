@@ -101,7 +101,7 @@ Well established theories of focus interpretation exist. If one of these could b
 
 ## Focus and alternatives
 
-One of the most influential accounts of focus interpretation is the *alternative semantics* developed by Mats Rooth {% include appendices/ref.html id="rooth1985,rooth1992" o="" e="." %} The idea behind alternative semantics is that focus-sensitive constructions have two semantic values: an *ordinary* semantic value ( {% include formalism/fxns/semwrap.html inside='&#8729;' outside="<sup>o</sup>" %}) and a *focus* semantic value ( {% include formalism/fxns/semwrap.html inside='&#8729;' outside="<sup>f</sup>" %}). The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with. And the focus semantic value for an expression is a set of *alternatives* to the ordinary semantic value. That is, the focus semantic value collects together all elements from the domain of discourse that are type-identical to the focused element of a phrase. More formally:
+One of the most influential accounts of focus interpretation is the *alternative semantics* developed by Mats Rooth {% include appendices/ref.html id="rooth1985,rooth1992" o="" e="." %} The idea behind alternative semantics is that focus-sensitive constructions have two semantic values: an *ordinary* semantic value ( {% include fxns/semwrap.html inside='&#8729;' outside="<sup>o</sup>" %}) and a *focus* semantic value ( {% include fxns/semwrap.html inside='&#8729;' outside="<sup>f</sup>" %}). The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with. And the focus semantic value for an expression is a set of *alternatives* to the ordinary semantic value. That is, the focus semantic value collects together all elements from the domain of discourse that are type-identical to the focused element of a phrase. More formally:
 
 <!-- Focus semantic values -->
 {% capture focussem %}
@@ -540,7 +540,7 @@ The key observation here is [Susceptibility](#susceptibility). Even if bare plur
 
 ## References
 
-{% include page-elements/reflist.html %}
+{% include elements/reflist.html %}
 
 ***
 {: style="border-bottom:1px solid #aaa;margin:1em;"}

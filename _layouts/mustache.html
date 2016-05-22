@@ -5,7 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html>
 
-{% include page-elements/head1.html %}
+{% include elements/head1.html %}
 
 <body>
 
@@ -31,7 +31,7 @@ layout: compress
 {% if page.toc %}
 <h3>Table of contents</h3>
 <blockquote>
-{% include page-elements/toc.html chapter=page.title %}
+{% include elements/toc.html chapter=page.title %}
 </blockquote>
 {% endif %}
 
@@ -43,7 +43,7 @@ layout: compress
 
 </div>
 
-{% include page-elements/foot1.html %}
+{% include elements/foot1.html %}
 
 </body>
 </html>

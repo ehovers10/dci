@@ -1,7 +1,7 @@
 <!-- Right-outer-join(Bears,Dangerous) -->
 <table class="relation">
 <tr>
-  <td class="label" colspan="4">{% include examples/sem.html term='<em>bears</em>' model="M" %} &#x27d6; {% include examples/sem.html term='<em>dangerous</em>' model="M" %}</td>
+  <td class="label" colspan="4">{% include fxns/semwrap.html argument=site.data.meanings.bears %} &#x27d6; {% include fxns/semwrap.html argument=site.data.meanings.dangerous %}</td>
 </tr>
 
 {% include relations/relnheader.html attrs="sit|ent|subj|pred" %}

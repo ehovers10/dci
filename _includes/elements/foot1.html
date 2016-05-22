@@ -9,7 +9,7 @@
           {% if site.email %}
           <li>
             <a href="mailto:{{ site.email }}">
-              <span class="icon">{% include page-elements/icons.html thing="email" %}</span>
+              <span class="icon">{% include elements/icons.html thing="email" %}</span>
 
               <span class="username">{{ site.email }}</span>
             </a>
@@ -19,7 +19,7 @@
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">
-              <span class="icon">{% include page-elements/icons.html thing="github" %}</span>
+              <span class="icon">{% include elements/icons.html thing="github" %}</span>
 
               <span class="username">{{ site.github_username }}</span>
             </a>
@@ -29,7 +29,7 @@
           {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="icon">{% include page-elements/icons.html thing="twitter" %}</span>
+              <span class="icon">{% include elements/icons.html thing="twitter" %}</span>
 
               <span class="username">{{ site.twitter_username }}</span>
             </a>
@@ -39,8 +39,8 @@
           {% if site.copy %}
           <li>
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-              <span class="icon">{% include page-elements/icons.html thing="cc" %}</span>
-              <span class="icon">{% include page-elements/icons.html thing="cca" %}</span>
+              <span class="icon">{% include elements/icons.html thing="cc" %}</span>
+              <span class="icon">{% include elements/icons.html thing="cca" %}</span>
             </a>
           </li>
           {% endif %}

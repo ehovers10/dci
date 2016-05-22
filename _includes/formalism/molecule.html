@@ -10,7 +10,7 @@
   {% for atom in atoms %}
     <div class="atom">
     {% if atom.fxn %}
-      {% include {{ atom.fxn | prepend: 'formalism/fxns/' | append: '.html' }} argument=atom.arg %}
+      {% include {{ atom.fxn | prepend: 'fxns/' | append: '.html' }} argument=atom.arg %}
     {% elsif atom.first.last %}
       {% include formalism/molecule.html argument=atom.first cation=cation %}
     {% else %}

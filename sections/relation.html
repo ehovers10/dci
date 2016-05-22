@@ -1,0 +1,23 @@
+---
+title: relation
+layout: table
+js: join
+---
+
+<script>
+
+var leftTable = maketable({{ site.data.meanings.bears.values | jsonify }}),
+    rightTable = maketable({{ site.data.meanings.dangerous.values | jsonify }}),
+    joinTable = inner(leftTable, rightTable, "sit", "sit", ["sit","ent","subj","pred"]),
+    printTable = displaytable(joinTable);
+
+
+$(document).ready( function() {
+  $("#log").html(printTable);
+});
+
+</script>
+
+<div id="log">
+
+</div>

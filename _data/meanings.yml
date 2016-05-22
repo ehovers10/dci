@@ -1,0 +1,59 @@
+# Predicates
+
+bears:
+  inside: "<span class='var'>bears</span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+  values:
+    - [a,b,e]
+    - [a,b,c,d]
+    - [a]
+
+grizzly:
+  inside: "<span class='var'>grizzly</span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+  values:
+    - [a]
+    - [a,c]
+    - [a]
+
+koala:
+  inside: "<span class='var'>koala</span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+  values:
+    - [b]
+    - [b]
+    - [b]
+
+polar:
+  inside: "<span class='var'>polar</span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+  values:
+    - []
+    - [d]
+    - [e]
+
+dangerous:
+  inside: "<span class='var'>dangerous</span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+  values:
+    - [a,b,d]
+    - [a]
+    - [b,d]
+
+# Complex
+
+bearsdangerous:
+  inside: "<span class='var'>Bears are dangerous</span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+
+grizzlyF:
+  inside: "<span class='var'>[Grizzly]<sub>cf</sub></span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+
+grizzlyFbears:
+  inside: "<span class='var'>[Grizzly]<sub>cf</sub> bears</span>"
+  outside: "<sup><span class='set'>M</span></sup>"
+
+grizzlyFbearsdangerous:
+  inside: "<span class='var'>[Grizzly]<sub>cf</sub> bears are dangerous</span>"
+  outside: "<sup><span class='set'>M</span></sup>"

@@ -65,7 +65,34 @@ table.relation {
 }
 
 @media print {
-    breaker {
+    .breaker {
       page-break-after: always;
     }
+}
+
+div.relation {
+  display: table;
+  border-collapse:collapse;
+  text-align:center;
+  margin:1em;
+  div.head {
+    display: table-row;
+    div.attribute {
+      display: table-cell;
+      font-weight: 600;
+      border: 1px solid #000;
+      width: 73px;
+    }
+  }
+  div.state {
+    display: table-row;
+    div.entity {
+      display: table-cell;
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+    }
+  }
+  div.continued {
+    display: table-cell;
+  }
 }

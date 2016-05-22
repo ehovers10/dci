@@ -383,7 +383,7 @@ I like the idea of speech-act determination being in the hands of the interlocut
 
 ## References
 
-{% include page-elements/reflist.html %}
+{% include elements/reflist.html %}
 
 ***
 {: style="border-bottom:1px solid #aaa;margin:1em;"}

@@ -10,9 +10,9 @@ toc: yes
 
 ## Knowledge as the end of inquiry
 
-Inquiry is, according to Robert Stalnaker {% include appendices/ref.html id="stalnaker1987" o="" e="," %} "the enterprise of forming, testing, and revising beliefs". This is a goal-directed enterprise. Both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
+Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
 
-It is tempting to maintain that the {% include appendices/word.html word='end of inquiry' %} is truth. While possession of the truth may be what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. The goal of engaging in inquiry is to achieve a specific *cognitive* state with true propositions as its content.
+It is tempting to maintain that the {% include appendices/word.html word='end of inquiry' %} is truth. While possession of the truth may be what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. The goal of engaging in inquiry is thus to achieve a specific, *cognitive* state with true propositions as its content.
 
 C.S. Peirce and others following in his wake {% include appendices/ref.html id="levi1980" o="n" e="," %} have suggested that so strong a cognitive tie to truth is too lofty a goal. They emphasize that assurance of truth is beyond our ken and that the most we can genuinely hope for at the end of inquiry is the *settlement of opinion*, for:
 
@@ -96,7 +96,7 @@ James' characterization of the motivation for the will to believe emphasizes tha
 
 <!-- Levi extra -->
 {% capture levi %}
-{% include page-elements/min.html id="Levi on goal generated constraints" %}
+{% include elements/min.html id="Levi on goal generated constraints" %}
 {% endcapture %}
 {% include examples/def.html type="explic" term="Levi on goal generated constraints" sent="Example" sub="Sub-example" defn=levi %}
 
@@ -128,7 +128,7 @@ Rational, dilated processes are governed by a system of structural constraints -
 
 <!-- Bratman extra -->
 {% capture bratman %}
-{% include page-elements/min.html id="Bratman et al. on plans" %}
+{% include elements/min.html id="Bratman et al. on plans" %}
 {% endcapture %}
 {% include examples/def.html type="explic" term="Bratman et al. on plans" sent="Example" sub="Sub-example" defn=bratman %}
 
@@ -337,12 +337,15 @@ Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An
 
 ## References
 
-{% include page-elements/reflist.html %}
+{% include elements/reflist.html %}
 
 ***
 {: style="border-bottom:1px solid #aaa;margin:1em;"}
 
 <!-- Footnotes -->
+
+[^inquiryStalnaker]:
+    According to this initial explication, the machinery of inquiry properly includes that presumed by the conception preferred by Robert Stalnaker in which inquiry is "the enterprise of forming, testing, and revising beliefs" {% include appendices/ref.html id="stalnaker1987" o="" e="," p='ix' %}. As will become clear in what follows, there is no reason to restrict inquiry to operations on states of *belief*, nor ought we to presume that forming, testing, and revising exhaust the inquiry-relevant operations on mental states.
 
 [^knowtoomuch]:
     Set aside the sense of *knowing too much* in which an agent has information that it would be in their other interests to remain ignorant of.
