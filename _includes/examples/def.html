@@ -10,11 +10,14 @@
       {% when 'def' %}
         {% assign defex = defex | plus: 1 %}
         {{ defex | prepend: 'Definition ' }}
+      {% when 'table' %}
+        {% assign tableex = tableex | plus: 1 %}
+        {{ tableex | prepend: 'Table ' }}
     {% endcase %}
     </span>
     <span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
   </div>
-  <blockquote {% if include.type == 'explic' %}style="border-left:none;"{% endif %}>
+  <blockquote {% if include.type == 'explic' or include.type == 'table' %}style="border-left:none;"{% endif %}>
     {{ include.defn | markdownify }}
   </blockquote>
 </div>

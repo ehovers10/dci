@@ -1,6 +1,6 @@
 {% assign dist = site.data.typologies[include.distinction] %}
 
-{% assign carol = '' %}
+{% unless include.biblio == "no" %}{% assign carol = '' %}{% endunless %}
 
 <table class="typology">
   <tr>
@@ -22,7 +22,7 @@
       <tr><td>
         {% if bit[0] == "reference" %}
           {% for item in row %}
-          {% include appendices/ref.html id=item o="n" %}
+          {% include appendices/ref.html id=item o="n" reflist=include.biblio %}
           {% endfor %}
         {% else %}
           {{ row }}
@@ -39,7 +39,9 @@
   {% endfor %}
 </table>
 
-<div {% if include.biblio == "no" %}style="height:0;overflow-y:hidden;"{% endif %}>
+<div {% if include.biblio == "no" %}style="display:none;"{% endif %}>
   <h3>References</h3>
-  {% include elements/reflist.html %}
+  {% unless include.biblio == "no" %}
+    {% include elements/reflist.html %}
+  {% endunless %}
 </div>

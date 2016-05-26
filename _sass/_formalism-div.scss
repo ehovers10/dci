@@ -2,7 +2,7 @@ div.formalism {
   margin:0;
   width: 100%;
 }
-div.molecule {
+.molecule {
   margin-bottom: 1em;
 
   div.title {
@@ -45,10 +45,10 @@ div.molecule {
   }
 
   div.wrap {
-    display: inline;
+    display: table-row;
 
     div {
-      display: inline;
+      display: table-cell;
     }
   }
 

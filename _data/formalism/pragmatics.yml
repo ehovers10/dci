@@ -186,7 +186,10 @@ collaborative update:
             arg:
               inside:
                 - "i<sub>&sigma;</sub>"
-                - "&#x3008;dref&#x3009;<sub>&sigma;</sub>"
+                - fxn: seqwrap
+                  arg:
+                    inside: "dref"
+                    outside: "<sub>&sigma;</sub>"
               outside: "<sub>sand</sub>"
   - propagation:
     - fxn: eqn

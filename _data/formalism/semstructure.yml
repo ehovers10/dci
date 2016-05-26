@@ -28,13 +28,28 @@ semantic value:
   - index of evaluation:
     - fxn: eqn
       arg:
-        lhs: "i : s"
+        lhs:
+          - fxn: eqn
+            arg:
+              lhs: "<span class='var'>i</span>"
+              conn: ":"
+              rhs: "s"
         conn: "is"
         rhs: "an index of evaluation"
   - assignment function:
     - fxn: eqn
       arg:
-        lhs: "g : Vars &rarr; D"
+        lhs:
+          - fxn: eqn
+            arg:
+              lhs: "<span class='var'>g</span>"
+              conn: ":"
+              rhs:
+                - fxn: eqn
+                  arg:
+                    lhs: "<span class='var'>Vars</span>"
+                    conn: "&rarr;"
+                    rhs: "<span class='set'>D</span>"
         conn: "is"
         rhs: "an assignment function"
   - model:
@@ -88,6 +103,16 @@ semantic value:
     - valuation:
       - fxn: eqn
         arg:
-          lhs: "<span class='set'>V</span> : Cons &rarr; <span class='set'>D</span>"
+          lhs:
+            - fxn: eqn
+              arg:
+                lhs: "<span class='set'>V</span>"
+                conn: ":"
+                rhs:
+                  - fxn: eqn
+                    arg:
+                      lhs: "<span class='var'>Cons</span>"
+                      conn: "&rarr;"
+                      rhs: "<span class='set'>D</span>"
           conn: "is"
           rhs: "a valuation function that assigns type-relevant objects to each constant"

@@ -112,7 +112,11 @@ But the motivation for the structural posits necessary to capture the abductive 
 
 ### Induction
 
-Induction is normally understood in Peirce's tripartite distinction as an ampliative mode of reasoning in which an inference is made about unobserved items on the basis of observed ones. It is the reasoning involved when one generalizes from facts about a sample to facts about the entire population, whatever that may be. But in another guise, inductive reasoning is the process involved in the scientific testing phase, whereby hypotheses are subjected to empirical investigation, and data is accumulated for the purposes of evaluating the relative success of the various hypotheses. This data is then used as input in the selective abduction phase. For Humean reasons, it is unclear that these two characterizations can be united under a single formalization of reasoning.
+Induction is normally understood in Peirce's tripartite distinction as an ampliative mode of reasoning in which an inference is made about unobserved items on the basis of observed ones. It is the reasoning involved when one generalizes from facts about a sample to facts about the entire population {% include appendices/ref.html id="sep-peirce" o="n" e="." p="Sect. 3" %} For familiar Humean reasons, it is unclear that a complete specification of the nature of and a foundational account of the justification of its outputs will be forthcoming. But in another guise, inductive reasoning is the process involved in the scientific testing phase, whereby hypotheses are subjected to empirical investigation, and data is accumulated for the purposes of evaluating the relative success of the various hypotheses. This data is then used as input in the selective abduction phase.
+
+<!-- Van Fraassen's first way -->
+{% assign vffw = site.data.definitions["van fraassen's first way"] %}
+{% include examples/def.html type="def" term="Van Fraassen's First Way" defn=vffw %}
 
 I want to explore the function of induction under its scientific testing guise. Of particular interest is how we can incorporate the virtue of testing as a corrective procedure for the flights of fancy introduced in the abductive phase.
 
@@ -168,6 +172,8 @@ Inquiry is not a monotonic process. It moves in starts and spurts. The impetus t
 
 Knowledge is not, as Levi suggests, merely infallible belief. It requires inter-revision justification. Knowledge requires an account. This too is represented in inquiry (here, I'm flipping the grounding order). Inquiry carries a *revision history*, by way of treating structuring updates as relations-in-intension, instead of directly imposing the structure on the information state.
 
+[Comment on epistemological conservatism]
+
 ### Advancing the inquiry
 
 A conjecture is a kind of conversational move. It is defined in terms of the role it plays in advancing the inquiry in which it occurs. While speech acts are finely individuated, there is a small set of {% include appendices/word.html word='contribution' %} types derivable from the goals of inqury.[^ConversationalForce]
@@ -183,6 +189,12 @@ These commonly cited examples do not provide an exhaustive list of conceptually 
 + Genuine contribution types are performed by way of a *conventionalized linguistic tool*. If a contribution belongs to a specific type, language will have found a way to implement that type. Assertions and questions are stronly tied to linguistic mood, although the connection between these contribution types and mood is a tricky one {% include appendices/ref.html id="portner1997,starr2010" o="n" e="." %}
 
 I maintain that conjecture, when paired with a corresponding correction, constitutes a distinct, genuine contribution type. Conjecture is similar to assertion in that it seems to provide a proposal of added information. And similarly to questions, conjectures seem to present an issue that is up for further discussion.[^supposition] But conjectures are distinct from each of these, and call for a unique treatment.  That they earn such status is what I hope to show throughout the course of this project.
+
+<!-- Types of value -->
+{% capture struci %}
+{% include appendices/typology.html distinction="structure of inquiry" biblio="no" %}
+{% endcapture %}
+{% include examples/def.html type="table" term="Structure of inquiry typology" defn=struci %}
 
 ## Knowledge and knowing (What do we know?)
 
@@ -278,7 +290,8 @@ Truth is of basic epistemic value, but it isn't clear that it is the only value 
 {% capture valk %}
 {% include appendices/typology.html distinction="value of knowledge" biblio="no" %}
 {% endcapture %}
-{% include examples/def.html type="def" term="Value of knowledge typology" defn=valk %}
+{% include examples/def.html type="table" term="Value of knowledge typology" defn=valk %}
+
 *Success* is the fundamental epistemic value, but it does not exhaust the value to which the knower can lay claim. The *praxis* values, too, are genuine values. We think of a system that brings about knowledge as better than a similar system that fails to do so. But praxical value is parasitic on *success* value, both in the sense that it does not exist absent success, and that it adds no value for the knower that is not already provided by success. We, as third parties, can praise a system -- or the agent who implements that system -- for succeeding well. But, having so succeeded, the agent gets nothing more out of having done it well. Performance value seems to gain indepenedence from success, in that it is a measure of the dispositions of a belief forming system, and a disposition can be present even in the absence of its stimulus conditions. The performance value *for* the knower, though, is similarly nothing beyond that provided by success. Having witnessed success, the knower gets little else in knowing that we would also have praised him had the world so conspired to make his belief false.
 
 The additional value associated with knowledge, as nice as they may be for an evaluation of the world, are practically irrelevant for the knower. The intuition that drives the epistemic value problem -- the one that is behind Meno's initial response -- is that possessing knowledge makes a difference to a believer's life.[^epiphenomenalvalue]

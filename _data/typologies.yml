@@ -24,6 +24,44 @@ structure of inquiry:
     reference: [git]
     Cognitive tool: Version control
 
+information state evaluation:
+  error avoidance:
+    domain: internal
+    mode: deduction
+    flux: static
+  logical omniscience I:
+    domain: internal
+    mode: deduction
+    flux: static
+  truth acquisition:
+    domain: internal
+    mode: abduction
+    flux: static
+  error insurance:
+    domain: internal
+    mode: induction
+    flux: dynamic
+  warrant to form:
+    domain: internal
+    mode: induction
+    flux: dynamic
+  logical omniscience II:
+    domain: external
+    mode: deduction
+    flux: static
+  cross-inquiry identification:
+    domain: external
+    mode: deduction
+    flux: static
+  inspiration:
+    domain: external
+    mode: abduction
+    flux: dynamic
+  warrant to retain:
+    domain: external
+    mode: induction
+    flux: static
+
 value of knowledge:
   success:
     description:

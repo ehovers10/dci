@@ -1,7 +1,7 @@
 <h3>Predicates</h3>
 
 <!-- Bears -->
-<table class="relation">
+<table class="relation molecule">
 <tr>
   <td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.bears %}</td>
 </tr>
@@ -18,7 +18,7 @@
 </table>
 
 <!-- Dangerous -->
-<table class="relation">
+<table class="relation molecule">
 <tr>
   <td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.dangerous %}</td>
 </tr>
@@ -35,7 +35,7 @@
 </table>
 
 <!-- Grizzly -->
-<table class="relation">
+<table class="relation molecule">
 <tr>
   <td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.grizzly %}</td>
 </tr>
@@ -64,9 +64,15 @@
 <h3>Contrastive modification</h3>
 
 <!-- introduce alt set, full outer join, overwrite -->
-<td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.grizzlyFbearsdangerous %}</td>
-
-{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %} = PROJ({sit,ent,type &#x21a6; bear}, {% include fxns/semwrap.html inside='[Grizzly]<sub>cf</sub>' outside=site.data.symbols.model %} <span class="symbol">&#x27d7;</span> {% include fxns/semwrap.html argument=site.data.meanings.bears %}
+<table class="relation molecule">
+  <tr>
+<td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.grizzlyFbearsdangerous %}
+<br>{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %} =
+<br>PROJ({sit,ent,type &#x21a6; bear},
+<br>{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %}
+<br><span class="symbol">&#x27d7;</span> {% include fxns/semwrap.html argument=site.data.meanings.bears %}</td>
+</tr>
+</table>
 
 {% include relations/contrast/index.html rows="9" %}
 

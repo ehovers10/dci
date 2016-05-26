@@ -2,15 +2,15 @@
   <div>&#x27e8;</div>
   <div>
   {% for bit in include.argument.inside %}
-    {% include formalism/function.html argument=include.argument.inside %}
-    {% unless forloop.last %}<span>,</span>{% endunless %}
+    <div>{% include formalism/function.html argument=include.argument.inside %}
+    {% unless forloop.last %}<div>,</div>{% endunless %}</div>
   {% endfor %}
   </div>
   <div>&#x27e9;</div>
   <div>
   {% for bit in include.argument.outside %}
-    {% include formalism/function.html argument=include.argument.outside %}
-    {% unless forloop.last %}<span>,</span>{% endunless %}
+    <div>{% include formalism/function.html argument=include.argument.outside %}
+    {% unless forloop.last %}<div>,</div>{% endunless %}</div>
   {% endfor %}
   </div>
 </div>
