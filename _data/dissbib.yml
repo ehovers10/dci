@@ -1507,6 +1507,16 @@ peirce1877:
   Publisher: Dover Publications, Inc.
   Location: New York
 
+peirce1877a:
+  Title: The Probability of Induction
+  Booktitle: Philosophical Writings of Peirce
+  Type: chapter
+  Author: Charles Sanders Peirce
+  Editor: Justus Buchler
+  Year: 1877/1955
+  Publisher: Dover Publications, Inc.
+  Location: New York
+
 pelletierms:
   Title: Generics and Defaults
   Author: Francis Jeffry Pelletier and Nicholas Asher
@@ -2032,6 +2042,18 @@ thomason:
   Timestamp: 2011.11.23
   Url: https://app.box.com/s/1ij581mylhax7m5but72l06dttvkr6xf
 
+vanfraassen2000:
+  Title: "The False Hopes of Traditional Epistemology"
+  Author: Bas C. van Fraassen
+  Journal: Philosophy and Phenomenological Research
+  Volume: LX
+  Number: 2
+  Year: 2000
+  Type: article
+  Pages: 253-280
+  Abstract: "After Hume, attempts to forge an empiricist epistemology have taken three forms, which I shall call the First, Middle, and Third Way. The First still attempts an a priori demonstration that our cognitive methods satisfy some (weak) criterion of adequacy. The Middle Way is pursued under the banners of naturalism and scientific realism, and aims at the same conclusion on non-apriori grounds. After arguing that both fail, I shall describe the general characteristics of the Third Way, an alternative epistemology suitable for empiricism."
+  Affiliation: Princeton University
+  
 veltmg:
   Title: Coreference and Contextually Restricted Quantification
   Author: Frank Veltman
