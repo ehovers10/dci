@@ -28,7 +28,7 @@ defaults:
       path: ""
       type: "chapters"
     values:
-      layout: "article"
+      layout: "chapter"
   - scope:
       path: ""
       type: "appendices"

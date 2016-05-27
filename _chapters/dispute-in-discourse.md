@@ -538,12 +538,7 @@ The CU extraction stands behind the strictness inclination. Bare plural sentence
 
 The key observation here is [Susceptibility](#susceptibility). Even if bare plural sentences can be true, their truth seems to be inherently unstable. A shift to a slightly different context
 
-## References
-
-{% include elements/reflist.html %}
-
-***
-{: style="border-bottom:1px solid #aaa;margin:1em;"}
+{% include elements/chapterend.html %}
 
 [^mereology]: A philosophical celebrity within the family of relative generality relations is that of *part* to *whole*. That such a relation is a basic logical connection between ideas is emphasized by Goodman and Leonard in their classic explication of the calculus of individuals:
 

@@ -1,0 +1,46 @@
+.print-only {
+  display: none;
+}
+
+@media print {
+  .print-only {
+    display: block;
+  }
+  .print-no {
+    display: none;
+  }
+
+  .break {
+    page-break-after: always;
+  }
+
+  .def {
+    page-break-inside: avoid;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .site-footer {
+    display: none;
+  }
+
+  .lightbox {
+    display: block;
+    position: relative;
+
+    .popbox {
+      position: relative;
+      padding: 0;
+    }
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .page-content {
+    padding: 0;
+  }
+}

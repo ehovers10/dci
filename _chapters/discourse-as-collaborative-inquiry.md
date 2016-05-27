@@ -166,11 +166,4 @@ If we treat the [Bears](#bears) dialogue as a minimal example of collaborative d
 
 According to collaborative update semantics, the first utterance in the dialogue initiates a contribution that is completed by the second, correcting utterance. Focus is treated as a sandboxing marker and denial serves to replace the default saturation of the propositional radical with an alternative one.
 
-# References
-
-{% include elements/reflist.html %}
-
-***
-{: style="border-bottom:1px solid #aaa;margin:1em;"}
-
-## Footnotes
+{% include elements/chapterend.html %}

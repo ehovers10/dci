@@ -381,12 +381,7 @@ Conjecture and assertion are identical. Both put forward a propositional radical
 
 I like the idea of speech-act determination being in the hands of the interlocutor (and thus relative).
 
-## References
-
-{% include elements/reflist.html %}
-
-***
-{: style="border-bottom:1px solid #aaa;margin:1em;"}
+{% include elements/chapterend.html %}
 
 [^Bestsystem]: Lewis also adds *fit* as a criterion for theorizing about non-deterministic systems. See {% include appendices/ref.html id="hicks2014" o="n" %} for an amendment of the best system account that incorporates the idea that the conditions of use of a theory may count as a criterion for adequacy of the theory.
 

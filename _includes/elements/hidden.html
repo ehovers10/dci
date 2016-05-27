@@ -1,7 +1,10 @@
 {% assign title = include.id | slugify | prepend: 'extra/' | append: '.md' %}
 {% capture gus %}{% include {{ title }} %}{% endcapture %}
 
-<a class="open" id="{{ include.id | slugify }}">{{ include.id }}</a>
-<div class="hid" id="{{ include.id | slugify | append: '-hid' }}">
-<blockquote>{{ gus | markdownify }}</blockquote>
+<div class="lightbox" id="{{ include.id | slugify | append: '-hid' }}">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <h4>{{ include.id }}</h4>
+    <div class="popmain">{{ gus | markdownify }}</div>
+  </div>
 </div>

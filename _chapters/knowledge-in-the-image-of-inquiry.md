@@ -3,9 +3,14 @@ title: Knowledge in the image of inquiry
 date: 2015-10-08
 level: 2
 type: chapter
+layout: chapter
 abstract:
   It is commonly held that knowledge is the end of inquiry, but if we take this connection seriously, there are significant implications for our understanding of the nature of knowledge. I propose to take at face value the idea that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, and so, then is knowledge. This idea has important consequences for explaining the distinctive value of knowledge over true belief and for the contextualism/relativism debate in epistemology.
 toc: yes
+extra:
+  - Levi on goal generated constraints
+  - Bratman et. al on plans
+  - Peirce and van Fraassen on induction
 ---
 
 ## Knowledge as the end of inquiry
@@ -80,7 +85,7 @@ The Jamesian amendment makes inquiry an optimization task between taking on too 
 
 To have a call for revision of one's information state is to recognize an inadequacy therein. Inadequacies can be of the sort in which an agent *knows too much*, in the sense that their information state is contradictory and thereby contains too much information.[^knowtoomuch] The means of rectifying this sort of inadequacy is accommodated on the Levi model, in the form of conditions on contraction. While all information states are, for Levi, equal in terms of adequacy, we can set the trivial state aside as the one state that always demands revision, and in particular, revision by contraction out of epistemic hell.
 
-Inadequacies can also arise when one acknowledges that they *know too little*, in the sense that there is an issue that is not settled by their state of information. This sort of inadequacy is not to be accommodated in Levi's model. As defined so far, information states are nothing more than their members, and each state (potentially) contains infinitely many points. Aside from the situation in which one state strictly contains another, there is no way of saying that one state is more informative than another.[^contain]
+Inadequacies can also arise when one acknowledges that they *know too little*, in the sense that there is an issue that is not settled by their state of information. This sort of inadequacy is not to be accommodated in Levi's model. As defined so far, information states are nothing more than their members, and each state (potentially) contains infinitely many points. Aside from the situation in which one state strictly contains another, there is no way of saying that one state is more informative than another.[^contain] (Read further: <a class="pop" id="levi-on-goal-generated-constraints">Levi on goal generated constraints</a>)
 
 Recognition of information state incompleteness is a principal impetus to revise. For a state to represent itself as containing unsettled issues, we need to add structure to the information state. To have an unsettled issue is to have a non-uniformity across the information state with respect to a particular subject matter; certain points represent one resolution of the subject matter, other points a different resolution. Recognition of a non-uniform pattern holding across an information state can be modeled formally by means of a relation *R* defined over the membership of the information state, such that for any two elements of the state, *x* and *y*, *R(x,y)* just in case *x* and *y* agree on the subject matter of *R*. The effect is a partitioning of the information state into equivalence classes with respect to the issue that the agent's information state is unable to settle. The result is an information state that calls for revision, in particular, expansion by elimination of complete cells in the partition.
 
@@ -94,21 +99,15 @@ Additionally, we can here grant Levi's point that there does seem to be a differ
 
 James' characterization of the motivation for the will to believe emphasizes that it is the *choice* that is genuine and calls for resolution. The essence of the genuine choice is that no particular resolution of the uncertainty demands selection, but still a selection must be made. We can capture this feature of proposition integration via the will to believe by focusing on the selected proposition's position within the partition we introduced to capture the impetus to revise. The will to believe is nothing more than selecting a prefered resolution of a recognized incompleteness in one's information state. Formally, this amendment requires only that the relation *R* that represents the partition impose an *order* on the members of the state. The result is an information state that both calls for revision and selects a preferred means of doing so. And it does so while insulating the information state from the risk the revision carries.
 
-<!-- Levi extra -->
-{% capture levi %}
-{% include elements/min.html id="Levi on goal generated constraints" %}
-{% endcapture %}
-{% include examples/def.html type="explic" term="Levi on goal generated constraints" sent="Example" sub="Sub-example" defn=levi %}
-
 This extension of inquiry based on the Jamesian amendment is intended to capture the abductive phase of inquiry. The two parts of the extension happen to map onto a commonly cited distinction within the abductive phase {% include appendices/ref.html id="campos2011,shanahan1986" o="n" e="." %} *Creative abduction* is associated with the scientific context of discovery. It is involved when an inquirer recognizes a scientifically fruitful question and develops a set of hypotheses that serve as potential answers to that question. Incompleteness, modeled as a partition on an information state, represents the output of creative abduction. The extension does not provide us, specifically, with an account of the conditions under which an agent comes to represent its own incompleteness. And this is all to the good, for creative abduction is notoriously unamenable to logical characterization. We don't have, nor do we want, a topic-neutral story of revision into incompleteness. But the extension does provide a uniform representation of what a state that *calls for* revision looks like.
 
 The second part captures the value of *striving* for truth, which closely resembles the *selective* phase of abduction, in which the scientist chooses from amongst the set of viable hypotheses the one that best answers the question on the basis of a set of criteria that perhaps don't eliminate all other answers completely. This is the mode of reasoning known as *inference to the best explanation*. James' proposal was that, ocassionally, elimination of incompleteness is rationally preferred to remaining ambivalent even at the risk of being wrong.
 
-Modeling inquiry in this way thus makes it part of the domain of logic to specify the conditions under which this selective abduction is warranted. What makes it the case that it is epistemically appropriate to risk importing error into one's information state? I contend that the rationality of such a maneuver is secured by specific *corrective procedures* embedded in the process of proper inquiry. These procedures are the domain of the inductive phase.
+Modeling inquiry in this way thus makes it part of the domain of logic to specify the conditions under which selective abduction is warranted. What makes it the case, for a particular incomplete information state, that it is epistemically appropriate to complete it at the risk importing error?
 
-For the deductive phase, the motivation for the structural posit was the error-avoidance goal of proper inquiry. The justification for the specific properties of the revision operator is done piecemeal by way of a demonstration that each rule of expansion or contraction preserves truth.
+For the deductive phase, the motivation for the structural posit was the error-avoidance goal of proper inquiry. The justification for the specific properties of the revision operator is done piece meal by way of a demonstration that each rule of expansion or contraction preserves truth, and thus avoids error.
 
-But the motivation for the structural posits necessary to capture the abductive phase -- the Jamesian amendment -- changes the game entirely. Demonstration is not the proper method of justification for a solution to an optimization problem. In its place, we want two things: (i) assurance that each criterion secured to a high degree, and (ii) insurance that success on each criterion is insulated against success on the others. As applied to the Jamesian amendment to the nature of inquiry, the first condition is met by reliability testing on the outputs of the selective abductive phase. To the extent that the inquirer tends to settle on true hypotheses, her process of inquiry is well calibrated. The second condition requires that striving for truth acquisition does not radically undermine the goal of error avoidance. To meet this, our account of inquiry must incorporate protective insurance against the wanton incorporation of error in the course of the abductive phase. This, I contend, is provided by conditions of *coherence* and *collaboration* to which proper inquiry is subject. These conditions provide a corrective mechanism against error introduction, and this mechanism is in the jurisdiction of the *inductive* phase of inquiry.
+But the motivation for the structural posits necessary to incorporate the abductive phase construed as above changes the game entirely. Demonstration is not the proper method of justification for a solution to an optimization problem. In its place, we want two things: (i) assurance that each criterion optimized over is secured to a high degree, and (ii) insurance that success on each criterion is insulated against success on the others. As applied to the Jamesian amendment, the first condition is met by reliability testing on the outputs of the selective abductive phase. To the extent that the inquirer tends to settle on true hypotheses, her process of inquiry is well calibrated. The second condition requires that the goal of truth acquisition does not radically undermine the goal of error avoidance. To meet this, our account of inquiry must incorporate protective insurance against the wanton incorporation of error in the course of the abductive phase. This, I contend, is provided by corrective mechanisms inherent in proper inquiry, mechanisms residing in the jurisdiction of the *inductive* phase of inquiry.
 
 ### Induction
 
@@ -120,15 +119,15 @@ Bas van Fraassen {% include appendices/ref.html id="vanfraassen2000" e="," %} ac
 >
 > We answer her: it takes luck, courage, and technique; but the greatest of these is luck. {% include appendices/ref.html id="vanfraassen2000" e="," p="273" %}
 
-Technique is nothing other than logic. It's operation is embodied in the deductive element of inquiry.[^conditionalization] Courage is the ability to face the prospect of error and strive for truth regardless. It is acknowledgement of the necessity of going beyond what technique can provide if skepticism is to be avoided. But technique and courage are epistemically idle without luck -- the mere fortune of finding onesself in a world that cooperates with our quest for knowledge.
+Technique is nothing other than logic. It's operation is embodied in our deductive element of inquiry.[^conditionalization] Courage is the ability to face the prospect of error and strive for truth regardless. It is acknowledgement of the necessity of going beyond what technique can provide if skepticism is to be avoided. It is incorporated as an aspect of inquiry by way of the abductive element outlined above. But technique and courage are epistemically idle without luck -- the mere fortune of finding ourselves in a world that cooperates with our quest for knowledge.
 
-Luck, while vital, is not necessarily blind, and we needn't despair of ever convincing ourselves that it is on our side. We can't, perhaps, force the hand of fate, but we can recognize when fate has smiled upon us, and make use of her kindness while it remains. As van Fraassen points out, the lucky are simply those who find themselves with qualities amenable to the whims of their environment.
+Luck, while vital, is not necessarily blind, and we needn't despair of ever convincing ourselves that it is on our side. We can't, perhaps, force the hand of fate, but we can recognize when we're getting a helpful nudge, and make use of her kindness while it remains. As van Fraassen points out, the lucky are simply those who find themselves with qualities amenable to the whims of their environment.
 
 > If our pursuit of knowledge, however broadly or feebly construed, is to be successful, we must be lucky -- we have no way to constrain such fortune. This is the verdict on modern philosophy's misguided search for security. The history of Earth has seen great disasters that spelled the extinction of almost all life, including the dominant, best adapted among species. In each case, some forms of life happened to be suited to the radically and suddenly transformed circumstances -- thus evolution on Earth continued after all. See who was lucky and who was not! Look to those survivors, they weave not; neither do they spin; but fortune smiles on them. {% include appendices/ref.html id="vanfraassen2000" e="," p="273" %}
 
-The fortune of the human inquirer is that she is not alone in her endeavor. She finds herself, as fortune would have it, in a community of inquirers. We certainly didn't have to be so lucky to have others with whom to engage in inquiry. But given that we do, we can acknowledge their vitalness to the endeavor, and make use of their assistance in providing a safety harness for our courageous leaps.
+The fortune of the human inquirer is that she is not alone in her endeavor. She finds herself in a community of similarly inquisitive individuals. She certainly didn't have to be so lucky to have others with whom to engage in inquiry, but given that she does have them, she can acknowledge their vitalness to the endeavor and make use of their assistance in providing a safety harness for her courageous leaps. (Read further: <a class="pop" id="peirce-and-van-fraassen-on-induction">Peirce and van Fraassen on induction</a>)
 
-The proposal, then, is that induction is a process of scientific testing. It necessarily follows abduction and provides a corrective to its flights of fancy. Inquiry is so positioned to incorporate this insurance against error because it is a *coherent* and *collaborative* process. Humans must consider themselves lucky to have acquired the capability to engage in this process, but we are no less warranted in practicing it for its origins.
+The proposal, then, is that induction is a process of scientific testing.[^peircetesting] It necessarily follows abduction and provides a corrective to its flights of fancy. Inquiry is so positioned to incorporate this insurance against error because it is a *coherent* and *corrective* process. Humans must consider themselves lucky to have acquired the capability to engage in this process, but we are no less warranted in practicing it for its origins.
 
 #### Coherence
 
@@ -138,71 +137,49 @@ But once we open the door to incorporating the goal of truth acquisition into ou
 
 An important mechanism of coherence is the build-and-test update procedure that inquiry exhibits. Inquiries are cummulatively built in a step by step process. A contribution to the inquiry adds a proposal to an inquiry workspace, making it available to be played around with by subsequent contributions to the inquiry before being ultimately accepted or rejected.
 
-Evaluation of the coherence of a contribution to a dilated process is relative to a system of structural constraints -- a *plan* -- for the process. The primary function of a plan is to restrict the set of possibilities from amongst which those engaged in the process select their moves. This imposed restriction allows plans to be followed, in real time, by cognitively limited agents. But plans are also to be carried out in real space, which does not always evolve the way planning agents hope or expect. Too rigid a restriction on possible moves will bind the agents to failure. Thus, plans must allow for modification in the face of unexpected developments in the environment within which the process takes place.
-
-<!-- Bratman extra -->
-{% capture bratman %}
-{% include elements/min.html id="Bratman et al. on plans" %}
-{% endcapture %}
-{% include examples/def.html type="explic" term="Bratman et al. on plans" sent="Example" sub="Sub-example" defn=bratman %}
+Evaluation of the coherence of a contribution to a dilated process is relative to a system of structural constraints -- a *plan* -- for the process. The primary function of a plan is to restrict the set of possibilities from amongst which those engaged in the process select their moves. This imposed restriction allows plans to be followed, in real time, by cognitively limited agents. But plans are also to be carried out in real space, which does not always evolve the way planning agents hope or expect. Too rigid a restriction on possible moves will bind the agents to failure. Thus, plans must allow for modification in the face of unexpected developments in the environment within which the process takes place. (Read further: <a class="pop" id="bratman-et-al-on-plans">Bratman et. al on plans</a>)
 
 Proper inquiry is no different. A plan of inquiry imposes *coherence* constraints on contributions to the inquiry. Future additions must follow the general course set by previous contributions. But, nature can so conspire to turn certain conjectures into dead ends, and a healthy plan of inquiry will accommodate mechanisms to adjust the plan on the fly.
 
 Incorporating coherence evalutations into inquiry requires an adjustment of its basic strcuture. We must see contributions to inquiry as *interleaved* in a way that contributions can either be natural responses to previous contributions, or fail to be.[^interleaved]
 
-#### Collaboration
+#### Correction
 
 Coherence is needed to make sense of the evolution of inquiry, but *security* in this evolution comes from a specific kind of coherence -- *corrective coherence*. Induction as a corrective on abduction requires a special kind of contribution. The procedure is something that a solitary inquirer can take on themselves, but its value is most evident in the context of joint inquiry.
 
-The primary role of joint inquiry is to expedite what would be an extremely tedious task if attempted alone. The truth acquisition goal of inquiry, modeled within the abductive phase, can be viewed as an efficiency mechanism. Judicious speculation can be a shortcut in the difficult trek through a vast intellectual terrain. The collaborative facet of joint inquiry provides extra motivation for assuming the risk such shortcuts involve -- the collaborative interlocutor, to the extent she is able, will pull you back from the ledge by voicing her *disagreement*. Disagreement is the tool by which interlocutors can check each other's flights of fancy. It is a tool that rational inquirers both know how to wield and are prepared to let others weild against them.
+The primary role of joint inquiry is to expedite what would be an extremely tedious task if attempted alone. The truth acquisition goal of inquiry, modeled within the abductive phase, can be viewed as an efficiency mechanism. Judicious speculation can be a shortcut in the difficult trek through a vast intellectual terrain. Joint inquiry provides extra motivation for assuming the risk such shortcuts involve in virtue of its *collaborative* nature. The collaborative interlocutor, to the extent she is able, will pull you back from the ledge by voicing her *disagreement* with more questionable speculation. Disagreement is the tool by which interlocutors check each other's flights of fancy. It is a tool that rational inquirers both know how to wield and are prepared to let others weild against them.
 
 The success of this procedure depends heavily on a shared understanding of each party's role in the inquiry. An individual can only feel comfortable in proposing a speculative addition to the common ground if they believe that their collaborators will correct their contribution to the best of their ability.  And this requires interlocutors to be more than passive recipients of information.  They must use openings in the conversation to interject disapproval or uncertainty in addition to registering understanding and acceptance of what has been presented.
 
-In proper inquiry, it is not enough that the participants in the inquiry come to accept truths about the world. The process of inquiry, when faithfully undertaken serves to provide its participants with justification for coming to accept the outputs of the process. Having gone through the inquiry is also necessary for the right to believe its outputs. John Stuart Mill's {% include appendices/ref.html id="mill1859" o="" %} defense of liberty centrally relies on the corrective value of dispute in proper inquiry. Even in the face of certainty regarding the answer to certain questions, dispute plays an important role in sustaining individual community members' right to believe the accepted truth.
+But disagreement is not merely a handy tool that incidentally finds a use in joint inquiry. It is a crucial feature of inquiry as a process that outputs knowledge. In proper inquiry, it is not enough that the participants in the inquiry come to accept truths about the world. The *process* of inquiry, when faithfully undertaken, serves to provide its participants with justification for coming to accept the outputs of the process. Having gone through the inquiry is necessary for the right to believe its outputs. And facing up to protestations of one's interlocutors is an important element of this process.
 
-This makes one's right to believe dependent upon the interlocutors with whom one interacts. Not only are asserters expected to be able to provide reasons for the propositions they propose, hearers are expected to challenge assertions when their content contradicts either their own expectations, or the shared conversational record.
+The centrality of disagreement to inquiry can be brought out by considering the observation that, since proper inquiry has knowledge as its end, those who have adequately undertaken the process of inquiry are justified in the attitudes they hold in virtue of so undertaking. In his famous defense of liberty, John Stuart Mill {% include appendices/ref.html id="mill1859" o="" %} contends that facing unrestricted dissent is essential to being warranted in holding any opion.
 
-These commitments of cooperative exchange are realized in certain discourse mechanisms. The hearer has tools at her disposal for challenging assertion.  Primary among these is flat out denial, but often it is not maximally cooperative to flatly deny an assertion for this response has the effect of derailing the progress of the inquiry, and it is too sweeping in its effect.  Utterances involve a great number of parts, any of which may be subject to criticism, but criticizing one part may leave others unscathed.  Thus, hearers also have means for correcting utterances without issuing a blanket denial.
+> Complete liberty of contradicting and disproving our opinion, is the very condition which justifies us in assuming its truth for purposes of action; and on no other terms can a being with human faculties have any rational assurance of being right. (II, 6)
 
-Mill's model of inquiry makes collaboration essential to the process. It is not just that individuals can make use of each other to acquire true beliefs about the world. Earning the right to those beliefs requires individuals to work together, and it foists commitments upon each party: speakers must be ready to defend their claims and hearer's must be prepared to correct claims when they can.
+Expanding Mill's idea slightly to allow for the possibility of disagreement in attitudes other than belief, we derive a constraint on justified possession of attitudes arising from inquiry.
 
-For Mill, it was essential to the justification of beliefs that they withstand continual attack from those who disagree with them. That is, for an individual to justifiably maintain a particular belief, they must be capable of defending that belief against attack from potential, reasonable dissenters. Even stronger, they must actually defend the belief against actual, reasonable dissenters. Marc Moffett {% include appendices/ref.html id="moffett2007" o="" %} has suggested that this criterion of individual justified belief is tantamount to what he calls the collective criticism condition, which demands "free and open critical discussion" of beliefs among epistemic peers who hold countervailing beliefs. We thus derive a principle of social epistemics from a principle of individual level justification of belief.
+<!-- Millian constraint -->
+{% assign millianconstraint = site.data.definitions["millian constraint"] %}
+{% include examples/def.html type="def" term="Millian Constraint" defn=millianconstraint %}
 
-If the process of inquiry is what provides individual level belief justification, then the process of inquiry must make room for the collective criticism condition. It is my contention that natural discourse does just this. Not only are asserters expected to be able to provide reasons for the propositions they propose, hearers are expected to challenge assertions when their content contradicts either their own expectations, or the shared conversational record.
+One virtue of the freedom of expression, brought out in Mill's reference to one's "rational assurage of being right" in the quote above, is a practical one. Given that human inquirer's strive for truth, and that we are subject to the limitations and biases of our unique cognitive histories, letting a thousand ideas bloom in the court of public inquiry makes it more likely that public opinion comes to settle upon the truth. But Mill carries the idea further, maintaining that one's justification for an attitude depends on dissent even were we to grant that the attitude is apt.
 
-These commitments of cooperative exchange are realized in certain discourse mechanisms. The hearer has certain tools at her disposal for challenging assertion. Primary among these is flat out denial, but often it is not maximally cooperative to flatly deny an assertion for this response has the effect of derailing the progress of the inquiry, and it is too sweeping in its effect. Involve a great number of parts, any of which may be subject to criticism, but criticizing one part may leave others unscathed. Thus, hearers also have means for correcting utterances without issues a blanket denial.
+> However unwillingly a person who has a strong opinion may admit the possibility that his opinion may be false, he ought to be moved by the consideration that however true it may be, if it is not fully, frequently, and fearlessly discussed, it will be held as a dead dogma, not a living truth.
+>
+> ...assuming that the true opinion abides in the mind, but abides as a prejudice, a belief independent of, and proof against, argument—this is not the way in which truth ought to be held by a rational being. This is not knowing the truth. Truth, thus held, is but one superstition the more, accidentally clinging to the words which enunciate a truth. (II, 21-2)
 
-This account of justification is an internalist one. Hearers must be aware of their commitment in securing justification for the speaker, and the speaker must be aware that the hearer is so aware in order to retain genuine warrant for her assertion. (Presumably, this mutual awareness could be iterated indefinitely.) The presence of this mutual awareness of each participant's role in generating justification suggests that not only does the hearer respond to the speaker's proposal, but also that the speaker's proposal will anticipate the hearer's response. Assertions represent, in addition to the content put forward, their anticipation of potential challenges to that content. Call this the corrective potential of an assertion.
+Even in the face of certainty regarding the answer to certain questions, dispute plays an important role in sustaining individual community members' right to believe the accepted truth. This makes one's right to an attitude conceptually, and not merely practically, dependent upon the inquirers with whom one interacts. And this dependence generates commitments for all parties to an inquiry. One would fail to have carried out the process of proper inquiry were he unable to respond to challenges that arise throughout the inquiry. But he would equally be unjustified if no challenges were to arise at all. Not only are we, as initiators of an inquiry, expected to be able to provide reasons for the propositions we propose, others, as participants in the joint inquiry, are expected to challenge contributions whose content runs afoul of either their own expectations or the course of the inquiry so far.
 
-The proposal here is that speaker and hearer contributions form a discourse pair, each of which both depends on and puts constraints on the other. A consequence of this model of discourse is that one can get insight into the deep structure of an utterance by looking to the nature of its discourse pair.
+A corrective contribution to inquiry demands a special kind of coherence. It involves a modification of a previous contribution by extracting the offending material from the inquiry representation and replacing it with an alternative proposal. This is different from the ordinary contraction of an information state in the deductive phase of inquiry, for correction may cut more finely than removal of entire propositions. Correction can pertain to all contents of the inquiry representation.[^downdate] To the extent that free disagreement is essential to proper inquiry, the inquiry structure we posit must be able to accommodate such corrective contributions.
 
-A well established application of this idea can be found in the alternative semantics for focus interpretation. It was found that focus placement in responses to questions easily predictable. And the semantic contribution of focus in an utterance matches that of the question to which the utterance is a fellicitous response.
+The combination of coherence and correction exhibited by joint inquiry makes it a *collaborative* process. Joint inquiry is valuable not only because individuals can make use of each other to acquire true beliefs about the world. Earning the right to those beliefs requires individuals to work together, and it foists commitments upon each party: speakers must be ready to defend their claims and their audience must be prepared to correct such claims when they can.
 
-#### Revision history
+### Implementation
 
-Dilated inquiry is a collaborative effort, either between different inquirers working together, or a single inquirer working on past progress at a later time. Viable use of the inquiry over the course of time (with different contributors) requires an ability to track the changes the inquiry imposes on the information state.  That is, we need a *revision history*.
+As explored above, inquiry is a logical process that is independent of its means of implementation. But inquiry is also a process that humans carry out in real time, and the means by which they carry it out can place further constraints on its nature. One important implementation of joint inquiry is *discourse*, which involves multiple people contributing to the inquiry by way of linguistic utterances. The collaborative nature of inquiry requires multiple parties working in concert, not just serially. But contributions to discourse are essentially serial.[^talkingover] The result is that viable implementation of inquiry in discourse requires an ability to track the changes contributions impose on the inquiry representation. That is, the fact that inquiry is implemented in discourse calls for an element of the inquiry structure that represents a *revision history* of the inquiry.
 
-Inquiry is not a monotonic process. It moves in starts and spurts. The impetus to revise occassionaly moves the information state into a problematic position, which can only be recognized as needing remedy later on. Remedy requires revision, but there are an infinite number of ways to revise. Directed revision requires a *revision history*.
-
-Knowledge is not, as Levi suggests, merely infallible belief. It requires inter-revision justification. Knowledge requires an account. This too is represented in inquiry (here, I'm flipping the grounding order). Inquiry carries a *revision history*, by way of treating structuring updates as relations-in-intension, instead of directly imposing the structure on the information state.
-
-[Comment on epistemological conservatism]
-
-### Advancing the inquiry
-
-A conjecture is a kind of conversational move. It is defined in terms of the role it plays in advancing the inquiry in which it occurs. While speech acts are finely individuated, there is a small set of {% include appendices/word.html word='contribution' %} types derivable from the goals of inqury.[^ConversationalForce]
-
-The primary goal of inquiry is to come to know something one did not know at its outset. Thus, an individual can advance us toward that goal by submitting (proposing) information to be taken on as mutually accepted. We call this kind of contribution an {% include appendices/word.html word='assertion.' %}
-
-The end point of an inquiry depends in part on its starting point, which is the *issue* that is to be resolved by the process of inquiry. An individual can submit a new issue to the inquiry to be taken on as providing a new goal for the inquiry.  We call this contribution a {% include appendices/word.html word='question' %}.[^command][^mood]
-
-These commonly cited examples do not provide an exhaustive list of conceptually possible contribution types. I don't intend to provide identity conditions for types of contribution, but the examples do share certain things in common, and their common traits can provide us with criteria for recognizing novel contribution types.
-
-+ Genuine contribution types *operate on* {% include appendices/word.html word='*information*' %} in a distinctive way. Assertions expand the context set, and questions partition it. The currency of inquiry is information, and its value is tied to the ways in which information can be put to use to advance the inquiry toward its goal.
-+ Conversational moves that contribute to inquiry *anticipate an appropriate response*, and *place constraints on the form of the response*. Assertion anticipates either acceptance or rejection of the asserted content, and (modulo repair tactics for failed presuppositions) restricts responses to either acceptance or rejection. Questions anticipate an answer, and restrict responses to those assertions that at least partially resolve the issue raised.[^QACongruence]
-+ Genuine contribution types are performed by way of a *conventionalized linguistic tool*. If a contribution belongs to a specific type, language will have found a way to implement that type. Assertions and questions are stronly tied to linguistic mood, although the connection between these contribution types and mood is a tricky one {% include appendices/ref.html id="portner1997,starr2010" o="n" e="." %}
-
-I maintain that conjecture, when paired with a corresponding correction, constitutes a distinct, genuine contribution type. Conjecture is similar to assertion in that it seems to provide a proposal of added information. And similarly to questions, conjectures seem to present an issue that is up for further discussion.[^supposition] But conjectures are distinct from each of these, and call for a unique treatment.  That they earn such status is what I hope to show throughout the course of this project.
+This completes our survey of the structure of inquiry. Inquiry is a complex process, and any representation thereof must capture this complexity. The table below outlines the various proposed additions to the structure of inquiry.
 
 <!-- Types of value -->
 {% capture struci %}
@@ -212,7 +189,7 @@ I maintain that conjecture, when paired with a corresponding correction, constit
 
 ## Knowledge and knowing (What do we know?)
 
-Call the result the *inquiry-first* account of knowledge. The object of knowledge is the output of proper inquiry -- a collaboratively developed structure composed of (at least) a possibility space, a set of relations over that space, and a record of the process by which the issue has been resolved. This is a fairly substantial departure from the standard view of knowledge on which it is a relation that holds between an individual and a proposition. But substantial doesn't mean radical, and the proposal is not as divorced from common sense as it may at first seem.
+Return to the idea that knowledge is whatever the outputs of proper inquiry are, and call the result the *inquiry-first* account of knowledge. In light of our survey above, the object of knowledge is a collaboratively developed structure composed of (at least) a possibility space, a set of relations over that space, and a record of the process by which the issue has been resolved. This is a fairly substantial departure from the standard view of knowledge on which it is a relation that holds between an individual and a proposition. But substantial doesn't mean radical, and the proposal is not as divorced from common sense as it may at first seem.
 
 ### Solitary knowing
 
@@ -334,42 +311,7 @@ Knowledge queries inquiry, and the query encodes the process of inquiry. The ind
 
 Knowledge is belief with an account. It is useful because having an account can assist you in an inquiry, and this has practical value. The process is valuable; it is included as part of the knowledge, we do get something of genuine practical value.
 
-## Contextualism and relativism
-
-If Brisco and Green both believe that they've got the culprit, then they will act in similar ways. They'll look to elicit a confession, offer up bargains, or threaten physical violence. But if Brisco's suspect is in confession room A while Green's is in B, then their actions will have quite different import.[^brisco] In one sense, Brisco and Green believe the same thing, but in another sense, they believe differently.
-
-The fact that sameness of belief is two-sided in this way is brought out in the differences between a relativist and a contextualist approach to attitude ascriptions such as *Brisco believes that the culprit acted alone*. Relativists take belief to be a relation to a property -- one that a person stands in when she self-ascribes that property.[^centeredworlds] The agreement between Brisco and Green then comes from their both self-ascribing the property of *currently interrogating the culprit*. Their disagreement comes from the fact that Brisco self-ascribes the property of *inhabiting a world where the culprit is in interrogation room A* and Green self-ascribes the property of *inhabiting a world where the culprit is in interrogation room B*. Since individual people don't co-locate, they can't both possess their respective properties in actuality.
-
-The contextualist views the situation differently. Belief, for the contextualist, is a relation between an individual and a proposition. But context infects the relation as well, and the relations one bears to a proposition need not be stable across changes in context.[^contextualistflavor] So, Brisco and Green definitely disagree.  Hold the context fixed, and Brisco stands in the belief relation to the proposition that *the culprit is in interrogation room A*, while Green stands in the belief relation to the proposition that *the culprit is in interrogation room B*. Since individual people don't co-locate, they cannot both, in actuality, believe true things. But, it may yet *appear* that they agree. After all, both Brisco and Green would honestly tell the Liutenant "I'm subjecting the culprit to interrogation." But the contextualist denies that honest reporting tells the whole story. Our words are sensitive to context in a way that our beliefs are not. Their espousal of the same belief is merely superficial.
-
-The difference is one way of cashing out the difference between relativist and contextualist views of attitudes. But this is not the only way.
-
-### Disagreement as lingusitic data
-
-Disagreement has been a bit of a star figure in recent debates in the philosophy of language. Primarily, it has been used as a tool for assessing the adequacy of different proposals for the semantic contribution of certain expressions. The contestants in battle disagreement are *absolutism*, *contextualism*, and *relativism*, and the standard scorecard has absolutism and relativism coming out on top in virtue of their ability to secure constant content across uses of the expression. Genuine disagreement does seem to require something toward which utterances can entail incompatible commitments, but semantic content is not the only contribution an utterance makes to discourse. Contextualism can appeal other elements of utterances, which may both remain constant and serve as the seat of disagreement.
-
-### Commitment and contribution
-
-Plunkett and Sundell
-
-The difference between contextualism and relativism is generally couched in terms of content, but content is not the only semantically relevant element of linguistic utterances. Also associated with what we say is a context change potential. A different way of representing the difference between contextualism and relativism is not in terms of what they mean but what they do.
-
-### The nature of relativism
-
-John MacFarlane characterizes as relativistic any semantic theory that makes essential reference to the context of the <em>assessor</em> of an utterance. And much of the contextualism/relativism debate has centered on who's context matters. But Peter Lasersohn provided an interestingly different take on relativism. His support of relativism was not so much that certain expressions demand that the assessor's context be included but that whose context is important to evaluation is not <em>determined</em> at the point of utterance.
-
-### Joint inquiry and relativism
-
-Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An individuals utterance is incomplete in an important way, and it calls for completion from one's interlocutors. Thus, evaluation is delayed until the inquiry progresses.  Knowledge, it turns out, is relative; just not in the way we first suspected.
-
-## References
-
-{% include elements/reflist.html %}
-
-***
-{: style="border-bottom:1px solid #aaa;margin:1em;"}
-
-<!-- Footnotes -->
+{% include elements/chapterend.html %}
 
 [^inquiryStalnaker]:
     According to this initial explication, the machinery of inquiry properly includes that presumed by the conception preferred by Robert Stalnaker in which inquiry is "the enterprise of forming, testing, and revising beliefs" {% include appendices/ref.html id="stalnaker1987" o="" e="," p='ix' %}. As will become clear in what follows, there is no reason to restrict inquiry to operations on states of *belief*, nor ought we to presume that forming, testing, and revising exhaust the inquiry-relevant operations on mental states.
@@ -380,32 +322,11 @@ Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An
 [^inclusion]:
     This is not completely true; we can make sense of one state strictly containing another.
 
-[^brisco]:
-    In one sense, Brisco and Green disagree in their beliefs. Brisco thinks it was the guy in room A that did it, while Green thinks it was the one in room B. They both think that the person who did it acted alone. In another sense, they agree in what they believe.  Belief is functionally tied to action, and Brisco and Green are acting in very similar ways. While Brisco is putting the screws to the guy in room A, Green has got the guy in room B under a hot lamp. They both have drafted warrant requests, and have finger prints running through the database checker.
-
-[^centeredworlds]:
-    Perhaps not all relativists would be happy with this characterization, taking belief to be a three-place relation among a subject, proposition, and a perspective. But a perspectival proposition is itself a relation; curry that relation and you're left with a property.
-
-[^contextualistflavor]:
-    There are different flavors of contextualism (Stanley, DeRose, Glanzberg, etc) and the differences might make a difference for certain applications. But I'm happy to treat the version in the text as representative in regard to the issue of disagreement.
-
-[^ConversationalForce]:
-    The notion in the text of *contribution type* is related to Paul Portner's *conversational force*, which he sees of as a notion, distinct from illocutionary force, that has implications for aspects of the grammatical system relating to syntax, semantics, and pragmatics.
-
 [^QACongruence]:
     We'll revisit the anticipation and restriction of questions later on when we discuss focus and Q/A Congruence in [Dispute in Discourse](/chapters/dispute-in-discourse.html)
 
-[^supposition]:
-    They are also similar to suppositions in that they seem to be less than fully committal on the part of the speaker. Assertion is generally associated with a commitment that it generates for the speaker.  This commitment involves some evidential relation between the asserter and the information conveyed, though it is controversial just what relation it is. But whatever the relation amounts to, it seems clear that we sometimes offer contributions to discourse that go beyond the evidence we have available. And we do this not just as a means of flouting the rules of discourse, but frequently in order to respect the project of the communicative exchange.
-
 [^connection]:
     Jonathan Schaffer {% include appendices/ref.html id="schaffer2005" o="" %} also explores of the nature of knowledge in terms of its connection to inquiry, though his development of the nature of inquiry differs from that in the text.
-
-[^command]:
-    Sometimes added to this list of contribution types is the *command*, which proposes a non-linguistic demand upon a participant in the inquiry. The appropriate response to such a contribution is to make the world such that the demand is met (or to reject the demand itself).
-
-[^mood]:
-    Each of these contribution types has an associated linguistic mood. Inquiry is a structured process, in which it is important not only what information is available but also how it is to be put to use in reaching the goal. As an implementation of inquiry, linguistic discourse has conventional means of representing how the information is being put to use by a contribution. But the scope of contribution types is not limited by the set of conventional moods. Nor do I think the concept of *linguistic mood* cuts along the same joints as that of *contribution type*. What is important for a contribution type is that there is a recognizably unique way in which information is put to use to further the goals of the inquiry.
 
 [^ability]:
     Is this true? Haven't I build *actual* collaboration into the framework by way of the sandbox?
@@ -453,3 +374,16 @@ Joint inquiry, modeled by sandbox-level investigation, suggests exactly this. An
 
 [^interleaved]:
     There are many ways to make sense of interleaved contents, and I don't see that the basic structure of inquiry requires any one type of interleaved content. But a quite natural one is *structural interleaving* -- contributions have components, and different contributions are interleaved to the extent that they share components. I will make use of this notion of interleaved content in my account of contrastive predication in [Dispute in Discourse](/chapters/dispute-in-discourse.html).
+
+[^peircetesting]:
+    This conception of induction is present in Peirce's writings as well:
+
+    > The operation of testing a hypothesis by experiment, which consists in remarking that, if it is true, observations made under certain conditions ought to have certain results, and then causing those conditions to be fulfilled, and noting the results, and if they are favourable, extending a certain confidence to the hypothesis, I call *induction*. (Peirce, Abduction and Induction, p. 152)
+
+    Note that there is no mention in this description of case or generalizations. Presumably, Peirce would further agree that in the instance where the results of the test are not favourable, a certain renunciation or adjustment of the hypothesis is in order.
+
+[^downdate]:
+    This feature of corrective contributions will be elaborated further in [Dispute in discoruse](/chapters/dispute-in-discourse.html).
+
+[^talkingover]:
+    It's true that two participants in a discourse can talk at the same time, and its possible for this to result in two contributions simultaneously committed to the discourse. But I take it that this *talking over* method of parallel contribution to discourse is rare enough (and even more rarely effective) to set it aside.

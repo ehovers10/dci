@@ -1,0 +1,28 @@
+---
+layout: article
+---
+
+{% assign chapter = site.data.toc[page.title] %}
+{% if chapter.abstract %}
+  <h3>Abstract</h3>
+  <blockquote>
+  {{ chapter.abstract | markdownify }}
+  </blockquote>
+{% endif %}
+
+{% if page.toc %}
+  <h3>Table of contents</h3>
+  <blockquote>
+  {% include elements/toc.html %}
+  </blockquote>
+{% endif %}
+
+<div class="divider print-no"></div>
+<div class="break"></div>
+
+{% assign ex = 0 %}
+{% assign carol = '' %}
+
+<div class="page-content">
+  {{ content }}
+</div>

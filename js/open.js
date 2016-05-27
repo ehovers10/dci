@@ -23,6 +23,21 @@ $(document).ready( function() {
     return false;
   });
 
+  /* Toggle popbox */
+
+  $( ".pop" ).click( function() {
+    var hidden = '#' + $(this).attr('id') + '-hid';
+    $(hidden).css('display','block');
+
+    return false;
+  });
+
+  $( ".popclose" ).click( function() {
+    $(this).parents(".lightbox").css("display","none");
+
+    return false;
+  });
+
   /* Tooltips */
 
   $( ".tooled" ).hover(

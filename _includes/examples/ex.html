@@ -7,7 +7,7 @@
 {% endif %}
 {% assign example = site.data.examples.[include.term].[bits] %}
 
-<div style="margin:1em;" id="{{ include.term | slugify }}">
+<div class="def" style="margin:1em;" id="{{ include.term | slugify }}">
   <div style="margin-bottom:0.5em;">
     <span style="margin-right:0.5em;font-weight:600;">{{ ex | prepend: 'Example ' }}</span>
     <span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
