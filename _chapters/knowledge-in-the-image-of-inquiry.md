@@ -13,7 +13,7 @@ extra:
   - Peirce and van Fraassen on induction
 ---
 
-## Knowledge as the end of inquiry
+## Finding our way to knowledge
 
 Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
 
@@ -181,7 +181,7 @@ This completes our survey of the structure of inquiry. Inquiry is a complex proc
 {% endcapture %}
 {% include examples/def.html type="table" term="Structure of inquiry typology" defn=struci %}
 
-## Knowledge and knowing (What do we know?)
+## What do we know?
 
 Return to the idea that knowledge is whatever the outputs of proper inquiry are, and call the result the *inquiry-first* account of knowledge. In light of our survey above, the object of knowledge is a structure composed of (at least) a possibility space; a set of relations over that space, themselves supplied with a preference ordering; and a record of the process by which the issue of the inquiry has been resolved. Because it is a collaborative process, the record must accommodate the coherence and correctiveness of the contributions. This is a fairly substantial departure from the standard view of knowledge on which it is a static relation that holds between an individual and a proposition. But substantial doesn't mean radical, and the proposal is not as divorced from common sense as it may at first seem.
 
@@ -300,6 +300,15 @@ Reliabilist accounts are also *extrinsic* in that the justification inferring pr
 But the problem isn't with the machine-product model itself; it has to do with the nature of the product. Zagzebski assumes that the object of knowledge is a static state, which carries no practical value beyond its property of being true. But the process one undergoes in inquiry represents their account of their knowledge, and possession of an account is valuable for its credit generating capability. The solution to the value problem is to imbue the product with the credit deserving feature --  the *account* of the state's genesis. Doing so injects the process into the product.
 
 According to the inquiry-first conception of knowledge, the process is the product. Knowledge ascriptions query inquiry, and the query encodes the process of inquiry. The individual beliefs abstracted from the state are known, but they are not the knowledge in so far as knowledge is value additive. The knowledge is the entire temporally extended structure, part of which is the historical record of how the structure came to be in its current form, including all the tests it passed along the way.
+
+## Tracing back through the breadcrumbs
+
+The nature of knowledge tends to fly away from us. We can potentially tie it down by devising accounts of the ways we come to possess knowledge when we do, and engaging in inquiry is an important way that humans acquire knowledge. Inquiry itself is a complex process. It involves following procedures intended to minimize the infiltration of error into our attitudes, but these procedures are only applicable in the context of a system that also assumes the risk of believing in the absence of certainty. Joint inquiry rewards courageousness by placing checks on wanton speculation. The result of proper is a collaboratively built structure that records the dynamic nature of the inquiry as its participants advance headlong into the abyss with the security that their partners have a firm grip on the belay.
+
+The resulting sensitivity of one's knowledge to the community of inquirers of which one is a part is revisionary but not all that radical. It accords well with a common sense view of degrees of cognitive achievement associated with conceptual refinement. And the additional structure posited of the objects of knowledge affords an explanation of the diversity of ways we talk about knowledge. Ascriptions of knowledge query an inquiry, culling from its complex object the relevant structural bits at a particular stage of its development. Relevant bits of information can include propositions, discourse objects, or a variety of other tools that the inquirer may put to use in the course of investigation.
+
+Along the way, we stumble onto knowledge. We are lucky, in a sense, to be able to call the outputs of this process *knowledge*, but no one can deny that we have earned the right to whatever attitudes spring from it, for the path we have taken is recorded in the inquiry structure. This accessible record is what warrants us in maintaining our attitudes, and it is also what generates the distinctive value of knowledge over true, but unvetted, opinion. The value comes from the credit that possessing such an account provides. Having carried out the inquiry makes one a suitable expert on the topic. To turn to someone as an expert is to treat them as a resource in a further inquiry. Because inquiry is collaborative, being used as a resource entails receiving another's service as well. Possessing knowledge, then, is of practical value beyond the access to truth it entails. It also ensures access to further inquiry down the line, and ultimately, being a working inquirer is all one can hope for.
+
 
 {% include elements/chapterend.html %}
 

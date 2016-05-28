@@ -1,7 +1,7 @@
 Knowledge in the image of inquiry:
-  abstract: I propose to take this seriously the common dictum that knowledge is the end of inquiry and accept at face value that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, which is relativized to a community of inquirers. So, then, is knowledge. The <em>inquiry-first</em> conception of knowledge, while revisionary, is not so radical. And it is supported by the promise it carries for explaining the distinctive value of knowledge over true belief.
+  abstract: I propose to take seriously the common dictum that knowledge is the end of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, which is relativized to a community of inquirers. If knowledge just is the output of this process, then knowledge, too is so relativized. The <em>inquiry-first</em> conception of knowledge, while revisionary, is not so radical. It captures common sense ideas about degrees of cognitive achievement and conceptual refinement, and it offers a unifying account of the diverse ways we talk about knowledge. It is further supported by the promise it carries for explaining the distinctive value of knowledge over true belief.
   sections:
-  - title: Knowledge as the end of inquiry
+  - title: Finding our way to knowledge
     detail: "Jonathan Schaffer (Knowledge in the image of assertion) has argued that we can learn something about the structure of knowledge by investigating the nature of assertion, to which knowledge bears a substantive connection. Knowledge also bears a substantive connection to inquiry, and I maintain that we can similarly learn something about the nature of knowledge by investigating the nature of inquiry."
     subsections:
   - title: The nature of inquiry
@@ -20,7 +20,7 @@ Knowledge in the image of inquiry:
         - title: Correction
     - title: Implementation
       detail: "We end up with a picture of inquiry as the productive evolution of an articulated information state. Productive evolution can take a variety of forms. These forms correspond to different types of contribution. Inquiry contribution types have direct analogues in discourse. There are possibility restricting <em>assertions</em> and state partitioning <em>questions</em> with which we are familiar. But there is also a contribution type corresponding to *conjecture*, which can be modeled by sandbox-level investigations. <em>Conjecture</em>, along with its natural pair <em>correction</em>, provides a distinctive means of advancing the inquiry."
-  - title: Knowledge and knowing
+  - title: What do we know?
     subsections:
     - title: Solitary knowing
       detail: "Those who do not belong to a community of inquirers have no one against whom to test their beliefs, but surely they are capable of possessing knowledge. Proper inquiry is doubly qualified to account for solitary knowledge: (i) an inquirer need only possess the ability to defend against challenges, and (ii) she need only defend against the best arguments available. Degenerative inquiry, in which the best available arguments are trivially defended, is still inquiry, its outputs still knowledge."
@@ -32,6 +32,7 @@ Knowledge in the image of inquiry:
     - title: Success and credit
     - title: Justifying processes
       detail: "Linda Zagzebski argues that many theories of knowledge -- notably <em>machine-product</em> accounts of knowledge, on which knowledge is taken to be a state that is the output of some state generating process -- are subject to a <em>swamping problem</em>. Possessing knowledge is more valuable than possessing merely true belief, but these accounts of knowledge have no explanation for the distinctive value that knowledge provides over and above the truth of output they produce. But the problem isn't with the machine-product model itself. The problem comes from focusing on the product and ignoring the process. The value of knwoledge is in grounding the credit the agent deserves for the belief. Knowledge provides, as Socrates suggested to Meno, an <em>account</em> of the product's genesis. So long as the process is seen as external to the product, the product will carry no value of its own. But the insight of the connection between inquiry and knowledge is that they need not be independent. The product encodes the process. The inquiry itself is the object of knowledge."
+  - title: Tracing back through the breadcrumbs
 
 Collaborative discourse dynamics:
   abstract: Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In *collaborative update semantics*, contribution operators attach to propositional radicals, and contributions initiated by one utterance may not be completed until a later utterance is added. In particular, conjecture operators function by opening a *sandbox* in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.
