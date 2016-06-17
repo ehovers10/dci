@@ -1,7 +1,7 @@
 ---
 ---
 
-### Problem 
+### Problem
 
 Not every relation in intension corresponds to a relation in extension.
 
@@ -12,6 +12,12 @@ Relations, understood as structure imposed on the common ground, are purely exte
 (Within a sandbox, commits are joined to a shared table. This represents the collaborative nature of the sandbox situation.)
 
 (Upon merge, the sandbox table is adjoined to the info. state relation list. This represents the evolutionary nature of the inquiry.)
+
+This allows us to rebuild the discourse history from the available parts but also allows us to trace back its course of evolution.
+
+What are the elements that are added to the relation list?
++ Relations-in-intension? Ok, but really, what are these?
++ Regular sets of tuples, but the domain elements are drawn from whatever the context universe looked like at the time of addition.
 
 ### Solution
 
@@ -28,11 +34,11 @@ Define a *table* as a relation with attributes drawn from the available drefs an
     + That is, the radical determines the attributes (subject and predicate)
     + The saturation places a constraint on the attribute values and groups them according to the partition it defines
 + The initiation provides the domain, continutations involve an asymmetric join, preferring the relation determined by the intitiation
-+ Compare Basoveanu and Bittner (following Vandenberg?) on maximality 
-+ We implement a &theta;-join, with the &theta; relation determined by the saturation. 
++ Compare Basoveanu and Bittner (following Vandenberg?) on maximality
++ We implement a &theta;-join, with the &theta; relation determined by the saturation.
     + It determines a cronstraint for accepting tuples in the join.
 + Is a join really a structuring update? It seems to eliminate possibilities.
-    + But no elimination from the common ground. All that is eliminated is *pairs* of worlds. 
+    + But no elimination from the common ground. All that is eliminated is *pairs* of worlds.
     + That is, we refine the relation.
 
 + Hash table, Associative array
@@ -40,9 +46,9 @@ Define a *table* as a relation with attributes drawn from the available drefs an
     + index determined by world (world buckets)
     + hash function can pick out individual bears, but we mostly just need the entire set
     + for each bucket, *bears* returns subset of *dangerous* return or *bears* return intersect *dangerous* return is null.
-    
-+ || bears<sub>s(et)</sub> ||<sup>**M**</sup> can be seen as generating a table, bucketed by D<sub>s</sub> and indexed by D<sub>e</sub>. 
-    + Each bucket gives us the set of bears at that world. 
+
++ || bears<sub>s(et)</sub> ||<sup>**M**</sup> can be seen as generating a table, bucketed by D<sub>s</sub> and indexed by D<sub>e</sub>.
+    + Each bucket gives us the set of bears at that world.
     + Specific bears are the values of each index in a bucket.
     + || &alpha; || is a *key*, but it is not a hash key, because the hash function does not return a unique value.
 + The relation just gives us world-element-value tuples, but the bucketing allows for plural relations.
@@ -57,8 +63,8 @@ Define a *table* as a relation with attributes drawn from the available drefs an
     + Left outer join preserves initiation tuples based on relation from...
 
 + || bears<sub>s(et)</sub> are dangerous<sub>s(et)</sub>||<sup>**M**</sup> first performs a join.
-    + Presupposition next performs a Query: 
-    + *dangerous* = +, 
+    + Presupposition next performs a Query:
+    + *dangerous* = +,
     + if *bears* is uniform,
     + then keep *s*
     + The presupposition is thus acting as a structuring and eliminating update in one.
@@ -68,11 +74,11 @@ Define a *table* as a relation with attributes drawn from the available drefs an
 
  Bears | Dangerous | Problem
 :-----:|:---------:|:-------:
-  +    |  +        |  
-  +    |  +        |  
+  +    |  +        |
+  +    |  +        |
   +    |  -        |  x
-  -    |  +        |  
-  
+  -    |  +        |
+
 + Projection: *contracts* header
 + Select: *restricts* body
 + Join: *extends* header, *restricts* body by value identity on shared attributes
@@ -86,21 +92,21 @@ Define a *table* as a relation with attributes drawn from the available drefs an
 
 ### Context evolution
 
-*bears* and *dangerous* are predicates of type s(et), which can be represented by tables with headers *situation*, *entity*, *trope* (*quality*) and body populated by **M**. 
+*bears* and *dangerous* are predicates of type s(et), which can be represented by tables with headers *situation*, *entity*, *trope* (*quality*) and body populated by **M**.
 
 Plural predication is a *concatenation* function, which is represented by a *natural join* of the predicate tables. THe resulting table has header *situation*, *entity*, *trope*<sub>a</sub>, *trope*<sub>a</sub>. The tuple list is contracted (culled) to situation, entity pairs that the model represents as having both properties.
 
-The plural sentence expresses a propositional radical (*C*), which is an incomplete discourse object of type *s*. When uttered, it is supplied with a *homogeneity* presupposition (*k*) to the effect that either all *bears* are dangerous *or* no *bears* are. 
-  
-The presupposition tells us how to *query* the the table for *C*. The form of the presupposition is a disjunction, so we will have a disjunctive query. As a global presupposition, it queries the entirety of an attribute relative to another attribute. 
+The plural sentence expresses a propositional radical (*C*), which is an incomplete discourse object of type *s*. When uttered, it is supplied with a *homogeneity* presupposition (*k*) to the effect that either all *bears* are dangerous *or* no *bears* are.
+
+The presupposition tells us how to *query* the the table for *C*. The form of the presupposition is a disjunction, so we will have a disjunctive query. As a global presupposition, it queries the entirety of an attribute relative to another attribute.
 
 This presupposition is integrated in a two step manner:
-  
-> Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>b</sub>(+),*s*). The model, represented in the table, ensures that this give us only situation/entity pairs that represent danger. 
+
+> Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>b</sub>(+),*s*). The model, represented in the table, ensures that this give us only situation/entity pairs that represent danger.
 >    + This query effectively forms a parition over *dangerous* and selects a preferred cell.
 >    + Acutally, I think it works as a right outer join, since I have introduced anti-extensions and null values.
-> 
->Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>a</sub>(+),*s*) or COUNT(*entity*(\*),*s*) = 0. The concatenation join ensures alignment between *bears* and *dangerous*. 
+>
+>Return all tuples with *situation* value *s* if COUNT(*entity*(\*),*s*) = COUNT(*trope*<sub>a</sub>(+),*s*) or COUNT(*entity*(\*),*s*) = 0. The concatenation join ensures alignment between *bears* and *dangerous*.
 >    + This query returns only the situations uniform across the *bears* quality relative to the prefered cell of the *dangerous* partition.[^divide]
 
 This leaves us with the set of situations that are uniform across the *bears* dimension with respect to a positive value for the *dangerous* dimension. And it is this table that is submitted to the semantic machinery to evaluate *Bears are dangerous*.
@@ -108,8 +114,8 @@ This leaves us with the set of situations that are uniform across the *bears* di
 All of this takes place within a sandbox, and the utterance has been recorded as a dref, which allows us to rebuild the table from the Model at any point. No information has been lost.
 
 Continuations similarly present a propositional dref, but they do not establish a new table. Instead, they are integrated into the existing sandbox table in the following manner:
-  
-> 
+
+>
 
 ### Capturing desiderata
 
@@ -150,11 +156,11 @@ Continuations similarly present a propositional dref, but they do not establish 
 
 ### A potential distinction to develop
 
-There is a difference between a correction that challenges the *accuracy* of a bare plural sentence and one that merely challenges its *precision*. For an inaccurate bare plural assertion, the subject set is not included in the predicate set. But in an imprecise bare plural assertion, the subject set is so included, its just that asserting this doesn't provide as informative an update as is warranted. 
+There is a difference between a correction that challenges the *accuracy* of a bare plural sentence and one that merely challenges its *precision*. For an inaccurate bare plural assertion, the subject set is not included in the predicate set. But in an imprecise bare plural assertion, the subject set is so included, its just that asserting this doesn't provide as informative an update as is warranted.
 
 It seems that the correction in *Grizzly bears* is both. It challenges precision *as a way to* challenge accuracy. The claim went too far and overgeneralized to the point of falsity.
 
-It's possible that these update types are not mutually exclusive. It's also possible that theories that differ only in notational ways may assign updates to different types. For instance, one may take an update to directly alter an element of the common ground to reflect a relation among *its* elements, in which case we would consider it to be a structuring update. Or, one could add a specification of a domain and range as a new element of the state of information, thereby providing all the tools necessary for constructing the relation among elements of another element of the state of information. In this case, the update appears to be of the dref variety. In effect, the first option replaces one set of entities with a *relation-in-extension* among the same entities, and the second option adds a *relation-in-intension* to the information state. I don't think there is reason to bicker over the details here so long as both options equally account for intuitive interpretations of the linguistic item under consideration. 
+It's possible that these update types are not mutually exclusive. It's also possible that theories that differ only in notational ways may assign updates to different types. For instance, one may take an update to directly alter an element of the common ground to reflect a relation among *its* elements, in which case we would consider it to be a structuring update. Or, one could add a specification of a domain and range as a new element of the state of information, thereby providing all the tools necessary for constructing the relation among elements of another element of the state of information. In this case, the update appears to be of the dref variety. In effect, the first option replaces one set of entities with a *relation-in-extension* among the same entities, and the second option adds a *relation-in-intension* to the information state. I don't think there is reason to bicker over the details here so long as both options equally account for intuitive interpretations of the linguistic item under consideration.
 
 However, there may be empirical reasons to choose one over the other. If the update functions, for instance, by replacing an unordered set by an ordered one, then we may take certain information to be lost; namely, that the state once represented the set as unordered. But if the relation-in-intension is added to the information state, then we have the tools to construct the relation-in-extension without directly doctoring the set to which it applies. It may be that adequte interpretation of certain extended discourses requires the presence of the original, undoctored set in addition to the relation.
 

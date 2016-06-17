@@ -47,6 +47,17 @@ bach1994:
   Title: Conversational Impliciture
   Url: http://userwww.sfsu.edu/kbach/impliciture.htm
 
+bealer1997:
+  Author: George Bealer
+  Title: Self-Consciousness
+  Type: article
+  Journal: The Philosophical Review
+  Year: 1997
+  Volume: 106
+  Issue: 1
+  Pages: 69-117
+  Url: "http://links.jstor.org/sici?sici=0031-8108%28199701%29106%3A1%3C69%3AS%3E2.O.CO%3B2-Y"
+
 bittner2011:
   Title: Time and modality without tenses or modals
   Author: Maria Bittner
@@ -1190,6 +1201,12 @@ levi1980:
   Publisher: MIT Press
   Location: Cambridge, MA
 
+lewis1973a:
+  Author: David Lewis
+  Title: Counterfactuals
+  Year: 1973
+  Publisher: Blackwell Publishing
+  
 lewis1973:
   Author: David Lewis
   Title: Counterfactuals and Comparative Possibility
@@ -1236,7 +1253,7 @@ lewis1975a:
   Publisher: Cambridge University Press
   Year: 1975
   Address: Cambridge
-  Note: \PPL 5-20
+  Note: PPL 5-20
   Pages: 3--15
 
 lewis1975b:
@@ -1247,7 +1264,7 @@ lewis1975b:
   Publisher: University of Minnesota Press
   Year: 1975
   Address: Minneapolis
-  Note: \PPI 163-188
+  Note: PPI 163-188
   Pages: 3--35
   Volume: 7
   Owner: erik
@@ -1262,6 +1279,7 @@ lewis1974b:
   Number: 3-4
   Pages: 331-344
   Note: PPI 108-118
+  Type: article
   Url: https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/
 
 lewis1980:
@@ -1283,6 +1301,13 @@ lewis1988:
   Number: 1
   Pages: 29-57
   Note: PME 262-290
+
+lewis1999:
+  Year: 1999
+  Author: David K. Lewis
+  Title: Papers in Metaphysics and Epistemology
+  Publisher: Cambridge University Press
+  Location: Cambridge, UK
 
 lobner1987:
   Title: Natural language and generalized quantifier theory
@@ -2053,7 +2078,7 @@ vanfraassen2000:
   Pages: 253-280
   Abstract: "After Hume, attempts to forge an empiricist epistemology have taken three forms, which I shall call the First, Middle, and Third Way. The First still attempts an a priori demonstration that our cognitive methods satisfy some (weak) criterion of adequacy. The Middle Way is pursued under the banners of naturalism and scientific realism, and aims at the same conclusion on non-apriori grounds. After arguing that both fail, I shall describe the general characteristics of the Third Way, an alternative epistemology suitable for empiricism."
   Affiliation: Princeton University
-  
+
 veltmg:
   Title: Coreference and Contextually Restricted Quantification
   Author: Frank Veltman

@@ -43,4 +43,15 @@
   .page-content {
     padding: 0;
   }
+
+  .bunch {
+    .body-nav {
+      display: none;
+    }
+    .area {
+      display: block!important;
+      position: relative;
+    }
+  }
+
 }
