@@ -1,5 +1,9 @@
 <div class="divider print-no"></div>
 
+{% if allcomments %}
+  {% include elements/notelist.html %}
+{% endif %}
+
 <h3>References</h3>
 {% include elements/reflist.html %}
 

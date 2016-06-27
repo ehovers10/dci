@@ -50,4 +50,24 @@ $(document).ready( function() {
     }
   );
 
+  $( ".footnote" ).parent("sup").addClass( "tooled" );
+  $( ".footnote" ).addClass( "note" );
+  $(".footnotes" ).find( "li" ).addClass( "tooltip" );
+  $(".footnotes" ).find( "li" ).attr('id', function() {
+    return $(this).attr('id').substr(3);
+  });
+
+  $( ".footnote" ).parent( "sup" ).hover(
+    function() {
+      var noteid = $(this).attr('id').substr(6),
+          notetip = '#' + 'fn:' + noteid;
+
+      $('#' + noteid).css('display', 'block');
+    }, function() {
+      var noteid = $(this).attr('id').substr(6),
+          notetip = '#' + 'fn:' + noteid;
+      $('#' + noteid).css('display', 'none');
+    }
+  );
+
 });

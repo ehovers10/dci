@@ -1,0 +1,51 @@
+js1:
+  'I agree that knowledge and inquiry are intimately connected, and that you may find intriguing clues to the nature of knowledge by thinking about inquiry. This is good. I’d add that inquiry is also structured by questions. As I see things, there is an underlying q&a model. We pose a question — this is the inquiry — and if we come to an answer in the right way, we come to know the answer.'
+
+js2:
+  '“Inquiry… has a structure that evokes its deeply collaborative nature.” I agree that many of the most successful inquiries are collaborative, but that seems to me to be completely inessential to the structure of inquiry. Indeed, it seems to me that if one looks across the spectrum from contemporary scientific lab work (almost always collaborative) to armchair philosophical reflections (often done solo), one finds a wide range of different levels of collaborativeness.'
+
+js3:
+  'You speak of deduction, induction, and abduction as “three stages” of inquiry. This confused me twice over! First, do we really need to distinguish induction from abduction? Secondly, how are these stages of inquiry? It seems to me that these are just different styles of reasoning, any of which may be used at any given stage of inquiry. If I were to think of inquiry as having stages, I would think of these stages in terms of connected questions, not in terms of different styles of reasoning.'
+
+js4:
+  'I don’t know why you went from deduction (which is about the consequence relation) to epistemic logic (which is about the consequence relation in special languages outfitted with K operators). Also the standard image in epistemic logic of the agent’s state of knowledge being deductively closed is, to put it mildly, absolutely ridiculous. We are not blessed with logical omniscience. Some of our deepest and most difficult inquiries concern what follows from what.'
+
+js5:
+  'What you call “Levi identity” is formally trivial. You can model any transition from set S1 to set S2 in domain D by (1) expanding S1 to D, and then (1) contracting D to S2. This principle is only interesting if we constrain the expansions and contractions allowed.'
+
+js6:
+  'You identify “initiating inquiry” with “the presentation of a proposition”, but I think that initiating inquiry is better identified with posing a question than with adding information. The addition of information is what happens upon the successful completion of an inquiry.'
+
+js7:
+  'The last paragraph (“Recognition of information state incompleteness…”) as very difficult to read.'
+
+js8:
+  'Imposing an order over a partition seems to me to fall well short of representing anything like a “will to believe”. At most it gives you a tie-breaker effect. There’s no “willing” nor is there anything about the choice being “momentous” etc. Perhaps all you want to capture in the end is the tie-breaker function, but then calling this a Jamesian “will to believe” seems overblown.'
+
+js9:
+  'I feel like I’ve lost track of the narrative. As you get to the “Coherence” section I wrote in the margins “What’s happening here? Where is this going?”'
+
+js10:
+  'Three notions got introduced here: a “dilated process”, “a plan” for the process, and “a sandbox” for testing things. I felt like I got, in a loose and intuitive way, what you had in mind. But I didn’t understand in any more formal and precise way what these meant. (For the sandbox, would it be sufficient to keep a log of revisions made, so that one could always “undo” arbitrarily many steps of revision and return to a previous state?)'
+
+js11: 'The last paragraph in this section (“…changes the game entirely”) lost me entirely!'
+
+js12: 'It would be useful to explain how you are distinguishing induction from abduction.'
+
+js13:
+  '“The collaborative nature of inquiry requires multiple parties working in concert, …” Again that strikes me as not part of the nature of inquiry at all, but merely a happy way to conduct certain larger scale inquiries.'
+
+js14:
+  'When I get to Table1 I realize how little I am following, especially on the formal-operational side. I got that we started in a possibility space, with expansion, contraction, and partitioning (plus an ordering over cells). But what are “Initiation” and “Re-saturation” and “Merge”??'
+
+js15:
+  'Though your discussion has invoked phrases like “The collaborative nature of inquiry requires multiple parties working in concert, …” (p. 14), nothing in your formalism actually seems to take this up. You just have a bunch of operations on information states. At most other parties might provide a spur to applying some of these operations, but again nothing demands this, and your operations don’t care what spurred them to be applied. So solitary knowing shouldn’t be a problem at all. The only conflict seems to me to be with your rhetoric.'
+
+js16:
+  'That ‘knows’ denotes a state is very well supported linguistically. Do you need to be challenging it?? There is the process of coming to knowledge, and that is indeed a process. And then there is the knowledge that one arrives at, and I don’t see why you are resisting the idea that this is a state. Analogy: there is a state of feeling full. There is a process of eating (/filling up), and feeling full is the state one arrives at at the end of this process. The fact that the process of eating is a complex process in no way undermines the natural idea that feeling full is a state.'
+
+js17:
+  'There is a lot of philosophical/linguistic work on these “Varieties of Knowledge” and I can’t think of anything offhand that fits your picture. The “standard view” (to the best of my knowledge) is that ‘know that’ and ‘knows how to’ are syntactically uniform, while ‘knows Piglet’ is an artifact of the fact the ‘knows’ in English is ambiguous between information and acquaintance. This is a distinction that French marks with ‘savoir’ vs ‘connaitre’, and German marks with ‘wissen’ vs ‘kennen’.'
+
+js18:
+  'I never understood why knowledge is given the extra value of stability. It seem to me that there are cases of resilient/stable true belief which are not knowledge, and fragile/unstable knowledge. So it is at best true in certain selected cases that knowledge is more stable than mere true belief, and cannot provide an across-the-board account of the value of knowledge.'
