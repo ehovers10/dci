@@ -1,12 +1,9 @@
 ---
 title: Knowledge in the image of inquiry
-date: 2015-10-08
 level: 2
-type: chapter
-layout: chapter
-abstract:
-  I propose to take this seriously the common dictum that knowledge is the end of inquiry and accept at face value that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, which is relativized to a community of inquirers. So, then, is knowledge. The <em>inquiry-first</em> conception of knowledge, while revisionary, is not so radical. And it is supported by the promise it carries for explaining the distinctive value of knowledge over true belief.
 toc: yes
+references: yes
+notes: kitioi.md
 extra:
   - Levi on goal generated constraints
   - Bratman et. al on plans
@@ -310,78 +307,3 @@ The resulting sensitivity of one's knowledge to the community of inquirers of wh
 Along the way, we stumble onto knowledge. We are lucky, in a sense, to be able to call the outputs of this process *knowledge*, but no one can deny that we have earned the right to whatever attitudes spring from it, for the path we have taken is recorded in the inquiry structure. This accessible record is what warrants us in maintaining our attitudes, and it is also what generates the distinctive value of knowledge over true, but unvetted, opinion. The value comes from the credit that possessing such an account provides. Having carried out the inquiry makes one a suitable expert on the topic. To turn to someone as an expert is to treat them as a resource in a further inquiry. Because inquiry is collaborative, being used as a resource entails receiving another's service as well. Possessing knowledge, then, is of practical value beyond the access to truth it entails. It also ensures access to further inquiry down the line, and ultimately, being a working inquirer is all one can hope for.
 
 {% include elements/chapterend.html %}
-
-[^inquiryStalnaker]:
-    According to this initial explication, the machinery of inquiry properly includes that presumed by the conception preferred by Robert Stalnaker in which inquiry is "the enterprise of forming, testing, and revising beliefs" {% include appendices/ref.html id="stalnaker1987" o="" e="," p='ix' %}. As will become clear in what follows, there is no reason to restrict inquiry to operations on states of *belief*, nor ought we to presume that forming, testing, and revising exhaust the inquiry-relevant operations on mental states.
-
-[^knowtoomuch]:
-    Set aside the sense of *knowing too much* in which an agent has information that it would be in their other interests to remain ignorant of.
-
-[^inclusion]:
-    This is not completely true; we can make sense of one state strictly containing another.
-
-[^QACongruence]:
-    We'll revisit the anticipation and restriction of questions later on when we discuss focus and Q/A Congruence in [Dispute in Discourse](/chapters/dispute-in-discourse.html)
-
-[^connection]:
-    Jonathan Schaffer {% include appendices/ref.html id="schaffer2005" o="" %} also explores of the nature of knowledge in terms of its connection to inquiry, though his development of the nature of inquiry differs from that in the text.
-
-[^ability]:
-    Is this true? Haven't I build *actual* collaboration into the framework by way of the sandbox?
-
-[^goldman]:
-    As would Alvin Goldman's {% include appendices/ref.html id="goldman1976" o="" %} fake barn cases among others.
-
-[^refinement]:
-    This picture is fitting for our account of refinement to be addressed in the last chapter.
-
-[^multiknowledge]:
-    It is thus a consequence of Levi's approach to inquiry as transition between states of knowledge following the dictates of a revision operator that there can be multiple, incompatible states of knowledge.
-
-[^agm]:
-    The classic treatment of contraction is AGM (Alchourron 1985), and I refer the reader there for details on the relation.
-
-[^contain]:
-    Even in the case of containment, having more information does not necessarily make the state more desirable. The more informative state involves one way of expanding from the less informative one. But independent of knowledge of the *alternative* expansions, there is no saying that such an expansion ought to be carried out.
-
-[^factivity]:
-    For a dissenting opinion, see {% include appendices/ref.html id="hazlett2012" o="n" e="." %}
-
-[^intellectualism]:
-    I focus here on *intellectualist* accounts of knowledge , setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% include appendices/ref.html id="ryle1949,lewis1988,bengson2012" o="n" e="." %}
-
-[^informationpotential]:
-    In other work, Levi has attempted to incorporate the truth acquisition element of the Jamesian amendment {% include appendices/ref.html id="levi1967,rott2006" o="n" e="." %} He defines a sentence's *information potential* -- a real-number value normalized to [0,1]. This value can then be used with an inquirer's subjective probability function to determined whether the sentence is worth adding to their information state.
-
-[^internalism]:
-    In yet other words, the stability of belief requires not just that the agent has knowledge, but that he *knows that* he does. And for someone else's words, directed toward modal conditions on knowledge generally, see {% include appendices/ref.html id="gardiner" o="n" e="." %}
-
-[^swamping]:
-    Ernest Sosa {% include appendices/ref.html id="sosa2003" o="" %} also develops this worry for reliabilism.
-
-[^virtue]:
-    Other developments of virtue epistemology motivated by the purported value of knowledge can be found in {% include appendices/ref.html id="riggs2009,sosa2003" o="n" e="." %}
-
-[^epiphenomenalvalue]:
-    One may at this point simply put their foot down and claim that the epistemic value problem is solved when we finger a feature of knowledge that makes the knower better off than the mere believer, even if the betterness is epiphenomenal. This seems to be the idea behind many virtue epistemological solutions {% include appendices/ref.html id="riggs2009,zagzebski2003" o="n" e="." %} Knowledge is a virtue; it thus adds to a life, whether the knower cares about it or not. It's hard to say exactly what our intuition in the epistemic value problem is tracking, and I don't have an argument that it can't be such an epiphenomenal value. But I think we do have reason to think that knowledge adds practical value over mere true belief, and I hope that my positive account lends credence to my diagnosis of the value problem.
-
-    Virtue epistemological solutions, in so far as they posit a distinctive value possessed by knowledge, must also explain why not all knowledge is valuable. Sosa's {% include appendices/ref.html id="sosa2003" o="" %} example of the beachcomber who acquires knowledge of the number of grains of sand in his palm the hard way does not acquire something valuable. But he has knowledge just the same, and if there is a distinctive epistemic virtue, then his life ought to be better off for the counting.
-
-[^conditionalization]:
-    More or less the system outlined above, perhaps augmented with a probability function and a mechanism for accommodating evidence that supports a proposition without pushing it into the realm of full belief.
-
-[^interleaved]:
-    There are many ways to make sense of interleaved contents, and I don't see that the basic structure of inquiry requires any one type of interleaved content. But a quite natural one is *structural interleaving* -- contributions have components, and different contributions are interleaved to the extent that they share components. I will make use of this notion of interleaved content in my account of contrastive predication in [Dispute in Discourse](/chapters/dispute-in-discourse.html).
-
-[^peircetesting]:
-    This conception of induction is present in Peirce's writings as well:
-
-    > The operation of testing a hypothesis by experiment, which consists in remarking that, if it is true, observations made under certain conditions ought to have certain results, and then causing those conditions to be fulfilled, and noting the results, and if they are favourable, extending a certain confidence to the hypothesis, I call *induction*. (Peirce, Abduction and Induction, p. 152)
-
-    Note that there is no mention in this description of case or generalizations. Presumably, Peirce would further agree that in the instance where the results of the test are not favourable, a certain renunciation or adjustment of the hypothesis is in order.
-
-[^downdate]:
-    This feature of corrective contributions will be elaborated further in [Dispute in discoruse](/chapters/dispute-in-discourse.html).
-
-[^talkingover]:
-    It's true that two participants in a discourse can talk at the same time, and its possible for this to result in two contributions simultaneously committed to the discourse. But I take it that this *talking over* method of parallel contribution to discourse is rare enough (and even more rarely effective) to set it aside.

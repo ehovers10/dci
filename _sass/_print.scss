@@ -1,10 +1,12 @@
 .print-only {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  border: 0;
 }
 
 @media print {
   .print-only {
-    display: block;
+    height: auto;
   }
   .print-no {
     display: none;
@@ -29,11 +31,24 @@
   .lightbox {
     display: block;
     position: relative;
+    background: #fff;
 
     .popbox {
       position: relative;
       padding: 0;
     }
+  }
+
+  .tooltip {
+    position: relative;
+    display: block;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    padding: 0;
+    width: inherit;
+    max-width: inherit;
+    background: #fff;
   }
 
   .wrapper {

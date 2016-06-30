@@ -12,7 +12,7 @@
     {% if atom.fxn %}
       {% include {{ atom.fxn | prepend: 'fxns/' | append: '.html' }} argument=atom.arg %}
     {% elsif atom.first.last %}
-      {% include formalism/molecule.html argument=atom.first cation=cation title="no" %}
+      {% include formalism/molecule.html argument=atom.first cation=cation title=include.subtitle %}
     {% else %}
       {% for bit in atom %}
         {% include {{ cation | prepend: 'formalism/' | append: '.html' }} %}

@@ -1,10 +1,9 @@
 ---
 title: Dispute in discourse
 level: 4
-type: chapter
 toc: yes
-abstract:
-  Disputing an utterance can be an important tool in collaborative inquiry. In this paper, I examine a simple dialogue involving dispute and consider two established proposals for analyzing the semantic and pragmatic import of the utterances it contains. While each provides valuable insight into the interpretation of the discourse, I maintain that each is lacking in a some regard and that collaborative update semantics, supplemented with a semantics for bare plurals, offers an extension that fully accounts for the natural interpretation of the dialogue.
+references: yes
+notes: did.md
 ---
 
 # Disputative discourse
@@ -483,7 +482,7 @@ Assuming the correctible inspires a corrective effort by a discourse participant
 {% capture collab %}
   {% for item in site.data.formalism.pragmatics %}
     {% if item[0] == "collaborative update" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" %}
+      {% include formalism/molecule.html argument=item cation="condition" title="no" subtitle="yes" %}
     {% endif %}
   {% endfor %}
 {% endcapture %}
@@ -539,21 +538,3 @@ The CU extraction stands behind the strictness inclination. Bare plural sentence
 The key observation here is [Susceptibility](#susceptibility). Even if bare plural sentences can be true, their truth seems to be inherently unstable. A shift to a slightly different context
 
 {% include elements/chapterend.html %}
-
-[^mereology]: A philosophical celebrity within the family of relative generality relations is that of *part* to *whole*. That such a relation is a basic logical connection between ideas is emphasized by Goodman and Leonard in their classic explication of the calculus of individuals:
-
-    > "The relations of segments of the universe are treated in traditional logistic at two place, first in its theorems concerning the identity and diversity of individuals, and second in its calculus of membership and class-inclusion. But further relations of segments and of classes frequently demand consideration. For example, what is the relation of the class of windows to the class of buildings? No member of either class is a member of the other, nor are any of the segments isolated by the one concept identical with segments isolated by the other. Yet the classes themselves have a very definite relation in that each window is a part of some building. We cannot express this fact in the language of a logistic which lacks a part-whole relation between individuals unless, by making use of some special physical theory, we raise the logical type of each window and each building to the level of a class -- say a class of atoms -- such that any class of atoms that is a window will be included (class-inclusion) in some class that is a building. Such an unforutnate dependence of logical formulation upon the discovery and adoption of a special physical theory, or even upon the presumption that such a suitable theory could in every case be discovered in the course of time, indicates serious deficienceis in the ordinary logistic. Furthermore, a raising of type like that illustrated above is often precluded in a constructional system by other considerations govering the choice of pimitive ideas." {% include appendices/ref.html id="goodman1940" o="n" p="45" e="" %}
-
-[^processingload]: The claim that the [Druggy bears](#bears) completion does indeed carry a larger processing load is based upon my own interpretation of the discourse.
-
-[^roothgen]: Rooth actually prefers a generalized version of the pragmatic constraint. This allows us to excise any reference to focus semantic values from the semantic theory, isolating it entirely within the pragmatics. For our purposes, the conspicuity of the specific QA-congruence rule is preferable. {% include appendices/ref.html id="rooth1992" o="" %}
-
-[^stratq]: How, if at all, does Buring's proposal differ from Roberts' *strategy of inquiry*?
-
-[^facets]: utterances are multi-facted, and corrections tend to mar only a single face.
-
-[^entrench]: We needn't specify the nature of the entrenchment relation here, but we can assume that the introduction of layers gives us a means of further constraining appropriate retraction in the face of incoherence. Certain layers can be assumed to trump others, so that the information on one layer is always more entrenched than information on another. Compare footnote 17 in {% include appendices/ref.html id="spenader2009" o="n" %}
-
-[^madrigals]: The representation includes an existence presupposition associated with the existential quantifier. I set aside their representation of the non-universality implicature.
-
-[^hibernation]: [Apparently](https://en.wikipedia.org/wiki/Asian_black_bear#Behaviour), hibernation is driven primarily by climate, and many Asian Black Bears live in warm enough climates to make hibernation unnecessary. Still, nearly all females hibernate when pregnant.

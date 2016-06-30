@@ -1,7 +1,7 @@
 ---
 title: Project overview
 level: 1
-type: chapter
+references: yes
 ---
 
 # From cooperation to collaboration via conjecture

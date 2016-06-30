@@ -1,4 +1,4 @@
-{% assign chlist = site.chapters | where: "type","chapter" | sort: "level" %}
+{% assign chlist = site.chapters | sort: "level" %}
 <ul class="nav">
 <li><a href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a> {{ site.author | prepend: '<br />by ' }}</li>
 <li><a href="{{ '/atoc.html' | prepend: site.baseurl }}">Table of contents</a></li>
@@ -8,7 +8,7 @@
 <li><a href="{{ chapter.url | prepend: site.baseurl }}">{{ chapter.title }}</a></li>
 {% endfor %}
 </ul>
-<li><a href="#" id="appen" class="open">Appendices</a></li> 
+<li><a href="#" id="appen" class="open">Appendices</a></li>
 <ul class="nav2 hid" id="appen-hid">
 {% for app in site.appendices %}
 <li><a href="{{ app.url | prepend: site.baseurl }}">{{ app.title }}</a></li>

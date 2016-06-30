@@ -1,23 +1,50 @@
-<div class="divider print-no"></div>
+<div class="chapter-end" markdown="1">
+
+<!-- References -->
+{% if page.references %}
+
+<div class="references">
+
+  <h3>References</h3>
+
+  {% include elements/reflist.html %}
+
+</div>
+{% endif %}
+
+<!-- Appendices -->
+{% if page.extra %}
+<div class="appendices print-only">
+
+  <h3>Appendices</h3>
+
+{% for item in page.extra %}
+
+  {% include elements/hidden.html id=item %}
+
+{% endfor %}
+
+</div>
+{% endif %}
+
+<!-- Comments -->
+{% if page.notes %}
+
+<div class="comments print-only" markdown="1">
+
+  <h3>Notes</h3>
+
+  {% include {{ page.notes | prepend: "footnotes/" }} %}
+
+  + Footnotes
+  {:footnotes}
 
 {% if allcomments %}
   {% include elements/notelist.html %}
 {% endif %}
 
-<h3>References</h3>
-{% include elements/reflist.html %}
+</div>
 
-<div class="divider print-no"></div>
-<div class=""></div>
-
-{% if page.extra %}
-  <h3 class="print-only">Appendices</h3>
-  {% for item in page.extra %}
-    {% include elements/hidden.html id=item %}
-  <div class="divider print-only"></div>
-  {% endfor %}
 {% endif %}
 
-<div class=""></div>
-
-<h3>Notes</h3>
+</div>

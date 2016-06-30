@@ -35,7 +35,7 @@
     clear: both;
     width: 100%;
     list-style-type:none;
-
+    margin-left: 0;
     font-size:0.9em;
     li {
       display:inline-block;
@@ -111,7 +111,6 @@ ul.bib2 {
   z-index: 1000;
   left: 1em;
   top: 1em;
-  background: rgba(100,100,100,0.9);
   border: 1px solid black;
   border-radius: 5px;
   color: white;
@@ -119,13 +118,25 @@ ul.bib2 {
   width: 50%;
   max-width: 400px;
   display: none;
+
+  &.comment {
+    background: rgba(0,51,204,0.9);
+  }
+  &.reference {
+    background: rgba(100,100,100,0.9);
+  }
+  &.glossary {
+    background: rgba(0,128,0,0.9);
+  }
 }
 
 
 a.note:link {
     border: 1px solid $brand-color;
+    border-radius: 3px;
     color: $brand-color;
-    padding: 0 3px;
+    padding: 2px;
+    line-height: 0.875;
     text-decoration: none;
     display: inline-block;
 }
@@ -133,7 +144,6 @@ a.note:link {
 a.note:hover {
     background-color: $brand-color;
     color: #fff;
-    padding: 0 3px;
 }
 
 /* Table of contents */
@@ -154,6 +164,13 @@ a.note:hover {
   .item {
     margin-top: 0.5em;
   }
+}
+
+/* Chapter end */
+.references, .appendices, .comments  {
+  border-top: 1px solid #aaa;
+  padding-top: 1.5em;
+  margin-top: 0.5em;
 }
 
 .hid {

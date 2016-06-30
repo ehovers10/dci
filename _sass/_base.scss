@@ -235,18 +235,19 @@ pre {
  */
 .icon {
 
-    width: 20px;
+  width: 20px;
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+}
 
-        path {
-            fill: $grey-color;
-        }
-    }
+svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+
+  path {
+    fill: $grey-color;
+  }
 }
 
 /**

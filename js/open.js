@@ -53,6 +53,7 @@ $(document).ready( function() {
   $( ".footnote" ).parent("sup").addClass( "tooled" );
   $( ".footnote" ).addClass( "note" );
   $(".footnotes" ).find( "li" ).addClass( "tooltip" );
+  $(".footnotes" ).find( "li" ).addClass( "comment" );
   $(".footnotes" ).find( "li" ).attr('id', function() {
     return $(this).attr('id').substr(3);
   });
