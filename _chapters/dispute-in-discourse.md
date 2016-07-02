@@ -4,6 +4,11 @@ level: 4
 toc: yes
 references: yes
 notes: did.md
+count:
+  def: 1
+  ex: 1
+  obs: 1
+  table: 1
 ---
 
 # Disputative discourse
@@ -17,69 +22,79 @@ I contend that the conjecture/correction discourse pair provides a genuine contr
 The following little discourse, which I label *Bears*, will be the stalking horse for the discussion to follow.
 
 <!-- Grizzly bears -->
-{% include examples/ex.html term="grizzly" %}
+{% include appendices/ex.html term="grizzly" %}
 
 The bracketed material represents {% include appendices/word.html word="focus." base="" %} *Grizzly* in the (b) sentence is marked with a *cf* for {% include appendices/word.html word="contrastive focus." base="contrast" e="" %} We will have more to say about the importance of focus in this dialogue later on. For now, there are a number of interesting pretheoretical observations to be made about the [Bears] dialogue.
 
 First, the (b) utterance is not merely a dismissal of (a). Instead, it is a natural follow up to, which is to say that (b) {% include appendices/word.html word="coheres" base="coherence" e="" %} with (a). An ability to resolve a coherence relation among a group of utterances in a discourse is a crucial element of interpreting the discourse in context. A particularly salient coherence relation may force an interpretation to light. For instance, consider the following example due to Andrew Kehler {% include appendices/ref.html id="kehler2000" o="" p="539" e=":" %}
 
 <!-- Presidents -->
-{% include examples/ex.html term="presidents" %}
+{% include appendices/ex.html term="presidents" %}
 
 The [Presidents](#presidents) dialogue is marked to indicate that it can seem somewhat stilted, resembling two independent sentences rather than a coherent story line. However, if we point out that the subjects in the two sentences can refer to past presidents and interpret the predicates as picking out the subjects' respective publicized traits, we impose a *parallel* relation on the two sentences and uptake goes through much more smoothly.
 
 Kehler suggests that coherence relations imbue a discourse with an additional meaning that goes beyond the sum of its individual parts. He also maintains that linguistic coherence is subject to a Neo-Humean classification based on the basic forms of connection between idea. All connections among ideas, David Hume suggests {% include appendices/ref.html id="hume1777" o="" %}, can be reduced to one of three principal such connections: *Resemblance*, *Contiguity* in spacetime, and *Cause/Effect*. Hume's reductive base is perhaps a bit too narrow. If we construre *resemblance* broadly enough, we can bring a wide swath of connections under its umbrella, but it seems to me that there are basic relations among ideas that Hume's reduction leaves out -- in particular, the set of relations corresponding to the *relative generality* of two ideas pertaining to the same domain.[^mereology] The [Bears](#bears) completion is the flip-side of resemblance relations in that it highlights a *distinction* within a class that was previously over-looked. In moving from a coarser to a more granular conception of the sub-space of reality corresponding to beardom, the [Bears](#bears) dialogue exhibits a relation of {% include appendices/word.html word="refinement" base="" e="" %} between the ideas expressed in its utterances.
 
 <!-- Refinement -->
-{% include examples/def.html type="obs" term="refinement" defn=site.data.observations.refinement %}
+{% obs Refinement %}
+  {{ site.data.observations.refinement | markdownify }}
+{% endobs %}
 
 To emphasize the coherent nature of the dialogue, I call the first utterance the {% include appendices/word.html word="initiation" base="" e="" %} and the second utterance the {% include appendices/word.html word="completion." base="" %}
 
 The function of coherence relations is to improve interprebility of the discourse by imposing a restriction on the space of possible conceptions of what the initial speaker is getting at, thereby making the selection procedure for how to respond operate more smoothly. And refinement genuinely does help thin the space of possibilities, as we can see from the following alternative continuation of the [Bears](#bears) initiation:
 
 <!-- Druggy bears -->
-{% include examples/ex.html term="druggy" %}
+{% include appendices/ex.html term="druggy" %}
 
 While perhaps no less true than the original correction, I've marked the completion in [Druggy bears](#druggy-bears) to indicate the increased processing load it carries.[^processingload] This, I suggest, is because the completion expresses a less natural refinement of the discourse domain. As a result, the discourse coherence is reduced.
 
 There is a distinctive, disputative tone in the [Bears](#bears) completion, but it differs from that in, for instance:
 
 <!-- Boars -->
-{% include examples/ex.html term="boars" %}
+{% include appendices/ex.html term="boars" %}
 
 In [Boars](#boars), the second utterance breaks the flow of inquiry to attempt to fix a perceived error in the preceding discourse. In this example, the disputative *You mean...* is used to signal an attempted {% include appendices/word.html word="repair strategy." base="" %}
 
 The observation that the [Bears](#bears) dialogue exhibits coherent discourse suggests that the disputative tone of its completion ought not to be treated as signaling a break in the inquiry. Imposing the refinement relation on the discourse eliminates any sense of fault on the part of the initiation in allowing for proper uptake. Instead, we interpret the completion utterance as a {% include appendices/word.html word="correction," base="" e="" %} which is characterized by a dual function of providing: (i) a *denial* of some element of the preceding attempted contribution to discourse and (ii) a *positive contribution* that is related in a salient way to the preceding attempted contribution.
 
 <!-- Correction -->
-{% include examples/def.html type="obs" term="correction" defn=site.data.observations.correction %}
+{% obs Correction %}
+  {{ site.data.observations.correction | markdownify }}
+{% endobs %}
 
 As elements of coherent dialogue involving correction, I refer to sentences such as the initiation in [Bears](#bears) as {% include appendices/word.html word="correctibles." base="correctible" %}
 
 While the completion in the [Bears](#bears) dialogue is a natural one, it certainly isn't the only {% include appendices/word.html word="felicitous" base="felicity" e="" %} response to the initiation. It is open to the responder to challenge the initiation in another way, but interestingly, it is also open to the initiator to retrench in certain ways, as in the following alternate extension of the *Bears* initiation:
 
 <!-- Teddy bears -->
-{% include examples/ex.html term="teddy" %}
+{% include appendices/ex.html term="teddy" %}
 
 The retrenchment in (c) strikes my ear as an acceptable response to the challenge in (b). It is similar to the data that Thony Gillies and Kai von Fintel {% include appendices/ref.html id="vonfintel2008" o="" %} analyze in regard to retraction of *might* claims. Consider the following, drawn from {% include appendices/ref.html id="vonfintel2008" o="n" p="81" e=":" %}
 
 <!-- Keys -->
-{% include examples/ex.html term="keys" %}
+{% include appendices/ex.html term="keys" %}
 
 *Might* claims are sometimes retracted when presented with countervailing evidence available in a different context from the original utterance. But as [Keys](#keys) makes clear, *might* claims are ocassionally *resiliant* in the face of such challenges. The felicity of the exchange in [Teddy bears](#teddy-bears) suggests that correctible initiations exhibit similar resilliance.
 
 <!-- Resiliance -->
-{% include examples/def.html type="obs" term="resiliance" defn=site.data.observations.resiliance %}
+{% obs Resiliance %}
+  {{ site.data.observations.resiliance | markdownify }}
+{% endobs %}
 
 A corrolary to the resiliance of correctible initiations is that completions that involve correction add to the discourse in a specific way. They don't just link back to previous discourse, but change it. That is, corrections are *productive*.
 
 <!-- Productivity -->
-{% include examples/def.html type="obs" term="productivity" defn=site.data.observations.productivity %}
+{% obs Productivity %}
+  {{ site.data.observations.productivity | markdownify }}
+{% endobs %}
 
 The exchange in [Teddy bears](#teddy-bears) reveals an additional interesting fact about disputative discourse. Even if it is appropriate for an initiator to refuse to retract a correctible, the challenge provided in (b) is no less appropriate. The flip-side of the resiliance of correctibles is that they are also highly susceptible to challenge.
 
 <!-- Susceptibility -->
-{% include examples/def.html type="obs" term="susceptibility" sent="Example" sub="Sub-example" defn=site.data.observations.susceptibility %}
+{% obs Susceptibility %}
+  {{ site.data.observations.susceptibility | markdownify }}
+{% endobs %}
 
 The dual observations of *resiliance* and *susceptibility* provide an interesting obstacle to an analysis of the semantics and discourse dynamcis of disputative language involving correctibles. *Susceptibility* pushes us toward a more strict representation of the content of the initiation to make sense of the appropriateness of the completion. That is, it seems that utterances (a) and (b) in [Teddy bears](#teddy-bears) represent a disagreement, and the most natural way to formalize disagreement is in terms of presentation of conflicting content. But *resiliance* pushes in the opposite direction. The continuation (c), in so far as it is appropriate, naturally suggests compatibility between the initiation and the completion, which pushes us toward a less strict interpretation of the initiaition content. Navigating between the rock of a correctible's tendency to elicit challenges and the hard place of their ability to withstand those challenges is a particularly interesting puzzle for a linguistic analysis of this type of discourse. But an adequate account should respect all of the observations catalogued above. To make them easier to refer to, all the observations are compiled below.
 
@@ -100,17 +115,16 @@ Well established theories of focus interpretation exist. If one of these could b
 
 ## Focus and alternatives
 
-One of the most influential accounts of focus interpretation is the *alternative semantics* developed by Mats Rooth {% include appendices/ref.html id="rooth1985,rooth1992" o="" e="." %} The idea behind alternative semantics is that focus-sensitive constructions have two semantic values: an *ordinary* semantic value ( {% include fxns/semwrap.html inside='&#8729;' outside="<sup>o</sup>" %}) and a *focus* semantic value ( {% include fxns/semwrap.html inside='&#8729;' outside="<sup>f</sup>" %}). The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with. And the focus semantic value for an expression is a set of *alternatives* to the ordinary semantic value. That is, the focus semantic value collects together all elements from the domain of discourse that are type-identical to the focused element of a phrase. More formally:
+One of the most influential accounts of focus interpretation is the *alternative semantics* developed by Mats Rooth {% include appendices/ref.html id="rooth1985,rooth1992" o="" e="." %} The idea behind alternative semantics is that focus-sensitive constructions have two semantic values: an *ordinary* semantic value and a *focus* semantic value. The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with. And the focus semantic value for an expression is a set of *alternatives* to the ordinary semantic value. That is, the focus semantic value collects together all elements from the domain of discourse that are type-identical to the focused element of a phrase. More formally:
 
 <!-- Focus semantic values -->
-{% capture focussem %}
+{% def Focus Semantic Value %}
   {% for item in site.data.definitions %}
     {% if item[0] == "focus" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Focus semantic value" defn=focussem %}
+{% enddef %}
 
 Since focus-related effects can influence interpretation at nearly any level of linguistic analysis, expressions of all types will also be associated with a focus semantic value of the appropriate type. Rooth {% include appendices/ref.html id="rooth1985" o="" %} also provides a recursive definition that allows one to derive focus semantic values for expressions containing focused elements as proper parts. As an example, in the case of full sentences, alternative semantics suggests that "the focus semantic value for a phrase of category *S* [sentence] is the set of propositions obtainable from the ordinary semantic value by making a substitution in the position corresponding to the focused phrase'' {% include appendices/ref.html id="rooth1992" o="n" p="2" e="." %}
 
@@ -121,26 +135,25 @@ By adding this additional resource to the semanticist's tool bag, the alternativ
 A feather in the cap of alternative semantics is the explanation it gives for the phenomenon of question/answer congruence. QA-congruence is exhibited in the following example:
 
 <!-- Cookie -->
-{% include examples/ex.html term="cookie" %}
+{% include appendices/ex.html term="cookie" %}
 
 While the (b) answer in [Cookie](#cookie) is a perfectly appropriate response to the question, the (c) answer seems to miss the point of the disucssion proposal made in (a). It would appear that there is a pragmatic rule dictating the form of response that can {% include appendices/word.html word="felicitously" base="felicitous" e="" %} follow a question, and that focus plays a role in the pragmatic process. Roughly, the data suggest that the focused element in a response must correspond to the wh-word of the question to which it is a response.
 
 The alternative semantics for focus provides us with the framework needed to explain the presence of this pragmatic rule. Questions are generally understood to have as their semantic value the set of propositions that constitute answers to the question {% include appendices/ref.html id="hamblin1958,groenendijk1984" o="n" e="." %}  So, a (suitably contextually constrained) semantic value for the question in [Cookie](#cookie) might be as in (a) below, which is identical to the focus semantic value of the first response but differs from that of the second (represented in (b) and (c), respectively):
 
 <!-- Cookie sem -->
-{% include examples/ex.html term="cookie" type="sem" %}
+{% include appendices/ex.html term="cookie" type="sem" %}
 
 Thus, we supplement the dual-semantic values framework of alternative semantics with a pragmatic rule to the effect that a felicitous response to a question must have a focus semantic value that matches the ordinary semantic value of the question.[^roothgen] Formally:
 
 <!-- QA-congruence -->
-{% capture qacon %}
+{% def Question/Answer Congruence %}
   {% for item in site.data.definitions %}
     {% if item[0] == "qa-congruence" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Question/Answer congruence" defn=qacon %}
+{% enddef %}
 
 Craige Roberts {% include appendices/ref.html id="roberts1996" o="" %} develops an integrated theory of pragmatics centered on the question/answer relationship. Her idea is that questions and answers provide the principle organizing structure of discourse. The relevance of a new contribution to the conversation is thus judged in terms of how it fits into that structure. The central order of business in a discourse is to answer the question under discussion (*QUD*). But the path to reaching the answer may not be direct. It can involve providing merely partial anwsers, or it can involve introducing a sub-question, getting the answer to which would aid in getting the answer to the original question.
 
@@ -151,7 +164,7 @@ The *QUD* model can easily incorporate everything above regarding QA-congruence 
 Accommodation is a powerful tool, but it cannot be comissioned to fix every gap in a theory of pragmatics, and the QUD model seems to have an issue right out of the gate. There are perfectly felicitous responses to questions that do not eliminate cells from the question's partition space.
 
 <!-- Picnic -->
-{% include examples/ex.html term="picnic" %}
+{% include appendices/ex.html term="picnic" %}
 
 The response in [Picnic](#picnic) involves two focused elements. For both elements, it is easy enough to generate the requisite alternative sets.
 
@@ -164,7 +177,7 @@ Contrastive focus bears properties that are systematically different from standa
 Daniel Bu&#x0308;ring {% include appendices/ref.html id="buering2003" o="" %} develops a technique to locate the requisite antecedent.  Building on the *QUD* model, Bu&#x0308;ring posits the existence of a *discourse tree*, which generates additional structure in the inquiry. Each question governing the inqury is a node in the tree and is associated with an array of subquestions, complete answers to which constitute partial answers to the parent question.  The idea is that the subquestions provide a _plan of inquiry_ for addressing the parent question. The objective of the inquiry is to answer the top-most question in the tree. The plan for doing so is to answer each of the subquestions in turn.[^stratq] Thus, the implicit structure of the [Picnic](#picnic) can be made explicit as:
 
 <!-- Picnic structure -->
-{% include examples/ex.html term="picnic" type="extra" %}
+{% include appendices/ex.html term="picnic" type="extra" %}
 
 The role of contrastive focus, according to Bu&#x0308;ring, is to mark an utterance as directed at a particular subquestion of the *QUD*. The response in [Picnic](#picnic) is congruent with the (c) subquestion in [Picnic structure](#picnic-structure), and we have the requisite antecedent to explain the felicity of the resposne.
 
@@ -203,22 +216,20 @@ In this section, I examine the downdate account of denial in terms of its abilit
 In his discussion of negation in its denial making use, Bart Geurts {% include appendices/ref.html id="geurts1998a" o="" %} maintains that denial is neither *unitary* nor *swamping*. It is not unitary beacause there are a wide variety of ways in which negation can encode denial, and there is little reason to believe that a single mechanism subsumes tham all. It is not swamping in that negation selectively denies bits of information conveyed by an utterance, granting other bits space in the conversational record.[^facets]
 
 <!-- Movie -->
-{% include examples/ex.html term="movie" %}
+{% include appendices/ex.html term="movie" %}
 
 In [Movie](#movie), the initiation carries a packet of information. In the responses, we alternately have denial of an implicature (a), a presupposition (b), and a choice of words (c). In each case, the rest of the packet remains untouched, and may even be available for anaphoric reference later on.
 
 In standard DRT, extended discourse is represented by a *discourse representation structure* (DRS), which is a pair of sequences of *discourse referents* (dref) and *conditions* (cond). Conditions place constraints on the model against which sentences are evaluated for truth, and drefs serve as the referents of pronouns and other anaphoric expressions invoked in the conditions. Sentences in context contribute conditions and drefs to the DRS by adding them to the appropriate sequence.
 
 <!-- DRT -->
-{% capture drt %}
+{% def Standard DRT %}
   {% for item in site.data.formalism.pragmatics %}
     {% if item[0] == "contributions" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Standard DRT" defn=drt %}
-
+{% enddef %}
 
 Standard DRT, only defines an *update* function for sentences, but there is nothing preventing us from defining a *downdate*, whereby conditions or drefs are removed from the DRS. But in standard DRT, all information contributed by a sentence is added to the conditions sequence. Thus, removing information removes it wholesale, which is to say that standard DRT makes denial swamping.
 
@@ -237,14 +248,13 @@ But suppose, instead, that my first bit of evidence is the light coming from cof
 The upshot is that the propositional content of the evidence that initiates the downdate is not sufficient to determine the extent of the downdate; we need, also, a way of representing the source of certain propositions that are candidates for removal. The standard solution is to supplement the information state structure with an *entrenchment relation*, which serves to rank elements of the state in terms of their susceptibility to removal. This puts constraints on how and information state is revised in response to its falling into incoherence: remove the information needed to restore coherence as well as any unentrenched information relevant to the retracted information.[^entrench] Crucially, the entrenchment relation constrains appropriate retraction, but it does not fix a unique revision strategy.
 
 <!-- Downdate -->
-{% capture downdate %}
+{% def Correction as downdate %}
   {% for item in site.data.definitions %}
     {% if item[0] == "downdate" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Correction as downdate" defn=downdate %}
+{% enddef %}
 
 ### Binding retractions
 
@@ -253,12 +263,12 @@ The LDRT approach provides an adequate explanation of certain cases of denial, b
 The binding problem, originally introduced in a endnote to Karttunen and Peters' *Conventional Implicature* {% include appendices/ref.html id="karttunen1979" o="" %}. In the system expounded in that paper, conventional implicature is set apart as a distinct dimension of content from the standard semantic content derived from the meaning of the words in a sentence and the way they are put together. Cleaving implicature from semantic content allows us to explain a number of interesting features about how conventional implicatures work, but it also makes it more difficult to explain the ways in which elements of semantic content can interact with elements of the implicature.
 
 <!-- Managed -->
-{% include examples/ex.html term="managed" %}
+{% include appendices/ex.html term="managed" %}
 
 The (a) sentence in [Managed](#managed) seems to implicate that the person who succeeded George V on the throne had difficulty in doing so. But the most natural way of representing the implicature as derived from the utterred sentence is does not capture this.
 
 <!-- Managed -->
-{% include examples/ex.html term="managed" type="sem" %}
+{% include appendices/ex.html term="managed" type="sem" %}
 
  And it is finding such inroads between severed contents that is termed the binding problem. The separation between levels of content also provides a way around the swamping worry for denial, but because the LDRT approach involves dividing content by way of indexing, we may be concerned that a binding problem will arise here as well.
 
@@ -267,24 +277,24 @@ But the system has a built in fix that it acquires from the structure of DRSs. I
 At least, they avoid binding worries associated with drefs, such as Geurts and Maier's problem with madrigals.
 
 <!-- Madrigals -->
-{% include examples/ex.html term="madrigals" %}
+{% include appendices/ex.html term="madrigals" %}
 
 [Madrigals](#madrigals) carries two implicatures in addition to its assertive content. It implicates first that *not all* of the madrigals are nice and also that the nice madrigals are *merely* nice. The first of these does not give rise to binding concerns, for there is no need to connect the discourse referent intdroduced by the existential quantifier to the variable bound by the implicated not-all quantifier. But the second does; if we represent implicated and asserted content as *fully* separated, then we fail to get capture the constraint that the *merely* nice madrigals are the same as the nice ones.
 
 However, by allowing drefs to transcend layers, we can adequately link the conditions. Here is Geurts and Maier's analysis:[^madrigals]
 
 <!-- Madrigals -->
-{% include examples/ex.html term="madrigals" type="ldrt" %}
+{% include appendices/ex.html term="madrigals" type="ldrt" %}
 
 Jennifer Spenader joins Maier {% include appendices/ref.html id="spenader2009" o="" %} in extending this approach to account also for the corrective potential of *contrast*. According to the extension, contrast is a general means of preventing material from entering the common ground. It's presence signifies that the information in its scope is being presented for a downdate operation.
 
 <!-- Spanish -->
-{% include examples/ex.html term="spanish" %}
+{% include appendices/ex.html term="spanish" %}
 
 In the completion of [Spanish](#spanish), the choice of connective (*but*) carries contrastive import; the second conjunct, in its scope, is a downdating correction of the initiation sentence. The first conjuct, preceded by the hedge term *well*, provides a concession to the initiation, indicating that the response is intended as a *refinement* rather than a swamping denial.
 
 <!-- Spanish ldrt -->
-{% include examples/ex.html term="spanish" type="ldrt" %}
+{% include appendices/ex.html term="spanish" type="ldrt" %}
 
 ## Strictness, shifts, and structure
 
@@ -295,7 +305,7 @@ Call a *strict analysis* any translation rules that assign an operator with  uni
 It is natural to offer strict analyses of both *counterfactual conditionals* and sentences with *bare plural* subjects. To say that *Jack would have forgiven him, if Lenny had told the truth* is just to say that all situations in which Lenny tells the truth are also situations in which Jack forgives him. And to say that *Lawyers are liars* is just to say that anything that is a lawyer is also a liar.
 
 <!-- Strict definitions -->
-{% capture strict %}
+{% def Strict analyses %}
   <p class="extitle">Counterfactual conditional</p>
   {% for item in site.data.definitions["counterfactual conditional"] %}
     {% if item[0] == "english" %}
@@ -312,8 +322,7 @@ It is natural to offer strict analyses of both *counterfactual conditionals* and
       {% include formalism/molecule.html argument=item.last.last.first cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Strict analyses" defn=strict %}
+{% enddef %}
 
 But both natural inclinations are held up by sticky situations. Alternative analyses, which rely on the notion of *preferred subclasses* of the set determined by the first operand, are available for both counterfactuals and bare plurals, and it is commonly held that the extraction from the sticky situations requires accepting the alternative analyses. Thony Gillies {% include appendices/ref.html id="gillies2007" o="" %} argues that, in the case of counterfactuals, we can have our strictness and extract from the stickiness, too,  by developing an adequate story about the pragmatics of conditionals. He also argues that the extraction is worthwhile. I extend Gillies' ideas to provide what I take to be an equally worthwhile extraction of the strict analysis of bare plurals from their stickiness. My account depends on a pragmatic story told within the framework of collaborative update semantics.
 
@@ -322,45 +331,42 @@ But both natural inclinations are held up by sticky situations. Alternative anal
 It is natural to offer a strict analysis for counterfectual conditionals. But there is a supposed problem with this analysis. The subset relation is *transitive*, and conjunction is *intersective* which means that strict conditionals verify *thinning*:
 
 <!-- Thinning -->
-{% capture thin %}
+{% def Thinning %}
   {% for item in site.data.definitions["counterfactual conditional"] %}
     {% if item[0] == "thinning" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Thinning" defn=thin %}
+{% enddef %}
 
 Unfortunately, [Thinning](#thinning) brings the strict analysis up against a sticky situation. Consider:
 
 <!-- Honey -->
-{% include examples/ex.html term="honey" %}
+{% include appendices/ex.html term="honey" %}
 
 The antecedent of (b) in [Honey](#honey) is a conjunction involving the antecedent of (a), which means that if (a) is true, the strict analysis predicts (b), whose consequent is the denial of (a)'s, to be false. But the sentences in [Honey](#honey) can be interpreted as a perfectly consistent dialogue. This is a sticky situation. The standard response to examples such as these, developed originally by Robert Stalnaker {% include appendices/ref.html id="stalnaker1968" o="" %} and David Lewis {% include appendices/ref.html id="lewis1973" o="" e="," %} is to translate counterfactual conditionals with a *variably strict* operator. A variably strict operator works in two stages. First, it appeals to context to *segregate* the set determined by the first operand into preferred and dispreferred classes. It then demands for truth only that the preferred group of elements be a subset of the set determined by the second operand. For counterfactual conditionals, the preferred class is usually glossed as the *closest possible worlds*.
 
 <!-- Variably strict cond -->
-{% capture variably %}
+{% def Variably strict conditional %}
   {% for item in site.data.definitions["counterfactual conditional"] %}
     {% if item[0] == "variable" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Variably Strict" defn=variably %}
+{% enddef %}
 
 The variably strict analysis avoids the sticky situation because it fails to verify thinning. The closest possible worlds in which Pooh eats less honey need not be a superset of the closest ones in which he both eats less honey and wears his puffy jacket. The ordering relation on the antecedent worlds opens an avenue for the antecedent sets coming apart.
 
 Despite its de-sticking success, Thony Gillies {% include appendices/ref.html id="gillies2007" o="" %} has argued that the standard response is not the preferred extraction method. We can preserve the strict analysis of counterfactuals if we allow them to act as monsters {% include appendices/ref.html id="kaplan1977" o="n" e="," %} shifting the index of evaluation in the course of interpretation. In particular, if the set determined by the consequent of the conditional is evaluated against a context that is fixed in part by the set determined by the antecedent, then the extraction is achieved.
 
 <!-- Shifty strict conditionals -->
-{% capture shifty %}
+{% def Shifty strict conditional %}
   {% for item in site.data.definitions["counterfactual conditional"] %}
     {% if item[0] == "shifty" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Shifty Strict" defn=shifty %}
+{% enddef%}
 
 The shifty strict analysis captures the same effect as the variably strict analysis. The selection function (&delta;(i)) picks a set of worlds from within the set determined by the antecedent, and the selection is then added to the domain against which the consequent is evaluated. The semantic rule still demands set inclusion between the antecedent worlds and consequent worlds, but the shifted contextual restriction on those sets takes effectively loosens the requirement of strictness. Since there are more worlds included in the set determined by the consequent relative to the domain i<sup>+</sup> than relative to i, the set inclusion demand is more easily met. But since the additionally included worlds are specifically antecedent-relevant, the inclusion demand is not wantonly loose.
 
@@ -377,14 +383,14 @@ The other difference between Gillies' and my formulations involves the elements 
 The natural treatment of sentences involving bare plurals as universally quantified runs into its own sticky situation. Consider:
 
 <!-- Hibernation -->
-{% include examples/ex.html term="hibernate" %}
+{% include appendices/ex.html term="hibernate" %}
 
 Most English speakers take [Hibernation](#hibernation) to be true, even when told that a fair number of bears don't hibernate.[^hibernation] This poses a problem for the strict analysis of bare plurals.
 
 It won't work to loosen the strictness requirement and interpret bare plurals as bound by, say an existential quantifier or one that requires a few witnesses. For that would render true clearly false sentences such as the following:
 
 <!-- Cuddly bears -->
-{% include examples/ex.html term="cuddly" %}
+{% include appendices/ex.html term="cuddly" %}
 
 The existence of Winnie the Pooh and Paddington Bear don't serve to make [Cuddly bears](#cuddly-bears) true. The insight from sentences such as [Hibernation](#hibernation) is not simply that bare plurals carry less than universal force. Instead, the most natural interpretation is that the truth of sentences involving bare plurals is sensitive to the presence of a significant sub-class falling under the plural each member of which verifies the predicate.
 
@@ -393,28 +399,26 @@ One standard approach to formalizing this idea is to posit a *generic* operator 
 [^relevantquant]: This proposal is roughly equivalent to the *Relevant Quantification* approach outlined in {% include appendices/ref.html id="pelletierms" o="n" e="." %}
 
 <!-- Generally universal quantifier -->
-{% capture generic %}
+{% def Generic quantifier %}
   {% for item in site.data.definitions["universal quantifier"] %}
     {% if item[0] == "generic" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Generic" defn=generic %}
+{% enddef %}
 
 It is perfectly possible for context to restrict membership in the preferred class to hibernating bears, thus explaining the truth of [Hibernation](#hibernate). Of course, it is also possible for context to select only cuddly bears in the case of [Cuddly bears](#cuddly-bears). It is the job of the metasemantics to explain why this selection is far less natural. The generically universal approach thus gets us out of the sticky situation, or at least shifts the extraction duties to pragmatics, which, given the [Resiliance](#resiliance) and [Susceptibility](#susceptibility) of discourse involving bare plurals, seems a not inappropriate delegation of responsibilities.
 
 Despite this de-sticking success, I don't think that the standard response is the correct extraction method. We can preserve the strict analysis of bare plurals [by allowing them to interact with the context in a specific way]. In particular, if the bare plural is evaluated against a context that incorporates the plan of inquiry structure of the discourse, then the extraction can be pulled off.
 
 <!-- Structurally universal quantifier -->
-{% capture structural %}
+{% def Structurally universal quantifier %}
   {% for item in site.data.definitions["universal quantifier"] %}
     {% if item[0] == "structural" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Structural" defn=structural %}
+{% enddef%}
 
 The structural analysis is strict in that it demands inclusion of the entire set determined by the bare plural within the properly partitioned predicate set. This is the complete story as far as the semantic component of the interpretive machinery is concerned. The partitioning of the predicate class is the source of the perceived looseness of bare plurals ([Resiliance](#resiliance)), but the mechanism for leveraging that feature belongs to the pragmatic system, to which we now turn. As with the story about shifty strict counterfactuals, the real work comes in getting clear about how the context evolves in response to bare plural utterances. And it is here that the framework of collaborative update semantics earns its keep.
 
@@ -423,7 +427,9 @@ The structural analysis is strict in that it demands inclusion of the entire set
 I assume that plurals carry a *homogeneity presupposition*, characterized as follows:
 
 <!-- Homogeneity -->
-{% include examples/def.html type="def" term="Homogeneity" sent="Example" sub="Sub-example" defn=site.data.definitions.homogeneity.def %}
+{% def Homogeneity %}
+  {{ site.data.definitions.homogeneity.def }}
+{% enddef %}
 
 That interpretation of plural *definite* noun phrases is subject to a homogeneity constraint is discussed by Sebastian Lo&#x0308;bner, who notes that:
 
@@ -431,7 +437,7 @@ That interpretation of plural *definite* noun phrases is subject to a homogeneit
 This is why, in reference to a mixed-gender group of young bears engaged in a wrestling match, (a) in the following seems true while (b) seems neither true nor false:
 
 <!-- Playing bears -->
-{% include examples/ex.html term="playing" %}
+{% include appendices/ex.html term="playing" %}
 
 That a homogeneity constraint extends to the case of *bare* plurals, has been suggested by Kai von Fintel (who takes them to be bound by an implicit GEN operator):[^schwarzs]
 
@@ -442,7 +448,7 @@ That a homogeneity constraint extends to the case of *bare* plurals, has been su
 That the homogeneity constraint should be understood as a *presupposition* tied to plurals is supported by the fact that it is cancelable.
 
 <!-- Polar bears -->
-{% include examples/ex.html term="polar" %}
+{% include appendices/ex.html term="polar" %}
 
 The (b) utterance in [Polar bears](#polar) (adapted from {% include appendices/ref.html id="vonfintel1997" o="n" p="34" %}) doesn't presuppose that Polar bears are uniformly white; any such assumption is explicitly eliminated by the nature of the question in (a). And characterization as a presupposition fits the discourse role of homogeneity. Instead of making a claim of individual membership in a class, homogeneity is a property of a class as a whole. Thus, a claim of homogeneity *tests* a set, passing the whole thing through if the test is met and derailing the conversation if it isn't {% include appendices/ref.html id="veltman1996" o="n" e="." %} That is exactly what presuppositions do, and in our framework, tests are *structuring updates*.
 
@@ -479,14 +485,13 @@ The function of an initiation utterance is two-fold: It *checks out* a new sandb
 Assuming the correctible inspires a corrective effort by a discourse participant, the continuation overrides the initiation commitment, replacing it with a substitution of the original saturation. This process can iterate until all participants are satisfied with the lastest commit. At this point, a completion utterance implements the latest commit, imposing its update effect upon the sandbox information state. Finally, the updated sandbox contents are *merged* into the primary information state.
 
 <!-- General collaborative update -->
-{% capture collab %}
+{% def General collaborative update %}
   {% for item in site.data.formalism.pragmatics %}
     {% if item[0] == "collaborative update" %}
       {% include formalism/molecule.html argument=item cation="condition" title="no" subtitle="yes" %}
     {% endif %}
   {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="General collaborative update" defn=collab %}
+{% enddef %}
 
 ### Plurals specific formal story
 

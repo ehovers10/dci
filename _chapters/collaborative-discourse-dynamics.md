@@ -4,6 +4,11 @@ level: 3
 toc: yes
 references: yes
 notes: cdd.md
+count:
+  def: 1
+  ex: 1
+  obs: 1
+  table: 1
 ---
 
 # Scoreboards and best systems
@@ -29,12 +34,11 @@ The motivation for this approach to scoreboards is brought out in the account of
 The *methodology*[^method] for theory construction using these basic tools is to optimize the theory against a set of constraints specific to the domain of the intentional in addition to the general theoretical criteria. Lewis' prefered constraints stem from "the fundamental principles of our general theory of persons. They tell us how beliefs and desires and meanings are normally related to one another, to behavioral output, and to sensory input" {% include appendices/ref.html id="lewis1974b" p="334" e=":" %}
 
 <!-- Constraints on a theory of meaning -->
-{% capture lewisconstraints %}
+{% def Constraints on a theory of meaning %}
 {% for item in site.data.definitions["constraints on a theory of meaning"] %}
   <p><strong>{{ item.first | capitalize | append: ":&nbsp;" }}</strong><span>{{ item.last }}</span></p>
 {% endfor %}
-{% endcapture %}
-{% include examples/def.html type="def" term="Lewis' constraints on a theory of meaning" defn=lewisconstraints %}
+{% enddef %}
 
 There is no quarantee that a theoretical process carried out along these lines will result in a unique best theory of a speaker's intentional system; it may be that no single theory fits the constraints perfectly, and many may be equally distant from perfection. Additionally, truth conditions almost certainly provide an incomplete reductive base for sentence meaning. Lewis is well aware of these potential indeterminacies, but he wishes to hold his ground against the claim that there could be multiple distinct theories of meaning for a language, all of which perfectly meet the constraints:
 
@@ -44,8 +48,9 @@ I think that Lewis' model of linguistic theory, grounded in the best systems acc
 
 I view the development in [Knowledge in the image of inquiry](/chapters/knowledge-in-the-image-of-inquiry.html) as providing an argument for the claim that intentional systems are *collaborative* through and through. As such, there is more to speech behavior than what it reveals about an individual's beliefs and desires. It reveals, also, their status as participants in an extended, distributed process of advancing the inquiry. If the basic ideology, and in turn the constraints, come from our common sense theory of persons, then our theory is incomplete to the extent that it ignores the fact that persons are *social* beings, whose attitudes develop over the course of many collaborative inquiries.
 
-{% assign collabextension = site.data.definitions["collaborative extension of the basic ideology"] %}
-{% include examples/def.html type="def" term="Collaborative extension of the basic ideology" defn=collabextension %}
+{% def Collaborative extension of the basic ideology %}
+  {{ site.data.definitions["collaborative extension of the basic ideology"] }}
+{% enddef %}
 
 Our common sense theory of persons represents them as social creatures, and provides us with attitudes necessary to capture their collaborative efforts.[^collabattitudes] The collaborative extension forces us to reconsider how acceptance of these attitudes exerts itself within our constraints. It seems to me that at least two of the Lewisian constraints require modification in light of it: *generativity* and *truthfulness*.
 
@@ -93,17 +98,17 @@ Hamm et al. suggest that the representational account of semantics is motivated 
 
 Inquiry is an extended process. Carrying it out fruitfully requires us to maintain a record of what has transpired thus far in the inquiry. We can use this record to refer back to earlier discussion and connect bits of information into an extended web. Through a simple complication of the grammar, we greatly expand our information imparting capabilities. *Anaphora resolution* is one process that fits into an inquiry-extended picture of grammar. Natural language speakers have an ability to use explicit pronouns as well as implicit refering devices to link to previously introduced *discourse referents*. This ability is vital to the project of realizing inquiry in discourse. The grammar should help explain how it is done, but truth determination alone won't carry the load. Anaphora extends beyond linking individuals across sentence boundaries. The information web in a healthy inquiry has temporal ties between events {% include appendices/ref.html id="partee1973" o="n" p="602" e=":" %}
 
-{% include examples/ex.html term="tense" %}
+{% include appendices/ex.html term="tense" %}
 
 It's quite likely that there is a stove turning off somewhere in my past. But this fact means little to the interpretation of [Tense](#tense) if no such event occured within the time frame it gestures at.
 
 The information web also ties states of affairs together via subordination relations between modalized sentences {% include appendices/ref.html id="stone1999" o="n" e=":" p="2" %}
 
-{% include examples/ex.html term="modality" %}
+{% include appendices/ex.html term="modality" %}
 
 Anaphora resolution is an important interpretive tool for connecting utterances, but it is not the only one. Language users are also able to suss out conceptual connections between bits of information. Discourses lacking such *coherence* connections can be very difficult, or even impossible to process {% include appendices/ref.html id="kehler2000" o="n" e=":" %}
 
-{% include examples/ex.html term="coherence" %}
+{% include appendices/ex.html term="coherence" %}
 
 In virtue of its role in systematizing language users' shared knowledge about advancing an inquiry, a grammar for a language provides more than just the makings for truth determination.[^compositionality] It also provides the makings for anaphora and coherence relations. A *dynamic* grammar assigns anaphoric connections between sentences, and propositions can be anaphorically connected, as in modal subordination. A *collaborative* grammar assigns coherence connections between utterances.
 
@@ -161,7 +166,7 @@ Sarah Murray's articulated information states {% include appendices/ref.html id=
 
 Murray has also used the articulated information state framework to account for the distinctive role of *evidentials* in discourse. But this extension reveals an issue with the assertion as proposal framework. Since assertions don't have any independent impact on the common ground, their function is essentially incomplete. Interpretation must wait until the proposal passes the acceptance phase of the discourse. This is a problem because single utterances can involve coordinated informative and structuring updates. For instance:
 
-{% include examples/ex.html term="sing" %}
+{% include appendices/ex.html term="sing" %}
 
 The second conjunct of the assertion requires a direct imposition on the common ground, but we are still in limbo after the first conjunct, which is merely proposed.
 

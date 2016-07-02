@@ -8,6 +8,11 @@ extra:
   - Levi on goal generated constraints
   - Bratman et. al on plans
   - Peirce and van Fraassen on induction
+count:
+  def: 1
+  ex: 1
+  obs: 1
+  table: 1
 ---
 
 ## Finding our way to knowledge
@@ -53,8 +58,9 @@ Levi's is a *conservatist* view. Justification is not a matter of *pedigree* (th
 Given the structure of information states as Levi understands them, all revisions are represented by set theoretic operations, principally set intersection and union. From the semantic perspective, intersection of an information state with the propositional content of a sentence represents an *expansion* of one's knowledge; acquiring information involves eliminating worlds from one's consideration as genuine possibilities. Set union represents *contraction*; withdrawing belief and thereby becoming uncertain about some proposition involves adding worlds to one's set of considered possibilities. According to Levi, and what has become known as the *Levi Identity*, all revisions are reducible to some combination of *expansion* and *contraction*.{% include appendices/note.html type="comment" source="js0617" note="js5" %}
 
 <!-- Levi identity -->
-{% assign leviidentity = site.data.definitions["levi identity"] %}
-{% include examples/def.html type="def" term="Levi Identity" defn=leviidentity %}
+{% def Levi identity %}
+  {{ site.data.definitions["levi identity"] }}
+{% enddef %}
 
 The problem of justification is thus reduced to the problem of specifying properties of expansion and contraction operators such that all warranted changes in belief are subsumed under their operation. This captures the deductive phase of inquiry. Given as input a proposition with which an information state is to be revised, there is a set of rules specifying exactly how the revision ramifies through the information state.
 
@@ -71,8 +77,9 @@ William James {% include appendices/ref.html id="james1896" o="" %} felt that it
 James famously argued that if one's belief choice is *live*, *momentous*, and *forced*, then the will to believe rationally outstrips the fear of being wrong. But as a set of necessary requirements, this restricts speculative endeavors too much. Inquiry need not be momentous or forced for jumping to a conclusion to be epistemically fruitful. Mere time-sensitivity may be enough. Inquiry is a process that is undertaken by fallible individuals in real time. Such agents have limited access to information and limited resources to dedicate to the process of inquiry. Frequently, action is required before certainty can be obtained. And on many quotidian decision points, the risk of being incorrect is fairly low. It is *because* not every inquiry is momentous that striving for truth (and risking falsehood) is sometimes to be prefered. Let us call this extended conception of the rational development of inquiry the *Jamesian Amendment*.
 
 <!-- Jamesian amendment -->
-{% assign jamesianamendment = site.data.definitions["jamesian amendment"] %}
-{% include examples/def.html type="def" term="Jamesian Amendment" defn=jamesianamendment %}
+{% def Jamesian amendment %}
+  {{ site.data.definitions["jamesian amendment"] }}
+{% enddef %}
 
 The Jamesian amendment makes inquiry an optimization task between taking on too many falsehoods and leaving out too many truths. To accommodate this idea, we need to expand our structural representation of inquiry. The information state model from epistemic logic can account for the error-avoidance goal, but we need a way of representing two elements entailed by the goal of acquiring truth. The first is the *impetus to revise* -- information state structure that captures an inquirer's motivation to strive for knowledge. The second is the *will to believe* -- an account of acceptance of a belief in the absence of certainty in its truth, and an explanation of how this maneuver can be rationally viable.[^informationpotential]
 
@@ -151,8 +158,9 @@ The centrality of disagreement to inquiry can be brought out by considering the 
 Expanding Mill's idea slightly to allow for the possibility of disagreement in attitudes other than belief, we derive a constraint on justified possession of attitudes arising from inquiry.
 
 <!-- Millian constraint -->
-{% assign millianconstraint = site.data.definitions["millian constraint"] %}
-{% include examples/def.html type="def" term="Millian Constraint" defn=millianconstraint %}
+{% def Millian constraint %}
+  {{ site.data.definitions["millian constraint"] }}
+{% enddef %}
 
 One virtue of the freedom of expression, brought out in Mill's reference to one's "rational assurage of being right" in the quote above, is a practical one. Given that human inquirers strive for truth, and that we are subject to the limitations and biases of our unique cognitive histories, letting a thousand ideas bloom in the court of public inquiry makes it more likely that public opinion comes to settle upon the truth. But Mill carries the idea further, maintaining that one's justification for an attitude depends on dissent even were we to grant that the attitude is apt.
 
@@ -173,10 +181,9 @@ As explored above, inquiry is a logical process that is independent of its means
 This completes our survey of the structure of inquiry. Inquiry is a complex process, and any representation thereof must capture this complexity. The table below outlines the various proposed additions to the structure of inquiry.{% include appendices/note.html type="comment" source="js0617" note="js14" %}
 
 <!-- Structure of inquiry -->
-{% capture struci %}
-{% include appendices/typology.html distinction="structure of inquiry" biblio="no" %}
-{% endcapture %}
-{% include examples/def.html type="table" term="Structure of inquiry typology" defn=struci %}
+{% table Structure of inquiry %}
+  {% include appendices/typology.html distinction="structure of inquiry" biblio="no" %}
+{% endtable %}
 
 ## What do we know?
 
@@ -184,7 +191,7 @@ Return to the idea that knowledge is whatever the outputs of proper inquiry are,
 
 ### Solitary knowing
 
-If one does not belong to a community of inquirers, then the notion of defending one's contributions makes little practical sense. Still, the hermit and other non-social animals possess knowledge; the [Millian Constraint](#millian-constraint) threatens to cut too much. Despite this initial worry, the inquiry-first account has no difficulty accounting for solitary knowledge.{% include appendices/note.html type="comment" source="js0617" note="js15" %}
+If one does not belong to a community of inquirers, then the notion of defending one's contributions makes little practical sense. Still, the hermit and other non-social animals possess knowledge; the [Millian Constraint](#millian-constraint-def) threatens to cut too much. Despite this initial worry, the inquiry-first account has no difficulty accounting for solitary knowledge.{% include appendices/note.html type="comment" source="js0617" note="js15" %}
 
 First, the account requires only that the knower possess the *ability* to defend her beliefs, whether or not they have come under actual threat.[^ability] The hermit can be capable of defending his beliefs were anyone to venture into his hollow, perhaps by rehearsing an inquiry to himself as he whiles away the lonely evenings. And non-social animals may possess the concepts required by the inquiry-first account though they lack the tools to express them verbally.
 
@@ -209,7 +216,7 @@ To the extent that knowledge ascriptions must embed truths,[^factivity] all that
 Importantly, though, not all knowledge ascriptions are canonical. A variety of putative attributions of knowledge do not have, on their surface, sentential complement clauses, which indicates that they do not embed propositional objects.{% include appendices/note.html type="comment" source="js0617" note="js17" %}
 
 <!-- Varieties of knowledge -->
-{% include examples/ex.html term="varieties of knowledge" type="sent" %}
+{% include appendices/ex.html term="varieties of knowledge" type="sent" %}
 
 Surface appearances aren't always the whole story; perhaps a proper excavation of the deep structure of knowledge ascriptions will reveal cameos by propositions lurking under the surface {% include appendices/ref.html id="stanley2001" o="n" e="." %} But sometimes the best guide to what there is is exactly what appearances tell us; in the case of knowledge ascriptions, it appears that an individual's knowledge can subsume more than just propositional information {% include appendices/ref.html id="bengson2012a,grzankowski2012" o="n" e="." %} [^intellectualism]
 
@@ -220,7 +227,7 @@ By unifying the varieties of knowledge -- treating them as different queries on 
 We also get to avoid contorting surface form of knowledge ascriptions in interpreting them.
 
 <!-- Conjunctive knowledge -->
-{% include examples/ex.html term="conjunctive knowledge" type="sent" %}
+{% include appendices/ex.html term="conjunctive knowledge" type="sent" %}
 
 The inquiry-first perspective on knowledge treats ascriptions such as that in [Conjunctive knowledge](#conjunctive-knowledge) as posing a conjunctive query on an inquiry being carried out by the subject. Since the inquiry is a single complex process containing both objectual and propositional elements, we need only make one call to the inquiry and have it return a single information state. This is directly represented in the surface form of the ascription. An approach that treats personal knowledge as a distinct relation from propositional knowledge must appeal to elided material in the deep structure of the conjunctive ascription. An approach that attempts to reduce personal knowledge to propositional knowledge has already given up the game of respecting surface structure, positing additional, unvoiced material even in atomic knowledge ascriptions.
 
@@ -279,10 +286,9 @@ Of course, receiving praise can be of benefit to the believer, in a way that pot
  Knowledge isn't just valuable because with it you arrive at Larissa. It is valuable because you can explain your route to others. And the value of this is not merely altruistic. The individual who can explain their knowledge stands to have greater opportunity to extend that knowledge down the road.
 
 <!-- Types of value -->
-{% capture valk %}
-{% include appendices/typology.html distinction="value of knowledge" biblio="no" %}
-{% endcapture %}
-{% include examples/def.html type="table" term="Value of knowledge typology" defn=valk %}
+{% table Value of knowledge %}
+  {% include appendices/typology.html distinction="value of knowledge" biblio="no" %}
+{% endtable %}
 
 ### Justifying processes
 

@@ -231,3 +231,27 @@ ul.body-nav {
   margin-bottom: 1em;
   padding-bottom: 1em;
 }
+
+.def {
+  margin: 0 1em;
+  .title {
+    .head {
+      margin-right:0.5em;
+      font-size: $ex-fs;
+      font-family: $header-ff;
+    }
+  }
+  .body {
+    color: #000;
+    padding-right: $spacing-unit;
+    font-size: 0.9em;
+    text-align: justify;
+    //letter-spacing: -1px;
+    margin-bottom: 1em;
+
+    &.fence {
+      border-left: 4px solid $grey-color-light;
+      padding-left: $spacing-unit / 2;
+    }
+  }
+}

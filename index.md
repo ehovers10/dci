@@ -3,6 +3,11 @@ title: Discourse as collaborative inquiry
 subtitle: a dissertation
 author: Erik Hoversten
 type: home
+count:
+  def: 1
+  ex: 1
+  obs: 1
+  table: 1
 ---
 
 You and I are set to build a stone wall. We have before us a pile of stones of various sizes, as well as mortar and wheelbarrows and other tools necessary for the job. Some of the stones are small enough for a single person to move into position. To productively add these stones to the wall, one of us need only recognize the positioning of previously laid stones and place the new stone next to them in a neat fashion. This requries that we *cooperate* with each other in our placement of smaller stones.
@@ -14,14 +19,16 @@ In many ways, inquiry is a similar endeavor to wall-building. {% include appendi
 Discourse is a realization of joint inquiry, and as such, it is cooperative in the way that Paul Grice {% include appendices/ref.html id="grice1989" o="" p="26" %} conceives of it. Honestly engaged discourse participants seek to follow the *Cooperative principle*:
 
 <!-- Cooperative principle -->
-{% assign grice = site.data.definitions["cooperative principle"] %}
-{% include examples/def.html type="def" term="Cooperative principle" sent="Example" sub="Sub-example" defn=grice %}
+{% def Cooperative principle %}
+  {{ site.data.definitions["cooperative principle"] }}
+{% enddef %}
 
 But interaction in discourse is more integrative than this. Helpful interlocutors work together, jointly hefting larger bits of information, with the goal of bringing the particular issue of the inquiry to a close. They obey what we might call the *Collaborative Principle*:
 
 <!-- Collaborative principle -->
-{% assign collab = site.data.definitions["collaborative principle"] %}
-{% include examples/def.html type="def" term="Collaborative principle" sent="Example" sub="Sub-example" defn=collab %}
+{% def Collaborative principle %}
+  {{ site.data.definitions["collaborative principle"] }}
+{% enddef %}
 
 The purpose of the project contained in these pages is to develop and motivate a formal framework of *collaborative discourse interpretation*. To do so, I take a three-pronged approach:
 

@@ -7,7 +7,7 @@ In a discussion of plural *definite* noun phrases, Sebastian Lo&#x0308;bner note
 This is why, in reference to a group of mixed-gender young bears engaged in a wrestling match, (a) in the following seems true while (b) seems neither true nor false:
   
 <!-- Playing bears -->
-{% include examples/ex.html type="ex" term="Playing bears" sent="The cubs are playing." sub="The cubs are boys." defn="Obs/Def" %}
+{% include appendices/ex.html type="ex" term="Playing bears" sent="The cubs are playing." sub="The cubs are boys." defn="Obs/Def" %}
 
 Lo&#x0308;bner uses the data above to characterize plural definites as *ultrafilters*:
   
