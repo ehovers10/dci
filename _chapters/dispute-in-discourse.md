@@ -208,7 +208,7 @@ I take this to be an interesting and widespread discourse phenomenon, and one th
 
 Before we get to my preferred account, it is worth exploring another approach to discourses such as [Bears](#bears) that does give pride of linguistic place to the corrective element of the completion utterance.
 
-The completion utterance is distinctively *disputative*. It seems to simultaneously *deny* the original statement and *substitute* an alternative to it. Jennifer Spenader and Emar Maier {% cite spenader2009 | noname %}, expanding on work of Maier and Bart Geurts {% cite geurts1998a | noname %}(,geurtsa), attempt to treat corrections as *downdates* on the information state. On this proposal, the function of corrections is to remove from the discourse representation something that was previous added to it. A wrinkle is that corrections do not eliminate information wholesale. Consider, for example:
+The completion utterance is distinctively *disputative*. It seems to simultaneously *deny* the original statement and *substitute* an alternative to it. Jennifer Spenader and Emar Maier {% cite spenader2009 | noname %}, expanding on work of Maier and Bart Geurts {% cite geurts1998a | noname + geurtsa | noname %}, attempt to treat corrections as *downdates* on the information state. On this proposal, the function of corrections is to remove from the discourse representation something that was previous added to it. A wrinkle is that corrections do not eliminate information wholesale. Consider, for example:
 
 In this section, I examine the downdate account of denial in terms of its ability to capture the observations about [Bears](#bears) noted earlier.
 

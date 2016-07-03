@@ -3,11 +3,13 @@ title: Project overview
 level: 1
 biblio: true
 references: ""
+count:
+  ex: 0
 ---
 
 # From cooperation to collaboration via conjecture
 
-{% gloss Discourse %} can take a wide variety of forms, but academic study has been primarily concerned with the subclass of discourses that fall under the heading of *cooperative exchanges of information*.  These discourses involve two or more individuals engaged in a project of achieving the goal of increasing their mutual knowledge, using each other's stock of information to augment their own. In this form, discourse implements a jointly undertaken {% gloss inquiry %}. An inquiry is, in the words of Robert Stalnaker, "the enterprise of forming, testing, and revising beliefs" {% cite stalnaker1987 | pages: ix | noname %}.
+{% gloss Discourse %} can take a wide variety of forms, but academic study has been primarily concerned with the subclass of discourses that fall under the heading of *cooperative exchanges of information*.  These discourses involve two or more individuals engaged in a project of achieving the goal of increasing their mutual knowledge, using each other's stock of information to augment their own. In this form, discourse implements a jointly undertaken {% gloss inquiry %}. An inquiry is, in the words of Robert Stalnaker, "the enterprise of forming, testing, and revising beliefs" {% cite stalnaker1987 | pages: p. ix | noname %}.
 
 Discourse that implements a joint inquiry is {% gloss cooperative %}: A speaker presents some content in a way that makes room for responses that she anticipates her {% gloss interloctors %} are able to provide. A hearer considers the contribution, adds it to her personal model of the conversation, and adjusts her response to accord with the expanded model. And the process iterates with the discourse participants alternating roles, always trying to make their contribution fit with what has predeeded it. Paul Grice took his *cooperative principle*, "make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged," to be the one general principle by which participants in conversations derive the import of their {% gloss interlocutors %} utterances {% cite grice1989 %}. But discourse isn't just cooperative in this sense -- it is {% gloss collaborative %}.
 
@@ -40,7 +42,7 @@ It is tempting to maintain that the {% gloss end of inquiry %} is truth. While p
 
 In contrast, C.S. Peirce and others following in his wake {% cite levi1980 %}, have suggested that truth is too lofty a goal; that the most we can genuinely hope for at the end of inquiry is the *settlement of opinion*, for:
 
-> "it is clear that nothing out of the sphere of our knowlege can be our object, for nothing which does not affect the mind can be the motive for mental effort. The most that can be maintained is, that we seek for a belief that we shall *think* to be true. But we think each one of our beliefs to be true, and indeed, it is mere tautology to say so." {% cite peirce1877 | pages: 11 %}
+> "it is clear that nothing out of the sphere of our knowlege can be our object, for nothing which does not affect the mind can be the motive for mental effort. The most that can be maintained is, that we seek for a belief that we shall *think* to be true. But we think each one of our beliefs to be true, and indeed, it is mere tautology to say so." {% cite peirce1877 | pages: p. 11 %}
 
 In response, we could take the pragmatist bait and insist that truth is the end of inquiry simply because whatever is output from the process of inquiry *just is* truth. But we needn't take this line. We can cleave to a correspondence account of truth while maintaining that final aim of inquiry involves {% gloss wide content %} by delimiting a natural, restricted category of *proper* inquiry that can be reliably expected to produce true propositions.
 
@@ -132,7 +134,7 @@ But dispute can also be a fruitful tool for people involved in an honest, cooper
 
 Consider the following little discourse:
 
-{% include appendices/ex.html type="ex" term="grizzly" %}
+{% include appendices/ex.html term="grizzly" %}
 
 Pretheoretically, the response utterance seems to do two things:
 

@@ -3,7 +3,7 @@
 {% else %}
   {% assign bits = 'sent' %}
 {% endif %}
-{% assign example = site.data.examples.[include.term].[bits] %}
+{% assign example = site.data.examples[include.term].[bits] %}
 
 <div class="def" id="{{ include.term | slugify }}">
   <div class="title">

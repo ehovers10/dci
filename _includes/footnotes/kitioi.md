@@ -58,10 +58,10 @@
     For a dissenting opinion, see {% cite hazlett2012 %}.
 
 [^intellectualism]:
-    I focus here on *intellectualist* accounts of knowledge , setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% cite ryle1949,lewis1988,bengson2012 %}.
+    I focus here on *intellectualist* accounts of knowledge , setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% cite ryle1949 + lewis1988 + bengson2012 %}.
 
 [^informationpotential]:
-    In other work, Levi has attempted to incorporate the truth acquisition element of the Jamesian amendment {% cite levi1967,rott2006 %}. He defines a sentence's *information potential* -- a real-number value normalized to [0,1]. This value can then be used with an inquirer's subjective probability function to determined whether the sentence is worth adding to their information state.
+    In other work, Levi has attempted to incorporate the truth acquisition element of the Jamesian amendment {% cite levi1967 + rott2006 %}. He defines a sentence's *information potential* -- a real-number value normalized to [0,1]. This value can then be used with an inquirer's subjective probability function to determined whether the sentence is worth adding to their information state.
 
 [^internalism]:
     In yet other words, the stability of belief requires not just that the agent has knowledge, but that he *knows that* he does. And for someone else's words, directed toward modal conditions on knowledge generally, see {% cite gardiner %}.
@@ -70,10 +70,10 @@
     Ernest Sosa {% cite sosa2003 | noname %} also develops this worry for reliabilism.
 
 [^virtue]:
-    Other developments of virtue epistemology motivated by the purported value of knowledge can be found in {% cite riggs2009,sosa2003 %}.
+    Other developments of virtue epistemology motivated by the purported value of knowledge can be found in {% cite riggs2009 + sosa2003 %}.
 
 [^epiphenomenalvalue]:
-    One may at this point simply put their foot down and claim that the epistemic value problem is solved when we finger a feature of knowledge that makes the knower better off than the mere believer, even if the betterness is epiphenomenal. This seems to be the idea behind many virtue epistemological solutions {% cite riggs2009,zagzebski2003 %}. Knowledge is a virtue; it thus adds to a life, whether the knower cares about it or not. It's hard to say exactly what our intuition in the epistemic value problem is tracking, and I don't have an argument that it can't be such an epiphenomenal value. But I think we do have reason to think that knowledge adds practical value over mere true belief, and I hope that my positive account lends credence to my diagnosis of the value problem.
+    One may at this point simply put their foot down and claim that the epistemic value problem is solved when we finger a feature of knowledge that makes the knower better off than the mere believer, even if the betterness is epiphenomenal. This seems to be the idea behind many virtue epistemological solutions {% cite riggs2009 + zagzebski2003 %}. Knowledge is a virtue; it thus adds to a life, whether the knower cares about it or not. It's hard to say exactly what our intuition in the epistemic value problem is tracking, and I don't have an argument that it can't be such an epiphenomenal value. But I think we do have reason to think that knowledge adds practical value over mere true belief, and I hope that my positive account lends credence to my diagnosis of the value problem.
 
     Virtue epistemological solutions, in so far as they posit a distinctive value possessed by knowledge, must also explain why not all knowledge is valuable. Sosa's {% cite sosa2003 | noname %} example of the beachcomber who acquires knowledge of the number of grains of sand in his palm the hard way does not acquire something valuable. But he has knowledge just the same, and if there is a distinctive epistemic virtue, then his life ought to be better off for the counting.
 

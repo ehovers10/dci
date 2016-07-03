@@ -34,14 +34,6 @@ defaults:
       type: "appendices"
     values:
       layout: "article"
-  - scope:
-      path: ""
-    values:
-      count:
-        def: 1
-        ex: 1
-        obs: 1
-        table: 1
 
 collections:
   chapters:

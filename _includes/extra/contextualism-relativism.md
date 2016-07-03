@@ -32,7 +32,7 @@ There is a source of linguistic evidence that promises to break this stalemate.
 
 The argument from disagreement is a schema that can be applied to specific questions regarding the nature of content as a means of helping to dscide between competing accounts, one *contextualist* the other *relativist*.
 
-But the argument from disagreement is a *non sequitur*. Even granting the value of intuition in this case {% cite vonfintel2008 %}(,cappelen2009),
+But the argument from disagreement is a *non sequitur*. Even granting the value of intuition in this case {% cite vonfintel2008 + cappelen2009 %},
 
 Lasersohn (pp. 35-43)
 

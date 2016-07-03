@@ -3,6 +3,8 @@ title: Knowledge in the image of inquiry
 level: 2
 toc: yes
 biblio: true
+references: ""
+comments: ""
 notes: kitioi.md
 extra:
   - Levi on goal generated constraints
@@ -13,13 +15,9 @@ count:
   ex: 0
   obs: 1
   table: 1
-comments: ""
-references: ""
 ---
 
 ## Finding our way to knowledge
-
-{{ page.references }}
 
 Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
 
@@ -105,7 +103,7 @@ Additionally, there does seem to be a difference between the two cognitive goals
 
 James' characterization of the motivation for the will to believe emphasizes that it is the *choice* that is genuine and calls for resolution. The essence of the genuine choice is that no particular resolution of the uncertainty demands selection, but still a selection must be made. We can capture this feature of proposition integration via the will to believe by focusing on the selected proposition's position within the partition we introduced to capture the impetus to revise. The will to believe is nothing more than selecting a prefered resolution of a recognized incompleteness in one's information state. Formally, this amendment requires only that the relation *R* that represents the partition impose an *order* on the members of the state. The result is an information state that both calls for revision and selects a preferred means of doing so.{% note js8 js0617 %}
 
-This extension of inquiry based on the Jamesian amendment is intended to capture the abductive phase of inquiry. The two parts of the extension happen to map onto a commonly cited distinction within the abductive phase {% cite campos2011 %}(,shanahan1986). *Creative abduction* is associated with the scientific context of discovery. It is involved when an inquirer recognizes a scientifically fruitful question and develops a set of hypotheses that serve as potential answers to that question. Incompleteness, modeled as a partition on an information state, represents the output of creative abduction. The extension does not provide us, specifically, with an account of the conditions under which an information state comes to represent its own incompleteness. And this is all to the good, for creative abduction is notoriously unamenable to logical characterization. We don't have, nor do we want, a topic-neutral story of revision into incompleteness. But the extension does provide a uniform representation of what a state that *calls for* revision looks like.
+This extension of inquiry based on the Jamesian amendment is intended to capture the abductive phase of inquiry. The two parts of the extension happen to map onto a commonly cited distinction within the abductive phase {% cite campos2011 + shanahan1986 %}. *Creative abduction* is associated with the scientific context of discovery. It is involved when an inquirer recognizes a scientifically fruitful question and develops a set of hypotheses that serve as potential answers to that question. Incompleteness, modeled as a partition on an information state, represents the output of creative abduction. The extension does not provide us, specifically, with an account of the conditions under which an information state comes to represent its own incompleteness. And this is all to the good, for creative abduction is notoriously unamenable to logical characterization. We don't have, nor do we want, a topic-neutral story of revision into incompleteness. But the extension does provide a uniform representation of what a state that *calls for* revision looks like.
 
 The second part captures the value of *striving* for truth, which closely resembles the *selective* phase of abduction, in which the scientist chooses from amongst the set of viable hypotheses the one that best answers the question on the basis of a set of criteria that perhaps don't eliminate all other answers completely. This is the mode of reasoning known as *inference to the best explanation*. James' proposal was that, ocassionally, elimination of incompleteness is rationally preferred to remaining ambivalent even at the risk of being wrong. Modeling inquiry in this way thus makes it part of the domain of logic to specify the conditions under which selective abduction is warranted. What makes it the case, for a particular incomplete information state, that it is epistemically appropriate to complete it at the risk importing error?
 
@@ -222,7 +220,7 @@ Importantly, though, not all knowledge ascriptions are canonical. A variety of p
 <!-- Varieties of knowledge -->
 {% include appendices/ex.html term="varieties of knowledge" type="sent" %}
 
-Surface appearances aren't always the whole story; perhaps a proper excavation of the deep structure of knowledge ascriptions will reveal cameos by propositions lurking under the surface {% cite stanley2001 %}. But sometimes the best guide to what there is is exactly what appearances tell us; in the case of knowledge ascriptions, it appears that an individual's knowledge can subsume more than just propositional information {% cite bengson2012a,grzankowski2012 %}.[^intellectualism]
+Surface appearances aren't always the whole story; perhaps a proper excavation of the deep structure of knowledge ascriptions will reveal cameos by propositions lurking under the surface {% cite stanley2001 %}. But sometimes the best guide to what there is is exactly what appearances tell us; in the case of knowledge ascriptions, it appears that an individual's knowledge can subsume more than just propositional information {% cite bengson2012a + grzankowski2012 %}.[^intellectualism]
 
 The inquiry-first perspective on knowledge offers a pleasing account of this diversity amongst knowledge ascriptions. As we'll see in [Discourse as collaborative update](/chapters/discourse-as-collaborative-update.html), a plausible representation of inquiry at the logical level includes *discourse referents* as elements of the inquiry structure. It is possible to treat knowledge ascriptions in their *personal* guise as querying an inquiry for these objects. And the structural approach to inquiry provides a framework for similarly representing the entities (*ways*, or some other concept/property) needed as objects for knowledge ascriptions in their procedural guise.
 
