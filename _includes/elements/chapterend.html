@@ -1,7 +1,7 @@
 <div class="chapter-end" markdown="1">
 
 <!-- References -->
-{% if page.references %}
+{% if page.biblio %}
 
 <div class="references">
 
@@ -39,10 +39,9 @@
   + Footnotes
   {:footnotes}
 
-{% if allcomments %}
+{% if page.comments %}
   {% include elements/notelist.html %}
 {% endif %}
-
 </div>
 
 {% endif %}

@@ -22,7 +22,7 @@
       <tr><td>
         {% if bit[0] == "reference" %}
           {% for item in row %}
-          {% include appendices/ref.html id=item o="n" reflist=include.biblio %}
+          {% comment %}{% cite {{ item }} %}{% endcomment %}
           {% endfor %}
         {% else %}
           {{ row }}
@@ -39,9 +39,11 @@
   {% endfor %}
 </table>
 
+{% comment %}
 <div {% if include.biblio == "no" %}style="display:none;"{% endif %}>
   <h3>References</h3>
   {% unless include.biblio == "no" %}
     {% include elements/reflist.html %}
   {% endunless %}
 </div>
+{% endcomment %}

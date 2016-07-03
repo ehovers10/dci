@@ -5,28 +5,37 @@ level: 5
 ---
 
 {% assign words = site.data.glossary | sort %}
-<ul>
+<ul class="glossary">
 {% for word in words %}
-  <li style="list-style-type:none;">
-    <a name="{{ word[0] | slugify }}"></a>
-    <span style="font-weight:600;font-size:1.1em;">{{ word[0] }}</span>
-    <blockquote style="margin-left:0.75em;margin-top:0.5em;">{{ word[1].definition }}
-    {% if word[1].related %}<div style="font-size:0.8em;margin-left:0.75em;margin-top:0.75em;"><span>Related concepts:</span>
-    <ul>
-      {% for item in word[1].related %}
-      <li style="display:inline-block;"><a href="#{{ item | slugify }}">{{ item }}</a></li>
-      {% unless forloop.last %}
-      <li style="display:inline-block;">|</li>
-      {% endunless %}
-      {% endfor %}
-    </ul></div>{% endif %}
-    {% if word[1].biblio %}<div style="font-size:0.8em;margin-left:0.75em;"><span>Relevant resources:</span>
-    <ul>
-      {% for item in word[1].biblio %}
-      <li style="list-style-type:none;">{% include appendices/lucy.html id=item %}</li>
-      {% endfor %}
-    </ul></div>{% endif %}
-</blockquote>
+  <li>
+    <a name="{{ word[0] | truncate: 5,'' }}"></a>
+    <div class="title">{{ word[0] }}</div>
+    <div class="body fence">{{ word[1].definition }}
+
+    {% if word[1].related %}
+    <div class="subtitle"><span>Related concepts:</span>
+      <ul class="inline">
+        {% for item in word[1].related %}
+        <li><a href="#{{ item | truncate: 5,'' }}">{{ item }}</a></li>
+        {% unless forloop.last %}
+        <li>|</li>
+        {% endunless %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if word[1].biblio %}
+    <div class="subtitle"><span>Relevant resources:</span>
+      <ul>
+        {% for item in word[1].biblio %}
+        <li>{% include appendices/lucy.html id=item %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    </div>
   </li>
 {% endfor %}
 </ul>

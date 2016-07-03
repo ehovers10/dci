@@ -1,5 +1,5 @@
 [^Bestsystem]:
-    Lewis also adds *fit* as a criterion for theorizing about non-deterministic systems. See {% include appendices/ref.html id="hicks2014" o="n" %} for an amendment of the best system account that incorporates the idea that the conditions of use of a theory may count as a criterion for adequacy of the theory.
+    Lewis also adds *fit* as a criterion for theorizing about non-deterministic systems. See {% cite hicks2014 %} for an amendment of the best system account that incorporates the idea that the conditions of use of a theory may count as a criterion for adequacy of the theory.
 
 [^collabattitudes]:
     I can see at least two ways of incorporating the collaborative extension of the basic ideology. We could add additional attitudes to the set of intentional elements whose content our theory is to specify, which is to say that we treat *conjectures* and *corrections* as independent states of mind. Alternatively, we could reimagine the attitudes we already grant, imbuing them with collaborative features, resulting in, perhaps, *distributed beliefs* and *shared desires*. The choice depends on whether we think of collaboration as built into the content or as a structural feature of the states. I don't see the need to make the choice for the purpose of examining the extension of the basic ideology. As far as I can tell, the consequences for the constraints on radical interpretation are the same.
@@ -11,16 +11,16 @@
     See the entries in [That sem/prag anthology].
 
 [^Bontly]:
-    Same idea as the simplicity motivation in linguistic theory that {% include appendices/ref.html id="bontly2005" o='n' %} discusses? Something about semantic innocence?
+    Same idea as the simplicity motivation in linguistic theory that {% cite bontly2005 %} discusses? Something about semantic innocence?
 
 [^Morecriteria]:
     An additional criteria that seem to straddle the line between empirical coverage and theoretical virtue are is the distribution patterns of expressions throughout the language, such as an expression's embedding proclivities or the diversity of linguistic contexts in which it occurs
 
 [^bealer]:
-    George Bealer {% include appendices/ref.html id="bealer1997" %} emphasizes the counter-intuitiveness of reductive functionalist accounts in that they require the content of our conscious experiences to be weird realizer properties rather than the normal mental properties that really are their contents.
+    George Bealer {% cite bealer1997 | noname %} emphasizes the counter-intuitiveness of reductive functionalist accounts in that they require the content of our conscious experiences to be weird realizer properties rather than the normal mental properties that really are their contents.
 
 [^method]:
-    Or at least *a* methodology. To fix ideas, I presume as operative Lewis' *Method 3* {% include appendices/ref.html id="lewis1974b" p="342" %} for linguistic theory construction.
+    Or at least *a* methodology. To fix ideas, I presume as operative Lewis' *Method 3* {% cite lewis1974b | pages: 342 | noname %} for linguistic theory construction.
 
 [^constitutive]:
     Both constitutive and regulative rules count as rules in this sense as both are generalizations over singular game events. Their different status is a distinction without a difference in our framework. In this sense, they are like the differences between laws and initial conditions for best systems accounts of laws.

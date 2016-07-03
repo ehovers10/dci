@@ -1,5 +1,3 @@
-{% assign ex = ex | plus: 1 %}
-
 {% if include.type %}
   {% assign bits = include.type %}
 {% else %}
@@ -7,13 +5,13 @@
 {% endif %}
 {% assign example = site.data.examples.[include.term].[bits] %}
 
-<div class="def" style="margin:1em;" id="{{ include.term | slugify }}">
-  <div style="margin-bottom:0.5em;">
-    <span style="margin-right:0.5em;font-weight:600;">{{ ex | prepend: 'Example ' }}</span>
+<div class="def" id="{{ include.term | slugify }}">
+  <div class="title">
+    <span class="head">Example {% count ex %}</span>
     <span>{{ include.term | capitalize | prepend: ' (' | append: ') ' }}</span>
   </div>
 
-  <blockquote>
+  <div class="body fence">
       {% if example["external"] %}
         {% for snip in site.snippets %}
           {% if snip.label == example["external"] %}
@@ -36,5 +34,5 @@
     {% endfor %}
       {% endif %}
     </table>
-  </blockquote>
+  </div>
 </div>

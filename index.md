@@ -8,15 +8,16 @@ count:
   ex: 1
   obs: 1
   table: 1
+references: ""
 ---
 
 You and I are set to build a stone wall. We have before us a pile of stones of various sizes, as well as mortar and wheelbarrows and other tools necessary for the job. Some of the stones are small enough for a single person to move into position. To productively add these stones to the wall, one of us need only recognize the positioning of previously laid stones and place the new stone next to them in a neat fashion. This requries that we *cooperate* with each other in our placement of smaller stones.
 
 But some of the stones are quite large; they require both of us to lift in unison and carefully place them into position on the wall. To get these stones in place, we must be willing to *collaborate* in our efforts. While placing these larger stones adds complication through the increased demand on coordination, the value of having such a stone in place is potentially great in reducing the overall effort required to bring our wall building task to a close.
 
-In many ways, inquiry is a similar endeavor to wall-building. {% include appendices/word.html word="Information" base='information' %} takes the place of stones as the building blocks participants heft. Utterances take the place of hands and wheelbarrows as the conveyances of the building materials. And the finished wall maps to resolution of whatever {% include appendices/word.html word='issues' base='issue' %} spurred our entering into the inquiry.
+In many ways, inquiry is a similar endeavor to wall-building. {% gloss Information %} takes the place of stones as the building blocks participants heft. Utterances take the place of hands and wheelbarrows as the conveyances of the building materials. And the finished wall maps to resolution of whatever {% gloss issues %} spurred our entering into the inquiry.
 
-Discourse is a realization of joint inquiry, and as such, it is cooperative in the way that Paul Grice {% include appendices/ref.html id="grice1989" o="" p="26" %} conceives of it. Honestly engaged discourse participants seek to follow the *Cooperative principle*:
+Discourse is a realization of joint inquiry, and as such, it is cooperative in the way that Paul Grice {% cite grice1989 | pages: 26 %} conceives of it. Honestly engaged discourse participants seek to follow the *Cooperative principle*:
 
 <!-- Cooperative principle -->
 {% def Cooperative principle %}

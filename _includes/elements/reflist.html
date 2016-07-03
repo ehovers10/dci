@@ -1,8 +1,7 @@
-{% if carol %}
-{% assign betty = carol | split: ' ' | sort %}
+{% assign eachref = page.references | split: '+' %}
 
 <ul>
-{% for ref in betty %}
+{% for ref in eachref %}
   {% if ref == previous %}
     {% continue %}
   {% else %}
@@ -15,7 +14,6 @@
 {% endfor %}
 </ul>
 
-{% for ref in betty %}
+{% for ref in eachref %}
 <div class="tooltip reference" id="{{ ref }}-tip">{% include appendices/lucy.html id=ref nourl="" %}</div>
 {% endfor %}
-{% endif %}

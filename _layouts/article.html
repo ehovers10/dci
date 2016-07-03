@@ -15,7 +15,7 @@ layout: compress
 
 <div class="page-front">
 
-  {% include appendices/mark.html title='elements/navigation' %}
+  {% include elements/navigation.html %}
 
   <h1>{{ page.title }}</h1>
   <h3>{% if page.subtitle %}{{ page.subtitle | append: '&nbsp;' }}{% endif %}{% if page.author %}{{ page.author | prepend: 'by&nbsp;' }}{% endif %}</h3>

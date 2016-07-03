@@ -166,6 +166,44 @@ a.note:hover {
   }
 }
 
+/* Glossary */
+ul.glossary {
+  li {
+    list-style-type: none;
+
+    .title {
+      font-weight:600;
+      font-size:1.1em;
+    }
+
+    .body {
+      color: #000;
+      padding-right: $spacing-unit;
+      font-size: 0.9em;
+      text-align: justify;
+      //letter-spacing: -1px;
+      margin: 0.5em 1em;
+
+      &.fence {
+        border-left: 4px solid $grey-color-light;
+        padding-left: $spacing-unit / 2;
+      }
+    }
+
+
+        .subtitle {
+          font-size:0.8em;
+          margin-left:0.75em;
+          margin-top:0.75em;
+        }
+        ul.inline li {
+          display: inline-block;
+        }
+
+  }
+
+}
+
 /* Chapter end */
 .references, .appendices, .comments  {
   border-top: 1px solid #aaa;

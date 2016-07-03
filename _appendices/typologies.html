@@ -18,7 +18,7 @@ js: bunch
 {% for frac in page.distinctions %}
 <div class="area {{ frac | slugify }}" {% unless forloop.first %}style="display:none;"{% endunless %}>
   <h3>{{ frac | capitalize }}</h3>
-  {% include appendices/typology.html distinction=frac %}
+  {% include elements/typology.html  distinction=frac %}
 </div>
 {% endfor %}
 </div>

@@ -1,7 +1,7 @@
 <!-- Footnotes -->
 
 [^inquiryStalnaker]:
-    According to this initial explication, the machinery of inquiry properly includes that presumed by the conception preferred by Robert Stalnaker in which inquiry is "the enterprise of forming, testing, and revising beliefs" {% include appendices/ref.html id="stalnaker1987" o="" e="," p='ix' %}. As will become clear in what follows, there is no reason to restrict inquiry to operations on states of *belief*, nor ought we to presume that forming, testing, and revising exhaust the inquiry-relevant operations on mental states.
+    According to this initial explication, the machinery of inquiry properly includes that presumed by the conception preferred by Robert Stalnaker in which inquiry is "the enterprise of forming, testing, and revising beliefs" {% cite stalnaker1987 | pages: ix | noname %}. As will become clear in what follows, there is no reason to restrict inquiry to operations on states of *belief*, nor ought we to presume that forming, testing, and revising exhaust the inquiry-relevant operations on mental states.
 
 [^knowtoomuch]:
     Set aside the sense of *knowing too much* in which an agent has information that it would be in their other interests to remain ignorant of.
@@ -28,7 +28,7 @@
     They are also similar to suppositions in that they seem to be less than fully committal on the part of the speaker. Assertion is generally associated with a commitment that it generates for the speaker.  This commitment involves some evidential relation between the asserter and the information conveyed, though it is controversial just what relation it is. But whatever the relation amounts to, it seems clear that we sometimes offer contributions to discourse that go beyond the evidence we have available. And we do this not just as a means of flouting the rules of discourse, but frequently in order to respect the project of the communicative exchange.
 
 [^connection]:
-    Jonathan Schaffer {% include appendices/ref.html id="schaffer2005" o="" %} also explores of the nature of knowledge in terms of its connection to inquiry, though his development of the nature of inquiry differs from that in the text.
+    Jonathan Schaffer {% cite schaffer2005 | noname %} also explores of the nature of knowledge in terms of its connection to inquiry, though his development of the nature of inquiry differs from that in the text.
 
 [^command]:
     Sometimes added to this list of contribution types is the *command*, which proposes a non-linguistic demand upon a participant in the inquiry. The appropriate response to such a contribution is to make the world such that the demand is met (or to reject the demand itself).
@@ -40,7 +40,7 @@
     Is this true? Haven't I build *actual* collaboration into the framework by way of the sandbox?
 
 [^goldman]:
-    As would Alvin Goldman's {% include appendices/ref.html id="goldman1976" o="" %} fake barn cases among others.
+    As would Alvin Goldman's {% cite goldman1976 | noname %} fake barn cases among others.
 
 [^refinement]:
     This picture is fitting for our account of refinement to be addressed in the last chapter.
@@ -55,27 +55,27 @@
     Even in the case of containment, having more information does not necessarily make the state more desirable. The more informative state involves one way of expanding from the less informative one. But independent of knowledge of the *alternative* expansions, there is no saying that such an expansion ought to be carried out.
 
 [^factivity]:
-    For a dissenting opinion, see {% include appendices/ref.html id="hazlett2012" o="n" e="." %}
+    For a dissenting opinion, see {% cite hazlett2012 %}.
 
 [^intellectualism]:
-    I focus here on *intellectualist* accounts of knowledge , setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% include appendices/ref.html id="ryle1949,lewis1988,bengson2012" o="n" e="." %}
+    I focus here on *intellectualist* accounts of knowledge , setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% cite ryle1949,lewis1988,bengson2012 %}.
 
 [^informationpotential]:
-    In other work, Levi has attempted to incorporate the truth acquisition element of the Jamesian amendment {% include appendices/ref.html id="levi1967,rott2006" o="n" e="." %} He defines a sentence's *information potential* -- a real-number value normalized to [0,1]. This value can then be used with an inquirer's subjective probability function to determined whether the sentence is worth adding to their information state.
+    In other work, Levi has attempted to incorporate the truth acquisition element of the Jamesian amendment {% cite levi1967,rott2006 %}. He defines a sentence's *information potential* -- a real-number value normalized to [0,1]. This value can then be used with an inquirer's subjective probability function to determined whether the sentence is worth adding to their information state.
 
 [^internalism]:
-    In yet other words, the stability of belief requires not just that the agent has knowledge, but that he *knows that* he does. And for someone else's words, directed toward modal conditions on knowledge generally, see {% include appendices/ref.html id="gardiner" o="n" e="." %}
+    In yet other words, the stability of belief requires not just that the agent has knowledge, but that he *knows that* he does. And for someone else's words, directed toward modal conditions on knowledge generally, see {% cite gardiner %}.
 
 [^swamping]:
-    Ernest Sosa {% include appendices/ref.html id="sosa2003" o="" %} also develops this worry for reliabilism.
+    Ernest Sosa {% cite sosa2003 | noname %} also develops this worry for reliabilism.
 
 [^virtue]:
-    Other developments of virtue epistemology motivated by the purported value of knowledge can be found in {% include appendices/ref.html id="riggs2009,sosa2003" o="n" e="." %}
+    Other developments of virtue epistemology motivated by the purported value of knowledge can be found in {% cite riggs2009,sosa2003 %}.
 
 [^epiphenomenalvalue]:
-    One may at this point simply put their foot down and claim that the epistemic value problem is solved when we finger a feature of knowledge that makes the knower better off than the mere believer, even if the betterness is epiphenomenal. This seems to be the idea behind many virtue epistemological solutions {% include appendices/ref.html id="riggs2009,zagzebski2003" o="n" e="." %} Knowledge is a virtue; it thus adds to a life, whether the knower cares about it or not. It's hard to say exactly what our intuition in the epistemic value problem is tracking, and I don't have an argument that it can't be such an epiphenomenal value. But I think we do have reason to think that knowledge adds practical value over mere true belief, and I hope that my positive account lends credence to my diagnosis of the value problem.
+    One may at this point simply put their foot down and claim that the epistemic value problem is solved when we finger a feature of knowledge that makes the knower better off than the mere believer, even if the betterness is epiphenomenal. This seems to be the idea behind many virtue epistemological solutions {% cite riggs2009,zagzebski2003 %}. Knowledge is a virtue; it thus adds to a life, whether the knower cares about it or not. It's hard to say exactly what our intuition in the epistemic value problem is tracking, and I don't have an argument that it can't be such an epiphenomenal value. But I think we do have reason to think that knowledge adds practical value over mere true belief, and I hope that my positive account lends credence to my diagnosis of the value problem.
 
-    Virtue epistemological solutions, in so far as they posit a distinctive value possessed by knowledge, must also explain why not all knowledge is valuable. Sosa's {% include appendices/ref.html id="sosa2003" o="" %} example of the beachcomber who acquires knowledge of the number of grains of sand in his palm the hard way does not acquire something valuable. But he has knowledge just the same, and if there is a distinctive epistemic virtue, then his life ought to be better off for the counting.
+    Virtue epistemological solutions, in so far as they posit a distinctive value possessed by knowledge, must also explain why not all knowledge is valuable. Sosa's {% cite sosa2003 | noname %} example of the beachcomber who acquires knowledge of the number of grains of sand in his palm the hard way does not acquire something valuable. But he has knowledge just the same, and if there is a distinctive epistemic virtue, then his life ought to be better off for the counting.
 
 [^conditionalization]:
     More or less the system outlined above, perhaps augmented with a probability function and a mechanism for accommodating evidence that supports a proposition without pushing it into the realm of full belief.
