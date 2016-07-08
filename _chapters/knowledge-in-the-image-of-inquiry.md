@@ -19,7 +19,7 @@ count:
 
 ## Finding our way to knowledge
 
-Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
+Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.{% note kitioi1 js0617 %}
 
 It is tempting to maintain that the {% gloss end of inquiry %} is truth. If truth what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. Thus, the goal of engaging in inquiry is thus to achieve a specific, *cognitive* state that relates us to true propositions.
 
@@ -33,7 +33,7 @@ Proper inquiry is a rule governed process. Following established procedures in o
 
 The end of proper inquiry, then, is a (i) praseworthy, (ii) cognitive state with (iii) true propositions as its content. Only slightly tendentiously, proper inquiry is a process that reliably produces justified, true belief. Modulo Gettier-type complications, the end of proper inquiry is *knowledge*.
 
-The *knowledge rule of assertion* proposes that it is a constitutive norm of assertion that one only assert what one knows. Jonathan Schaffer {% cite schaffer2008 | pages: 5 | noname %} asks what comes of knowledge when we take the knowledge rule of assertion seriously. His answer is that, since assertion is best seen as taking place within a discourse context structured by the question under discussion {% cite roberts1996 %}, and questions are best represented by the set of their alternative answers {% cite groenendijk1984 %}, knowledge is similarly relativized to a set of alternatives to the proposition known. And this makes knowledge look a lot like Schaffer's {% cite schaffer2005 | noname %} contrastivist proposal would have it.
+The *knowledge rule of assertion* proposes that it is a constitutive norm of assertion that one only assert what one knows. Jonathan Schaffer {% cite schaffer2008 | noname %} asks what comes of knowledge when we take the knowledge rule of assertion seriously. His answer is that, since assertion is best seen as taking place within a discourse context structured by the question under discussion {% cite roberts1996 %}, and questions are best represented by the set of their alternative answers {% cite groenendijk1984 %}, knowledge is similarly relativized to a set of alternatives to the proposition known. And this makes knowledge look a lot like Schaffer's {% cite schaffer2005 | noname %} contrastivist proposal would have it.
 
 This proposal to limn the structure of knowledge by investigating the structure of assertion is motivated by the suggested connection between knowledge and assertion. As Timothy Williamson puts the idea, "it is pointless to ask why the knowledge rule is the rule of assertion. It could not have been otherwise" {% cite williamson2000 | pages: 267 | noname %}. Knowledge is strongly modally tied to assertion, and modal connections generally bring structural similarity in their wake. With a well developed theory of assertion in the offing, it is reasonable to let it inform our conception of knowledge.
 
@@ -113,7 +113,7 @@ But the motivation for the structural posits necessary to incorporate the abduct
 
 ### Induction
 
-Induction is normally understood in Peirce's tripartite distinction as (i) an ampliative mode of reasoning that (ii) provides its user with *security* that its outputs are for the most part true. For familiar, Humean reasons, there is no mode of reasoning that simultaneously meets both of these criteria (See the appendix: <a class="pop" id="peirce-and-van-fraassen-on-induction">Peirce and van Fraassen on induction</a>). Bas van Fraassen {% cite vanfraassen2000 | noname %}, accepting that an epistemology based on the search for a secure, ampliative inference is bound to come up empty, proposes an alternative conception of the pursuit of science:
+Induction is normally understood in Peirce's tripartite distinction as (i) an ampliative mode of reasoning that (ii) provides its user with *security* that its outputs are for the most part true. For familiar, Humean reasons, there is no mode of reasoning that simultaneously meets both of these criteria (See the appendix: <a class="pop" id="peirce-and-van-fraassen-on-induction">Peirce and van Fraassen on induction</a>). Bas van Fraassen {% cite vanfraassen2000 %}, accepting that an epistemology based on the search for a secure, ampliative inference is bound to come up empty, proposes an alternative conception of the pursuit of science:
 
 > Given that traditional epistemology embodies false hopes never to be satisfied, we must try to find a different view of our epistemic condition, with new hopes and new dreams of its own. So here is our tragic protagonist, thrown into a world she never made, and she asks us: What does it take?
 >

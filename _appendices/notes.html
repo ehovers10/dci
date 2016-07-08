@@ -1,0 +1,10 @@
+---
+layout: chapter
+title: notes
+---
+
+<ul>
+{% for note in site.data.notes.js0617 %}
+  <li>{{ note[1] | markdownify }}</li>
+{% endfor %}
+</ul>

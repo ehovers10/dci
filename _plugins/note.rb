@@ -2,10 +2,10 @@ module Jekyll
 
   class NoteTag < Liquid::Tag
 
-    def initialize(tag_name, label, tokens)
-      @label = label.split
-      @note = @label[0].strip
-      @source = @label[1].strip
+    def initialize(tag_name, note, tokens)
+      label = note.split
+      @note = label[0].strip
+      @source = label[1].strip
       super
     end
 

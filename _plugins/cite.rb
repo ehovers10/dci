@@ -15,6 +15,7 @@ module Jekyll
 
     end
 
+  # Full citation
     def render(context)
 
       output = "("
@@ -50,12 +51,7 @@ module Jekyll
 
           if @name
             output << "<span class='author'>"
-            authorNames = @bib[@ref]['Author'].split
-            if authorNames.length == 3
-              output << authorNames[2]
-            elsif authorNames.length == 2
-              output << authorNames[1]
-            end
+            output << GetAuthorNames(@bib[@ref]['Author'])
             output << "&nbsp;</span>"
           end
 
@@ -81,6 +77,60 @@ module Jekyll
 
       output
 
+    end
+
+  # Author names
+    def GetAuthorNames(author)
+
+      names = author.split(" ")
+      name = ""
+      ands = 0
+      loc = 0
+      andLoc = Array.new
+
+    # Number of authors
+      names.each_with_index { |word, index|
+        if word.strip == "and"
+          ands += 1
+          andLoc.push(index)
+        end
+      }
+
+    # Primary author
+      if andLoc[0]
+        loc = andLoc[0]
+      else
+        loc = names.length
+      end
+
+      name << MiddleNames(names,loc) << names[loc - 1]
+
+    # Additional authors
+      if ands == 1
+        name << " and "
+        if andLoc[1]
+          loc = andLoc[1]
+        else
+          loc = names.length
+        end
+        name << MiddleNames(names,loc) << names[loc - 1]
+      elsif ands >= 2
+        name << " et al."
+      end
+
+    # Return name
+      name
+
+    end
+
+  # Middle names
+    def MiddleNames(source,index)
+      output = ""
+      van = [source[index - 2].strip] & ['von', 'van', 'ver']
+      if van[0]
+        output << van[0] << " "
+      end
+      output
     end
 
   end
