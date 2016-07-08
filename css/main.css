@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'glam';
-  src: url(/dci/fonts/GlametrixBold.otf); }
+  src: url(/fonts/GlametrixBold.otf); }
 /**
  * Reset some basic elements
  */
@@ -257,12 +257,20 @@ svg {
     margin-left: 0.25em; } }
 /* Bibliography */
 ul.bib {
-  list-style-type: none; }
+  list-style-type: none;
+  text-align: justify; }
+  ul.bib ul {
+    list-style-type: none; }
   ul.bib li {
     padding-left: 0.5em;
-    text-indent: -0.5em; }
+    text-indent: -0.5em;
+    margin-bottom: 0.5em; }
   ul.bib a {
     margin-bottom: 0; }
+  ul.bib .journal {
+    font-style: italic; }
+  ul.bib .book {
+    text-decoration: underline; }
 
 ul.bib2 {
   list-style-type: none;
