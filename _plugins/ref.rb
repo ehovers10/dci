@@ -14,21 +14,20 @@ module Jekyll
       output = ""
 
       @bib = context.registers[:site].data['dissbib']
-      if @bib == nil
-        raise "No source bibliography found"
-      end
+      raise "No source bibliography found" if @bib.empty?
 
       output << "<a name='ref-#{@id}'></a>"
 
     # Authors
-      output << "<span class='author'>"
-      output << GetAuthorNames(@bib[@id]['Author'])
-      output << ".&nbsp;</span>"
+      output << "<span class='author'>#{GetAuthorNames(@bib[@id]['Author'])}.&nbsp;</span>"
 
     # Year
-      output << "<span class='year'>"
-      output << "#{@bib[@id]['Year']}"
-      output << "</span>"
+      output << "<span class='year'>#{@bib[@id]['Year']}</span>"
+
+    # Publication
+
+
+
 
     end
 
@@ -59,10 +58,7 @@ module Jekyll
       name << MiddleNames(names,loc)
       name << names[loc - 1]
       name << names.each_with_index { |bit,index|
-        unless index = loc - 1 || @van[0] != nil
-          bit
-        end
-      }
+        bit unless index = loc - 1 || @van[0] != nil }
 
     # Additional authors
       if ands == 1
