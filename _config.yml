@@ -46,4 +46,4 @@ collections:
     render: true
     output: false
 
-exclude: [deprecated,sections]
+exclude: [deprecated,sections,mustache]
