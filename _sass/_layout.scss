@@ -86,12 +86,23 @@
 
 ul.bib {
   list-style-type:none;
+  text-align:justify;
+  ul {
+    list-style-type:none;
+  }
   li {
     padding-left:0.5em;
     text-indent:-0.5em;
+    margin-bottom: 0.5em;
   }
   a {
     margin-bottom: 0;
+  }
+  .journal {
+    font-style: italic;
+  }
+  .book {
+    text-decoration: underline;
   }
 }
 

@@ -4,7 +4,7 @@ module Jekyll
 
     def initialize(tag_name, id, tokens)
 
-      @id = id
+      @tempid = id
       super
 
     end
@@ -12,22 +12,43 @@ module Jekyll
   # Full citation
     def render(context)
       output = ""
+      book = ""
 
       @bib = context.registers[:site].data['dissbib']
-      raise "No source bibliography found" if @bib.empty?
+      @id = context[@tempid.strip][0]
+      raise "No source bibliography found" if @bib.nil?
+      raise "Reference not found: #{@id}" if @bib[@id].nil?
 
       output << "<a name='ref-#{@id}'></a>"
 
     # Authors
-      output << "<span class='author'>#{GetAuthorNames(@bib[@id]['Author'])}.&nbsp;</span>"
+      output << "<span class='author'>#{GetAuthorNames(@bib[@id]['Author'])}</span>"
 
     # Year
-      output << "<span class='year'>#{@bib[@id]['Year']}</span>"
+      output << "<span class='year'> (#{@bib[@id]['Year']}).&nbsp;</span>"
+
+    # Title
+      book = "book " if @bib[@id]['Type'] == "book"
+      output << "<span class='#{book}title'>#{@bib[@id]['Title']}</span>"
+      output << "<span class='dot'>.</span>" unless ".?!".include? @bib[@id]['Title'][-1,1]
 
     # Publication
+      output << "<span class='publication'>#{GetPublication(@bib[@id])}</span>"
 
+    # Pages
+      output << "<span 'pages'> pp. #{@bib[@id]['Pages']}.</span>" if @bib[@id]['Pages']
 
+    # Url
+      if @bib[@id]['Url'].is_a?(String)
+        url = @bib[@id]['Url'].split
+      else
+        url = @bib[@id]['Url']
+      end
 
+      output << "<ul class='url'>"
+      url.each{ |link|
+        output << "<li><a href='#{link}'>#{link}</a><br /></li>" } if url
+      output << "</ul>"
 
     end
 
@@ -37,7 +58,7 @@ module Jekyll
       names = author.split(" ")
       name = ""
       multiple = false
-      loc = 0
+      loc = names.length
       andLoc = Array.new
 
     # Number of authors
@@ -47,31 +68,16 @@ module Jekyll
           andLoc.push(index)
         end
       }
+      loc = andLoc[0] if multiple
 
-    # Primary author
-      if andLoc[0]
-        loc = andLoc[0]
-      else
-        loc = names.length
-      end
-
+    # Authors
       name << MiddleNames(names,loc)
-      name << names[loc - 1]
-      name << names.each_with_index { |bit,index|
-        bit unless index = loc - 1 || @van[0] != nil }
-
-    # Additional authors
-      if ands == 1
-        name << " and "
-        if andLoc[1]
-          loc = andLoc[1]
-        else
-          loc = names.length
+      name << "#{names[loc - 1]},"
+      names.each_with_index { |bit,index|
+        unless index == loc - 1
+          name << " #{bit}"
         end
-        name << MiddleNames(names,loc) << names[loc - 1]
-      elsif ands >= 2
-        name << " et al."
-      end
+        }
 
     # Return name
       name
@@ -86,6 +92,47 @@ module Jekyll
         output << @van[0] << " "
       end
       output
+    end
+
+  # Publication
+    def GetPublication(id)
+
+      output = "<span class='publication'>&nbsp;"
+      case id['Type']
+
+      # Chapter
+        when 'chapter'
+          output << "<span class='book'>#{id['Booktitle']}</span>"
+          if id['Editor']
+            output << ", #{id['Editor']}"
+            if id['Editor'].include?(" and ")
+              output << " (eds.)"
+            else
+              output << " (ed.)"
+            end
+          end
+          output << ". #{id['Publisher']}." if id['Publisher']
+
+      # Article
+        when 'article'
+          output << "<span class='journal'>#{id['Journal']}</span>"
+          if [id['Volume'],id['Issue'],id['Number']].any?
+            output << ", "
+            [id['Volume'],id['Issue'],id['Number']].each{ |vol|
+              output << "#{vol}." unless vol.nil? }
+          else
+            output << "."
+          end
+
+      # Book
+        when 'book'
+          output << "#{id['Publisher']}" if id['Publisher']
+
+      end
+      output << "</span>"
+
+      output
+
     end
 
   end

@@ -8,8 +8,8 @@ type: chapter
 
 <ul class="bib">
 {% for item in biblio | sort %}
-  {% assign ref = item[0] %}
-  {% include appendices/lucy.html id=ref %}
+  <li>
+  {% ref item %}
+  </li>
 {% endfor %}
-</li>
 </ul>
