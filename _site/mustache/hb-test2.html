@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+
+  <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.5/handlebars.min.js"></script>
+  <script src="pragmatics.js"></script>
+  <script src="hb35.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      Handlebars.registerPartial('main',$('#main-partial').html());
+      Handlebars.registerPartial('equation',$('#eqn-partial').html());
+
+      var temp = Handlebars.partials['element'];
+      var html = temp(pragmatics);
+
+      $('#form-table').html(html);
+    });
+  </script>
+</head>
+
+<body>
+
+<div style="max-width: 800px;font-size:18px;text-align:justify;">
+
+<div id="form-table"></div>
+
+<script id="main-partial" type="text/x-handlebars-template">
+  {{#if name}}
+    <tr class="title">
+      <th colspan="3">{{name}}</th>
+    </tr>
+  {{/if}}
+
+  {{#if body}}
+    {{> main body}}
+  {{/if}}
+  {{#if sub}}
+    {{> main sub}}
+  {{/if}}
+
+  {{#if eqn}}
+    {{> equation eqn}}
+  {{else if fxn}}
+    {{#with fxn}}
+      {{> (name)}}
+    {{/with}}
+  {{else}}
+    <tr class="categorical">
+      <td colspan="3">{{this}}</td>
+    </tr>
+  {{/if}}
+</script>
+
+<script id="eqn-partial" type="text/x-handlebars-template">
+  <table class='eqn'>
+  {{#each this}}
+    <tr>
+      <td class='lhs'>
+      {{#with lhs}}
+        {{#if eqn}}
+          {{> equation eqn}}
+        {{else if fxn}}
+          {{> (fxn.name)}}
+        {{else if symbol}}
+          {{> (symbol)}}
+        {{else}}
+          {{this}}
+        {{/if}}
+      {{/with}}
+      </td>
+      <td class='conn'>{{conn}}</td>
+      <td class='rhs'>
+      {{#with rhs}}
+        {{#if eqn}}
+          {{> equation eqn}}
+        {{else if fxn}}
+          {{> (fxn.name)}}
+        {{else if symbol}}
+          {{> (symbol)}}
+        {{else}}
+          {{this}}
+        {{/if}}
+      {{/with}}
+      </td>
+    </tr>
+  {{/each}}
+  </table>
+
+</script>
+</div>
+
+</body>
+</html>
