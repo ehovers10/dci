@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script src="form-mustache.js"></script>
+</head>
+
+<body>
+
+<div style="margin-auto;max-width: 800px;font-size:18px;text-align:justify;">
+
+<div id="form-table"></div>
+
+</div>
+
+<script id="form-base" type="x-tmpl-mustache">
+  <table class="element">
+    {{#name}}
+    <thead>
+      <tr class="title">
+        <th colspan="3">{{name}}</th>
+      </tr>
+    </thead>
+    {{/name}}
+    <tbody>
+    {{#body}}
+      {{> main}}
+    {{/body}}
+    {{#sub}}
+      {{> main}}
+    {{/sub}}
+
+    {{#eqn}}
+    <tr><td colspan="3"><table class='eqn'>
+      {{> equation}}
+    </td></tr></table>
+    {{/eqn}}
+    {{#fxn}}
+    <tr><td>{{.}}</td></tr>
+    {{/fxn}}
+    {{#cat}}
+      <tr class="categorical">
+        <td colspan="3">{{.}}</td>
+      </tr>
+    {{/cat}}
+    </tbody>
+  </table>
+</script>
+
+</body>
+</html>

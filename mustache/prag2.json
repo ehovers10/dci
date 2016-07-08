@@ -1,0 +1,85 @@
+{
+"defn": {
+  "name": "drs",
+  "body": {
+    "name": false,
+    "body": false,
+    "sub": false,
+    "eqn": {
+      "lhs": {
+        "eqn": {
+          "lhs": {
+            "eqn": false,
+            "fxn": false,
+            "cat": "&phi;"
+          },
+          "conn": "=",
+          "rhs": {
+            "eqn": false,
+            "fxn": {
+              "name": "drswrap",
+              "arg": {
+                "dref": "&phi;<sup>d</sup>",
+                "conditions": "&phi;<sup>c</sup>"
+              }
+            },
+            "cat": false
+          }
+        },
+        "fxn": false,
+        "cat": false
+      },
+      "conn": "is",
+      "rhs": {
+        "eqn": false,
+        "fxn": false,
+        "cat": "a discourse representation structure (DRS)"
+      }
+    },
+    "fxn": false,
+    "cat": false  
+  },
+  "sub": [
+    {
+      "name": "drefs",
+      "body": false,
+      "sub": false,
+      "eqn": {
+        "lhs": {
+          "eqn": false,
+          "fxn": false,
+          "cat": "&phi;<sup>d</sup>"
+        },
+        "conn": "is",
+        "rhs": {
+          "eqn": false,
+          "fxn": false,
+          "cat": "a sequence of drefs introduced in the discourse"
+        }
+      },
+      "fxn": false,
+      "cat": false
+    },
+    {
+      "name": "conditions",
+      "body": false,
+      "sub": false,
+      "eqn": {
+        "lhs": {
+          "eqn": false,
+          "fxn": false,
+          "cat": "&phi;<sup>c</sup>"
+        },
+        "conn": "is",
+        "rhs": {
+          "eqn": false,
+          "fxn": false,
+          "cat": "a sequence of conditions, imposing constraints on the model against which sentences are evaluated"
+        }
+      },
+      "fxn": false,
+      "cat": false
+    }
+  ]
+}
+}

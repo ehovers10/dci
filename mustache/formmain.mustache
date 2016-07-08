@@ -1,0 +1,34 @@
+{{#name}}
+  <tr class="title">
+    <th colspan="3">{{.}}</th>
+  </tr>
+{{/name}}
+
+{{#body.0}}
+  {{#body}}
+  {{> formmain}}
+  {{/body}}
+{{/body.0}}
+
+{{#sub.0}}
+{{#sub}}
+  {{> formmain}}
+{{/sub}}
+{{/sub.0}}
+
+{{#eqn.0}}
+{{#eqn}}
+  {{> formequation}}
+{{/eqn}}
+{{/eqn.0}}
+
+{{#fxn}}
+  <tr class="function">
+    <td colspan="3">{{.}}</td>
+  </tr>
+{{/fxn}}
+{{#cat}}
+  <tr class="categorical">
+    <td colspan="3">{{.}}</td>
+  </tr>
+{{/cat}}
