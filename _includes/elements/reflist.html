@@ -1,19 +1,15 @@
 {% assign eachref = page.references | split: '+' %}
 
-<ul>
-{% for ref in eachref %}
-  {% if ref == previous %}
+<ul class='bib'>
+{% for item in eachref | sort %}
+  {% if item == previous %}
     {% continue %}
   {% else %}
-
-    {% include appendices/lucy.html id=ref %}
-
-    {% assign previous = ref %}
+    <li>
+      {% ref item %}
+      <div class="tooltip reference" id="{{ item }}-tip">{% ref item %}</div>
+    </li>
+    {% assign previous = item %}
   {% endif %}
-
 {% endfor %}
 </ul>
-
-{% for ref in eachref %}
-<div class="tooltip reference" id="{{ ref }}-tip">{% include appendices/lucy.html id=ref nourl="" %}</div>
-{% endfor %}

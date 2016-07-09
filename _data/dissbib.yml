@@ -27,7 +27,7 @@ anderbois2013:
   Month: Nov
   Doi: 10.1093/jos/fft014
   ISSN: 1477-4593
-  Publisher: Oxford University Press OUP
+  Publisher: Oxford University Press
   Url: http://dx.doi.org/10.1093/jos/fft014
 
 bach1994:
@@ -488,14 +488,14 @@ vonfintel2008:
 frege1884:
   Title: The Foundations of Arithmetic
   Author: Gottlob Frege
-  Year: 1884 (1997)
+  Year: 1884/1997
   Booktitle: The Frege Reader
   Type: chapter
   Editor: Michael Beaney
   Publisher: Blackwell Publishing
 
 friend2003:
-  Title: "DISAGREEMENT AND DEFERENCE: IS DIVERSITY OF OPINION A PRECONDITION FOR THOUGHT?"
+  Title: "Disagreement and deference: Is diversity of opinion a precondition for thought?"
   Author: Stacie Friend and Peter Ludlow
   Type: article
   Journal: Philosophical Perspectives
@@ -538,7 +538,7 @@ geurtsa:
 
 geurts2004:
   Title: Interpreting Focus
-  Author: Bart Geurts and Rob van der Sandt
+  Author: Rob van der Sandt and Bart Geurts
   Type: article
   Journal: Theoretical Linguistics
   Year: 2004
@@ -647,8 +647,7 @@ goldman1976:
   Author: Alvin Goldman
   Year: 1976
   Pages: 771-791
-  Publisher: Journal of Philosophy Inc
-  Number: November
+  Month: November
   Volume: 73
   Type: article
   Journal: Journal of Philosophy
@@ -811,7 +810,6 @@ hawthorne2008:
   Year: 2008
   Title: Knowledge and Action
   Number: 10
-  Publisher: Journal of Philosophy Inc
 
 hazlett2012:
   Number: 4
@@ -866,7 +864,7 @@ hume1777:
 jackendoff1972:
   Author: Ray Jackendoff
   Publisher: MIT Press
-  Location: Cambridge, Mass.
+  Location: Cambridge, MA
   Type: book
   Year: 1972
   Title: Semantic Interpretation in Generative Grammar
@@ -929,7 +927,8 @@ kehler2000:
   Title: Coherence and the Resolution of Ellipsis
   Author: Andrew Kehler
   Pages: 533-575
-  Publisher: Springer Netherlands
+  Publisher: Springer
+  Location: Netherlands
 
 kiss1998:
   Title: Identification Focus versus Information Focus

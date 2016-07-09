@@ -86,7 +86,7 @@
 
 ul.bib {
   list-style-type:none;
-  text-align:justify;
+  //text-align:justify;
   ul {
     list-style-type:none;
   }
@@ -98,11 +98,13 @@ ul.bib {
   a {
     margin-bottom: 0;
   }
+  .title {
+    &.book {
+      text-decoration: underline;
+    }
+  }
   .journal {
     font-style: italic;
-  }
-  .book {
-    text-decoration: underline;
   }
 }
 

@@ -27,9 +27,9 @@ level: 5
 
     {% if word[1].biblio %}
     <div class="subtitle"><span>Relevant resources:</span>
-      <ul>
+      <ul class="bib">
         {% for item in word[1].biblio %}
-        <li>{% include appendices/lucy.html id=item %}</li>
+        <li>{% ref item %}</li>
         {% endfor %}
       </ul>
     </div>
