@@ -257,8 +257,7 @@ svg {
     margin-left: 0.25em; } }
 /* Bibliography */
 ul.bib {
-  list-style-type: none;
-  text-align: justify; }
+  list-style-type: none; }
   ul.bib ul {
     list-style-type: none; }
   ul.bib li {
@@ -267,10 +266,10 @@ ul.bib {
     margin-bottom: 0.5em; }
   ul.bib a {
     margin-bottom: 0; }
+  ul.bib .title.book {
+    text-decoration: underline; }
   ul.bib .journal {
     font-style: italic; }
-  ul.bib .book {
-    text-decoration: underline; }
 
 ul.bib2 {
   list-style-type: none;
