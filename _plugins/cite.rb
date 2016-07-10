@@ -2,13 +2,14 @@ module Jekyll
 
   class CiteTag < Liquid::Tag
 
+    include self.const_get(Jekyll.configuration({})['bibliography']['style']['citation'])
+
     def initialize(tag_name, id, tokens)
-      @name = true
 
       if id.include? "+"
-        @pieces = id.split("+")
+        @refs = id.split("+")
       else
-        @pieces = [id]
+        @refs = [id]
       end
 
       super
@@ -18,123 +19,53 @@ module Jekyll
   # Full citation
     def render(context)
 
-      output = "("
+      source = context.registers[:site].config['references']['source']
+      bib = context.registers[:site].data[source]
+      citation = ""
 
-      @bib = context.registers[:site].data['dissbib']
-      if @bib == nil
-        raise "No source bibliography found"
-      end
+      raise "No source bibliography found" if bib.nil?
 
-      @pieces.each { |piece|
-
-        if piece.strip.include? "|"
-          @item = piece.split("|")
-          @ref = @item.first.strip
+      @refs.each_with_index { |ref,i|
+        name = true
+        pages = false
+        range = ""
+        if ref.include? "|"
+          item = ref.split("|")
+          raise "Is array: #{item.first}" if item.first.is_a?(Array)
+          id = item.first.strip
+          item.each { |app|
+            if app.include? "noname"
+              name = false
+            elsif app.include? "pages"
+              pages = true
+              range = app.strip[/\s.*$/]
+            end
+          }
         else
-          @item = [piece.strip]
-          @ref = piece.strip
+          id = ref.strip
         end
 
-        context['page']['references'] << "#{@ref}+"
+        # Add citation to reference list
+        context['page']['references'] << "#{id}+"
+        raise "No citation found: #{id}" if bib[id].nil?
 
-        output << "<a id='#{@ref}' class='ref tooled' href='#ref-#{@ref}'>"
+        reference = ""
+        CiteList(bib[id],name,pages,range).each{ |item| reference << %{#{item}} }
 
-        @item.each { |item|
-          if item.include? "noname"
-            @name = false
-          end
-        }
+        before = %{<a id='#{id}' class='ref tooled' href='#ref-#{id}'>}
+        after = %{</a>#{", " unless i == @refs.length - 1}}
 
-        if @bib[@ref] == nil
-          raise "No citation found: #{@ref}"
-        else
-
-          if @name
-            output << "<span class='author'>"
-            output << GetAuthorNames(@bib[@ref]['Author'])
-            output << "&nbsp;</span>"
-          end
-
-          output << "<span class='year'>"
-          output << "#{@bib[@ref]['Year']}"
-          output << "</span>"
-        end
-
-        @item.each { |item|
-          if item.include? "pages"
-            output << "<span class='pagenum'>,&nbsp;#{item.strip[/\s.*$/]}</span>"
-          end
-        }
-
-        output << "</a>"
-
-        if piece != @pieces.last
-          output << ",&nbsp;"
-        else
-          output << ")"
-        end
+        citation << before << reference << after
       }
 
-      output
+      prewrap = "("
+      postwrap = ")"
 
-    end
+      return prewrap << citation << postwrap
 
-  # Author names
-    def GetAuthorNames(author)
-
-      names = author.split(" ")
-      name = ""
-      ands = 0
-      loc = 0
-      andLoc = Array.new
-
-    # Number of authors
-      names.each_with_index { |word, index|
-        if word.strip == "and"
-          ands += 1
-          andLoc.push(index)
-        end
-      }
-
-    # Primary author
-      if andLoc[0]
-        loc = andLoc[0]
-      else
-        loc = names.length
-      end
-
-      name << MiddleNames(names,loc) << names[loc - 1]
-
-    # Additional authors
-      if ands == 1
-        name << " and "
-        if andLoc[1]
-          loc = andLoc[1]
-        else
-          loc = names.length
-        end
-        name << MiddleNames(names,loc) << names[loc - 1]
-      elsif ands >= 2
-        name << " et al."
-      end
-
-    # Return name
-      name
-
-    end
-
-  # Middle names
-    def MiddleNames(source,index)
-      output = ""
-      van = [source[index - 2].strip] & ['von', 'van', 'ver']
-      if van[0]
-        output << van[0] << " "
-      end
-      output
     end
 
   end
-
 end
 
 Liquid::Template.register_tag('cite', Jekyll::CiteTag)

@@ -2,9 +2,7 @@ module Jekyll
 
   class RefTag < Liquid::Tag
 
-    include self.const_get(Jekyll.configuration({})['references']['style'])
-    include RefStructure
-    include RefElements
+    include self.const_get(Jekyll.configuration({})['bibliography']['style']['reference'])
 
     def initialize(tag_name, id, tokens)
 
@@ -13,9 +11,8 @@ module Jekyll
 
     end
 
-# Full citation
     def render(context)
-      source = context.registers[:site].config['references']['source']
+      source = context.registers[:site].config['bibliography']['source']
       bib = context.registers[:site].data[source]
 
       if context[@tempid].is_a?(String)

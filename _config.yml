@@ -18,9 +18,11 @@ markdown: kramdown
 kramdown:
   hard_wrap: false
 
-references:
+bibliography:
   source: dissbib
-  style: Eref1
+  style:
+    reference: Eref1
+    citation: CiteEH
 
 defaults:
   - scope:
