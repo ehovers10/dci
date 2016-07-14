@@ -19,7 +19,7 @@ module Jekyll
   # Full citation
     def render(context)
 
-      source = context.registers[:site].config['references']['source']
+      source = context.registers[:site].config['bibliography']['source']
       bib = context.registers[:site].data[source]
       citation = ""
 
@@ -31,7 +31,6 @@ module Jekyll
         range = ""
         if ref.include? "|"
           item = ref.split("|")
-          raise "Is array: #{item.first}" if item.first.is_a?(Array)
           id = item.first.strip
           item.each { |app|
             if app.include? "noname"

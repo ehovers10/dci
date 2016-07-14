@@ -152,7 +152,7 @@ module Eref1
   def RefPages(source)
     pp = ""
     if source['Pages']
-      pp << %{<span "pages">pp. #{source['Pages']}. </span>}
+      pp << %{<span class="pages">pp. #{source['Pages']}. </span>}
     end
     return pp
   end

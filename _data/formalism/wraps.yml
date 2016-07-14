@@ -1,0 +1,13 @@
+pre:
+  setwrap: "{"
+  seqwrap: "&#x27e8;"
+  semwrap: "&#x27e6;"
+  upwrap: "<span class='drs left top bottom'></span>"
+  eqn: ""
+
+post:
+  setwrap: "}"
+  seqwrap: "&#x27e9;"
+  semwrap: "&#x27e7;"
+  upwrap: "<span class='drs right top bottom'></span>"
+  eqn: ""

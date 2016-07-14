@@ -1,6 +1,6 @@
 module Jekyll
 
-  def slug(str)
+  def Slug(str)
     str.strip.downcase.gsub /\W+/, '-'
   end
 

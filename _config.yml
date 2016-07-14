@@ -18,6 +18,8 @@ markdown: kramdown
 kramdown:
   hard_wrap: false
 
+examples: examples
+
 bibliography:
   source: dissbib
   style:
@@ -51,5 +53,7 @@ collections:
   snippets:
     render: true
     output: false
+  formalism:
+    output: true
 
 exclude: [deprecated,sections,mustache]

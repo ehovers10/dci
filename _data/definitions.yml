@@ -32,7 +32,7 @@ constraints on a theory of meaning:
 
 collaborative extension of the basic ideology:
   "The mental attitudes of humans are developed through continual application of the process of collaborative inquiry."
-  
+
 # Dispute in discourse
 
 focus:
@@ -42,20 +42,20 @@ focus:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&phi;<sub>t</sub>"
-            outside: "<sup>f</sup>"
+        fxn: semwrap
+        arg:
+          inside: "&phi;<sub>t</sub>"
+          outside: "<sup>f</sup>"
       conn: =
       rhs:
-        - fxn: curlywrap
-          arg:
-            inside:
-              - fxn: eqn
-                arg:
-                  lhs: d
-                  conn: "&isin;"
-                  rhs: "<span class='set'>D</span><sub>t</sub>"
+        fxn: curlywrap
+        arg:
+          inside:
+            fxn: eqn
+            arg:
+              lhs: d
+              conn: "&isin;"
+              rhs: "<span class='set'>D</span><sub>t</sub>"
 
 qa-congruence:
   -
@@ -63,16 +63,16 @@ qa-congruence:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&psi;"
-            outside: "<sup>o</sup>"
+        fxn: semwrap
+        arg:
+          inside: "&psi;"
+          outside: "<sup>o</sup>"
       conn: "&sube;"
       rhs:
-        - fxn: semwrap
-          arg:
-            inside: "&alpha;"
-            outside: "<sup>f</sup>"
+        fxn: semwrap
+        arg:
+          inside: "&alpha;"
+          outside: "<sup>f</sup>"
 
 homogeneity:
   def: "Utterances involving bare plural subjects present the set determined by the
@@ -81,31 +81,27 @@ homogeneity:
   form: "[&forall; x &isin; f(w)(p): q(x)] &or; [&forall; x &isin; f(w)(p): &not;q(x)]"
 
 counterfactual conditional:
-  english:
-    -
-      - "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
+  english: "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
 
   strict:
-    - translation:
-        - "A &#x297d; B"
-    - definition:
-      -
-        - "A,B: st"
+    translation: "A &#x297d; B"
+    definition:
+      - "A,B: st"
       - fxn: eqn
         arg:
           lhs: "A &#x297d; B"
           conn: =
           rhs:
-            - fxn: eqn
-              arg:
-                lhs: "1"
-                conn: if
-                rhs: "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
-            - fxn: eqn
-              arg:
-                lhs: "0"
-                conn: otherwise
-                rhs: "&nbsp;"
+            fxn: eqn
+            arg:
+              lhs: "1"
+              conn: if
+              rhs: "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+            fxn: eqn
+            arg:
+              lhs: "0"
+              conn: otherwise
+              rhs: "&nbsp;"
 
   thinning:
     - fxn: eqn
@@ -143,32 +139,32 @@ counterfactual conditional:
       - fxn: eqn
         arg:
           lhs:
-            - fxn: eqn
-              arg:
-                lhs: A
-                conn: "<span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span>"
-                rhs: B
+            fxn: eqn
+            arg:
+              lhs: A
+              conn: "<span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span>"
+              rhs: B
           conn: =
           rhs:
-            - fxn: eqn
-              arg:
-                lhs: "1"
-                conn: if
-                rhs: "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
-            - fxn: eqn
-              arg:
-                lhs: "0"
-                conn: otherwise
-                rhs: "&nbsp;"
+            fxn: eqn
+            arg:
+              lhs: "1"
+              conn: if
+              rhs: "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+            fxn: eqn
+            arg:
+              lhs: "0"
+              conn: otherwise
+              rhs: "&nbsp;"
 
   shifty:
-    - translation:
+    translation:
       - fxn: eqn
         arg:
           lhs: A
           conn: "&#x297d;<sub>s</sub>"
           rhs: B
-    - definition:
+    definition:
       -
         - "i<sub>s</sub>: <span class='type'>st</span>"
         - "A,B: <span class='type'>st</span>"
@@ -186,11 +182,11 @@ counterfactual conditional:
       - fxn: eqn
         arg:
           lhs:
-            - fxn: eqn
-              arg:
-                lhs: A
-                conn: "&#x297d;<sub>s</sub>"
-                rhs: B
+            fxn: eqn
+            arg:
+              lhs: A
+              conn: "&#x297d;<sub>s</sub>"
+              rhs: B
           conn: =
           rhs:
             - fxn: eqn
@@ -223,8 +219,7 @@ universal quantifier:
               arg:
                 lhs: "1"
                 conn: if
-                rhs:
-                  - "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+                rhs: "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
             - fxn: eqn
               arg:
                 lhs: "0"
@@ -253,8 +248,7 @@ universal quantifier:
               arg:
                 lhs: "1"
                 conn: if
-                rhs:
-                  - "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+                rhs: "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
             - fxn: eqn
               arg:
                 lhs: "0"

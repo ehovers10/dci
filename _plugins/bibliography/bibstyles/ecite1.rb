@@ -5,9 +5,9 @@ module CiteEH
 # --------------
   def CiteList(id,name,pages,range)
     name ? a = CiteAuthor(id) : ""
-    pages ? pp = CitePages(id) : ""
+    pages ? pp = CitePages(range) : ""
 
-    return [a, CiteDate(range), pp]
+    return [a, CiteDate(id), pp]
   end
 
 # ------
@@ -28,7 +28,7 @@ module CiteEH
     }
 
   # Primary author
-    andloc[0] ? loc = andLoc[0] - 1: loc = names.length - 1
+    andLoc[0] ? loc = andLoc[0] - 1: loc = names.length - 1
     prefix = ""
     for i in 0..loc-1
       if ['von', 'van', 'ver', 'der'].include? names[i].strip
@@ -49,10 +49,10 @@ module CiteEH
       last2 = %{#{names.last}}
       secondary = %{ and #{prefix2}#{last2}}
     elsif ands >= 2
-      secondary = " et al."
+      secondary = %{ et al.}
     end
 
-    return %{<span class"author">#{primary}#{secondary}</span>}
+    return %{<span class="author">#{primary}#{secondary}</span>}
 
   end
 

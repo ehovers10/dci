@@ -6,7 +6,7 @@ biblio: true
 notes: cdd.md
 count:
   def: 1
-  ex: 0
+  ex: 1
   obs: 1
   table: 1
 references: ""
@@ -99,17 +99,23 @@ Hamm et al. suggest that the representational account of semantics is motivated 
 
 Inquiry is an extended process. Carrying it out fruitfully requires us to maintain a record of what has transpired thus far in the inquiry. We can use this record to refer back to earlier discussion and connect bits of information into an extended web. Through a simple complication of the grammar, we greatly expand our information imparting capabilities. *Anaphora resolution* is one process that fits into an inquiry-extended picture of grammar. Natural language speakers have an ability to use explicit pronouns as well as implicit refering devices to link to previously introduced *discourse referents*. This ability is vital to the project of realizing inquiry in discourse. The grammar should help explain how it is done, but truth determination alone won't carry the load. Anaphora extends beyond linking individuals across sentence boundaries. The information web in a healthy inquiry has temporal ties between events {% cite partee1973 | pages: p. 602 %}:
 
-{% include appendices/ex.html term="tense" %}
+{% ex Tense %}
+  {{ "tense" | example: "sent" }}
+{% endex %}
 
 It's quite likely that there is a stove turning off somewhere in my past. But this fact means little to the interpretation of [Tense](#tense) if no such event occured within the time frame it gestures at.
 
 The information web also ties states of affairs together via subordination relations between modalized sentences {% cite stone1999 | pages: p. 2 %}:
 
-{% include appendices/ex.html term="modality" %}
+{% ex Modality %}
+  {{ "modality" | example: "sent" }}
+{% endex %}
 
 Anaphora resolution is an important interpretive tool for connecting utterances, but it is not the only one. Language users are also able to suss out conceptual connections between bits of information. Discourses lacking such *coherence* connections can be very difficult, or even impossible to process {% cite kehler2000 %}:
 
-{% include appendices/ex.html term="coherence" %}
+{% ex Coherence %}
+  {{ "coherence" | example: "sent" }}
+{% endex %}
 
 In virtue of its role in systematizing language users' shared knowledge about advancing an inquiry, a grammar for a language provides more than just the makings for truth determination.[^compositionality] It also provides the makings for anaphora and coherence relations. A *dynamic* grammar assigns anaphoric connections between sentences, and propositions can be anaphorically connected, as in modal subordination. A *collaborative* grammar assigns coherence connections between utterances.
 
@@ -167,7 +173,9 @@ Sarah Murray's articulated information states {% cite murray2014 | noname %} sim
 
 Murray has also used the articulated information state framework to account for the distinctive role of *evidentials* in discourse. But this extension reveals an issue with the assertion as proposal framework. Since assertions don't have any independent impact on the common ground, their function is essentially incomplete. Interpretation must wait until the proposal passes the acceptance phase of the discourse. This is a problem because single utterances can involve coordinated informative and structuring updates. For instance:
 
-{% include appendices/ex.html term="sing" %}
+{% ex Sing %}
+  {{ "sing" | example: "sent" }}
+{% endex %}
 
 The second conjunct of the assertion requires a direct imposition on the common ground, but we are still in limbo after the first conjunct, which is merely proposed.
 
