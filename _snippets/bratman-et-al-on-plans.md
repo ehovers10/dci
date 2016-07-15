@@ -1,5 +1,6 @@
 ---
 title: Bratman et. al. on plans
+references: ""
 ---
 
 Plans are a form of commitment regarding future action. We understand the nature of plans in terms of the role that they play in an agent's attempts to successfully navigate the world -- their efforts at *practical reasoning*.

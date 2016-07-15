@@ -1,4 +1,5 @@
-<!-- Footnotes -->
+---
+---
 
 [^inquiryStalnaker]:
     According to this initial explication, the machinery of inquiry properly includes that presumed by the conception preferred by Robert Stalnaker in which inquiry is "the enterprise of forming, testing, and revising beliefs" {% cite stalnaker1987 | pages: ix | noname %}. As will become clear in what follows, there is no reason to restrict inquiry to operations on states of *belief*, nor ought we to presume that forming, testing, and revising exhaust the inquiry-relevant operations on mental states.

@@ -23,7 +23,7 @@ module Jekyll
       before = %{<div class="example">}
       after = %{</div>}
 
-      return before << output << after
+      before << output << after
 
     end
   end

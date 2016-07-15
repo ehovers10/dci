@@ -20,7 +20,7 @@ count:
 
 ## Finding our way to knowledge
 
-Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
+Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.{% note kitioi1 js0617 %}
 
 It is tempting to maintain that the {% gloss end of inquiry %} is truth. If truth what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. Thus, the goal of engaging in inquiry is thus to achieve a specific, *cognitive* state that relates us to true propositions.
 
@@ -139,6 +139,8 @@ But once we open the door to incorporating the goal of truth acquisition into ou
 An important mechanism of coherence is the build-and-test update procedure that inquiry exhibits. Inquiries are cummulatively built in a step by step process. A contribution to the inquiry adds a proposal to an inquiry workspace, making it available to be played around with by subsequent contributions to the inquiry before being ultimately accepted or rejected.
 
 Evaluation of the coherence of a contribution to a dilated process is relative to a system of structural constraints -- a *plan* -- for the process. The primary function of a plan is to restrict the set of possibilities from amongst which those engaged in the process select their moves. This imposed restriction allows plans to be followed, in real time, by cognitively limited agents. But plans are also to be carried out in real space, which does not always evolve the way planning agents hope or expect. Too rigid a restriction on possible moves will bind the agents to failure. Thus, plans must allow for modification in the face of unexpected developments in the environment within which the process takes place. (See the appendix: <a class="pop" id="bratman-et-al-on-plans">Bratman et. al on plans</a>)
+
+{{ "Bratman et. al. on plans" | pop }}
 
 Proper inquiry is no different. A plan of inquiry imposes *coherence* constraints on contributions to the inquiry. Future additions must follow the general course set by previous contributions. But, nature can so conspire to turn certain conjectures into dead ends, and a healthy plan of inquiry will accommodate mechanisms to adjust the plan on the fly.
 
