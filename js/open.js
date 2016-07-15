@@ -43,10 +43,12 @@ $(document).ready( function() {
   $( ".tooled" ).hover(
     function() {
       var tipped = $(this).attr('id') + '-tip';
-      $('#' + tipped).css('display', 'block');
+      $('span#' + tipped).css('display', 'inline');
+      $('div#' + tipped).css('display', 'block');
     }, function() {
       var tipped = $(this).attr('id') + '-tip';
-      $('#' + tipped).css('display', 'none');
+      $('span#' + tipped).css('display', 'none');
+      $('div#' + tipped).css('display', 'none');
     }
   );
 

@@ -12,10 +12,13 @@ module Jekyll
     end
 
     def render(context)
-      @path = context.registers[:site].config['baseurl'] + "/appendices/glossary.html#"
+      path = context.registers[:site].config['baseurl'] + "/appendices/glossary.html#"
+      sourcefile = context['site']['data']['glossary']
+      sourcefile[@word] ? defn = sourcefile[@word]['definition'] : defn = "Word not found"
+      marker = %{<a id="#{@slug}" href="#{path}#{@slice}" class="tooled gloss">#{@word}</a>}
+      tipbox = %{<span id="#{@slug}-tip" class="tooltip glossary">#{defn}</span>}
 
-      "<a href='#{@path}#{@slice}' title='#{@word}' class='gloss'>#{@word}</a>"
-
+      marker << tipbox
     end
 
   end

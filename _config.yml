@@ -30,6 +30,9 @@ bibliography:
     reference: Eref1
     citation: CiteEH
 
+notes:
+  folder: notes
+
 defaults:
   - scope:
       path: ""

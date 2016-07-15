@@ -290,7 +290,8 @@ ul.bib2 {
   padding: 0.5em;
   width: 50%;
   max-width: 400px;
-  display: none; }
+  display: none;
+  text-indent: 0; }
   .tooltip.comment {
     background: rgba(0, 51, 204, 0.9); }
   .tooltip.reference {

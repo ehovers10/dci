@@ -11,9 +11,13 @@ module Jekyll
 
     def render(context)
       context['page']['comments'] << "#{@source}-#{@note}+"
+      sourcefolder = context.registers[:site].config['notes']['folder']
+      note = context['site']['data'][sourcefolder][@source][@note]
+      #raise %{Note: #{note}}
+      marker = %{<sup><a id='#{@source}#{@note}' class='tooled note' href='#' onclick='return false;'>#{@source}-#{@note}</a></sup>}
+      tipbox = %{<span id="#{@source}#{@note}-tip" class="tooltip comment">#{note}</span>}
 
-      "<sup><a id='#{@source}#{@note}' class='tooled note' href='#' onclick='return false;'>#{@source}-#{@note}</a></sup>"
-
+      return marker << tipbox
     end
   end
 end

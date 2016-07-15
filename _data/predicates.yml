@@ -1,0 +1,22 @@
+bears:
+  pure:
+    s1: [a,b,e]
+    s2: [a,b,c,d]
+    s3: [a]
+  grizzly:
+    s1: [a]
+    s2: [a,c]
+    s3: [a]
+  koala:
+    s1: [b]
+    s2: [b]
+    s3: [b]
+  polar:
+    s1: []
+    s2: [d]
+    s3: [e]
+
+dangerous:
+  s1: [a,b,d]
+  s2: [a]
+  s3: [b,d]

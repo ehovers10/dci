@@ -4,6 +4,7 @@ level: 2
 toc: yes
 biblio: true
 references: ""
+notelist: false
 comments: ""
 notes: kitioi.md
 extra:
@@ -19,7 +20,7 @@ count:
 
 ## Finding our way to knowledge
 
-Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.{% note kitioi1 js0617 %}
+Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
 
 It is tempting to maintain that the {% gloss end of inquiry %} is truth. If truth what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. Thus, the goal of engaging in inquiry is thus to achieve a specific, *cognitive* state that relates us to true propositions.
 
