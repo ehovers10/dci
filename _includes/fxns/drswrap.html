@@ -2,12 +2,12 @@
   <span class='drs left top bottom'></span>
   <span class='dref'>
     {% for bit in include.argument.dref %}
-      {% include formalism/function.html argument=include.argument.dref %}
+      {% include fxns/function.html argument=include.argument.dref %}
     {% endfor %}
   </span>
   <span class='condition'>
     {% for bit in include.argument.conditions %}
-      {% include formalism/function.html argument=include.argument.conditions %}
+      {% include fxns/function.html argument=include.argument.conditions %}
     {% endfor %}
   </span>
   <span class='drs right top bottom'></span>

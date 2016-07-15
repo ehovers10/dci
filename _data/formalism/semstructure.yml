@@ -19,7 +19,7 @@ semantic value:
         - fxn: semwrap
           arg:
             inside: "&middot;"
-            outside:
+            after:
               - "<span class='var sup'>i</span>"
               - "<span class='var sup'>g</span>"
               - "<span class='set sup'>M</span>"

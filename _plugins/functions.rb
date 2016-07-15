@@ -1,12 +1,19 @@
 module Jekyll
-  module Formalism
+  module FormalizeFilter
 
     def Molecule(input, name = "")
 
       before = %{<div class="molecule" id="#{name.strip.downcase.gsub /\W+/, '-'}">}
-      title = %{<div class="title">#{name}</div>}
+      title = %{<div class="title">#{name.capitalize}</div>}
       body = ""
-      input.each { |bit| body << Atom(bit) }
+      #raise %{Input array: #{input}}
+      if input.is_a? (Array)
+        input.each { |bit| body << Atom(bit) }
+      elsif input.is_a? (Hash)
+        input["fxn"] ? body << Atom(input) : input.each_pair { |k,v| body << Molecule(v,k) }
+      else
+        body << input
+      end
       after = %{</div>}
 
       before << title << body << after
@@ -15,7 +22,7 @@ module Jekyll
     def Atom(input)
 
       before = %{<div class="atom">}
-      after = %{</div>}
+      title = ""
       body = ""
       if input.is_a? (Array)
         input.each { |bit|
@@ -27,60 +34,51 @@ module Jekyll
       elsif input.is_a? (Hash)
         input.key?("fxn") ? body << Args(input) : body << Molecule(input)
       else
-        input.each { |bit| body << %{<span>#{bit}</span>, } }
+        body << %{<span>#{input}</span>, }
       end
-
+      after = %{</div>}
       before << body << after
     end
 
     def Args(kind)
       towrap = Hash.new
-      i = 1
-
-      #raise %{Kind: #{kind}}
-
       kind["arg"].each_pair { |k,v|
         if v.is_a? (Array)
-          v.each { |bit|
+          add = ""
+          v.each_with_index { |bit,i|
             if bit.is_a? (Hash)
-              bit["arg"].each_pair { |bk,bv|
-                add = {k => %{<div class="#{bk}">#{Args(bv)}</div>}}
-                towrap.merge!(add) }
+              add << %{<div class="#{k}#{i}">#{Args(bit)}</div>}
             else
-              towrap = towrap.merge({k => %|<div class="categorical">#{bit}</div>|})
+              add << %{<div class="#{k}#{i}">#{bit}</div>}
             end }
+          towrap.merge!({k => %{<div class="#{k}">#{add}</div>}})
+        elsif v.is_a? (Hash)
+          towrap.merge!({k => %{<div class="#{k}">#{Args(v)}</div>}})
         else
-          if v.is_a? (Hash)
-            add = {k => %{<div class="#{k}">#{Args(v)}</div>}}
-            towrap.merge!(add)
-          else
-            towrap = towrap.merge({k => %|<div class="categorical">#{v}</div>|})
-          end
-        end
-        i += 1
-      }
-
+          towrap.merge!({k => %{<div class="#{k}">#{v}</div>}})
+        end }
       Wrap(kind["fxn"],towrap)
-    end
-
-    def merge_recursively(a, b)
-      a.merge(b) {|key, a_item, b_item| merge_recursively(a_item, b_item) }
     end
 
     def Wrap(kind,arghash)
       sourcefile = @context.registers[:site].data['formalism']['wraps']
-      #raise %{Kind: #{kind} ArgHash: Source: #{sourcefile['pre'][kind]}}
-      loclist = ["before","inside","dref","conditions","lhs","conn","rhs","outside"]
+      loclist = ["before","inside","dref","conditions",
+        "lhs","conn","rhs","after"]
       locs = {}
       loclist.each { |item| locs.merge!({item => ""}) }
-      pre = %|<div class="wrap"><div class="pre">#{sourcefile['pre'][kind]}</div>|
+      pre = %|<div class="wrap #{kind}"><div class="pre">#{sourcefile['pre'][kind]}</div>|
       post = %|<div class="post">#{sourcefile['post'][kind]}</div></div>|
-      locs.each_key { |loc|
-        #raise %{Arghash: #{arghash} Locs: #{locs}}
-        locs.update({loc => arghash[loc]}) if arghash[loc]
-      }
-      #raise %{Locs: #{locs} Before: #{locs["before"]} Inside: #{locs["inside"]} }
-      locs["before"] << pre << locs["inside"] << locs["dref"] << locs["conditions"] << locs["lhs"] << locs["conn"] << locs["rhs"] << post << locs["outside"]
+      locs.each_key { |loc| locs.update({loc => arghash[loc]}) if arghash[loc] }
+      locs["before"] <<
+        pre <<
+        locs["inside"] <<
+        locs["dref"] <<
+        locs["conditions"] <<
+        locs["lhs"] <<
+        locs["conn"] <<
+        locs["rhs"] <<
+        post <<
+        locs["after"]
     end
 
     class String

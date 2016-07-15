@@ -1,17 +1,15 @@
 module Jekyll
-
   module FormalizeFilter
 
-    include Formalism
+    def formalize(input,customize = "")
 
-    def formalize(input)
+      sourcefile = @context.registers[:site].config['formalism']['data']
       name = ""
       value = input.split("|")
-      #raise "Value: #{value}"
-      source = @context.registers[:site].data
+      source = @context.registers[:site].data[sourcefile]
       value.each { |item|
         source = source[item]
-        name = item
+        name = item unless customize.include? "notitle"
       }
 
       Molecule(source,name)
@@ -19,7 +17,6 @@ module Jekyll
     end
 
   end
-
 end
 
 Liquid::Template.register_filter(Jekyll::FormalizeFilter)

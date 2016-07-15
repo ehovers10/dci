@@ -1,0 +1,83 @@
+focus:
+  -
+    - "<span class='set'>D</span> a domain of discourse"
+    - "<span class='var'>t</span> a type"
+  - fxn: eqn
+    arg:
+      lhs:
+        fxn: semwrap
+        arg:
+          inside: "&phi;<sub>t</sub>"
+          after: "<sup>f</sup>"
+      conn: =
+      rhs:
+        fxn: curlywrap
+        arg:
+          inside:
+            fxn: eqn
+            arg:
+              lhs: d
+              conn: "&isin;"
+              rhs: "<span class='set'>D</span><sub>t</sub>"
+
+qa-congruence:
+  - "&#x27e8; &psi;, &alpha; &#x27e9; a question/answer pair"
+  - fxn: eqn
+    arg:
+      lhs:
+        fxn: semwrap
+        arg:
+          inside: "&psi;"
+          after: "<sup>o</sup>"
+      conn: "&sube;"
+      rhs:
+        fxn: semwrap
+        arg:
+          inside: "&alpha;"
+          after: "<sup>f</sup>"
+downdate:
+  - "&phi;,&psi;,&chi;: <span class='var'>drs</span>"
+  - fxn: eqn
+    arg:
+      lhs:
+        fxn: eqn
+        arg:
+          lhs: "&chi;"
+          conn: "&#x2291;"
+          rhs: "&phi;"
+      conn: iff
+      rhs: "&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> ) &or; ( m &isin; &phi;<sup>c</sup> &and; m &isin; &chi;<sup>c</sup> ) ]"
+  - fxn: eqn
+    arg:
+      lhs:
+        fxn: eqn
+        arg:
+          lhs: "&chi;"
+          conn: =
+          rhs: "max(&phi;)"
+      conn: iff
+      rhs: "&chi;  &#x2291; &phi; &and; &forall;<span class='var'>c</span> &isin; &phi;<sup>c</sup> [ entrench(<span class='var'>c</span>) ] &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; &psi; )"
+  - fxn: eqn
+    arg:
+      lhs:
+        fxn: eqn
+        arg:
+          lhs: "&phi;"
+          conn: "&#x229E;"
+          rhs: "&psi;"
+      conn: =
+      rhs:
+        fxn: drswrap
+        arg:
+          dref: "&phi;<sup>d</sup> &oplus; S<sup>d</sup>"
+          conditions: "&phi;<sup>c</sup> &oplus; S<sup>c</sup>"
+  - fxn: eqn
+    arg:
+      lhs:
+        fxn: eqn
+        arg:
+          lhs: "&phi;"
+          conn: "<span class='symbol'>&darr;</span>"
+          rhs: "&psi;"
+      conn: =
+      rhs: "&psi; &oplus; max( &chi; &#x2291; &phi; | &chi; &#x229E; &phi; &ne; &empty; )"

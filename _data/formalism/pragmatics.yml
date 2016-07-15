@@ -133,7 +133,7 @@ cooperative update:
                 - fxn: semwrap
                   arg:
                     inside: "C<sub>st</sub>"
-                    outside: "<sup>i</sup>"
+                    after: "<sup>i</sup>"
           - "&lambda;&sigma;( i<sub>&sigma;</sub> &#x22C2; C<sub>s</sub> = i<sub>&sigma;</sub> )"
   - structuring update:
     - fxn: eqn
@@ -153,7 +153,7 @@ cooperative update:
                 - fxn: semwrap
                   arg:
                     inside: "C<sub>(st)t</sub>"
-                    outside: "<sup><span class='set'>R</span></sup>"
+                    after: "<sup><span class='set'>R</span></sup>"
           - "&lambda;&sigma;( <span class='set'>R</span><sup>&sigma;</sup> &#x22C2; C<sub>st</sub> = <span class='set'>R</span><sub>&sigma;</sub> )"
   - dref introduction:
     - fxn: eqn
@@ -189,8 +189,8 @@ collaborative update:
                 - fxn: seqwrap
                   arg:
                     inside: "dref"
-                    outside: "<sub>&sigma;</sub>"
-              outside: "<sub>sand</sub>"
+                    after: "<sub>&sigma;</sub>"
+              after: "<sub>sand</sub>"
   - propagation:
     - fxn: eqn
       arg:
@@ -225,7 +225,7 @@ collaborative update:
                 - "i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)"
                 - "i<sub><span class='set'R</span></sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)"
                 - "dref<sub>&sigma;</sub> += dref<sub>sand</sub>"
-              outside: "<sub>&sigma;</sub>"
+              after: "<sub>&sigma;</sub>"
 
 speech acts:
   -

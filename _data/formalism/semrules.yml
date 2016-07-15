@@ -10,7 +10,7 @@ primitives:
           - fxn: semwrap
             arg:
               inside: "c<sub>&alpha;</sub>"
-              outside: "<sup><span class='set'>M</span></sup>"
+              after: "<sup><span class='set'>M</span></sup>"
         conn: =
         rhs: "<span class='set'>V</span>(c<sub>&alpha;</sub>)"
   - variables:
@@ -20,7 +20,7 @@ primitives:
           - fxn: semwrap
             arg:
               inside: "u<sub>&alpha;</sub>"
-              outside: "<sup><span class='var'>g</span></sup>"
+              after: "<sup><span class='var'>g</span></sup>"
         conn: =
         rhs: "<span class='var'>g</span>(u<sub>&alpha;</sub>)"
   - top:
@@ -45,13 +45,13 @@ application:
         - fxn: semwrap
           arg:
             inside: "&lambda;u<sub>&alpha;</sub>(A)"
-            outside: "<sup><span class='var'>g</span></sup>"
+            after: "<sup><span class='var'>g</span></sup>"
       conn: =
       rhs:
         - fxn: semwrap
           arg:
             inside: "A"
-            outside: "<sup><span class='var'>g</span>[u<sub>&alpha;</sub>&rarr;d]</sup>"
+            after: "<sup><span class='var'>g</span>[u<sub>&alpha;</sub>&rarr;d]</sup>"
 
 identity:
   -
@@ -156,7 +156,7 @@ quantifiers:
         - fxn: semwrap
           arg:
             inside: "&forall;u<sub>e</sub>&phi;"
-            outside: "<span class='var'>g</span>"
+            after: "<span class='var'>g</span>"
       conn: =
       rhs:
         - fxn: eqn
@@ -170,7 +170,7 @@ quantifiers:
                     - fxn: semwrap
                       arg:
                         inside: "&phi;"
-                        outside: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
+                        after: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
                   conn: =
                   rhs: "1 for all u<sub>e</sub>"
         - fxn: eqn
@@ -184,7 +184,7 @@ quantifiers:
         - fxn: semwrap
           arg:
             inside: "&exist;u<sub>e</sub>&phi;"
-            outside: "<span class='var'>g</span>"
+            after: "<span class='var'>g</span>"
       conn: =
       rhs:
         - fxn: eqn
@@ -198,7 +198,7 @@ quantifiers:
                     - fxn: semwrap
                       arg:
                         inside: "&phi;"
-                        outside: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
+                        after: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
                   conn: =
                   rhs: "1 for some u<sub>e</sub>"
         - fxn: eqn

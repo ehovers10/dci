@@ -1,0 +1,70 @@
+english: "&#x231c;As&#x231d; are &#x231c;B&#x231d;"
+universal quantifier:
+  translation: "&forall;(A)(B)"
+  definition:
+    - "A,B: <span class='type'>et</span>"
+    - fxn: eqn
+      arg:
+        lhs: "&forall;(A)(B)"
+        conn: =
+        rhs:
+          - fxn: eqn
+            arg:
+              lhs: "1"
+              conn: if
+              rhs: "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+          - fxn: eqn
+            arg:
+              lhs: "0"
+              conn: otherwise
+              rhs: "&nbsp;"
+generic quantifier:
+  translation: "GEN(A)(B)"
+  definiton:
+    -
+      - "*A,B: et*"
+      - "*&delta;(i): et* &rarr; *et* a selection function determined by context *i*"
+    - fxn: eqn
+      arg:
+        lhs: "A<sub>pref</sub>"
+        conn: =
+        rhs:
+          - "&delta;(i)(A)"
+    - fxn: eqn
+      arg:
+        lhs: "GEN(A)(B)"
+        conn: =
+        rhs:
+          - fxn: eqn
+            arg:
+              lhs: "1"
+              conn: if
+              rhs: "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+          - fxn: eqn
+            arg:
+              lhs: "0"
+              conn: otherwise
+              rhs: "&nbsp;"
+structural quantifier:
+  translation: "&forall;<sub>**R**</sub>(A)(B)"
+  definition:
+    -
+      - "A: et"
+      - "B: (et)t"
+    - fxn: eqn
+      arg:
+        lhs: "&forall;<sub>**R**</sub>(A)(B)"
+        conn: =
+        rhs:
+          - fxn: eqn
+            arg:
+              lhs: "1"
+              conn: if
+              rhs:
+                - "{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; **R**"
+                - "&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;"
+          - fxn: eqn
+            arg:
+              lhs: "0"
+              conn: otherwise
+              rhs: "&nbsp;"

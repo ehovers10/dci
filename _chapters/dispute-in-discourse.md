@@ -132,7 +132,7 @@ One of the most influential accounts of focus interpretation is the *alternative
 
 <!-- Focus semantic values -->
 {% def Focus Semantic Value %}
-  {{ "definitions|counterfactual conditional|shifty|definition" | formalize }}
+  {{ "contrast|focus" | formalize: "notitle" }}
 {% enddef %}
 
 Since focus-related effects can influence interpretation at nearly any level of linguistic analysis, expressions of all types will also be associated with a focus semantic value of the appropriate type. Rooth {% cite rooth1985 | noname %} also provides a recursive definition that allows one to derive focus semantic values for expressions containing focused elements as proper parts. As an example, in the case of full sentences, alternative semantics suggests that "the focus semantic value for a phrase of category *S* [sentence] is the set of propositions obtainable from the ordinary semantic value by making a substitution in the position corresponding to the focused phrase" {% cite rooth1992 | pages: 2 %}.
@@ -263,11 +263,7 @@ The upshot is that the propositional content of the evidence that initiates the 
 
 <!-- Downdate -->
 {% def Correction as downdate %}
-  {% for item in site.data.definitions %}
-    {% if item[0] == "downdate" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
+  {{ "contrast|downdate" | formalize: "notitle" }}
 {% enddef %}
 
 ### Binding retractions
@@ -331,22 +327,8 @@ It is natural to offer strict analyses of both *counterfactual conditionals* and
 
 <!-- Strict definitions -->
 {% def Strict analyses %}
-  <p class="extitle">Counterfactual conditional</p>
-  {% for item in site.data.definitions["counterfactual conditional"] %}
-    {% if item[0] == "english" %}
-      {% include formalism/molecule.html argument=item cation="bare" title="no" %}
-    {% elsif item[0] == "strict" %}
-      {% include formalism/molecule.html argument=item.last.last.first cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
-  <p class="extitle">Universal quantifier</p>
-  {% for item in site.data.definitions["universal quantifier"] %}
-    {% if item[0] == "english" %}
-      {% include formalism/molecule.html argument=item cation="bare" title="no" %}
-    {% elsif item[0] == "strict" %}
-      {% include formalism/molecule.html argument=item.last.last.first cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
+  {{ "conditionals|strict conditional" | formalize }}
+  {{ "quantifiers|universal quantifier" | formalize }}
 {% enddef %}
 
 But both natural inclinations are held up by sticky situations. Alternative analyses, which rely on the notion of *preferred subclasses* of the set determined by the first operand, are available for both counterfactuals and bare plurals, and it is commonly held that the extraction from the sticky situations requires accepting the alternative analyses. Thony Gillies {% cite gillies2007 | noname %} argues that, in the case of counterfactuals, we can have our strictness and extract from the stickiness, too,  by developing an adequate story about the pragmatics of conditionals. He also argues that the extraction is worthwhile. I extend Gillies' ideas to provide what I take to be an equally worthwhile extraction of the strict analysis of bare plurals from their stickiness. My account depends on a pragmatic story told within the framework of collaborative update semantics.
@@ -357,11 +339,7 @@ It is natural to offer a strict analysis for counterfectual conditionals. But th
 
 <!-- Thinning -->
 {% def Thinning %}
-  {% for item in site.data.definitions["counterfactual conditional"] %}
-    {% if item[0] == "thinning" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
+  {{ "conditionals|thinning" | formalize: "notitle" }}
 {% enddef %}
 
 Unfortunately, [Thinning](#thinning) brings the strict analysis up against a sticky situation. Consider:
@@ -375,11 +353,7 @@ The antecedent of (b) in [Honey](#honey) is a conjunction involving the antecede
 
 <!-- Variably strict cond -->
 {% def Variably strict conditional %}
-  {% for item in site.data.definitions["counterfactual conditional"] %}
-    {% if item[0] == "variable" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
+  {{ "conditionals|variably strict conditional" | formalize: "notitle" }}
 {% enddef %}
 
 The variably strict analysis avoids the sticky situation because it fails to verify thinning. The closest possible worlds in which Pooh eats less honey need not be a superset of the closest ones in which he both eats less honey and wears his puffy jacket. The ordering relation on the antecedent worlds opens an avenue for the antecedent sets coming apart.
@@ -388,11 +362,7 @@ Despite its de-sticking success, Thony Gillies {% cite gillies2007 | noname %} h
 
 <!-- Shifty strict conditionals -->
 {% def Shifty strict conditional %}
-  {% for item in site.data.definitions["counterfactual conditional"] %}
-    {% if item[0] == "shifty" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
+  {{ "conditionals|shifty strict conditional" | formalize: "notitle" }}
 {% enddef%}
 
 The shifty strict analysis captures the same effect as the variably strict analysis. The selection function (&delta;(i)) picks a set of worlds from within the set determined by the antecedent, and the selection is then added to the domain against which the consequent is evaluated. The semantic rule still demands set inclusion between the antecedent worlds and consequent worlds, but the shifted contextual restriction on those sets takes effectively loosens the requirement of strictness. Since there are more worlds included in the set determined by the consequent relative to the domain i<sup>+</sup> than relative to i, the set inclusion demand is more easily met. But since the additionally included worlds are specifically antecedent-relevant, the inclusion demand is not wantonly loose.
@@ -431,11 +401,7 @@ One standard approach to formalizing this idea is to posit a *generic* operator 
 
 <!-- Generally universal quantifier -->
 {% def Generic quantifier %}
-  {% for item in site.data.definitions["universal quantifier"] %}
-    {% if item[0] == "generic" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
+  {{ "quantifiers|generic quantifier" | formalize: "notitle" }}
 {% enddef %}
 
 It is perfectly possible for context to restrict membership in the preferred class to hibernating bears, thus explaining the truth of [Hibernation](#hibernate). Of course, it is also possible for context to select only cuddly bears in the case of [Cuddly bears](#cuddly-bears). It is the job of the metasemantics to explain why this selection is far less natural. The generically universal approach thus gets us out of the sticky situation, or at least shifts the extraction duties to pragmatics, which, given the [Resiliance](#resiliance) and [Susceptibility](#susceptibility) of discourse involving bare plurals, seems a not inappropriate delegation of responsibilities.
@@ -444,11 +410,7 @@ Despite this de-sticking success, I don't think that the standard response is th
 
 <!-- Structurally universal quantifier -->
 {% def Structurally universal quantifier %}
-  {% for item in site.data.definitions["universal quantifier"] %}
-    {% if item[0] == "structural" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" %}
-    {% endif %}
-  {% endfor %}
+  {{ "quantifiers|structural quantifier" | formalize: "notitle" }}
 {% enddef%}
 
 The structural analysis is strict in that it demands inclusion of the entire set determined by the bare plural within the properly partitioned predicate set. This is the complete story as far as the semantic component of the interpretive machinery is concerned. The partitioning of the predicate class is the source of the perceived looseness of bare plurals ([Resiliance](#resiliance)), but the mechanism for leveraging that feature belongs to the pragmatic system, to which we now turn. As with the story about shifty strict counterfactuals, the real work comes in getting clear about how the context evolves in response to bare plural utterances. And it is here that the framework of collaborative update semantics earns its keep.
@@ -521,11 +483,7 @@ Assuming the correctible inspires a corrective effort by a discourse participant
 
 <!-- General collaborative update -->
 {% def General collaborative update %}
-  {% for item in site.data.formalism.pragmatics %}
-    {% if item[0] == "collaborative update" %}
-      {% include formalism/molecule.html argument=item cation="condition" title="no" subtitle="yes" %}
-    {% endif %}
-  {% endfor %}
+  {{ "pragmatics|collaborative update" | formalize }}
 {% enddef %}
 
 ### Plurals specific formal story

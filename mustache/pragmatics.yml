@@ -108,7 +108,7 @@ defn:
               - fxn: semwrap
                 arg:
                   inside: "C<sub>st</sub>"
-                  outside: "<sup>i</sup>"
+                  after: "<sup>i</sup>"
           - "&lambda;&sigma;( i<sub>&sigma;</sub> &#x22C2; C<sub>s</sub> = i<sub>&sigma;</sub> )"
     structuring update:
       - lhs:
@@ -124,7 +124,7 @@ defn:
               - fxn: semwrap
                 arg:
                   inside: "C<sub>(st)t</sub>"
-                  outside: "<sup><span class='set'>R</span></sup>"
+                  after: "<sup><span class='set'>R</span></sup>"
           - "&lambda;&sigma;( <span class='set'>R</span><sup>&sigma;</sup> &#x22C2; C<sub>st</sub> = <span class='set'>R</span><sub>&sigma;</sub> )"
     dref introduction:
       - lhs:
@@ -151,7 +151,7 @@ defn:
               inside:
                 - "i<sub>&sigma;</sub>"
                 - "&#x3008;dref&#x3009;<sub>&sigma;</sub>"
-              outside: "<sub>sand</sub>"
+              after: "<sub>sand</sub>"
     propagation:
       body:
         - lhs: "U<sup>prop</sup>"
@@ -180,7 +180,7 @@ defn:
                 - "i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)"
                 - "i<sub><span class='set'R</span></sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)"
                 - "dref<sub>&sigma;</sub> += dref<sub>sand</sub>"
-              outside: "<sub>&sigma;</sub>"
+              after: "<sub>&sigma;</sub>"
 
 - name: speech acts
   cond:

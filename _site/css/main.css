@@ -601,28 +601,28 @@ div.relation {
   .group .space.T1 {
     display: block; }
 
-.ldrt {
+.drswrap {
   border-collapse: collapse;
   margin: 0 5px; }
-  .ldrt .drs {
+  .drswrap .drs {
     padding: 2px; }
-    .ldrt .drs.left {
+    .drswrap .drs.left {
       border-left: 1px solid #000; }
-    .ldrt .drs.right {
+    .drswrap .drs.right {
       border-right: 1px solid #000; }
-    .ldrt .drs.top {
+    .drswrap .drs.top {
       border-top: 1px solid #000; }
-    .ldrt .drs.bottom {
+    .drswrap .drs.bottom {
       border-bottom: 1px solid #000; }
-  .ldrt .dref {
+  .drswrap .dref {
     border-right: 1px solid #000;
     padding-right: 5px; }
-  .ldrt .condition {
+  .drswrap .conditions {
     padding-left: 5px; }
-  .ldrt .contribution {
+  .drswrap .contribution {
     width: 2em;
     text-align: center; }
-  .ldrt .downdate {
+  .drswrap .downdate {
     text-decoration: line-through; }
 
 div.formalism {

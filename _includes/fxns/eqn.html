@@ -1,13 +1,13 @@
 <div class="eqn">
   <div class="lhs">
     {% for bit in include.argument.lhs %}
-      {% include formalism/function.html argument=include.argument.lhs %}
+      {% include fxns/function.html argument=include.argument.lhs %}
     {% endfor %}
   </div>
   <div class="conn">{{ include.argument.conn }}</div>
   <div class="rhs{% if include.argument.rhs.size > 1 and include.argument.rhs.size < 5 %} mult{% endif %}">
   {% for bit in include.argument.rhs %}
-    {% include formalism/function.html argument=include.argument.rhs %}
+    {% include fxns/function.html argument=include.argument.rhs %}
   {% endfor %}
   </div>
 </div>
