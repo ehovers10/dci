@@ -234,6 +234,14 @@ svg {
     padding-left: 0.25em;
     margin-left: 0.25em; }
 
+  ul.bib {
+    margin-left: 0; }
+
+  ul.glossary {
+    margin: 0; }
+    ul.glossary .body {
+      padding-right: 0; }
+
   blockquote {
     margin: 0; } }
 @media all and (min-width: 700px) {
@@ -270,6 +278,11 @@ ul.bib {
     text-decoration: underline; }
   ul.bib .journal {
     font-style: italic; }
+  ul.bib .url {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word; }
 
 ul.bib2 {
   list-style-type: none;
@@ -554,7 +567,8 @@ div.relation {
   display: table;
   border-collapse: collapse;
   text-align: center;
-  margin: 1em; }
+  margin: 0.5em;
+  float: left; }
   div.relation div.head {
     display: table-row; }
     div.relation div.head div.attribute {
@@ -568,8 +582,14 @@ div.relation {
       display: table-cell;
       border-left: 1px solid #000;
       border-right: 1px solid #000; }
+      div.relation div.state div.entity div.divider {
+        border-top: 1px solid #000;
+        line-height: 0;
+        margin: 0;
+        width: 100%; }
   div.relation div.continued {
-    display: table-cell; }
+    display: table-caption;
+    caption-side: bottom; }
 
 .groupwrap {
   width: 100%;
@@ -665,6 +685,9 @@ div.formalism {
   .molecule div.categorical {
     display: inline; }
 
+.box {
+  margin: 1em; }
+
 .lightbox {
   display: none;
   position: fixed;
@@ -707,7 +730,7 @@ div.formalism {
     right: -webkit-calc(50% - 420px - 1em);
     width: 40px;
     height: 40px;
-    background-image: url("/dci/images/circle-with-cross.svg");
+    background-image: url("/images/circle-with-cross.svg");
     background-color: rgba(155, 155, 155, 0.9);
     border-radius: 20px; }
 
