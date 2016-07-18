@@ -52,7 +52,15 @@
     padding-left:0.25em;
     margin-left:0.25em;
   }
-
+  ul.bib {
+    margin-left: 0;
+  }
+  ul.glossary {
+    margin: 0;
+    .body {
+      padding-right: 0;
+    }
+  }
   blockquote {
     margin: 0;
   }
@@ -105,6 +113,13 @@ ul.bib {
   }
   .journal {
     font-style: italic;
+  }
+  .url {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    word-break: break-word;
   }
 }
 

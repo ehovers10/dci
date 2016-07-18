@@ -1,5 +1,5 @@
 bears:
-  pure:
+  +:
     s1: [a,b,e]
     s2: [a,b,c,d]
     s3: [a]
@@ -17,6 +17,7 @@ bears:
     s3: [e]
 
 dangerous:
-  s1: [a,b,d]
-  s2: [a]
-  s3: [b,d]
+  +:
+    s1: [a,b,d]
+    s2: [a]
+    s3: [b,d]

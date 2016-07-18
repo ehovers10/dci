@@ -74,7 +74,8 @@ div.relation {
   display: table;
   border-collapse:collapse;
   text-align:center;
-  margin:1em;
+  margin:0.5em;
+  float: left;
   div.head {
     display: table-row;
     div.attribute {
@@ -90,9 +91,18 @@ div.relation {
       display: table-cell;
       border-left: 1px solid #000;
       border-right: 1px solid #000;
+
+      div.divider {
+        border-top: 1px solid #000;
+        line-height: 0;
+        margin:0;
+        width: 100%;
+      }
     }
   }
   div.continued {
-    display: table-cell;
+    display: table-caption;
+    caption-side: bottom;
+    //width: inherit;
   }
 }

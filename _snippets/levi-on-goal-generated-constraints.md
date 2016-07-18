@@ -1,3 +1,8 @@
+---
+title: Levi on goal generated constraints
+references: ""
+---
+
 The guiding idea of this investigation is that our formal model of inquiry captures, structurally, the end of inquiry. Levi is not completely dismissive of the role striving for truth can play in inquiry. He suggests that an inquirer *X*
 
 > "should be concerned not merely to avoid error but to acquire new information. The promise of obtaining new information may sometimes (though not always) compensate *X*, from his initial point of view, for the risk to be incurred." {% cite levi1980 | pages: 35 %}

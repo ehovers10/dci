@@ -51,12 +51,11 @@ defaults:
       layout: "article"
 
 collections:
+  snippets:
+    output: true
   chapters:
     output: true
-    render: true
   appendices:
     output: true
-  snippets:
-    output: false
 
 exclude: [deprecated,sections,mustache]

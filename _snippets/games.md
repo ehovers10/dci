@@ -1,3 +1,7 @@
+---
+title: Games
+---
+
 ### Games, players, and strategies
 
 One way to specify the nature of a game is to sit down before any play takes place and outline in a legislative (*prescriptive*) fashion the necessary tools for engaging in the game and restrictions on behavior for proper engagement. An alternative game-maker strategy is to record the game as it is played, and attempt to write down, in a *descriptive* fashion, generalizations about the specific behaviors we record.

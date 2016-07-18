@@ -502,6 +502,10 @@ A {% gloss relational algebra %} extends standard set theoretic operations with 
 
 #### Application to collaborative update
 
+{{ "bears|dangerous" | fullouterjoin }}
+
+{{ "bears" | intension: "+" }}
+
 The initiation utterance of the [Bears](#bears) dialogue consists of a propositional radical, a plural predication, saturated by a homogeneity presupposition. The utterance serves to open a sandbox, within which the interpretive system treats the predication as a function taking the tables for subject and predicate as input and outputting their *right outer join*.
 
 The homogeneity presupposition operates on the result of the predication in three stages. First, it implements a structuring update, grouping the table by value of the **sit** attribute. Second, it performs an aggregation and comparisonfunction on the **ent** and **subj** attributes within each group. This consists of counting the number of **ent** of any value, and the number of **subj** of positive value, and comparing them. Groups for for which either the **ent** count equals the **subj** count or the **subj* count is zero pass through; other groups are rejected. The final phase is a restriction, where rejected groups are eliminated from the table.

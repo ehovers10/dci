@@ -1,3 +1,8 @@
+---
+title: Peirce and van Fraassen on induction
+references: ""
+---
+
 Peirce thought of inductive, or *synthetic*, reasoning as making an ampliative inference about unobserved items on the basis of observed ones. It is the reasoning involved when one generalizes from facts about a sample to facts about the entire population.
 
 > In this case the facts summed up in the conclusion are not among those stated in the premisses. They are different facts, as when one sees that the tide rises *m* times and concludes that it will rise the next time. These are the only inferences which increase our real knowledge, however useful the others may be. (The probability of induction, p. 181)

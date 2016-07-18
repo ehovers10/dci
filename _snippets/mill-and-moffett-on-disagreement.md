@@ -1,3 +1,8 @@
+---
+title: Mill and Moffett on disagreement
+references: ""
+---
+
 For Mill, it was essential to the justification of beliefs that they withstand continual attack from those who disagree with them. That is, for an individual to justifiably maintain a particular belief, they must be capable of defending that belief against attack from potential, reasonable dissenters. Even stronger, they must actually defend the belief against actual, reasonable dissenters. Marc Moffett {% cite moffett2007 | noname %} has suggested that this criterion of individual justified belief is tantamount to what he calls the collective criticism condition, which demands "free and open critical discussion" of beliefs among epistemic peers who hold countervailing beliefs. We thus derive a principle of social epistemics from a principle of individual level justification of belief.
 
 If the process of inquiry is what provides individual level belief justification, then the process of inquiry must make room for the collective criticism condition. It is my contention that natural discourse does just this. Not only are asserters expected to be able to provide reasons for the propositions they propose, hearers are expected to challenge assertions when their content contradicts either their own expectations, or the shared conversational record.

@@ -1,3 +1,11 @@
+---
+title: Factivity of knowledge
+biblio: true
+references: ""
+count:
+  ex: 1
+---
+
 Timothy Williamson {% cite williamson2000 | pages: 21-48 | noname %} argues that knowledge is a state of mind. His primary concern is to defend the attribution of mentality against those who maintain that knowledge is factorizable into a narrow, belief-centric mental state and a wide, truth-based connection to the world. But in light of the inquiry-first perspective, it is relevant also to challenge his attribution of statehood. Inquiries evolve, and their self-referential proclivities require the entire evolution to be available to the inquirers. This suggests that the output of the process of inquiry is itself a dilated process. Thus, knowledge is a complex, mental process.
 
 This consequence is immediately worrisome. The most natural reading of knowledge ascribing sentences is that they reference the knowledge relation and their form reveals the structure of that relation. Since the canonical knowledge ascription has a sentential complement clause in the object position, it seems to follow that the object of knowledge has sentential form. It seems, further, to be a basic feature of knowledge ascriptions that they are *factive*, which is to say that they always embed truths in their complement clause. Putting all this together, a simple candidate to be the object of knowledge is any true proposition. Processes are not propositions; thus, the worry.
@@ -11,7 +19,7 @@ Additionally, not all knowledge ascriptions are canonical. A variety of putative
   {{ "varieties of knowledge" | example: "sent" }}
 {% endex %}
 
-Surface appearances aren't always the whole story; perhaps a proper filling out will include cameos by propositions lurking under the surface {% cite stanley2001 %}. But sometimes the best guide to what there is is exactly what appearances tell us; in the case of knowledge ascriptions, examples such as [Varieties of knowledge](#varieties-of-knowledge) tell us that an individual's knowledge can subsume more than just propositional information {% cite bengson2012a,grzankowski2012 %}.[^intellectualism]
+Surface appearances aren't always the whole story; perhaps a proper filling out will include cameos by propositions lurking under the surface {% cite stanley2001 %}. But sometimes the best guide to what there is is exactly what appearances tell us; in the case of knowledge ascriptions, examples such as [Varieties of knowledge](#varieties-of-knowledge) tell us that an individual's knowledge can subsume more than just propositional information {% cite bengson2012a + grzankowski2012 %}.[^intellectualism]
 
 The inquiry-first perspective on knowledge offers a pleasing account of this diversity amongst knowledge ascriptions. As we'll see in [Discourse as collaborative update](/chapters/discourse-as-collaborative-update.html), a plausible representation of inquiry at the logical level includes *discourse referents* as elements of the inquiry structure. It is possible to treat knowledge ascriptions in their *personal* guise as querying an inquiry for these objects. And the structural approach to inquiry provides a framework for similarly representing the entities (*ways*, or some other concept/property) needed as objects for knowledge ascriptions in their procedural guise.
 
@@ -28,4 +36,4 @@ The inquiry-first perspective on knowledge treats ascriptions such as that in [C
 
 [^factivity]: For a dissenting opinion, see {% cite hazlett2012 %}.
 
-[^intellectualism]: I focus here on *intellectualist* accounts of knowledge, setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% cite ryle1949,lewis1988,bengson2012 %}.
+[^intellectualism]: I focus here on *intellectualist* accounts of knowledge, setting aside explanations of non-canonical knowledge ascriptions that treat them as picking out a distinct kind of knowledge, one that characterizes some non-mental features of an individual, such as an *ability* they possess {% cite ryle1949 + lewis1988 + bengson2012 %}.

@@ -1,3 +1,8 @@
+---
+title: Contextualism/Relativism
+references: ""
+---
+
 ## Meaning and context
 
 Utterance meaning is sensitive to context, but who determines the context appropriate to evaluating an utterance? There is pressure to say that the speaker controls the meaning of her words. After all, Grice taught us that speaker meaning is intentional. The speaker is most intimately connected to what she has said, and must retain some right to determining what she meant by what she said.

@@ -7,10 +7,6 @@ references: ""
 notelist: false
 comments: ""
 notes: kitioi.md
-extra:
-  - Levi on goal generated constraints
-  - Bratman et. al on plans
-  - Peirce and van Fraassen on induction
 count:
   def: 1
   ex: 0
@@ -71,6 +67,8 @@ The problem of justification is thus reduced to the problem of specifying proper
 
 On Levi's conception of information states, each state is as valuable as any other, and there is no inherent impetus to revise out of a state one finds onesself in. That's true so long as one avoids falling into the trivial state, in which deductive closure forces an collapse of the information state, eliminating all situations, a state referred to as *epistemic hell*. As long as one avoids epistemic hell, the specification of inquiry in terms of a revision operator defined over information states tells us nothing about when one ought to revise.
 
+{{ "Levi on goal generated constraints" | popbox: "snippets" }}
+
 If one never revises, one never risks importing error. Levi's rational inquirer can be content to maintain a static belief state, for he knows the only potential criticism comes when he decides to revise. Of course, revision may be forced upon him by quotidian interaction with the world. One's belief state is constantly updated involuntarily by way of perceptual input. These updates require maintenance using the same principles of revision. But there is no mechanism, in Levi's system, for initiating inquiry. In the epistemic logic framework, the presentation of a proposition as input to the revision of an information state is an non-rational process.{% note js6 js0617 %}
 
 Peirce recognized that no human agent will be content to stand pat with their knowledge. "The iritation of doubt causes a struggle to attain a state of belief," and this iritation is "the only immediate motive for the struggle to attain belief" {% cite peirce1877 | pages: 10 | noname %}. While such iritation is a natural state for human inquirers, our current framework has no means of accounting for the conditions under which a rational agent chooses to scratch.
@@ -100,7 +98,7 @@ As it currently stands, our model of inquiry allows for propositions to be incor
 
 The problem with this proposal is the threat it poses to the first epistemic goal of error-avoidance. Once a belief is incorporated into an information state, it can be difficult to excise. And as more beliefs become incorporated, tracing the countours of their relative entrenchment becomes exceedingly tedious. The will to believe carries a risk of being wrong. Information states must be insured against this risk, and simply reducing entry requirements for membership in the information state does not provide any assurance.
 
-Additionally, there does seem to be a difference between the two cognitive goals of the Jamesian Amendment (See the appendix: <a class="pop" id="levi-on-goal-generated-constraints">Levi on goal generated constraints</a>). It isn't a difference in terms of their significance to the inquiry, but it does provide us with reason to represent differently the incorporation of propositions stemming from the two goals.
+Additionally, there does seem to be a difference between the two cognitive goals of the Jamesian Amendment. It isn't a difference in terms of their significance to the inquiry, but it does provide us with reason to represent differently the incorporation of propositions stemming from the two goals.
 
 James' characterization of the motivation for the will to believe emphasizes that it is the *choice* that is genuine and calls for resolution. The essence of the genuine choice is that no particular resolution of the uncertainty demands selection, but still a selection must be made. We can capture this feature of proposition integration via the will to believe by focusing on the selected proposition's position within the partition we introduced to capture the impetus to revise. The will to believe is nothing more than selecting a prefered resolution of a recognized incompleteness in one's information state. Formally, this amendment requires only that the relation *R* that represents the partition impose an *order* on the members of the state. The result is an information state that both calls for revision and selects a preferred means of doing so.{% note js8 js0617 %}
 
@@ -114,11 +112,13 @@ But the motivation for the structural posits necessary to incorporate the abduct
 
 ### Induction
 
-Induction is normally understood in Peirce's tripartite distinction as (i) an ampliative mode of reasoning that (ii) provides its user with *security* that its outputs are for the most part true. For familiar, Humean reasons, there is no mode of reasoning that simultaneously meets both of these criteria (See the appendix: <a class="pop" id="peirce-and-van-fraassen-on-induction">Peirce and van Fraassen on induction</a>). Bas van Fraassen {% cite vanfraassen2000 %}, accepting that an epistemology based on the search for a secure, ampliative inference is bound to come up empty, proposes an alternative conception of the pursuit of science:
+Induction is normally understood in Peirce's tripartite distinction as (i) an ampliative mode of reasoning that (ii) provides its user with *security* that its outputs are for the most part true. For familiar, Humean reasons, there is no mode of reasoning that simultaneously meets both of these criteria. Bas van Fraassen {% cite vanfraassen2000 %}, accepting that an epistemology based on the search for a secure, ampliative inference is bound to come up empty, proposes an alternative conception of the pursuit of science:
 
 > Given that traditional epistemology embodies false hopes never to be satisfied, we must try to find a different view of our epistemic condition, with new hopes and new dreams of its own. So here is our tragic protagonist, thrown into a world she never made, and she asks us: What does it take?
 >
 > We answer her: it takes luck, courage, and technique; but the greatest of these is luck. {% cite vanfraassen2000 | pages: 273 | noname %}
+
+{{ "Peirce and van Fraassen on induction" | popbox: "snippets" }}
 
 Technique is nothing other than logic. It's operation is embodied in our deductive element of inquiry.[^conditionalization] Courage is the ability to face the prospect of error and strive for truth regardless. It is acknowledgement of the necessity of going beyond what technique can provide if skepticism is to be avoided. It is incorporated as an aspect of inquiry by way of the abductive component outlined above. But technique and courage are epistemically idle without luck -- the mere fortune of finding ourselves in a world that cooperates with our quest for knowledge.
 
@@ -138,9 +138,9 @@ But once we open the door to incorporating the goal of truth acquisition into ou
 
 An important mechanism of coherence is the build-and-test update procedure that inquiry exhibits. Inquiries are cummulatively built in a step by step process. A contribution to the inquiry adds a proposal to an inquiry workspace, making it available to be played around with by subsequent contributions to the inquiry before being ultimately accepted or rejected.
 
-Evaluation of the coherence of a contribution to a dilated process is relative to a system of structural constraints -- a *plan* -- for the process. The primary function of a plan is to restrict the set of possibilities from amongst which those engaged in the process select their moves. This imposed restriction allows plans to be followed, in real time, by cognitively limited agents. But plans are also to be carried out in real space, which does not always evolve the way planning agents hope or expect. Too rigid a restriction on possible moves will bind the agents to failure. Thus, plans must allow for modification in the face of unexpected developments in the environment within which the process takes place. (See the appendix: <a class="pop" id="bratman-et-al-on-plans">Bratman et. al on plans</a>)
+Evaluation of the coherence of a contribution to a dilated process is relative to a system of structural constraints -- a *plan* -- for the process. The primary function of a plan is to restrict the set of possibilities from amongst which those engaged in the process select their moves. This imposed restriction allows plans to be followed, in real time, by cognitively limited agents. But plans are also to be carried out in real space, which does not always evolve the way planning agents hope or expect. Too rigid a restriction on possible moves will bind the agents to failure. Thus, plans must allow for modification in the face of unexpected developments in the environment within which the process takes place.
 
-{{ "Bratman et. al. on plans" | pop }}
+{{ "Bratman et. al. on plans" | popbox: "snippets" }}
 
 Proper inquiry is no different. A plan of inquiry imposes *coherence* constraints on contributions to the inquiry. Future additions must follow the general course set by previous contributions. But, nature can so conspire to turn certain conjectures into dead ends, and a healthy plan of inquiry will accommodate mechanisms to adjust the plan on the fly.
 
