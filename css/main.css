@@ -195,8 +195,10 @@ svg {
 /* Abstract */
 .abstract {
   font-size: 13.5px;
-  margin: 1em 2em;
+  margin: 1em;
   text-align: justify; }
+  .abstract.toc {
+    margin-left: -1em; }
 
 .divider {
   margin: 30px 5%;
@@ -233,6 +235,8 @@ svg {
     list-style-type: none;
     padding-left: 0.25em;
     margin-left: 0.25em; }
+    ul.nav2 li {
+      display: block; }
 
   ul.bib {
     margin-left: 0; }
@@ -242,8 +246,13 @@ svg {
     ul.glossary .body {
       padding-right: 0; }
 
-  blockquote {
-    margin: 0; } }
+  .toc ul.section {
+    margin-left: 0; }
+  .toc ul.subsection {
+    margin-left: 1em; }
+
+  #totop {
+    display: none !important; } }
 @media all and (min-width: 700px) {
   ul.nav {
     width: 40%;
@@ -256,13 +265,19 @@ svg {
     ul.nav li {
       padding-left: 0.5em;
       text-indent: -0.5em; }
+      ul.nav li.inline {
+        display: inline-block;
+        padding-right: 1em; }
     ul.nav a {
       margin-bottom: 0; }
 
   ul.nav2 {
     list-style-type: none;
     padding-left: 0.25em;
-    margin-left: 0.25em; } }
+    margin-left: 0.25em; }
+
+  .toc ul.section, .toc ul.subsection {
+    margin-left: 1em; } }
 /* Bibliography */
 ul.bib {
   list-style-type: none; }
@@ -329,9 +344,8 @@ a.note:hover {
 .toc .chapter {
   font-size: 1.5em; }
 .toc ul.section {
-  margin-left: 1em; }
-.toc ul.subsection {
-  margin-left: 2em; }
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px; }
 .toc li {
   list-style-type: none; }
 .toc .item {
@@ -646,6 +660,13 @@ div.relation {
   .drswrap .downdate {
     text-decoration: line-through; }
 
+@media all and (max-width: 699px) {
+  .atom {
+    margin-left: 0;
+    width: 100%; } }
+@media all and (min-width: 700px) {
+  .atom {
+    margin-left: 1em; } }
 div.formalism {
   margin: 0;
   width: 100%; }
@@ -660,24 +681,23 @@ div.formalism {
     .molecule div.title.off {
       display: none; }
   .molecule div.atom {
-    margin-left: 1em;
     margin-bottom: 0.5em; }
-  .molecule div.eqn {
-    display: table-row; }
-    .molecule div.eqn div.lhs {
-      display: table-cell;
-      text-align: right; }
-    .molecule div.eqn div.conn {
-      display: table-cell;
-      text-align: center;
-      padding: 0 20px; }
-    .molecule div.eqn div.rhs {
-      display: table-cell;
-      text-align: left; }
-      .molecule div.eqn div.rhs.mult {
-        border-left: 2px solid #000;
-        border-radius: 5px;
-        padding: 2px 0 2px 5px; }
+  .molecule div.eqn div.lhs {
+    display: table-cell;
+    text-align: right; }
+  .molecule div.eqn div.conn {
+    display: table-cell;
+    text-align: center;
+    padding: 0 1em; }
+  .molecule div.eqn div.rhs {
+    display: table-cell;
+    text-align: left; }
+    .molecule div.eqn div.rhs.mult {
+      border-left: 2px solid #000;
+      border-radius: 5px;
+      padding: 2px 0 2px 5px; }
+    .molecule div.eqn div.rhs .rhs1 {
+      float: left; }
   .molecule div.wrap {
     display: table-row; }
     .molecule div.wrap div {
