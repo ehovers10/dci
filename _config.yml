@@ -13,6 +13,7 @@ copy: true
 bibliography: ''
 
 # Build settings
+mode: dev
 markdown: kramdown
 
 kramdown:
@@ -21,8 +22,8 @@ kramdown:
 examples: examples
 
 formalism:
-  data: "formalism"
-  wraps: "wraps"
+  data: formalism
+  wraps: wraps
 
 bibliography:
   source: dissbib

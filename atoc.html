@@ -2,26 +2,25 @@
 title: Annotated table of contents
 ---
 
-<div class="toc" style="margin-left:2em;">
+<div class="toc">
 {% for chap in site.data.toc %}
   {% assign url = chap[0] | slugify | prepend: '/chapters/' | prepend: site.baseurl | append: '.html' %}
 <h3 class="chapter"><a href="{{ url }}">{{ chap[0] }}</a></h3>
-<p>{{ chap[1].abstract }}</p>
-<blockquote>
+<p>{{ chap[1].abstract | markdownify }}</p>
 <ul class="section">
   {% for sect in chap[1].sections %}
     <li class="{% unless sect.subsections %}open{% endunless %}" id="{{ sect.title | slugify }}">{{ sect.title }} {% if sect.detail %}<img class="icon" src="{{ '/images/chevron-down.svg' | prepend: site.baseurl }}" title="Detail" />{% endif %}</li>
-    {% if sect.detail %}<blockquote class="hid item" id="{{ sect.title | slugify | append: '-hid' }}">{{ sect.detail }}</blockquote>{% endif %}
+    {% if sect.detail %}<div class="abstract toc hid item" id="{{ sect.title | slugify | append: '-hid' }}">{{ sect.detail | markdownify }}</div>{% endif %}
     {% if sect.subsections %}
     <ul class="subsection">
       {% for subsect in sect.subsections %}
       <li class="open" id="{{ subsect.title | slugify }}">{{ subsect.title }} {% if subsect.detail %}<img class="icon" src="{{ '/images/chevron-down.svg' | prepend: site.baseurl }}" title="Detail" />{% endif %}</li>
-      {% if subsect.detail %}<blockquote class="hid item" id="{{ subsect.title | slugify | append: '-hid' }}">{{ subsect.detail }}</blockquote>{% endif %}
+      {% if subsect.detail %}<div class="abstract toc hid item" id="{{ subsect.title | slugify | append: '-hid' }}">{{ subsect.detail | markdownify }}</div>{% endif %}
       {% if subsect.subsections %}
       <ul class="subsection">
         {% for subsubsect in subsect.subsections %}
         <li class="open" id="{{ subsubsect.title | slugify }}">{{ subsubsect.title }} {% if subsubsect.detail %}<img class="icon" src="{{ '/images/chevron-down.svg' | prepend: site.baseurl }}" title="Detail" />{% endif %}</li>
-        {% if subsubsect.detail %}<blockquote class="hid item" id="{{ subsubsect.title | slugify | append: '-hid' }}">{{ subsubsect.detail }}</blockquote>{% endif %}
+        {% if subsubsect.detail %}<div class="abstract toc hid item" id="{{ subsubsect.title | slugify | append: '-hid' }}">{{ subsubsect.detail | markdownify }}</div>{% endif %}
         {% endfor %}
       </ul>
       {% endif %}
@@ -30,7 +29,5 @@ title: Annotated table of contents
     {% endif %}
   {% endfor %}
 </ul>
-</blockquote>
-<p>&nbsp;</p>
 {% endfor %}
 </div>

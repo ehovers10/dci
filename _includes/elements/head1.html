@@ -1,21 +1,30 @@
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="jekyll" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{page.title}}</title>
 
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{{page.title}}</title>
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% if site.mode == "prod" %}
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    {% assign url = site.baseurl %}
+  {% else %}
+    <script src="{{ '/js/jquery-1.11.3.min.js' | prepend: site.baseurl }}"></script>
+    {% assign url = site.baseurl %}
+  {% endif %}
 
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
-  <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
-  <script src="{{ 'open.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
-  <script src="{{ 'group.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
+  <script src="{{ 'open.js' | prepend: '/js/' | prepend: url }}"></script>
+  <script src="{{ 'group.js' | prepend: '/js/' | prepend: url }}"></script>
   {% for item in page.js %}
-    <script src="{{ item | append: '.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
+    <script src="{{ item | append: '.js' | prepend: '/js/' | prepend: url }}"></script>
   {% endfor %}
-  <script src="{{ 'totop.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
+  <script src="{{ 'totop.js' | prepend: '/js/' | prepend: url }}"></script>
 </head>

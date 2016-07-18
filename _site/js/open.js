@@ -40,8 +40,7 @@ $(document).ready( function() {
 
   /* Tooltips */
 
-  $( ".tooled" ).hover(
-    function() {
+  $( ".tooled" ).hover( function() {
       var tipped = $(this).attr('id') + '-tip';
       $('span#' + tipped).css('display', 'inline');
       $('div#' + tipped).css('display', 'block');

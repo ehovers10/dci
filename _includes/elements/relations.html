@@ -14,9 +14,10 @@
 {% assign bears = "bears" | intension %}
 {% assign danger = "dangerous" | intension %}
 
+
 <h3>Bears</h3>
 
-{{ bears | group: "sit" | display_table }}
+{{ bears | join: danger | full_outer: "sit ent" | display_table }}
 
 <!---------------------- ----------------------->
 <div style="clear:both;"></div>

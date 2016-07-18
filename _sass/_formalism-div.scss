@@ -1,3 +1,15 @@
+@media all and (max-width: 699px) {
+  .atom {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media all and (min-width: 700px) {
+  .atom {
+    margin-left: 1em;
+  }
+}
+
 div.formalism {
   margin:0;
   width: 100%;
@@ -17,12 +29,10 @@ div.formalism {
   }
 
   div.atom {
-    margin-left:1em;
     margin-bottom:0.5em;
   }
 
   div.eqn {
-    display: table-row;
     div.lhs {
       display: table-cell;
       text-align: right;
@@ -30,7 +40,7 @@ div.formalism {
     div.conn {
       display: table-cell;
       text-align: center;
-      padding: 0 20px;
+      padding: 0 1em;
     }
     div.rhs {
       display: table-cell;
@@ -40,6 +50,10 @@ div.formalism {
         border-left: 2px solid #000;
         border-radius: 5px;
         padding: 2px 0 2px 5px;
+      }
+
+      .rhs1 {
+        float: left;
       }
     }
   }
