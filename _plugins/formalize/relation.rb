@@ -58,20 +58,26 @@ module Jekyll
       entlist.flatten.uniq.sort
     end
 
+  # Pre-join
+    def join (ltable,rtable)
+      tlist = [ltable,rtable]
+      tlist
+    end
+
   # Outer join (full,left, or right)
-    def full_outer_join(input,attribute)
+    def full_outer(input,attribute)
       source_data()
-      tables = input.split("|")
+      #tables = input.split("|")
       #raise %{Input: #{input}}
       joinedtable = []
-      tables[0].each { |t1r|
-        tables[1].each { |t2r|
-          if t1r[attribute] == t2r[attrbute]
-            joinedtable.push( t1r.merge!(t2r) )
-          end
+      skiprow = false
+      input[0].each { |t1r|
+        input[1].each { |t2r|
+          attribute.split.each { skiprow = true if t1r[attribute] != t2r[attribute] }
+          joinedtable.push( t1r.merge!(t2r) ) unless skiprow
         }
       }
-      joinedtable.uniq
+      joinedtable
     end
 
 #============#
