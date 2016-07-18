@@ -13,6 +13,7 @@ module Jekyll
       @divider = %{<div class="divider"></div>}
       @continue = %{&#10649;}
       @contclass = ["sit","ent"]
+      @joinattributes = ["sit","ent"]
     end
 
 #=======#
@@ -42,7 +43,7 @@ module Jekyll
     end
 
   # Entities in any extension for each situation
-    def entities(situation,predicates,kind = "all")
+    def entities(situation,predicates,kind)
       entlist = []
       predicates.each { |pred|
         if @sourcefile[pred][situation]
@@ -59,70 +60,62 @@ module Jekyll
     end
 
   # Pre-join
-    def join (ltable,rtable)
+    def add_table (ltable,rtable)
       tlist = [ltable,rtable]
       tlist
     end
 
+  # Join
+    def join (input,type = "inner")
+      source_data()
+      case type
+      when "left"
+        jointable = inner(input).push(outer(input))
+      when "right"
+        jointable = inner(input.reverse).push(outer(input.reverse))
+      when "full"
+        #jointable = inner(input).push(outer(input)).push(outer(input))
+      when "inner"
+        jointable = inner(input)
+      end
+      jointable.flatten.uniq.delete_if { |row| row.nil? }.sort_by { |x|
+        [x["sit"],x["ent"]] }
+    end
+
   # Inner
-    def inner(input,attributes)
+    def inner(input)
       source_data()
-      joinattributes = attributes.split
       joinedtable = []
-      skiprow = false
       input[0].each { |t1r|
         input[1].each { |t2r|
-          temprow = []
-          joinattributes.each { skiprow = true if t1r[attribute] != t2r[attribute] }
-          unless skiprow
-            t2r.each_key { |key|
-              temprow = t1r.merge({key => t2r[key]}) unless joinattributes.include? key
-            }
-          end
-          joinedtable.push( temprow )
+          skiprow = false
+          @joinattributes.each { |attr| skiprow = true if t1r[attr] != t2r[attr] }
+          joinedtable.push( t1r.merge(t2r) ) unless skiprow
         }
       }
       joinedtable.uniq
     end
 
-  # Full outer
-    def full_outer(input,attributes)
-      source_data()
-      joinattributes = attributes.split
-      joinedtable = []
-      skiprow = false
-      input[0].each { |t1r|
-        input[1].each { |t2r|
-          temprow = []
-          joinattributes.each { skiprow = true if t1r[attribute] != t2r[attribute] }
-          unless skiprow
-            t2r.each_key { |key|
-              temprow = t1r.merge({key => t2r[key]}) unless joinattributes.include? key
-            }
-          end
-          joinedtable.push( temprow )
-        }
-      }
-      joinedtable.uniq
-    end
-
-    # Left outer
-      def left_outer(input,attributes)
+    # Outer
+      def outer(input)
         source_data()
-        joinattributes = attributes.split
         joinedtable = []
-        skiprow = false
         input[0].each { |t1r|
+          skiprow = 0
           input[1].each { |t2r|
-            temprow = []
-            joinattributes.each { skiprow = true if t1r[attribute] != t2r[attribute] }
-            unless skiprow
-              t2r.each_key { |key|
-                temprow = t1r.merge({key => t2r[key]}) unless joinattributes.include? key
-              }
+            mismatch = false
+            @joinattributes.each { |attr| mismatch = true if t1r[attr] != t2r[attr] }
+            if mismatch
+              skiprow += 1
             end
-            joinedtable.push( temprow )
           }
+          if skiprow == input[1].size
+            temprow = {}
+            input[1][0].each_key { |key|
+              temprow = t1r.merge({key => nil}) unless @joinattributes.include? key
+            }
+          end
+          joinedtable.push( temprow )
         }
         joinedtable.uniq
       end
@@ -168,6 +161,7 @@ module Jekyll
 
     def display_row(table,index)
       output = %{<div class="state">}
+      #raise %{Row:#{table}end}
       table[index].each_pair { |attrib,val|
         val.nil? ? ent = @defaultvalue : ent = val
         output << %{<div class="entity">#{adjust_val(table,index,attrib,val)}</div>}

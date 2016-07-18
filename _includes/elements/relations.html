@@ -1,23 +1,25 @@
 <h3>Predicates</h3>
 
-<!-- Bears -->
-{{ "bears|dangerous" | intension: "+" | display_table }}
 
-<!-- Dangerous -->
-{{ "dangerous" | intension | situ: "s1 s2" | display_table }}
-
-<!-- Grizzly -->
-{{ "bears" | intension: "grizzly" | display_table }}
 
 <div style="clear:both;"></div>
 
 {% assign bears = "bears" | intension %}
+{% assign griz = "bears" | intension: "grizzly" %}
 {% assign danger = "dangerous" | intension %}
 
 
 <h3>Bears</h3>
 
-{{ bears | join: danger | inner: "sit ent" | display_table }}
+{{ griz | display_table }}
+
+<hr>
+
+{{ bears | add_table: danger | join: "left" | display_table }}
+{{ danger | add_table: bears | join: "right" | display_table }}
+
+<div style="clear:both;"></div>
+
 
 <!---------------------- ----------------------->
 <div style="clear:both;"></div>
