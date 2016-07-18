@@ -64,21 +64,68 @@ module Jekyll
       tlist
     end
 
-  # Outer join (full,left, or right)
-    def full_outer(input,attribute)
+  # Inner
+    def inner(input,attributes)
       source_data()
-      #tables = input.split("|")
-      #raise %{Input: #{input}}
+      joinattributes = attributes.split
       joinedtable = []
       skiprow = false
       input[0].each { |t1r|
         input[1].each { |t2r|
-          attribute.split.each { skiprow = true if t1r[attribute] != t2r[attribute] }
-          joinedtable.push( t1r.merge!(t2r) ) unless skiprow
+          temprow = []
+          joinattributes.each { skiprow = true if t1r[attribute] != t2r[attribute] }
+          unless skiprow
+            t2r.each_key { |key|
+              temprow = t1r.merge({key => t2r[key]}) unless joinattributes.include? key
+            }
+          end
+          joinedtable.push( temprow )
         }
       }
-      joinedtable
+      joinedtable.uniq
     end
+
+  # Full outer
+    def full_outer(input,attributes)
+      source_data()
+      joinattributes = attributes.split
+      joinedtable = []
+      skiprow = false
+      input[0].each { |t1r|
+        input[1].each { |t2r|
+          temprow = []
+          joinattributes.each { skiprow = true if t1r[attribute] != t2r[attribute] }
+          unless skiprow
+            t2r.each_key { |key|
+              temprow = t1r.merge({key => t2r[key]}) unless joinattributes.include? key
+            }
+          end
+          joinedtable.push( temprow )
+        }
+      }
+      joinedtable.uniq
+    end
+
+    # Left outer
+      def left_outer(input,attributes)
+        source_data()
+        joinattributes = attributes.split
+        joinedtable = []
+        skiprow = false
+        input[0].each { |t1r|
+          input[1].each { |t2r|
+            temprow = []
+            joinattributes.each { skiprow = true if t1r[attribute] != t2r[attribute] }
+            unless skiprow
+              t2r.each_key { |key|
+                temprow = t1r.merge({key => t2r[key]}) unless joinattributes.include? key
+              }
+            end
+            joinedtable.push( temprow )
+          }
+        }
+        joinedtable.uniq
+      end
 
 #============#
 # Manipulate #
