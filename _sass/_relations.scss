@@ -70,11 +70,22 @@ table.relation {
     }
 }
 
+@media all and (max-width: 699px) {
+  .relation {
+    width: 100%;
+    margin-left: 0!important;
+  }
+  .area {
+    width: 100%;
+    margin-left: 0!important;
+  }
+}
+
 div.relation {
   display: table;
   border-collapse:collapse;
   text-align:center;
-  margin:0.5em;
+  margin-bottom:1em;
   float: left;
   div.head {
     display: table-row;
@@ -92,12 +103,20 @@ div.relation {
       border-left: 1px solid #000;
       border-right: 1px solid #000;
 
+      span.count {
+        color: red;
+      }
       div.divider {
-        border-top: 1px solid #000;
-        line-height: 0;
+        border-bottom: 1px solid #aaa;
         margin:0;
         width: 100%;
       }
+      &.keep {
+        vertical-align: top;
+        line-height: 0.5em;
+        border-right: none;
+      }
+
     }
   }
   div.continued {

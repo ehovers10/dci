@@ -1,5 +1,5 @@
 <div class="toc">
-<ul class="section">
+<ul class="body fence">
   {% for sect in chapter.sections %}
     <li><a href="{{ sect.title | slugify | prepend: '#' }}">{{ sect.title }}</a></li>
     {% if sect.subsections %}

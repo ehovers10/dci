@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
 
   <script src="{{ 'open.js' | prepend: '/js/' | prepend: url }}"></script>
-  <script src="{{ 'group.js' | prepend: '/js/' | prepend: url }}"></script>
   {% for item in page.js %}
     <script src="{{ item | append: '.js' | prepend: '/js/' | prepend: url }}"></script>
   {% endfor %}

@@ -16,6 +16,20 @@
   border-bottom:1px solid #aaa;
 }
 
+.body {
+  color: #000;
+  padding-right: $spacing-unit;
+  font-size: 0.9em;
+  text-align: justify;
+  //letter-spacing: -1px;
+  margin-bottom: 1em;
+
+  &.fence {
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
 .footnotes {
   margin: 0 5%;
   text-align: justify;
@@ -64,9 +78,6 @@
   }
   ul.glossary {
     margin: 0;
-    .body {
-      padding-right: 0;
-    }
   }
   .toc {
     ul.section {
@@ -78,6 +89,16 @@
   }
   #totop {
     display: none!important;
+  }
+  .abstract, .body {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  ul.body-nav {
+    li {
+      display: block;
+    }
   }
 }
 
@@ -107,9 +128,9 @@
     padding-left:0.25em;
     margin-left:0.25em;
   }
-  .toc {
-    ul.section, ul.subsection {
-      margin-left: 1em;
+  ul.body-nav {
+    li {
+      display: inline;
     }
   }
 }
@@ -205,10 +226,6 @@ a.note:hover {
   .chapter {
     font-size: 1.5em;
   }
-  ul.section {
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-  }
   li {
     list-style-type: none;
   }
@@ -221,38 +238,19 @@ a.note:hover {
 ul.glossary {
   li {
     list-style-type: none;
-
     .title {
       font-weight:600;
       font-size:1.1em;
     }
-
-    .body {
-      color: #000;
-      padding-right: $spacing-unit;
-      font-size: 0.9em;
-      text-align: justify;
-      //letter-spacing: -1px;
-      margin: 0.5em 1em;
-
-      &.fence {
-        border-left: 4px solid $grey-color-light;
-        padding-left: $spacing-unit / 2;
-      }
+    .subtitle {
+      font-size:0.8em;
+      margin-left:0.75em;
+      margin-top:0.75em;
     }
-
-
-        .subtitle {
-          font-size:0.8em;
-          margin-left:0.75em;
-          margin-top:0.75em;
-        }
-        ul.inline li {
-          display: inline-block;
-        }
-
+    ul.inline li {
+      display: inline-block;
+    }
   }
-
 }
 
 /* Chapter end */
@@ -276,6 +274,11 @@ ul.glossary {
 }
 
 /* Typology */
+@media all and (max-width: 699px) {
+  table.typology {
+    width: 100%;
+  }
+}
 table.typology {
   border-collapse: collapse;
   font-size: 0.8em;
@@ -316,7 +319,6 @@ ul.body-nav {
   li {
     margin-right: 2em;
     list-style-type: none;
-    display: inline;
   }
   margin-bottom: 1em;
   padding-bottom: 1em;
@@ -329,19 +331,6 @@ ul.body-nav {
       margin-right:0.5em;
       font-size: $ex-fs;
       font-family: $header-ff;
-    }
-  }
-  .body {
-    color: #000;
-    padding-right: $spacing-unit;
-    font-size: 0.9em;
-    text-align: justify;
-    //letter-spacing: -1px;
-    margin-bottom: 1em;
-
-    &.fence {
-      border-left: 4px solid $grey-color-light;
-      padding-left: $spacing-unit / 2;
     }
   }
 }

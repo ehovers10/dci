@@ -1,0 +1,158 @@
+---
+title: Relations
+js: bunch
+---
+
+<h3>Predicates</h3>
+
+{% assign bears = "bears" | intension: "+" %}
+{% assign griz = "bears" | intension: "grizzly" %}
+
+{% assign danger = "dangerous" | intension: "+" %}
+
+{% assign names = "bears dangerous grizzly" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+<div class="area bears">
+  {{ bears | display_table }}
+</div>
+<div class="area dangerous">
+  {{ danger | display_table }}
+</div>
+<div class="area grizzly">
+  {{ griz | display_table }}
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<h3>Standard modification</h3>
+
+{% assign grizzlybears = griz | concat: bears | modify %}
+{% assign names = "modify restrict" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="area modify">
+{{ grizzlybears | display_table }}
+</div>
+<div class="area restrict">
+{{ grizzlybears | intersect | display_table }}
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<h3>Standard plural predication</h3>
+
+{% assign bearsdanger = bears | concat: danger | predicate %}
+{% assign names = "predicate group compare restrict" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="area predicate">
+{{ bearsdanger | display_table }}
+</div>
+<div class="area group">
+{{ bearsdanger | group | display_table }}
+</div>
+<div class="area compare">
+{{ bearsdanger | group | compare: "+-bears" | display_table }}
+</div>
+<div class="area restrict">
+{{ bears | concat: danger | predicate | situ: "s2" | display_table }}
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+<h3>Contrastive modification</h3>
+
+{% assign grizzlybears = griz | concat: bears | modify %}
+{% assign names = "modify group refine" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="area modify">
+{{ grizzlybears | display_table }}
+</div>
+<div class="area group">
+{{ grizzlybears | group | display_table }}
+</div>
+<div class="area refine">
+Getting there!
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<h3>Contrastive plural predication</h3>
+
+{% assign gbdanger = bears | concat: griz | modify | concat: danger | predicate %}
+{% assign names = "modify predicate group count compare restrict" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="area predicate">
+{{ gbdanger | display_table }}
+</div>
+<div class="area group">
+{{ gbdanger | group | display_table }}
+</div>
+<div class="area count">
+{{ bearsdanger | group | display_table }}
+</div>
+<div class="area compare">
+Getting there!
+</div>
+<div class="area restrict">
+Getting there!
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<!---------------------- -------------------->
+<div style="clear:both;"></div>
+
+<h3>Contrastive modification</h3>
+
+<!-- introduce alt set, full outer join, overwrite -->
+<table class="relation molecule">
+  <tr>
+<td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.grizzlyFbearsdangerous %}
+<br>{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %} =
+<br>PROJ({sit,ent,type &#x21a6; bear},
+<br>{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %}
+<br><span class="symbol">&#x27d7;</span> {% include fxns/semwrap.html argument=site.data.meanings.bears %}</td>
+</tr>
+</table>
+
+{% include relations/contrast/index.html rows="9" %}
+
+<div style="clear:both;"></div>
+
+<h3>Contrastive plural predication</h3>
+
+{% include relations/gbad/index.html rows="7" %}

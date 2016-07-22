@@ -19,5 +19,5 @@ bears:
 dangerous:
   +:
     s1: [a,b,d]
-    s2: [a]
+    s2: [a,b]
     s3: [b,d]

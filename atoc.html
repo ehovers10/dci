@@ -6,8 +6,8 @@ title: Annotated table of contents
 {% for chap in site.data.toc %}
   {% assign url = chap[0] | slugify | prepend: '/chapters/' | prepend: site.baseurl | append: '.html' %}
 <h3 class="chapter"><a href="{{ url }}">{{ chap[0] }}</a></h3>
-<p>{{ chap[1].abstract | markdownify }}</p>
-<ul class="section">
+<div class="abstract">{{ chap[1].abstract | markdownify }}</div>
+<ul class="body fence">
   {% for sect in chap[1].sections %}
     <li class="{% unless sect.subsections %}open{% endunless %}" id="{{ sect.title | slugify }}">{{ sect.title }} {% if sect.detail %}<img class="icon" src="{{ '/images/chevron-down.svg' | prepend: site.baseurl }}" title="Detail" />{% endif %}</li>
     {% if sect.detail %}<div class="abstract toc hid item" id="{{ sect.title | slugify | append: '-hid' }}">{{ sect.detail | markdownify }}</div>{% endif %}

@@ -48,3 +48,11 @@ ul.seqlist {
     line-height: 0.75em;
   }
 }
+
+.bunch {
+  width: 100%;
+  text-align: center;
+  .area + .area {
+    display: none;
+  }
+}

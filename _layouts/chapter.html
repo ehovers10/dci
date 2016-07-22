@@ -8,16 +8,12 @@ layout: article
 <div class="chapter-front">
   {% if chapter.abstract %}
     <h3>Abstract</h3>
-    <blockquote>
-    {{ chapter.abstract | markdownify }}
-    </blockquote>
+    <div class="abstract body fence">{{ chapter.abstract | markdownify }}</div>
   {% endif %}
 
   {% if page.toc %}
     <h3>Table of contents</h3>
-    <blockquote>
     {% include elements/toc.html %}
-    </blockquote>
   {% endif %}
 
   <div class="divider print-no"></div>
