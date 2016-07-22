@@ -52,7 +52,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: 30px; }
+  margin-left: 1em; }
 
 li > ul,
 li > ol {
@@ -205,6 +205,16 @@ svg {
   clear: right;
   border-bottom: 1px solid #aaa; }
 
+.body {
+  color: #000;
+  padding-right: 30px;
+  font-size: 0.9em;
+  text-align: justify;
+  margin-bottom: 1em; }
+  .body.fence {
+    border-left: 4px solid #e8e8e8;
+    padding-left: 15px; }
+
 .footnotes {
   margin: 0 5%;
   text-align: justify; }
@@ -243,8 +253,6 @@ svg {
 
   ul.glossary {
     margin: 0; }
-    ul.glossary .body {
-      padding-right: 0; }
 
   .toc ul.section {
     margin-left: 0; }
@@ -252,7 +260,15 @@ svg {
     margin-left: 1em; }
 
   #totop {
-    display: none !important; } }
+    display: none !important; }
+
+  .abstract, .body {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left; }
+
+  ul.body-nav li {
+    display: block; } }
 @media all and (min-width: 700px) {
   ul.nav {
     width: 40%;
@@ -276,8 +292,8 @@ svg {
     padding-left: 0.25em;
     margin-left: 0.25em; }
 
-  .toc ul.section, .toc ul.subsection {
-    margin-left: 1em; } }
+  ul.body-nav li {
+    display: inline; } }
 /* Bibliography */
 ul.bib {
   list-style-type: none; }
@@ -343,9 +359,6 @@ a.note:hover {
 /* Table of contents */
 .toc .chapter {
   font-size: 1.5em; }
-.toc ul.section {
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px; }
 .toc li {
   list-style-type: none; }
 .toc .item {
@@ -357,15 +370,6 @@ ul.glossary li {
   ul.glossary li .title {
     font-weight: 600;
     font-size: 1.1em; }
-  ul.glossary li .body {
-    color: #000;
-    padding-right: 30px;
-    font-size: 0.9em;
-    text-align: justify;
-    margin: 0.5em 1em; }
-    ul.glossary li .body.fence {
-      border-left: 4px solid #e8e8e8;
-      padding-left: 15px; }
   ul.glossary li .subtitle {
     font-size: 0.8em;
     margin-left: 0.75em;
@@ -390,6 +394,9 @@ ul.glossary li {
   width: 30px; }
 
 /* Typology */
+@media all and (max-width: 699px) {
+  table.typology {
+    width: 100%; } }
 table.typology {
   border-collapse: collapse;
   font-size: 0.8em;
@@ -419,8 +426,7 @@ ul.body-nav {
   padding-bottom: 1em; }
   ul.body-nav li {
     margin-right: 2em;
-    list-style-type: none;
-    display: inline; }
+    list-style-type: none; }
 
 .def {
   margin: 0 1em; }
@@ -428,15 +434,6 @@ ul.body-nav {
     margin-right: 0.5em;
     font-size: 30px;
     font-family: glam; }
-  .def .body {
-    color: #000;
-    padding-right: 30px;
-    font-size: 0.9em;
-    text-align: justify;
-    margin-bottom: 1em; }
-    .def .body.fence {
-      border-left: 4px solid #e8e8e8;
-      padding-left: 15px; }
 
 /* Footer */
 .site-footer {
@@ -523,6 +520,12 @@ ul.seqlist {
     font-size: 1.25em;
     line-height: 0.75em; }
 
+.bunch {
+  width: 100%;
+  text-align: center; }
+  .bunch .area + .area {
+    display: none; }
+
 /**
  * Relations
  */
@@ -577,11 +580,19 @@ table.relation {
 @media print {
   .breaker {
     page-break-after: always; } }
+@media all and (max-width: 699px) {
+  .relation {
+    width: 100%;
+    margin-left: 0 !important; }
+
+  .area {
+    width: 100%;
+    margin-left: 0 !important; } }
 div.relation {
   display: table;
   border-collapse: collapse;
   text-align: center;
-  margin: 0.5em;
+  margin-bottom: 1em;
   float: left; }
   div.relation div.head {
     display: table-row; }
@@ -596,45 +607,19 @@ div.relation {
       display: table-cell;
       border-left: 1px solid #000;
       border-right: 1px solid #000; }
+      div.relation div.state div.entity span.count {
+        color: red; }
       div.relation div.state div.entity div.divider {
-        border-top: 1px solid #000;
-        line-height: 0;
+        border-bottom: 1px solid #aaa;
         margin: 0;
         width: 100%; }
+      div.relation div.state div.entity.keep {
+        vertical-align: top;
+        line-height: 0.5em;
+        border-right: none; }
   div.relation div.continued {
     display: table-caption;
     caption-side: bottom; }
-
-.groupwrap {
-  width: 100%;
-  text-align: center;
-  padding-left: calc(50% - 200px);
-  padding-left: -webkit-calc(50% - 200px); }
-
-.group {
-  position: relative; }
-  .group .groupnav {
-    position: absolute; }
-  .group ul.groupnav li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 2px 5px;
-    margin: 2;
-    text-align: center;
-    background: #555;
-    color: #fff;
-    border: none;
-    font-size: 0.85em; }
-  .group ul.groupnav li a {
-    text-decoration: none;
-    color: #fff; }
-  .group .space {
-    position: absolute;
-    top: 2em;
-    left: 1em;
-    display: none; }
-  .group .space.T1 {
-    display: block; }
 
 .drswrap {
   border-collapse: collapse;
