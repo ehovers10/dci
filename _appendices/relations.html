@@ -7,7 +7,7 @@ js: bunch
 
 {% assign bears = "bears" | intension: "+" %}
 {% assign griz = "bears" | intension: "grizzly" %}
-
+{% assign allbears = "bears" | intension: "all" %}
 {% assign danger = "dangerous" | intension: "+" %}
 
 {% assign names = "bears dangerous grizzly" | split: " " %}
@@ -81,8 +81,8 @@ js: bunch
 
 <h3>Contrastive modification</h3>
 
-{% assign grizzlybears = griz | concat: bears | modify %}
-{% assign names = "modify group refine" | split: " " %}
+{% assign grizzlybears = allbears | concat: bears | modify %}
+{% assign names = "alt modify refine" | split: " " %}
 
 <div class="bunch">
 <ul class="body-nav">
@@ -91,22 +91,22 @@ js: bunch
   {% endfor %}
 </ul>
 
+<div class="area alt">
+{{ allbears | display_table }}
+</div>
 <div class="area modify">
 {{ grizzlybears | display_table }}
 </div>
-<div class="area group">
-{{ grizzlybears | group | display_table }}
-</div>
 <div class="area refine">
-Getting there!
+{{ grizzlybears | refine | display_table }}
 </div>
 <div style="clear:both;"></div>
 </div>
 
 <h3>Contrastive plural predication</h3>
 
-{% assign gbdanger = bears | concat: griz | modify | concat: danger | predicate %}
-{% assign names = "modify predicate group count compare restrict" | split: " " %}
+{% assign gbdanger = grizzlybears | refine | concat: danger | predicate %}
+{% assign names = "predicate group compare restrict" | split: " " %}
 
 <div class="bunch">
 <ul class="body-nav">
@@ -119,40 +119,13 @@ Getting there!
 {{ gbdanger | display_table }}
 </div>
 <div class="area group">
-{{ gbdanger | group | display_table }}
-</div>
-<div class="area count">
-{{ bearsdanger | group | display_table }}
+{{ gbdanger | group | group: "all-bears" | display_table }}
 </div>
 <div class="area compare">
-Getting there!
+{{ gbdanger | compare: "all-bears" | display_table }}
 </div>
 <div class="area restrict">
-Getting there!
+
 </div>
 <div style="clear:both;"></div>
 </div>
-
-<!---------------------- -------------------->
-<div style="clear:both;"></div>
-
-<h3>Contrastive modification</h3>
-
-<!-- introduce alt set, full outer join, overwrite -->
-<table class="relation molecule">
-  <tr>
-<td class="label" colspan="3">{% include fxns/semwrap.html argument=site.data.meanings.grizzlyFbearsdangerous %}
-<br>{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %} =
-<br>PROJ({sit,ent,type &#x21a6; bear},
-<br>{% include fxns/semwrap.html argument=site.data.meanings.grizzlyF %}
-<br><span class="symbol">&#x27d7;</span> {% include fxns/semwrap.html argument=site.data.meanings.bears %}</td>
-</tr>
-</table>
-
-{% include relations/contrast/index.html rows="9" %}
-
-<div style="clear:both;"></div>
-
-<h3>Contrastive plural predication</h3>
-
-{% include relations/gbad/index.html rows="7" %}

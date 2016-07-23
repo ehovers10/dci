@@ -27,12 +27,17 @@ module Jekyll
       table = []
       header = {"sit" => "sit", "ent" => "ent", %{#{kind}-#{predicate}} => predicate}
       @sourcefile[predicate].each_pair { |k,v|
-        if kind == "all" || kind.include?(k)
+        if kind.include?(k)
           pred = %{#{kind}-#{predicate}}
           v.each_pair { |s,ents|
-            if @situations.include? (s)
-              ents.each { |e| table.push({"sit" => s,"ent" => e, pred => k}) }
-            end }
+            ents.each { |e| table.push({"sit" => s,"ent" => e, pred => k}) }
+          }
+        elsif kind == "all"
+          pred = %{#{kind}-#{predicate}}
+          v.each_pair { |s,ents|
+            ents.each { |e|
+              table.push({"sit" => s,"ent" => e, pred => k}) unless k == "+" }
+          }
         end }
       joint = smooth_table(table)
       joint.insert(0,header)
@@ -125,6 +130,12 @@ module Jekyll
         sits.include?(row["sit"]) || row == input[0] }
     end
 
+  # Refine
+    def refine(input)
+      input[0].delete_if {|key| key == "mod" }
+      input.each { |row| row.delete_if { |key| key.include? "+" } }
+    end
+
   # Intersect
     def intersect(input)
       num = []
@@ -142,7 +153,7 @@ module Jekyll
       source_data()
       groupedtable = []
       table.group_by { |row| row[attribute] }.each_pair { |key,group|
-        group.last.merge!("div" => "") unless group.last["sit"] == "sit"
+        group.last.merge!("div" => "") unless group.last[attribute] == attribute
         group.each { |row| groupedtable.push(row) }
       }
       groupedtable
