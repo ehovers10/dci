@@ -1,7 +1,7 @@
 /* Set list format */
 ul.setlist {
   text-align:center;
-
+  margin:0;
   li {
     list-style-type:none;
     display:inline;
@@ -16,7 +16,7 @@ ul.setlist {
 
 ul.seqlist {
   text-align:center;
-
+  margin:0;
   li {
     list-style-type:none;
     display:inline;

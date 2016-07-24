@@ -16,20 +16,24 @@ js: bunch
 
 <div class="area types">
   <h2>Types</h2>
-
-  <h4>All types</h4>
+  <div class="molecule">
+  <div class="atom">
+    <div class="title">All types</div>
   <ul class="setlist">
   {% for item in site.data.formalism.types.basic %}
     <li><a href="#" title="{{ item[0] }}" onclick="return false;">{{ item[1] }}</a></li>
   {% endfor %}
   </ul>
-
-  <h4>Discourse referent types</h4>
+</div></div>
+<div class="molecule">
+  <div class="atom">
+      <div class="title">Discourse referent types</div>
   <ul class="setlist">
   {% for item in site.data.formalism.types.dref %}
     <li><a href="#" title="{{ item[0] }}" onclick="return false;">{{ item[1] }}</a></li>
   {% endfor %}
   </ul>
+</div></div>
 </div>
 
 <div class="area pragmatics" style="display:none;">

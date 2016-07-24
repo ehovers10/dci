@@ -200,12 +200,16 @@ module Jekyll
       grouplist.each { |set|
         pos = 0
         set.first.last.each { |val|
-          match = val.keys[pred]
-          unless val[match].nil?
-            val.merge!( match => wrap("count",val[match]) )
-            pos += 1
+          pr = val.keys[pred]
+          su = val.keys[subj]
+          unless val[su].nil?
+            if val[pr] == comp.last
+              val.merge!( pr => wrap("count",val[pr]) )
+              pos += 1
+            end
           end
         }
+        #raise %{Size: #{set["size"]}, Pos: #{pos}}
         set["size"] == pos || pos = 0 ? keep = %{&#x2713;} : keep = %{X}
         set.first.last[set["size"] / 2].merge!(@keep => keep)
       }

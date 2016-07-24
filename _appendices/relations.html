@@ -70,7 +70,7 @@ js: bunch
 {{ bearsdanger | group | display_table }}
 </div>
 <div class="area compare">
-{{ bearsdanger | group | compare: "sit|+-bears" | display_table }}
+{{ bearsdanger | group | compare: "sit|+-bears +" | display_table }}
 </div>
 <div class="area restrict">
 {{ bears | concat: danger | predicate | situ: "s2" | display_table }}
@@ -122,7 +122,7 @@ js: bunch
 {{ gbdanger | group: "sit all-bears" | display_table }}
 </div>
 <div class="area compare">
-{{ gbdanger | compare: "sit all-bears|grizzly" | display_table }}
+{{ gbdanger | compare: "sit all-bears|all-bears grizzly" | display_table }}
 </div>
 <div class="area restrict">
 
