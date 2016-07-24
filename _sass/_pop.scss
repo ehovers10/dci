@@ -20,7 +20,7 @@
 		overflow-y: auto;
 		background: #fff;
 	  border: solid #fff 3px;
-    width: 800px;
+    //width: 800px;
 		max-height: 90%;
 		padding: 1em;
 
@@ -47,8 +47,6 @@
 		position: absolute;
 		top: calc(5% - 20px);
 		top: -webkit-calc(5% - 20px);
-		right: calc(50% - 420px - 1em);
-		right: -webkit-calc(50% - 420px - 1em);
 		width: 40px;
 		height: 40px;
 		background-image: url('/images/circle-with-cross.svg');
@@ -58,5 +56,16 @@
 }
 
 @media all and (max-width: 899px) {
-	.popbox { top: 5%; max-width: 90%; max-height: 90%; }
+	.popbox { width: 80%; height: 85%; }
+	.popclose {
+		right: calc(5% - 20px);
+		right: -webkit-calc(5% - 20px);
+	}
+}
+@media all and (min-width: 900px) {
+	.popbox { width: 800px; }
+	.popclose {
+		right: calc(50% - 420px - 1em);
+		right: -webkit-calc(50% - 420px - 1em);
+	}
 }

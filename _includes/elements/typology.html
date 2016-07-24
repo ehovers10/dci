@@ -3,6 +3,7 @@
 {% unless include.biblio == "no" %}{% assign carol = '' %}{% endunless %}
 
 <table class="typology">
+<thead>
   <tr>
     <th>Type</th>
     {% for types in dist limit: 1 %}
@@ -11,6 +12,8 @@
     {% endfor %}
     {% endfor %}
   </tr>
+</thead>
+<tbody>
   {% for kind in dist %}
   <tr class="type {% cycle 'odd', 'even' %}">
     <td>{{ kind[0] | capitalize }}</td>
@@ -37,6 +40,7 @@
     {% endfor %}
   </tr>
   {% endfor %}
+</tbody>
 </table>
 
 {% comment %}

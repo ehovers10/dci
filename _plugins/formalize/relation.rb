@@ -8,13 +8,12 @@ module Jekyll
     def source_data()
       @sourcefile = @context.registers[:site].data['predicates']
       @situations = ["s1","s2","s3"]
-      @kind = "+"
       @defaultvalue = "&omega;"
-      @divider = %{<div class="divider"></div>}
       @continue = %{&#10649;}
       @contclass = ["sit","ent"]
       @joinattributes = ["sit","ent"]
       @keep = "keep"
+      @skipattr = ["div"]
     end
 
 #=======#
@@ -110,7 +109,7 @@ module Jekyll
         }
         if skiprow == input[1].size
           temprow = {}
-          input[1][0].each_key { |key|
+          input[1].last.each_key { |key|
             temprow = t1r.merge({key => nil}) unless @joinattributes.include? key
           }
         end
@@ -152,34 +151,73 @@ module Jekyll
     def group(table,attribute = "sit")
       source_data()
       groupedtable = []
-      table.group_by { |row| row[attribute] }.each_pair { |key,group|
-        group.last.merge!("div" => "") unless group.last[attribute] == attribute
-        group.each { |row| groupedtable.push(row) }
+      grouplist = attribute.split(" ")
+      table.group_by { |row| row[grouplist[0]] }.each_pair { |key,group|
+        group.last.merge!("div" => "div") unless group.last[grouplist[0]] == grouplist[0]
+        if grouplist[1]
+          group.group_by { |row| row[grouplist[1]] }.each_pair { |key,subgroup|
+            unless subgroup.last[grouplist[1]] == grouplist[1] ||
+              (subgroup.last["div"] && subgroup.last["div"].include?("div"))
+                subgroup.last.merge!("div" => "subdiv")
+            end
+            subgroup.each { |row| groupedtable.push(row) } }
+        else
+          group.each { |row| groupedtable.push(row) }
+        end
       }
       groupedtable
     end
 
+  # Focus class
+    def focus (input,type)
+      input.each { |row|
+        row.each_pair { |key,val|
+          #raise %{#{input[row]}}
+          row[key] = %{<span class="focus">#{val}</span>} if type == val } }
+      input
+    end
+
   # Compare for homogeneity
-    def compare(table,attribute)
+    def compare(table,attribute = "sit|+")
       source_data()
-      #raise %{#{table.group_by { |row| row["sit"]}.each_key {|k| k}}}
-      table.group_by { |row| row["sit"] }.each_pair { |key,group|
-        #raise %{#{group[0]}}
-        count = group.size
+      args = attribute.split("|")
+      grp = args[0].split(" ")
+      comp = args[1].split(" ")
+      grouplist = []
+      subj = table.first.keys.index(table.first.key("subj"))
+      pred = table.first.keys.index(table.first.key("pred"))
+      #raise %{#{pred}}
+      table.group_by { |row| row[grp[0]] }.each_pair { |key,group|
+        if grp[1]
+          group.group_by { |row| row[grp[1]] }.each_pair { |subkey,subgroup|
+            grouplist.push({subkey => subgroup,"size" => subgroup.size}) }
+        else
+          grouplist.push({key => group,"size" => group.size})
+        end
+      }
+      #raise %{Grouplist: #{grouplist}}
+
+      grouplist.each { |set|
         pos = 0
-        group.each { |row|
-          if row["ent"].length == 1
-            row.merge!("ent" => %{<span class="count">#{row["ent"]}</span>})
-          end
-          if row[attribute] == "+"
+        set.first.last.each { |val|
+          match = val.keys[pred]
+          unless val[match].nil?
+            val.merge!( match => wrap("count",val[match]) )
             pos += 1
-            row.merge!(attribute => %{<span class="count">#{row[attribute]}</span>})
-          end }
-          count == pos || pos = 0 ? keep = %{&#x2713;} : keep = "X"
-          group[count / 2].merge!(@keep => keep)
+          end
+        }
+        set["size"] == pos || pos = 0 ? keep = %{&#x2713;} : keep = %{X}
+        set.first.last[set["size"] / 2].merge!(@keep => keep)
       }
       table.first.merge!(@keep => @keep)
       table
+    end
+
+    def wrap(type,item)
+      case type
+      when "count"
+        %{<span class="count">#{item}</span>}
+      end
     end
 
 #=========#
@@ -191,15 +229,14 @@ module Jekyll
       post = %{</div>}
       headlist = []
       attrlist = []
-      table[0].each_key { |k| headlist.push(k) }
-      table[1].each_key { |k| attrlist.push(k) }
+      table[0].each_key { |k| headlist.push(k) unless @skipattr.include?(k) }
+      table[1].each_key { |k| attrlist.push(k) unless @skipattr.include?(k) }
       attrlist.push(@keep)
       header = %{<div class="head">}
       headlist.each { |a|
         header << %{<div class="attribute #{a}">#{a.split("-").last}</div>} }
       header << "</div>"
 
-      #raise %{Table #{table}}
       body = ""
       table.each_with_index { |row,i|
         next if i == 0
@@ -232,7 +269,9 @@ module Jekyll
       end
 
       if table[index].has_key? "div"
-        output = %{<div class="divider">#{output}</div>}
+        unless attrib == "keep"
+          output = %{<div class="#{table[index]["div"]}">#{output}</div>}
+        end
       end
 
       output

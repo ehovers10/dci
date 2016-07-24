@@ -106,15 +106,21 @@ div.relation {
       span.count {
         color: red;
       }
-      div.divider {
-        border-bottom: 1px solid #aaa;
+      div.div {
+        border-bottom: 3px solid #aaa;
         margin:0;
         width: 100%;
+      }
+      div.subdiv {
+        border-bottom: 1px solid red;
       }
       &.keep {
         vertical-align: top;
         line-height: 0.5em;
         border-right: none;
+      }
+      .focus {
+        font-weight: 600;
       }
 
     }

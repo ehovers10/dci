@@ -70,7 +70,7 @@ js: bunch
 {{ bearsdanger | group | display_table }}
 </div>
 <div class="area compare">
-{{ bearsdanger | group | compare: "+-bears" | display_table }}
+{{ bearsdanger | group | compare: "sit|+-bears" | display_table }}
 </div>
 <div class="area restrict">
 {{ bears | concat: danger | predicate | situ: "s2" | display_table }}
@@ -81,7 +81,7 @@ js: bunch
 
 <h3>Contrastive modification</h3>
 
-{% assign grizzlybears = allbears | concat: bears | modify %}
+{% assign grizzlybears = allbears | focus: "grizzly" | concat: bears | modify %}
 {% assign names = "alt modify refine" | split: " " %}
 
 <div class="bunch">
@@ -92,7 +92,7 @@ js: bunch
 </ul>
 
 <div class="area alt">
-{{ allbears | display_table }}
+{{ allbears | focus: "grizzly" | display_table }}
 </div>
 <div class="area modify">
 {{ grizzlybears | display_table }}
@@ -105,7 +105,7 @@ js: bunch
 
 <h3>Contrastive plural predication</h3>
 
-{% assign gbdanger = grizzlybears | refine | concat: danger | predicate %}
+{% assign gbdanger = allbears | focus: "grizzly" | concat: bears | modify | refine | concat: danger | predicate %}
 {% assign names = "predicate group compare restrict" | split: " " %}
 
 <div class="bunch">
@@ -119,10 +119,10 @@ js: bunch
 {{ gbdanger | display_table }}
 </div>
 <div class="area group">
-{{ gbdanger | group | group: "all-bears" | display_table }}
+{{ gbdanger | group: "sit all-bears" | display_table }}
 </div>
 <div class="area compare">
-{{ gbdanger | compare: "all-bears" | display_table }}
+{{ gbdanger | compare: "sit all-bears|grizzly" | display_table }}
 </div>
 <div class="area restrict">
 
