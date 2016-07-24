@@ -488,7 +488,8 @@ ul.body-nav {
     width: calc(100% - (30px / 2)); } }
 /* Set list format */
 ul.setlist {
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
   ul.setlist li {
     list-style-type: none;
     display: inline;
@@ -498,7 +499,8 @@ ul.setlist {
       border-right: none; }
 
 ul.seqlist {
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
   ul.seqlist li {
     list-style-type: none;
     display: inline;
@@ -650,19 +652,25 @@ div.relation {
   .drswrap .downdate {
     text-decoration: line-through; }
 
-@media all and (max-width: 699px) {
+/*@media all and (max-width: 699px) {
   .atom {
     margin-left: 0;
-    width: 100%; } }
+    //width: 100%;
+    overflow-x: scroll;
+  }
+  .molecule {
+    //width: 100%;
+  }
+}
 @media all and (min-width: 700px) {
   .atom {
-    margin-left: 1em; } }
-div.formalism {
-  margin: 0;
-  width: 100%; }
-
+    margin-left: 1em;
+  }
+}*/
 .molecule {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  width: 100%;
+  border: 1px solid #aaa; }
   .molecule div.title {
     font-family: glam;
     font-size: 1.5em;
@@ -670,30 +678,46 @@ div.formalism {
     font-weight: 600; }
     .molecule div.title.off {
       display: none; }
-  .molecule div.atom {
-    margin-bottom: 0.5em; }
-  .molecule div.eqn div.lhs {
-    display: table-cell;
-    text-align: right; }
-  .molecule div.eqn div.conn {
-    display: table-cell;
-    text-align: center;
-    padding: 0 1em; }
-  .molecule div.eqn div.rhs {
-    display: table-cell;
-    text-align: left; }
-    .molecule div.eqn div.rhs.mult {
-      border-left: 2px solid #000;
-      border-radius: 5px;
-      padding: 2px 0 2px 5px; }
-    .molecule div.eqn div.rhs .rhs1 {
-      float: left; }
-  .molecule div.wrap {
-    display: table-row; }
-    .molecule div.wrap div {
-      display: table-cell; }
-  .molecule div.categorical {
-    display: inline; }
+
+div.atom {
+  max-width: 800px;
+  background: #ccc;
+  overflow-x: auto;
+  text-align: left; }
+  div.atom .title {
+    background: #fff;
+    margin: 0; }
+  div.atom .molecule {
+    margin-bottom: 0;
+    border: none; }
+
+div.eqn div.lhs {
+  display: table-cell;
+  text-align: right; }
+  div.eqn div.lhs .rhs {
+    min-width: 0; }
+div.eqn div.conn {
+  display: table-cell;
+  text-align: center;
+  padding: 0 1em; }
+div.eqn div.rhs {
+  display: table-cell;
+  text-align: left;
+  min-width: 150px; }
+  div.eqn div.rhs.mult {
+    border-left: 2px solid #000;
+    border-radius: 5px;
+    padding: 2px 0 2px 5px; }
+  div.eqn div.rhs .rhs1 {
+    float: left; }
+
+div.wrap {
+  padding: 0.25em 0.5em; }
+  div.wrap div {
+    display: table-cell; }
+
+div.categorical {
+  display: inline; }
 
 .box {
   margin: 1em; }
