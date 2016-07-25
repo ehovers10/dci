@@ -22,8 +22,8 @@ generic quantifier:
   translation: "GEN(A)(B)"
   definiton:
     -
-      - "*A,B: et*"
-      - "*&delta;(i): et* &rarr; *et* a selection function determined by context *i*"
+      - "A,B: et"
+      - "&delta;(i): et &rarr; et a selection function determined by context i"
     - fxn: eqn
       arg:
         lhs: "A<sub>pref</sub>"
@@ -46,14 +46,14 @@ generic quantifier:
               conn: otherwise
               rhs: "&nbsp;"
 structural quantifier:
-  translation: "&forall;<sub>**R**</sub>(A)(B)"
+  translation: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
   definition:
     -
       - "A: et"
       - "B: (et)t"
     - fxn: eqn
       arg:
-        lhs: "&forall;<sub>**R**</sub>(A)(B)"
+        lhs: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
         conn: =
         rhs:
           - fxn: eqn
@@ -61,7 +61,7 @@ structural quantifier:
               lhs: "1"
               conn: if
               rhs:
-                - "{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; **R**"
+                - "{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; <span class='set'>R</span>"
                 - "&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;"
           - fxn: eqn
             arg:

@@ -1,0 +1,35 @@
+table.typology {
+  border-collapse: collapse;
+  font-size: 0.8em;
+  border: 1px solid #000;
+
+  td {
+    padding: 1em;
+    border: 1px solid #aaa;
+  }
+
+  td.embed {
+    padding: 0;
+
+    table {
+      height: 100%;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0;
+
+      td {
+        padding: 1em;
+        border: 0;
+        border-bottom: 1px solid #aaa;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+tr.even td {
+  background: #ccc;
+}

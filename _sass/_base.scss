@@ -136,34 +136,21 @@ a {
 /**
  * Blockquotes
  */
-@media all and (min-width: 700px) {
-  blockquote {
-      color: #000;
-      border-left: 4px solid $grey-color-light;
-      padding-left: $spacing-unit / 2;
-      padding-right: $spacing-unit;
-      font-size: 0.9em;
-      text-align: justify;
-      //letter-spacing: -1px;
-      margin-bottom: 1em;
-  }
-}
-@media all and (max-width: 699px) {
-  blockquote {
-      color: #000;
-      border-left: 2px solid $grey-color-light;
-      padding-left: 8px;
-      font-size: 0.9em;
-      text-align: left;
-      //letter-spacing: -1px;
-      margin-left: 0;
-  }
-}
+blockquote {
+    color: #000;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit;
+    font-size: 0.9em;
+    text-align: justify;
+    //letter-spacing: -1px;
+    margin-bottom: 1em;
 
-.extitle {
-  margin-right:0.5em;
-  font-family: $header-ff;
-  font-size: $ex-fs;
+    @include media-query($mobile) {
+      text-align: left;
+      margin-left: 0;
+      padding-right: 0;
+    }
 }
 
 /**
@@ -247,16 +234,5 @@ svg {
 
   path {
     fill: $grey-color;
-  }
-}
-
-/**
- * Footnotes
- */
-.footnotes {
-  fontsize: $small-font-size;
-
-  ol {
-    margin: 0;
   }
 }

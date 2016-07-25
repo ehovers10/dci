@@ -8,16 +8,16 @@ strict conditional:
         lhs: "A &#x297d; B"
         conn: =
         rhs:
-          fxn: eqn
-          arg:
-            lhs: "1"
-            conn: if
-            rhs: "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
-          fxn: eqn
-          arg:
-            lhs: "0"
-            conn: otherwise
-            rhs: "&nbsp;"
+          - fxn: eqn
+            arg:
+              lhs: "1"
+              conn: if
+              rhs: "&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+          - fxn: eqn
+            arg:
+              lhs: "0"
+              conn: otherwise
+              rhs: "&nbsp;"
 variably strict conditional:
   translation:
     fxn: eqn

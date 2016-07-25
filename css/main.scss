@@ -30,10 +30,11 @@ $big-width:        900px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+$mobile:           700px;
 
 
 
-// Using media queries with like this:
+// Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
@@ -53,10 +54,11 @@ $on-laptop:        800px;
         "base",
         "layout",
         "footer",
+        "navigation",
+        "chapter",
         "formalism",
         "relations",
-        "ldrt",
-        "formalism-div",
-        "pop",
+        "reference",
+        "typology",
         "print"
 ;

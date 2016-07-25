@@ -1,0 +1,45 @@
+/* Abstract */
+.abstract {
+  font-size: $small-font-size;
+  margin: 1em;
+  text-align: justify;
+
+  &.toc {
+    margin-left: -1em;
+  }
+
+  @include media-query($mobile) {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+
+/* Table of contents */
+.toc {
+  .chapter {
+    font-size: 1.5em;
+  }
+  li {
+    list-style-type: none;
+  }
+  .item {
+    margin-top: 0.5em;
+  }
+
+  @include media-query($mobile) {
+    ul.section {
+      margin-left: 0;
+    }
+    ul.subsection {
+      margin-left: 1em;
+    }
+  }
+}
+
+/* Chapter end */
+.references, .appendices, .comments  {
+  border-top: 1px solid #aaa;
+  padding-top: 1.5em;
+  margin-top: 0.5em;
+}

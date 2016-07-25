@@ -10,7 +10,8 @@ module Jekyll
     def render(context)
       @num = context['page']['count']['ex']
       context['page']['count']['ex'] += 1
-      output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-def'><div class='title'><span class='head'>Example #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + super + "</div></div>"
+      output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-ex'><div class='title'><span class='head'>Example #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + super + "</div></div>"
+      output << %{<div id="#{@title.strip.downcase.gsub /\W+/, '-'}-show-tip" class="tooltip defn">} + super + %{</div>}
       output
     end
 
@@ -27,6 +28,7 @@ module Jekyll
       @num = context['page']['count']['def']
       context['page']['count']['def'] += 1
       output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-def'><div class='title'><span class='head'>Definition #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + super + "</div></div>"
+      output << %{<div id="#{@title.strip.downcase.gsub /\W+/, '-'}-show-tip" class="tooltip defn">} + super + %{</div>}
       output
     end
 
@@ -43,6 +45,7 @@ module Jekyll
       @num = context['page']['count']['obs']
       context['page']['count']['obs'] += 1
       output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-obs'><div class='title'><span class='head'>Observation #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + super + "</div></div>"
+      output << %{<div id="#{@title.strip.downcase.gsub /\W+/, '-'}-show-tip" class="tooltip defn">} + super + %{</div>}
       output
     end
 

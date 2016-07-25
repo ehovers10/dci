@@ -1,0 +1,168 @@
+/* Glossary */
+ul.glossary {
+  li {
+    list-style-type: none;
+    .title {
+      font-weight:600;
+      font-size:1.1em;
+    }
+    .subtitle {
+      font-size:0.8em;
+      margin-left:0.75em;
+      margin-top:0.75em;
+    }
+    ul.inline li {
+      display: inline-block;
+    }
+  }
+
+  @include media-query($mobile) {
+    margin: 0;
+  }
+}
+
+/* Bibliography */
+ul.bib {
+  list-style-type:none;
+  //text-align:justify;
+  ul {
+    list-style-type:none;
+  }
+  li {
+    padding-left:0.5em;
+    text-indent:-0.5em;
+    margin-bottom: 0.5em;
+  }
+  a {
+    margin-bottom: 0;
+  }
+  .title {
+    &.book {
+      text-decoration: underline;
+    }
+  }
+  .journal {
+    font-style: italic;
+  }
+  .url {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
+
+  @include media-query($mobile) {
+    margin-left: 0;
+  }
+}
+
+ul.bib2 {
+  list-style-type:none;
+  padding-left:0.25em;
+  margin-left:0.25em;
+}
+
+/* Notes */
+.footnotes {
+  margin: 0 5%;
+  text-align: justify;
+  font-size: $small-font-size;
+
+  ol {
+    margin: 0;
+  }
+
+  @media screen {
+    .reversefootnote {
+      display: none;
+    }
+  }
+}
+
+/* Inline citation */
+.gloss {
+  color: #008000;
+}
+
+a.note:link {
+    border: 1px solid $brand-color;
+    border-radius: 3px;
+    color: $brand-color;
+    padding: 2px;
+    line-height: 0.875;
+    text-decoration: none;
+    display: inline-block;
+}
+a.note:hover {
+    background-color: $brand-color;
+    color: #fff;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 1000;
+  left: 1em;
+  top: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5em;
+  width: 50%;
+  max-width: 400px;
+  display: none;
+  text-indent: 0;
+
+  &.comment {
+    background: rgba(0,51,204,0.9);
+  }
+  &.reference {
+    background: rgba(100,100,100,0.9);
+  }
+  &.glossary {
+    background: rgba(0,128,0,0.9);
+  }
+  &.defn {
+    background: rgba(0,0,128,0.9);
+  }
+  .molecule {
+    border: none;
+    .atom {
+      background: none;
+    }
+  }
+}
+
+/* Definition blocks */
+.def {
+  margin: 0 1em;
+  .title {
+    .head {
+      margin-right:0.5em;
+      font-size: $ex-fs;
+      font-family: $header-ff;
+    }
+  }
+  .molecule {
+    border: none;
+    .atom {
+      background: #fff;
+    }
+  }
+
+  @include media-query($mobile) {
+    margin: 0;
+    padding-right: 0;
+  }
+}
+
+/* Examples */
+.example {
+  .item {
+    padding-left:1em;
+    text-indent:-1em;
+    .name {
+      font-weight: 600;
+    }
+  }
+}

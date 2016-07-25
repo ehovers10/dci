@@ -52,7 +52,7 @@ module CiteEH
       secondary = %{ et al.}
     end
 
-    return %{<span class="author">#{primary}#{secondary}</span>}
+    return %{<span class="author">#{primary}#{secondary} </span>}
 
   end
 

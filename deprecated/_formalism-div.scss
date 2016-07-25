@@ -1,0 +1,80 @@
+.molecule {
+  margin-bottom: 1em;
+  width: 100%;
+  border: 1px solid #aaa;
+  text-align:left;
+  div.title {
+    font-family: glam;
+    font-size:1.5em;
+    margin-bottom:0.5em;
+    font-weight:600;
+
+    &.off {
+      display:none;
+    }
+  }
+  .molecule {
+    border: none;
+  }
+}
+div.atom {
+  //margin-bottom:0.5em;
+  max-width: 700px;
+  background: #ccc;
+  overflow-x: auto;
+  text-align:left;
+
+  .title {
+    background: #fff;
+    margin:0;
+  }
+  .molecule {
+    margin-bottom:0;
+    border:none;
+  }
+}
+
+div.eqn {
+  div.lhs {
+    display: table-cell;
+    text-align: right;
+
+    .rhs {
+      min-width: 0;
+    }
+  }
+  div.conn {
+    display: table-cell;
+    text-align: center;
+    padding: 0 1em;
+  }
+  div.rhs {
+    display: table-cell;
+    text-align: left;
+    min-width: 150px;
+
+
+
+    &.mult {
+      border-left: 2px solid #000;
+      border-radius: 5px;
+      padding: 2px 0 2px 5px;
+    }
+
+    .rhs1 {
+      float: left;
+    }
+  }
+}
+
+div.wrap {
+  //width: 100%;
+  padding: 0.25em 0.5em;
+  div {
+    display: table-cell;
+  }
+}
+
+div.categorical {
+  display: inline;
+}
