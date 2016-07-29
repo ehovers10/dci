@@ -1,7 +1,7 @@
 $(document).ready( function() {
 
   // Set margin of hidden areas
-  $(".area").each( function() {
+  $(".area.offset").each( function() {
       var bunchwidth = $(this).parent().width() / 2,
           areawidth = $(this).width() / 2,
           offset = bunchwidth - areawidth;
@@ -9,7 +9,7 @@ $(document).ready( function() {
   });
 
   // Set margin of shown area
-  $(".area:first-of-type").each( function() {
+  $(".area.offset:first-of-type").each( function() {
     var bunchwidth = $(this).parent().width() / 2,
         areawidth = $(this).children().width() / 2,
         offset = bunchwidth - areawidth;
