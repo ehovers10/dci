@@ -35,6 +35,16 @@
   display: none;
 }
 
+div.show {
+  display: initial;
+}
+span.show {
+  display: initial;
+}
+li.show {
+  display: initial;
+}
+
 .bunch {
   width: 100%;
   text-align: center;

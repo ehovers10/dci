@@ -17,9 +17,9 @@ js: [bunch]
 
 Disputes can be frivolous, fractured, and fraudulent. They can derail conversations, and generate so much animosity that perpetuating the dispute itself comes to mean more than the prospect of resolving it.  These disputes may have very little to do with actual conflict over the informational potential of the disputative language used to express them, instead being driven by *ad hominem* and *ad ideologiam* tendencies.
 
-But dispute can also be a fruitful tool for people involved in an honest, cooperative attempt to further mutual knowledge. For one thing, interlocutors sometimes lose track of the cooperative effort, and it is valuable to have a means of correcting them to bring them back on to the task at hand.  But dispute can also play a more central role in the project of inquiry. Corrections, I have claimed, are a crucial tool in properly vetting conjectures in discourse. As such, some element of dispute is central to the enterprise of inquiry.
+But dispute can also be a fruitful tool for people involved in an honest, cooperative attempt to further mutual knowledge. For one thing, interlocutors sometimes lose track of the cooperative effort, and it is valuable to have a means of correcting them to bring them back on to the task at hand.  But dispute can also play a more central role in the project of inquiry. Corrections, [I have claimed](/chapters/knowledge-in-the-image-of-inquiry.html#correction), are a crucial tool in properly vetting conjectures in discourse. As such, some element of dispute is central to the enterprise of inquiry.
 
-I contend that the conjecture/correction discourse pair provides a genuine contribution to inquiry. In the previous chapter, I motivated this status by providing a model of discourse dynamics that carves out a distinctive operation on information that this contribution makes. In this chapter I explore another criterion for genuine a contribution: that it be represented in some conventionalized linguistic tool. I think that this tool is {% gloss focus %}, and that the virtues of collaborative discourse dynamics come to prominence in explaining focus interpretation when we examine {% gloss contrastive topic %} specifically.
+I contend that the conjecture/correction discourse pair provides a genuine contribution to inquiry. [In the previous chapter](/chapters/collaborative-discourse-dynamics.html), I motivated this status by providing a model of discourse dynamics that carves out a distinctive operation on information states made by this contribution type. In this chapter, I explore another criterion for genuine contribution: that it be represented in some conventionalized linguistic tool. I think that this tool is {% gloss focus %}, and that the virtues of collaborative discourse dynamics come to prominence in explaining focus interpretation when we examine {% gloss contrastive topic %} specifically.
 
 The following little discourse, which I label *Bears*, will be the stalking horse for the discussion to follow.
 
@@ -28,9 +28,9 @@ The following little discourse, which I label *Bears*, will be the stalking hors
   {{ "grizzly" | example: "sent" }}
 {% endex %}
 
-The bracketed material represents {% gloss focus %}. *Grizzly* in the (b) sentence is marked with a *cf* for {% gloss contrastive focus %}. We will have more to say about the importance of focus in this dialogue later on. For now, there are a number of interesting pretheoretical observations to be made about the [Bears] dialogue.
+Here and in what follows, bracketed material represents {% gloss focus %}. *Grizzly* in the **B** sentence of *Bears* is marked with a *cf* for {% gloss contrastive focus %}, in view of the apparent function of the focus in setting grizzlies apart from other members of the bear class. We will have more to say about the importance of focus in this dialogue later on. For now, there are a number of interesting pre-theoretical observations to be made about the *Bears*.
 
-First, the (b) utterance is not merely a dismissal of (a). Instead, it is a natural follow up to, which is to say that (b) {% gloss coheres %}. with (a). An ability to resolve a coherence relation among a group of utterances in a discourse is a crucial element of interpreting the discourse in context. A particularly salient coherence relation may force an interpretation to light. For instance, consider the following example due to Andrew Kehler {% cite kehler2000 | pages: 539 | noname %}:
+First, the **B** utterance in *Bears* is not a flat dismissal of **A**. Instead, it is a natural follow up, in that it seems to pick up on and develop a previously initiated theme. Another way to say this is that the *Bears* completion represents a {% gloss coherent %} advancement of the discourse. An ability to resolve a coherence relation among a group of utterances in a discourse is a crucial element of interpreting that discourse in context. A particularly salient coherence relation may force an interpretation to light. For instance, consider the following example due to Andrew Kehler {% cite kehler2000 | pages: 539 | noname %}:
 
 <!-- Presidents -->
 {% ex Presidents %}
@@ -39,7 +39,13 @@ First, the (b) utterance is not merely a dismissal of (a). Instead, it is a natu
 
 The [Presidents](#presidents){: #presidents-show .tooled} dialogue is marked to indicate that it can seem somewhat stilted, resembling two independent sentences rather than a coherent story line. However, if we point out that the subjects in the two sentences can refer to past presidents and interpret the predicates as picking out the subjects' respective publicized traits, we impose a *parallel* relation on the two sentences and uptake goes through much more smoothly.
 
-Kehler suggests that coherence relations imbue a discourse with an additional meaning that goes beyond the sum of its individual parts. He also maintains that linguistic coherence is subject to a Neo-Humean classification based on the basic forms of connection between idea. All connections among ideas, David Hume suggests {% cite hume1777 | noname %}, can be reduced to one of three principal such connections: *Resemblance*, *Contiguity* in spacetime, and *Cause/Effect*. Hume's reductive base is perhaps a bit too narrow. If we construre *resemblance* broadly enough, we can bring a wide swath of connections under its umbrella, but it seems to me that there are basic relations among ideas that Hume's reduction leaves out -- in particular, the set of relations corresponding to the *relative generality* of two ideas pertaining to the same domain.[^mereology] The [Bears](#bears-ex){: #bears-show .tooled} completion is the flip-side of resemblance relations in that it highlights a *distinction* within a class that was previously over-looked. In moving from a coarser to a more granular conception of the sub-space of reality corresponding to beardom, the [Bears](#bears-ex){: #bears-show .tooled} dialogue exhibits a relation of {% gloss refinement %} between the ideas expressed in its utterances.
+Kehler suggests that coherence relations imbue a discourse with an additional meaning that goes beyond the sum of its individual parts. He also maintains that linguistic coherence is subject to a Neo-Humean classification based on the basic forms of connection between idea. All connections among ideas, David Hume suggests {% cite hume1777 | noname %}, can be reduced to one of three principal ones: *Resemblance*, *Contiguity* in spacetime, and *Cause/Effect*.
+
+Hume's reductive base is perhaps a bit too narrow. True, if we construe *resemblance* broadly enough, we can bring a wide swath of connections under its umbrella, but it seems to me that there are basic relations among ideas that Hume's reduction leaves out -- in particular, the set of relations corresponding to the *relative generality* of two ideas pertaining to the same domain. The relation of *part* to *whole* is a philosophical celebrity within the family of relative generality relations. That such a relation is a basic logical connection between ideas is emphasized by Goodman and Leonard {% cite goodman1940 | noname %} in their classic explication of the calculus of individuals:
+
+> "The relations of segments of the universe are treated in traditional logistic at two places, first in its theorems concerning the identity and diversity of individuals, and second in its calculus of membership and class-inclusion. But further relations of segments and of classes frequently demand consideration. For example, what is the relation of the class of windows to the class of buildings? No member of either class is a member of the other, nor are any of the segments isolated by the one concept identical with segments isolated by the other. Yet the classes themselves have a very definite relation in that each window is a part of some building. We cannot express this fact in the language of a logistic which lacks a part-whole relation between individuals unless, by making use of some special physical theory, we raise the logical type of each window and each building to the level of a class -- say a class of atoms -- such that any class of atoms that is a window will be included (class-inclusion) in some class that is a building. Such an unforutnate dependence of logical formulation upon the discovery and adoption of a special physical theory, or even upon the presumption that such a suitable theory could in every case be discovered in the course of time, indicates serious deficiencies in the ordinary logistic. Furthermore, a raising of type like that illustrated above is often precluded in a constructional system by other considerations govering the choice of pimitive ideas." {% cite goodman1940 | noname | pages: 45 %}
+
+The [Bears](#bears-ex){: #bears-show .tooled} completion, too, expresses a relative generality coherence relation. It is the flip-side of resemblance relations in that it highlights a *distinction* within a class that was previously over-looked. In moving from a coarser to a more granular conception of the sub-space of reality corresponding to beardom, the [Bears](#bears-ex){: #bears-show .tooled} dialogue exhibits a relation of {% gloss refinement %} between the ideas expressed in its utterances.
 
 <!-- Refinement -->
 {% obs Refinement %}
@@ -55,9 +61,9 @@ The function of coherence relations is to improve interprebility of the discours
   {{ "druggy" | example: "sent" }}
 {% endex %}
 
-While perhaps no less true than the original correction, I've marked the completion in [Druggy bears](#druggy-bears-ex){: #druggy-bears-show .tooled} to indicate the increased processing load it carries.[^processingload] This, I suggest, is because the completion expresses a less natural refinement of the discourse domain. As a result, the discourse coherence is reduced.
+While perhaps no less true than the original correction, I've marked the completion in [Druggy bears](#druggy-bears-ex){: #druggy-bears-show .tooled} to indicate the increased processing load it carries.[^processingload] This, I suggest, is because the completion expresses a less natural refinement of the discourse domain. As a result, discourse coherence is reduced.
 
-There is a distinctive, disputative tone in the [Bears](#bears-ex){: #bears-show .tooled} completion, but it differs from that in, for instance:
+The [Bears](#bears-ex){: #bears-show .tooled} dialogue may be coherent, but there is a distinctive, disputative tone its completion. Still, the nature of the dispute differs from that in, for instance:
 
 <!-- Boars -->
 {% ex Boars %}
@@ -66,51 +72,51 @@ There is a distinctive, disputative tone in the [Bears](#bears-ex){: #bears-show
 
 In [Boars](#boars-ex){: #boars-show .tooled}, the second utterance breaks the flow of inquiry to attempt to fix a perceived error in the preceding discourse. In this example, the disputative *You mean...* is used to signal an attempted {% gloss repair strategy %}.
 
-The observation that the [Bears](#bears-ex){: #bears-show .tooled} dialogue exhibits coherent discourse suggests that the disputative tone of its completion ought not to be treated as signaling a break in the inquiry. Imposing the refinement relation on the discourse eliminates any sense of fault on the part of the initiation in allowing for proper uptake. Instead, we interpret the completion utterance as a {% gloss correction %}, which is characterized by a dual function of providing: (i) a *denial* of some element of the preceding attempted contribution to discourse and (ii) a *positive contribution* that is related in a salient way to the preceding attempted contribution.
+The observation that the [Bears](#bears-ex){: #bears-show .tooled} dialogue exhibits coherent discourse suggests that the disputative tone of its completion ought not to be treated as signaling a break in the inquiry. Instead, imposing the refinement relation on the discourse eliminates the sense of fault on the part of the initiation in allowing for proper uptake. Instead, we interpret the completion utterance as a {% gloss correction %}, which is characterized by a dual function of providing: (i) a *denial* of some element of the preceding attempted contribution to discourse and (ii) a *positive contribution* that is related in a salient way to the preceding attempted contribution. A correcting utterance serves as an amendment to the discourse, and as such it crucially relies on the presence of an initiation. This is why discourse initial utterances rarely involve contrastive focus. A correct*ion* requires a correct*ible* to amend.
 
 <!-- Correction -->
 {% obs Correction %}
   {{ site.data.observations.correction | markdownify }}
 {% endobs %}
 
-As elements of coherent dialogue involving correction, I refer to sentences such as the initiation in [Bears](#bears-ex){: #bears-show .tooled} as {% gloss correctibles %}.
-
-While the completion in the [Bears](#bears-ex){: #bears-show .tooled} dialogue is a natural one, it certainly isn't the only {% gloss felicitous %} response to the initiation. It is open to the responder to challenge the initiation in another way, but interestingly, it is also open to the initiator to retrench in certain ways, as in the following alternate extension of the *Bears* initiation:
+While the completion in the [Bears](#bears-ex){: #bears-show .tooled} dialogue is a natural one, it certainly isn't the only {% gloss felicitous %} response to the initiation. It is open to the responder to challenge the initiation in another way, but interestingly, it is also open to the initiator to retrench in certain ways, as in the following alternate extension of the discourse:
 
 <!-- Teddy bears -->
 {% ex Teddy bears %}
   {{ "teddy" | example: "sent" }}
 {% endex %}
 
-The retrenchment in (c) strikes my ear as an acceptable response to the challenge in (b). It is similar to the data that Thony Gillies and Kai von Fintel {% cite vonfintel2008 | noname %} analyze in regard to retraction of *might* claims. Consider the following, drawn from {% cite vonfintel2008 | pages: 81 %}:
+**A**'s retrenchment in *Teddy bears* strikes my ear as an acceptable response to **B**'s challenge. It is similar to the data that Thony Gillies and Kai von Fintel {% cite vonfintel2008 | noname %} analyze in regard to retraction of *might* claims. Consider the following, drawn from {% cite vonfintel2008 | pages: 81 %}:
 
 <!-- Keys -->
 {% ex Keys %}
   {{ "keys" | example: "sent" }}
 {% endex %}
 
-*Might* claims are sometimes retracted when presented with countervailing evidence available in a different context from the original utterance. But as [Keys](#keys-ex){: #keys-show .tooled} makes clear, *might* claims are ocassionally *resiliant* in the face of such challenges. The felicity of the exchange in [Teddy bears](#teddy-bears-ex){: #teddy-bears-show .tooled} suggests that correctible initiations exhibit similar resilliance.
+*Might* claims are sometimes retracted when presented with countervailing evidence available in a different context from the original utterance. But as [Keys](#keys-ex){: #keys-show .tooled} makes clear, *might* claims are ocassionally *resilient* in the face of such challenges. The felicity of the exchange in [Teddy bears](#teddy-bears-ex){: #teddy-bears-show .tooled} suggests that correctible initiations exhibit similar resilience.
 
-<!-- Resiliance -->
-{% obs Resiliance %}
-  {{ site.data.observations.resiliance | markdownify }}
+<!-- Resilience -->
+{% obs Resilience %}
+  {{ site.data.observations.resilience | markdownify }}
 {% endobs %}
 
-A corrolary to the resiliance of correctible initiations is that completions that involve correction add to the discourse in a specific way. They don't just link back to previous discourse, but change it. That is, corrections are *productive*.
+A corrolary to the resilience of correctible initiations is that corrective completions don't simply link back to previous discourse and remove an element from the discourse representation. Instead, they add to the discourse in a specific way, thereby opening an avenue for the initial speaker to reject the alteration. That is, corrections are *productive*.
 
 <!-- Productivity -->
 {% obs Productivity %}
   {{ site.data.observations.productivity | markdownify }}
 {% endobs %}
 
-The exchange in [Teddy bears](#teddy-bears){: #teddy-bears-show .tooled} reveals an additional interesting fact about disputative discourse. Even if it is appropriate for an initiator to refuse to retract a correctible, the challenge provided in (b) is no less appropriate. The flip-side of the resiliance of correctibles is that they are also highly susceptible to challenge.
+The exchange in [Teddy bears](#teddy-bears){: #teddy-bears-show .tooled} reveals an additional interesting fact about disputative discourse. Even if it is appropriate for an initiator to refuse to retract a correctible, the challenge provided byt the correction is no less appropriate. The flip-side of the resilience of correctibles is that they are also highly susceptible to challenge.
 
 <!-- Susceptibility -->
 {% obs Susceptibility %}
   {{ site.data.observations.susceptibility | markdownify }}
 {% endobs %}
 
-The dual observations of *resiliance* and *susceptibility* provide an interesting obstacle to an analysis of the semantics and discourse dynamcis of disputative language involving correctibles. *Susceptibility* pushes us toward a more strict representation of the content of the initiation to make sense of the appropriateness of the completion. That is, it seems that utterances (a) and (b) in [Teddy bears](#teddy-bears){: #teddy-bears-show .tooled} represent a disagreement, and the most natural way to formalize disagreement is in terms of presentation of conflicting content. But *resiliance* pushes in the opposite direction. The continuation (c), in so far as it is appropriate, naturally suggests compatibility between the initiation and the completion, which pushes us toward a less strict interpretation of the initiaition content. Navigating between the rock of a correctible's tendency to elicit challenges and the hard place of their ability to withstand those challenges is a particularly interesting puzzle for a linguistic analysis of this type of discourse. But an adequate account should respect all of the observations catalogued above. To make them easier to refer to, all the observations are compiled below.
+The dual observations of *resilience* and *susceptibility* provide an interesting obstacle to an analysis of the semantics and discourse dynamics of disputative language. *Susceptibility* pushes us toward a more strict representation of the content of the initiation to make sense of why it is appropriate to offer a correction to it. That is, it seems that utterances **A** and **B** in [Teddy bears](#teddy-bears){: #teddy-bears-show .tooled} represent a disagreement, and the most natural way to formalize disagreement is in terms of presentation of conflicting content.
+
+But *resilience* pushes in the opposite direction. The **A**'s retrenchment, in so far as it is appropriate, naturally suggests compatibility between the initiation and the completion, which pushes us toward a less strict interpretation of the initiation content. Navigating between the rock of a correctible's tendency to elicit challenges and the hard place of their ability to withstand those challenges is a particularly interesting puzzle for a linguistic analysis of this type of discourse. But an adequate account should respect all of the observations catalogued above. To make them easier to refer to, all the observations are compiled below.
 
 <!-- All observations -->
 <blockquote markdown="1">
@@ -149,9 +155,9 @@ A feather in the cap of alternative semantics is the explanation it gives for th
   {{ "cookie" | example: "sent" }}
 {% endex %}
 
-While the (b) answer in [Cookie](#cookie){: #cookie-show .tooled} is a perfectly appropriate response to the question, the (c) answer seems to miss the point of the disucssion proposal made in (a). It would appear that there is a pragmatic rule dictating the form of response that can {% gloss felicitously %} follow a question, and that focus plays a role in the pragmatic process. Roughly, the data suggest that the focused element in a response must correspond to the wh-word of the question to which it is a response.
+While the **B** answer in [Cookie](#cookie){: #cookie-show .tooled} is a perfectly appropriate response to the question, **B'** seems to miss the point of the disucssion proposal made in **A**. It would appear that there is a pragmatic rule dictating the form of response that can {% gloss felicitously %} follow a question, and that focus plays a role in the pragmatic process. Roughly, the data suggest that the focused element in a response must correspond to the wh-word of the question to which it is a response.
 
-The alternative semantics for focus provides us with the framework needed to explain the presence of this pragmatic rule. Questions are generally understood to have as their semantic value the set of propositions that constitute answers to the question {% cite hamblin1958 %} (,groenendijk1984). So, a (suitably contextually constrained) semantic value for the question in [Cookie](#cookie){: #cookie-show .tooled} might be as in (a) below, which is identical to the focus semantic value of the first response but differs from that of the second (represented in (b) and (c), respectively):
+The alternative semantics for focus provides us with the framework needed to explain the presence of this pragmatic rule. Questions are generally understood to have as their semantic value the set of propositions that constitute answers to the question {% cite hamblin1958 + groenendijk1984 %}. So, a (suitably contextually constrained) semantic value for the question in [Cookie](#cookie){: #cookie-show .tooled} might be as in **A** below, which is identical to the focus semantic value of the first response but differs from that of the second:
 
 <!-- Cookie sem -->
 {% ex Cookie %}
@@ -161,15 +167,15 @@ The alternative semantics for focus provides us with the framework needed to exp
 Thus, we supplement the dual-semantic values framework of alternative semantics with a pragmatic rule to the effect that a felicitous response to a question must have a focus semantic value that matches the ordinary semantic value of the question.[^roothgen] Formally:
 
 <!-- QA-congruence -->
-{%comment%}{% def Question-Answer Congruence %}
-  {{ "qa-congruence" | formalize }}
-{% enddef %}{%endcomment%}
+{% def Question-Answer Congruence %}
+  {{ "contrast|qa-congruence" | formalize: "notitle" }}
+{% enddef %}
 
 Craige Roberts {% cite roberts1996 | noname %} develops an integrated theory of pragmatics centered on the question/answer relationship. Her idea is that questions and answers provide the principle organizing structure of discourse. The relevance of a new contribution to the conversation is thus judged in terms of how it fits into that structure. The central order of business in a discourse is to answer the question under discussion (*QUD*). But the path to reaching the answer may not be direct. It can involve providing merely partial anwsers, or it can involve introducing a sub-question, getting the answer to which would aid in getting the answer to the original question.
 
 By whatever path the discourse participants make their way, they are constantly coordinating their contributions around the *QUD*. To be relevant, an assertion must provide at least a partial answer to this question {% cite roberts1996 | pages: 21 %}. Roberts takes questions to have the standard, set of propositions, semantic value, which provides for a natural, set-theoretic account of the partial-answerhood relation. A partial answer to a question *q* is a proposition that entails, for at least one member proposition *q*<sub>i</sub> of the interpretation of the question, either that *q*<sub>i</sub> is true or that it is false. If the dynamical function of asserting is to eliminate certain propositions from the common ground, then the *QUD* framework requires that felicitous assertions eliminate along the contours of the *QUD*. An assertion whose content cross-cuts the partition of the common ground imposed by the QUD fails to provide a relevant contribution to discourse.
 
-The *QUD* model can easily incorporate everything above regarding QA-congruence and focus interpreation. But, not all conversations begin with an explicit question. Many start with an assertion, and seem roll along fruitfully from there. In Roberts' framework, the discourse structure is a theoretical posit --  a set of organizing principles that unify a set of apparently disparate data points drawn from speaker intuitions about semantic content and pragmatic felicity. As such, *QUDs* needen't be drawn from actual utterances in the discourse; it is perfectly possible for them to be implicit in the conversation. While every appropriate assertion must bring us closer to an answer to some question, discourse participants frequently {% gloss accommodate %} the question necessary to make sense of an assertion in context.
+The *QUD* model can easily incorporate everything above regarding QA-congruence and focus interpreation. But, not all conversations begin with an explicit question. Many start with an assertion, and roll along fruitfully from there. In Roberts' framework, the discourse structure is a theoretical posit --  a set of organizing principles that unify a set of apparently disparate data points drawn from speaker intuitions about semantic content and pragmatic felicity. As such, *QUDs* needen't be drawn from actual utterances in the discourse; it is perfectly possible for them to be implicit in the conversation. While every appropriate assertion must bring us closer to an answer to some question, discourse participants frequently {% gloss accommodate %} the question necessary to make sense of an assertion in context.
 
 Accommodation is a powerful tool, but it cannot be comissioned to fix every gap in a theory of pragmatics, and the QUD model seems to have an issue right out of the gate. There are perfectly felicitous responses to questions that do not eliminate cells from the question's partition space.
 
@@ -408,7 +414,7 @@ One standard approach to formalizing this idea is to posit a *generic* operator 
   {{ "quantifiers|generic quantifier" | formalize: "notitle" }}
 {% enddef %}
 
-It is perfectly possible for context to restrict membership in the preferred class to hibernating bears, thus explaining the truth of [Hibernation](#hibernating-bears-ex){: #hibernating-bears-show .tooled}. Of course, it is also possible for context to select only cuddly bears in the case of [Cuddly bears](#cuddly-bears){: #cuddly-bears-show .tooled}. It is the job of the metasemantics to explain why this selection is far less natural. The generically universal approach thus gets us out of the sticky situation, or at least shifts the extraction duties to pragmatics, which, given the [Resiliance](#resiliance-obs){: #resiliance-show .tooled} and [Susceptibility](#susceptibility-obs){: #susceptibility-show .tooled} of discourse involving bare plurals, seems a not inappropriate delegation of responsibilities.
+It is perfectly possible for context to restrict membership in the preferred class to hibernating bears, thus explaining the truth of [Hibernation](#hibernating-bears-ex){: #hibernating-bears-show .tooled}. Of course, it is also possible for context to select only cuddly bears in the case of [Cuddly bears](#cuddly-bears){: #cuddly-bears-show .tooled}. It is the job of the metasemantics to explain why this selection is far less natural. The generically universal approach thus gets us out of the sticky situation, or at least shifts the extraction duties to pragmatics, which, given the [resilience](#resilience-obs){: #resilience-show .tooled} and [Susceptibility](#susceptibility-obs){: #susceptibility-show .tooled} of discourse involving bare plurals, seems a not inappropriate delegation of responsibilities.
 
 Despite this de-sticking success, I don't think that the standard response is the correct extraction method. We can preserve the strict analysis of bare plurals [by allowing them to interact with the context in a specific way]. In particular, if the bare plural is evaluated against a context that incorporates the plan of inquiry structure of the discourse, then the extraction can be pulled off.
 
@@ -417,7 +423,7 @@ Despite this de-sticking success, I don't think that the standard response is th
   {{ "quantifiers|structural quantifier" | formalize: "notitle" }}
 {% enddef%}
 
-The structural analysis is strict in that it demands inclusion of the entire set determined by the bare plural within the properly partitioned predicate set. This is the complete story as far as the semantic component of the interpretive machinery is concerned. The partitioning of the predicate class is the source of the perceived looseness of bare plurals ([Resiliance](#resiliance-obs){: #resiliance-show .tooled}), but the mechanism for leveraging that feature belongs to the pragmatic system, to which we now turn. As with the story about shifty strict counterfactuals, the real work comes in getting clear about how the context evolves in response to bare plural utterances. And it is here that the framework of collaborative update semantics earns its keep.
+The structural analysis is strict in that it demands inclusion of the entire set determined by the bare plural within the properly partitioned predicate set. This is the complete story as far as the semantic component of the interpretive machinery is concerned. The partitioning of the predicate class is the source of the perceived looseness of bare plurals ([resilience](#resilience-obs){: #resilience-show .tooled}), but the mechanism for leveraging that feature belongs to the pragmatic system, to which we now turn. As with the story about shifty strict counterfactuals, the real work comes in getting clear about how the context evolves in response to bare plural utterances. And it is here that the framework of collaborative update semantics earns its keep.
 
 ## Pragmatics of plurals and partitions
 

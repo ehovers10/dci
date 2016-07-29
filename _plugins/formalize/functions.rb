@@ -22,22 +22,27 @@ module Jekyll
     def Atom(input)
 
       before = %{<div class="atom">}
-      title = ""
+      #title = ""
       body = ""
+      pre = ""
+      post = ""
       if input.is_a? (Array)
+        #raise %{First array: #{input}}
         input.each { |bit|
           if bit.is_a? (Hash)
-            bit.key?("fxn") ? body << Args(bit) : body << Molecule(bit)
+            bit["fxn"] ? body << Args(bit) : bit.each_pair { |k,v| body << Molecule(v,k) }
           else
+            pre = %{<span class="categorical">For all }
             body << %{<span>#{bit}</span>, }
+            post = %{</span>}
           end }
       elsif input.is_a? (Hash)
-        input.key?("fxn") ? body << Args(input) : body << Molecule(input)
+        input["fxn"] ? body << Args(input) : input.each_pair { |k,v| body << Molecule(v,k) }
       else
-        body << %{<span>#{input}</span>, }
+        body << %{<span class="categorical">#{input}</span>, }
       end
       after = %{</div>}
-      before << body << after
+      before << pre << body << post << after
     end
 
     def Args(kind)
@@ -47,15 +52,15 @@ module Jekyll
           add = ""
           v.each_with_index { |bit,i|
             if bit.is_a? (Hash)
-              add << %{<div class="#{k}#{i}">#{Args(bit)}</div>}
+              add << %{<span class="bit">#{Args(bit)}</span>}
             else
-              add << %{<div class="#{k}#{i}">#{bit}</div>}
+              add << %{<span class="bit">#{bit}</span>}
             end }
           towrap.merge!({k => %{<div class="#{k}">#{add}</div>}})
         elsif v.is_a? (Hash)
           towrap.merge!({k => %{<div class="#{k}">#{Args(v)}</div>}})
         else
-          towrap.merge!({k => %{<div class="#{k}">#{v}</div>}})
+          towrap.merge!({k => %{<div class="#{k}">#{v.strip}</div>}})
         end }
       Wrap(kind["fxn"],towrap)
     end
@@ -66,7 +71,7 @@ module Jekyll
         "lhs","conn","rhs","after"]
       locs = {}
       loclist.each { |item| locs.merge!({item => ""}) }
-      pre = %|<div class="wrap #{kind}"><div class="pre">#{sourcefile['pre'][kind]}</div>|
+      pre = %|<div class="fxn #{kind}"><div class="pre">#{sourcefile['pre'][kind]}</div>|
       post = %|<div class="post">#{sourcefile['post'][kind]}</div></div>|
       locs.each_key { |loc| locs.update({loc => arghash[loc]}) if arghash[loc] }
       locs["before"] <<

@@ -1,5 +1,5 @@
 ---
-title: Relations
+title: "Predication in <strong>CU</strong>"
 js: bunch
 ---
 
@@ -18,13 +18,13 @@ js: bunch
   <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
   {% endfor %}
 </ul>
-<div class="area bears">
+<div class="area offset bears">
   {{ bears | display_table }}
 </div>
-<div class="area dangerous">
+<div class="area offset dangerous">
   {{ danger | display_table }}
 </div>
-<div class="area grizzly">
+<div class="area offset grizzly">
   {{ griz | display_table }}
 </div>
 <div style="clear:both;"></div>
@@ -42,10 +42,10 @@ js: bunch
   {% endfor %}
 </ul>
 
-<div class="area modify">
+<div class="area offset modify">
 {{ grizzlybears | display_table }}
 </div>
-<div class="area restrict">
+<div class="area offset restrict">
 {{ grizzlybears | intersect | display_table }}
 </div>
 <div style="clear:both;"></div>
@@ -63,16 +63,16 @@ js: bunch
   {% endfor %}
 </ul>
 
-<div class="area predicate">
+<div class="area offset predicate">
 {{ bearsdanger | display_table }}
 </div>
-<div class="area group">
+<div class="area offset group">
 {{ bearsdanger | group | display_table }}
 </div>
-<div class="area compare">
+<div class="area offset compare">
 {{ bearsdanger | group | compare: "sit|+-bears +" | display_table }}
 </div>
-<div class="area restrict">
+<div class="area offset restrict">
 {{ bears | concat: danger | predicate | situ: "s2" | display_table }}
 </div>
 <div style="clear:both;"></div>
@@ -91,13 +91,13 @@ js: bunch
   {% endfor %}
 </ul>
 
-<div class="area alt">
+<div class="area offset alt">
 {{ allbears | focus: "grizzly" | display_table }}
 </div>
-<div class="area modify">
+<div class="area offset modify">
 {{ grizzlybears | display_table }}
 </div>
-<div class="area refine">
+<div class="area offset refine">
 {{ grizzlybears | refine | display_table }}
 </div>
 <div style="clear:both;"></div>
@@ -115,16 +115,16 @@ js: bunch
   {% endfor %}
 </ul>
 
-<div class="area predicate">
+<div class="area offset predicate">
 {{ gbdanger | display_table }}
 </div>
-<div class="area group">
+<div class="area offset group">
 {{ gbdanger | group: "sit all-bears" | display_table }}
 </div>
-<div class="area compare">
+<div class="area offset compare">
 {{ gbdanger | compare: "sit all-bears|all-bears grizzly" | display_table }}
 </div>
-<div class="area restrict">
+<div class="area offset restrict">
 
 </div>
 <div style="clear:both;"></div>

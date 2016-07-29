@@ -73,6 +73,10 @@ ul.bib2 {
     margin: 0;
   }
 
+  .tooltip {
+    font-size: 1.25em;
+  }
+
   @media screen {
     .reversefootnote {
       display: none;
@@ -83,6 +87,10 @@ ul.bib2 {
 /* Inline citation */
 .gloss {
   color: #008000;
+
+  &:visited {
+    color: #008000;
+  }
 }
 
 a.note:link {
@@ -110,11 +118,18 @@ a.note:hover {
   padding: 0.5em;
   width: 50%;
   max-width: 400px;
+  max-height: 150px;
+  overflow-y:auto;
   display: none;
   text-indent: 0;
 
+  a {
+    text-decoration: underline;
+    color: inherit;
+  }
+
   &.comment {
-    background: rgba(0,51,204,0.9);
+    background: rgba(128,0,0,0.9);
   }
   &.reference {
     background: rgba(100,100,100,0.9);

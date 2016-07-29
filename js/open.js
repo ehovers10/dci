@@ -1,5 +1,33 @@
 $(document).ready( function() {
 
+  function clearBlocks() {
+    $( ".wrapper" ).find("div").removeClass('clicked show');
+    $( ".wrapper" ).find("span").removeClass('clicked show');
+    $( ".wrapper" ).find("li").removeClass('clicked show');
+    $( ".tooltip").each( function() {
+      $(this).css("top",30 + "px");
+    });
+  }
+  function setPos(item) {
+    $(item).css("top",20 + "px");
+    var pos = $(item).height() + 50,
+        max = $(window).height() - 50;
+    $( ".clicked" ).each( function() {
+      if ($(this).attr("id") != $(item).attr("id")) {
+        $(this).css("top",pos + "px");
+      }
+      pos = pos + $(this).height() + 30;
+      if (pos > max) {
+        clearBlocks();
+        pos = 20;
+      }
+    });
+  }
+
+  $(".wrapper").click( function() {
+    clearBlocks();
+  });
+
   $(".open").click( function() {
     var hidden = $(this).attr('id') + '-hid';
     $('#' + hidden).slideToggle('slow',function() {
@@ -42,12 +70,25 @@ $(document).ready( function() {
 
   $( ".tooled" ).hover( function() {
       var tipped = $(this).attr('id') + '-tip';
-      $('span#' + tipped).css('display', 'inline');
-      $('div#' + tipped).css('display', 'block');
+      setPos('#' + tipped);
+      $('#' + tipped).addClass('show');
     }, function() {
       var tipped = $(this).attr('id') + '-tip';
-      $('span#' + tipped).css('display', 'none');
-      $('div#' + tipped).css('display', 'none');
+      if ( $('#' + tipped).hasClass('clicked') ) {
+        return;
+      } else {
+        setPos('');
+        $('#' + tipped).removeClass('show');
+      }
+    }
+  );
+
+  $( ".tooled" ).click( function() {
+      var tipped = $(this).attr('id') + '-tip';
+      setPos('#' + tipped);
+      $('#' + tipped).addClass('clicked show');
+
+      return false;
     }
   );
 
@@ -63,13 +104,27 @@ $(document).ready( function() {
     function() {
       var noteid = $(this).attr('id').substr(6),
           notetip = '#' + 'fn:' + noteid;
-
-      $('#' + noteid).css('display', 'block');
+      setPos('#' + noteid);
+      $('#' + noteid).addClass('show');
     }, function() {
       var noteid = $(this).attr('id').substr(6),
           notetip = '#' + 'fn:' + noteid;
-      $('#' + noteid).css('display', 'none');
+      if ( $('#' + noteid).hasClass('clicked') ) {
+        return;
+      } else {
+        setPos('');
+        $('#' + noteid).removeClass('show');
+      }
     }
   );
+
+  $( ".footnote" ).parent( "sup" ).click( function() {
+    var noteid = $(this).attr('id').substr(6),
+        notetip = '#' + 'fn:' + noteid;
+    setPos('#' + noteid);
+    $('#' + noteid).addClass('clicked show');
+
+    return false;
+  });
 
 });

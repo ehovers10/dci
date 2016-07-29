@@ -7,29 +7,29 @@ primitives:
     - fxn: eqn
       arg:
         lhs:
-          - fxn: semwrap
-            arg:
-              inside: "c<sub>&alpha;</sub>"
-              after: "<sup><span class='set'>M</span></sup>"
+          fxn: semwrap
+          arg:
+            inside: "c<sub>&alpha;</sub>"
+            after: "<span class='set sup'>M</span>"
         conn: =
         rhs: "<span class='set'>V</span>(c<sub>&alpha;</sub>)"
   - variables:
     - fxn: eqn
       arg:
         lhs:
-          - fxn: semwrap
-            arg:
-              inside: "u<sub>&alpha;</sub>"
-              after: "<sup><span class='var'>g</span></sup>"
+          fxn: semwrap
+          arg:
+            inside: "u<sub>&alpha;</sub>"
+            after: "<span class='var sup'>g</span>"
         conn: =
         rhs: "<span class='var'>g</span>(u<sub>&alpha;</sub>)"
   - top:
     - fxn: eqn
       arg:
         lhs:
-          - fxn: semwrap
-            arg:
-              inside: "&top;<sub>&alpha;</sub>"
+          fxn: semwrap
+          arg:
+            inside: "&top;<sub>&alpha;</sub>"
         conn: =
         rhs: "<span class='set'>D</span><sub>&alpha;</sub>"
 
@@ -42,16 +42,16 @@ application:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&lambda;u<sub>&alpha;</sub>(A)"
-            after: "<sup><span class='var'>g</span></sup>"
+        fxn: semwrap
+        arg:
+          inside: "&lambda;u<sub>&alpha;</sub>(A)"
+          after: "<span class='var sup'>g</span>"
       conn: =
       rhs:
-        - fxn: semwrap
-          arg:
-            inside: "A"
-            after: "<sup><span class='var'>g</span>[u<sub>&alpha;</sub>&rarr;d]</sup>"
+        fxn: semwrap
+        arg:
+          inside: "A"
+          after: "<span class='sup'><span class='var'>g</span>[u<sub>&alpha;</sub>&rarr;d]</span>"
 
 identity:
   -
@@ -60,9 +60,14 @@ identity:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "A<sub>&alpha;</sub> = B<sub>&alpha;</sub>"
+        fxn: semwrap
+        arg:
+          inside:
+            fxn: eqn
+            arg:
+              lhs: "A<sub>&alpha;</sub>"
+              conn: "="
+              rhs: "B<sub>&alpha;</sub>"
       conn: =
       rhs:
         - fxn: eqn
@@ -70,17 +75,17 @@ identity:
             lhs: "1"
             conn: if
             rhs:
-              - fxn: eqn
-                arg:
-                  lhs:
-                    - fxn: semwrap
-                      arg:
-                        inside: "A<sub>&alpha;</sub>"
-                  conn: =
-                  rhs:
-                    - fxn: semwrap
-                      arg:
-                        inside: "B<sub>&alpha;</sub>"
+              fxn: eqn
+              arg:
+                lhs:
+                  fxn: semwrap
+                  arg:
+                    inside: "A<sub>&alpha;</sub>"
+                conn: =
+                rhs:
+                  fxn: semwrap
+                  arg:
+                    inside: "B<sub>&alpha;</sub>"
         - fxn: eqn
           arg:
             lhs: "0"
@@ -94,57 +99,57 @@ booleans:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&not;&phi;"
+        fxn: semwrap
+        arg:
+          inside: "&not;&phi;"
       conn: =
       rhs:
-        - fxn: eqn
-          arg:
-            lhs:
-              - fxn: semwrap
-                arg:
-                  inside: "&top;"
-            conn: "/"
-            rhs: "&phi;"
-  - fxn: eqn
-    arg:
-      lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&phi;&and;&psi;"
-      conn: =
-      rhs:
-      - fxn: eqn
+        fxn: eqn
         arg:
           lhs:
             - fxn: semwrap
               arg:
-                inside: "&phi;"
+                inside: "&top;"
+          conn: "/"
+          rhs: "&phi;"
+  - fxn: eqn
+    arg:
+      lhs:
+        fxn: semwrap
+        arg:
+          inside: "&phi;&and;&psi;"
+      conn: =
+      rhs:
+        fxn: eqn
+        arg:
+          lhs:
+            fxn: semwrap
+            arg:
+              inside: "&phi;"
           conn: "&#x22C2;"
           rhs:
-          - fxn: semwrap
+            fxn: semwrap
             arg:
               inside: "&psi;"
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&phi;&or;&psi;"
+        fxn: semwrap
+        arg:
+          inside: "&phi;&or;&psi;"
       conn: =
       rhs:
-      - fxn: eqn
+        fxn: eqn
         arg:
           lhs:
-            - fxn: semwrap
-              arg:
-                inside: "&phi;"
+            fxn: semwrap
+            arg:
+              inside: "&phi;"
           conn: "&#x22C3;"
           rhs:
-            - fxn: semwrap
-              arg:
-                inside: "&psi;"
+            fxn: semwrap
+            arg:
+              inside: "&psi;"
 
 quantifiers:
   -
@@ -153,10 +158,10 @@ quantifiers:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&forall;u<sub>e</sub>&phi;"
-            after: "<span class='var'>g</span>"
+        fxn: semwrap
+        arg:
+          inside: "&forall;u<sub>e</sub>&phi;"
+          after: "<span class='var sup'>g</span>"
       conn: =
       rhs:
         - fxn: eqn
@@ -164,15 +169,15 @@ quantifiers:
             lhs: "1"
             conn: if
             rhs:
-              - fxn: eqn
-                arg:
-                  lhs:
-                    - fxn: semwrap
-                      arg:
-                        inside: "&phi;"
-                        after: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
-                  conn: =
-                  rhs: "1 for all u<sub>e</sub>"
+              fxn: eqn
+              arg:
+                lhs:
+                  fxn: semwrap
+                  arg:
+                    inside: "&phi;"
+                    after: "<span class='sup'><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</span>"
+                conn: =
+                rhs: "1 for all u<sub>e</sub>"
         - fxn: eqn
           arg:
             lhs: "0"
@@ -181,10 +186,10 @@ quantifiers:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&exist;u<sub>e</sub>&phi;"
-            after: "<span class='var'>g</span>"
+        fxn: semwrap
+        arg:
+          inside: "&exist;u<sub>e</sub>&phi;"
+          after: "<span class='var sup'>g</span>"
       conn: =
       rhs:
         - fxn: eqn
@@ -192,15 +197,15 @@ quantifiers:
             lhs: "1"
             conn: if
             rhs:
-              - fxn: eqn
-                arg:
-                  lhs:
-                    - fxn: semwrap
-                      arg:
-                        inside: "&phi;"
-                        after: "<sup><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</sup>"
-                  conn: =
-                  rhs: "1 for some u<sub>e</sub>"
+              fxn: eqn
+              arg:
+                lhs:
+                  fxn: semwrap
+                  arg:
+                    inside: "&phi;"
+                    after: "<span class='sup'><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</span>"
+                conn: =
+                rhs: "1 for some u<sub>e</sub>"
         - fxn: eqn
           arg:
             lhs: "0"
@@ -215,9 +220,9 @@ bare plurals:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
+        fxn: semwrap
+        arg:
+          inside: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
       conn: =
       rhs:
         - fxn: eqn
@@ -228,22 +233,22 @@ bare plurals:
               - fxn: eqn
                 arg:
                   lhs:
-                    - fxn: semwrap
-                      arg:
-                        inside: "A"
+                    fxn: semwrap
+                    arg:
+                      inside: "A"
                   conn: "&isin;"
                   rhs: "<span class='set'>R</span>"
               - fxn: eqn
                 arg:
                   lhs:
-                    - fxn: semwrap
-                      arg:
-                        inside: "A"
+                    fxn: semwrap
+                    arg:
+                      inside: "A"
                   conn: "&sube;"
                   rhs:
-                    - fxn: semwrap
-                      arg:
-                        inside: "B"
+                    fxn: semwrap
+                    arg:
+                      inside: "B"
         - fxn: eqn
           arg:
             lhs: "0"

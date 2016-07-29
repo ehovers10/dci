@@ -35,6 +35,7 @@ qa-congruence:
         arg:
           inside: "&alpha;"
           after: "<sup>f</sup>"
+
 downdate:
   - "&phi;,&psi;,&chi;: <span class='var'>drs</span>"
   - fxn: eqn

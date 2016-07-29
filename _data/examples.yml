@@ -10,7 +10,7 @@ grizzly:
 druggy:
   sent:
     - A: "Bears are dangerous."
-    - B: "Bears [in a drug-induced stupor]<sub>cf</sub> are dangerous."
+    - B: "# Bears [in a drug-induced stupor]<sub>cf</sub> are dangerous."
 
 teddy:
   sent:
@@ -62,7 +62,7 @@ conjunctive knowledge:
 
 presidents:
   sent:
-    - "Bill likes to play golf. George hates broccoli."
+    - "# Bill likes to play golf. George hates broccoli."
 
 keys:
   sent:
@@ -75,7 +75,7 @@ cookie:
   sent:
     - A: "Who ate the last cookie?"
     - B: "[Caitlin]<sub>f</sub> ate the last cookie."
-    - B': "Caitlin ate the last [cookie]<sub>f</sub>."
+    - B': "# Caitlin ate the last [cookie]<sub>f</sub>."
   sem:
     - A: "{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>,
          <em>Caitlin ate the last cookie</em>, ... }"

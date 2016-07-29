@@ -1,12 +1,12 @@
 primitives:
   - constants:
-    - fxn: eqn
+      fxn: eqn
       arg:
         lhs: "<span class='var'>Cons</span>"
         conn: "is"
         rhs: "a set of sets of constants of each type in <span class='set'>T</span>"
   - variables:
-    - fxn: eqn
+      fxn: eqn
       arg:
         lhs: "<span class='var'>Vars</span>"
         conn: "is"
@@ -16,103 +16,103 @@ semantic value:
   - fxn: eqn
     arg:
       lhs:
-        - fxn: semwrap
-          arg:
-            inside: "&middot;"
-            after:
-              - "<span class='var sup'>i</span>"
-              - "<span class='var sup'>g</span>"
-              - "<span class='set sup'>M</span>"
+        fxn: semwrap
+        arg:
+          inside: "&middot;"
+          after:
+            - "<span class='var sup'>i</span>"
+            - "<span class='var sup'>g</span>"
+            - "<span class='set sup'>M</span>"
       conn: "is"
       rhs: "the semantic value function"
   - index of evaluation:
-    - fxn: eqn
+      fxn: eqn
       arg:
         lhs:
-          - fxn: eqn
-            arg:
-              lhs: "<span class='var'>i</span>"
-              conn: ":"
-              rhs: "s"
+          fxn: eqn
+          arg:
+            lhs: "<span class='var'>i</span>"
+            conn: ":"
+            rhs: "s"
         conn: "is"
         rhs: "an index of evaluation"
   - assignment function:
     - fxn: eqn
       arg:
         lhs:
-          - fxn: eqn
-            arg:
-              lhs: "<span class='var'>g</span>"
-              conn: ":"
-              rhs:
-                - fxn: eqn
-                  arg:
-                    lhs: "<span class='var'>Vars</span>"
-                    conn: "&rarr;"
-                    rhs: "<span class='set'>D</span>"
+          fxn: eqn
+          arg:
+            lhs: "<span class='var'>g</span>"
+            conn: ":"
+            rhs:
+              fxn: eqn
+              arg:
+                lhs: "<span class='var'>Vars</span>"
+                conn: "&rarr;"
+                rhs: "<span class='set'>D</span>"
         conn: "is"
         rhs: "an assignment function"
   - model:
     - fxn: eqn
       arg:
         lhs:
-          - fxn: eqn
-            arg:
-              lhs: "<span class='set'>M</span>"
-              conn: =
-              rhs:
-                - fxn: seqwrap
-                  arg:
-                    inside:
-                      - "<span class='set'>D</span>"
-                      - "<span class='set'>V</span>"
+          fxn: eqn
+          arg:
+            lhs: "<span class='set'>M</span>"
+            conn: =
+            rhs:
+              fxn: seqwrap
+              arg:
+                inside:
+                  - "<span class='set'>D</span>"
+                  - "<span class='set'>V</span>"
         conn: "is"
         rhs: "a model for the language"
     - universe:
       - fxn: eqn
         arg:
           lhs:
-            - fxn: eqn
-              arg:
-                lhs: "<span class='set'>D</span>"
-                conn: =
-                rhs:
-                  - fxn: curlywrap
+            fxn: eqn
+            arg:
+              lhs: "<span class='set'>D</span>"
+              conn: =
+              rhs:
+                fxn: curlywrap
+                arg:
+                  inside:
+                    fxn: eqn
                     arg:
-                      inside:
-                        - fxn: eqn
-                          arg:
-                            lhs:
-                              - fxn: curlywrap
-                                arg:
-                                  inside:
-                                    - fxn: eqn
-                                      arg:
-                                        lhs: "<span class='var'>e</span>"
-                                        conn: "&isin;"
-                                        rhs: "<span class='set'>D</span><sub>&alpha;</sub>"
-                            conn: ":"
-                            rhs:
-                              - fxn: eqn
-                                arg:
-                                  lhs: "&alpha;"
-                                  conn: "&isin;"
-                                  rhs: "  <span class='set'>T</span>"
+                      lhs:
+                        fxn: curlywrap
+                        arg:
+                          inside:
+                            fxn: eqn
+                            arg:
+                              lhs: "<span class='var'>e</span>"
+                              conn: "&isin;"
+                              rhs: "<span class='set'>D</span><sub>&alpha;</sub>"
+                      conn: ":"
+                      rhs:
+                        fxn: eqn
+                        arg:
+                          lhs: "&alpha;"
+                          conn: "&isin;"
+                          rhs: "  <span class='set'>T</span>"
           conn: "is"
           rhs: "a type structured universe of the discourse"
     - valuation:
       - fxn: eqn
         arg:
           lhs:
-            - fxn: eqn
-              arg:
-                lhs: "<span class='set'>V</span>"
-                conn: ":"
-                rhs:
-                  - fxn: eqn
-                    arg:
-                      lhs: "<span class='var'>Cons</span>"
-                      conn: "&rarr;"
-                      rhs: "<span class='set'>D</span>"
+            fxn: eqn
+            arg:
+              lhs: "<span class='set'>V</span>"
+              conn: ":"
+              rhs:
+                fxn: eqn
+                arg:
+                  lhs: "<span class='var'>Cons</span>"
+                  conn: "&rarr;"
+                  rhs: "<span class='set'>D</span>"
           conn: "is"
-          rhs: "a valuation function that assigns type-relevant objects to each constant"
+          rhs: "a valuation function that assigns type-relevant objects <br>to each constant"

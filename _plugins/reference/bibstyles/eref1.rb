@@ -162,11 +162,11 @@ module Eref1
 # ----
   def RefLink(source)
     if source['Url'].is_a?(String)
-      url = %{<a href="#{source['Url']}">#{source['Url']}</a>}
+      url = %{<a href="#{source['Url']}" target="_blank">#{source['Url']}</a>}
     elsif source['Url']
       url = ""
       source['Url'].each{ |link|
-        url << %{<a href="#{link}">#{link}</a><br />}
+        url << %{<a href="#{link}" target="_blank">#{link}</a><br />}
       }
     end
 
