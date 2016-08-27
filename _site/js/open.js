@@ -68,7 +68,7 @@ $(document).ready( function() {
 
   /* Tooltips */
 
-  $( ".tooled" ).hover( function() {
+  /*$( ".tooled" ).hover( function() {
       var tipped = $(this).attr('id') + '-tip';
       setPos('#' + tipped);
       $('#' + tipped).addClass('show');
@@ -81,7 +81,7 @@ $(document).ready( function() {
         $('#' + tipped).removeClass('show');
       }
     }
-  );
+  );*/
 
   $( ".tooled" ).click( function() {
       var tipped = $(this).attr('id') + '-tip';
@@ -100,7 +100,7 @@ $(document).ready( function() {
     return $(this).attr('id').substr(3);
   });
 
-  $( ".footnote" ).parent( "sup" ).hover(
+  /*$( ".footnote" ).parent( "sup" ).hover(
     function() {
       var noteid = $(this).attr('id').substr(6),
           notetip = '#' + 'fn:' + noteid;
@@ -116,7 +116,7 @@ $(document).ready( function() {
         $('#' + noteid).removeClass('show');
       }
     }
-  );
+  );*/
 
   $( ".footnote" ).parent( "sup" ).click( function() {
     var noteid = $(this).attr('id').substr(6),

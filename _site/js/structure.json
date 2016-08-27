@@ -1,0 +1,72 @@
+{
+  "data": [ {
+    "Deduction": {
+      "Function": [
+        "Expand",
+        "Contract"
+      ],
+      "Operation": "Revision",
+      "Cognitive tool": "Full belief",
+      "Structure": "Possibility space",
+      "reference": [
+        "levi1980"
+      ]
+    },
+    "Abduction": {
+      "Function": [
+        "Partition",
+        "Prefer"
+      ],
+      "Operation": [
+        "Partitioning relation",
+        "Ordering relation"
+      ],
+      "Cognitive tool": [
+        "Iritation of doubt",
+        "Will to believe"
+      ],
+      "Structure": [
+        "Structured possibility space",
+        "Preference ranking"
+      ],
+      "reference": [
+        "peirce1877",
+        "james1896"
+      ]
+    },
+    "Implementation": {
+      "Function": "Accept",
+      "Operation": "Merge",
+      "Cognitive tool": "Version control",
+      "Structure": "Articulated info states",
+      "reference": [
+        "git"
+      ]
+    },
+    "Induction": {
+      "Function": [
+        "Cohere",
+        "Correct"
+      ],
+      "Operation": [
+        "Initiation",
+        "Re-saturation"
+      ],
+      "Cognitive tool": [
+        "Dilated process",
+        "Collective criticism"
+      ],
+      "Structure": [
+        "Sandbox",
+        "Radicals and completions"
+      ],
+      "reference": [
+        "bratman1988",
+        [
+          "mill1859",
+          "moffett2007"
+        ]
+      ]
+    }
+  } ]
+}

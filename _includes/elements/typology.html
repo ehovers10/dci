@@ -25,7 +25,7 @@
       <tr><td>
         {% if bit[0] == "reference" %}
           {% for item in row %}
-          {% comment %}{% cite {{ item }} %}{% endcomment %}
+            {{ item }}
           {% endfor %}
         {% else %}
           {{ row }}
@@ -43,11 +43,10 @@
 </tbody>
 </table>
 
-{% comment %}
+
 <div {% if include.biblio == "no" %}style="display:none;"{% endif %}>
   <h3>References</h3>
   {% unless include.biblio == "no" %}
     {% include elements/reflist.html %}
   {% endunless %}
 </div>
-{% endcomment %}

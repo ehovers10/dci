@@ -44,11 +44,11 @@
     display: block;
     border: none;
     border-radius: 0;
-    color: #000;
+    color: $text-color;
     padding: 0;
     width: inherit;
     max-width: inherit;
-    background: #fff;
+    background: $pagecolor;
   }
 
   .wrapper {

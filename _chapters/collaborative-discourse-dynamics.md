@@ -10,6 +10,8 @@ count:
   obs: 1
   table: 1
 references: ""
+js: [toc]
+permalink: /theory
 ---
 
 # Scoreboards and best systems
@@ -141,7 +143,7 @@ This modicum of *irrealism* inherent in the best system account is a second issu
 
 Despite these concerns in the realm of the physical sciences, the best systems account fares well in application to *linguistic interpretation*.
 
-## General update semantics
+# General update semantics
 
 {% gloss Update semantics %} is a class of theories of conversational structure in which the conversational scoreboard is represented by a set-theoretic structure that we will refer to as the {% gloss information state %}. {% gloss Discourse dynamics %} is implemented by means of {% gloss updates %}, which are operations on this structure.
 
@@ -182,7 +184,7 @@ The second conjunct of the assertion requires a direct imposition on the common 
 Both of these proposals add useful nuance to the structure of discourse dynamics. But the ability to accept or reject discourse proposals is a minimal collaborative ability for interlocutors. It lies at one extreme of a specturm of possible collaborative moves.
 Full collaboration requires that we imbue our framework of discourse dynamics with a way of accommodating an extended process of input from discourse participants as well as a way of bypassing the need for collaboration in the instance of coordinated structures as in [Sing and dance](#sing).
 
-## Collaborative contributions
+# Collaborative contributions
 
 In the terminology of Clark and Schlegloff {% cite clark1992 | noname %}, a *try-marker* is an refering expression within an utterance that is marked to indicate the speaker's understanding that the hearer may not pick up on the reference. The speaker, not wanting to derail the conversation to conclusively rectify the potential for confusion, offers the reference as a suggestion. She additionally marks the suggestion, usually by means of an upward intonational contour followed by brief pause, to allow the hearer an opportunity to pursue further clarification if such is needed. The try-marker is a text-book example of the preference in successful conversation for minimum effort over assured uptake.
 
@@ -261,7 +263,7 @@ Whatever the merits of the norm based approach to speech-act individuation, this
 
 Mark Richard {% cite richard2004 | noname %} argues that even contextualists need to incorporate relativist principles in order to accommodate variations in standards across contexts. In so far as collaborative update semantics incorporates the imprecision of conjecture, it supports relativism.
 
-## Elaborations
+# Elaborations
 
 ### Collaboration
 
@@ -375,5 +377,3 @@ This view is warranted as the primary conjecture marker is contrastive topic, wh
 Conjecture and assertion are identical. Both put forward a propositional radical with a default saturation. Only if the saturation is challenged do we have a conjectural contribution type.
 
 I like the idea of speech-act determination being in the hands of the interlocutor (and thus relative).
-
-{% include elements/chapterend.html %}

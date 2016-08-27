@@ -5,9 +5,6 @@ author: Erik Hoversten
 type: home
 count:
   def: 1
-  ex: 1
-  obs: 1
-  table: 1
 references: ""
 ---
 
@@ -33,8 +30,12 @@ But interaction in discourse is more integrative than this. Helpful interlocutor
 
 The purpose of the project contained in these pages is to develop and motivate a formal framework of *collaborative discourse interpretation*. To do so, I take a three-pronged approach:
 
-[Conceptual]({{ '/chapters/knowledge-in-the-image-of-inquiry.html' | prepend: site.baseurl }}): It is commonly held that knowledge is the end of inquiry, but if we take this connection seriously, there are significant implications for our understanding of the nature of knowledge. I propose to take at face value the idea that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, and so then is knowledge. This idea has important consequences for explaining the distinctive value of knowledge over true belief and for the contextualism/relativism debate in epistemology.
+[Conceptual]({{ '/concept' | prepend: site.baseurl }}): It is commonly held that knowledge is the end of inquiry, but if we take this connection seriously, there are significant implications for our understanding of the nature of knowledge. I propose to take at face value the idea that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, and so then is knowledge. This idea has important consequences for explaining the distinctive value of knowledge over true belief and for the contextualism/relativism debate in epistemology.
 
-[Theoretical]({{ '/chapters/collaborative-update-semantics.html' | prepend: site.baseurl }}): Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In *collaborative update semantics*, contribution operators attach to propositional radicals, making it possible that contributions initiated by one utterance may not be completed until a later utterance is added. In particular, conjecture operators function by opening a *sandbox* in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.
+[Theoretical]({{ '/theory' | prepend: site.baseurl }}): Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In *collaborative update semantics*, contribution operators attach to propositional radicals, making it possible that contributions initiated by one utterance may not be completed until a later utterance is added. In particular, conjecture operators function by opening a *sandbox* in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.
 
-[Practical]({{ '/chapters/dispute-in-discourse.html' | prepend: site.baseurl }}): Disputing an utterance can be an important tool in collaborative inquiry. In this paper, I examine a simple dialogue involving dispute and consider two established proposals for analyzing the semantic and pragmatic import of the utterances it contains. While each provides valuable insight into the interpretation of the discourse, I maintain that each is lacking in a some regard and that collaborative update semantics, supplemented with a semantics for bare plurals, offers an extension that fully accounts for the natural interpretation of the dialogue.
+[Practical]({{ '/practice' | prepend: site.baseurl }}): Disputing an utterance can be an important tool in collaborative inquiry. In this paper, I examine a simple dialogue involving dispute and consider two established proposals for analyzing the semantic and pragmatic import of the utterances it contains. While each provides valuable insight into the interpretation of the discourse, I maintain that each is lacking in a some regard and that collaborative update semantics, supplemented with a semantics for bare plurals, offers an extension that fully accounts for the natural interpretation of the dialogue.
+
+## References
+
+{% include elements/reflist.html %}

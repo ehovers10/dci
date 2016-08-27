@@ -1,6 +1,7 @@
 ---
 title: Formalism
 js: bunch
+permalink: /formalism
 ---
 
 <div class="bunch">
@@ -21,7 +22,10 @@ js: bunch
       <div class="title">All types</div>
       <ul class="setlist">
       {% for item in site.data.formalism.types.basic %}
-        <li><a href="#" title="{{ item[0] }}" onclick="return false;">{{ item[1] }}</a></li>
+        <li>
+          <a href="#" id="{{ item[0] | slugify }}" class="tooled">{{ item[1] }}</a>
+          <span id="{{ item[0] | slugify }}-tip" class="tooltip defn">{{ item[0] }}</a>
+        </li>
       {% endfor %}
       </ul>
     </div>
@@ -31,7 +35,10 @@ js: bunch
       <div class="title">Discourse referent types</div>
       <ul class="setlist">
       {% for item in site.data.formalism.types.dref %}
-        <li><a href="#" title="{{ item[0] }}" onclick="return false;">{{ item[1] }}</a></li>
+        <li>
+          <a href="#" id="{{ item[0] | slugify }}" class="tooled">{{ item[1] }}</a>
+          <span id="{{ item[0] | slugify }}-tip" class="tooltip defn">{{ item[0] }}</a>
+        </li>
       {% endfor %}
       </ul>
     </div>

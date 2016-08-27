@@ -10,6 +10,7 @@ url: "http://erikhoversten.org"
 email: ehovers10@gmail.com
 github_username:  ehovers10
 copy: true
+excerpt_separator: ""
 bibliography: ''
 
 # Build settings

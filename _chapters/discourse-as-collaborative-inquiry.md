@@ -3,8 +3,10 @@ title: Project overview
 level: 1
 biblio: true
 references: ""
+js: [toc]
 count:
   ex: 0
+permalink: /overview
 ---
 
 # From cooperation to collaboration via conjecture
@@ -172,5 +174,3 @@ The challenge is to track information across utterance boundaries. LDRT allows f
 If we treat the [Bears](#bears) dialogue as a minimal example of collaborative discourse, we can capture the forward-looking import of corrections while representing the strong coherence of the utterances in the dilogue.
 
 According to collaborative update semantics, the first utterance in the dialogue initiates a contribution that is completed by the second, correcting utterance. Focus is treated as a sandboxing marker and denial serves to replace the default saturation of the propositional radical with an alternative one.
-
-{% include elements/chapterend.html %}

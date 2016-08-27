@@ -8,11 +8,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="jekyll" />
 
-  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <meta name="description" content="">
   <title>Project overview</title>
 
-  <link rel="canonical" href="http://erikhoversten.org/chapters/discourse-as-collaborative-inquiry.html">
+  <link rel="canonical" href="http://erikhoversten.org/overview">
   <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
 
   
     <script src="/js/jquery-1.11.3.min.js"></script>
@@ -25,9 +26,13 @@
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
   <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
   <script src="/js/typology.js"></script>
-  
+
   <script src="/js/open.js"></script>
   
+    <script src="/js/toc.js"></script>
+  
+  
+  <script src="/js/bibjs.js"></script>
   <script src="/js/totop.js"></script>
 </head>
 
@@ -46,31 +51,38 @@
   
 <ul class="nav">
 <li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
-<li><a href="/atoc.html">Table of contents</a></li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
 <li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
 <li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>
-<ul class="nav2 hid" id="chap-hid">
+<ol class="nav2 hid" id="chap-hid" start=0>
 
-<li><a href="/chapters/discourse-as-collaborative-inquiry.html">Project overview</a></li>
+<li><a href="/overview">Project overview</a></li>
 
-<li><a href="/chapters/knowledge-in-the-image-of-inquiry.html">Knowledge in the image of inquiry</a></li>
+<li><a href="/concept">Knowledge in the image of inquiry</a></li>
 
-<li><a href="/chapters/collaborative-discourse-dynamics.html">Collaborative discourse dynamics</a></li>
+<li><a href="/theory">Collaborative discourse dynamics</a></li>
 
-<li><a href="/chapters/dispute-in-discourse.html">Dispute in discourse</a></li>
+<li><a href="/practice">Dispute in discourse</a></li>
 
-</ul>
+</ol>
 <ul class="nav2 hid" id="appen-hid">
 
-<li><a href="/appendices/bibliography.html">Bibliography</a></li>
+<li><a href="/bibliography">Bibliography</a></li>
 
-<li><a href="/appendices/formalism.html">Formalism</a></li>
+<li><a href="/formalism">Formalism</a></li>
 
-<li><a href="/appendices/glossary.html">Glossary</a></li>
+<li><a href="/glossary">Glossary</a></li>
 
-<li><a href="/appendices/relations.html">Predication in <strong>CU</strong></a></li>
+<li><a href="/predication-in-CU">Predication in <strong>CU</strong></a></li>
 
-<li><a href="/appendices/typologies.html">Typologies</a></li>
+<li><a href="/typologies">Typologies</a></li>
 
 </ul>
 </ul>
@@ -86,17 +98,23 @@
 
   
 
-
 <div class="chapter-front">
   
 
-  
+  <h3>Table of contents</h3>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('#toc').toc();
+  });
+  </script>
+  <div id="toc" class="abstract body fence"></div>
 
   <div class="divider print-no"></div>
   <div class="break"></div>
 </div>
 
-<h1 id="from-cooperation-to-collaboration-via-conjecture">From cooperation to collaboration via conjecture</h1>
+<div class="chapter-content">
+  <h1 id="from-cooperation-to-collaboration-via-conjecture">From cooperation to collaboration via conjecture</h1>
 
 <p><a id="discourse" href="/appendices/glossary.html#disco" class="tooled gloss">Discourse</a><span id="discourse-tip" class="tooltip glossary">Word not found</span> can take a wide variety of forms, but academic study has been primarily concerned with the subclass of discourses that fall under the heading of <em>cooperative exchanges of information</em>.  These discourses involve two or more individuals engaged in a project of achieving the goal of increasing their mutual knowledge, using each other’s stock of information to augment their own. In this form, discourse implements a jointly undertaken <a id="inquiry" href="/appendices/glossary.html#inqui" class="tooled gloss">inquiry</a><span id="inquiry-tip" class="tooltip glossary">The enterprise of forming, testing, and revising beliefs.</span>. An inquiry is, in the words of Robert Stalnaker, “the enterprise of forming, testing, and revising beliefs” (<a id="stalnaker1987" class="ref tooled" href="#ref-stalnaker1987"><span class="date"><span class="year">1987</span></span><span class="pages">,  p. ix</span></a>).</p>
 
@@ -266,134 +284,6 @@
 <p>If we treat the <a href="#bears">Bears</a> dialogue as a minimal example of collaborative discourse, we can capture the forward-looking import of corrections while representing the strong coherence of the utterances in the dilogue.</p>
 
 <p>According to collaborative update semantics, the first utterance in the dialogue initiates a contribution that is completed by the second, correcting utterance. Focus is treated as a sandboxing marker and denial serves to replace the default saturation of the propositional radical with an alternative one.</p>
-
-<div class="chapter-end">
-
-  <!-- References -->
-
-  <div class="references">
-
-  <h3>References</h3>
-
-  
-
-<ul class="bib">
-
-  
-    <li>
-      <a name="ref-stalnaker1987"></a><span class="author">Stalnaker, Robert </span><span class="date">(<span class="year">1987</span>). </span><span class="title book">Inquiry</span>. <span class="publication"><span class="publisher">MIT Press</span>. </span><ul class="url"></ul>
-      <div class="tooltip reference" id="stalnaker1987-tip"><a name="ref-stalnaker1987"></a><span class="author">Stalnaker, Robert </span><span class="date">(<span class="year">1987</span>). </span><span class="title book">Inquiry</span>. <span class="publication"><span class="publisher">MIT Press</span>. </span><ul class="url"></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-grice1989"></a><span class="author">Grice, Paul </span><span class="date">(<span class="year">1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class="publication"><span class="publisher">Harvard University Press</span>. </span><ul class="url"><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul>
-      <div class="tooltip reference" id="grice1989-tip"><a name="ref-grice1989"></a><span class="author">Grice, Paul </span><span class="date">(<span class="year">1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class="publication"><span class="publisher">Harvard University Press</span>. </span><ul class="url"><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-levi1980"></a><span class="author">Levi, Isaac </span><span class="date">(<span class="year">1980</span>). </span><span class="title book">The Enterprise of Knowledge</span>. <span class="publication"><span class="publisher">MIT Press</span><span class="location">: Cambridge, MA</span>. </span><ul class="url"></ul>
-      <div class="tooltip reference" id="levi1980-tip"><a name="ref-levi1980"></a><span class="author">Levi, Isaac </span><span class="date">(<span class="year">1980</span>). </span><span class="title book">The Enterprise of Knowledge</span>. <span class="publication"><span class="publisher">MIT Press</span><span class="location">: Cambridge, MA</span>. </span><ul class="url"></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-peirce1877"></a><span class="author">Peirce, Charles Sanders </span><span class="date">(<span class="year">1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class="publication"><span class="publisher">Dover Publications, Inc.</span><span class="location">: New York</span>. </span><ul class="url"></ul>
-      <div class="tooltip reference" id="peirce1877-tip"><a name="ref-peirce1877"></a><span class="author">Peirce, Charles Sanders </span><span class="date">(<span class="year">1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class="publication"><span class="publisher">Dover Publications, Inc.</span><span class="location">: New York</span>. </span><ul class="url"></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-zagzebski2003"></a><span class="author">Zagzebski, Linda </span><span class="date">(<span class="year">2003</span>). </span><span class="title">The Search for the Source of Epistemic Good</span>. <span class="journal">Metaphilosophy, <span class="edition">34.1-2.</span> </span><span class="publication"><span class="publisher">Wiley-Blackwell</span>. </span><span class="pages">pp. 12-28. </span><ul class="url"></ul>
-      <div class="tooltip reference" id="zagzebski2003-tip"><a name="ref-zagzebski2003"></a><span class="author">Zagzebski, Linda </span><span class="date">(<span class="year">2003</span>). </span><span class="title">The Search for the Source of Epistemic Good</span>. <span class="journal">Metaphilosophy, <span class="edition">34.1-2.</span> </span><span class="publication"><span class="publisher">Wiley-Blackwell</span>. </span><span class="pages">pp. 12-28. </span><ul class="url"></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-macfarlane2005"></a><span class="author">MacFarlane, John </span><span class="date">(<span class="year">2005</span>). </span><span class="title">Making sense of relative truth</span>. <span class="journal">Proceedings of the Aristotelian Society, <span class="edition">105.</span> </span><span class="pages">pp. 321-339. </span><ul class="url"></ul>
-      <div class="tooltip reference" id="macfarlane2005-tip"><a name="ref-macfarlane2005"></a><span class="author">MacFarlane, John </span><span class="date">(<span class="year">2005</span>). </span><span class="title">Making sense of relative truth</span>. <span class="journal">Proceedings of the Aristotelian Society, <span class="edition">105.</span> </span><span class="pages">pp. 321-339. </span><ul class="url"></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-clark1986"></a><span class="author">Clark, Herbert H. and Deanna Wilkes-Gibbs </span><span class="date">(<span class="year">1986</span>). </span><span class="title">Referring as a collaborative process</span>. <span class="journal">Cognition, <span class="edition">22.</span> </span><span class="pages">pp. 1-39. </span><ul class="url"><a href="https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0" target="_blank">https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0</a></ul>
-      <div class="tooltip reference" id="clark1986-tip"><a name="ref-clark1986"></a><span class="author">Clark, Herbert H. and Deanna Wilkes-Gibbs </span><span class="date">(<span class="year">1986</span>). </span><span class="title">Referring as a collaborative process</span>. <span class="journal">Cognition, <span class="edition">22.</span> </span><span class="pages">pp. 1-39. </span><ul class="url"><a href="https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0" target="_blank">https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0</a></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-portner1997"></a><span class="author">Portner, Paul </span><span class="date">(<span class="year">1997</span>). </span><span class="title">The Semantics of Mood, Completion, and Conversational Force</span>. <span class="journal">Natural Language Semantics, <span class="edition">5.</span> </span><span class="pages">pp. 167-212. </span><ul class="url"></ul>
-      <div class="tooltip reference" id="portner1997-tip"><a name="ref-portner1997"></a><span class="author">Portner, Paul </span><span class="date">(<span class="year">1997</span>). </span><span class="title">The Semantics of Mood, Completion, and Conversational Force</span>. <span class="journal">Natural Language Semantics, <span class="edition">5.</span> </span><span class="pages">pp. 167-212. </span><ul class="url"></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-frege1884"></a><span class="author">Frege, Gottlob </span><span class="date">(<span class="year">1884/1997</span>). </span><span class="title">The Foundations of Arithmetic</span>. <span class="title book">The Frege Reader</span>. <span class="editor">Michael Beaney (ed). </span><span class="publication"><span class="publisher">Blackwell Publishing</span>. </span><ul class="url"></ul>
-      <div class="tooltip reference" id="frege1884-tip"><a name="ref-frege1884"></a><span class="author">Frege, Gottlob </span><span class="date">(<span class="year">1884/1997</span>). </span><span class="title">The Foundations of Arithmetic</span>. <span class="title book">The Frege Reader</span>. <span class="editor">Michael Beaney (ed). </span><span class="publication"><span class="publisher">Blackwell Publishing</span>. </span><ul class="url"></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-roberts1998"></a><span class="author">Roberts, Craige </span><span class="date">(<span class="year">1998</span>). </span><span class="title">Focus, the Flow of Information, and Universal Grammar</span>. <span class="title book">Syntax and Semantics: The Limits of Syntax</span>. <span class="editor">Peter Culicover and Louise McNally (eds). </span><span class="publication"><span class="publisher">Academic Press</span>. </span><ul class="url"><a href="https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno" target="_blank">https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno</a></ul>
-      <div class="tooltip reference" id="roberts1998-tip"><a name="ref-roberts1998"></a><span class="author">Roberts, Craige </span><span class="date">(<span class="year">1998</span>). </span><span class="title">Focus, the Flow of Information, and Universal Grammar</span>. <span class="title book">Syntax and Semantics: The Limits of Syntax</span>. <span class="editor">Peter Culicover and Louise McNally (eds). </span><span class="publication"><span class="publisher">Academic Press</span>. </span><ul class="url"><a href="https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno" target="_blank">https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno</a></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-buering2003"></a><span class="author">Bu&#x0308;ring, Daniel </span><span class="date">(<span class="year">2003</span>). </span><span class="title">On d-trees, beans, and b-accents</span>. <span class="journal">Linguistics and Philosophy, <span class="edition">26.</span> </span><span class="pages">pp. 511-545. </span><ul class="url"><a href="https://app.box.com/s/a11v7a9ky4cmg8czisxv" target="_blank">https://app.box.com/s/a11v7a9ky4cmg8czisxv</a></ul>
-      <div class="tooltip reference" id="buering2003-tip"><a name="ref-buering2003"></a><span class="author">Bu&#x0308;ring, Daniel </span><span class="date">(<span class="year">2003</span>). </span><span class="title">On d-trees, beans, and b-accents</span>. <span class="journal">Linguistics and Philosophy, <span class="edition">26.</span> </span><span class="pages">pp. 511-545. </span><ul class="url"><a href="https://app.box.com/s/a11v7a9ky4cmg8czisxv" target="_blank">https://app.box.com/s/a11v7a9ky4cmg8czisxv</a></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-spenader2009"></a><span class="author">Spenader, Jennifer and Emar Maier </span><span class="date">(<span class="year">2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class="journal">Journal of Pragmatics, <span class="edition">41.</span> </span><span class="pages">pp. 1707-26. </span><ul class="url"><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul>
-      <div class="tooltip reference" id="spenader2009-tip"><a name="ref-spenader2009"></a><span class="author">Spenader, Jennifer and Emar Maier </span><span class="date">(<span class="year">2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class="journal">Journal of Pragmatics, <span class="edition">41.</span> </span><span class="pages">pp. 1707-26. </span><ul class="url"><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-geurts1998a"></a><span class="author">Geurts, Bart </span><span class="date">(<span class="year">1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class="journal">Language. </span><ul class="url"><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul>
-      <div class="tooltip reference" id="geurts1998a-tip"><a name="ref-geurts1998a"></a><span class="author">Geurts, Bart </span><span class="date">(<span class="year">1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class="journal">Language. </span><ul class="url"><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul></div>
-    </li>
-    
-  
-
-</ul>
-
-
-</div>
-
-  <!-- Appendices -->
-
-  <!-- Comments -->
-
-</div>
-
 <div class="footnotes">
   <ol>
     <li id="fn:ConversationalForce">
@@ -415,6 +305,139 @@
       <p>They are also similar to suppositions in that they seem to be less than fully committal on the part of the speaker. Assertion is generally associated with a commitment that it generates for the speaker.  This commitment involves some evidential relation between the asserter and the information conveyed, though it is controversial just what relation it is. But whatever the relation amounts to, it seems clear that we sometimes offer contributions to discourse that go beyond the evidence we have available. And we do this not just as a means of flouting the rules of discourse, but frequently in order to respect the project of the communicative exchange. <a href="#fnref:supposition" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
+</div>
+
+</div>
+
+<div class="chapter-end" markdown="1">
+
+<!-- References -->
+
+
+<div class="references">
+
+  <h3>References</h3>
+
+  
+
+<ul class='bib'>
+
+  
+    <li>
+      <a name="ref-stalnaker1987"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title book">Inquiry</span>. <span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="stalnaker1987-tip"><a name="ref-stalnaker1987"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title book">Inquiry</span>. <span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-grice1989"></a><span class='author'>Grice, Paul </span><span class='date'>(<span class='year'>1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class='publication'><span class='publisher'>Harvard University Press</span>. </span><ul class='url'><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul>
+      <div class="tooltip reference" id="grice1989-tip"><a name="ref-grice1989"></a><span class='author'>Grice, Paul </span><span class='date'>(<span class='year'>1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class='publication'><span class='publisher'>Harvard University Press</span>. </span><ul class='url'><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-levi1980"></a><span class='author'>Levi, Isaac </span><span class='date'>(<span class='year'>1980</span>). </span><span class="title book">The Enterprise of Knowledge</span>. <span class='publication'><span class='publisher'>MIT Press</span><span class='location'>: Cambridge, MA</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="levi1980-tip"><a name="ref-levi1980"></a><span class='author'>Levi, Isaac </span><span class='date'>(<span class='year'>1980</span>). </span><span class="title book">The Enterprise of Knowledge</span>. <span class='publication'><span class='publisher'>MIT Press</span><span class='location'>: Cambridge, MA</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-peirce1877"></a><span class='author'>Peirce, Charles Sanders </span><span class='date'>(<span class='year'>1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class='publication'><span class='publisher'>Dover Publications, Inc.</span><span class='location'>: New York</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="peirce1877-tip"><a name="ref-peirce1877"></a><span class='author'>Peirce, Charles Sanders </span><span class='date'>(<span class='year'>1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class='publication'><span class='publisher'>Dover Publications, Inc.</span><span class='location'>: New York</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-zagzebski2003"></a><span class='author'>Zagzebski, Linda </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">The Search for the Source of Epistemic Good</span>. <span class='journal'>Metaphilosophy, <span class='edition'>34.1-2.</span> </span><span class='publication'><span class='publisher'>Wiley-Blackwell</span>. </span><span class="pages">pp. 12-28. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="zagzebski2003-tip"><a name="ref-zagzebski2003"></a><span class='author'>Zagzebski, Linda </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">The Search for the Source of Epistemic Good</span>. <span class='journal'>Metaphilosophy, <span class='edition'>34.1-2.</span> </span><span class='publication'><span class='publisher'>Wiley-Blackwell</span>. </span><span class="pages">pp. 12-28. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-macfarlane2005"></a><span class='author'>MacFarlane, John </span><span class='date'>(<span class='year'>2005</span>). </span><span class="title">Making sense of relative truth</span>. <span class='journal'>Proceedings of the Aristotelian Society, <span class='edition'>105.</span> </span><span class="pages">pp. 321-339. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="macfarlane2005-tip"><a name="ref-macfarlane2005"></a><span class='author'>MacFarlane, John </span><span class='date'>(<span class='year'>2005</span>). </span><span class="title">Making sense of relative truth</span>. <span class='journal'>Proceedings of the Aristotelian Society, <span class='edition'>105.</span> </span><span class="pages">pp. 321-339. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-clark1986"></a><span class='author'>Clark, Herbert H. and Deanna Wilkes-Gibbs </span><span class='date'>(<span class='year'>1986</span>). </span><span class="title">Referring as a collaborative process</span>. <span class='journal'>Cognition, <span class='edition'>22.</span> </span><span class="pages">pp. 1-39. </span><ul class='url'><a href="https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0" target="_blank">https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0</a></ul>
+      <div class="tooltip reference" id="clark1986-tip"><a name="ref-clark1986"></a><span class='author'>Clark, Herbert H. and Deanna Wilkes-Gibbs </span><span class='date'>(<span class='year'>1986</span>). </span><span class="title">Referring as a collaborative process</span>. <span class='journal'>Cognition, <span class='edition'>22.</span> </span><span class="pages">pp. 1-39. </span><ul class='url'><a href="https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0" target="_blank">https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-portner1997"></a><span class='author'>Portner, Paul </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">The Semantics of Mood, Completion, and Conversational Force</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>5.</span> </span><span class="pages">pp. 167-212. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="portner1997-tip"><a name="ref-portner1997"></a><span class='author'>Portner, Paul </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">The Semantics of Mood, Completion, and Conversational Force</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>5.</span> </span><span class="pages">pp. 167-212. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-frege1884"></a><span class='author'>Frege, Gottlob </span><span class='date'>(<span class='year'>1884/1997</span>). </span><span class="title">The Foundations of Arithmetic</span>. <span class="title book">The Frege Reader</span>. <span class="editor">Michael Beaney (ed). </span><span class='publication'><span class='publisher'>Blackwell Publishing</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="frege1884-tip"><a name="ref-frege1884"></a><span class='author'>Frege, Gottlob </span><span class='date'>(<span class='year'>1884/1997</span>). </span><span class="title">The Foundations of Arithmetic</span>. <span class="title book">The Frege Reader</span>. <span class="editor">Michael Beaney (ed). </span><span class='publication'><span class='publisher'>Blackwell Publishing</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-roberts1998"></a><span class='author'>Roberts, Craige </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">Focus, the Flow of Information, and Universal Grammar</span>. <span class="title book">Syntax and Semantics: The Limits of Syntax</span>. <span class="editor">Peter Culicover and Louise McNally (eds). </span><span class='publication'><span class='publisher'>Academic Press</span>. </span><ul class='url'><a href="https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno" target="_blank">https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno</a></ul>
+      <div class="tooltip reference" id="roberts1998-tip"><a name="ref-roberts1998"></a><span class='author'>Roberts, Craige </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">Focus, the Flow of Information, and Universal Grammar</span>. <span class="title book">Syntax and Semantics: The Limits of Syntax</span>. <span class="editor">Peter Culicover and Louise McNally (eds). </span><span class='publication'><span class='publisher'>Academic Press</span>. </span><ul class='url'><a href="https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno" target="_blank">https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-buering2003"></a><span class='author'>Bu&#x0308;ring, Daniel </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">On d-trees, beans, and b-accents</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>26.</span> </span><span class="pages">pp. 511-545. </span><ul class='url'><a href="https://app.box.com/s/a11v7a9ky4cmg8czisxv" target="_blank">https://app.box.com/s/a11v7a9ky4cmg8czisxv</a></ul>
+      <div class="tooltip reference" id="buering2003-tip"><a name="ref-buering2003"></a><span class='author'>Bu&#x0308;ring, Daniel </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">On d-trees, beans, and b-accents</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>26.</span> </span><span class="pages">pp. 511-545. </span><ul class='url'><a href="https://app.box.com/s/a11v7a9ky4cmg8czisxv" target="_blank">https://app.box.com/s/a11v7a9ky4cmg8czisxv</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul>
+      <div class="tooltip reference" id="spenader2009-tip"><a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-geurts1998a"></a><span class='author'>Geurts, Bart </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class='journal'>Language. </span><ul class='url'><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul>
+      <div class="tooltip reference" id="geurts1998a-tip"><a name="ref-geurts1998a"></a><span class='author'>Geurts, Bart </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class='journal'>Language. </span><ul class='url'><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul></div>
+    </li>
+    
+  
+
+</ul>
+
+
+</div>
+
+
+<!-- Appendices -->
+
+
+<!-- Comments -->
+
+
 </div>
 
 

@@ -19,7 +19,7 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    background: $background-color;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -153,43 +153,15 @@ blockquote {
 }
 
 /**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
  * Wrapper
  */
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    margin: $spacing-unit auto;
+    padding: $spacing-unit;
+    background: $pagecolor;
+    box-shadow: 0px 0px 5px 3px #555555;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -199,8 +171,6 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
-
 
 /**
  * Clearfix
@@ -213,8 +183,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons

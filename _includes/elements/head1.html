@@ -10,6 +10,7 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" href="{{ '/images/infinity.png' | prepend: site.baseurl }}">
 
   {% if site.mode == "prod" %}
     <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
@@ -25,10 +26,14 @@
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
   <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
   <script src="{{ 'typology.js' | prepend: '/js/' | prepend: url }}"></script>
-  
+
   <script src="{{ 'open.js' | prepend: '/js/' | prepend: url }}"></script>
   {% for item in page.js %}
     <script src="{{ item | append: '.js' | prepend: '/js/' | prepend: url }}"></script>
   {% endfor %}
+  {% if page.toc %}
+    <script src="{{ 'toc.js' | prepend: '/js/' | prepend: url }}"></script>
+  {% endif %}
+  <script src="{{ 'bibjs.js' | prepend: '/js/' | prepend: url }}"></script>
   <script src="{{ 'totop.js' | prepend: '/js/' | prepend: url }}"></script>
 </head>

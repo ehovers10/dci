@@ -169,7 +169,7 @@ module Jekyll
     end
 
   # Focus class
-    def focus (input,type)
+    def focus(input,type)
       input.each { |row|
         row.each_pair { |key,val|
           #raise %{#{input[row]}}

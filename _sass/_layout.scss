@@ -6,13 +6,13 @@
 }
 
 .divider {
-  margin: $spacing-unit 5%;
+  margin: $spacing-unit;
   clear:right;
   border-bottom:1px solid #aaa;
 }
 
 .body {
-  color: #000;
+  color: $text-color;
   padding-right: $spacing-unit;
   font-size: 0.9em;
   text-align: justify;
@@ -82,24 +82,21 @@ li.show {
 	.popbox {
 		position: absolute;
 		left: 50%;
-		top: 5%;
+		top: $spacing-unit;
 		margin-right: -50%;
 		transform: translate(-50%, 0%);
 		overflow-y: auto;
-		background: #fff;
 	  border: solid #fff 3px;
     width: 800px;
 		max-height: 90%;
 		padding: 1em;
-
+    background: $pagecolor;
 		box-shadow:0 0 25px #111;
 		    -webkit-box-shadow:0 0 25px #111;
 		    -moz-box-shadow:0 0 25px #111;
 
 		.poptitle {
 			width: 100%;
-			color: #000;
-			background-color: #fff;
 			font-family: glam;
 			font-weight: 600;
 			font-size: 2em;
@@ -118,14 +115,13 @@ li.show {
 	.popclose {
 		z-index: 30;
 		position: absolute;
-		top: calc(5% - 20px);
-		top: -webkit-calc(5% - 20px);
+		top: #{$spacing-unit - 20px};
 		right: calc(50% - 420px - 1em);
 		right: -webkit-calc(50% - 420px - 1em);
 		width: 40px;
 		height: 40px;
 		background-image: url('/images/circle-with-cross.svg');
-		background-color: rgba(155,155,155,0.9);
+		background-color: $background-color;
 		border-radius: 20px;
 
 		@include media-query($big-width) {

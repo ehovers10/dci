@@ -1,7 +1,6 @@
 ---
 title: Dispute in discourse
 level: 4
-toc: yes
 biblio: true
 notes: did.md
 count:
@@ -10,7 +9,8 @@ count:
   obs: 1
   table: 1
 references: ""
-js: [bunch]
+js: [bunch,toc]
+permalink: /practice
 ---
 
 # Disputative discourse

@@ -3,7 +3,6 @@ layout: article
 ---
 
 {% assign chapter = site.data.toc[page.title] %}
-{% assign carol = '' %}
 
 <div class="chapter-front">
   {% if chapter.abstract %}
@@ -11,13 +10,20 @@ layout: article
     <div class="abstract body fence">{{ chapter.abstract | markdownify }}</div>
   {% endif %}
 
-  {% if page.toc %}
-    <h3>Table of contents</h3>
-    {% include elements/toc.html %}
-  {% endif %}
+  <h3>Table of contents</h3>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('#toc').toc();
+  });
+  </script>
+  <div id="toc" class="abstract body fence"></div>
 
   <div class="divider print-no"></div>
   <div class="break"></div>
 </div>
 
-{{ content }}
+<div class="chapter-content">
+  {{ content }}
+</div>
+
+{% include elements/chapterend.html %}

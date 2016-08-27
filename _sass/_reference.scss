@@ -37,6 +37,7 @@ ul.bib {
     margin-bottom: 0;
   }
   .title {
+    font-weight: bold;
     &.book {
       text-decoration: underline;
     }
@@ -86,25 +87,25 @@ ul.bib2 {
 
 /* Inline citation */
 .gloss {
-  color: #008000;
+  color: $gloss-color;
 
   &:visited {
-    color: #008000;
+    color: darken($gloss-color,40%);
   }
 }
 
 a.note:link {
-    border: 1px solid $brand-color;
+    border: 1px solid $com-color;
     border-radius: 3px;
-    color: $brand-color;
+    color: $com-color;
     padding: 2px;
     line-height: 0.875;
     text-decoration: none;
     display: inline-block;
 }
 a.note:hover {
-    background-color: $brand-color;
-    color: #fff;
+    background-color: darken($com-color,40%);
+    color: $text-color-light;
 }
 
 .tooltip {
@@ -113,8 +114,8 @@ a.note:hover {
   left: 1em;
   top: 1em;
   border: 1px solid black;
-  border-radius: 5px;
-  color: white;
+  //border-radius: 5px;
+  color: $text-color-light;
   padding: 0.5em;
   width: 50%;
   max-width: 400px;
@@ -129,16 +130,16 @@ a.note:hover {
   }
 
   &.comment {
-    background: rgba(128,0,0,0.9);
+    background: $com-color;
   }
   &.reference {
-    background: rgba(100,100,100,0.9);
+    background: $ref-color;
   }
   &.glossary {
-    background: rgba(0,128,0,0.9);
+    background: $gloss-color;
   }
   &.defn {
-    background: rgba(0,0,128,0.9);
+    background: $def-color;
   }
   .molecule {
     border: none;

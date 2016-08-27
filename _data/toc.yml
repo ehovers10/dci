@@ -1,4 +1,5 @@
 Knowledge in the image of inquiry:
+  permalink: concept
   abstract: I propose to take seriously the common dictum that knowledge is the end of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, which is relativized to a community of inquirers. If knowledge just is the output of this process, then knowledge, too is so relativized. The <em>inquiry-first</em> conception of knowledge, while revisionary, is not so radical. It captures common sense ideas about degrees of cognitive achievement and conceptual refinement, and it offers a unifying account of the diverse ways we talk about knowledge. It is further supported by the promise it carries for explaining the distinctive value of knowledge over true belief.
   sections:
   - title: Finding our way to knowledge
@@ -35,6 +36,7 @@ Knowledge in the image of inquiry:
   - title: Tracing back through the breadcrumbs
 
 Collaborative discourse dynamics:
+  permalink: theory
   abstract: Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In *collaborative update semantics*, contribution operators attach to propositional radicals, and contributions initiated by one utterance may require completion by a later utterance. In particular, conjecture operators function by opening a *sandbox* in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.
   sections:
     - title: Scoreboards and best systems
@@ -82,6 +84,7 @@ Collaborative discourse dynamics:
 
 
 Dispute in discourse:
+  permalink: practice
   abstract: Disputing an utterance can be an important tool in collaborative inquiry. In this paper, I examine a simple dialogue involving dispute and consider two established proposals for analyzing the semantic and pragmatic import of the utterances it contains. While each provides valuable insight into the interpretation of the discourse, I maintain that each is lacking in a some regard and that collaborative update semantics, supplemented with a semantics for bare plurals, offers an extension that fully accounts for the natural interpretation of the dialogue.
   sections:
   - title: Disputative discourse

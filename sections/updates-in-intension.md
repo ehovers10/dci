@@ -29,7 +29,7 @@ Define a *table* as a relation with attributes drawn from the available drefs an
 
 + Continuations join tables
     + This represents the corrective (and refinement) nature of continuations.
-    + Consider using *bags* for joins that expand the relation.
+    + Consider using *bags* for joins that expand the relation. (allow for duplicates)
 + A table is a radical *grouped by* the saturation
     + That is, the radical determines the attributes (subject and predicate)
     + The saturation places a constraint on the attribute values and groups them according to the partition it defines
