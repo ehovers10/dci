@@ -1,3 +1,21 @@
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin: $spacing-unit auto;
+    padding: $spacing-unit;
+    background: $pagecolor;
+    box-shadow: 0px 0px 5px 3px #555555;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+        margin: auto;
+    }
+}
+
 .page-content {
   @include media-query($mobile) {
     text-align: left;
@@ -53,7 +71,7 @@ li.show {
   }
 }
 
-#totop {
+/*#totop {
   display: none;
   position: fixed;
   right: 30px;
@@ -63,7 +81,7 @@ li.show {
   @include media-query($mobile) {
     display: none!important;
   }
-}
+}*/
 
 /* Lightbox */
 .box {

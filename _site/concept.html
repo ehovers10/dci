@@ -39,11 +39,6 @@
 
 <body>
 
-<div id="totop" class="print-no">
-  <img src="/images/chevron-with-circle-up.svg" />
-</div>
-
-
 <div class="wrapper">
 
 <div class="page-front">
@@ -87,6 +82,27 @@
 </ul>
 </ul>
 
+  <div class="smallnav">
+  <div class="button">
+    Knowledge in the image of inquiry
+  </div>
+  <div class="button">
+    <a href="#" class="pop" id="toc-pop" title="Table of contents"><img class="icon" src="/images/text.svg" /></a>
+    <div class="lightbox" id="toc-pop-hid">
+      <div class="popclose"></div>
+      <div class="popbox">
+        <div class="popmain"><div id="toc"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="button">
+    <a href="#" class="pop" id="searchable-bib" title="Search sources"><img class="icon" src="/images/magnifying-glass.svg" /></a>
+  </div>
+  <div class="button">
+    <a href="#" id="totop" title="Return to top"><img class="icon" src="/images/chevron-with-circle-up.svg" /></a>
+  </div>
+</div>
+
 
   <h1>Knowledge in the image of inquiry</h1>
   <h3></h3>
@@ -111,8 +127,7 @@
       $('#toc').toc();
   });
   </script>
-  <div id="toc" class="abstract body fence"></div>
-
+  <div id="toc" class="abstract body fence"></div>  
   <div class="divider print-no"></div>
   <div class="break"></div>
 </div>

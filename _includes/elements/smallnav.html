@@ -1,0 +1,20 @@
+<div class="smallnav">
+  <div class="button">
+    {{ page.title }}
+  </div>
+  <div class="button">
+    <a href="#" class="pop" id="toc-pop" title="Table of contents"><img class="icon" src="{{ 'text.svg' | prepend: '/images/' | prepend: site.baseurl }}" /></a>
+    <div class="lightbox" id="toc-pop-hid">
+      <div class="popclose"></div>
+      <div class="popbox">
+        <div class="popmain"><div id="toc"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="button">
+    <a href="#" class="pop" id="searchable-bib" title="Search sources"><img class="icon" src="{{ 'magnifying-glass.svg' | prepend: '/images/' | prepend: site.baseurl }}" /></a>
+  </div>
+  <div class="button">
+    <a href="#" id="totop" title="Return to top"><img class="icon" src="{{ 'chevron-with-circle-up.svg' | prepend: '/images/' | prepend: site.baseurl }}" /></a>
+  </div>
+</div>
