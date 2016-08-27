@@ -13,6 +13,7 @@
 
   <link rel="canonical" href="http://erikhoversten.org/">
   <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
 
   
     <script src="/js/jquery-1.11.3.min.js"></script>
@@ -25,9 +26,11 @@
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
   <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
   <script src="/js/typology.js"></script>
-  
+
   <script src="/js/open.js"></script>
   
+  
+  <script src="/js/bibjs.js"></script>
   <script src="/js/totop.js"></script>
 </head>
 
@@ -46,31 +49,38 @@
   
 <ul class="nav">
 <li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
-<li><a href="/atoc.html">Table of contents</a></li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
 <li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
 <li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>
-<ul class="nav2 hid" id="chap-hid">
+<ol class="nav2 hid" id="chap-hid" start=0>
 
-<li><a href="/chapters/discourse-as-collaborative-inquiry.html">Project overview</a></li>
+<li><a href="/overview">Project overview</a></li>
 
-<li><a href="/chapters/knowledge-in-the-image-of-inquiry.html">Knowledge in the image of inquiry</a></li>
+<li><a href="/concept">Knowledge in the image of inquiry</a></li>
 
-<li><a href="/chapters/collaborative-discourse-dynamics.html">Collaborative discourse dynamics</a></li>
+<li><a href="/theory">Collaborative discourse dynamics</a></li>
 
-<li><a href="/chapters/dispute-in-discourse.html">Dispute in discourse</a></li>
+<li><a href="/practice">Dispute in discourse</a></li>
 
-</ul>
+</ol>
 <ul class="nav2 hid" id="appen-hid">
 
-<li><a href="/appendices/bibliography.html">Bibliography</a></li>
+<li><a href="/bibliography">Bibliography</a></li>
 
-<li><a href="/appendices/formalism.html">Formalism</a></li>
+<li><a href="/formalism">Formalism</a></li>
 
-<li><a href="/appendices/glossary.html">Glossary</a></li>
+<li><a href="/glossary">Glossary</a></li>
 
-<li><a href="/appendices/relations.html">Predication in <strong>CU</strong></a></li>
+<li><a href="/predication-in-CU">Predication in <strong>CU</strong></a></li>
 
-<li><a href="/appendices/typologies.html">Typologies</a></li>
+<li><a href="/typologies">Typologies</a></li>
 
 </ul>
 </ul>
@@ -112,11 +122,26 @@
 
 <p>The purpose of the project contained in these pages is to develop and motivate a formal framework of <em>collaborative discourse interpretation</em>. To do so, I take a three-pronged approach:</p>
 
-<p><a href="/chapters/knowledge-in-the-image-of-inquiry.html">Conceptual</a>: It is commonly held that knowledge is the end of inquiry, but if we take this connection seriously, there are significant implications for our understanding of the nature of knowledge. I propose to take at face value the idea that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, and so then is knowledge. This idea has important consequences for explaining the distinctive value of knowledge over true belief and for the contextualism/relativism debate in epistemology.</p>
+<p><a href="/concept">Conceptual</a>: It is commonly held that knowledge is the end of inquiry, but if we take this connection seriously, there are significant implications for our understanding of the nature of knowledge. I propose to take at face value the idea that knowledge is whatever we get as output in the process of inquiry. Delving into the nature of inquiry reveals that it is a <em>collaborative</em> endeavor, and so then is knowledge. This idea has important consequences for explaining the distinctive value of knowledge over true belief and for the contextualism/relativism debate in epistemology.</p>
 
-<p><a href="/chapters/collaborative-update-semantics.html">Theoretical</a>: Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In <em>collaborative update semantics</em>, contribution operators attach to propositional radicals, making it possible that contributions initiated by one utterance may not be completed until a later utterance is added. In particular, conjecture operators function by opening a <em>sandbox</em> in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.</p>
+<p><a href="/theory">Theoretical</a>: Genuine contributions to discourse change the state of the conversational scoreboard in distinctive ways. Incorporating ideas from version control in computer programming, I develop an update semantics that accommodates collaborative inquiry. In <em>collaborative update semantics</em>, contribution operators attach to propositional radicals, making it possible that contributions initiated by one utterance may not be completed until a later utterance is added. In particular, conjecture operators function by opening a <em>sandbox</em> in which further discourse builds on the conjecture. When all parties are satisfied, the sandbox contents are merged into the original information state, which is additionally marked for the purposes of tracking the changes.</p>
 
-<p><a href="/chapters/dispute-in-discourse.html">Practical</a>: Disputing an utterance can be an important tool in collaborative inquiry. In this paper, I examine a simple dialogue involving dispute and consider two established proposals for analyzing the semantic and pragmatic import of the utterances it contains. While each provides valuable insight into the interpretation of the discourse, I maintain that each is lacking in a some regard and that collaborative update semantics, supplemented with a semantics for bare plurals, offers an extension that fully accounts for the natural interpretation of the dialogue.</p>
+<p><a href="/practice">Practical</a>: Disputing an utterance can be an important tool in collaborative inquiry. In this paper, I examine a simple dialogue involving dispute and consider two established proposals for analyzing the semantic and pragmatic import of the utterances it contains. While each provides valuable insight into the interpretation of the discourse, I maintain that each is lacking in a some regard and that collaborative update semantics, supplemented with a semantics for bare plurals, offers an extension that fully accounts for the natural interpretation of the dialogue.</p>
+
+<h2 id="references">References</h2>
+
+<ul class="bib">
+
+  
+    <li>
+      <a name="ref-grice1989"></a><span class="author">Grice, Paul </span><span class="date">(<span class="year">1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class="publication"><span class="publisher">Harvard University Press</span>. </span><ul class="url"><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul>
+      <div class="tooltip reference" id="grice1989-tip"><a name="ref-grice1989"></a><span class="author">Grice, Paul </span><span class="date">(<span class="year">1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class="publication"><span class="publisher">Harvard University Press</span>. </span><ul class="url"><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul></div>
+    </li>
+    
+  
+
+</ul>
+
 
 
 </div>

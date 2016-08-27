@@ -8,11 +8,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="jekyll" />
 
-  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <meta name="description" content="">
   <title>Dispute in discourse</title>
 
-  <link rel="canonical" href="http://erikhoversten.org/chapters/dispute-in-discourse.html">
+  <link rel="canonical" href="http://erikhoversten.org/practice">
   <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
 
   
     <script src="/js/jquery-1.11.3.min.js"></script>
@@ -25,11 +26,15 @@
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
   <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
   <script src="/js/typology.js"></script>
-  
+
   <script src="/js/open.js"></script>
   
     <script src="/js/bunch.js"></script>
   
+    <script src="/js/toc.js"></script>
+  
+  
+  <script src="/js/bibjs.js"></script>
   <script src="/js/totop.js"></script>
 </head>
 
@@ -48,31 +53,38 @@
   
 <ul class="nav">
 <li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
-<li><a href="/atoc.html">Table of contents</a></li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
 <li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
 <li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>
-<ul class="nav2 hid" id="chap-hid">
+<ol class="nav2 hid" id="chap-hid" start=0>
 
-<li><a href="/chapters/discourse-as-collaborative-inquiry.html">Project overview</a></li>
+<li><a href="/overview">Project overview</a></li>
 
-<li><a href="/chapters/knowledge-in-the-image-of-inquiry.html">Knowledge in the image of inquiry</a></li>
+<li><a href="/concept">Knowledge in the image of inquiry</a></li>
 
-<li><a href="/chapters/collaborative-discourse-dynamics.html">Collaborative discourse dynamics</a></li>
+<li><a href="/theory">Collaborative discourse dynamics</a></li>
 
-<li><a href="/chapters/dispute-in-discourse.html">Dispute in discourse</a></li>
+<li><a href="/practice">Dispute in discourse</a></li>
 
-</ul>
+</ol>
 <ul class="nav2 hid" id="appen-hid">
 
-<li><a href="/appendices/bibliography.html">Bibliography</a></li>
+<li><a href="/bibliography">Bibliography</a></li>
 
-<li><a href="/appendices/formalism.html">Formalism</a></li>
+<li><a href="/formalism">Formalism</a></li>
 
-<li><a href="/appendices/glossary.html">Glossary</a></li>
+<li><a href="/glossary">Glossary</a></li>
 
-<li><a href="/appendices/relations.html">Predication in <strong>CU</strong></a></li>
+<li><a href="/predication-in-CU">Predication in <strong>CU</strong></a></li>
 
-<li><a href="/appendices/typologies.html">Typologies</a></li>
+<li><a href="/typologies">Typologies</a></li>
 
 </ul>
 </ul>
@@ -88,7 +100,6 @@
 
   
 
-
 <div class="chapter-front">
   
     <h3>Abstract</h3>
@@ -96,81 +107,20 @@
 </div>
   
 
-  
-    <h3>Table of contents</h3>
-    <div class="toc">
-<ul class="body fence">
-  
-    <li><a href="#disputative-discourse">Disputative discourse</a></li>
-    
-  
-    <li><a href="#correction-as-contrastive-topic">Correction as contrastive topic</a></li>
-    
-    <ul class="subsection">
-      
-      <li><a href="#focus-and-alternatives">Focus and alternatives</a></li>
-      
-      
-      <li><a href="#questions-under-discussion">Questions under discussion</a></li>
-      
-      
-      <li><a href="#advancement-or-accommodation">Advancement or accommodation</a></li>
-      
-      
-      <li><a href="#"></a></li>
-      
-      
-    </ul>
-    
-  
-    <li><a href="#denial-as-downdate">Denial as downdate</a></li>
-    
-    <ul class="subsection">
-      
-      <li><a href="#denial-and-ldrt">Denial and LDRT</a></li>
-      
-      
-      <li><a href="#denial-and-information-state-revision">Denial and information state revision</a></li>
-      
-      
-      <li><a href="#binding-retractions">Binding retractions</a></li>
-      
-      
-    </ul>
-    
-  
-    <li><a href="#contrast-as-collaboration">Contrast as collaboration</a></li>
-    
-    <ul class="subsection">
-      
-      <li><a href="#strictness-shifts-and-structure">Strictness, shifts, and structure</a></li>
-      
-      
-      <li><a href="#pragmatics-of-plurals">Pragmatics of plurals</a></li>
-      
-      
-      <li><a href="#plural-predication-and-contrast-informally">Plural predication and contrast, informally</a></li>
-      
-      
-      <li><a href="#plural-predication-and-contrast-formally">Plural predication and contrast, formally</a></li>
-      
-      
-    </ul>
-    
-  
-    <li><a href="#outcome-and-observations-obtained">Outcome and observations obtained</a></li>
-    
-  
-</ul>
-</div>
-
-  
+  <h3>Table of contents</h3>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('#toc').toc();
+  });
+  </script>
+  <div id="toc" class="abstract body fence"></div>
 
   <div class="divider print-no"></div>
   <div class="break"></div>
 </div>
 
-<h1 id="disputative-discourse">Disputative discourse</h1>
+<div class="chapter-content">
+  <h1 id="disputative-discourse">Disputative discourse</h1>
 
 <p>Disputes can be frivolous, fractured, and fraudulent. They can derail conversations, and generate so much animosity that perpetuating the dispute itself comes to mean more than the prospect of resolving it.  These disputes may have very little to do with actual conflict over the informational potential of the disputative language used to express them, instead being driven by <em>ad hominem</em> and <em>ad ideologiam</em> tendencies.</p>
 
@@ -1282,6 +1232,386 @@ values in order to get the appropriate comparison. We should thus view standard 
 
 </div>
 
+
+</div>
+
+<div class="chapter-end" markdown="1">
+
+<!-- References -->
+
+
+<div class="references">
+
+  <h3>References</h3>
+
+  
+
+<ul class='bib'>
+
+  
+    <li>
+      <a name="ref-kehler2000"></a><span class='author'>Kehler, Andrew </span><span class='date'>(<span class='year'>2000</span>). </span><span class="title">Coherence and the Resolution of Ellipsis</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>23.6.</span> </span><span class='publication'><span class='publisher'>Springer</span><span class='location'>: Netherlands</span>. </span><span class="pages">pp. 533-575. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="kehler2000-tip"><a name="ref-kehler2000"></a><span class='author'>Kehler, Andrew </span><span class='date'>(<span class='year'>2000</span>). </span><span class="title">Coherence and the Resolution of Ellipsis</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>23.6.</span> </span><span class='publication'><span class='publisher'>Springer</span><span class='location'>: Netherlands</span>. </span><span class="pages">pp. 533-575. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-hume1777"></a><span class='author'>Hume, David </span><span class='date'>(<span class='year'>1777/1999</span>). </span><span class="title book">An Enquiry Concerning Human Understanding</span>. <span class='publication'><span class='publisher'>Oxford University Press UK</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="hume1777-tip"><a name="ref-hume1777"></a><span class='author'>Hume, David </span><span class='date'>(<span class='year'>1777/1999</span>). </span><span class="title book">An Enquiry Concerning Human Understanding</span>. <span class='publication'><span class='publisher'>Oxford University Press UK</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-goodman1940"></a><span class='author'>Goodman, Nelson and Henry Leonard </span><span class='date'>(<span class='year'>1940</span>). </span><span class="title">The Calculus of Individuals and its Uses</span>. <span class='journal'>Journal of Symbolic Logic, <span class='edition'>5.2.</span> </span><span class='publication'><span class='publisher'>Association for Symbolic Logic</span>. </span><span class="pages">pp. 45-55. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="goodman1940-tip"><a name="ref-goodman1940"></a><span class='author'>Goodman, Nelson and Henry Leonard </span><span class='date'>(<span class='year'>1940</span>). </span><span class="title">The Calculus of Individuals and its Uses</span>. <span class='journal'>Journal of Symbolic Logic, <span class='edition'>5.2.</span> </span><span class='publication'><span class='publisher'>Association for Symbolic Logic</span>. </span><span class="pages">pp. 45-55. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-vonfintel2008"></a><span class='author'>von Fintel, Kai  and Thony Gillies </span><span class='date'>(<span class='year'>2008</span>). </span><span class="title">CIA Leaks</span>. <span class='journal'>Philosophical Review, <span class='edition'>117.1.</span> </span><span class="pages">pp. 77-98. </span><ul class='url'><a href="https://app.box.com/s/vof10p8m563yppok2axqotygs6ki0vrk" target="_blank">https://app.box.com/s/vof10p8m563yppok2axqotygs6ki0vrk</a></ul>
+      <div class="tooltip reference" id="vonfintel2008-tip"><a name="ref-vonfintel2008"></a><span class='author'>von Fintel, Kai  and Thony Gillies </span><span class='date'>(<span class='year'>2008</span>). </span><span class="title">CIA Leaks</span>. <span class='journal'>Philosophical Review, <span class='edition'>117.1.</span> </span><span class="pages">pp. 77-98. </span><ul class='url'><a href="https://app.box.com/s/vof10p8m563yppok2axqotygs6ki0vrk" target="_blank">https://app.box.com/s/vof10p8m563yppok2axqotygs6ki0vrk</a></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-jackendoff1972"></a><span class='author'>Jackendoff, Ray </span><span class='date'>(<span class='year'>1972</span>). </span><span class="title book">Semantic Interpretation in Generative Grammar</span>. <span class='publication'><span class='publisher'>MIT Press</span><span class='location'>: Cambridge, MA</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="jackendoff1972-tip"><a name="ref-jackendoff1972"></a><span class='author'>Jackendoff, Ray </span><span class='date'>(<span class='year'>1972</span>). </span><span class="title book">Semantic Interpretation in Generative Grammar</span>. <span class='publication'><span class='publisher'>MIT Press</span><span class='location'>: Cambridge, MA</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-rooth1985"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1985</span>). </span><span class="title book">Association with Focus</span>. <ul class='url'></ul>
+      <div class="tooltip reference" id="rooth1985-tip"><a name="ref-rooth1985"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1985</span>). </span><span class="title book">Association with Focus</span>. <ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul>
+      <div class="tooltip reference" id="rooth1992-tip"><a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-rooth1985"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1985</span>). </span><span class="title book">Association with Focus</span>. <ul class='url'></ul>
+      <div class="tooltip reference" id="rooth1985-tip"><a name="ref-rooth1985"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1985</span>). </span><span class="title book">Association with Focus</span>. <ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul>
+      <div class="tooltip reference" id="rooth1992-tip"><a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-hamblin1958"></a><span class='author'>Hamblin, Charles </span><span class='date'>(<span class='year'>1958</span>). </span><span class="title">Questions</span>. <span class='journal'>Australasian Journal of Philosophy, <span class='edition'>36.</span> </span><span class="pages">pp. 159-168. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="hamblin1958-tip"><a name="ref-hamblin1958"></a><span class='author'>Hamblin, Charles </span><span class='date'>(<span class='year'>1958</span>). </span><span class="title">Questions</span>. <span class='journal'>Australasian Journal of Philosophy, <span class='edition'>36.</span> </span><span class="pages">pp. 159-168. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-groenendijk1984"></a><span class='author'>Groenendijk, Jeroen and Martin Stokhof </span><span class='date'>(<span class='year'>1984</span>). </span><span class="title book">Studies in the Semantics of Questions and the Pragmatics of Answers</span>. <ul class='url'><a href="https://app.box.com/s/2uf0shh0xuddygsbaq8ondesf3kw4h5o" target="_blank">https://app.box.com/s/2uf0shh0xuddygsbaq8ondesf3kw4h5o</a></ul>
+      <div class="tooltip reference" id="groenendijk1984-tip"><a name="ref-groenendijk1984"></a><span class='author'>Groenendijk, Jeroen and Martin Stokhof </span><span class='date'>(<span class='year'>1984</span>). </span><span class="title book">Studies in the Semantics of Questions and the Pragmatics of Answers</span>. <ul class='url'><a href="https://app.box.com/s/2uf0shh0xuddygsbaq8ondesf3kw4h5o" target="_blank">https://app.box.com/s/2uf0shh0xuddygsbaq8ondesf3kw4h5o</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-roberts1996"></a><span class='author'>Roberts, Craige </span><span class='date'>(<span class='year'>1996</span>). </span><span class="title">Information structure in discourse: towards an integrated formal theory of pragmatics</span>. <span class="title book">Papers in semantics (Working papers in linguistics 49)</span>. <span class="editor">Jae-Hak Yoon and Andreas Kathol (eds). </span><ul class='url'><a href="http://bit.ly/roberts1996" target="_blank">http://bit.ly/roberts1996</a></ul>
+      <div class="tooltip reference" id="roberts1996-tip"><a name="ref-roberts1996"></a><span class='author'>Roberts, Craige </span><span class='date'>(<span class='year'>1996</span>). </span><span class="title">Information structure in discourse: towards an integrated formal theory of pragmatics</span>. <span class="title book">Papers in semantics (Working papers in linguistics 49)</span>. <span class="editor">Jae-Hak Yoon and Andreas Kathol (eds). </span><ul class='url'><a href="http://bit.ly/roberts1996" target="_blank">http://bit.ly/roberts1996</a></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-buering2003"></a><span class='author'>Bu&#x0308;ring, Daniel </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">On d-trees, beans, and b-accents</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>26.</span> </span><span class="pages">pp. 511-545. </span><ul class='url'><a href="https://app.box.com/s/a11v7a9ky4cmg8czisxv" target="_blank">https://app.box.com/s/a11v7a9ky4cmg8czisxv</a></ul>
+      <div class="tooltip reference" id="buering2003-tip"><a name="ref-buering2003"></a><span class='author'>Bu&#x0308;ring, Daniel </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">On d-trees, beans, and b-accents</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>26.</span> </span><span class="pages">pp. 511-545. </span><ul class='url'><a href="https://app.box.com/s/a11v7a9ky4cmg8czisxv" target="_blank">https://app.box.com/s/a11v7a9ky4cmg8czisxv</a></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-thomason1990"></a><span class='author'>Thomason, Richmond </span><span class='date'>(<span class='year'>1990</span>). </span><span class="title">Accommodation, meaning and implicature: interdisciplinary foundations for pragmatics</span>. <span class="title book">Intentions in communication</span>. <span class="editor">P. Cohen, J. Morgan, and M. Pollack (eds). </span><span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="thomason1990-tip"><a name="ref-thomason1990"></a><span class='author'>Thomason, Richmond </span><span class='date'>(<span class='year'>1990</span>). </span><span class="title">Accommodation, meaning and implicature: interdisciplinary foundations for pragmatics</span>. <span class="title book">Intentions in communication</span>. <span class="editor">P. Cohen, J. Morgan, and M. Pollack (eds). </span><span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul>
+      <div class="tooltip reference" id="spenader2009-tip"><a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-geurts1998a"></a><span class='author'>Geurts, Bart </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class='journal'>Language. </span><ul class='url'><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul>
+      <div class="tooltip reference" id="geurts1998a-tip"><a name="ref-geurts1998a"></a><span class='author'>Geurts, Bart </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class='journal'>Language. </span><ul class='url'><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-geurtsa"></a><span class='author'>Geurts, Bart and Emar Maier </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">Layered DRT</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="geurtsa-tip"><a name="ref-geurtsa"></a><span class='author'>Geurts, Bart and Emar Maier </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">Layered DRT</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-geurts1998a"></a><span class='author'>Geurts, Bart </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class='journal'>Language. </span><ul class='url'><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul>
+      <div class="tooltip reference" id="geurts1998a-tip"><a name="ref-geurts1998a"></a><span class='author'>Geurts, Bart </span><span class='date'>(<span class='year'>1998</span>). </span><span class="title">The mechanisms of denial</span>. <span class='journal'>Language. </span><ul class='url'><a href="https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds" target="_blank">https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-geurtsa"></a><span class='author'>Geurts, Bart and Emar Maier </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">Layered DRT</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="geurtsa-tip"><a name="ref-geurtsa"></a><span class='author'>Geurts, Bart and Emar Maier </span><span class='date'>(<span class='year'>2003</span>). </span><span class="title">Layered DRT</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-agm1985"></a><span class='author'>Alcho&#x0301;urron, Carlos and Peter Ga&#x0308;rdenfors and David Makinson </span><span class='date'>(<span class='year'>1985</span>). </span><span class="title">On the logic of theory change: Partial meet contraction and revision functions</span>. <span class='journal'>Journal of Symbolic Logic, <span class='edition'>50.2.</span> </span><span class="pages">pp. 510-530. </span><ul class='url'><a href="https://app.box.com/s/mbzd0np4md371ghes0et" target="_blank">https://app.box.com/s/mbzd0np4md371ghes0et</a></ul>
+      <div class="tooltip reference" id="agm1985-tip"><a name="ref-agm1985"></a><span class='author'>Alcho&#x0301;urron, Carlos and Peter Ga&#x0308;rdenfors and David Makinson </span><span class='date'>(<span class='year'>1985</span>). </span><span class="title">On the logic of theory change: Partial meet contraction and revision functions</span>. <span class='journal'>Journal of Symbolic Logic, <span class='edition'>50.2.</span> </span><span class="pages">pp. 510-530. </span><ul class='url'><a href="https://app.box.com/s/mbzd0np4md371ghes0et" target="_blank">https://app.box.com/s/mbzd0np4md371ghes0et</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-gillies2004"></a><span class='author'>Gillies, Anthony S. </span><span class='date'>(<span class='year'>2004</span>). </span><span class="title">New Foundations for Epistemic Change</span>. <span class='journal'>Synthese, <span class='edition'>138.1.</span> </span><span class='publication'><span class='publisher'>Springer</span>. </span><span class="pages">pp. 1-48. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="gillies2004-tip"><a name="ref-gillies2004"></a><span class='author'>Gillies, Anthony S. </span><span class='date'>(<span class='year'>2004</span>). </span><span class="title">New Foundations for Epistemic Change</span>. <span class='journal'>Synthese, <span class='edition'>138.1.</span> </span><span class='publication'><span class='publisher'>Springer</span>. </span><span class="pages">pp. 1-48. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-karttunen1979"></a><span class='author'>Karttunen, L. and S. Peters </span><span class='date'>(<span class='year'>1979</span>). </span><span class="title">Conventional Implicature</span>. <span class="title book">Syntax and Semantics II: Presupposition</span>. <span class="editor">C.-K. Oh and D. A. Dineen (eds). </span><span class='publication'><span class='publisher'>Academic Press</span><span class='location'>: New York</span>. </span><span class="pages">pp. 1-56. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="karttunen1979-tip"><a name="ref-karttunen1979"></a><span class='author'>Karttunen, L. and S. Peters </span><span class='date'>(<span class='year'>1979</span>). </span><span class="title">Conventional Implicature</span>. <span class="title book">Syntax and Semantics II: Presupposition</span>. <span class="editor">C.-K. Oh and D. A. Dineen (eds). </span><span class='publication'><span class='publisher'>Academic Press</span><span class='location'>: New York</span>. </span><span class="pages">pp. 1-56. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul>
+      <div class="tooltip reference" id="spenader2009-tip"><a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-gillies2007"></a><span class='author'>Gillies, Thony </span><span class='date'>(<span class='year'>2007</span>). </span><span class="title">Counterfactual Scorekeeping</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>30.</span> </span><span class="pages">pp. 329-60. </span><ul class='url'><a href="https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4" target="_blank">https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4</a></ul>
+      <div class="tooltip reference" id="gillies2007-tip"><a name="ref-gillies2007"></a><span class='author'>Gillies, Thony </span><span class='date'>(<span class='year'>2007</span>). </span><span class="title">Counterfactual Scorekeeping</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>30.</span> </span><span class="pages">pp. 329-60. </span><ul class='url'><a href="https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4" target="_blank">https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-stalnaker1968"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1968</span>). </span><span class="title">A Theory of Conditionals</span>. <span class="title book">Studies in Logical Theory</span>. <span class='publication'><span class='publisher'>Blackwell Publishing</span><span class='location'>: Oxford</span>. </span><span class="pages">pp. 98-112. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="stalnaker1968-tip"><a name="ref-stalnaker1968"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1968</span>). </span><span class="title">A Theory of Conditionals</span>. <span class="title book">Studies in Logical Theory</span>. <span class='publication'><span class='publisher'>Blackwell Publishing</span><span class='location'>: Oxford</span>. </span><span class="pages">pp. 98-112. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-lewis1973"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title">Counterfactuals and Comparative Possibility</span>. <span class='journal'>Journal of Philosophical Logic, <span class='edition'>2.4.</span> </span><span class="pages">pp. 418-446. </span><ul class='url'><a href="https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/" target="_blank">https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/</a></ul>
+      <div class="tooltip reference" id="lewis1973-tip"><a name="ref-lewis1973"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title">Counterfactuals and Comparative Possibility</span>. <span class='journal'>Journal of Philosophical Logic, <span class='edition'>2.4.</span> </span><span class="pages">pp. 418-446. </span><ul class='url'><a href="https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/" target="_blank">https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-gillies2007"></a><span class='author'>Gillies, Thony </span><span class='date'>(<span class='year'>2007</span>). </span><span class="title">Counterfactual Scorekeeping</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>30.</span> </span><span class="pages">pp. 329-60. </span><ul class='url'><a href="https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4" target="_blank">https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4</a></ul>
+      <div class="tooltip reference" id="gillies2007-tip"><a name="ref-gillies2007"></a><span class='author'>Gillies, Thony </span><span class='date'>(<span class='year'>2007</span>). </span><span class="title">Counterfactual Scorekeeping</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>30.</span> </span><span class="pages">pp. 329-60. </span><ul class='url'><a href="https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4" target="_blank">https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-kaplan1977"></a><span class='author'>Kaplan, David </span><span class='date'>(<span class='year'>1977</span>). </span><span class="title">Demonstratives</span>. <span class="title book">Themes From Kaplan</span>. <span class="editor">Joseph Almog and John Perry and Howard Wettstein (eds). </span><span class='publication'><span class='publisher'>Oxford University Press</span>. </span><span class="pages">pp. 481-563. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="kaplan1977-tip"><a name="ref-kaplan1977"></a><span class='author'>Kaplan, David </span><span class='date'>(<span class='year'>1977</span>). </span><span class="title">Demonstratives</span>. <span class="title book">Themes From Kaplan</span>. <span class="editor">Joseph Almog and John Perry and Howard Wettstein (eds). </span><span class='publication'><span class='publisher'>Oxford University Press</span>. </span><span class="pages">pp. 481-563. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-pelletierms"></a><span class='author'>Pelletier, Francis Jeffry and Nicholas Asher </span><span class='date'>(<span class='year'>n/a</span>). </span><span class="title">Generics and Defaults</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="pelletierms-tip"><a name="ref-pelletierms"></a><span class='author'>Pelletier, Francis Jeffry and Nicholas Asher </span><span class='date'>(<span class='year'>n/a</span>). </span><span class="title">Generics and Defaults</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-lobner1987"></a><span class='author'>Lo&#x0308;bner, Sebastian </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title">Natural language and generalized quantifier theory</span>. <span class="title book">Generalized Quantifiers</span>. <span class="editor">Peter Ga&#x0308;rdenfors (ed). </span><span class='publication'><span class='publisher'>Reidel Publishing Company</span>. </span><span class="pages">pp. 181-201. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="lobner1987-tip"><a name="ref-lobner1987"></a><span class='author'>Lo&#x0308;bner, Sebastian </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title">Natural language and generalized quantifier theory</span>. <span class="title book">Generalized Quantifiers</span>. <span class="editor">Peter Ga&#x0308;rdenfors (ed). </span><span class='publication'><span class='publisher'>Reidel Publishing Company</span>. </span><span class="pages">pp. 181-201. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-vonfintel1997"></a><span class='author'>von Fintel, Kai  </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">Bare plurals, bare conditionals, and only</span>. <span class='journal'>Journal of Semantics, <span class='edition'>14.</span> </span><span class="pages">pp. 1-56. </span><ul class='url'><a href="https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z" target="_blank">https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z</a></ul>
+      <div class="tooltip reference" id="vonfintel1997-tip"><a name="ref-vonfintel1997"></a><span class='author'>von Fintel, Kai  </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">Bare plurals, bare conditionals, and only</span>. <span class='journal'>Journal of Semantics, <span class='edition'>14.</span> </span><span class="pages">pp. 1-56. </span><ul class='url'><a href="https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z" target="_blank">https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-schwarzschild1994"></a><span class='author'>Schwarzschild, Roger </span><span class='date'>(<span class='year'>1994</span>). </span><span class="title">Plurals, Presuppositions, and the Sources of Distributivity</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>2.</span> </span><span class='publication'><span class='publisher'>Kluwer Academic Publishers</span>. </span><span class="pages">pp. 201-248. </span><ul class='url'><a href="https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2" target="_blank">https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2</a></ul>
+      <div class="tooltip reference" id="schwarzschild1994-tip"><a name="ref-schwarzschild1994"></a><span class='author'>Schwarzschild, Roger </span><span class='date'>(<span class='year'>1994</span>). </span><span class="title">Plurals, Presuppositions, and the Sources of Distributivity</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>2.</span> </span><span class='publication'><span class='publisher'>Kluwer Academic Publishers</span>. </span><span class="pages">pp. 201-248. </span><ul class='url'><a href="https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2" target="_blank">https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-vonfintel1997"></a><span class='author'>von Fintel, Kai  </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">Bare plurals, bare conditionals, and only</span>. <span class='journal'>Journal of Semantics, <span class='edition'>14.</span> </span><span class="pages">pp. 1-56. </span><ul class='url'><a href="https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z" target="_blank">https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z</a></ul>
+      <div class="tooltip reference" id="vonfintel1997-tip"><a name="ref-vonfintel1997"></a><span class='author'>von Fintel, Kai  </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">Bare plurals, bare conditionals, and only</span>. <span class='journal'>Journal of Semantics, <span class='edition'>14.</span> </span><span class="pages">pp. 1-56. </span><ul class='url'><a href="https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z" target="_blank">https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-veltman1996"></a><span class='author'>Veltman, Frank </span><span class='date'>(<span class='year'>1996</span>). </span><span class="title">Defaults in Update Semantics</span>. <span class='journal'>Journal of Philosophical Logic, <span class='edition'>25.3.</span> </span><span class="pages">pp. 221-61. </span><ul class='url'><a href="https://app.box.com/s/bv4966xcvl23hm6niswip2das9g99ilr" target="_blank">https://app.box.com/s/bv4966xcvl23hm6niswip2das9g99ilr</a></ul>
+      <div class="tooltip reference" id="veltman1996-tip"><a name="ref-veltman1996"></a><span class='author'>Veltman, Frank </span><span class='date'>(<span class='year'>1996</span>). </span><span class="title">Defaults in Update Semantics</span>. <span class='journal'>Journal of Philosophical Logic, <span class='edition'>25.3.</span> </span><span class="pages">pp. 221-61. </span><ul class='url'><a href="https://app.box.com/s/bv4966xcvl23hm6niswip2das9g99ilr" target="_blank">https://app.box.com/s/bv4966xcvl23hm6niswip2das9g99ilr</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-codd1970"></a><span class='author'>Codd, E. F., </span><span class='date'>(<span class='month'>June</span> <span class='year'>1970</span>). </span><span class="title">A Relational Model of Data for Large Shared Data Banks</span>. <span class='journal'>Commun. ACM, <span class='edition'>13.0001-0782.6.</span> </span><span class='publication'><span class='publisher'>ACM</span><span class='location'>: New York, NY, USA</span>. </span><span class="pages">pp. 377-387. </span><ul class='url'><a href="http://doi.acm.org/10.1145/362384.362685" target="_blank">http://doi.acm.org/10.1145/362384.362685</a></ul>
+      <div class="tooltip reference" id="codd1970-tip"><a name="ref-codd1970"></a><span class='author'>Codd, E. F., </span><span class='date'>(<span class='month'>June</span> <span class='year'>1970</span>). </span><span class="title">A Relational Model of Data for Large Shared Data Banks</span>. <span class='journal'>Commun. ACM, <span class='edition'>13.0001-0782.6.</span> </span><span class='publication'><span class='publisher'>ACM</span><span class='location'>: New York, NY, USA</span>. </span><span class="pages">pp. 377-387. </span><ul class='url'><a href="http://doi.acm.org/10.1145/362384.362685" target="_blank">http://doi.acm.org/10.1145/362384.362685</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-goodman1940"></a><span class='author'>Goodman, Nelson and Henry Leonard </span><span class='date'>(<span class='year'>1940</span>). </span><span class="title">The Calculus of Individuals and its Uses</span>. <span class='journal'>Journal of Symbolic Logic, <span class='edition'>5.2.</span> </span><span class='publication'><span class='publisher'>Association for Symbolic Logic</span>. </span><span class="pages">pp. 45-55. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="goodman1940-tip"><a name="ref-goodman1940"></a><span class='author'>Goodman, Nelson and Henry Leonard </span><span class='date'>(<span class='year'>1940</span>). </span><span class="title">The Calculus of Individuals and its Uses</span>. <span class='journal'>Journal of Symbolic Logic, <span class='edition'>5.2.</span> </span><span class='publication'><span class='publisher'>Association for Symbolic Logic</span>. </span><span class="pages">pp. 45-55. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul>
+      <div class="tooltip reference" id="rooth1992-tip"><a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul>
+      <div class="tooltip reference" id="spenader2009-tip"><a name="ref-spenader2009"></a><span class='author'>Spenader, Jennifer and Emar Maier </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Contrast as Denial in Multi-Dimensional Semantics</span>. <span class='journal'>Journal of Pragmatics, <span class='edition'>41.</span> </span><span class="pages">pp. 1707-26. </span><ul class='url'><a href="https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel" target="_blank">https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel</a></ul></div>
+    </li>
+    
+  
+
+</ul>
+
+
+</div>
+
+
+<!-- Appendices -->
+
+
+<!-- Comments -->
+
+
+<div class="comments print-only" markdown="1">
+
+  <h3>Notes</h3>
+
+  [^mereology]:
+    A philosophical celebrity within the family of relative generality relations is that of *part* to *whole*. That such a relation is a basic logical connection between ideas is emphasized by Goodman and Leonard in their classic explication of the calculus of individuals:
+
+    > "The relations of segments of the universe are treated in traditional logistic at two place, first in its theorems concerning the identity and diversity of individuals, and second in its calculus of membership and class-inclusion. But further relations of segments and of classes frequently demand consideration. For example, what is the relation of the class of windows to the class of buildings? No member of either class is a member of the other, nor are any of the segments isolated by the one concept identical with segments isolated by the other. Yet the classes themselves have a very definite relation in that each window is a part of some building. We cannot express this fact in the language of a logistic which lacks a part-whole relation between individuals unless, by making use of some special physical theory, we raise the logical type of each window and each building to the level of a class -- say a class of atoms -- such that any class of atoms that is a window will be included (class-inclusion) in some class that is a building. Such an unforutnate dependence of logical formulation upon the discovery and adoption of a special physical theory, or even upon the presumption that such a suitable theory could in every case be discovered in the course of time, indicates serious deficienceis in the ordinary logistic. Furthermore, a raising of type like that illustrated above is often precluded in a constructional system by other considerations govering the choice of pimitive ideas." (<a id='goodman1940' class='ref tooled' href='#ref-goodman1940'><span class="author">Goodman and Leonard </span><span class="date"><span class='year'>1940</span></span><span class='pages'>,  45</span></a>)
+
+[^processingload]:
+    The claim that the [Druggy bears](#bears) completion does indeed carry a larger processing load is based upon my own interpretation of the discourse.
+
+[^roothgen]:
+    Rooth actually prefers a generalized version of the pragmatic constraint. This allows us to excise any reference to focus semantic values from the semantic theory, isolating it entirely within the pragmatics. For our purposes, the conspicuity of the specific QA-congruence rule is preferable. (<a id='rooth1992' class='ref tooled' href='#ref-rooth1992'><span class="author">Rooth </span><span class="date"><span class='year'>1992</span></span></a>)
+
+[^stratq]:
+    How, if at all, does Buring's proposal differ from Roberts' *strategy of inquiry*?
+
+[^facets]:
+    Utterances are multi-facted, and corrections tend to mar only a single face.
+
+[^entrench]:
+    We needn't specify the nature of the entrenchment relation here, but we can assume that the introduction of layers gives us a means of further constraining appropriate retraction in the face of incoherence. Certain layers can be assumed to trump others, so that the information on one layer is always more entrenched than information on another. Compare footnote 17 in (<a id='spenader2009' class='ref tooled' href='#ref-spenader2009'><span class="author">Spenader and Maier </span><span class="date"><span class='year'>2009</span></span></a>).
+
+[^madrigals]:
+    The representation includes an existence presupposition associated with the existential quantifier. I set aside their representation of the non-universality implicature.
+
+[^hibernation]:
+    [Apparently](https://en.wikipedia.org/wiki/Asian_black_bear#Behaviour), hibernation is driven primarily by climate, and many Asian Black Bears live in warm enough climates to make hibernation unnecessary. Still, nearly all females hibernate when pregnant.
+
+
+  + Footnotes
+  {:footnotes}
+
+
+</div>
+
+
+
+</div>
 
 
 
