@@ -116,23 +116,6 @@ blockquote {
       padding-right: 0; } }
 
 /**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  margin: 30px auto;
-  padding: 30px;
-  background: #F5F5F5;
-  box-shadow: 0px 0px 5px 3px #555555; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
-
-/**
  * Clearfix
  */
 .wrapper:after, .footer-col-wrapper:after, .tablewrap:after {
@@ -153,6 +136,21 @@ svg {
   vertical-align: middle; }
   svg path {
     fill: #828282; }
+
+.wrapper {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  margin: 30px auto;
+  padding: 30px;
+  background: #F5F5F5;
+  box-shadow: 0px 0px 5px 3px #555555; }
+  @media screen and (max-width: 800px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: auto; } }
 
 @media screen and (max-width: 700px) {
   .page-content {
@@ -197,16 +195,17 @@ li.show {
   .bunch .area + .area {
     display: none; }
 
-#totop {
+/*#totop {
   display: none;
   position: fixed;
   right: 30px;
   bottom: 100px;
-  width: 30px; }
-  @media screen and (max-width: 700px) {
-    #totop {
-      display: none !important; } }
+  width: 30px;
 
+  @include media-query($mobile) {
+    display: none!important;
+  }
+}*/
 /* Lightbox */
 .box {
   margin: 1em; }
@@ -358,6 +357,31 @@ ul.body-nav {
   @media screen and (max-width: 700px) {
     ul.body-nav li {
       display: block; } }
+
+.smallnav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 inherit;
+  background: #F5F5F5;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px -2px 2px #555555; }
+  .smallnav .button {
+    display: inline-block;
+    padding: 0 30px;
+    font-weight: 600;
+    font-family: glam;
+    text-align: left; }
+  .smallnav:after {
+    content: "";
+    display: block;
+    clear: both; }
+  @media screen and (max-width: 700px) {
+    .smallnav {
+      width: 100%; } }
 
 /* Abstract */
 .abstract {

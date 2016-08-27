@@ -1,16 +1,21 @@
 $(document).ready( function() {
   /* Scroll to top of the page */
 
-  $(window).scroll(function(){ 
- 
-    var winTop = $(window).scrollTop(),
-        winHeight = $(window).height(); 
+  $(window).scroll(function(){
 
-    if (winTop > winHeight) {
+    var winTop = $(window).scrollTop(),
+        winHeight = $(window).height();
+
+    /*if (winTop > winHeight) {
       $("#totop").css("display","block");
-    }
-    else {
+    } else {
       $("#totop").css("display","none");
+    }*/
+
+    if (winTop > 200) {
+      $(".smallnav").slideDown();
+    } else {
+      $(".smallnav").slideUp();
     }
   });
 
@@ -20,4 +25,6 @@ $(document).ready( function() {
     return false;
 
   });
+
+
 });
