@@ -6,10 +6,11 @@ $('#bib').html(
 $('#bib').DataTable( {
   ajax: '../js/bib.json',
   columns: [
-      { data: 'Title' },
+      { data: 'Title', responsivePriority: 5 },
       { data: 'Author' },
       { data: 'Year' }
-  ]
+  ],
+  responsive: true
 });
 
 });

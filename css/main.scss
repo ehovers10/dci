@@ -6,7 +6,8 @@
 @font-face { font-family: 'glam'; src: url({{ '/fonts/GlametrixBold.otf' | prepend: site.baseurl }}); }
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$sansserif-font:   Arial, Helvetica, sans-serif;
+$serif-font:       Georgia, sans-serif;
 $header-ff:        glam;
 $base-font-size:   18px;
 $header-fs:        40px;

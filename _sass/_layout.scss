@@ -122,6 +122,13 @@ li.show {
 
 		.popmain {
 			font-size: 0.9em;
+      ul,ol {
+        text-align: left;
+        font-family: $sansserif-font;
+        font-weight: 200;
+        width: 90%;
+        clear: both;
+      }
 		}
 
 		@include media-query($big-width) {
@@ -129,22 +136,21 @@ li.show {
 			height: 85%;
 		}
 	}
+  .popclose {
+    z-index: 30;
+    position: absolute;
+    top: #{$spacing-unit};
+    right: calc(50% - 427px);
+    right: -webkit-calc(50% - 427px);
+    width: 30px;
+    height: 30px;
+    background-image: url('/images/cross.svg');
+    background-color: $background-color;
+    //border-radius: 20px;
 
-	.popclose {
-		z-index: 30;
-		position: absolute;
-		top: #{$spacing-unit - 20px};
-		right: calc(50% - 420px - 1em);
-		right: -webkit-calc(50% - 420px - 1em);
-		width: 40px;
-		height: 40px;
-		background-image: url('/images/circle-with-cross.svg');
-		background-color: $background-color;
-		border-radius: 20px;
-
-		@include media-query($big-width) {
-			right: calc(5% - 20px);
-			right: -webkit-calc(5% - 20px);
-		}
-	}
+    @include media-query($big-width) {
+      right: calc(5% - 5px);
+      right: -webkit-calc(5% - 5px);
+    }
+  }
 }

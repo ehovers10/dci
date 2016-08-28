@@ -1,16 +1,27 @@
 <div class="smallnav">
-  <div class="button">
+  <div class="button title">
     {{ page.title }}
   </div>
   <div class="button">
-    <a href="#" class="pop" id="toc-pop" title="Table of contents"><img class="icon" src="{{ 'text.svg' | prepend: '/images/' | prepend: site.baseurl }}" /></a>
-    <div class="lightbox" id="toc-pop-hid">
+    <a href="#" class="pop" id="nav-pop" title="Site navigation"><img class="icon" src="{{ 'open-book.svg' | prepend: '/images/' | prepend: site.baseurl }}" /></a>
+    <div class="lightbox" id="nav-pop-hid">
       <div class="popclose"></div>
       <div class="popbox">
-        <div class="popmain"><div id="toc"></div></div>
+        <div class="popmain">{% include elements/navigation.html collapse=false %}</div>
       </div>
     </div>
   </div>
+  {% if page.toc %}
+  <div class="button">
+    <a href="#" class="pop" id="toc-pop" title="Page contents"><img class="icon" src="{{ 'list.svg' | prepend: '/images/' | prepend: site.baseurl }}" /></a>
+    <div class="lightbox" id="toc-pop-hid">
+      <div class="popclose"></div>
+      <div class="popbox">
+        <div class="popmain"><div class="toc-table"></div></div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
   <div class="button">
     <a href="#" class="pop" id="searchable-bib" title="Search sources"><img class="icon" src="{{ 'magnifying-glass.svg' | prepend: '/images/' | prepend: site.baseurl }}" /></a>
   </div>

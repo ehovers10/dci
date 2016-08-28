@@ -46,6 +46,7 @@ defaults:
       type: "chapters"
     values:
       layout: "chapter"
+      toc: "true"
   - scope:
       path: ""
       type: "appendices"

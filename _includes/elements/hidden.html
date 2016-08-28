@@ -2,8 +2,8 @@
 {% capture gus %}{% include {{ title }} %}{% endcapture %}
 
 <div class="lightbox" id="{{ include.id | slugify | append: '-hid' }}">
-  <div class="popclose"></div>
   <div class="popbox">
+    <div class="popclose"></div>
     <h4>{{ include.id }}</h4>
     <div class="popmain">{{ gus | markdownify }}</div>
   </div>
