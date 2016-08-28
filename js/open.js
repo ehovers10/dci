@@ -55,13 +55,16 @@ $(document).ready( function() {
 
   $( ".pop" ).click( function() {
     var hidden = '#' + $(this).attr('id') + '-hid';
-    $(hidden).css('display','block');
+    $(hidden).slideDown();
 
     return false;
   });
+  $( ".popmain" ).find( "a" ).click( function() {
+    $(this).parents(".lightbox").slideUp();
+  });
 
   $( ".popclose" ).click( function() {
-    $(this).parents(".lightbox").css("display","none");
+    $(this).parents(".lightbox").slideUp();
 
     return false;
   });

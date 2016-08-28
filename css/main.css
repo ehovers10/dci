@@ -14,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
@@ -241,6 +241,12 @@ li.show {
       font-size: 2em; }
     .lightbox .popbox .popmain {
       font-size: 0.9em; }
+      .lightbox .popbox .popmain ul, .lightbox .popbox .popmain ol {
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        width: 90%;
+        clear: both; }
     @media screen and (max-width: 900px) {
       .lightbox .popbox {
         width: 80%;
@@ -248,18 +254,17 @@ li.show {
   .lightbox .popclose {
     z-index: 30;
     position: absolute;
-    top: 10px;
-    right: calc(50% - 420px - 1em);
-    right: -webkit-calc(50% - 420px - 1em);
-    width: 40px;
-    height: 40px;
-    background-image: url("/images/circle-with-cross.svg");
-    background-color: #aaaaaa;
-    border-radius: 20px; }
+    top: 30px;
+    right: calc(50% - 427px);
+    right: -webkit-calc(50% - 427px);
+    width: 30px;
+    height: 30px;
+    background-image: url("/images/cross.svg");
+    background-color: #aaaaaa; }
     @media screen and (max-width: 900px) {
       .lightbox .popclose {
-        right: calc(5% - 20px);
-        right: -webkit-calc(5% - 20px); } }
+        right: calc(5% - 5px);
+        right: -webkit-calc(5% - 5px); } }
 
 /* Footer */
 .site-footer {
@@ -312,6 +317,7 @@ li.show {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
 ul.nav {
+  font-family: Arial, Helvetica, sans-serif;
   width: 40%;
   float: right;
   list-style-type: none;
@@ -374,14 +380,26 @@ ul.body-nav {
     padding: 0 30px;
     font-weight: 600;
     font-family: glam;
-    text-align: left; }
+    text-align: center;
+    font-size: 24px; }
   .smallnav:after {
     content: "";
     display: block;
     clear: both; }
   @media screen and (max-width: 700px) {
     .smallnav {
-      width: 100%; } }
+      width: 100%;
+      padding: 3px 0; }
+      .smallnav .button {
+        padding: 0 15px;
+        font-size: 18px; }
+      .smallnav .title:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .smallnav .title {
+        padding: 0;
+        width: 100%; } }
 
 /* Abstract */
 .abstract {
