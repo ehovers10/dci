@@ -59,8 +59,9 @@ $(document).ready( function() {
 
     return false;
   });
-  $( ".popmain" ).find( "a" ).click( function() {
-    $(this).parents(".lightbox").slideUp();
+  $( "#toc-pop-hid" ).click( function() {
+    $(this).slideUp();
+
   });
 
   $( ".popclose" ).click( function() {
