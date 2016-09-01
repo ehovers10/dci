@@ -13,19 +13,17 @@
 {% endif %}
 
 <!-- Appendices -->
-{% if page.extra %}
 <div class="appendices print-only">
 
   <h3>Appendices</h3>
 
-{% for item in page.extra %}
+  {%comment%}{% for item in page.extra %}
 
-  {% include elements/hidden.html id=item %}
+    {{ item | slugify | appendix: "snippets" }}
 
-{% endfor %}
+  {% endfor %}{%endcomment%}
 
 </div>
-{% endif %}
 
 <!-- Comments -->
 {% if page.notes %}

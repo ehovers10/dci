@@ -1,5 +1,5 @@
 {% assign chlist = site.chapters | sort: "level" %}
-<ul class="nav">
+<ul class="nav{{ include.loc | prepend: " " }}">
 <li><a href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a> {{ site.author | prepend: '<br />by ' }}</li>
 <li><a href="{{ '/table-of-contents' | prepend: site.baseurl }}">Table of contents</a></li>
 <li><a href="#" class="pop" id="searchable-bib">Search sources</a>
@@ -9,16 +9,18 @@
     <div class="popmain"><table id="bib"></table></div>
   </div>
 </div></li>
-<li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
-<li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>
+{% if include.collapse %}<li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
+<li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>{% endif %}
 <ol class="nav2{% if include.collapse %} hid{% endif %}" id="chap-hid" start=0>
-{% for chapter in chlist %}
-<li><a href="{{ chapter.url | prepend: site.baseurl }}">{{ chapter.title }}</a></li>
-{% endfor %}
+  {% unless include.collapse %}Chapters{% endunless %}
+  {% for chapter in chlist %}
+  <li><a href="{{ chapter.url | prepend: site.baseurl }}">{{ chapter.title }}</a></li>
+  {% endfor %}
 </ol>
 <ul class="nav2{% if include.collapse %} hid{% endif %}" id="appen-hid">
-{% for app in site.appendices %}
-<li><a href="{{ app.url | prepend: site.baseurl }}">{{ app.title }}</a></li>
-{% endfor %}
+  {% unless include.collapse %}Appendices{% endunless %}
+  {% for app in site.appendices %}
+  <li><a href="{{ app.url | prepend: site.baseurl }}">{{ app.title }}</a></li>
+  {% endfor %}
 </ul>
 </ul>

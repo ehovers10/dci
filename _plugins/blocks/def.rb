@@ -11,7 +11,7 @@ module Jekyll
       @num = context['page']['count']['ex']
       context['page']['count']['ex'] += 1
       output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-ex'><div class='title'><span class='head'>Example #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + super + "</div></div>"
-      output << %{<div id="#{@title.strip.downcase.gsub /\W+/, '-'}-show-tip" class="tooltip defn">} + super + %{</div>}
+      output << %{<div id="#{@title.strip.downcase.gsub /\W+/, '-'}-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid \#fff;">#{@title.strip}</b><br>} + super + %{</div>}
       output
     end
 

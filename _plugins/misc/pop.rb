@@ -34,6 +34,26 @@ module Jekyll
     def popwrap(input)
       %{<div class="popmain">#{input}</div>}
     end
+
+    def appendix(input)
+      if goop
+        sourcefolder = @context.registers[:site].collections[goop]
+        id = input.strip.downcase.gsub /\W+/, '-'
+        title = input
+        piece = ""
+        sourcefolder.docs.each { |snip|
+          #raise "Snip: #{snip}"
+          if snip.url.include? id
+            piece = snip.output
+          end }
+      else
+        id = input[0,25].strip.downcase.gsub /\W+/, '-'
+        title = input[0,25] << "..."
+        piece = input
+      end
+
+      %{<div class="appendix"><h4>#{title}</h4><div>piece</div></div>}
+    end
   end
 end
 

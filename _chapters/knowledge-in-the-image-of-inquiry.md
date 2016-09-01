@@ -12,6 +12,7 @@ count:
   ex: 0
   obs: 1
   table: 1
+extra: ["Levi on goal generated constraints", "Bratman et al. on plans", "Peirce and van Fraassen on induction"]
 permalink: /concept
 ---
 

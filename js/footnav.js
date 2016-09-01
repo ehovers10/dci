@@ -13,9 +13,9 @@ $(document).ready( function() {
     }*/
 
     if (winTop > 200) {
-      $(".smallnav").slideDown();
+      $(".footnav").slideDown();
     } else {
-      $(".smallnav").slideUp();
+      $(".footnav").slideUp();
     }
   });
 

@@ -7,7 +7,7 @@ permalink: /glossary
 <ul class="glossary">
 {% for word in words %}
   <li>
-    <a name="{{ word[0] | truncate: 5,'' }}"></a>
+    <a name="{{ word[0] | slugify }}"></a>
     <div class="title">{{ word[0] }}</div>
     <div class="body fence">{{ word[1].definition }}
 
@@ -15,7 +15,7 @@ permalink: /glossary
     <div class="subtitle"><span>Related concepts:</span>
       <ul class="inline">
         {% for item in word[1].related %}
-        <li><a href="#{{ item | truncate: 5,'' }}">{{ item }}</a></li>
+        <li><a href="#{{ item | slugify }}">{{ item }}</a></li>
         {% unless forloop.last %}
         <li>|</li>
         {% endunless %}

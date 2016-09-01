@@ -160,6 +160,7 @@ correctible:
 
 contrastive topic:
   definition:
+    An information structural element located within the topic of a sentence that sets its scope in contrast to a (commonly contextually determined) set of alternatives.
   related:
     - focus
     - plan of inquiry
