@@ -2,7 +2,7 @@
 .abstract {
   font-size: $small-font-size;
   margin: 1em;
-  text-align: justify;
+  //text-align: justify;
 
   &.toc {
     margin-left: -1em;
@@ -39,7 +39,7 @@
 
 /* Chapter end */
 .references, .appendices, .comments  {
-  border-top: 1px solid #aaa;
-  padding-top: 1.5em;
-  margin-top: 0.5em;
+  //border-top: 1px solid #aaa;
+  //padding-top: 1.5em;
+  //margin-top: 0.5em;
 }

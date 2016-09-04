@@ -20,7 +20,7 @@ module Jekyll
         triggerpre = "Pop out: "
       end
 
-      trigger = %{<a class="pop" id="#{id}" href="#">#{triggerpre}#{title}</a>}
+      trigger = %{<a class="pop" id="#{id}" href="#append-#{id}">#{triggerpre}#{title}</a>}
       close = %{<div class="popclose"></div>}
       box = %{#{close}<div class="popbox"><h4>#{title}</h4>#{popwrap(piece)}</div>}
 

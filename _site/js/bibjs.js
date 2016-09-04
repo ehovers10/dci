@@ -10,7 +10,17 @@ $('#bib').DataTable( {
       { data: 'Author' },
       { data: 'Year' }
   ],
-  responsive: true
+  responsive: {
+    details: {
+      display: $.fn.dataTable.Responsive.display.childRow,
+      type: 'column'
+    }
+  },
+  columnDefs: {
+    className: 'expand',
+    orderable: false,
+    targets:   0
+  },
 });
 
 });

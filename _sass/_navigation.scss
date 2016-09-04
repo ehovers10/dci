@@ -68,6 +68,7 @@ ul.body-nav {
 
 .footnav {
   display: none;
+  z-index: 1000;
   position: fixed;
   bottom: 0;
   left:0;

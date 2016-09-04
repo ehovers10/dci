@@ -1,5 +1,5 @@
 {% assign eachnote = page.comments | split: '+' %}
 {% for item in eachnote %}
   {% assign parts = item | split: '-' %}
-  <div id="{{ parts.first | append: parts.last }}-tip" class="tooltip comment">{{ site.data.notes[parts.first][parts.last] }}</div>
+  <div id="{{ parts.first | append: parts.last }}-tip" class="tooltip comment"><b>{{ item }}</b>: {{ site.data.notes[parts.first][parts.last] }}</div>
 {% endfor %}

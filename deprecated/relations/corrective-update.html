@@ -1,0 +1,24 @@
+{% assign gbdanger = allbears | focus: "grizzly" | concat: bears | modify | refine | concat: danger | predicate %}
+{% assign names = "predicate group compare restrict" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="area predicate">
+{{ gbdanger | display_table }}
+</div>
+<div class="area group">
+{{ gbdanger | group: "sit all-bears" | display_table }}
+</div>
+<div class="area compare">
+{{ gbdanger | compare: "sit all-bears|all-bears grizzly" | display_table }}
+</div>
+<div class="area restrict">
+
+</div>
+<div style="clear:both;"></div>
+</div>

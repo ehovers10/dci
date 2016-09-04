@@ -3,22 +3,24 @@ title: Knowledge in the image of inquiry
 level: 2
 biblio: true
 references: ""
-notelist: false
 comments: ""
-notes: kitioi.md
+notes: footnotes/kitioi.md
 js: [toc]
 count:
   def: 1
-  ex: 0
+  ex: 1
   obs: 1
   table: 1
-extra: ["Levi on goal generated constraints", "Bratman et al. on plans", "Peirce and van Fraassen on induction"]
+append:
+  - "Levi on goal generated constraints"
+  - "Bratman et al. on plans"
+  - "Peirce and van Fraassen on induction"
 permalink: /concept
 ---
 
 ## Finding our way to knowledge
 
-Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.{% note kitioi1 js0617 %}
+Inquiry is a process whereby individuals form, revise, and otherwise manipulate their mental states.[^inquiryStalnaker] This is a goal-directed enterprise; both the impetus for engaging in inquiry and the procedure of doing so are understood in terms of their contribution to the achievement of some end.
 
 It is tempting to maintain that the {% gloss end of inquiry %} is truth. If truth what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. Thus, the goal of engaging in inquiry is thus to achieve a specific, *cognitive* state that relates us to true propositions.
 
@@ -142,7 +144,7 @@ An important mechanism of coherence is the build-and-test update procedure that 
 
 Evaluation of the coherence of a contribution to a dilated process is relative to a system of structural constraints -- a *plan* -- for the process. The primary function of a plan is to restrict the set of possibilities from amongst which those engaged in the process select their moves. This imposed restriction allows plans to be followed, in real time, by cognitively limited agents. But plans are also to be carried out in real space, which does not always evolve the way planning agents hope or expect. Too rigid a restriction on possible moves will bind the agents to failure. Thus, plans must allow for modification in the face of unexpected developments in the environment within which the process takes place.
 
-{{ "Bratman et. al. on plans" | popbox: "snippets" }}
+{{ "Bratman et al. on plans" | popbox: "snippets" }}
 
 Proper inquiry is no different. A plan of inquiry imposes *coherence* constraints on contributions to the inquiry. Future additions must follow the general course set by previous contributions. But, nature can so conspire to turn certain conjectures into dead ends, and a healthy plan of inquiry will accommodate mechanisms to adjust the plan on the fly.
 
@@ -322,3 +324,7 @@ The nature of knowledge tends to fly away from us. We can potentially tie it dow
 The resulting sensitivity of one's knowledge to the community of inquirers of which one is a part is revisionary but not all that radical. It accords well with a common sense view of degrees of cognitive achievement associated with conceptual refinement. And the additional structure posited of the objects of knowledge affords an explanation of the diversity of ways we talk about knowledge. Ascriptions of knowledge query an inquiry, culling from its complex object the relevant structural bits at a particular stage of its development. Relevant bits of information can include propositions, discourse objects, or a variety of other tools that the inquirer may put to use in the course of investigation.
 
 Along the way, we stumble onto knowledge. We are lucky, in a sense, to be able to call the outputs of this process *knowledge*, but no one can deny that we have earned the right to whatever attitudes spring from it, for the path we have taken is recorded in the inquiry structure. This accessible record is what warrants us in maintaining our attitudes, and it is also what generates the distinctive value of knowledge over true, but unvetted, opinion. The value comes from the credit that possessing such an account provides. Having carried out the inquiry makes one a suitable expert on the topic. To turn to someone as an expert is to treat them as a resource in a further inquiry. Because inquiry is collaborative, being used as a resource entails receiving another's service as well. Possessing knowledge, then, is of practical value beyond the access to truth it entails. It also ensures access to further inquiry down the line, and ultimately, being a working inquirer is all one can hope for.
+
+# Notes
+{: .print-only}
+{% include {{ page.notes }} %}

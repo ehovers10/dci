@@ -1,5 +1,5 @@
 ---
-title: Bratman et. al. on plans
+title: Bratman et al. on plans
 references: ""
 ---
 

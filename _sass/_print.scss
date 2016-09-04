@@ -2,70 +2,98 @@
   height: 0;
   overflow: hidden;
   border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @media print {
-  .print-only {
+  .print-only,.footnotes {
     height: auto;
+    margin-bottom: 1em;
   }
-  .print-no {
-    display: none;
+  .print-no,.nav,.footnav,.site-footer,.tooltip,.def .bunch .body-nav,.def .bunch .area {
+    display: none!important;
   }
 
   .break {
     page-break-after: always;
   }
 
-  .def {
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $serif-font;
+    font-weight: 500;
+    margin: 0 0 1em!important;
+  }
+
+  .wrapper { font-size: 12px!important; }
+  .page-front h1 { font-size: 30px; }
+  .chapter-front h3 { font-size: 20px; }
+  .chapter-content h1, .chapter-end h1 { font-size: 22px; }
+  .chapter-content h2, .chapter-end h2 { font-size: 20px; }
+  .chapter-content h3 { font-size: 17px; }
+  .chapter-content h4 { font-size: 14px; }
+  .chapter-content p { line-height: 1.5!important; }
+
+  .def .head {
+    font-size: 14px!important;
+    font-family: $serif-font!important;
+  }
+  .def,blockquote,.bunch {
     page-break-inside: avoid;
   }
 
-  .nav {
-    display: none;
-  }
-
-  .site-footer {
-    display: none;
-  }
-
-  .lightbox {
-    display: block;
-    position: relative;
-    background: #fff;
-
-    .popbox {
-      position: relative;
-      padding: 0;
-    }
-  }
-
-  .tooltip {
-    position: relative;
-    display: block;
-    border: none;
-    border-radius: 0;
+  .footnotes .tooltip, .comments .tooltip {
+    display: block!important;
+    position: relative!important;
+    width: 100%!important;
+    background: none!important;
+    border: none!important;
     color: $text-color;
-    padding: 0;
-    width: inherit;
-    max-width: inherit;
-    background: $pagecolor;
+    z-index: auto;
+    padding: 0!important;
+    max-width: none!important;
+    max-height: none!important;
+    list-style-type: decimal!important;
+    font-size: 10px!important;
+    margin: 0!important;
+    margin-bottom: 0.5em;
   }
 
   .wrapper {
     padding: 0;
+    max-width: 100%;
+    margin: 0;
+    background: none;
+    box-shadow: none;
   }
 
   .page-content {
     padding: 0;
   }
 
-  .bunch {
-    .body-nav {
-      display: none;
-    }
-    .area {
-      display: block!important;
-      position: relative;
+  .fence, blockquote {
+    border-left: 2px solid $grey-color-light!important;
+  }
+  .def .bunch:after {
+    content: "See appendices"
+  }
+  .appendix {
+    .bunch {
+      .area {
+        display: block!important;
+        width: 150px;
+        margin: 1em;
+        position: relative;
+        float: left;
+      }
+      .body-nav {
+        display: none;
+      }
+      &:after {
+        display: block;
+        content: " ";
+        clear: both;
+      }
     }
   }
 

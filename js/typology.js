@@ -1,12 +1,21 @@
 $(document).ready( function() {
   $('.typology').DataTable( {
-    responsive: true,
+    responsive: {
+      details: {
+        display: $.fn.dataTable.Responsive.display.childRow,
+        type: 'column'
+      }
+    },
     columnDefs: [
-      { responsivePriority: 1, targets: 0 },
-      { responsivePriority: 2, targets: -1 }
+      {
+        className: 'expand',
+        orderable: false,
+        targets:   0
+    }
     ],
     searching: false,
     paging: false,
-    scrollX: true
+    //scrollX: true,
+    info: false
   });
 });

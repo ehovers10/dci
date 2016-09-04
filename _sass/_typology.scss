@@ -33,3 +33,19 @@ table.typology {
 tr.even td {
   background: #ccc;
 }
+
+table.dataTable.dtr-column > tbody > tr > td.expand,
+table.dataTable.dtr-column > tbody > tr > th.expand {
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  background-image: url('../images/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+table.dataTable.dtr-column > tbody > tr.parent > td.expand,
+table.dataTable.dtr-column > tbody > tr.parent > th.expand {
+  background-image: url('../images/chevron-up.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

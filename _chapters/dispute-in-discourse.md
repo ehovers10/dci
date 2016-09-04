@@ -2,13 +2,17 @@
 title: Dispute in discourse
 level: 4
 biblio: true
-notes: did.md
 count:
   def: 1
   ex: 1
   obs: 1
   table: 1
 references: ""
+notes: footnotes/did.md
+append:
+  - Standard Plural Predication
+  - Contrastive modification
+  - Corrective update
 js: [bunch,toc]
 permalink: /practice
 ---
@@ -260,7 +264,7 @@ To account for the selective nature of denial, Geurts and Maier {% cite geurtsa 
 
 To downdate, then, is to remove information from the DRS, but removing information of the presuppositional variety does nothing to the same information duplicated at the propositional level. The result is non-swamping denial.
 
-There is an additional complication for the denial-as-downdate approach, familiar from the literature on belief revision {% cite agm1985 %} (,levi1980). An information state is always downdated in response to some impetus. The principal reason for performing a downdate is that the state has just been updated into incoherence, which is to say that an update operation has introduced information that contradicts information already present in the state. The role of the downdate is to remove enough information from the state to restore it to coherence. The problem is that, in general, there are multiple ways to perform this operation.
+There is an additional complication for the denial-as-downdate approach, familiar from the literature on belief revision {% cite agm1985 + levi1980 %}. An information state is always downdated in response to some impetus. The principal reason for performing a downdate is that the state has just been updated into incoherence, which is to say that an update operation has introduced information that contradicts information already present in the state. The role of the downdate is to remove enough information from the state to restore it to coherence. The problem is that, in general, there are multiple ways to perform this operation.
 
 As an example {% cite gillies2004 %}, imagine I happen to believe both that at least one of coffeeshop A or B is open (*p*&or;*q*) and that coffeeshop A is open (*p*), which we represent as the deductive closure of the set containing these two beliefs: Cn({ *p*&or;*q*, *p* }). But I subsequently get strong evidence that coffeeshop A is not open, say I see a sign hanging in the door that reads "Closed all day for cleaning". Updating with this new evidence results in the belief state Cn({ *p*&or;*q*, *p*, &not;*p* }), which is just the universal set. I believe too much, and I must revise. But how much do I remove? Minimally, *p* will have to go. But what about *p*&or;*q*? The choice depends on the details of my epistemic situation.
 
@@ -516,93 +520,22 @@ The initiation utterance of the [Bears](#bears-ex){: #bears-show .tooled} dialog
 
 The homogeneity presupposition operates on the result of the predication in three stages. First, it implements a structuring update, grouping the table by value of the **sit** attribute. Second, it performs an aggregation and comparisonfunction on the **ent** and **subj** attributes within each group. This consists of counting the number of **ent** of any value, and the number of **subj** of positive value, and comparing them. Groups for for which either the **ent** count equals the **subj** count or the **subj* count is zero pass through; other groups are rejected. The final phase is a restriction, where rejected groups are eliminated from the table.
 
-<!-- Standard Plural Predication -->
-{% assign bears = "bears" | intension: "+" %}
-{% assign griz = "bears" | intension: "grizzly" %}
-{% assign allbears = "bears" | intension: "all" %}
-{% assign danger = "dangerous" | intension: "+" %}
-{% assign bearsdanger = bears | concat: danger | predicate %}
-{% assign names = "predicate group compare restrict" | split: " " %}
-
-<div class="bunch">
-<ul class="body-nav">
-  {% for name in names %}
-  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
-  {% endfor %}
-</ul>
-
-<div class="area predicate">
-{{ bearsdanger | display_table }}
-</div>
-<div class="area group">
-{{ bearsdanger | group | display_table }}
-</div>
-<div class="area compare">
-{{ bearsdanger | group | compare: "sit|+-bears +" | display_table }}
-</div>
-<div class="area restrict">
-{{ bears | concat: danger | predicate | situ: "s2" | display_table }}
-</div>
-<div style="clear:both;"></div>
-</div>
+{% table Standard plural predication %}
+  {{ "Standard plural predication" | popbox: "snippets" }}
+{% endtable %}
 
 The use of contrastive focus in the follow up performs three roles. The first two roles pertain to the modification of the subject. First, it introduces the alternative set of the modifier expression. The focus tells us to fill the modifer attribute with values drawn from the alternative set, rather than simple on/off values of an ordinary semantic value. Subject modification is implemented by a function that takes this focus derived modifier table and the unmodified subject table as inputs and outputs their *full outer join*. The full outer join is significant. Since it keeps rows from the modifier table even when there is no shared **ent** in the subject table, as well as vice versa, this is a way for the continuation utterance to genuinely *correct* the initiation. It may add rows to the table for which the original table made no evaluation.
 
 The second role of contrastive focus is to mark the utterance as a continuation, thus linking it to the previous presentation in the sandbox. We represent this by a *refinement*, in which we **project** just the **sit**, **ent**, and **mod** attributes, renaming the **mod** attribute to **subj**. Thus, the continuation is fully integrated.
 
-<!-- Contrastive modification -->
-
-{% assign grizzlybears = allbears | focus: "grizzly" | concat: bears | modify %}
-{% assign names = "alt modify refine" | split: " " %}
-
-<div class="bunch">
-<ul class="body-nav">
-  {% for name in names %}
-  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
-  {% endfor %}
-</ul>
-
-<div class="area alt">
-{{ allbears | focus: "grizzly" | display_table }}
-</div>
-<div class="area modify">
-{{ grizzlybears | display_table }}
-</div>
-<div class="area refine">
-{{ grizzlybears | refine | display_table }}
-</div>
-<div style="clear:both;"></div>
-</div>
+{% table Contrastive modification %}
+  {{ "Contrastive modification" | popbox: "snippets" }}
+{% endtable %}
 
 Once we have the refined subject in place, we can use it as input to the right outer join implemented by the plural predication of the continuation. The final role of contrastive focus is to overwrite the default homogeneity presupposition, indicating the nature of the structuring update it substitutes -- a partition along the lines of the alternative set of the focused element. This is performed by a grouping operation. In standard plural predication, we only needed to group by the **sit** attribute, but this simplification was made possible by the nature of the values in the **subj** attribute. Since being a bear was taken as an on/off property, and the model determines only its positive extension, there was no need to refine our grouping in order to implement the comparison. The situation is more complex, however, in the case of contrastive plural predication. Here, our presupposition demands that dangerousness be uniform across type of bear. This means that we must additionally group by **subj**
 values in order to get the appropriate comparison. We should thus view standard plural predication as a degenerative case of homogeneity presupposition, where there is only one value group within the **subj** attribute.
 
-<!-- Corrective update -->
-
-{% assign gbdanger = allbears | focus: "grizzly" | concat: bears | modify | refine | concat: danger | predicate %}
-{% assign names = "predicate group compare restrict" | split: " " %}
-
-<div class="bunch">
-<ul class="body-nav">
-  {% for name in names %}
-  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
-  {% endfor %}
-</ul>
-
-<div class="area predicate">
-{{ gbdanger | display_table }}
-</div>
-<div class="area group">
-{{ gbdanger | group: "sit all-bears" | display_table }}
-</div>
-<div class="area compare">
-{{ gbdanger | compare: "sit all-bears|all-bears grizzly" | display_table }}
-</div>
-<div class="area restrict">
-
-</div>
-<div style="clear:both;"></div>
-</div>
+{% table Corrective update %}{{ "Corrective update" | popbox: "snippets" }}{% endtable %}
 
 The final, presupposition-restricted table is stored in the structuring component **R** of the sandbox information state. And it is this relation against which the semantic value of the contribution will be evaluated.
 
@@ -616,4 +549,6 @@ The CU extraction stands behind the strictness inclination. Bare plural sentence
 
 The key observation here is [Susceptibility](#susceptibility-obs){: #susceptibility-show .tooled}. Even if bare plural sentences can be true, their truth seems to be inherently unstable. A shift to a slightly different context
 
-{% include elements/chapterend.html %}
+# Notes
+{: .print-only}
+{% include {{ page.notes }} %}

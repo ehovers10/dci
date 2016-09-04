@@ -1,0 +1,30 @@
+---
+title: Contrastive modification
+---
+
+{% assign bears = "bears" | intension: "+" %}
+{% assign griz = "bears" | intension: "grizzly" %}
+{% assign allbears = "bears" | intension: "all" %}
+{% assign danger = "dangerous" | intension: "+" %}
+{% assign bearsdanger = bears | concat: danger | predicate %}
+{% assign grizzlybears = allbears | focus: "grizzly" | concat: bears | modify %}
+{% assign names = "alt modify refine" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="area alt">
+{{ allbears | focus: "grizzly" | display_table }}
+</div>
+<div class="area modify">
+{{ grizzlybears | display_table }}
+</div>
+<div class="area refine">
+{{ grizzlybears | refine | display_table }}
+</div>
+<div style="clear:both;"></div>
+</div>

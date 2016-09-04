@@ -3,13 +3,13 @@ title: Collaborative discourse dynamics
 level: 3
 toc: yes
 biblio: true
-notes: cdd.md
 count:
   def: 1
   ex: 1
   obs: 1
   table: 1
 references: ""
+notes: footnotes/cdd.md
 js: [toc]
 permalink: /theory
 ---
@@ -379,3 +379,7 @@ This view is warranted as the primary conjecture marker is contrastive topic, wh
 Conjecture and assertion are identical. Both put forward a propositional radical with a default saturation. Only if the saturation is challenged do we have a conjectural contribution type.
 
 I like the idea of speech-act determination being in the hands of the interlocutor (and thus relative).
+
+# Notes
+{: .print-only}
+{% include {{ page.notes }} %}

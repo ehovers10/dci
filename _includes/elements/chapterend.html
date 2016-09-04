@@ -1,47 +1,35 @@
 <div class="chapter-end" markdown="1">
+{% if page.comments %}
+  <!-- Comments -->
+  <div class="comments print-only" markdown="1">
+    <h1>Comments</h1>
+    {% include elements/notelist.html %}
+  </div>
+{% endif %}
 
-<!-- References -->
+{% if page.extra or page.append %}
+  <!-- Appendices -->
+  <div class="appendices print-only">
+    {% assign appcount = 1 %}
+    {% for item in page.append %}
+      {% for snip in site.snippets %}
+        {% if snip.title contains item %}
+          <div class="appendix" id="{{ snip.title | slugify | prepend: "append-" }}">
+            <h1>Appendix {{ appcount }}: {{ snip.title }}</h1>
+            <div>{{ snip }}</div>
+            {% assign appcount = appcount | plus: 1 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% endif %}
+
 {% if page.biblio %}
-
-<div class="references">
-
-  <h3>References</h3>
-
-  {% include elements/reflist.html %}
-
-</div>
+  <!-- References -->
+  <div class="refereces print-only">
+    <h1>References</h1>
+    {% include elements/reflist.html %}
+  </div>
 {% endif %}
-
-<!-- Appendices -->
-<div class="appendices print-only">
-
-  <h3>Appendices</h3>
-
-  {%comment%}{% for item in page.extra %}
-
-    {{ item | slugify | appendix: "snippets" }}
-
-  {% endfor %}{%endcomment%}
-
-</div>
-
-<!-- Comments -->
-{% if page.notes %}
-
-<div class="comments print-only" markdown="1">
-
-  <h3>Notes</h3>
-
-  {% include {{ page.notes | prepend: "footnotes/" }} %}
-
-  + Footnotes
-  {:footnotes}
-
-{% if page.notelist %}
-  {% include elements/notelist.html %}
-{% endif %}
-</div>
-
-{% endif %}
-
 </div>

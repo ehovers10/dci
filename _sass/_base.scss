@@ -141,9 +141,9 @@ blockquote {
     padding-left: $spacing-unit / 2;
     padding-right: $spacing-unit;
     font-size: 0.9em;
-    text-align: justify;
+    //text-align: justify;
     //letter-spacing: -1px;
-    margin-bottom: 1em;
+    margin: 0 1em 1em;
 
     @include media-query($mobile) {
       text-align: left;

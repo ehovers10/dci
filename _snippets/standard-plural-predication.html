@@ -1,0 +1,32 @@
+---
+Title: Standard plural predication
+---
+
+{% assign bears = "bears" | intension: "+" %}
+{% assign griz = "bears" | intension: "grizzly" %}
+{% assign allbears = "bears" | intension: "all" %}
+{% assign danger = "dangerous" | intension: "+" %}
+{% assign bearsdanger = bears | concat: danger | predicate %}
+{% assign names = "predicate group compare restrict" | split: " " %}
+
+<div class="bunch">
+<ul class="body-nav">
+  {% for name in names %}
+  <li><a href="#" class="{{name}}">{{name | capitalize}}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="area predicate">
+{{ bearsdanger | display_table }}
+</div>
+<div class="area group">
+{{ bearsdanger | group | display_table }}
+</div>
+<div class="area compare">
+{{ bearsdanger | group | compare: "sit|+-bears +" | display_table }}
+</div>
+<div class="area restrict">
+{{ bears | concat: danger | predicate | situ: "s2" | display_table }}
+</div>
+<div style="clear:both;"></div>
+</div>

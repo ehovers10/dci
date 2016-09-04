@@ -5,6 +5,7 @@
 <table class="typology">
 <thead>
   <tr>
+    <th><!--Control--></th>
     <th>Type</th>
     {% for types in dist limit: 1 %}
     {% for attrib in types[1] %}
@@ -16,6 +17,7 @@
 <tbody>
   {% for kind in dist %}
   <tr class="type {% cycle 'odd', 'even' %}">
+    <td><!--Control--></td>
     <td>{{ kind[0] | capitalize }}</td>
     {% for bit in kind[1] %}
     {% if bit[1][0] %}

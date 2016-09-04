@@ -1,7 +1,7 @@
-{% assign eachref = page.references | split: '+' %}
+{% assign eachref = page.references | split: '+' | sort %}
 
 <ul class='bib'>
-{% for item in eachref | sort %}
+{% for item in eachref %}
   {% if item == previous %}
     {% continue %}
   {% else %}
