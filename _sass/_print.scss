@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+@page {
+  margin: 0.5in;
+}
+
 @media print {
   .print-only,.footnotes {
     height: auto;
@@ -23,9 +27,12 @@
     font-family: $serif-font;
     font-weight: 500;
     margin: 0 0 1em!important;
+    page-break-after: avoid;
   }
 
-  .wrapper { font-size: 12px!important; }
+  .wrapper {
+    font-size: 12px!important;
+  }
   .page-front h1 { font-size: 30px; }
   .chapter-front h3 { font-size: 20px; }
   .chapter-content h1, .chapter-end h1 { font-size: 22px; }
@@ -38,8 +45,9 @@
     font-size: 14px!important;
     font-family: $serif-font!important;
   }
-  .def,blockquote,.bunch {
+  .def {
     page-break-inside: avoid;
+    page-break-after: auto;
   }
 
   .footnotes .tooltip, .comments .tooltip {
