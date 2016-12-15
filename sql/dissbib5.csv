@@ -1,0 +1,400 @@
+﻿"Title","Author","School","Department","Note","Affiliation","Location","Booktitle","Type","Abstract","Journal","Year","Address","Platform","Edition","Chapter","Editor","Page","Series","Keywords","Url____001","Url____002","Month","Doi","ISSN","Publisher","URL","Number","Pages","DOI","Volume","Subtitle","Issue","Url","id"
+);
+insert into biblio2 values("On the logic of theory change: Partial meet contraction and revision functions","Carlos Alchourron and Peter Gaardenfors and David Makinson","","","","","","","article","","Journal of Symbolic Logic","1985","","","","","","","","","","","","","","","","2","510-530","","50","","","https://app.box.com/s/mbzd0np4md371ghes0et","agm1985"
+);
+insert into biblio2 values("Sluicing as anaphora to issues","Scott Anderbois","","","","","","","article","","Proceedings of SALT","2010","","","","","","","","","","","","","","","","","","","20","","","https://app.box.com/s/8xc9ruau39i5vlxfut65","anderbois2010"
+);
+insert into biblio2 values("At-issue Proposals and Appositive Impositions in Discourse","Scott Anderbois and Adrian Brasoveanu and R. Henderson","","","","","","","article","","Journal of Semantics","2013","","","","","","","","","","","Nov","10.1093/jos/fft014","1477-4593","Oxford University Press","","","","","","","","http://dx.doi.org/10.1093/jos/fft014","anderbois2013"
+);
+insert into biblio2 values("Conversational Impliciture","Kent Bach","","","","","","","article","","Mind and Language","1994","","","","","","","","","","","","","","Wiley Online Library","","2","124-162","","9","","","http://userwww.sfsu.edu/kbach/impliciture.htm","bach1994"
+);
+insert into biblio2 values("Self-Consciousness","George Bealer","","","","","","","article","","The Philosophical Review","1997","","","","","","","","","","","","","","","","","69-117","","106","","1","http://links.jstor.org/sici?sici=0031-8108%28199701%29106%3A1%3C69%3AS%3E2.O.CO%3B2-Y","bealer1997"
+);
+insert into biblio2 values("Time and modality without tenses or modals","Maria Bittner","","","","","","Tenses across Languages","chapter","","","2011","","","","","R. Musan and M. Rathert","","","semantics-drefs, language, semantics-attitudes","https://app.box.com/s/fafymrmxm8qw7zgzfq9p","http://www.rci.rutgers.edu/~mbittner/bittner11_tam.pdf","","","","Niemeyer, Tubingen","","","","","","","","","bittner2011"
+);
+insert into biblio2 values("Modified Occam's Razor: Parsimony, Pragmatics, and the Acquisition of Word Meaning","Thomas Bontly","","","","","","","article","","Mind & Language","2005","","","","","","","","","","","","","","","","3","288-312","","20","","","https://app.box.com/s/bho29orwrbfkopnolx5l","bontly2005"
+);
+insert into biblio2 values("What's New and What's Given in the Theory of Focus","Daniel Beuring","","","","","","Berkeley Linguistics Society","chapter","","","2008","","","","","","","","language","","","","","","","","","","","","","","https://app.box.com/s/b4xlfe6e57jyx2znq207","buering2008"
+);
+insert into biblio2 values("On d-trees, beans, and b-accents","Daniel Büring","","","","","","","article","","Linguistics and Philosophy","2003","","","","","","","","","","","","","","","","","511-545","","26","","","https://app.box.com/s/a11v7a9ky4cmg8czisxv","buering2003");
+);
+insert into biblio2 values("Non-propositional intellectualism","John Bengson and Marc Moffett","","","","","","Know How: Essays on knowledge, mind, and action","chapter","","","2012","","","","","John Bengson and Marc Moffett","","","","","","","","","Oxford University Press","","","","","","","","https://app.box.com/s/kouygcj0gya1631kuywithtdqy3c43y8","bengson2012a"
+);
+insert into biblio2 values("Know How: Essays on knowledge, mind, and action","John Bengson and Marc Moffett","","","","","","","book","","","2012","","","","","John Bengson and Marc Moffett","","","","","","","","","Oxford University Press","","","","","","","","","bengson2012"
+);
+insert into biblio2 values("Structured Anaphora to Quantifier Domains: A Unified Account of Quantificational and Modal Subordination","Adrian Brasoveanu","","","","","","","unpublished","The paper proposes an account of the contrast noticed in Karttunen 1976 between the interpretations of the following two discourses. The cross-sentential interaction between quantifier scope and anaphora is captured by means of a new dynamic system couched in classical type logic, which extends Compositional DRT Muskens 1996 with plural information states modeled, following van den Berg 1996, as sets of variable assignments . Given the underlying type logic, compositionality at sub-clausal level follows automatically and standard techniques from Montague semantics become available.","",null,"","","","","","","","","","","","","","","","","","","","","","","brasoveanua"
+);
+insert into biblio2 values("Structured discourse reference to propositions: Entailment particles and modal subordination in dynamic type logic","Adrien Brasoveanu","","","","","","LoLa 9","chapter","","","2013","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/s4t8t1ftc6qvjuq4f2d6","brasoveanu-a"
+);
+insert into biblio2 values("Shared agency","Michael Bratman","","","","","","Philosophy of the social sciences: Philosophical theory and scientific practice","chapter","","","2009","","","","","Chris Mantzavinos","","","","","","","","","Cambridge University Press","","","","","","","","","bratman2009"
+);
+insert into biblio2 values("Plans and resource-bounded practical reasoning","Michael Bratman and David Israel and Martha Pollack","","","","","","","article","","Computational Intelligence","1988","","","","","","","","","","","","","","","","4","349-355","","4","","","","bratman1988"
+);
+insert into biblio2 values("Contextualism, metaphor, and what is said","Elizabeth Camp","","","","","","","article","","Mind and language","2006","","","","","","","","","","","","","","","","3","280-309","","21","","","https://app.box.com/s/sg03wyp0b0bh73wppglyrlh4nj270g7a","camp2006"
+);
+insert into biblio2 values("On the Distinction Between Peirce's Abduction and Lipton's Inference to the Best Explanation","Daniel G. Campos","","","","","","","article","","Synthese","2011","","","","","","","","","","","","","","","","3","419-442","","180","","","","campos2011"
+);
+insert into biblio2 values("Against assertion","Herman Cappelen","","","","","","Assertion","chapter","","","2010","","","","","J. Brown and H. Cappelen","","","","","","","","","Oxford University Press","","","","","","","","https://app.box.com/s/bn2cck2mq2a195k5dau3y2v0gvde7fgl","cappelen2010"
+);
+insert into biblio2 values("The Creative Interpreter: Content Relativism and Assertion","Herman Cappelen","","","","","","","article","","Nous","2008","","","","","","","","","","","","","","Blackwell Publishing","","","23-46","","42","Supplement: Philosophical Perspectives, 22, Philosophy of Language","","","Cappelen2008"
+);
+insert into biblio2 values("Relativism and Monadic Truth","Herman Cappelen and John Hawthorne","","","","","","","book","","","2009","","","","","","","","","","","","","","Oxford University Press","","","","","","","","https://app.box.com/s/soyenxubix12tkyopi175392wvaoepf2","cappelen2009"
+);
+insert into biblio2 values("Shared Content","Herman Cappelen and Ernest Lepore","","","","","","The Oxford Handbook of Philosophy of Language","chapter","","","2006","","","","40","Ernest Lepore and Barry C. Smith","","","","","","","","","Oxford University Press","","","1020-1055","","","","","https://app.box.com/s/hkkgroy69yrlxoqjjie84sgljs9wddtv","cappelen2006a"
+);
+insert into biblio2 values("Insensitive Semantics","Herman Cappelen and Ernest Lepore","","","","","","","book","","","2005","","","","","","","","language","","","","","","Blackwell Publishing","","","","","","","","","cappelen2005"
+);
+insert into biblio2 values("Context Shifting Arguments","Cappelen, Herman and Lepore, Ernie","","","","","","","article","","Nous","2003","","","","","","","","","","","","","","Blackwell Publishing","","","25-50","","37","Supplement: Philosophical Perspectives, 17, Language and Philosophical Linguistics","","","Cappelen2003"
+);
+insert into biblio2 values("Propositions and Attitude Ascriptions: A Fregean Account","David J. Chalmers","","","","","","","article","","Nous","2011","","","","","","","","","","","","","","","","4","595-639","","45","","","https://app.box.com/s/tye1xt5wv76v70j6n4sx01mgitsx1xuj","chalmers-ms"
+);
+insert into biblio2 values("Scott Soames two-dimensionalism","David Chalmers","","","For an author-meets-critics session on Scott Soames Reference and Description: The Case Against Two-Dimensionalism","American Philosophical Association, Central Division","Chicago","","unpublished","","","2006","","","","","","","","","","","April","","","","","","","","","","","https://app.box.com/s/1x1ooq65aek85yznc9q6hlssdcngw04k","chalmers2006"
+);
+insert into biblio2 values("The Anti-Realist Epistemology of van Fraasen's 'The Scientific Image'","Paul M. Churchland","","","","","","","article","","Pacific Philosophical Quarterly","1982","","","","","","","","","","","","","","Wiley-Blackwell","","3","226","","63","","","","churchland1982"
+);
+insert into biblio2 values("Attention! Might in inquisitive semantics","Ivano Ciardelli and Jeroen Groenendijk and Floris Roelofsen","","","","","","","article","","Proceedings of the 19th Conference on Semantics and Linguistic Theory","2009","","","","","E. Cormany and S. Ito and D. Lutz","","","","","","","","","","","","91-108","","","","","https://app.box.com/s/31du6xa4znegwh3nel55mkact91lid6o","ciardelli2009"
+);
+insert into biblio2 values("Referring as a collaborative process","Herbert H. Clark and Deanna Wilkes-Gibbs","","","","","","","article","In conversation, speakers and addressees work together in the making of a definite reference. In the model we propose, the speaker initiates the process by presenting or inviting a noun phrase. Before going on to the next contribution, the participants, if necessary, repair, expand on, or replace the noun phrase in an iterative process until they reach a version they mutually accept. In doing so they try to minimize their joint effort. The preferred procedure is for the speaker to present a simple noun phrase and for the addressee to accept it by allowing the next contribution to begin. We describe a communication task in which pairs of people conversed about arranging complex figures and show how the proposed model accounts for many features of the references they produced. The model follows, we suggest, from the mutual responsibility that participants in conversation bear toward the understanding of each utterance.","Cognition","1986","","","","","","","","","","","","","","","","","1-39","","22","","","https://app.box.com/s/j1e1sam0qzj5gila6b5lrxl9w7heyms0","clark1986"
+);
+insert into biblio2 values("Arenas of language use","Herbert H. Clark","","","","","","","book","","","1992","","","","","","","","language, collaborative, phonology","","","","","","University of Chicago Press","","","","","","","","","clark1992"
+);
+insert into biblio2 values("Worlds, the world, and their possibilities","Herbert H. Clark","","","","","","Arenas of Language Use","chapter","","","1992","","","","12","","","","","","","","","","University of Chicago Press","","","366-380","","","","","","clark1992b"
+);
+insert into biblio2 values("Contributing to discourse","Herbert H. Clark and Edward F. Schaefer","","","","","","Arenas of Language Use","chapter","","","1992","","","","5","","","","","","","","","","University of Chicago Press","","","144-175","","","","","","clark1992a"
+);
+insert into biblio2 values("A Relational Model of Data for Large Shared Data Banks","E. F., Codd","","","","","New York, NY, USA","","article","","Commun. ACM","1970","","","","","","","","","","","June","","","ACM","","6","377-387","","13","","0001-0782","http://doi.acm.org/10.1145/362384.362685","codd1970"
+);
+insert into biblio2 values("Truth and Meaning","Donald Davidson","","","","","","","article","","Synthese","1967","","","","","","","","","","","","","","Springer","","1","304-323","","17","","","","davidson1967"
+);
+insert into biblio2 values("Predicate Logic with Anaphora","Paul J. E. Dekker","","","","","Dordrecht","Dynamic Semantics","chapter","","","2012","","","","","","","","","","","","","","Springer Netherlands","","","7-47","","","","","https://app.box.com/s/nydgj88v9d0m1qqkxcnhx3dxg1qog37i","dekker-pla"
+);
+insert into biblio2 values("The pragmatic dimension of indefinites","Paul Dekker","","","","","","","article","","L&C","2001","","","","","","","","","","","","","","","","","1-32","","1-3","","","https://app.box.com/s/n3ls5geko2scalsj4kaim4lfhulx6037","dekker2001"
+);
+insert into biblio2 values("Scorekeeping in an Uncertain Language Game","David DeVault and Matthew Stone","","","","","","","article","","Brandial","2006","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/rce3q2551mwtnbc173zcko1h948npud5","devault2006"
+);
+insert into biblio2 values("Contrastive Statements","Fred Dretske","","","","","","","article","","The Philosophical Review","1972","","","","","","","","language","","","oct","","","","","4","411-437","","81","","","https://app.box.com/s/buzjuijpkz1ufni4jkrd72c8r0frd4cd","dretske1972"
+);
+insert into biblio2 values("Disputing about taste","Andy Egan","","","","","","Disagreement","chapter","","","2010","","","","","Ted Warfield and Richard Feldman","","","","","","","","","Oxford University Press","","","","","","","","https://app.box.com/s/bs108cxmvnztk22ge480lzvg6mq7fy9h","egan2010"
+);
+insert into biblio2 values("Review: Relativism","Andy Egan","","","","","","","article","","Mind","2007","","","","","","","","","","","","","","","","462","387-90","","116","","","","eg2007b"
+);
+insert into biblio2 values("Epistemic Modals, Relativism and Assertion","Andy Egan","","","","","","","article","I think that there are good reasons to adopt a relativist semantics for epistemic modal claims such as ``the treasure might be under the palm tree, according to which such utterances determine a truth value relative to something finer-grained than just a world or a <world, time> pair . Anyone who is inclined to relativise truth to more than just worlds and times faces a problem about assertion. It's easy to be puzzled about just what purpose would be served by assertions of this kind, and how to understand what we d be up to in our use of sentences like 'the treasure might be under the palm tree', if they have such peculiar truth conditions. After providing a very quick argument to motivate a relativist view of epistemic modals, I bring out and attempt to resolve this problem in making sense of the role of assertions with relativist truth conditions.","Philosophical Studies","2007","","","","","","","","","","","","","","","","1","1-22","","133","","","https://app.box.com/s/iuee3fw6ppj2bb3oirle4w36wyx3c8vj","egan2007a"
+);
+insert into biblio2 values("Epistemic Modals in Context","Andy Egan and John Hawthorne and Brian Weatherson","","","","","","Contextualism in Philosophy","chapter","A very simple contextualist treatment of a sentence containing an epistemic modal, e.g. a might be F, is that it is true iff for all the contextually salient community knows, a is F. It is widely agreed that the simple theory will not work in some cases, but the counterexamples produced so far seem amenable to a more complicated contextualist theory. We argue, however, that no contextualist theory can capture the evaluations speakers naturally make of sentences containing epistemic modals. If we want to respect these evaluations, our best option is a relativist theory of epistemic modals. On a relativist theory, an utterance of a might be F can be true relative to one context of evaluation and false relative to another. We argue that such a theory does better than any rival approach at capturing all the behaviour of epistemic modals.","","2005","","","","","","","","","","","","","","Oxford University Press","","","131-70","","","","","https://app.box.com/s/eoulvw509q5bi8iot2nmyue0fxjn4bxq","egan2005a"
+);
+insert into biblio2 values("Context and the Composition of Meaning","Jan van Eijck","","","","","","","unpublished","Key ingredients in discourse meaning are reference markers: objects in the formal representation that the discourse is about. It is well-known that reference markers are not like first order variables. Indeed, it is the received view that reference markers are like the variables in imperative programming languages. However, in a computational semantics of discourse that treats reference markers as dynamically bound	extquoteright variables, every noun phrase will get linked to a dynamic variable, so it will give rise to a marker index. Where do these indices come from? How do we handle them when combining or merging pieces of discourse? We will argue that reference markers are better treated as indices into context, and we will present a theory of context and context extension based on this view. In context semantics, noun phrases do not come with indices, so the merge problem does not arise. This solves a vexing issue with coordination that causes trouble for all current versions of compositional discourse representation theory.","","2003","","","","","","","","","","","","","","","","","","","","","","","eijck"
+);
+insert into biblio2 values("Bare plurals, bare conditionals, and only","Kai von Fintel","","","","","","","article","","Journal of Semantics","1997","","","","","","","","","","","","","","","","","1-56","","14","","","https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z","vonfintel1997"
+);
+insert into biblio2 values("NPI-Licensing, Strawson-Entailment, and Context-Dependency","Kai von Fintel","","","","","","","article","","Journal of Semantics","1999","","","","","","","","","","","","","","","","1","","","16","","","https://app.box.com/s/2j4o189qfpf4178t5e79ruu973tj4l79","vonfintel1999"
+);
+insert into biblio2 values("Would You Believe It? The King of France is Back! Presuppositions and Truth-Value Intuitions","Kai von Fintel","","","","","","Descriptions and Beyond","chapter","","","2004","","","","","Anne Bezuidenhout and Marga Reimer","","","","","","","","","Oxford University Press","","","","","","","","","vonfintel2004"
+);
+insert into biblio2 values("Must...Stay...Strong!","Kai von Fintel and Thony Gillies","","","","","","","article","","Natural Language Semantics","2010","","","","","","","","language","","","","10.1007/s11050-010-9058-2","","","","4","351-83","","18","","","https://app.box.com/s/n42oupi6xm04gu7psmq4rrx28w2t8iot","vonfintel2010"
+);
+insert into biblio2 values("CIA Leaks","Kai von Fintel and Thony Gillies","","","","","","","article","","Philosophical Review","2008","","","","","","","","language, semantics","","","","10.1215/00318108-2007-025","","","","1","77-98","","117","","","https://app.box.com/s/vof10p8m563yppok2axqotygs6ki0vrk","vonfintel2008"
+);
+insert into biblio2 values("The Foundations of Arithmetic","Gottlob Frege","","","","","","The Frege Reader","chapter","","","1884/1997","","","","","Michael Beaney","","","","","","","","","Blackwell Publishing","","","","","","","","","frege1884"
+);
+insert into biblio2 values("Disagreement and deference: Is diversity of opinion a precondition for thought?","Stacie Friend and Peter Ludlow","","","","","","","article","","Philosophical Perspectives","2003","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/upsv9g8kpgbjbzfnsbzfqa1riqd5hbvo","friend2003"
+);
+insert into biblio2 values("Safety's Swamp: The Value of Modal Stability","Georgi Gardiner","","","","","","","article","","American Philosophical Quarterly","forthcoming","","","","","","","","","","","","","","","","","","","","","","","gardiner"
+);
+insert into biblio2 values("Presuppositions and Anaphors in Attitude Contexts","Bart Geurts","","","","","","","article","This paper consists of two main parts and a coda. In the first part I present the binding theory of presupposition projection, which is the framework that I adopt in this paper Section 1.1 . I outline the main problems that arise in the interplay between presuppositions and anaphors on the one hand and attitude reports on the other Section 1.2, and discuss Heim s theory of presuppositions in attitude contexts Section 1.3 .In the second part of the paper I present my own proposal. To begin with, I define an extension of DRT in which attitude reports can be represented Sections 2.1-2.2 . I then argue that the verb believe triggers a certain presupposition and that, given the binding theory, this presupposition determines the projection behaviour of the verb Section 2.3. ","Linguistics and Philosophy","1998","","","","","","","","","","","","","","Springer Netherlands","","6","545-601","","21","","","","geurts1998"
+);
+insert into biblio2 values("The mechanisms of denial","Bart Geurts","","","","","","","article","","Language","1998","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/iwulowmerwvidrt2u71ll1gd8ihxjlds","geurts1998a"
+);
+insert into biblio2 values("Layered DRT","Bart Geurts and Emar Maier","","","","","","","unpublished","The information conveyed by any utterance is a motley ensemble. Utterances carry content about the world as it is according to the speaker, but also about speakers	extquoteright attitudes, the way they speak, what has been said before, and so on. There are many kinds of information that are conveyed by way of language, and di { } erences in kind correlate with di { } erences in status. Presupposed information exhibits a distinctive projection behaviour; conversational implicatures are cancellable in a way that asserted information is not; a pronoun	extquoteright { } s gender may help to determine a referent, but is otherwise truth-conditionally inert; and so on.","","2003","","","","","","","","","","","","","","","","","","","","","","","geurtsa"
+);
+insert into biblio2 values("Interpreting Focus","Rob van der Sandt and Bart Geurts","","","","","","","article","","Theoretical Linguistics","2004","","","","","","","","language","","","September","","","","","1","1-44","","30","","","https://app.box.com/s/lbxka04ocuew0h25of66qevtnoaqanqd","geurts2004"
+);
+insert into biblio2 values("Iffiness","Anthony S. Gillies","","","","","","","article","","Semantics and Pragmatics","2010","","","","","","","","indicative conditionals, epistemic modality, if-clauses, conditionals, strict conditionals, dynamic semantics","","","January","10.3765/sp.3.4","","","","4","1-42","","3","","","https://app.box.com/s/m4ge1zrd1gmeobx6lmdu86q2mmbc6on5","gillies2010"
+);
+insert into biblio2 values("Counterfactual Scorekeeping","Thony Gillies","","","","","","","article","","Linguistics and Philosophy","2007","","","","","","","","language, logic","","","","10.1007/s10988-007-9018-6","","","","","329-60","","30","","","https://app.box.com/s/ibhyafehj4gnq4ny9qadetvm5j0dz6g4","gillies2007"
+);
+insert into biblio2 values("What Might be the Case After a Change in View","Thony Gillies","","","","","","","article","","Journal of Philosophical Logic","2006","","","","","","","","epistemology, language, logic","","","","10.1007/s10992-005-9006-7","","","","2","117-45","","35","","","https://app.box.com/s/6o0zxrqjjp45ks58pbbgw8t313fkj541","gillies2006"
+);
+insert into biblio2 values("New Foundations for Epistemic Change","Anthony S. Gillies","","","","","","","article","","Synthese","2004","","","","","","","","","","","","","","Springer","","1","1-48","","138","","","","gillies2004"
+);
+insert into biblio2 values("Pro Git","Scott Chacon and Ben Straub","","","","","","","book","","","2014","","","2nd","","","","","","","","","","","Apress","","","","","","","","https://git-scm.com/book/en/v2","git"
+);
+insert into biblio2 values("Descriptions, Negation, and Focus","Michael Glanzberg","","","","","","Compositionality, Context, and Semantic Values: Essays in Honor of Ernie Lepore","chapter","","","2009","","","","","Robert Stainton and Christopher Viger","","","language","","","","","","Springer","","","","","","","","https://app.box.com/s/90fmmnsy9h2a9p8q4n4703y11s738f17","glanzberg2009"
+);
+insert into biblio2 values("Focus: A Case Study on the Semantics-Pragmatics Boundary","Michael Glanzberg","","","","","","Semantics versus Pragmatics","chapter","","","2005","","","","3","Zoltan Gendler Szabo","","","language","","","","","","Oxford University Press","","","72-110","","","","","https://app.box.com/s/9n9kn1ufyymjp6xqzu4lwwt918aih835","glanzberg2005"
+);
+insert into biblio2 values("Context, content and relativism","Michael Glanzberg","","","","","","","article","","Philosophical Studies","2007","","","","","","","","","","","","","","","","1","1-29","","136","","","https://app.box.com/s/85fi58m68g4vhj8285rocfi1643uhc9e","glanzberg2007"
+);
+insert into biblio2 values("Discrimination and Perceptual Knowledge","Alvin Goldman","","","","","","","article","","Journal of Philosophy","1976","","","","","","","","","","","November","","","","","","771-791","","73","","","","goldman1976"
+);
+insert into biblio2 values("The Calculus of Individuals and its Uses","Nelson Goodman and Henry Leonard","","","","","","","article","","Journal of Symbolic Logic","1940","","","","","","","","","","","","","","Association for Symbolic Logic","","2","45-55","","5","","","","goodman1940"
+);
+insert into biblio2 values("Fact, Fiction, and Forecast","Nelson Goodman","","","","","","","book","","","1983","","","","","","","","","","","","","","Harvard University Press","","","","","","","","","goodman1983"
+);
+insert into biblio2 values("Knowledge as Credit for True Belief","John Greco","","","","","","Intellectual Virtue: Perspectives From Ethics and Epistemology","chapter","","","2003","","","","","Michael DePaul and Linda Zagzebski","","","","","","","","","Oxford University Press","","","111-134","","","","","","greco2003"
+);
+insert into biblio2 values("Studies in the Way of Words","Paul Grice","","","","","","","book","","","1989","","","","","","","","","https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611","https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce","","","","Harvard University Press","","","","","","","","","grice1989"
+);
+insert into biblio2 values("Studies in the Semantics of Questions and the Pragmatics of Answers","Jeroen Groenendijk and Martin Stokhof","","Department of Natural Sciences","","University of Amsterdam","","","book","","","1984","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/2uf0shh0xuddygsbaq8ondesf3kw4h5o","groenendijk1984"
+);
+insert into biblio2 values("Dynamic Predicate Logic","Jeroen Groenendijk and Martin Stokhof","","","","","","","article","This paper is devoted to the formulation and investigation of a dynamic semantic interpretation of the language of first-order predicate logic. The resulting system, which will be referred to as dynamic predicate logic, is intended as a first step towards a compositional, non-representational theory of discourse semantics. ","Linguistics and Philosophy","1991","","","","","","","","","","","","","","","","1","39-100","","14","","","https://app.box.com/s/ordtsi00dz6qr0ih0t3xkmrysyezwcpe","groenendijk1991"
+);
+insert into biblio2 values("Meaning in Motion","Jeroen Groenendijk and Martin Stokhof","","ILLC/Department of Philosophy","","University of Amsterdam","","","article","The paper sketches the place of dynamic semantics within a broader picture of developments in philosophical and linguistic theories of meaning. Some basic concepts of dynamic semantics are illustrated by means of a detailed analysis of anaphoric definite and indefinite descriptions, which are treated as contextually dependent quantificational expressions. It is shown how a dynamic view sheds new light on the contextual nature of interpretation, on the difference between monologue and dialogue, and on the interplay between direct and indirect information.","","1999","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/hkpx4vzrr7hvmiybb374vo5lu50cawk2","groenendijk1999"
+);
+insert into biblio2 values("Inquisitive Semantics and Pragmatics","Jeroen Groenendijk and Floris Roelofsen","","ILLC/Department of Philosophy","","University of Amsterdam","","","presentation","","","2009","","Workshop on Language, Communication, and Agency: Stanford, May 30-31, 2009","","","","","","","","","","","","","","","","","","","","http://bit.ly/groenendijk2009","groenendijk2009"
+);
+insert into biblio2 values("Centering: A framework for modelling the local coherence of discourse","Barbara J. Grosz and Aravind K. Joshi and Scott Weinstein","","Institute for Reseach in Cognitive Science","","University of Pennsylvania","","","article","This paper concerns relationships among focus of attention, choice of referring expression, and perceived coherence of utterances within a discourse segment. It presents a framework and initial theory of centering which are intended to model the local component of attentional state. The paper examines interactions between local coherence and choice of referring expressions; it argues that differences in coherence correspond in part to the inference demands made by different types of referring expressions given a particular attentional state. It demonstrats that the attentional state properties modelled by centering can account fo these differences.","","1995","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/zxme3mt53vqp15qogrj2y4eyw8masxd2","grosz1995"
+);
+insert into biblio2 values("Not All Attitudes Are Propositional","Alex Grzankowski","","","","","","","article","","European Journal of Philosophy","2012","","","","","","","","","","","","","","","","3","374-391","","","","","","grzankowski2012"
+);
+insert into biblio2 values("On Different Kinds of Focus","Jeanette Gundel","","","","","","Focus: Linguistic, Cognitive, and Computational Perspectives","chapter","","","1999","","","","","Peter Bosch and Rob van der Sandt","","Studies in Natural Language Processing","language","","","","","","Cambridge University Press","","","","","","","","","gundel1999-1"
+);
+insert into biblio2 values("Topic, Focus, and the Grammar Pragmatics Interface","Jeanette Gundel","","","","","","","article","","Proceedings of the 23rd Annual Penn Linguistics Colloquium: Penn Working Papers in Linguistics","1999","","","","","","","","language","","","","","","","","1","185-200","","6","","","https://app.box.com/s/cxq18x2fxfuodeec0zusa6912plboh0t","gundel1999"
+);
+insert into biblio2 values("Topic and Focus","Jeanette Gundel and Thorsten Fretheim","","","","","","Handbook of Pragmatic Theory","chapter","","","2001","","","","","Laurence Horn and Gregory Ward","","","language","","","","","","Blackwell Publishing","","","","","","","","https://app.box.com/s/z6rpgw0sxstkpt9oi950n5s5v3xdw3z9","gundel2001"
+);
+insert into biblio2 values("Questions","Charles Hamblin","","","","","","","article","","Australasian Journal of Philosophy","1958","","","","","","","","","","","","","","","","","159-168","","36","","","","hamblin1958"
+);
+insert into biblio2 values("Thought","Gilbert Harman","","","","","","","book","","","1973","","","","","","","","","","","","","","Princeton University Press","","","","","","","","","harman1973"
+);
+insert into biblio2 values("Knowledge and Action","John Hawthorne and Jason Stanley","","","","","","","article","","Journal of Philosophy","2008","","","","","","","","","","","","","","","","10","571-590","","105","","","","hawthorne2008"
+);
+insert into biblio2 values("Factive Presupposition and the Truth Condition on Knowledge","Allan Hazlett","","","","","","","article","","Acta Analytica","2012","","","","","","","","","","","","","","","","4","461-478","","27","","","","hazlett2012"
+);
+insert into biblio2 values("E-Type Pronouns and Donkey Anaphora","Irene Heim","","","","","","","article","","Linguistics and Philosophy","1990","","","","","","","","","","","","","","","","2","137-77","","13","","","https://app.box.com/s/jzklk0qur857xue7ijitq0r68b6slov2","heim1990a"
+);
+insert into biblio2 values("The Epistemic Role Account of Lawhood","M. Townsen Hicks","","","","","","","unpublished","","","ms","","","","","","","","","","","","","","","","","","","","","","","hicks2014"
+);
+insert into biblio2 values("What is abduction? The fundamental problems of contemporary epistemology","Jaakko Hintikka","","","","","","","article","","Transactions of the Charles S. Peirce Society","1998","","","","","","","","","","","","","","","","3","","","34","","","","hintikk1998"
+);
+insert into biblio2 values("A natural history of negation","Lawrence Horn","","","","","","","book","","","1989","","","","","","","","","","","","","","The University of Chicago Press","","","","","","","","","horn1989"
+);
+insert into biblio2 values("An Enquiry Concerning Human Understanding","David Hume","","","","","","","book","","","1777/1999","","","","","","","","","","","","","","Oxford University Press UK","","","","","","","","","hume1777"
+);
+insert into biblio2 values("Semantic Interpretation in Generative Grammar","Ray Jackendoff","","","","","Cambridge, MA","","book","","","1972","","","","","","","","","","","","","","MIT Press","","","","","","","","","jackendoff1972"
+);
+insert into biblio2 values("The will to believe and other essays","William James","","","Original copyright 1896","","","","Book","","","1896/2009","","","","","","","","","","","","","","Project Gutenberg","","26659","","","","","","","james1896"
+);
+insert into biblio2 values("A Theory of Truth and Semantic Representation","Hans Kamp","","","","","","Formal Semantics: the Essential Readings","chapter","","","1981","","","","","P. Portner and B. H. Partee","","","","","","","","","Blackwell","","","189-222","","","","","","kamp1981"
+);
+insert into biblio2 values("Demonstratives","David Kaplan","","","","","","Themes From Kaplan","chapter","","","1977","","","","","Joseph Almog and John Perry and Howard Wettstein","","","","","","","","","Oxford University Press","","","481-563","","","","","","kaplan1977"
+);
+insert into biblio2 values("Syntax and semantics of questions","Lauri Karttunen","","","","","","","article","","Linguistics and Philosophy","1977","","","","","","","","","","","","","","","","","","","1","","","https://app.box.com/s/hdl61kj7e7aj08n8b8i41c8aw7lj2qny","karttunen1977"
+);
+insert into biblio2 values("Conventional Implicature","L. Karttunen and S. Peters","","","","","New York","Syntax and Semantics II: Presupposition","chapter","","","1979","","","","","C.-K. Oh and D. A. Dineen","","","","","","","","","Academic Press","","","1-56","","","","","","karttunen1979"
+);
+insert into biblio2 values("Coherence and the Resolution of Ellipsis","Andrew Kehler","","","","","Netherlands","","article","","Linguistics and Philosophy","2000","","","","","","","","","","","","","","Springer","","6","533-575","","23","","","","kehler2000"
+);
+insert into biblio2 values("Identification Focus versus Information Focus","Katalin Kiss","","","","","","","article","","Language","1998","","","","","","","","language","","","June","","","","","2","245-73","","74","","","https://app.box.com/language-library","kiss1998"
+);
+insert into biblio2 values("Explanatary Unification and the Causal Structure of the World","Philip Kitcher","","","","","","Scientific Explanation","chapter","","","1989","","","","","Philip Kitcher and Wesley Salmon","","","","","","","","","University of Minnesota Press","","","410-505","","","","","","kitcher1989"
+);
+insert into biblio2 values("Situations in Natural Language Semantics","Angelika Kratzer","","CSLI","","Stanford University","","Stanford Encyclopedia of Philosophy","chapter","Situation semantics was developed as an alternative to possible worlds semantics. In situation semantics, linguistic expressions are evaluated with respect to partial, rather than complete, worlds. There is no consensus about what situations are, just as there is no consensus about what possible worlds or events are. According to some, situations are structured entities consisting of relations and individuals standing in those relations. According to others, situations are particulars. In spite of unresolved foundational issues, the partiality provided by situation semantics has led to some genuinely new approaches to a variety of phenomena in natural language semantics. In the way of illustration, this article includes relatively detailed overviews of a few selected areas where situation semantics has been successful: implicit quantifier domain restrictions, donkey pronouns, and exhaustive interpretations. It moreover addresses the question of how Davidsonian event semantics can be embedded in a semantics based on situations. Other areas where a situation semantics perspective has led to progress include attitude ascriptions, questions, tense, aspect, nominalizations, implicit arguments, point of view, counterfactual conditionals, and discourse relations.","","2008","","","","","Edward N. Zalta","","","","","","","","1095-5054","The Metaphysics Research Lab","","","","","","","","","kratzer2008a"
+);
+insert into biblio2 values("Interpreting Focus: Presupposed or Expressive Meanings? A Comment on Geurts and Van der Sandt","Angelika Kratzer","","","","","","","article","The BPR assumes that we already know how sentences are partitioned into focused and backgrounded material, and this is quite legitimate, given the literature on the topic see e.g. Krifka 1991, von Stechow 1991 . If the BPR was true, no more would have to be said about the meaning of focus. The behavior of whatever inferences are generated by backgrounding could be taken care of by theories dealing with the projection of presuppositions of the familiar kind, the presuppositions of definite descriptions, clefts, or factives, for example. This is a non-trivial and interesting claim.","Theoretical Linguistics","2004","","","","","","","","language","","","","","","","","","123-36","","30","","","https://app.box.com/s/xojqxgi7uaw4resdx83v0ky1qh11acsc","kratzer2004"
+);
+insert into biblio2 values("Partition and Revision: The Semantics of Counterfactuals","Angelika Kratzer","","","","","","","article","","Journal of Philosophical Logic","1981","","","","","","","","","","","","","","","","2","201-16","","10","","","","kratzer1981"
+);
+insert into biblio2 values("What Must and Can Must and Can Mean","Angelika Kratzer","","","","","","","article","In this paper I offer an account of the meaning of must and can within the framework of possible worlds semantics. The paper consists of two parts: the first argues for a relative concept of modality underlying modal words like must and can in natural language. I give preliminary definitions of the meaning of these words which are formulated in terms of logical consequence and compatibility, respectively. The second part discusses one kind of insufficiency in the meaning definitions given in the first part, which arise from the ex falso quodlibet paradox of logical consequence. In stepwise fashion, I make an attempt to avoid most of the consequences of this paradox for the meaning definitions of must and can.","Linguistics and Philosophy","1977","","","","","","","","language","","","","","","","","3","337-55","","1","","","https://app.box.com/s/ujo6mdn6rkjmb20rgb0ttrunrwgze2m0","kratzer1977"
+);
+insert into biblio2 values("A compositional semantics for multiple focus constructions","Manfred Krifka","","","","","","Cornell Working Papers in Linguistics 10","chapter","","Proceedings from Semantics and Linguistic Theory 1","1991","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/v76fpb4w9187u3w0sfn5va5uc8x08kr6","krifka-ms"
+);
+insert into biblio2 values("Basic notions of Information structure","Manfred Krifka","","","","","","Interdisciplinary Studies of Information Structure","chapter","","","2007","","","","","C. Ferry and M. Krifka","","","","","","","","","Potsdam","","","","","6","","","https://app.box.com/s/5sxirxk10opqiqca62pgiwszcly0cq5t","krifka2006"
+);
+insert into biblio2 values("For a structured meaning account of questions and answers, revised version","Manfred Krifka","","","","","Berlin","","article","In the logical, philosophical and linguistic literature, a number of theoretical frameworks have been proposed for the meaning of questions see Ginzburg 1995, Groenendijk & Stokhof 1997 for recent overviews . I will concentrate on two general approaches that have figured prominently in linguistic semantics, which I will call the","Studia Grammatica","2001","","","","","C. Fery and W. Sternefeld","","","","","","","","","","","","287-319","","52","Audiatur Vox Sapientia: A Festschrift for Arnim von Stechow","","","krifka2001"
+);
+insert into biblio2 values("Naming and Necessity","Saul Kripke","","","","","","","book","","","1980","","","","","","","","language, logic, metaphysics, mind","","","","","","Harvard University Press","","","","","","","","","kripke1980"
+);
+insert into biblio2 values("The Semantics and Pragmatics of Presupposition","Nicholas Asher and Alex Lascarides","","","","","","","article","In this paper, we offer a novel analysis of presuppositions, paying particular attention to the interaction between the knowledge resources that are required to The analysis has two main features. First, we capture an analogy between presuppositions, anaphora and scope ambiguity (cf. van der Sandt 1992), by utilizing semantic under-specification (c£ Reyle 1993). Second, resolving this underspecification requires reasoning about how the presupposition is rhetorically connected to the discourse context.This has several consequences. First, since pragmatic information plays a role in computing the rhetorical relation, it also constrains the interpretation of presuppositions. Our account therefore provides a formal framework for analysing problematic data, which require pragmatic reasoning. Second, binding presuppositions to the context via rhetorical links replaces accommodating them, in the sense of adding them to the context (cf. Lewis 1979). The treatment of presupposition is thus generalized and integrated into the discourse update procedure.We formalize this approach in SDRT (Asher 1993; Lascarides & Asher 1993), and demonstrate that it provides a rich framework for interpreting presuppositions, where semantic and pragmatic constraints are integrated.","Journal of Semantics","1998","","","","","","","","","","","","","","","","3","239-300","","15","","","","asher1998"
+);
+insert into biblio2 values("Relative truth, speaker commitment, and control of implicit arguments","Peter Lasersohn","","","","","","","article","","Synthese","2007","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/7cgll5i29mqbiak6whypfvwhd3xmix36","lasersohn2007"
+);
+insert into biblio2 values("Context Dependence, Disagreement, and Predicates of Personal Taste","Peter Lasersohn","","","","","","","article","","Linguistics and Philosophy","2005","","","","","","","","","","","","","","Springer","","6","643-686","","28","","","https://app.box.com/s/qotplpbzs7la7qs82b0vo6ungh2vf152","lasersohn2005"
+);
+insert into biblio2 values("Information and Inference","Isaac Levi","","","","","","","article","","Synthese","1967","","","","","","","","","","","","","","Springer","http://www.jstor.org/stable/20114575","4","369-391","","17","","","","levi1967"
+);
+insert into biblio2 values("The Enterprise of Knowledge","Isaac Levi","","","","","Cambridge, MA","","book","","","1980","","","","","","","","","","","","","","MIT Press","","","","","","An Essay on Knowledge, Credal Probability, and Chance","","","levi1980"
+);
+insert into biblio2 values("Counterfactuals","David Lewis","","","","","","","book","","","1973","","","","","","","","","","","","","","Blackwell Publishing","","","","","","","","","lewis1973a"
+);
+insert into biblio2 values("Counterfactuals and Comparative Possibility","David Lewis","","","","","","","article","","Journal of Philosophical Logic","1973","","","","","","","","","","","","","","","","4","418-446","","2","","","https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/","lewis1973"
+);
+insert into biblio2 values("Scorekeeping in a Language Game","David Lewis","","","\PPI 233-249","","","","article","","Journal of Philosophical Logic","1979","","","","","","","","","","","","","","","","1","339-59","","8","","","https://app.box.com/s/ah5uylb4a8pktexm9apeqxz70z8vto3u","lewis1979f"
+);
+insert into biblio2 values("Attitudes de dicto and de se","David Lewis","","","","","","","article","","Philosophical Review","1979","","","","","","","","language, metaphysics","","","","","","","","4","513-43","","88","","","https://app.box.com/s/37hv7j8f07ajn0gfoogo79s1tyf3w30e","lewis1979"
+);
+insert into biblio2 values("Adverbs of Quantification","David Lewis","","","PPL 5-20","","","Formal Semantics of Natural Language","chapter","","","1975","Cambridge","","","","","","","","","","","","","Cambridge University Press","","","3-15","","","","","","lewis1975a"
+);
+insert into biblio2 values("Languages and Language","David Lewis","","","PPI 163-188","","","Minnesota Studies in the Philosophy of Science","chapter","","","1975","Minneapolis","","","","","","","","","","","","","University of Minnesota Press","","","3-35","","7","","","","lewis1975b"
+);
+insert into biblio2 values("Radical Interpretation","David Lewis","","","PPI 108-118","","","","article","","Synthese","1974","","","","","","","","","","","","","","","","3-4","331-344","","27","","","https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/","lewis1974b"
+);
+insert into biblio2 values("Index, Context, and Content","David Lewis","","","","","","Philosophy and Grammar","chapter","","","1980","","","","","S. Kanger and S. Ohman","","","","","","","","","Reidel Publishing Company","","","79-100","","","","","","lewis1980"
+);
+insert into biblio2 values("What Experience Teaches","David Lewis","","","PME 262-290","","","","article","","Proceedings of the Russellian Society","1988","","","","","","","","","","","","","","","","1","29-57","","13","","","","lewis1988"
+);
+insert into biblio2 values("Papers in Metaphysics and Epistemology","David K. Lewis","","","","","Cambridge, UK","","book","","","1999","","","","","","","","","","","","","","Cambridge University Press","","","","","","","","","lewis1999"
+);
+insert into biblio2 values("Natural language and generalized quantifier theory","Sebastian Loebner","","","","","","Generalized Quantifiers","chapter","","","1987","","","","","Peter Gaardenfors","","","","","","","","","Reidel Publishing Company","","","181-201","","","","","","lobner1987"
+);
+insert into biblio2 values("Living Words: Meaning Underdetermination and the Dynamic Lexicon","Peter Ludlow","","","","","","","book","","","2014","","","","","","","","","","","","","","OUP Oxford","","","","","","","","https://app.box.com/s/p5sdu5mp5juevyw7hn8u1oy28dobhsjs","ludlow2012"
+);
+insert into biblio2 values("Cheap contextualism","Peter Ludlow","","","","","","","article","","Philosophical issues","2008","","","","","","","","","","","","","","","","","","","18","","","https://app.box.com/s/23tpmfuhbwma32y18kbt2sa605m3w2be","ludlow2008"
+);
+insert into biblio2 values("Assessment Sensitivity: Relative Truth and its Applications","John MacFarlane","","","","","Oxford","","book","","","2014","","","","","","","","","","","","","","Clanendon Press","","","","","","","","","macfarlane2014"
+);
+insert into biblio2 values("What is assertion?","John MacFarlane","","","","","","Assertion","chapter","","","2011","","","","","Jessican Brown and Herman Cappelen","","","","","","","","","Oxford University Press","","","79-96","","","","","","macfarlane2011a"
+);
+insert into biblio2 values("Epistemic Modals are Assessment-Sensitive","John MacFarlane","","","","","","Epistemic Modality","chapter","","","2011","","","","","Brian Weatherson and Andy Egan","","","language","","","","","","Oxford University Press","","","","","","","","","macfarlane2011"
+);
+insert into biblio2 values("Truth in the garden of forking paths","John MacFarlane","","","","","","Relative Truth","chapter","","","2008","","","","","Max Kölbel and Manuel García-Carpintero","","","","","","","","","Oxford University Press","","","81-102","","","","","","macfarlane2008"
+);
+insert into biblio2 values("Nonindexical Contextualism","John MacFarlane","","","","","","","article","","Synthese","2009","","","","","","","","","","","","","","","","","231-250","","166","","","","macfarlane2009"
+);
+insert into biblio2 values("Relativism and disagreement","John MacFarlane","","","","","","","article","","Philosophical Studies","2007","","","","","","","","","","","","","","","","","17-31","","132","","","https://app.box.com/s/pkt1f14gl208ky03z4ajgt6nyx037af6","macfarlane2007"
+);
+insert into biblio2 values("Making sense of relative truth","John MacFarlane","","","","","","","article","","Proceedings of the Aristotelian Society","2005","","","","","","","","","","","","","","","","","321-339","","105","","","","macfarlane2005"
+);
+insert into biblio2 values("Meno","Plato","","","","","New York","The Collected Dialogues of Plato, Including the Letters","chapter","","","1961","","","","","Edith Hamilton and Huntington Cairns","","","","","","","","","Pantheon Books","","","","","","","","","meno"
+);
+insert into biblio2 values("On Liberty","John Stuart Mill","","","Original copyright 1859","","","","book","","","1859/2011","","","","","","","","","","","","","","Project Gutenberg","","","","","","","","","mill1859"
+);
+insert into biblio2 values("Reasonable disagreement and rational group inquiry","Marc Moffett","","","","","","","article","","Episteme: A journal of social epistemology","2007","","","","","","","","","","","","","","","","","352-367","","4","","","","moffett2007"
+);
+insert into biblio2 values("The Proper Treatment of Quantification in Ordinary English","Richard Montague","","","","","","Formal Philosophy","chapter","","","1974","","","","","","","","","","","","","","Yale University","","","","","","","","https://app.box.com/s/s5503joh3gshi09kygue2dhdk7xbq68o","montague1974a"
+);
+insert into biblio2 values("Evidentiality and the Structure of Speech Acts","Sarah Murray","","","","Rutgers University","","","book","","","2010","","","","","","","","language","","","","","","","","","","","","","","","murray2010"
+);
+insert into biblio2 values("Varieties of update","Sarah E. Murray","","","","","","","article","","Semantics and Pragmatics","2014","","","","","","","","update semantics, evidentials, parentheticals, appositives, mood, hedges","","","March","10.3765/sp.7.2","","","","2","1-53","","7","","","https://app.box.com/s/gksdg1ul62z37h56uu2gioyb45pjqkuo","murray2014"
+);
+insert into biblio2 values("Transfers of Meaning","Geoffrey Nunberg","","","","","","","article","","Journal of Semantics","1995","","","","","","","","language","","","","","","","","","109-32","","12","","","https://app.box.com/s/xd50rjgnkcunkjlmk84u8c9g0g1a79iw","nunberg1995"
+);
+insert into biblio2 values("Topic, Focus, and Quantification","Barbara H. Partee","","","","","","SALT I","chapter","","","1991","","","","","Steve Moore and Adam Wyner","","","language","","","","","","","","","","","","","","https://app.box.com/s/o7ct366divwsukezgfuth20nsw2opujs","partee1991"
+);
+insert into biblio2 values("Some Structural Analogies between Tenses and Pronouns in English","Barbara Hall Partee","","","","","","","article","","The Journal of Philosophy","1973","","","","","","","","","http://www.jstor.org/stable/2025024","https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur","","","","","","18","601-609","","70","","","","partee1973"
+);
+insert into biblio2 values("The Fixation of Belief","Charles Sanders Peirce","","","","","New York","Philosophical Writings of Peirce","chapter","","Popular Science Monthly","1877/1955","","","","","Justus Buchler","","","","","","","","","Dover Publications, Inc.","","","","","","","","","peirce1877"
+);
+insert into biblio2 values("The Probability of Induction","Charles Sanders Peirce","","","","","New York","Philosophical Writings of Peirce","chapter","","","1877/1955","","","","","Justus Buchler","","","","","","","","","Dover Publications, Inc.","","","","","","","","","peirce1877a"
+);
+insert into biblio2 values("Generics and Defaults","Francis Jeffry Pelletier and Nicholas Asher","","","","","","","unpublished","","","n/a","","","","","","","","","","","","","","","","","","","","","","","pelletierms"
+);
+insert into biblio2 values("Disagreement and the semantics of normative and evaluative terms","David Plunkett and Timothy Sundell","","","","","","","article","","Philosopher's Imprint","2013","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/m62bim7eu2y6cu6y8swk6fsa7uzn43uz","plunkett2013"
+);
+insert into biblio2 values("The Semantics of Mood, Completion, and Conversational Force","Paul Portner","","","","","","","article","","Natural Language Semantics","1997","","","","","","","","","","","","","","","","","167-212","","5","","","","portner1997"
+);
+insert into biblio2 values("Imperative and modals","Paul Portner","","","","","","","article","","Natural Language Semantics","2007","","","","","","","","","","","","","","","","","351-383","10.1007/s11050-007-9022-y","15","","","https://app.box.com/s/10nh6c5013mlrll5nw3ktmnuhmv0lbty","portner2007"
+);
+insert into biblio2 values("The Logic of Conventional Implicatures","Christopher Potts","","","","","","","book","","","2005","","","","","","","","","","","","","","Oxford University Press Uk","","","","","","","","https://app.box.com/s/e1gsru1h0pfxxi8m9kfv4ohgfqlnumqb","potts2005"
+);
+insert into biblio2 values("A Theory of Justice","John Rawls","","","","","","","book","","","1971","","","","","","","","","","","","","","Belknap Press","","","","","","","","","rawls1971"
+);
+insert into biblio2 values("A plea for semantic localism","Augustin Rayo","","","","","","","article","","Nôus","forthcoming","","","","","","","","","","","","","","","","","","","","","","","rayo2011"
+);
+insert into biblio2 values("Plurals","Augustin Rayo","","","","","","","article","","Philosophical Compass","2006","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/rb7jo3a7aa1q0pz7rkhrhkx028cu1a68","rayo2006"
+);
+insert into biblio2 values("Contextualism and relativism","Mark Richard","","","","","","","article","","Philosophical Studies","2004","","","","","","","","","","","","","","","","","215-242","","119","","","https://app.box.com/s/px3nntvtxwx5zj8ze8szp2dsawxmjf67","richard2004"
+);
+insert into biblio2 values("Understanding, Knowledge, and the Meno Requirement","Wayne D. Riggs","","","","","","Epistemic Value","chapter","","","2009","","","","","Adrian Haddock and Alan Millar and Duncan Pritchard","","","","","","","","","Oxford University Press","","","","","","","","","riggs2009"
+);
+insert into biblio2 values("Information structure in discourse: towards an integrated formal theory of pragmatics","Craige Roberts","","","","The Ohio State University","","Papers in semantics (Working papers in linguistics 49)","chapter","","","1996","","","","","Jae-Hak Yoon and Andreas Kathol","","","","","","","","","","","","","","","","","http://bit.ly/roberts1996","roberts1996"
+);
+insert into biblio2 values("Focus, the Flow of Information, and Universal Grammar","Craige Roberts","","","","","","Syntax and Semantics: The Limits of Syntax","chapter","","","1998","","","","","Peter Culicover and Louise McNally","","","language","","","","","","Academic Press","","","","","29","","","https://app.box.com/s/nhgxsdifylbanrembzr80ke4atrxonno","roberts1998"
+);
+insert into biblio2 values("Context in Dynamic Interpretation","Craige Roberts","","","","","","The Handbook of Pragmatics","chapter","","","2004","","","","","Laurence Horn and Gregory Ward","","","language","","","","","","Black","","","","","","","","https://app.box.com/s/u9gnpxwsijzixsbwcg39qquypxcydgy9","roberts2004"
+);
+insert into biblio2 values("A Theory of Focus Interpretation","Mats Rooth","","","","","","","article","","Natural Language Semantics","1992","","","","","","","","language","","","","","","","","","75-116","","1","","","https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw","rooth1992"
+);
+insert into biblio2 values("Association with Focus","Mats Rooth","University of Massachusetts","","","","","","book","","","1985","","","","","","","","language","","","","","","","","","","","","","","","rooth1985"
+);
+insert into biblio2 values("The Value of Truth and the Value of Information : On Isaac Levi's Epistemology","Hans Rott","","","","","","Knowledge and Inquiry: Essays on the Pragmatism of Isaac Levi","chapter","","","2006","","","","","Erik J. Olsson","","","","","","","","","Cambridge University Press","","","179-200","","","","","","rott2006"
+);
+insert into biblio2 values("The Concept of Mind","Gilbert Ryle","","","","","","","book","","","1949","","","","","","","","","","","","","","Hutchinson and Co","","","","","","","","","ryle1949"
+);
+insert into biblio2 values("Contrastive Knowledge","Jonathan Schaffer","","","","","","Oxford Studies in Epistemology 1","chapter","","","2005","","","","","Tamar Szabo Gendler and John Hawthorne","235","","","","","","","","Oxford University Press","","","","","","","","","schaffer2005"
+);
+insert into biblio2 values("Knowledge in the Image of Assertion","Jonathan Schaffer","","","","","","","article","","Philosophical Issues","2008","","","","","","","","","","","","","","","","1","1-19","","18","","","","schaffer2008"
+);
+insert into biblio2 values("The schmentencite way out: towards an index free semantics","Jonathan Schaffer","","","","","","","unpublished","","","2014","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/07oo1en1x7yzewexrrvbonapq7sqlxfx","schaffer2014"
+);
+insert into biblio2 values("Necessitarian propositions","Jonathan Schaffer","","","","","","","article","","Synthese","2012","","","","","","","","","","","","","","","","","119-62","","189","","","https://app.box.com/s/gdn22aczfacoht4riaf1l9iwhpauj1xg","schaffer2014a"
+);
+insert into biblio2 values("Epistemic Comparativism: A contextualist semantics for knowledge ascriptions","Jonathan Schaffer and Zoltan Gendler Szabo","","","Draft dated April 24, 2011","","","","article","","Forthcoming","2014","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/wd1n4150u0f5c4hxug61ac9x0cy4c4x6","schaffer-ms"
+);
+insert into biblio2 values("Patterns of abduction","G. Schurz","","","","","","","article","","Synthese","2008","","","","","","","","","","","","10.1007/s11229-007-9223-4","","","","","201-234","","164","","","","schurz2008"
+);
+insert into biblio2 values("Focus Interpretations: Comments on Geurts and van der Sandt","Roger Schwarzschild","","","","","","","article","","Theoretical Linguistics","2004","","","","","","","","language","","","","","","","","1","137-47","","30","","","https://app.box.com/s/hzc7htd8khcp5g0jquaqjzlnxaxdm79d","schwarzschild2004"
+);
+insert into biblio2 values("Givenness, AvoidF, and Other Constraints on the Placement of Accent","Roger Schwarzschild","","","","","","","article","","Natural Language Semantics","1999","","","","","","","","language","","","","","","","","","141-77","","7","","","https://app.box.com/s/c47sqov0a4gmmv46vnpu0drn61a73xx8","schwarzschild1999"
+);
+insert into biblio2 values("Plurals, Presuppositions, and the Sources of Distributivity","Roger Schwarzschild","","","","","","","article","This paper begins with a discussion of CUMULATIVITY (e.g., 'P(a) & P(b) implies P(a+b)'), formalized using a verb phrase operator. Next, the meanings of distribu- tivity markers such as each and non-distributivity indicators such as together are considered. An existing analysis of each in terms of quantification over parts of a plurality is adopted. However, together is problematic, for it involves a cancellation or negation of the quantification associated with each. (The four boys together owned exactly three cars could not be true if each of the boys owned three cars, though the same sentence without together could be.) A refinement of this idea of negated quantification over parts is proposed as an analysis for non-distributivity operators. It is then worked out in the system described in Cooper (1983), in which positive and negative extensions are assigned. Presuppositions connected with plural refer- ence are considered at this point as well. Finally, the cumulativity operator is argued to be quantificational and therefore sensitive to contextual domain selection. This context sensitivity is claimed to be the source of distributive readings that appear in the absence of modifiers like each and non-distributive or collective readings that arise without together.","Natural Language Semantics","1994","","","","","","","","","","","","","","Kluwer Academic Publishers","","","201-248","","2","","","https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2","schwarzschild1994"
+);
+insert into biblio2 values("Charles Sanders Peirce","Robert Burch","","","","","","The Stanford Encyclopedia of Philosophy","chapter","","","2014","","","Winter 2014","","Edward N. Zalta","","","","","","","","","","","","","","","","","http://plato.stanford.edu/archives/win2014/entries/peirce","sep-peirce"
+);
+insert into biblio2 values("The First Moment of Scientific Inquiry: C. S. Peirce on the Logic of Abduction","Timothy Shanahan","","","","","","","article","","Transactions of the Charles S. Peirce Society","1986","","","","","","","","","","","","","","Indiana University Press","","4","449-466","","22","","","","shanahan1986"
+);
+insert into biblio2 values("Writing the Book of the World","Theodore Sider","","","","","","","book","","","2013","","","","","","","","","","","","","","Oxford University Press Uk","","","","","","","","","sider2013"
+);
+insert into biblio2 values("Parts: A Study in Ontology","Peter M. Simons","","","","","","","book","","","1987","","","","","","","","","","","","","","Oxford University Press","","","","","","","","","simons1987"
+);
+insert into biblio2 values("Advantages of Propositionalism","Neil Sinhababu","","","","","","","article","","Pacific Philosophical Quarterly","2015","","","","","","","","","","","","","","","","1","165-180","","96","","","","sinhababu2015"
+);
+insert into biblio2 values("The Place of Truth in Epistemology","Ernest Sosa","","","","","New York","Intellectual Virtue: Perspectives From Ethics and Epistemology","chapter","","","2003","","","","","Linda Zagzebski and Michael DePaul","","","","","","","","","Oxford University Press","","","155-180","","","","","","sosa2003"
+);
+insert into biblio2 values("Factive Presuppositions, Accommodation and Information Structure","Jennifer Spenader","","","","","","","article","There are three ways to refer to a fact from the complement of afactive verb: 1 Via abstract object anaphoric reference, or, witha full sentential complement that will be interpreted either 2 asa bound presupposition or 3 as triggering a presupposition of afact that will have to be accommodated. Spoken corpus examplesreveal that these three possibilities differ in relation to thetype of information they tend to contribute, and this has twoeffects. First, the information status of the fact and its role inthe discourse seem to affect the preference for one constructionover another in a particular context. Second, presupposed factivecomplements that need to be accommodated tend to be hearer-new andthe focus of the utterance, meaning that information structureseems to contribute to the felicity of accommodation ofpresupposed facts.","Journal of Logic, Language and Information","2003","","","","","","","","","","","","","","Springer Netherlands","","3","351-68","","12","","","","spenader2003"
+);
+insert into biblio2 values("Contrast as Denial in Multi-Dimensional Semantics","Jennifer Spenader and Emar Maier","","","","","","","article","We argue that contrastive statements have the same underlying semantics and affect the context in the same way as denials. We substantiate this claim by giving a unified account of the two phenomena that treats contrast as a subtype of denial. This analysis crucially requires a dynamic semantics view of context-dependence with a multi-dimensional representation of information.","Journal of Pragmatics","2009","","","","","","","","","","","","","","","","","1707-26","","41","","","https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel","spenader2009"
+);
+insert into biblio2 values("Common Ground","Robert Stalnaker","","","","","","","article","","Linguistics and Philosophy","2002","","","","","","","","","","","","","","Springer Netherlands","","5-6","701-21","","25","","","","stalnaker2002"
+);
+insert into biblio2 values("On the Representation of Context","Robert Stalnaker","","","","","","","article","This paper revisits some foundational questions concerning the abstract representation of a discourse context. The context of a conversation is represented by a body of information that is presumed to be shared by the participants in the conversation -the information that the speaker presupposes a point at which a speech act is interpreted. This notion is designed to represent both the information on which context-dependent speech acts depend, and the situation that speech acts are designed to affect, and so to be a representation of context that is appropriate for explaining the interaction of context and the contents expressed in them. After reviewing the motivating ideas and the outlines of the apparatus, the paper responds to a criticism of the framework, and considers the way it can help to clarify some phenomena concerning pronouns with indefinite antecedents.","Journal of Logic, Language and Information","1998","","","","","","","","","","","","","","Springer Netherlands","","1","3-19","","7","","","","stalnaker1998c"
+);
+insert into biblio2 values("Inquiry","Robert Stalnaker","","","","","","","book","","","1987","","","","","","","","language, mind","","","","","","MIT Press","","","","","","","","","stalnaker1987"
+);
+insert into biblio2 values("Possible worlds and situations","Robert Stalnaker","","","","","","","article","","Journal of Philosophical Logic","1986","","","","","","","","","","","","","","","","1","109-23","","15","","","https://app.box.com/s/deugrupb5gc7enn4ynyo0cqqb0ctcxkn","stalnaker1986"
+);
+insert into biblio2 values("Assertion","Robert Stalnaker","","","","","","","article","","Syntax and Semantics New York Academic Press","1978","","","","","","","","","","","","","","New York Academic Press","","","315-332","","9","","","","stalnaker1978"
+);
+insert into biblio2 values("A Theory of Conditionals","Robert Stalnaker","","","","","Oxford","Studies in Logical Theory","chapter","","","1968","","","","","","","","","","","","","","Blackwell Publishing","","","98-112","","","","","","stalnaker1968"
+);
+insert into biblio2 values("Knowing How","Jason Stanley and Timothy Williamson","","","","","","","article","","Journal of Philosophy","2001","","","","","","","","","","","","","","","","8","411-444","","98","","","","stanley2001"
+);
+insert into biblio2 values("Conditionals, meaning, and mood","William B. Starr","","Philosophy","","Rutgers University","","","book","","","2010","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/eeozbemt8rihbeu67pwnvtnvw3igb1ij","starr2010"
+);
+insert into biblio2 values("What If?","William Starr","","","","","","","article","","Philosopher's Imprint","2014","","","","","","","","","https://app.box.com/s/w8b4n3cknragrw0hdceh0uwgr9k5vnw2","http://bit.ly/starr2014","","","","","","","","","","","","","starr2014"
+);
+insert into biblio2 values("Dynamic expressivism about deontic modality","William Starr","","","","","New York","Deontic Modality","chapter","","","forthcoming","","","","","N. Charlow and M. Chrisman","","","","","","","","","Oxford University Press","","","","","","","","","starr2014a"
+);
+insert into biblio2 values("Judge Dependence, Epistemic Modals, and Predicates of Personal Taste","Tamina Stephenson","","","","","","","article","","Linguistics and Philosophy","2007","","","","","","","","","","","","","","Springer","","4","487-525","","30","","","","stephenson2007"
+);
+insert into biblio2 values("Changing the Context. Dynamic Semantics and Discourse","Martin Stokhof","","","","","","","unpublished","This paper is an informal introduction to some aspects of dynamic semantics. It is a compilation of earlier reports on joint work with Frank Veltman. The opening section can also be found in Groenendijk et al. 1996a. Section 3 is drawn from Groenendijk et al. 1995a. Some of the discussion in section 4 derives from Groenendijk et al. 1996c.","","n/a","","","","","","","","","","","","","","","","","","","","","","","stokhof"
+);
+insert into biblio2 values("Reference to possible worlds","Matthew Stone","","","","","","","article","","Technical Report 49, Rutgers University Center for Cognitive Science","1999","","","","","","","","language","","","","","","","","","","","","","","https://app.box.com/s/o6pk81wn5kb201sgqcju1r5ag1gvl893","stone1999"
+);
+insert into biblio2 values("Disagreement, error, and an alternative to reference magnetism","Timothy Sundell","","","","","","","article","","Australasian Journal of Philosophy","2011","","","","","","","","","","","","","","","","","1-17","","","","","https://app.box.com/s/ov8x1rpt5sxeq18hg4g5yw175jouqobd","sundell2011"
+);
+insert into biblio2 values("The distinction between semantics and pragmatics","Zoltan Gendler Szabo","","","","","","The Oxford Handbook of the Philosophy of Language","chapter","","","2005","","","","","","","","","","","","","","Oxford University Press","","","","","","","","https://app.box.com/s/7sjilmbprwny5lz1g7ls62bpjgmlwst6","szabo2005"
+);
+insert into biblio2 values("Accommodation, meaning and implicature: interdisciplinary foundations for pragmatics","Richmond Thomason","","","","","","Intentions in communication","chapter","An attempt to sort out the basic concepts and mechanisms of language use.","","1990","","","","","P. Cohen, J. Morgan, and M. Pollack","","","","","","","","","MIT Press","","","","","","","","","thomason1990"
+);
+insert into biblio2 values("Enlightened Update: A Computational Architecture for Presupposition and Other Pragmatic Phenomena","Richmond H. Thomason and Matthew Stone and David DeVault","","","","","","","unpublished","We relate the theory of presupposition accommodation to a computational framework for reasoning in conversation. We understand presuppositions as private commitments the speaker makes in using an utterance but expects the listener to recognize based on mutual information. On this understanding, the conversation can move forward not just through the positive effects of interlocutors	extquoteright utterances but also from the retrospective insight interlocutors gain about one anothers	extquoteright mental states from observing what they do. Our title, ENLIGHTENED UPDATE, highlights such cases. Our approach fleshes out two key principles: that interpretation is a form of intention recognition; and that intentions are complex informational structures, which specify commitments to conditions and to outcomes as well as to actions. We present a formalization and implementation of these principles for a simple conversational agent, and draw on this case study to argue that pragmatic reasoning is holistic in character, continuous with common-sense reasoning about collaborative activities, and most effectively characterized by associating specific, reliable interpretive constraints directly with grammatical forms. In showing how to make such claims precise and to develop theories that respect them, we illustrate the general place of computation in the cognitive science of language.","","n/a","","","","","","","","","","","","","","","","","","","","","","https://app.box.com/s/1ij581mylhax7m5but72l06dttvkr6xf","thomason"
+);
+insert into biblio2 values("The False Hopes of Traditional Epistemology","Bas C. van Fraassen","","","","Princeton University","","","article","After Hume, attempts to forge an empiricist epistemology have taken three forms, which I shall call the First, Middle, and Third Way. The First still attempts an a priori demonstration that our cognitive methods satisfy some (weak) criterion of adequacy. The Middle Way is pursued under the banners of naturalism and scientific realism, and aims at the same conclusion on non-apriori grounds. After arguing that both fail, I shall describe the general characteristics of the Third Way, an alternative epistemology suitable for empiricism.","Philosophy and Phenomenological Research","2000","","","","","","","","","","","","","","","","2","253-280","","LX","","","","vanfraassen2000"
+);
+insert into biblio2 values("Coreference and Contextually Restricted Quantification","Jeroen Groenendijk and Martin Stokhof and Frank Veltman","","ILLC/Department of Philosophy","","University of Amsterdam","","Ellipsis, Underspecification, Events and More in Dynamic Semantics. Dyana Deliverable 2.2.C","article","The aim of this paper is to argue that update semantics is a natural framework for contextually restricted quanti { } cation, and to illustrate its use in the analysis of anaphoric de { } nite descriptions and certain other anaphoric terms","","1995","","","","","","","","","","","","","","","","","112-29","","","","","","veltmg"
+);
+insert into biblio2 values("Defaults in Update Semantics","Frank Veltman","","","","","","","article","The aim of this paper is twofold: i to introduce the framework of update semantics and to explain what kind of semantic phenomena may successfully be analysed in it: ii to give a detailed analysis of one such phenomenon: default reasoning.","Journal of Philosophical Logic","1996","","","","","","","","","","","","","","","","3","221-61","","25","","","https://app.box.com/s/bv4966xcvl23hm6niswip2das9g99ilr","veltman1996"
+);
+insert into biblio2 values("Focus and givenness: a unified approach","Michael Wagner","","","","","","","unpublished","","","2014","","","","","","","","","","","","","","","","","","","","","","","wagner-ms1"
+);
+insert into biblio2 values("Contrastive topic decomposed","Michael Wagner","","","","","","","unpublished","","","2014","","","","","","","","","","","","","","","","","","","","","","","wagner-ms2"
+);
+insert into biblio2 values("Meanings as proposals: a new semantic foundation for Gricean pragmatics","Matthijs Westera","","Institute for Logic, Language, and Computation","","University of Amsterdam","","","article","","SemDial","2012","","","","","","","","","","","","","","","","","","","","","","http://bit.ly/1QjHzBr","westera2012"
+);
+insert into biblio2 values("Knowledge and its limits","Timothy Williamson","","","","","","","book","","","2000","","","","","","","","","","","","","","Oxford University Press","","","","","","","","","williamson2000"
+);
+insert into biblio2 values("Mental Causation","Stephen Yablo","","","","","","","article","","Philosophical Review","1992","","","","","","","","","","","","","","Duke University Press","","2","245-280","","101","","","","yablo1992"
+);
+insert into biblio2 values("Evidence for the existence of nonconstituent focus","Suichi Yatabe","","","","","","","unpublished","","","2006","","","","","","","","","","","","","","","","","105-110","","","","","","yatabe2006"
+);
+insert into biblio2 values("The Search for the Source of Epistemic Good","Linda Zagzebski","","","","","","","article","","Metaphilosophy","2003","","","","","","","","","","","","","","Wiley-Blackwell","","1-2","12-28","","34","","","","zagzebski2003"
+);

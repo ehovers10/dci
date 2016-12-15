@@ -1,0 +1,21 @@
+---
+layout: article
+---
+
+<div class="chapter-front">
+<div style="font-size:1.5em;margin-bottom: 0.5em;">{{ page.chapter }} parts</div>
+<ul class="nav2">
+{% for part in site.parts %}
+  {% if part.chapter == page.chapter %}
+  <li><a href="{{part.url}}">{{ part.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+<div style="font-size:1.5em;margin-bottom: 0.5em;">{{ page.title }}</div>
+</div>
+
+<div class="chapter-content">
+  {{ content }}
+</div>
+
+{% include elements/chapterend.html %}

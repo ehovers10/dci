@@ -6,11 +6,11 @@ layout: article
 
 <div class="chapter-front">
   {% if chapter.abstract %}
-    <h3>Abstract</h3>
+    <div class="subtitle">Abstract</div>
     <div class="abstract body fence">{{ chapter.abstract | markdownify }}</div>
   {% endif %}
 
-  <h3>Table of contents</h3>
+  <div class="subtitle">Table of contents</div>
   <script type="text/javascript">
   $(document).ready(function() {
       $('.toc-table').toc();

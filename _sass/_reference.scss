@@ -37,7 +37,8 @@ ul.bib {
     margin-bottom: 0;
   }
   .title {
-    font-weight: bold;
+    font-size: $ex-fs;
+    font-weight: 400;
     &.book {
       text-decoration: underline;
     }
@@ -152,16 +153,17 @@ a.note:hover {
 .def {
   margin: 0 1em;
   .title {
+    font-size: $ex-fs;
+    font-family: $serif-font;
+    font-weight: 600;
     .head {
       margin-right:0.5em;
-      font-size: $ex-fs;
-      font-family: $header-ff;
     }
   }
   .molecule {
     border: none;
     .atom {
-      background: #fff;
+      //background: #fff;
     }
   }
 

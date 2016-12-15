@@ -1,0 +1,43 @@
+body {counter-reset:section;}
+
+h2 {
+  counter-reset:subsection;
+  //font-size: 2em;
+  //margin-top: 2em;
+
+  &:before {
+    counter-increment:section;
+    content: counter(section) " ";
+    //font-weight:bold;
+  }
+}
+h3 {
+  counter-reset: subsubsection;
+  //margin-top: 1.5em;
+  &:before {
+    counter-increment:subsection;
+    content:counter(section) "." counter(subsection) " ";
+  }
+}
+h4 {
+  &:before {
+    counter-increment:subsubsection;
+    content:counter(section) "." counter(subsection) "." counter(subsubsection) " ";
+  }
+}
+
+.back-to-top {
+  float: right;
+  color: $brand-color;
+  svg {
+    width: 12px;
+    path {
+      fill: $brand-color;
+    }
+  }
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}

@@ -1,8 +1,14 @@
 english: "&#x231c;As&#x231d; are &#x231c;B&#x231d;"
 universal quantifier:
-  translation: "&forall;(A)(B)"
+  translation:
+    fxn: eqn
+    arg:
+      lhs: "&#x231c;As&#x231d; are &#x231c;B&#x231d;"
+      conn: "&rArr;"
+      rhs: "&forall;(A)(B)"
   definition:
-    - "A,B: <span class='type'>et</span>"
+    -
+      - "A,B: <span class='type'>et</span>"
     - fxn: eqn
       arg:
         lhs: "&forall;(A)(B)"
@@ -19,8 +25,13 @@ universal quantifier:
               conn: otherwise
               rhs: "&nbsp;"
 generic quantifier:
-  translation: "GEN(A)(B)"
-  definiton:
+  translation:
+    fxn: eqn
+    arg:
+      lhs: "&#x231c;As&#x231d; are &#x231c;B&#x231d;"
+      conn: "&rArr;"
+      rhs: "GEN(A)(B)"
+  definition:
     -
       - "A,B: et"
       - "&delta;(i): et &rarr; et a selection function determined by context i"
@@ -46,7 +57,12 @@ generic quantifier:
               conn: otherwise
               rhs: "&nbsp;"
 structural quantifier:
-  translation: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
+  translation:
+    fxn: eqn
+    arg:
+      lhs: "&#x231c;As&#x231d; are &#x231c;B&#x231d;"
+      conn: "&rArr;"
+      rhs: "&forall;<sub><span class='set'>R</span></sub>(A)(B)"
   definition:
     -
       - "A: et"

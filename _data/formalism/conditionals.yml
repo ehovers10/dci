@@ -1,8 +1,14 @@
 english: "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
 strict conditional:
-  translation: "A &#x297d; B"
+  translation:
+    fxn: eqn
+    arg:
+      lhs: "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
+      conn: "&rArr;"
+      rhs: "A &#x297d; B"
   definition:
-    - "A,B: st"
+    -
+      - "A,B: st"
     - fxn: eqn
       arg:
         lhs: "A &#x297d; B"
@@ -22,9 +28,14 @@ variably strict conditional:
   translation:
     fxn: eqn
     arg:
-      lhs: A
-      conn: "<span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span>"
-      rhs: B
+      lhs: "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
+      conn: "&rArr;"
+      rhs:
+        fxn: eqn
+        arg:
+          lhs: A
+          conn: "<span style='letter-spacing:-4px;'>&#x25a1;&rarr;</span>"
+          rhs: B
   definition:
     -
       - "A,B: <span class='type'>st</span>"
@@ -44,27 +55,32 @@ variably strict conditional:
             rhs: B
         conn: =
         rhs:
-          fxn: eqn
-          arg:
-            lhs: "1"
-            conn: if
-            rhs: "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
-          fxn: eqn
-          arg:
-            lhs: "0"
-            conn: otherwise
-            rhs: "&nbsp;"
+          - fxn: eqn
+            arg:
+              lhs: "1"
+              conn: if
+              rhs: "&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup>"
+          - fxn: eqn
+            arg:
+              lhs: "0"
+              conn: otherwise
+              rhs: "&nbsp;"
 shifty strict conditional:
   translation:
     fxn: eqn
     arg:
-      lhs: A
-      conn: "&#x297d;<sub>s</sub>"
-      rhs: B
+      lhs: "If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;"
+      conn: "&rArr;"
+      rhs:
+        fxn: eqn
+        arg:
+          lhs: A
+          conn: "&#x297d;<sub>s</sub>"
+          rhs: B
   definition:
     -
-      - "i<sub>s</sub>: <span class='type'>st</span>"
       - "A,B: <span class='type'>st</span>"
+      - "i<sub>s</sub>: <span class='type'>st</span> the context set of information state i"
       - "&delta;(i): <span class='type'>st</span> &rarr; <span class='type'>st</span> a selection function determined by context <span class='var'>i</span>"
     - fxn: eqn
       arg:
@@ -75,7 +91,7 @@ shifty strict conditional:
       arg:
         lhs: "i<sub>s</sub><sup>+</sup>(A)"
         conn: =
-        rhs: "i<sub>s</sub><sup>+</sup>(A) &cap; &delta;(i)(A)"
+        rhs: "i<sub>s</sub> &cup; &delta;(i)(A)"
     - fxn: eqn
       arg:
         lhs:

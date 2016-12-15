@@ -13,14 +13,13 @@
   <link rel="icon" href="{{ '/images/infinity.png' | prepend: site.baseurl }}">
 
   {% if site.mode == "prod" %}
-    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
     {% assign url = site.baseurl %}
   {% else %}
-    <script src="{{ '/js/jquery-1.11.3.min.js' | prepend: site.baseurl }}"></script>
     {% assign url = site.baseurl %}
   {% endif %}
 
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
   <!-- Data-tables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
@@ -34,7 +33,7 @@
     <script src="{{ item | append: '.js' | prepend: '/js/' | prepend: url }}"></script>
   {% endfor %}
   {% if page.toc %}
-    <script src="{{ 'toc.js' | prepend: '/js/' | prepend: url }}"></script>
+    <script src="{{ 'toc2.js' | prepend: '/js/' | prepend: url }}"></script>
   {% endif %}
   <script src="{{ 'bibjs.js' | prepend: '/js/' | prepend: url }}"></script>
   <script src="{{ 'footnav.js' | prepend: '/js/' | prepend: url }}"></script>

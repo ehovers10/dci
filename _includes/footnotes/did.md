@@ -1,3 +1,6 @@
+[^focus]:
+    Here and in what follows, bracketed material represents {% gloss focus %}. *Grizzly* in the **B** sentence of *Bears* is marked with a *cf* for {% gloss contrastive focus %}, in view of the apparent function of the focus in setting grizzlies apart from other members of the bear class.
+    
 [^mereology]:
     A philosophical celebrity within the family of relative generality relations is that of *part* to *whole*. That such a relation is a basic logical connection between ideas is emphasized by Goodman and Leonard in their classic explication of the calculus of individuals:
 

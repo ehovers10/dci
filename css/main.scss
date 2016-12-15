@@ -8,10 +8,10 @@
 // Our variables
 $sansserif-font:   Arial, Helvetica, sans-serif;
 $serif-font:       Georgia, sans-serif;
-$header-ff:        glam;
+$header-ff:        Georgia, sans-serif;
 $base-font-size:   18px;
-$header-fs:        40px;
-$ex-fs:            $header-fs * 0.75;
+$header-fs:        30px;
+$ex-fs:            18px;
 $small-font-size:  $base-font-size * 0.75;
 $base-line-height: 1.5;
 
@@ -68,5 +68,6 @@ $mobile:           700px;
         "relations",
         "reference",
         "typology",
-        "print"
+        "print",
+        "counters"
 ;

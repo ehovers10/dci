@@ -1,0 +1,26 @@
+---
+title: Dissbib data
+permalink: dissbib/
+---
+
+<div id="keys"></div>
+
+<script>
+$(document).ready( function() {
+  $.ajax({
+    url: '/sql/dissbib.json',
+    dataType: 'json',
+    async: false,
+    success: function(data) {
+      var items = [];
+      $.each( data, function( key, val ) {
+        val["id"] = key;
+        items.push(JSON.stringify(val));
+      });
+      var keylist = "[<br>" + items.join(", ") + "<br>]";
+      $("#keys").append(keylist);
+
+    }
+  });
+});
+</script>

@@ -1,0 +1,47 @@
+---
+title: Gillies on universality and conditionals
+chapter: Dispute in discourse
+---
+
+Definition 4.3 (order). R is orderly iff:
+     i. R(Di ∩ P , P )
+    ii. R(Di ∩ P , Q) and Q ⊆ S imply R(Di ∩ P , S)
+   iii. R(Di ∩ P , Q) and R(Di ∩ P , S) imply R(Di ∩ P , Q ∩ S)
+R is something (if ·)(·) at i could mean only if it is orderly.
+
+Definition 4.5 (quality). R is qualitative iff:
+       R(Di ∩ P , Q) implies R(π (Di ∩ P ), π (Q))
+R is something (if ·)(·) at i could mean only if it is qualitative.
+
+Observation 4.1. Assume R is a conditional relation properly so called. Then
+R(Di ∩ P , Q) iff Di ∩ P ⊆ Q.
+Proof. I care about the left-to-right direction.
+    Suppose — for reductio — that R(Di ∩ P , Q) but Di ∩ P ⊆ Q. What we’ll
+see is: (i) R(Di ∩ P , P ∩ Q); (ii) the world that witnesses that Di ∩ P ⊆ Q can
+be exploited (by quality) to show that no world in P ∩ Q plays a role in
+R(Di ∩ P , P ∩ Q) holding — from which it follows that R(Di ∩ P , ); (iii) from
+which it follows that Di ∩ P must be empty — a contradiction.
+    (i): By hypothesis R(Di ∩ P , Q). By order it follows that R(Di ∩ P , P ) and
+hence that R(Di ∩ P , P ∩ Q).
+    (iia): Claim: Di ∩ P ∩ Q = . Proof of Claim: Assume otherwise. order
+guarantees that R(Di ∩ P , Di ∩ P ). By hypothesis R(Di ∩ P , Q), and so by
+order R(Di ∩ P , Di ∩ P ∩ Q). Applying the assumption that Di ∩ P ∩ Q = :
+R(Di ∩ P , ). Appeal to order again and we have that R(Di ∩ P , S) for any
+S. But then Di ∩ P must be empty (activity), contradicting the assumption
+that Di ∩ P Q and proving the Claim.
+    (iib): Let j be a witness to Di ∩ P ⊆ Q. So j ∈ Di ∩ P but j ∈ Q. Now pick
+any confirming instance k — that is, any k ∈ Di ∩ P ∩ Q — and let π be the
+mapping that swaps k and j and leaves all else untouched:
+      • π (j) = k
+      • π (k) = j
+      • π (i) = i for every i ∈ j, k
+By (i) R(Di ∩ P , P ∩ Q). Hence, by quality, R(π (Di ∩ P ), π (P ∩ Q)). But π
+doesn’t affect Di ∩ P . So: R(Di ∩ P , π (P ∩ Q)). That is: R holds between
+Di ∩ P and both P ∩ Q and π (P ∩ Q). Hence — by order — it holds also
+between Di ∩ P and their intersection: R(Di ∩ P , (P ∩ Q) ∩ π (P ∩ Q)). But
+π (P ∩ Q) = ((P ∩ Q) \ {k}) ∪ j , so their intersection is (P ∩ Q) \ {k}. So:
+R(Di ∩P , (P ∩Q)\{k}). Which is to say that k is irrelevant for R’s holding. But
+k was any world in Di ∩ P ∩ Q, so finiteness plus order implies R(Di ∩ P , ).
+    (iii): Appeal to order again: since R(Di ∩ P , ), it holds that for any S
+whatever R(Di ∩ P , S). Whence, by activity, it follows that Di ∩ P = . And
+that contradicts the assumption that Di ∩ P ⊆ Q.

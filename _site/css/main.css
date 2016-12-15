@@ -62,27 +62,31 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: glam;
-  font-weight: 400;
+  font-family: Georgia, sans-serif;
+  font-weight: 600;
   line-height: 1.1em; }
 
-h1 {
-  font-size: 40px; }
+.page-front .title, .page-front .subtitle {
+  font-family: Georgia, sans-serif;
+  font-weight: 600; }
+
+h1, .title {
+  font-size: 30px; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 27px; }
   @media screen and (max-width: 800px) {
     h2 {
       font-size: 28px; } }
 
-h3 {
-  font-size: 32px; }
+h3, .subtitle {
+  font-size: 24px; }
   @media screen and (max-width: 800px) {
-    h3 {
+    h3, .subtitle {
       font-size: 22px; } }
 
 h4 {
-  font-size: 28px; }
+  font-size: 21px; }
   @media screen and (max-width: 800px) {
     h4 {
       font-size: 18px; } }
@@ -491,11 +495,9 @@ ul.seqlist {
 /* Atoms */
 div.atom {
   max-width: 100%;
-  background: #ccc;
   overflow-x: auto;
   text-align: left; }
   div.atom .title {
-    background: #fff;
     margin: 0; }
   div.atom .molecule {
     margin-bottom: 0;
@@ -696,7 +698,8 @@ ul.bib {
   ul.bib a {
     margin-bottom: 0; }
   ul.bib .title {
-    font-weight: bold; }
+    font-size: 18px;
+    font-weight: 400; }
     ul.bib .title.book {
       text-decoration: underline; }
   ul.bib .journal {
@@ -778,14 +781,14 @@ a.note:hover {
 /* Definition blocks */
 .def {
   margin: 0 1em; }
-  .def .title .head {
-    margin-right: 0.5em;
-    font-size: 30px;
-    font-family: glam; }
+  .def .title {
+    font-size: 18px;
+    font-family: Georgia, sans-serif;
+    font-weight: 600; }
+    .def .title .head {
+      margin-right: 0.5em; }
   .def .molecule {
     border: none; }
-    .def .molecule .atom {
-      background: #fff; }
   @media screen and (max-width: 700px) {
     .def {
       margin: 0;
@@ -939,3 +942,33 @@ table.dataTable.dtr-column > tbody > tr.parent > th.expand {
     display: block;
     content: " ";
     clear: both; } }
+body {
+  counter-reset: section; }
+
+h2 {
+  counter-reset: subsection; }
+  h2:before {
+    counter-increment: section;
+    content: counter(section) " "; }
+
+h3 {
+  counter-reset: subsubsection; }
+  h3:before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " "; }
+
+h4:before {
+  counter-increment: subsubsection;
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) " "; }
+
+.back-to-top {
+  float: right;
+  color: #2a7ae2; }
+  .back-to-top svg {
+    width: 12px; }
+    .back-to-top svg path {
+      fill: #2a7ae2; }
+  .back-to-top:after {
+    content: " ";
+    display: block;
+    clear: both; }

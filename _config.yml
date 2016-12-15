@@ -52,13 +52,26 @@ defaults:
       type: "appendices"
     values:
       layout: "article"
+  - scope:
+      path: ""
+      type: "parts"
+    values:
+      layout: "part"
+      count:
+        def: 1
+        ex: 1
+        obs: 1
+        table: 1
+      references: ""
 
 collections:
-  snippets:
+  parts:
     output: true
+  snippets:
+    output: false
   chapters:
     output: true
   appendices:
     output: true
 
-exclude: [deprecated,sections,mustache]
+exclude: [deprecated,sections,mustache,epub]

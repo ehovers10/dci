@@ -9,8 +9,7 @@ module Jekyll
         piece = ""
         triggerpre = "Appendix: "
         sourcefolder.docs.each { |snip|
-          #raise "Snip: #{snip}"
-          if snip.url.include? id
+          if snip.title.include? title
             piece = snip.output
           end }
       else
@@ -35,7 +34,7 @@ module Jekyll
       %{<div class="popmain">#{input}</div>}
     end
 
-    def appendix(input)
+    def appendix(input,goop = false)
       if goop
         sourcefolder = @context.registers[:site].collections[goop]
         id = input.strip.downcase.gsub /\W+/, '-'

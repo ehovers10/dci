@@ -2,6 +2,12 @@ bears:
   sent:
     - "Bears are dangerous."
 
+generics:
+  sent:
+    - A: Bears are in the field.
+    - B: Bears are mammals.
+    - C: Bears are widespread.
+
 grizzly:
   sent:
     - A: "Bears are dangerous."
@@ -26,7 +32,7 @@ boars:
 honey:
   sent:
     - A: "If Pooh had eaten less honey, he would have fit through the hole."
-    - A': "But if Pooh had eaten less honey and worn his puffy jacket, he would have
+    - B: "But if Pooh had eaten less honey and worn his puffy jacket, he would have
           gotten stuck."
 
 hibernate:
