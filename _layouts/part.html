@@ -1,21 +1,38 @@
 ---
-layout: article
 ---
 
-<div class="chapter-front">
-<div style="font-size:1.5em;margin-bottom: 0.5em;">{{ page.chapter }} parts</div>
-<ul class="nav2">
-{% for part in site.parts %}
-  {% if part.chapter == page.chapter %}
-  <li><a href="{{part.url}}">{{ part.title }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-<div style="font-size:1.5em;margin-bottom: 0.5em;">{{ page.title }}</div>
+<!DOCTYPE html>
+<html>
+
+{% include elements/head1.html %}
+
+<body>
+
+<div class="wrapper">
+
+<div class="page-front">
+
+  <ul class="nav head">
+    <li><a href="{{ "/" | prepend: site.baseurl }}"><b>Home</b></a></li>
+  {% for part in site.parts %}
+    {% if part.chapter == page.chapter %}
+    <li><a href="{{part.url}}">{{ part.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+
+  <div class="title">{{ page.title }}</div>
+  <div class="subtitle">{{ page.chapter }}</div>
+  <div class="divider"></div>
+
 </div>
 
-<div class="chapter-content">
-  {{ content }}
+<div class="page-content">
+  <div class="chapter-content">
+    {{ content }}
+  </div>
 </div>
 
-{% include elements/chapterend.html %}
+<div class="page.end">
+  {% include elements/chapterend.html %}
+</div>

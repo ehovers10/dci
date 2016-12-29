@@ -13,6 +13,8 @@ copy: true
 excerpt_separator: ""
 bibliography: ''
 
+gems: []
+
 # Build settings
 mode: dev
 markdown: kramdown
@@ -31,6 +33,7 @@ bibliography:
   style:
     reference: Eref1
     citation: CiteEH
+    refname: Eref2
 
 notes:
   folder: notes
@@ -67,6 +70,7 @@ defaults:
 collections:
   parts:
     output: true
+    permalink: /parts/:path
   snippets:
     output: false
   chapters:

@@ -9,7 +9,7 @@ module Jekyll
         piece = ""
         triggerpre = "Appendix: "
         sourcefolder.docs.each { |snip|
-          if snip.title.include? title
+          if snip.data['title'].include? title
             piece = snip.output
           end }
       else

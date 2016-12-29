@@ -62,6 +62,7 @@ I assume that plurals carry a *homogeneity presupposition*, characterized as fol
 That interpretation of plural *definite* noun phrases is subject to a homogeneity constraint is discussed by Sebastian Lo&#x0308;bner, who notes that:
 
 > "The referent of a definite NP cannot be split in case the predicate holds only for some part of it, but not for the whole. Without any differentiating modification of the predication, the alternative is just that of global truth or global falsity. If it is impossible to apply the predicate or its negation globally it fails to yield a truth-value." {% cite lobner1987 | pages: 185 %}
+
 This is why, in reference to a mixed-gender group of young bears engaged in a wrestling match, (a) in the following seems true while (b) seems neither true nor false:
 
 <!-- Playing bears -->
@@ -69,7 +70,7 @@ This is why, in reference to a mixed-gender group of young bears engaged in a wr
   {{ "playing" | example: "sent" }}
 {% endex %}
 
-That a homogeneity constraint extends to the case of *bare* plurals, has been suggested by Kai von Fintel (who takes them to be bound by an implicit GEN operator):[^schwarzs]
+That a homogeneity constraint extends to the case of *bare* plurals, has been suggested by Kai von Fintel:[^schwarzs]
 
 > "A speaker who chooses a sentence involving GEN rather than one of the overt quantifiers signals that it is presupposed that the cases in the domain of quantification are uniform with respect to the property attributed by the scope of the quantifier." {% cite vonfintel1997 | pages: 34 %}
 
@@ -98,7 +99,7 @@ The utterance is just like any other in that it initiates a sandbox and presents
 
 If the line of inquiry proposed by the initiation is not accepted, then the conversation derails, and the sandbox is tossed out. But assuming the proposal is picked up by the initiator's interlocutors, there are two avenues for continuing the dialogue:
 
-The presupposition is accommodated, in which case the completion accepts the proposed restriction of the common ground. The worlds that do not represent the set of individuals satisfying the subject as included in the positive partition cell determined by the predicatecloses the sandbox and merges the result into the information state.
+The presupposition is accommodated, in which case the completion accepts the proposed restriction of the common ground. The worlds that do not represent the set of individuals satisfying the subject as included in the positive partition cell determined by the predicate are tossed out. The implicit acceptance of accommodation closes the sandbox and merges the result into the information state.
 
 The presupposition is rejected (while the line of inquiry is still accepted). At this point, an interlocutor has an opportunity to correct the utterance by offering an alternative saturation of the propositional radical.
 
