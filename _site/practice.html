@@ -81,6 +81,8 @@
   
   <li><a href="/glossary">Glossary</a></li>
   
+  <li><a href="/models-discourse/">Models of discourse</a></li>
+  
   <li><a href="/predication-in-CU">Predication in <strong>CU</strong></a></li>
   
   <li><a href="/typologies">Typologies</a></li>
@@ -136,6 +138,8 @@
   <li><a href="/formalism">Formalism</a></li>
   
   <li><a href="/glossary">Glossary</a></li>
+  
+  <li><a href="/models-discourse/">Models of discourse</a></li>
   
   <li><a href="/predication-in-CU">Predication in <strong>CU</strong></a></li>
   
@@ -455,7 +459,7 @@
 <p>In his discussion of negation in its denial making use, Bart Geurts (<a id="geurts1998a" class="ref tooled" href="#ref-geurts1998a"><span class="date"><span class="year">1998</span></span></a>) maintains that denial is neither <em>unitary</em> nor <em>swamping</em>. It is not unitary beacause there are a wide variety of ways in which negation can encode denial, and there is little reason to believe that a single mechanism subsumes tham all. It is not swamping in that negation selectively denies bits of information conveyed by an utterance, granting other bits space in the conversational record.[^facets]</p>
 
 <!-- Movie -->
-<div class="def" id="movie-ex"><div class="title"><span class="head">Example 49&nbsp;</span><span>(Movie)</span></div><div class="body fence">
+<div class="def" id="movie-ex"><div class="title"><span class="head">Example 121&nbsp;</span><span>(Movie)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">The movie was funny.</span></div><div class="item"><span class="name">B': </span><span class="content">The movie wasn't [funny]<sub>f</sub>, it was [hilarious]<sub>f</sub>.</span></div><div class="item"><span class="name">B'': </span><span class="content">[The]<sub>f</sub> movie wasn't funny, they [all]<sub>f</sub> were.</span></div><div class="item"><span class="name">B''': </span><span class="content">The [movie]<sub>f</sub> wasn't funny, the [film]<sub>f</sub> was.</span></div></div>
 </div></div>
 <div id="movie-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Movie</b><br />
@@ -467,7 +471,7 @@
 <p>In standard DRT, extended discourse is represented by a <em>discourse representation structure</em> (DRS), which is a pair of sequences of <em>discourse referents</em> (dref) and <em>conditions</em> (cond). Conditions place constraints on the model against which sentences are evaluated for truth, and drefs serve as the referents of pronouns and other anaphoric expressions invoked in the conditions. Sentences in context contribute conditions and drefs to the DRS by adding them to the appropriate sequence.</p>
 
 <!-- DRT -->
-<div class="def" id="standard-drt-def"><div class="title"><span class="head">Definition 27&nbsp;</span><span>(Standard DRT)</span></div><div class="body fence">
+<div class="def" id="standard-drt-def"><div class="title"><span class="head">Definition 66&nbsp;</span><span>(Standard DRT)</span></div><div class="body fence">
   <div class="molecule" id="drs"><div class="title">Drs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref">&phi;<sup>d</sup></div><div class="conditions">&phi;<sup>c</sup></div><div class="post"><span class="drs right top bottom"></span></div></div></span></div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">a discourse representation structure (DRS)</div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="drefs"><div class="title">Drefs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;<sup>d</sup></div><div class="conn">is</div><div class="rhs">a sequence of drefs introduced in the discourse</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="conditions"><div class="title">Conditions</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;<sup>c</sup></div><div class="conn">is</div><div class="rhs">a sequence of conditions, imposing constraints on the <br />model against which sentences are evaluated</div><div class="post"></div></div></div></div></div></div>
   <hr />
   <div class="molecule" id="contributions"><div class="title">Contributions</div><div class="atom"><span class="categorical">For all <span>a sentence S</span>, <span>uttered in discourse D</span>, <span>represented by DRS &phi;</span>, </span></div><div class="atom"><div class="molecule" id="drefs"><div class="title">Drefs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">S<sup>d</sup></div><div class="conn">is</div><div class="rhs">the sequence of drefs contributed by S,</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="conditions"><div class="title">Conditions</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">S<sup>c</sup></div><div class="conn">is</div><div class="rhs">the sequence of conditions contributed by S.</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="sentences"><div class="title">Sentences</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">D &rArr; S</div><div class="conn">=</div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref">&phi;<sup>d</sup> &oplus; S<sup>d</sup></div><div class="conditions">&phi;<sup>c</sup> &oplus; S<sup>c</sup></div><div class="post"><span class="drs right top bottom"></span></div></div></div><div class="post"></div></div></div></div></div></div>
@@ -495,7 +499,7 @@
 <p>The upshot is that the propositional content of the evidence that initiates the downdate is not sufficient to determine the extent of the downdate; we need, also, a way of representing the source of certain propositions that are candidates for removal. The standard solution is to supplement the information state structure with an <em>entrenchment relation</em>, which serves to rank elements of the state in terms of their susceptibility to removal. This puts constraints on how and information state is revised in response to its falling into incoherence: remove the information needed to restore coherence as well as any unentrenched information relevant to the retracted information.[^entrench] Crucially, the entrenchment relation constrains appropriate retraction, but it does not fix a unique revision strategy.</p>
 
 <!-- Downdate -->
-<div class="def" id="correction-as-downdate-def"><div class="title"><span class="head">Definition 28&nbsp;</span><span>(Correction as downdate)</span></div><div class="body fence">
+<div class="def" id="correction-as-downdate-def"><div class="title"><span class="head">Definition 67&nbsp;</span><span>(Correction as downdate)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">&phi;,&psi;,&chi;: <span class="var">drs</span></span>, </div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&chi;</div><div class="conn">&#x2291;</div><div class="rhs">&phi;</div><div class="post"></div></div></div><div class="conn">iff</div><div class="rhs">&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> ) &or; ( m &isin; &phi;<sup>c</sup> &and; m &isin; &chi;<sup>c</sup> ) ]</div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&chi;</div><div class="conn">=</div><div class="rhs">max(&phi;)</div><div class="post"></div></div></div><div class="conn">iff</div><div class="rhs">&chi;  &#x2291; &phi; &and; &forall;<span class="var">c</span> &isin; &phi;<sup>c</sup> [ entrench(<span class="var">c</span>) ] &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; &psi; )</div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;</div><div class="conn">&#x229E;</div><div class="rhs">&psi;</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref">&phi;<sup>d</sup> &oplus; S<sup>d</sup></div><div class="conditions">&phi;<sup>c</sup> &oplus; S<sup>c</sup></div><div class="post"><span class="drs right top bottom"></span></div></div></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;</div><div class="conn"><span class="symbol">&darr;</span></div><div class="rhs">&psi;</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs">&psi; &oplus; max( &chi; &#x2291; &phi; | &chi; &#x229E; &phi; &ne; &empty; )</div><div class="post"></div></div></div></div>
 </div></div>
 <div id="correction-as-downdate-show-tip" class="tooltip defn">
@@ -509,7 +513,7 @@
 <p>The binding problem, originally introduced in a endnote to Karttunen and Peters’ <em>Conventional Implicature</em> (<a id="karttunen1979" class="ref tooled" href="#ref-karttunen1979"><span class="date"><span class="year">1979</span></span></a>). In the system expounded in that paper, conventional implicature is set apart as a distinct dimension of content from the standard semantic content derived from the meaning of the words in a sentence and the way they are put together. Cleaving implicature from semantic content allows us to explain a number of interesting features about how conventional implicatures work, but it also makes it more difficult to explain the ways in which elements of semantic content can interact with elements of the implicature.</p>
 
 <!-- Managed -->
-<div class="def" id="managed-ex"><div class="title"><span class="head">Example 50&nbsp;</span><span>(Managed)</span></div><div class="body fence">
+<div class="def" id="managed-ex"><div class="title"><span class="head">Example 122&nbsp;</span><span>(Managed)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Someone managed to succeed George V on the throne of England.</span></div><div class="item"><span class="name">B: </span><span class="content">If someone managed to succeed George V on the throne of England, then that country is still a monarchy.</span></div></div>
 </div></div>
 <div id="managed-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Managed</b><br />
@@ -519,7 +523,7 @@
 <p>The (a) sentence in <a href="#managed-ex" id="managed-show" class="tooled">Managed</a> seems to implicate that the person who succeeded George V on the throne had difficulty in doing so. But the most natural way of representing the implicature as derived from the utterred sentence is does not capture this.</p>
 
 <!-- Managed -->
-<div class="def" id="managed-semantics-ex"><div class="title"><span class="head">Example 51&nbsp;</span><span>(Managed semantics)</span></div><div class="body fence">
+<div class="def" id="managed-semantics-ex"><div class="title"><span class="head">Example 123&nbsp;</span><span>(Managed semantics)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A<sub>sem</sub>: </span><span class="content">&exist;x,y ( george(x) &and; succeeded(y,x) )</span></div><div class="item"><span class="name">A<sub>imp</sub>: </span><span class="content">&exist;x,y ( george(x) &and; succeeded(y,x) &and; had-difficulty(x) )</span></div></div>
 </div></div>
 <div id="managed-semantics-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Managed semantics</b><br />
@@ -533,7 +537,7 @@
 <p>At least, they avoid binding worries associated with drefs, such as Geurts and Maier’s problem with madrigals.</p>
 
 <!-- Madrigals -->
-<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 52&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
+<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 124&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="content">Some of the madrigals are nice.</span></div></div>
 </div></div>
 <div id="madrigals-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Madrigals</b><br />
@@ -545,7 +549,7 @@
 <p>However, by allowing drefs to transcend layers, we can adequately link the conditions. Here is Geurts and Maier’s analysis:[^madrigals]</p>
 
 <!-- Madrigals -->
-<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 53&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
+<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 125&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
   <div class="example"><div class="item">madrigals</div></div>
 </div></div>
 <div id="madrigals-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Madrigals</b><br />
@@ -555,7 +559,7 @@
 <p>Jennifer Spenader joins Maier (<a id="spenader2009" class="ref tooled" href="#ref-spenader2009"><span class="date"><span class="year">2009</span></span></a>) in extending this approach to account also for the corrective potential of <em>contrast</em>. According to the extension, contrast is a general means of preventing material from entering the common ground. It’s presence signifies that the information in its scope is being presented for a downdate operation.</p>
 
 <!-- Spanish -->
-<div class="def" id="spanish-ex"><div class="title"><span class="head">Example 54&nbsp;</span><span>(Spanish)</span></div><div class="body fence">
+<div class="def" id="spanish-ex"><div class="title"><span class="head">Example 126&nbsp;</span><span>(Spanish)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Juan speaks Spanish.</span></div><div class="item"><span class="name">B: </span><span class="content">Well, he is Argentinian, but he doesn't speak Spanish.</span></div></div>
 </div></div>
 <div id="spanish-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Spanish</b><br />
@@ -564,7 +568,7 @@
 <p>In the completion of <a href="#spanish-ex" id="spanish-show" class="tooled">Spanish</a>, the choice of connective (<em>but</em>) carries contrastive import; the second conjunct, in its scope, is a downdating correction of the initiation sentence. The first conjuct, preceded by the hedge term <em>well</em>, provides a concession to the initiation, indicating that the response is intended as a <em>refinement</em> rather than a swamping denial.</p>
 
 <!-- Spanish ldrt -->
-<div class="def" id="spanish-semantics-ex"><div class="title"><span class="head">Example 55&nbsp;</span><span>(Spanish semantics)</span></div><div class="body fence">
+<div class="def" id="spanish-semantics-ex"><div class="title"><span class="head">Example 127&nbsp;</span><span>(Spanish semantics)</span></div><div class="body fence">
   <div class="example"><div class="item">spanish</div></div>
 </div></div>
 <div id="spanish-semantics-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Spanish semantics</b><br />
@@ -692,7 +696,7 @@
 <p>Bare plural subjects can have different functions in different linguistic contexts. Though they have identical surface form, the subject in each of the following examples plays a very different role.</p>
 
 <!-- Bear plurals -->
-<div class="def" id="bear-plurals-ex"><div class="title"><span class="head">Example 56&nbsp;</span><span>(Bear Plurals)</span></div><div class="body fence">
+<div class="def" id="bear-plurals-ex"><div class="title"><span class="head">Example 128&nbsp;</span><span>(Bear Plurals)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are in the field.</span></div><div class="item"><span class="name">B: </span><span class="content">Bears are mammals.</span></div><div class="item"><span class="name">C: </span><span class="content">Bears are widespread.</span></div></div>
 </div></div>
 <div id="bear-plurals-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Bear Plurals</b><br />
@@ -852,7 +856,7 @@
 <p>One of the most influential accounts of focus interpretation is the <em>alternative semantics</em> developed by Mats Rooth (<a id="rooth1985" class="ref tooled" href="#ref-rooth1985"><span class="date"><span class="year">1985</span></span></a>, <a id="rooth1992" class="ref tooled" href="#ref-rooth1992"><span class="date"><span class="year">1992</span></span></a>). The idea behind alternative semantics is that focus-sensitive constructions have two semantic values: an <em>ordinary</em> semantic value and a <em>focus</em> semantic value. The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with. And the focus semantic value for an expression is a set of <em>alternatives</em> to the ordinary semantic value. That is, the focus semantic value collects together all elements from the domain of discourse that are type-identical to the focused element of a phrase. More formally:</p>
 
 <!-- Focus semantic values -->
-<div class="def" id="focus-semantic-value-def"><div class="title"><span class="head">Definition 29&nbsp;</span><span>(Focus Semantic Value)</span></div><div class="body fence">
+<div class="def" id="focus-semantic-value-def"><div class="title"><span class="head">Definition 68&nbsp;</span><span>(Focus Semantic Value)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span><span class="set">D</span> a domain of discourse</span>, <span><span class="var">t</span> a type</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;<sub>t</sub></div><div class="post">&#x27e7;</div></div><div class="after"><sup>f</sup></div></div><div class="conn">=</div><div class="rhs"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><div class="fxn eqn"><div class="pre"></div><div class="lhs">d</div><div class="conn">&isin;</div><div class="rhs"><span class="set">D</span><sub>t</sub></div><div class="post"></div></div></div><div class="post">}</div></div></div><div class="post"></div></div></div></div>
 </div></div>
 <div id="focus-semantic-value-show-tip" class="tooltip defn">
@@ -868,7 +872,7 @@
 <p>A feather in the cap of alternative semantics is the explanation it gives for the phenomenon of question/answer congruence. QA-congruence is exhibited in the following example:</p>
 
 <!-- Cookie -->
-<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 57&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
+<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 129&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Who ate the last cookie?</span></div><div class="item"><span class="name">B: </span><span class="content">[Caitlin]<sub>f</sub> ate the last cookie.</span></div><div class="item"><span class="name">B': </span><span class="content"># Caitlin ate the last [cookie]<sub>f</sub>.</span></div></div>
 </div></div>
 <div id="cookie-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Cookie</b><br />
@@ -880,7 +884,7 @@
 <p>The alternative semantics for focus provides us with the framework needed to explain the presence of this pragmatic rule. Questions are generally understood to have as their semantic value the set of propositions that constitute answers to the question (<a id="hamblin1958" class="ref tooled" href="#ref-hamblin1958"><span class="author">Hamblin </span><span class="date"><span class="year">1958</span></span></a>, <a id="groenendijk1984" class="ref tooled" href="#ref-groenendijk1984"><span class="author">Groenendijk and Stokhof </span><span class="date"><span class="year">1984</span></span></a>). So, a (suitably contextually constrained) semantic value for the question in <a href="#cookie" id="cookie-show" class="tooled">Cookie</a> might be as in <strong>A</strong> below, which is identical to the focus semantic value of the first response but differs from that of the second:</p>
 
 <!-- Cookie sem -->
-<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 58&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
+<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 130&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }</span></div><div class="item"><span class="name">B: </span><span class="content">{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }</span></div><div class="item"><span class="name">B': </span><span class="content">{ <em>Caitlin ate the last apple</em>, <em>Caitlin ate the last beet</em>, <em>Caitlin ate the last cookie</em>, ... }</span></div></div>
 </div></div>
 <div id="cookie-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Cookie</b><br />
@@ -890,7 +894,7 @@
 <p>Thus, we supplement the dual-semantic values framework of alternative semantics with a pragmatic rule to the effect that a felicitous response to a question must have a focus semantic value that matches the ordinary semantic value of the question.[^roothgen] Formally:</p>
 
 <!-- QA-congruence -->
-<div class="def" id="question-answer-congruence-def"><div class="title"><span class="head">Definition 30&nbsp;</span><span>(Question-Answer Congruence)</span></div><div class="body fence">
+<div class="def" id="question-answer-congruence-def"><div class="title"><span class="head">Definition 69&nbsp;</span><span>(Question-Answer Congruence)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">&#x27e8; &psi;, &alpha; &#x27e9; a question/answer pair</span>, </div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&psi;</div><div class="post">&#x27e7;</div></div><div class="after"><sup>o</sup></div></div><div class="conn">&sube;</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&alpha;</div><div class="post">&#x27e7;</div></div><div class="after"><sup>f</sup></div></div><div class="post"></div></div></div></div>
 </div></div>
 <div id="question-answer-congruence-show-tip" class="tooltip defn">
@@ -906,7 +910,7 @@
 <p>Accommodation is a powerful tool, but it cannot be comissioned to fix every gap in a theory of pragmatics, and the QUD model seems to have an issue right out of the gate. There are perfectly felicitous responses to questions that do not eliminate cells from the question’s partition space.</p>
 
 <!-- Picnic -->
-<div class="def" id="picnic-ex"><div class="title"><span class="head">Example 59&nbsp;</span><span>(Picnic)</span></div><div class="body fence">
+<div class="def" id="picnic-ex"><div class="title"><span class="head">Example 131&nbsp;</span><span>(Picnic)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">What did people bring to the picinic?</span></div><div class="item"><span class="name">B: </span><span class="content">The [children]<sub>cf</sub> brought [unbridled enthusiasm]<sub>f</sub></span></div></div>
 </div></div>
 <div id="picnic-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Picnic</b><br />
@@ -916,7 +920,7 @@
 <p>The response in <a href="#picnic" id="picnic-show" class="tooled">Picnic</a> involves two focused elements. For both elements, it is easy enough to generate the requisite alternative sets.</p>
 
 <!-- Picnic sem -->
-<div class="def" id="picnic-semantic-values-ex"><div class="title"><span class="head">Example 60&nbsp;</span><span>(Picnic semantic values)</span></div><div class="body fence">
+<div class="def" id="picnic-semantic-values-ex"><div class="title"><span class="head">Example 132&nbsp;</span><span>(Picnic semantic values)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">B<sub>cf</sub>: </span><span class="content">{ <em>Everyone brought unbridled enthusiasm</em>, <em>The Robbins family brought unbridled enthusiasm</em>, <em>The children brought unbridled enthusiasm</em>, ... }</span></div><div class="item"><span class="name">B<sub>f</sub>: </span><span class="content">{ <em>People brought potato salad</em>, <em>People brought frisbees</em>, <em>People brought unbridled enthusiasm</em>, ... }</span></div></div>
 </div></div>
 <div id="picnic-semantic-values-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Picnic semantic values</b><br />
@@ -930,7 +934,7 @@
 <p>Daniel Büring (<a id="buering2003" class="ref tooled" href="#ref-buering2003"><span class="date"><span class="year">2003</span></span></a>) develops a technique to locate the requisite antecedent.  Building on the <em>QUD</em> model, Büring posits the existence of a <em>discourse tree</em>, which generates additional structure in the inquiry. Each question governing the inqury is a node in the tree and is associated with an array of subquestions, complete answers to which constitute partial answers to the parent question.  The idea is that the subquestions provide a <em>plan of inquiry</em> for addressing the parent question. The objective of the inquiry is to answer the top-most question in the tree. The plan for doing so is to answer each of the subquestions in turn.[^stratq] Thus, the implicit structure of the <a href="#picnic" id="picnic-show" class="tooled">Picnic</a> can be made explicit as:</p>
 
 <!-- Picnic structure -->
-<div class="def" id="picnic-structure-ex"><div class="title"><span class="head">Example 61&nbsp;</span><span>(Picnic structure)</span></div><div class="body fence">
+<div class="def" id="picnic-structure-ex"><div class="title"><span class="head">Example 133&nbsp;</span><span>(Picnic structure)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">What did the Robbins family bring?</span></div><div class="item"><span class="name">B: </span><span class="content">What did the children bring?</span></div><div class="item"><span class="name">C: </span><span class="content">What did the francophiles bring?</span></div><div class="item"><span class="name">D: </span><span class="content">The [Robertson's dogs]<sub>cf</sub> brought [their favorite chew toys]<sub>f </sub>.</span></div></div>
 </div></div>
 <div id="picnic-structure-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Picnic structure</b><br />
@@ -1196,7 +1200,7 @@
 <p>Recognition of a genuine contribution type requires that there be some conventionalized linguistic tool that realizes it. The central thesis of this chapter is that the distinctive function of the conjecture/correction contribution system is realized by the information structuring mechanism of <a id="contrastive-topic" href="/glossary#contrastive-topic" class="tooled gloss">contrast</a><span id="contrastive-topic-tip" class="tooltip glossary"><b>contrastive topic</b>: An information structural element located within the topic of a sentence that sets its scope in contrast to a (commonly contextually determined) set of alternatives.</span>. My strategy is to use the following little dialogue, which I label <em>Bears</em>, as a stalking horse.</p>
 
 <!-- Grizzly bears -->
-<div class="def" id="bears-ex"><div class="title"><span class="head">Example 62&nbsp;</span><span>(Bears)</span></div><div class="body fence">
+<div class="def" id="bears-ex"><div class="title"><span class="head">Example 134&nbsp;</span><span>(Bears)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">[Grizzly]<sub>cf</sub> bears are dangerous.</span></div></div>
 </div></div>
 <div id="bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Bears</b><br />
@@ -1320,7 +1324,7 @@
     <p>First, the <strong>B</strong> utterance in <em>Bears</em> is not a flat dismissal of <strong>A</strong>. Instead, it is a natural follow up, in that it seems to pick up on and develop a previously initiated theme. Another way to say this is that the <em>Bears</em> completion represents a <a id="coherence" href="/glossary#coherence" class="tooled gloss">coherent</a><span id="coherence-tip" class="tooltip glossary"><b>coherence</b>: Integration among utterances in a discourse. Coherence is related to truth conditional content and anaphora resolution in that language users have intutions about discourse coherence. Coherence is a gradeable concept.</span> advancement of the discourse. An ability to resolve a coherence relation among a group of utterances in a discourse is a crucial element of interpreting that discourse in context. A particularly salient coherence relation may force an interpretation to light. For instance, consider the following example due to Andrew Kehler (<a id="kehler2000" class="ref tooled" href="#ref-kehler2000"><span class="date"><span class="year">2000</span></span><span class="pages">,  539</span></a>):</p>
 
 <!-- Presidents -->
-<div class="def" id="presidents-ex"><div class="title"><span class="head">Example 63&nbsp;</span><span>(Presidents)</span></div><div class="body fence">
+<div class="def" id="presidents-ex"><div class="title"><span class="head">Example 135&nbsp;</span><span>(Presidents)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="content"># Bill likes to play golf. George hates broccoli.</span></div></div>
 </div></div>
 <div id="presidents-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Presidents</b><br />
@@ -1340,7 +1344,7 @@
 <p>The <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> completion, too, expresses a relative generality coherence relation. It is the flip-side of resemblance relations in that it highlights a <em>distinction</em> within a class that was previously over-looked. In moving from a coarser to a more granular conception of the sub-space of reality corresponding to beardom, the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue exhibits a relation of <a id="refinement" href="/glossary#refinement" class="tooled gloss">refinement</a><span id="refinement-tip" class="tooltip glossary"><b>refinement</b>: A connection among ideas in which the second idea highlights an over-looked distinction within the domain of the first idea. Belongs to the class of relative generality connections.</span> between the ideas expressed in its utterances.</p>
 
 <!-- Refinement -->
-<div class="def" id="refinement-obs"><div class="title"><span class="head">Observation 11&nbsp;</span><span>(Refinement)</span></div><div class="body fence">
+<div class="def" id="refinement-obs"><div class="title"><span class="head">Observation 26&nbsp;</span><span>(Refinement)</span></div><div class="body fence">
   <p>The <a href="#bears-ex">Bears</a> dialogue is <em>coherent</em>, exhibiting a relation of <em>refinement</em> between the first and second utterance.</p>
 
 </div></div>
@@ -1354,7 +1358,7 @@
 <p>The function of coherence relations is to improve interprebility of the discourse by imposing a restriction on the space of possible conceptions of what the initial speaker is getting at, thereby making the selection procedure for how to respond operate more smoothly. And refinement genuinely does help thin the space of possibilities, as we can see from the following alternative continuation of the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> initiation:</p>
 
 <!-- Druggy bears -->
-<div class="def" id="druggy-bears-ex"><div class="title"><span class="head">Example 64&nbsp;</span><span>(Druggy bears)</span></div><div class="body fence">
+<div class="def" id="druggy-bears-ex"><div class="title"><span class="head">Example 136&nbsp;</span><span>(Druggy bears)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content"># Bears [in a drug-induced stupor]<sub>cf</sub> are dangerous.</span></div></div>
 </div></div>
 <div id="druggy-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Druggy bears</b><br />
@@ -1366,7 +1370,7 @@
 <p>The <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue may be coherent, but there is a distinctive, disputative tone its completion. Still, the nature of the dispute differs from that in, for instance:</p>
 
 <!-- Boars -->
-<div class="def" id="boars-ex"><div class="title"><span class="head">Example 65&nbsp;</span><span>(Boars)</span></div><div class="body fence">
+<div class="def" id="boars-ex"><div class="title"><span class="head">Example 137&nbsp;</span><span>(Boars)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">You mean <em>boars</em> are dangerous.</span></div></div>
 </div></div>
 <div id="boars-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Boars</b><br />
@@ -1378,7 +1382,7 @@
 <p>The observation that the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue exhibits coherent discourse suggests that the disputative tone of its completion ought not to be treated as signaling a break in the inquiry. Instead, imposing the refinement relation on the discourse eliminates the sense of fault on the part of the initiation in allowing for proper uptake. Instead, we interpret the completion utterance as a <a id="correction" href="/glossary#correction" class="tooled gloss">correction</a><span id="correction-tip" class="tooltip glossary"><b>correction</b>: An attempted contribution to inquiry that involves a <em>denial</em> of some element of the preceding attempted contribution to discourse and a <em>positive contribution</em> that is related in a salient way to the preceding attempted contribution.</span>, which is characterized by a dual function of providing: (i) a <em>denial</em> of some element of the preceding attempted contribution to discourse and (ii) a <em>positive contribution</em> that is related in a salient way to the preceding attempted contribution. A correcting utterance serves as an amendment to the discourse, and as such it crucially relies on the presence of an initiation. This is why discourse initial utterances rarely involve contrastive focus. A correct<em>ion</em> requires a correct<em>ible</em> to amend.</p>
 
 <!-- Correction -->
-<div class="def" id="correction-obs"><div class="title"><span class="head">Observation 12&nbsp;</span><span>(Correction)</span></div><div class="body fence">
+<div class="def" id="correction-obs"><div class="title"><span class="head">Observation 27&nbsp;</span><span>(Correction)</span></div><div class="body fence">
   <p>The completion phase of the <a href="#bears-ex">Bears</a> discourse serves to correct the initiation phase, which is iteself a <em>correctible</em> utterance.</p>
 
 </div></div>
@@ -1390,7 +1394,7 @@
 <p>While the completion in the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue is a natural one, it certainly isn’t the only <a id="felicity" href="/glossary#felicity" class="tooled gloss">felicitous</a><span id="felicity-tip" class="tooltip glossary"><b>felicity</b>: A pragmatic judgement that an utterance is approapriate in the discourse context.</span> response to the initiation. It is open to the responder to challenge the initiation in another way, but interestingly, it is also open to the initiator to retrench in certain ways, as in the following alternate extension of the discourse:</p>
 
 <!-- Teddy bears -->
-<div class="def" id="teddy-bears-ex"><div class="title"><span class="head">Example 66&nbsp;</span><span>(Teddy bears)</span></div><div class="body fence">
+<div class="def" id="teddy-bears-ex"><div class="title"><span class="head">Example 138&nbsp;</span><span>(Teddy bears)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">What about Teddy bears?</span></div><div class="item"><span class="name">A: </span><span class="content">I didn't mean <em>all</em> bears.</span></div></div>
 </div></div>
 <div id="teddy-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Teddy bears</b><br />
@@ -1400,7 +1404,7 @@
 <p><strong>A</strong>’s retrenchment in <em>Teddy bears</em> strikes my ear as an acceptable response to <strong>B</strong>’s challenge. It is similar to the data that Thony Gillies and Kai von Fintel (<a id="vonfintel2008" class="ref tooled" href="#ref-vonfintel2008"><span class="date"><span class="year">2008</span></span></a>) analyze in regard to retraction of <em>might</em> claims. Consider the following, drawn from (<a id="vonfintel2008" class="ref tooled" href="#ref-vonfintel2008"><span class="author">von Fintel and Gillies </span><span class="date"><span class="year">2008</span></span><span class="pages">,  81</span></a>):</p>
 
 <!-- Keys -->
-<div class="def" id="keys-ex"><div class="title"><span class="head">Example 67&nbsp;</span><span>(Keys)</span></div><div class="body fence">
+<div class="def" id="keys-ex"><div class="title"><span class="head">Example 139&nbsp;</span><span>(Keys)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">Alex: </span><span class="content">The keys might be in the drawer.</span></div><div class="item"><span class="name">Billy: </span><span class="content">(<em>Looks in the drawer.</em>) They're not. Why did you say that?</span></div><div class="item"><span class="name">Alex: </span><span class="content">I didn't say they <em>were</em> in the drawer. I said they <em>might be </em> there -- and they might have been. Sheesh.</span></div></div>
 </div></div>
 <div id="keys-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Keys</b><br />
@@ -1410,7 +1414,7 @@
 <p><em>Might</em> claims are sometimes retracted when presented with countervailing evidence available in a different context from the original utterance. But as <a href="#keys-ex" id="keys-show" class="tooled">Keys</a> makes clear, <em>might</em> claims are ocassionally <em>resilient</em> in the face of such challenges. The felicity of the exchange in <a href="#teddy-bears-ex" id="teddy-bears-show" class="tooled">Teddy bears</a> suggests that correctible initiations exhibit similar resilience.</p>
 
 <!-- Resilience -->
-<div class="def" id="resilience-obs"><div class="title"><span class="head">Observation 13&nbsp;</span><span>(Resilience)</span></div><div class="body fence">
+<div class="def" id="resilience-obs"><div class="title"><span class="head">Observation 28&nbsp;</span><span>(Resilience)</span></div><div class="body fence">
   <p>The <a href="#bears-ex">Bears</a> initiation is <em>resilient</em>. In certain contexts, it is appropriate for the utterer of a correctible to refrain from retracting it in the face of a challenge.</p>
 
 </div></div>
@@ -1422,7 +1426,7 @@
 <p>A corrolary to the resilience of correctible initiations is that corrective completions don’t simply link back to previous discourse and remove an element from the discourse representation. Instead, they add to the discourse in a specific way, thereby opening an avenue for the initial speaker to reject the alteration. That is, corrections are <em>productive</em>.</p>
 
 <!-- Productivity -->
-<div class="def" id="productivity-obs"><div class="title"><span class="head">Observation 14&nbsp;</span><span>(Productivity)</span></div><div class="body fence">
+<div class="def" id="productivity-obs"><div class="title"><span class="head">Observation 29&nbsp;</span><span>(Productivity)</span></div><div class="body fence">
   <p>The <a href="#bears-ex">Bears</a> completion is <em>productive</em>. It does not merely refer back to the initiation but extends the discourse in a distinctive way.</p>
 
 </div></div>
@@ -1434,7 +1438,7 @@
 <p>The exchange in <a href="#teddy-bears" id="teddy-bears-show" class="tooled">Teddy bears</a> reveals an additional interesting fact about disputative discourse. Even if it is appropriate for an initiator to refuse to retract a correctible, the challenge provided byt the correction is no less appropriate. The flip-side of the resilience of correctibles is that they are also highly susceptible to challenge.</p>
 
 <!-- Susceptibility -->
-<div class="def" id="susceptibility-obs"><div class="title"><span class="head">Observation 15&nbsp;</span><span>(Susceptibility)</span></div><div class="body fence">
+<div class="def" id="susceptibility-obs"><div class="title"><span class="head">Observation 30&nbsp;</span><span>(Susceptibility)</span></div><div class="body fence">
   <p>The <a href="#bears-ex">Bears</a> initiation is susceptible to challenge. In certain contexts, it is appropriate for an initiator’s interlocutors to challenge their attempted contribution.</p>
 
 </div></div>
@@ -1712,7 +1716,7 @@
     <p>Formally, the natural inclination to treat sentences involving bare plurals as governed by universal quantifiers goes as such:</p>
 
 <!-- Universal Quantifier -->
-<div class="def" id="universal-quantifier-def"><div class="title"><span class="head">Definition 31&nbsp;</span><span>(Universal quantifier)</span></div><div class="body fence">
+<div class="def" id="universal-quantifier-def"><div class="title"><span class="head">Definition 70&nbsp;</span><span>(Universal quantifier)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;(A)(B)</div><div class="post"></div></div></div></div>
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: <span class="type">et</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
 </div></div>
@@ -1724,7 +1728,7 @@
 <p>But this treatment runs into its own sticky situation. Consider:</p>
 
 <!-- Hibernation -->
-<div class="def" id="hibernating-bears-ex"><div class="title"><span class="head">Example 68&nbsp;</span><span>(Hibernating bears)</span></div><div class="body fence">
+<div class="def" id="hibernating-bears-ex"><div class="title"><span class="head">Example 140&nbsp;</span><span>(Hibernating bears)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="content">Bears hibernate.</span></div></div>
 </div></div>
 <div id="hibernating-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Hibernating bears</b><br />
@@ -1736,7 +1740,7 @@
 <p>It won’t work to loosen the strictness requirement and interpret bare plurals as bound by, say an existential quantifier or one that requires a few witnesses. For that would render true clearly false sentences such as the following:</p>
 
 <!-- Cuddly bears -->
-<div class="def" id="cuddly-bears-ex"><div class="title"><span class="head">Example 69&nbsp;</span><span>(Cuddly bears)</span></div><div class="body fence">
+<div class="def" id="cuddly-bears-ex"><div class="title"><span class="head">Example 141&nbsp;</span><span>(Cuddly bears)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="content">Bears are cuddly.</span></div></div>
 </div></div>
 <div id="cuddly-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Cuddly bears</b><br />
@@ -1748,7 +1752,7 @@
 <p>One standard approach to formalizing this idea is to posit a <em>generic</em> operator that implements a restricted, universal quantification. As in the variably strict approach to counterfactuals, the <em>generally universal</em> account of bare plurals uses context to select a preferred class of individuals within the set determined by the subject and requires for truth that this preferred class be included within the predicate class.<sup id="fnref:relevantquant"><a href="#fn:relevantquant" class="footnote">1</a></sup></p>
 
 <!-- Generally universal quantifier -->
-<div class="def" id="generic-quantifier-def"><div class="title"><span class="head">Definition 32&nbsp;</span><span>(Generic quantifier)</span></div><div class="body fence">
+<div class="def" id="generic-quantifier-def"><div class="title"><span class="head">Definition 71&nbsp;</span><span>(Generic quantifier)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">GEN(A)(B)</div><div class="post"></div></div></div></div>
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: et</span>, <span>&delta;(i): et &rarr; et a selection function determined by context i</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A<sub>pref</sub></div><div class="conn">=</div><div class="rhs"><span class="bit">&delta;(i)(A)</span></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">GEN(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
 </div></div>
@@ -1762,7 +1766,7 @@
 <p>Despite this de-sticking success, I don’t think that the standard response is the correct extraction method. We can preserve the strict analysis of bare plurals [by allowing them to interact with the context in a specific way]. In particular, if the bare plural is evaluated against a context that incorporates the plan of inquiry structure of the discourse, then the extraction can be pulled off.</p>
 
 <!-- Structurally universal quantifier -->
-<div class="def" id="structurally-universal-quantifier-def"><div class="title"><span class="head">Definition 33&nbsp;</span><span>(Structurally universal quantifier)</span></div><div class="body fence">
+<div class="def" id="structurally-universal-quantifier-def"><div class="title"><span class="head">Definition 72&nbsp;</span><span>(Structurally universal quantifier)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="molecule" id="translation"><div class="title">Translation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="post"></div></div></div></div><div class="molecule" id="definition"><div class="title">Definition</div><div class="atom"><span class="categorical">For all <span>A: et</span>, <span>B: (et)t</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><span class="bit">{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; <span class="set">R</span></span><span class="bit">&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;</span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div>
 </div></div>
 <div id="structurally-universal-quantifier-show-tip" class="tooltip defn">
@@ -1776,7 +1780,7 @@
 <p>I assume that plurals carry a <em>homogeneity presupposition</em>, characterized as follows:</p>
 
 <!-- Homogeneity -->
-<div class="def" id="homogeneity-def"><div class="title"><span class="head">Definition 34&nbsp;</span><span>(Homogeneity)</span></div><div class="body fence">
+<div class="def" id="homogeneity-def"><div class="title"><span class="head">Definition 73&nbsp;</span><span>(Homogeneity)</span></div><div class="body fence">
   Utterances involving bare plural subjects present the set determined by the subject as homogenous with respect to the predicate. The predicate applies either to all members of the subject class or to none of them.
 </div></div>
 <div id="homogeneity-show-tip" class="tooltip defn">
@@ -1792,7 +1796,7 @@
 <p>This is why, in reference to a mixed-gender group of young bears engaged in a wrestling match, (a) in the following seems true while (b) seems neither true nor false:</p>
 
 <!-- Playing bears -->
-<div class="def" id="playing-bears-ex"><div class="title"><span class="head">Example 70&nbsp;</span><span>(Playing bears)</span></div><div class="body fence">
+<div class="def" id="playing-bears-ex"><div class="title"><span class="head">Example 142&nbsp;</span><span>(Playing bears)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">The cubs are playing.</span></div><div class="item"><span class="name">B: </span><span class="content">The cubs are boys.</span></div></div>
 </div></div>
 <div id="playing-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Playing bears</b><br />
@@ -1808,7 +1812,7 @@
 <p>That the homogeneity constraint should be understood as a <em>presupposition</em> tied to plurals is supported by the fact that it is cancelable.</p>
 
 <!-- Polar bears -->
-<div class="def" id="polar-bears-ex"><div class="title"><span class="head">Example 71&nbsp;</span><span>(Polar bears)</span></div><div class="body fence">
+<div class="def" id="polar-bears-ex"><div class="title"><span class="head">Example 143&nbsp;</span><span>(Polar bears)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">I need a kind of bear which is always white (for my drawing of a bear in a snow storm). I'm considering polar bears, grizzly bears, and koala bears. I've seen white examples of each. Do you know whether any of them are consistently white?</span></div><div class="item"><span class="name">B: </span><span class="content">[Polar]<sub>f</sub> bears are white.</span></div></div>
 </div></div>
 <div id="polar-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Polar bears</b><br />
@@ -1850,7 +1854,7 @@
 <p>Assuming the correctible inspires a corrective effort by a discourse participant, the continuation overrides the initiation commitment, replacing it with a substitution of the original saturation. This process can iterate until all participants are satisfied with the lastest commit. At this point, a completion utterance implements the latest commit, imposing its update effect upon the sandbox information state. Finally, the updated sandbox contents are <em>merged</em> into the primary information state.</p>
 
 <!-- General collaborative update -->
-<div class="def" id="general-collaborative-update-def"><div class="title"><span class="head">Definition 35&nbsp;</span><span>(General collaborative update)</span></div><div class="body fence">
+<div class="def" id="general-collaborative-update-def"><div class="title"><span class="head">Definition 74&nbsp;</span><span>(General collaborative update)</span></div><div class="body fence">
   <div class="molecule" id="collaborative-update"><div class="title">Collaborative update</div><div class="atom"><div class="molecule" id="initialization"><div class="title">Initialization</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>init</sup></div><div class="conn">&#x21a5;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>&sigma;</sub></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>sand</sub></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="propagation"><div class="title">Propagation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>prop</sup></div><div class="conn">&#x21a6;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref"><span class="var">dref</span><sup>prop</sup></div><div class="conditions">U<sup>prop</sup><sub>(st)t</sub></div><div class="post"><span class="drs right top bottom"></span></div></div></div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="present"><div class="title">Present</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">dref</span><sup>prop</sup></div><div class="conn">&#x29c0;</div><div class="rhs"><span class="set">dref</span><sup>sand</sup></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="partition"><div class="title">Partition</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">R</span><sup>prop</sup></div><div class="conn">&#x22CA;</div><div class="rhs"><span class="set">R</span><sup>sand</sup></div><div class="post"></div></div></div></div></div></div></div><div class="atom"><div class="molecule" id="merge"><div class="title">Merge</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>merge</sup></div><div class="conn">&#x21a7;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">i<sub>&lt;span class='set'R</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">dref<sub>&sigma;</sub> += dref<sub>sand</sub></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></div><div class="post"></div></div></div></div></div></div>
 </div></div>
 <div id="general-collaborative-update-show-tip" class="tooltip defn">
@@ -1875,7 +1879,7 @@
 
 <p>The homogeneity presupposition operates on the result of the predication in three stages. First, it implements a structuring update, grouping the table by value of the <strong>sit</strong> attribute. Second, it performs an aggregation and comparisonfunction on the <strong>ent</strong> and <strong>subj</strong> attributes within each group. This consists of counting the number of <strong>ent</strong> of any value, and the number of <strong>subj</strong> of positive value, and comparing them. Groups for for which either the <strong>ent</strong> count equals the <strong>subj</strong> count or the <em>*subj</em> count is zero pass through; other groups are rejected. The final phase is a restriction, where rejected groups are eliminated from the table.</p>
 
-<div class="def" id="standard-plural-predication-table"><div class="title"><span class="head">Table 7&nbsp;</span><span>(Standard plural predication)</span></div><div class="body">
+<div class="def" id="standard-plural-predication-table"><div class="title"><span class="head">Table 16&nbsp;</span><span>(Standard plural predication)</span></div><div class="body">
   <div class="box"><a class="pop" id="standard-plural-predication" href="#append-standard-plural-predication">Appendix: Standard plural predication</a><div class="lightbox" id="standard-plural-predication-hid"><div class="popclose"></div><div class="popbox"><h4>Standard plural predication</h4><div class="popmain"></div></div></div></div>
 </div></div>
 
@@ -1883,14 +1887,14 @@
 
 <p>The second role of contrastive focus is to mark the utterance as a continuation, thus linking it to the previous presentation in the sandbox. We represent this by a <em>refinement</em>, in which we <strong>project</strong> just the <strong>sit</strong>, <strong>ent</strong>, and <strong>mod</strong> attributes, renaming the <strong>mod</strong> attribute to <strong>subj</strong>. Thus, the continuation is fully integrated.</p>
 
-<div class="def" id="contrastive-modification-table"><div class="title"><span class="head">Table 8&nbsp;</span><span>(Contrastive modification)</span></div><div class="body">
+<div class="def" id="contrastive-modification-table"><div class="title"><span class="head">Table 17&nbsp;</span><span>(Contrastive modification)</span></div><div class="body">
   <div class="box"><a class="pop" id="contrastive-modification" href="#append-contrastive-modification">Appendix: Contrastive modification</a><div class="lightbox" id="contrastive-modification-hid"><div class="popclose"></div><div class="popbox"><h4>Contrastive modification</h4><div class="popmain"></div></div></div></div>
 </div></div>
 
 <p>Once we have the refined subject in place, we can use it as input to the right outer join implemented by the plural predication of the continuation. The final role of contrastive focus is to overwrite the default homogeneity presupposition, indicating the nature of the structuring update it substitutes – a partition along the lines of the alternative set of the focused element. This is performed by a grouping operation. In standard plural predication, we only needed to group by the <strong>sit</strong> attribute, but this simplification was made possible by the nature of the values in the <strong>subj</strong> attribute. Since being a bear was taken as an on/off property, and the model determines only its positive extension, there was no need to refine our grouping in order to implement the comparison. The situation is more complex, however, in the case of contrastive plural predication. Here, our presupposition demands that dangerousness be uniform across type of bear. This means that we must additionally group by <strong>subj</strong>
 values in order to get the appropriate comparison. We should thus view standard plural predication as a degenerative case of homogeneity presupposition, where there is only one value group within the <strong>subj</strong> attribute.</p>
 
-<div class="def" id="corrective-update-table"><div class="title"><span class="head">Table 9&nbsp;</span><span>(Corrective update)</span></div><div class="body"><div class="box"><a class="pop" id="corrective-update" href="#append-corrective-update">Appendix: Corrective update</a><div class="lightbox" id="corrective-update-hid"><div class="popclose"></div><div class="popbox"><h4>Corrective update</h4><div class="popmain"></div></div></div></div></div></div>
+<div class="def" id="corrective-update-table"><div class="title"><span class="head">Table 18&nbsp;</span><span>(Corrective update)</span></div><div class="body"><div class="box"><a class="pop" id="corrective-update" href="#append-corrective-update">Appendix: Corrective update</a><div class="lightbox" id="corrective-update-hid"><div class="popclose"></div><div class="popbox"><h4>Corrective update</h4><div class="popmain"></div></div></div></div></div></div>
 
 <p>The final, presupposition-restricted table is stored in the structuring component <strong>R</strong> of the sandbox information state. And it is this relation against which the semantic value of the contribution will be evaluated.</p>
 
@@ -2028,7 +2032,7 @@ values in order to get the appropriate comparison. We should thus view standard 
 <p>Formally, the natural inclination involving English counterfactual conditional constructions is to give an analysis of them in terms of a strict conditional.</p>
 
 <!-- Strict definitions -->
-<div class="def" id="strict-conditional-def"><div class="title"><span class="head">Definition 36&nbsp;</span><span>(Strict conditional)</span></div><div class="body fence">
+<div class="def" id="strict-conditional-def"><div class="title"><span class="head">Definition 75&nbsp;</span><span>(Strict conditional)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">A &#x297d; B</div><div class="post"></div></div></div></div>
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: st</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A &#x297d; B</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
 </div></div>
@@ -2040,7 +2044,7 @@ values in order to get the appropriate comparison. We should thus view standard 
 <p>But this natural inclination is held up by a sticky situation. The subset relation is <em>transitive</em>, and conjunction is <em>intersective</em> which means that strict conditionals verify <em>thinning</em>:</p>
 
 <!-- Thinning -->
-<div class="def" id="thinning-def"><div class="title"><span class="head">Definition 37&nbsp;</span><span>(Thinning)</span></div><div class="body fence">
+<div class="def" id="thinning-def"><div class="title"><span class="head">Definition 76&nbsp;</span><span>(Thinning)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A &#x297d; B</div><div class="conn">&rArr;</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&nbsp;</div><div class="conn">&rArr;</div><div class="rhs">&#x27e6;&nbsp;A &and; C&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&nbsp;</div><div class="conn">&rArr;</div><div class="rhs">&#x27e6;&nbsp;(A &and; C) &#x297d; B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></div></div>
 </div></div>
 <div id="thinning-show-tip" class="tooltip defn">
@@ -2050,7 +2054,7 @@ values in order to get the appropriate comparison. We should thus view standard 
 <p>Unfortunately, counterfactual conditionals violate <a href="#thinning" id="thinning-show" class="tooled">Thinning</a>. Consider:</p>
 
 <!-- Honey -->
-<div class="def" id="honey-ex"><div class="title"><span class="head">Example 72&nbsp;</span><span>(Honey)</span></div><div class="body fence">
+<div class="def" id="honey-ex"><div class="title"><span class="head">Example 144&nbsp;</span><span>(Honey)</span></div><div class="body fence">
   <div class="example"><div class="item"><span class="name">A: </span><span class="content">If Pooh had eaten less honey, he would have fit through the hole.</span></div><div class="item"><span class="name">B: </span><span class="content">But if Pooh had eaten less honey and worn his puffy jacket, he would have gotten stuck.</span></div></div>
 </div></div>
 <div id="honey-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Honey</b><br />
@@ -2060,7 +2064,7 @@ values in order to get the appropriate comparison. We should thus view standard 
 <p>The antecedent of <strong>B</strong> in <a href="#honey" id="honey-show" class="tooled">Honey</a> is a conjunction involving the antecedent of <strong>A</strong>, which means that if <strong>A</strong> is true, the strict analysis predicts <strong>B</strong>, whose consequent is the denial of <strong>A</strong>’s, to be false. But the sentences in <a href="#honey" id="honey-show" class="tooled">Honey</a> can be interpreted as a perfectly consistent dialogue. This is a sticky situation. The standard response to examples such as these, developed originally by Robert Stalnaker (<a id="stalnaker1968" class="ref tooled" href="#ref-stalnaker1968"><span class="date"><span class="year">1968</span></span></a>) and David Lewis (<a id="lewis1973" class="ref tooled" href="#ref-lewis1973"><span class="date"><span class="year">1973</span></span></a>), is to translate counterfactual conditionals with a <em>variably strict</em> operator. A variably strict operator works in two stages. First, it appeals to context to segregate the set determined by the first operand into preferred and dispreferred classes. It then demands for truth only that the preferred class of elements be a subset of the set determined by the second operand. For conditionals, the semantic value of the operands is a set of worlds or situations, and the preferred class is usually glossed as the <em>closest possible worlds</em>.</p>
 
 <!-- Variably strict cond -->
-<div class="def" id="variably-strict-conditional-def"><div class="title"><span class="head">Definition 38&nbsp;</span><span>(Variably strict conditional)</span></div><div class="body fence">
+<div class="def" id="variably-strict-conditional-def"><div class="title"><span class="head">Definition 77&nbsp;</span><span>(Variably strict conditional)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A</div><div class="conn"><span style="letter-spacing:-4px;">&#x25a1;&rarr;</span></div><div class="rhs">B</div><div class="post"></div></div></div><div class="post"></div></div></div></div>
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: <span class="type">st</span></span>, <span>&delta;(i): <span class="type">st</span> &rarr; <span class="type">st</span> a selection function determined by context <span class="var">i</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A<sub>pref</sub></div><div class="conn">=</div><div class="rhs">&delta;(i)(A)</div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A</div><div class="conn"><span style="letter-spacing:-4px;">&#x25a1;&rarr;</span></div><div class="rhs">B</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
 </div></div>
@@ -2074,7 +2078,7 @@ values in order to get the appropriate comparison. We should thus view standard 
 <p>Despite its de-sticking success, Thony Gillies (<a id="gillies2007" class="ref tooled" href="#ref-gillies2007"><span class="date"><span class="year">2007</span></span></a>) argues that the standard response is not the preferred extraction method. We can preserve the strict analysis of counterfactuals if we allow them to act as monsters (<a id="kaplan1977" class="ref tooled" href="#ref-kaplan1977"><span class="date"><span class="year">1977</span></span></a>), shifting the index of evaluation in the course of interpretation. A principled monster for counterfactual conditionals shifts the context against which the consequent is evaluated to one that is fixed in part by the antecedent.</p>
 
 <!-- Shifty strict conditionals -->
-<div class="def" id="shifty-strict-conditional-def"><div class="title"><span class="head">Definition 39&nbsp;</span><span>(Shifty strict conditional)</span></div><div class="body fence">
+<div class="def" id="shifty-strict-conditional-def"><div class="title"><span class="head">Definition 78&nbsp;</span><span>(Shifty strict conditional)</span></div><div class="body fence">
   <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">If had &#x231c;A&#x231d;, would have &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A</div><div class="conn">&#x297d;<sub>s</sub></div><div class="rhs">B</div><div class="post"></div></div></div><div class="post"></div></div></div></div>
   <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: <span class="type">st</span></span>, <span>i<sub>s</sub>: <span class="type">st</span> the context set of information state i</span>, <span>&delta;(i): <span class="type">st</span> &rarr; <span class="type">st</span> a selection function determined by context <span class="var">i</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&delta;(i)(A)</div><div class="conn">&sube;</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">i<sub>s</sub><sup>+</sup>(A)</div><div class="conn">=</div><div class="rhs">i<sub>s</sub> &cup; &delta;(i)(A)</div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A</div><div class="conn">&#x297d;<sub>s</sub></div><div class="rhs">B</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i[i<sub>s</sub>&rarr;i<sub>s</sub><sup>+</sup>(A)]</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
 </div></div>
@@ -2178,6 +2182,8 @@ values in order to get the appropriate comparison. We should thus view standard 
       
         
       
+        
+      
     
       
         
@@ -2213,6 +2219,8 @@ values in order to get the appropriate comparison. We should thus view standard 
 </div>
             
           </div>
+        
+      
         
       
         
@@ -2288,6 +2296,8 @@ values in order to get the appropriate comparison. We should thus view standard 
 </div>
             
           </div>
+        
+      
         
       
         

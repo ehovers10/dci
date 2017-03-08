@@ -1,0 +1,58 @@
+\documentclass[letterpaper,12pt]{article}
+
+% Special packages %
+$if(packages)$
+$for(packages)$\usepackage{$packages$}$endfor$
+$else$
+% --- No special packages provided ---%
+$endif$
+
+% Font styles
+\usepackage{amssymb}
+\usepackage[american]{isodate}
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\numdate
+
+% Layout styles
+\usepackage{geometry,titlesec}
+\geometry{hmargin={.75in,.75in},vmargin={1in,1in}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex plus .5ex minus .2ex}
+\titlespacing{\section}{0pt}{*0}{*0}
+
+% Definition blocks
+\usepackage{mdframed,enumitem}
+\newmdenv[topline=false,rightline=false,bottomline=false]{fquote}
+\renewenvironment{quote}{\begin{fquote}}{\end{fquote}}
+\setlist[description]{topsep=0ex,labelsep=3ex,itemindent=3ex}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}}
+
+% Counters
+$if(counters)$
+$for(counters)$
+\newcounter{$counters$}
+\addtocounter{$counters$}{1}
+$endfor$
+\newcommand{\goop}[2]{%
+  \uppercase{\footnotesize{#1}} \arabic{#1}.
+  \stepcounter{#1}
+  \label{#2}}
+$else$
+% --- No counters used --- %
+$endif$
+
+% Title
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{$chapter$}
+\fancyhead[C]{\textbf{$title$}}
+\fancyhead[R]{\today}
+
+\begin{document}
+
+$body$
+
+\end{document}
