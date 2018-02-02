@@ -96,6 +96,7 @@ Jennifer Spenader joins Maier {% cite spenader2009 | noname %} in extending this
 {% ex Spanish %}
   {{ "spanish" | example: "sent" }}
 {% endex %}
+
 In the completion of [Spanish](#spanish-ex){: #spanish-show .tooled}, the choice of connective (*but*) carries contrastive import; the second conjunct, in its scope, is a downdating correction of the initiation sentence. The first conjuct, preceded by the hedge term *well*, provides a concession to the initiation, indicating that the response is intended as a *refinement* rather than a swamping denial.
 
 <!-- Spanish ldrt -->

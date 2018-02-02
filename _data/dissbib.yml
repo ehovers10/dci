@@ -430,6 +430,16 @@ eijck:
   Year: 2003
   Abstract: "Key ingredients in discourse meaning are reference markers: objects in the formal representation that the discourse is about. It is well-known that reference markers are not like { } rst order variables. Indeed, it is the received view that reference markers are like the variables in imperative programming languages. However, in a computational semantics of discourse that treats reference markers as \textquoteleft { } dynamically bound\textquoteright variables, every noun phrase will get linked to a dynamic variable, so it will give rise to a marker index. Where do these indices come from? How do we handle them when combining or \textquoteleft { } merging\textquoteright pieces of discourse? We will argue that reference markers are better treated as indices into context, and we will present a theory of context and context extension based on this view. In context semantics, noun phrases do not come with { } xed indices, so the merge problem does not arise. This solves a vexing issue with coordination that causes trouble for all current versions of compositional discourse representation theory."
 
+farkas2010:
+  Volume: 27
+	Year: 2010
+	Title: On Reacting to Assertions and Polar Questions
+	Number: 1
+	Journal: Journal of Semantics
+	Pages: 81-118
+	Author: D. F. Farkas and K. B. Bruce
+  Type: article
+
 vonfintel1997:
   Title: Bare plurals, bare conditionals, and only
   Author: Kai von Fintel
@@ -1523,6 +1533,15 @@ roberts2004:
   Keywords: language
   Url: https://app.box.com/s/u9gnpxwsijzixsbwcg39qquypxcydgy9
 
+roberts2016:
+  Title: Speech Acts in Discourse Context
+  Author: Craige Roberts
+  Booktitle: New Work on Speech Acts
+  Type: chapter
+  Publisher: Oxford University Press
+  Editor: Daniel Fogal, Daniel Harris, and Matt Moss
+  Year: 2016
+
 rooth1992:
   Title: A Theory of Focus Interpretation
   Author: Mats Rooth
@@ -1650,6 +1669,19 @@ schwarzschild1994:
   Abstract: "This paper begins with a discussion of CUMULATIVITY (e.g., 'P(a) & P(b) implies P(a+b)'), formalized using a verb phrase operator. Next, the meanings of distribu- tivity markers such as each and non-distributivity indicators such as together are considered. An existing analysis of each in terms of quantification over parts of a plurality is adopted. However, together is problematic, for it involves a cancellation or negation of the quantification associated with each. (The four boys together owned exactly three cars could not be true if each of the boys owned three cars, though the same sentence without together could be.) A refinement of this idea of negated quantification over parts is proposed as an analysis for non-distributivity operators. It is then worked out in the system described in Cooper (1983), in which positive and negative extensions are assigned. Presuppositions connected with plural refer- ence are considered at this point as well. Finally, the cumulativity operator is argued to be quantificational and therefore sensitive to contextual domain selection. This context sensitivity is claimed to be the source of distributive readings that appear in the absence of modifiers like each and non-distributive or collective readings that arise without together."
   Url: https://app.box.com/s/wdjo7jxrpdrgt3jistzk0i327y4166d2
 
+searle1976:
+  Title: A Classification of Illocutionary Acts
+  Author: John R. Searle
+  Type: article
+  Journal: Language in Society
+  Publisher: Cambridge University Press
+  Year: 1976
+  Volume: 5
+  Number: 1
+  Pages: 1-23
+  Abstract: "There are at least a dozen linguistically significant dimensions of differences between illocutionary acts. Of these, the most important are illocutionary point, direction of fit, and expressed psychological state. These three form the basis of a taxonomy of the fundamental classes of illocutionary acts. The five basic kinds of illocutionary acts are: representatives (or assertives), directives, commissives, expressives, and declarations. Each of these notions is defined. An earlier attempt at constructing a taxonomy by Austin is defective for several reasons, especially in its lack of clear criteria for distinguishing one kind of illocutionary force from another. Paradigm performative verbs in each of the five categories exhibit different syntactical
+properties. These are explained. (Speech acts, Austin's taxonomy, functions of speech, implications for ethnography and ethnology; English.)"
+
 sep-peirce:
   Author: Robert Burch
   Title: Charles Sanders Peirce
@@ -1729,6 +1761,13 @@ spenader2009:
   Abstract: "We argue that contrastive statements have the same underlying semantics and affect the context in the same way as denials. We substantiate this claim by giving a unified account of the two phenomena that treats contrast as a subtype of denial. This analysis crucially requires a dynamic semantics view of context-dependence with a multi-dimensional representation of information."
   Url: https://app.box.com/s/ns0jcydlm56wqwtne6a2h2igxg2c1iel
 
+stalnaker2014:
+  Title: Context
+  Author: Robert Stalnaker
+  Type: Book
+  Publisher: Oxford University Press
+  Year: 2014
+  
 stalnaker2002:
   Title: Common Ground
   Author: Robert Stalnaker
