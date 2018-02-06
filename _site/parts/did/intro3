@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="jekyll" />
+
+  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <title>Introduction</title>
+
+  <link rel="canonical" href="http://erikhoversten.org/parts/did/intro3">
+  <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
+
+  
+    
+  
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+  <!-- Data-tables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+  <script src="/js/typology.js"></script>
+
+  <script src="/js/open.js"></script>
+  
+  
+  <script src="/js/bibjs.js"></script>
+  <script src="/js/footnav.js"></script>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<div class="page-front">
+
+  <ul class="nav head">
+    <li><a href="/"><b>Home</b></a></li>
+  
+    
+    <li><a href="/parts/did/conclusion3">Observations and outcomes obtained</a></li>
+    
+  
+    
+    <li><a href="/parts/did/correction-as-downdate">Correction as downdate</a></li>
+    
+  
+    
+    <li><a href="/parts/did/features-of-bears">Features of Bears</a></li>
+    
+  
+    
+    <li><a href="/parts/did/focus">Focus</a></li>
+    
+  
+    
+    <li><a href="/parts/did/index">Dispute in discourse</a></li>
+    
+  
+    
+    <li><a href="/parts/did/intro3">Introduction</a></li>
+    
+  
+    
+    <li><a href="/parts/did/observations-on-bears">Observations on *Bears*</a></li>
+    
+  
+    
+    <li><a href="/parts/did/outline3">Outline</a></li>
+    
+  
+    
+    <li><a href="/parts/did/pragmatics-plurals-partitions">Pragmatics of plurals and partitions</a></li>
+    
+  
+    
+    <li><a href="/parts/did/strictness-stickiness-shifts">Strictness, stickiness, and shifts</a></li>
+    
+  
+  </ul>
+
+  <div class="title">Introduction</div>
+  <div class="subtitle">Dispute in discourse</div>
+  <div class="divider"></div>
+
+</div>
+
+<div class="page-content">
+  <div class="chapter-content">
+    <p>Disputes can be frivolous, fractured, and fraudulent. They can derail conversations, and generate animosity to a point where perpetuating the dispute comes to mean more than the prospect of resolving it. These disputes may not even involve actual conflict over the information the participants exchange, instead being driven by <em>ad hominem</em> and <em>ad ideologiam</em> principles.</p>
+
+<p>But dispute can also be a fruitful tool for participants in an honest, cooperative attempt to further mutual knowledge. For one thing, interlocutors sometimes lose track of the cooperative effort, and it is valuable to have a means of correcting them to bring them back on to the task at hand.  But dispute can also play a more central role in the project of inquiry. I claimed in <a href="/concept/#correction">Ch 1</a> that conjecture is a valuable tool of collaborative inquiry, and in its capacity to provide a corrective foil, dispute is crucial for properly vetting conjectures. As such, some element of dispute is central to the enterprise of inquiry.</p>
+
+<p>In <a href="/theory/">Ch 2</a>, I argued that genuine contributions to discourse are implemented by means of information structuring principles and that collaborative contribution systems involve specific cross-utterance relations between information structures. The result is an interpretive system that is strongly dynamic. Not only is the interpretation of an utterance relative to the context in which it is made, it is also possible for the meaning of an utterance to change as the discourse develops.</p>
+
+<p>Recognition of a genuine contribution type requires that there be some conventionalized linguistic tool that realizes it. The central thesis of this chapter is that the distinctive function of the conjecture/correction contribution system is realized by the information structuring mechanism of <a id="contrastive-topic" href="/glossary#contrastive-topic" class="tooled gloss">contrast</a><span id="contrastive-topic-tip" class="tooltip glossary"><b>contrastive topic</b>: An information structural element located within the topic of a sentence that sets its scope in contrast to a (commonly contextually determined) set of alternatives.</span>. My strategy is to use the following little dialogue, which I label <em>Bears</em>, as a stalking horse.</p>
+
+<!-- Grizzly bears -->
+<div class="def" id="bears-ex"><div class="title"><span class="head">Example 14&nbsp;</span><span>(Bears)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">[Grizzly]<sub>cf</sub> bears are dangerous.</span></div></div>
+</div></div>
+<div id="bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Bears</b><br />
+  <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">[Grizzly]<sub>cf</sub> bears are dangerous.</span></div></div>
+</div>
+
+<p>I begin (<a href="#features-of-bears">Sect XX</a>) with a discussion of the most prominent linguistic features of the <a href="#bears-ex">Bears</a> dialogue and a brief account of the standard approaches to analyzing these features. I then (<a href="#observations-on-bears">Sect XX</a>) outline a set of observations about contrastive discourse like the sort found in <a href="#bears-ex">Bears</a> and argue that these observations are not all captured by the standard suite of approaches.</p>
+
+<p>The remainder of the chapter is a presentation of my preferred analysis of contrastive discourse. I fix ideas by first (<a href="#strictness-shifts-and-structure">Sect XX</a>) drawing a comparison of contrastive discourse to counterfactual conditionals, highlighting their shared, shifty character. The shiftiness of contrastive discourse can be captured (<a href="#pragmatics-of-plurals-and-partitions">Sect XX</a>) by recognizing its imposition of a partition on the discourse information state, which in turn relies on the collaborative update framework developed in <a href="/theory/">Ch 2</a>. Also in parallel to counterfactuals, the account utilizes both semantic and pragmatic features of the discourse. I conclude (<a href="#outcome-and-observations-obtained">Sect 7</a>) with an explication how the proposal meets our observations.</p>
+
+  </div>
+</div>
+
+<div class="page.end">
+  <div class="chapter-end" markdown="1">
+
+
+
+
+
+</div>
+
+</div>

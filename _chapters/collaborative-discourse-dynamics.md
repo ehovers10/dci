@@ -11,18 +11,16 @@ count:
 references: ""
 notes: footnotes/cdd.md
 js: [toc]
-permalink: /theory
+permalink: /theory/
 ---
 
 # Scoreboards and best systems
 
-David Lewis' {% cite lewis1979f | noname %} suggestion that utterances in a conversation function as updates to values housed in the various slots of a conversational {% gloss scoreboard %} posits a logical platform on which the conversation is built. The scoreboard serves as a record of the contributions that have been made to the conversation, and it dictates both whether an utterance is deemed to provide an acceptable contribution to the conversation and how acceptable utterances are interpreted. A crucial feature of the scoreboard is that it is not merely an unstructured list of information. Rather, the information is formatted in such a way as to maximize its robustness and simplicity as an interpretive tool.
+David Lewis' {% cite lewis1979f | noname %} suggestion that utterances in a conversation function as updates to values housed in the various slots of a conversational {% gloss scoreboard %} posits a logical platform on which the conversation is built. The scoreboard serves as a record of the contributions that have been made to the conversation, and it dictates both whether a new utterance is deemed to provide an acceptable contribution to the conversation and how acceptable utterances are to be interpreted. A crucial feature of the scoreboard is that it is not merely an unstructured list of information. Rather, the information is formatted in such a way as to maximize its robustness and simplicity as an interpretive tool.
 
-As a first pass, we can think of the scoreboard as a field of slots and  participants to the conversation as wielding a set of pegs. There is a many-to-one relationship between pegs and slots, but certain pegs can only fit in certain slots. The pegs represent the inquiry specific content of utterances, while the slots are features of conversation generally, determined by the nature of the inquiry that it implements.
+As a first pass, we can think of the scoreboard as a field of slots and participants to the conversation as wielding a set of pegs. There is a many-to-one relationship between pegs and slots, but certain pegs can only fit in certain slots. The pegs represent the content of utterances viewed in relation to the specific issues the inquiry is out to resolve, while the slots are features of conversation generally, determined by the basic nature of inquiry.
 
-## Constructing an interpretation
-
-Before we get to the question of what bells and pulleys come attached to conversational scoreboards, we face the question of what the posit of such a recording surface amounts to, and how this crucial interpretive device is instantiated. Lewis frames his preferred answer as such:
+Before we start filling out the conversational scoreboard with specific bells and pulleys, we face the question of what the posit of such a recording surface amounts to, and how this crucial interpretive device is instantiated. Lewis frames his preferred answer as such:
 
 > Conversational score is, by definition, whatever the mental scoreboards say it is; but we refrain from trying to say just what the conversationalists' mental scoreboards are. We assume that some or other mental representations are present that play the role of a scoreboard, in the following sense: what they register depends on the history of the conversation in a way that score should according to the rules. The rules specifying the kinematics of score thereby specify the role of a scoreboard; the scoreboard is whatever best fits this role; and the score is whatever this scoreboard registers. {% cite lewis1979f | pages: p. 346 | noname %}
 
@@ -69,11 +67,9 @@ While there is a simple, transcendental argument speaking in favor of Davidson's
 
 ## Truthfulness, honesty, and trust
 
-(Millian correction, keep truth active by testing it, correctibles, honesty and trust in correction, Lewis *Language(s)*)
-
 Lewis envisions language use within a community as determined by a set of conventions {% cite lewis1975b | noname %}. In particular, he thinks that language use is governed by dual conventions of *truth* and *trust*, the first of which applies to speakers in the language community, the second to hearers. Speakers agree (and presume others also agree, etc.) to utter only truths to the extent they are able, and hearers agree to take on beliefs as their own in response to speakers' utterances.
 
-The collaborative extension, because it incorporates attitudes developed through collaborative inquiry, and because collaborative inquiry essentially involves a process of speculation and correction ([Knowledge in the image of inquiry, section 2.3](/chapters/knowledge-in-the-image-of-inquiry.html#induction)), implies that the truthfulness convention is incomplete as stated. Speakers cannot be counted on to utter only truths to the extent this is possible. In fact, the success of inquiry demands that they courageously utter what may very well be falsehoods. What hearers can expect of their partners in conversation is that they put forward their contributions with *honesty*, uttering only what they take to provide genuine advancement of the inquiry in accordance with the specified plan.
+But if discourse is collaborative, as displayed in the distributed contribution of conjecture and correction, then the truthfulness convention is incomplete as stated. Speakers cannot be counted on to utter only truths to the extent this is possible. In fact, the success of inquiry demands that they courageously utter what may well be falsehoods. What hearers can expect of their partners in conversation is that they put forward their contributions with *honesty*, uttering only what they take to provide genuine advancement of the inquiry in accordance with the specified plan.
 
 The demands of honesty allow for uttering non-truths, but it still counts as a convention because it offers a solution to a coordination problem. Only in this case, the participants to the convention bring to bear, in addition to their understanding of the semantic content of utterances, the structure of the plan of inquiry recorded within the current conversational scoreboard. The convention is thus relativized to the inquiry at hand.
 

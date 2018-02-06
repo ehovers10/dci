@@ -9,8 +9,12 @@ module Jekyll
         piece = ""
         triggerpre = "Appendix: "
         sourcefolder.docs.each { |snip|
-          if snip.data['title'].include? title
-            piece = snip.output
+          if snip.data['title']
+            if snip.data['title'].include? title
+              piece = snip.output
+            end
+          else 
+            piece = "Item not found" 
           end }
       else
         id = input[0,25].strip.downcase.gsub /\W+/, '-'

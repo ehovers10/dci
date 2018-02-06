@@ -14,7 +14,7 @@ append:
   - Contrastive modification
   - Corrective update
 js: [bunch,toc]
-permalink: /practice
+permalink: /practice/
 ---
 
 {% for part in site.parts %}

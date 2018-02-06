@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="jekyll" />
+
+  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <title>Observations on *Bears*</title>
+
+  <link rel="canonical" href="http://erikhoversten.org/parts/did/observations-on-bears">
+  <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
+
+  
+    
+  
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+  <!-- Data-tables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+  <script src="/js/typology.js"></script>
+
+  <script src="/js/open.js"></script>
+  
+  
+  <script src="/js/bibjs.js"></script>
+  <script src="/js/footnav.js"></script>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<div class="page-front">
+
+  <ul class="nav head">
+    <li><a href="/"><b>Home</b></a></li>
+  
+    
+    <li><a href="/parts/did/conclusion3">Observations and outcomes obtained</a></li>
+    
+  
+    
+    <li><a href="/parts/did/correction-as-downdate">Correction as downdate</a></li>
+    
+  
+    
+    <li><a href="/parts/did/features-of-bears">Features of Bears</a></li>
+    
+  
+    
+    <li><a href="/parts/did/focus">Focus</a></li>
+    
+  
+    
+    <li><a href="/parts/did/index">Dispute in discourse</a></li>
+    
+  
+    
+    <li><a href="/parts/did/intro3">Introduction</a></li>
+    
+  
+    
+    <li><a href="/parts/did/observations-on-bears">Observations on *Bears*</a></li>
+    
+  
+    
+    <li><a href="/parts/did/outline3">Outline</a></li>
+    
+  
+    
+    <li><a href="/parts/did/pragmatics-plurals-partitions">Pragmatics of plurals and partitions</a></li>
+    
+  
+    
+    <li><a href="/parts/did/strictness-stickiness-shifts">Strictness, stickiness, and shifts</a></li>
+    
+  
+  </ul>
+
+  <div class="title">Observations on *Bears*</div>
+  <div class="subtitle">Dispute in discourse</div>
+  <div class="divider"></div>
+
+</div>
+
+<div class="page-content">
+  <div class="chapter-content">
+    <p>First, the <strong>B</strong> utterance in <em>Bears</em> is not a flat dismissal of <strong>A</strong>. Instead, it is a natural follow up, in that it seems to pick up on and develop a previously initiated theme. Another way to say this is that the <em>Bears</em> completion represents a <a id="coherence" href="/glossary#coherence" class="tooled gloss">coherent</a><span id="coherence-tip" class="tooltip glossary"><b>coherence</b>: Integration among utterances in a discourse. Coherence is related to truth conditional content and anaphora resolution in that language users have intutions about discourse coherence. Coherence is a gradeable concept.</span> advancement of the discourse. An ability to resolve a coherence relation among a group of utterances in a discourse is a crucial element of interpreting that discourse in context. A particularly salient coherence relation may force an interpretation to light. For instance, consider the following example due to Andrew Kehler (<a id="kehler2000" class="ref tooled" href="#ref-kehler2000"><span class="date"><span class="year">2000</span></span><span class="pages">,  539</span></a>):</p>
+
+<!-- Presidents -->
+<div class="def" id="presidents-ex"><div class="title"><span class="head">Example 15&nbsp;</span><span>(Presidents)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="content"># Bill likes to play golf. George hates broccoli.</span></div></div>
+</div></div>
+<div id="presidents-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Presidents</b><br />
+  <div class="example"><div class="item"><span class="content"># Bill likes to play golf. George hates broccoli.</span></div></div>
+</div>
+
+<p>The <a href="#presidents" id="presidents-show" class="tooled">Presidents</a> dialogue is marked to indicate that it can seem somewhat stilted, resembling two independent sentences rather than a coherent story line. However, if we point out that the subjects in the two sentences can refer to past presidents and interpret the predicates as picking out the subjects’ respective publicized traits, we impose a <em>parallel</em> relation on the two sentences and uptake goes through much more smoothly.</p>
+
+<p>Kehler suggests that coherence relations imbue a discourse with an additional meaning that goes beyond the sum of its individual parts. He also maintains that linguistic coherence is subject to a Neo-Humean classification based on the basic forms of connection between idea. All connections among ideas, David Hume suggests (<a id="hume1777" class="ref tooled" href="#ref-hume1777"><span class="date"><span class="year">1777/1999</span></span></a>), can be reduced to one of three principal ones: <em>Resemblance</em>, <em>Contiguity</em> in spacetime, and <em>Cause/Effect</em>.</p>
+
+<p>Hume’s reductive base is perhaps a bit too narrow. True, if we construe <em>resemblance</em> broadly enough, we can bring a wide swath of connections under its umbrella, but it seems to me that there are basic relations among ideas that Hume’s reduction leaves out – in particular, the set of relations corresponding to the <em>relative generality</em> of two ideas pertaining to the same domain. The relation of <em>part</em> to <em>whole</em> is a philosophical celebrity within the family of relative generality relations. That such a relation is a basic logical connection between ideas is emphasized by Goodman and Leonard (<a id="goodman1940" class="ref tooled" href="#ref-goodman1940"><span class="date"><span class="year">1940</span></span></a>) in their classic explication of the calculus of individuals:</p>
+
+<blockquote>
+  <p>“The relations of segments of the universe are treated in traditional logistic at two places, first in its theorems concerning the identity and diversity of individuals, and second in its calculus of membership and class-inclusion. But further relations of segments and of classes frequently demand consideration. For example, what is the relation of the class of windows to the class of buildings? No member of either class is a member of the other, nor are any of the segments isolated by the one concept identical with segments isolated by the other. Yet the classes themselves have a very definite relation in that each window is a part of some building. We cannot express this fact in the language of a logistic which lacks a part-whole relation between individuals unless, by making use of some special physical theory, we raise the logical type of each window and each building to the level of a class – say a class of atoms – such that any class of atoms that is a window will be included (class-inclusion) in some class that is a building. Such an unforutnate dependence of logical formulation upon the discovery and adoption of a special physical theory, or even upon the presumption that such a suitable theory could in every case be discovered in the course of time, indicates serious deficiencies in the ordinary logistic. Furthermore, a raising of type like that illustrated above is often precluded in a constructional system by other considerations govering the choice of pimitive ideas.” (<a id="goodman1940" class="ref tooled" href="#ref-goodman1940"><span class="date"><span class="year">1940</span></span><span class="pages">,  45</span></a>)</p>
+</blockquote>
+
+<p>The <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> completion, too, expresses a relative generality coherence relation. It is the flip-side of resemblance relations in that it highlights a <em>distinction</em> within a class that was previously over-looked. In moving from a coarser to a more granular conception of the sub-space of reality corresponding to beardom, the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue exhibits a relation of <a id="refinement" href="/glossary#refinement" class="tooled gloss">refinement</a><span id="refinement-tip" class="tooltip glossary"><b>refinement</b>: A connection among ideas in which the second idea highlights an over-looked distinction within the domain of the first idea. Belongs to the class of relative generality connections.</span> between the ideas expressed in its utterances.</p>
+
+<!-- Refinement -->
+<div class="def" id="refinement-obs"><div class="title"><span class="head">Observation 1&nbsp;</span><span>(Refinement)</span></div><div class="body fence">
+  <p>The <a href="#bears-ex">Bears</a> dialogue is <em>coherent</em>, exhibiting a relation of <em>refinement</em> between the first and second utterance.</p>
+
+</div></div>
+<div id="refinement-show-tip" class="tooltip defn">
+  <p>The <a href="#bears-ex">Bears</a> dialogue is <em>coherent</em>, exhibiting a relation of <em>refinement</em> between the first and second utterance.</p>
+
+</div>
+
+<p>To emphasize the coherent nature of the dialogue, I call the first utterance the <a id="initiation" href="/glossary#initiation" class="tooled gloss">initiation</a><span id="initiation-tip" class="tooltip glossary"><b>initiation</b>: An utterance that constitutes the opening phase of a contribution to inquiry. An initiation is paired with a completion, and the resulting discourse pair provides the contribution to the inquiry.</span> and the second utterance the <a id="completion" href="/glossary#completion" class="tooled gloss">completion</a><span id="completion-tip" class="tooltip glossary"><b>completion</b>: An utterance that constitutes the closing phase of a contribution to inquiry. A completion is paired with an initiation, and the resulting discourse pair provides the contribution to the inquiry.</span>.</p>
+
+<p>The function of coherence relations is to improve interprebility of the discourse by imposing a restriction on the space of possible conceptions of what the initial speaker is getting at, thereby making the selection procedure for how to respond operate more smoothly. And refinement genuinely does help thin the space of possibilities, as we can see from the following alternative continuation of the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> initiation:</p>
+
+<!-- Druggy bears -->
+<div class="def" id="druggy-bears-ex"><div class="title"><span class="head">Example 16&nbsp;</span><span>(Druggy bears)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content"># Bears [in a drug-induced stupor]<sub>cf</sub> are dangerous.</span></div></div>
+</div></div>
+<div id="druggy-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Druggy bears</b><br />
+  <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content"># Bears [in a drug-induced stupor]<sub>cf</sub> are dangerous.</span></div></div>
+</div>
+
+<p>While perhaps no less true than the original correction, I’ve marked the completion in <a href="#druggy-bears-ex" id="druggy-bears-show" class="tooled">Druggy bears</a> to indicate the increased processing load it carries.[^processingload] This, I suggest, is because the completion expresses a less natural refinement of the discourse domain. As a result, discourse coherence is reduced.</p>
+
+<p>The <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue may be coherent, but there is a distinctive, disputative tone its completion. Still, the nature of the dispute differs from that in, for instance:</p>
+
+<!-- Boars -->
+<div class="def" id="boars-ex"><div class="title"><span class="head">Example 17&nbsp;</span><span>(Boars)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">You mean <em>boars</em> are dangerous.</span></div></div>
+</div></div>
+<div id="boars-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Boars</b><br />
+  <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">You mean <em>boars</em> are dangerous.</span></div></div>
+</div>
+
+<p>In <a href="#boars-ex" id="boars-show" class="tooled">Boars</a>, the second utterance breaks the flow of inquiry to attempt to fix a perceived error in the preceding discourse. In this example, the disputative <em>You mean…</em> is used to signal an attempted <a id="repair-strategy" href="/glossary#repair-strategy" class="tooled gloss">repair strategy</a><span id="repair-strategy-tip" class="tooltip glossary"><b>repair strategy</b>: A linguistic move to attempt to highlight and adjust for a failure in uptake of a previous element of discourse. Frequently used to accommodate a missing presupposition.</span>.</p>
+
+<p>The observation that the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue exhibits coherent discourse suggests that the disputative tone of its completion ought not to be treated as signaling a break in the inquiry. Instead, imposing the refinement relation on the discourse eliminates the sense of fault on the part of the initiation in allowing for proper uptake. Instead, we interpret the completion utterance as a <a id="correction" href="/glossary#correction" class="tooled gloss">correction</a><span id="correction-tip" class="tooltip glossary"><b>correction</b>: An attempted contribution to inquiry that involves a <em>denial</em> of some element of the preceding attempted contribution to discourse and a <em>positive contribution</em> that is related in a salient way to the preceding attempted contribution.</span>, which is characterized by a dual function of providing: (i) a <em>denial</em> of some element of the preceding attempted contribution to discourse and (ii) a <em>positive contribution</em> that is related in a salient way to the preceding attempted contribution. A correcting utterance serves as an amendment to the discourse, and as such it crucially relies on the presence of an initiation. This is why discourse initial utterances rarely involve contrastive focus. A correct<em>ion</em> requires a correct<em>ible</em> to amend.</p>
+
+<!-- Correction -->
+<div class="def" id="correction-obs"><div class="title"><span class="head">Observation 2&nbsp;</span><span>(Correction)</span></div><div class="body fence">
+  <p>The completion phase of the <a href="#bears-ex">Bears</a> discourse serves to correct the initiation phase, which is iteself a <em>correctible</em> utterance.</p>
+
+</div></div>
+<div id="correction-show-tip" class="tooltip defn">
+  <p>The completion phase of the <a href="#bears-ex">Bears</a> discourse serves to correct the initiation phase, which is iteself a <em>correctible</em> utterance.</p>
+
+</div>
+
+<p>While the completion in the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue is a natural one, it certainly isn’t the only <a id="felicity" href="/glossary#felicity" class="tooled gloss">felicitous</a><span id="felicity-tip" class="tooltip glossary"><b>felicity</b>: A pragmatic judgement that an utterance is approapriate in the discourse context.</span> response to the initiation. It is open to the responder to challenge the initiation in another way, but interestingly, it is also open to the initiator to retrench in certain ways, as in the following alternate extension of the discourse:</p>
+
+<!-- Teddy bears -->
+<div class="def" id="teddy-bears-ex"><div class="title"><span class="head">Example 18&nbsp;</span><span>(Teddy bears)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">What about Teddy bears?</span></div><div class="item"><span class="name">A: </span><span class="content">I didn't mean <em>all</em> bears.</span></div></div>
+</div></div>
+<div id="teddy-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Teddy bears</b><br />
+  <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bears are dangerous.</span></div><div class="item"><span class="name">B: </span><span class="content">What about Teddy bears?</span></div><div class="item"><span class="name">A: </span><span class="content">I didn't mean <em>all</em> bears.</span></div></div>
+</div>
+
+<p><strong>A</strong>’s retrenchment in <em>Teddy bears</em> strikes my ear as an acceptable response to <strong>B</strong>’s challenge. It is similar to the data that Thony Gillies and Kai von Fintel (<a id="vonfintel2008" class="ref tooled" href="#ref-vonfintel2008"><span class="date"><span class="year">2008</span></span></a>) analyze in regard to retraction of <em>might</em> claims. Consider the following, drawn from (<a id="vonfintel2008" class="ref tooled" href="#ref-vonfintel2008"><span class="author">von Fintel and Gillies </span><span class="date"><span class="year">2008</span></span><span class="pages">,  81</span></a>):</p>
+
+<!-- Keys -->
+<div class="def" id="keys-ex"><div class="title"><span class="head">Example 19&nbsp;</span><span>(Keys)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">Alex: </span><span class="content">The keys might be in the drawer.</span></div><div class="item"><span class="name">Billy: </span><span class="content">(<em>Looks in the drawer.</em>) They're not. Why did you say that?</span></div><div class="item"><span class="name">Alex: </span><span class="content">I didn't say they <em>were</em> in the drawer. I said they <em>might be </em> there -- and they might have been. Sheesh.</span></div></div>
+</div></div>
+<div id="keys-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Keys</b><br />
+  <div class="example"><div class="item"><span class="name">Alex: </span><span class="content">The keys might be in the drawer.</span></div><div class="item"><span class="name">Billy: </span><span class="content">(<em>Looks in the drawer.</em>) They're not. Why did you say that?</span></div><div class="item"><span class="name">Alex: </span><span class="content">I didn't say they <em>were</em> in the drawer. I said they <em>might be </em> there -- and they might have been. Sheesh.</span></div></div>
+</div>
+
+<p><em>Might</em> claims are sometimes retracted when presented with countervailing evidence available in a different context from the original utterance. But as <a href="#keys-ex" id="keys-show" class="tooled">Keys</a> makes clear, <em>might</em> claims are ocassionally <em>resilient</em> in the face of such challenges. The felicity of the exchange in <a href="#teddy-bears-ex" id="teddy-bears-show" class="tooled">Teddy bears</a> suggests that correctible initiations exhibit similar resilience.</p>
+
+<!-- Resilience -->
+<div class="def" id="resilience-obs"><div class="title"><span class="head">Observation 3&nbsp;</span><span>(Resilience)</span></div><div class="body fence">
+  <p>The <a href="#bears-ex">Bears</a> initiation is <em>resilient</em>. In certain contexts, it is appropriate for the utterer of a correctible to refrain from retracting it in the face of a challenge.</p>
+
+</div></div>
+<div id="resilience-show-tip" class="tooltip defn">
+  <p>The <a href="#bears-ex">Bears</a> initiation is <em>resilient</em>. In certain contexts, it is appropriate for the utterer of a correctible to refrain from retracting it in the face of a challenge.</p>
+
+</div>
+
+<p>A corrolary to the resilience of correctible initiations is that corrective completions don’t simply link back to previous discourse and remove an element from the discourse representation. Instead, they add to the discourse in a specific way, thereby opening an avenue for the initial speaker to reject the alteration. That is, corrections are <em>productive</em>.</p>
+
+<!-- Productivity -->
+<div class="def" id="productivity-obs"><div class="title"><span class="head">Observation 4&nbsp;</span><span>(Productivity)</span></div><div class="body fence">
+  <p>The <a href="#bears-ex">Bears</a> completion is <em>productive</em>. It does not merely refer back to the initiation but extends the discourse in a distinctive way.</p>
+
+</div></div>
+<div id="productivity-show-tip" class="tooltip defn">
+  <p>The <a href="#bears-ex">Bears</a> completion is <em>productive</em>. It does not merely refer back to the initiation but extends the discourse in a distinctive way.</p>
+
+</div>
+
+<p>The exchange in <a href="#teddy-bears" id="teddy-bears-show" class="tooled">Teddy bears</a> reveals an additional interesting fact about disputative discourse. Even if it is appropriate for an initiator to refuse to retract a correctible, the challenge provided byt the correction is no less appropriate. The flip-side of the resilience of correctibles is that they are also highly susceptible to challenge.</p>
+
+<!-- Susceptibility -->
+<div class="def" id="susceptibility-obs"><div class="title"><span class="head">Observation 5&nbsp;</span><span>(Susceptibility)</span></div><div class="body fence">
+  <p>The <a href="#bears-ex">Bears</a> initiation is susceptible to challenge. In certain contexts, it is appropriate for an initiator’s interlocutors to challenge their attempted contribution.</p>
+
+</div></div>
+<div id="susceptibility-show-tip" class="tooltip defn">
+  <p>The <a href="#bears-ex">Bears</a> initiation is susceptible to challenge. In certain contexts, it is appropriate for an initiator’s interlocutors to challenge their attempted contribution.</p>
+
+</div>
+
+<p>The dual observations of <em>resilience</em> and <em>susceptibility</em> provide an interesting obstacle to an analysis of the semantics and discourse dynamics of disputative language. <em>Susceptibility</em> pushes us toward a more strict representation of the content of the initiation to make sense of why it is appropriate to offer a correction to it. That is, it seems that utterances <strong>A</strong> and <strong>B</strong> in <a href="#teddy-bears" id="teddy-bears-show" class="tooled">Teddy bears</a> represent a disagreement, and the most natural way to formalize disagreement is in terms of presentation of conflicting content.</p>
+
+<p>But <em>resilience</em> pushes in the opposite direction. The <strong>A</strong>’s retrenchment, in so far as it is appropriate, naturally suggests compatibility between the initiation and the completion, which pushes us toward a less strict interpretation of the initiation content. Navigating between the rock of a correctible’s tendency to elicit challenges and the hard place of their ability to withstand those challenges is a particularly interesting puzzle for a linguistic analysis of this type of discourse. But an adequate account should respect all of the observations catalogued above. To make them easier to refer to, all the observations are compiled below.</p>
+
+<!-- All observations -->
+<blockquote>
+
+  <p><strong>Refinement:</strong> The <a href="#bears-ex">Bears</a> dialogue is <em>coherent</em>, exhibiting a relation of <em>refinement</em> between the first and second utterance.</p>
+
+  <p><strong>Correction:</strong> The completion phase of the <a href="#bears-ex">Bears</a> discourse serves to correct the initiation phase, which is iteself a <em>correctible</em> utterance.</p>
+
+  <p><strong>Resilience:</strong> The <a href="#bears-ex">Bears</a> initiation is <em>resilient</em>. In certain contexts, it is appropriate for the utterer of a correctible to refrain from retracting it in the face of a challenge.</p>
+
+  <p><strong>Productivity:</strong> The <a href="#bears-ex">Bears</a> completion is <em>productive</em>. It does not merely refer back to the initiation but extends the discourse in a distinctive way.</p>
+
+  <p><strong>Susceptibility:</strong> The <a href="#bears-ex">Bears</a> initiation is susceptible to challenge. In certain contexts, it is appropriate for an initiator’s interlocutors to challenge their attempted contribution.</p>
+
+</blockquote>
+
+  </div>
+</div>
+
+<div class="page.end">
+  <div class="chapter-end" markdown="1">
+
+
+
+
+
+</div>
+
+</div>

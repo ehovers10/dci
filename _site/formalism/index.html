@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="jekyll" />
+
+  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <title>Formalism</title>
+
+  <link rel="canonical" href="http://erikhoversten.org/formalism/">
+  <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
+
+  
+    
+  
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+  <!-- Data-tables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+  <script src="/js/typology.js"></script>
+
+  <script src="/js/open.js"></script>
+  
+    <script src="/js/bunch.js"></script>
+  
+    <script src="/js/toc.js"></script>
+  
+  
+  <script src="/js/bibjs.js"></script>
+  <script src="/js/footnav.js"></script>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<div class="page-front">
+
+  
+<ul class="nav head">
+<li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
+<li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
+<li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>
+<ol class="nav2 hid" id="chap-hid" start=0>
+  
+  
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
+  
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
+  
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
+  
+  <li><a href="/practice/">Dispute in discourse</a></li>
+  
+</ol>
+<ul class="nav2 hid" id="appen-hid">
+  
+  
+  <li><a href="/bibliography/">Bibliography</a></li>
+  
+  <li><a href="/formalism/">Formalism</a></li>
+  
+  <li><a href="/glossary/">Glossary</a></li>
+  
+  <li><a href="/models-discourse/">Models of discourse</a></li>
+  
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
+  
+  <li><a href="/typologies/">Typologies</a></li>
+  
+</ul>
+</ul>
+
+
+  <div class="title">Formalism</div>
+  <div class="subtitle"></div>
+  <div class="divider"></div>
+
+  <div class="footnav">
+  <div class="button title">
+    Formalism
+  </div>
+  <div class="button">
+    <a href="#" class="pop" id="nav-pop" title="Site navigation"><img class="icon" src="/images/open-book.svg" /></a>
+    <div class="lightbox" id="nav-pop-hid">
+      <div class="popclose"></div>
+      <div class="popbox">
+        <div class="popmain">
+          <h4>Site navigation<h4>
+          
+<ul class="nav foot-pop">
+<li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
+
+<ol class="nav2" id="chap-hid" start=0>
+  Chapters
+  
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
+  
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
+  
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
+  
+  <li><a href="/practice/">Dispute in discourse</a></li>
+  
+</ol>
+<ul class="nav2" id="appen-hid">
+  Appendices
+  
+  <li><a href="/bibliography/">Bibliography</a></li>
+  
+  <li><a href="/formalism/">Formalism</a></li>
+  
+  <li><a href="/glossary/">Glossary</a></li>
+  
+  <li><a href="/models-discourse/">Models of discourse</a></li>
+  
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
+  
+  <li><a href="/typologies/">Typologies</a></li>
+  
+</ul>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="button">
+    <a href="#" class="pop" id="searchable-bib" title="Search sources"><img class="icon" src="/images/magnifying-glass.svg" /></a>
+  </div>
+  <div class="button">
+    <a href="#" id="totop" title="Return to top"><img class="icon" src="/images/chevron-with-circle-up.svg" /></a>
+  </div>
+</div>
+
+</div>
+
+<div class="page-content">
+
+  <script type="text/javascript">
+$(document).ready(function() {
+    $('.toc-table').toc();
+});
+</script>
+<div class="bunch">
+
+<ul class="body-nav">
+  <li><a href="#" class="types">Types</a></li>
+  <li><a href="#" class="pragmatics">Pragmatics</a></li>
+  <li><a href="#" class="semstructure">Semantic Structure</a></li>
+  <li><a href="#" class="semrules">Semantic Rules</a></li>
+  <li><a href="#" class="model">A Model</a></li>
+  <!--<li><a href="#" class="relations">Predication in <span class="set">CU</span></a></li>
+  <li><a href="#" class="definitions">Definitions</a></li>-->
+</ul>
+
+<div class="area types">
+  <h2>Types</h2>
+  <div class="molecule">
+    <div class="atom">
+      <div class="title">All types</div>
+      <ul class="setlist">
+      
+        <li>
+          <a href="#" id="situations" class="tooled">s</a>
+          <span id="situations-tip" class="tooltip defn">situations</a>
+        </li>
+      
+        <li>
+          <a href="#" id="individuals" class="tooled">e</a>
+          <span id="individuals-tip" class="tooltip defn">individuals</a>
+        </li>
+      
+        <li>
+          <a href="#" id="truth-values" class="tooled">t</a>
+          <span id="truth-values-tip" class="tooltip defn">truth values</a>
+        </li>
+      
+        <li>
+          <a href="#" id="propositional-completions" class="tooled">&chi;</a>
+          <span id="propositional-completions-tip" class="tooltip defn">propositional completions</a>
+        </li>
+      
+        <li>
+          <a href="#" id="discourse-change-records" class="tooled">&rho;</a>
+          <span id="discourse-change-records-tip" class="tooltip defn">discourse change records</a>
+        </li>
+      
+        <li>
+          <a href="#" id="conversational-scoreboards" class="tooled">&sigma;</a>
+          <span id="conversational-scoreboards-tip" class="tooltip defn">conversational scoreboards</a>
+        </li>
+      
+        <li>
+          <a href="#" id="complex" class="tooled">(&alpha;&beta;): &alpha;,&beta; &isin; <span class='set'>T</span></a>
+          <span id="complex-tip" class="tooltip defn">complex</a>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+  <div class="molecule">
+    <div class="atom">
+      <div class="title">Discourse referent types</div>
+      <ul class="setlist">
+      
+        <li>
+          <a href="#" id="situations" class="tooled">s</a>
+          <span id="situations-tip" class="tooltip defn">situations</a>
+        </li>
+      
+        <li>
+          <a href="#" id="common-ground-partitions" class="tooled">&pi; = (st)t</a>
+          <span id="common-ground-partitions-tip" class="tooltip defn">common ground partitions</a>
+        </li>
+      
+        <li>
+          <a href="#" id="propositional-completions" class="tooled">&chi;</a>
+          <span id="propositional-completions-tip" class="tooltip defn">propositional completions</a>
+        </li>
+      
+        <li>
+          <a href="#" id="propositional-radicals" class="tooled">&xi; = &chi;(st)</a>
+          <span id="propositional-radicals-tip" class="tooltip defn">propositional radicals</a>
+        </li>
+      
+        <li>
+          <a href="#" id="discourse-change-records" class="tooled">&rho;</a>
+          <span id="discourse-change-records-tip" class="tooltip defn">discourse change records</a>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="area pragmatics" style="display:none;">
+  <h2>Pragmatics</h2>
+  
+    
+    <div class="molecule" id="drs"><div class="title">Drs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn drswrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="dref">&phi;<sup>d</sup></div><div class="conditions">&phi;<sup>c</sup></div><div class="post"><span class='drs right top bottom'></span></div></div></span></div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">a discourse representation structure (DRS)</div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="drefs"><div class="title">Drefs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;<sup>d</sup></div><div class="conn">is</div><div class="rhs">a sequence of drefs introduced in the discourse</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="conditions"><div class="title">Conditions</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;<sup>c</sup></div><div class="conn">is</div><div class="rhs">a sequence of conditions, imposing constraints on the <br>model against which sentences are evaluated</div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="contributions"><div class="title">Contributions</div><div class="atom"><span class="categorical">For all <span>a sentence S</span>, <span>uttered in discourse D</span>, <span>represented by DRS &phi;</span>, </span></div><div class="atom"><div class="molecule" id="drefs"><div class="title">Drefs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">S<sup>d</sup></div><div class="conn">is</div><div class="rhs">the sequence of drefs contributed by S,</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="conditions"><div class="title">Conditions</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">S<sup>c</sup></div><div class="conn">is</div><div class="rhs">the sequence of conditions contributed by S.</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="sentences"><div class="title">Sentences</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">D &rArr; S</div><div class="conn">=</div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="dref">&phi;<sup>d</sup> &oplus; S<sup>d</sup></div><div class="conditions">&phi;<sup>c</sup> &oplus; S<sup>c</sup></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="information-state"><div class="title">Information state</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i</span><span class="bit"><span class='set'>R</span></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">sand</div><div class="post">&#x27e9;</div></div></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">rec</div><div class="post">&#x27e9;</div></div></span></div><div class="post">&#x27e9;</div></div></div><div class="conn">is</div><div class="rhs">an information state for the discourse</div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="common-ground"><div class="title">Common ground</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">i : s</div><div class="conn">is</div><div class="rhs">the common ground</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="relation-set"><div class="title">Relation set</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>R</span> : (&pi;t)</div><div class="conn">is</div><div class="rhs">a set of partitions of the common ground</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="drefs"><div class="title">Drefs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div></div><div class="conn">is</div><div class="rhs">a sequence of discourse referents</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="sandbox"><div class="title">Sandbox</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">sand</div><div class="post">&#x27e9;</div></div></div><div class="conn">is</div><div class="rhs">a sequence of propositional radical/completion pairs <br>representing the collaborative space of the discourse</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="record"><div class="title">Record</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">rec</div><div class="post">&#x27e9;</div></div></div><div class="conn">is</div><div class="rhs">a sequence of discourse referents of type &sigma; that <br>provides a record of changes made to the information <br>state throughout the discourse</div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="cooperative-update"><div class="title">Cooperative update</div><div class="atom"><div class="molecule" id="informative-update"><div class="title">Informative update</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn drswrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="dref">&nbsp;</div><div class="conditions">C<sub>st</sub></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">i</div><div class="conn">&#x22C2;</div><div class="rhs"><span class="bit"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">C<sub>st</sub></div><div class="post">&#x27e7;</div></div><div class="after"><sup>i</sup></div></span></div><div class="post"></div></div></span><span class="bit">&lambda;&sigma;( i<sub>&sigma;</sub> &#x22C2; C<sub>s</sub> = i<sub>&sigma;</sub> )</span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="structuring-update"><div class="title">Structuring update</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn drswrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="dref">&nbsp;</div><div class="conditions">C<sub>(st)t</sub></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>R</span></div><div class="conn">&#x22Ca;</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">C<sub>(st)t</sub></div><div class="post">&#x27e7;</div></div><div class="after"><sup><span class='set'>R</span></sup></div></div><div class="post"></div></div></span><span class="bit">&lambda;&sigma;( <span class='set'>R</span><sup>&sigma;</sup> &#x22C2; C<sub>st</sub> = <span class='set'>R</span><sub>&sigma;</sub> )</span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="dref-introduction"><div class="title">Dref introduction</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn drswrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="dref">u<sub>1</sub>..u<sub>n</sub></div><div class="conditions">&nbsp;</div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">u<sub>1</sub>..u<sub>n</sub></div><div class="conn">&#x29c0;</div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div></div><div class="post"></div></div></span><span class="bit">&lambda;&sigma;( &forall;(k &isin; [0..n])( &delta;<sub>&sigma;</sub>[k] = <span class='var'>g</span>(u<sub>k</sub> ) )</span></div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="collaborative-update"><div class="title">Collaborative update</div><div class="atom"><div class="molecule" id="initialization"><div class="title">Initialization</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>init</sup></div><div class="conn">&#x21a5;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>&sigma;</sub></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>sand</sub></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="propagation"><div class="title">Propagation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>prop</sup></div><div class="conn">&#x21a6;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="dref"><span class='var'>dref</span><sup>prop</sup></div><div class="conditions">U<sup>prop</sup><sub>(st)t</sub></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="present"><div class="title">Present</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>dref</span><sup>prop</sup></div><div class="conn">&#x29c0;</div><div class="rhs"><span class='set'>dref</span><sup>sand</sup></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="partition"><div class="title">Partition</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>R</span><sup>prop</sup></div><div class="conn">&#x22CA;</div><div class="rhs"><span class='set'>R</span><sup>sand</sup></div><div class="post"></div></div></div></div></div></div></div><div class="atom"><div class="molecule" id="merge"><div class="title">Merge</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>merge</sup></div><div class="conn">&#x21a7;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">i<sub><span class='set'R</span></sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">dref<sub>&sigma;</sub> += dref<sub>sand</sub></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="speech-acts"><div class="title">Speech acts</div><div class="atom"><span class="categorical">For all <span><span class='var'>I</span> : &sigma;</span>, <span><span class='var'>U</span>, an utterance in discourse</span>, </span></div><div class="atom"><div class="molecule" id="assert"><div class="title">Assert</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>I</span></sub></div><div class="conn">&rArr;</div><div class="rhs"><span class='speechact'>!</span>U</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><div class="before"><span class='var'>I</span></div><div class="fxn upwrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="question"><div class="title">Question</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>I</span></sub></div><div class="conn">&rArr;</div><div class="rhs"><span class='speechact'>?</span>U</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><div class="before"><span class='var'>I</span></div><div class="fxn upwrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="conjecture"><div class="title">Conjecture</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>I</span></sub></div><div class="conn">&rArr;</div><div class="rhs"><span class='speechact conjecture'>&#x25b5;&#x323;</span>U</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><div class="before"><span class='var'>I</span></div><div class="fxn upwrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="correct"><div class="title">Correct</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>I</span></sub></div><div class="conn">&rArr;</div><div class="rhs"><span class='speechact correct'>&#x25bf;&#x323;</span>U</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><div class="before"><span class='var'>I</span></div><div class="fxn upwrap"><div class="pre"><span class='drs left top bottom'></span></div><div class="post"><span class='drs right top bottom'></span></div></div></div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="bare-plurals"><div class="title">Bare plurals</div><div class="atom"><span class="categorical">For all <span>Ps : et</span>, <span>Q : et</span>, </span></div></div>
+  
+</div>
+
+<div class="area semstructure" style="display:none;">
+  <h2>Semantic structure</h2>
+  
+    
+    <div class="molecule" id="primitives"><div class="title">Primitives</div><div class="atom"><div class="molecule" id="constants"><div class="title">Constants</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>Cons</span></div><div class="conn">is</div><div class="rhs">a set of sets of constants of each type in <span class='set'>T</span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="variables"><div class="title">Variables</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>Vars</span></div><div class="conn">is</div><div class="rhs">a set of sets of variables of each type in <span class='set'>T</span></div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="semantic-value"><div class="title">Semantic value</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&middot;</div><div class="post">&#x27e7;</div></div><div class="after"><span class="bit"><span class='var sup'>i</span></span><span class="bit"><span class='var sup'>g</span></span><span class="bit"><span class='set sup'>M</span></span></div></div><div class="conn">is</div><div class="rhs">the semantic value function</div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="index-of-evaluation"><div class="title">Index of evaluation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>i</span></div><div class="conn">:</div><div class="rhs">s</div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">an index of evaluation</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="assignment-function"><div class="title">Assignment function</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>g</span></div><div class="conn">:</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>Vars</span></div><div class="conn">&rarr;</div><div class="rhs"><span class='set'>D</span></div><div class="post"></div></div></div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">an assignment function</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="model"><div class="title">Model</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>M</span></div><div class="conn">=</div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit"><span class='set'>D</span></span><span class="bit"><span class='set'>V</span></span></div><div class="post">&#x27e9;</div></div></div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">a model for the language</div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="universe"><div class="title">Universe</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>D</span></div><div class="conn">=</div><div class="rhs"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>e</span></div><div class="conn">&isin;</div><div class="rhs"><span class='set'>D</span><sub>&alpha;</sub></div><div class="post"></div></div></div><div class="post">}</div></div></div><div class="conn">:</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&alpha;</div><div class="conn">&isin;</div><div class="rhs"><span class='set'>T</span></div><div class="post"></div></div></div><div class="post"></div></div></div><div class="post">}</div></div></div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">a type structured universe of the discourse</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="valuation"><div class="title">Valuation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>V</span></div><div class="conn">:</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>Cons</span></div><div class="conn">&rarr;</div><div class="rhs"><span class='set'>D</span></div><div class="post"></div></div></div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">a valuation function that assigns type-relevant objects <br>to each constant</div><div class="post"></div></div></div></div></div></div></div></div>
+  
+</div>
+
+<div class="area semrules" style="display:none;">
+  <h2>Semantic rules</h2>
+  
+    
+    <div class="molecule" id="primitives"><div class="title">Primitives</div><div class="atom"><span class="categorical">For all <span><span>&alpha;</span><span>&isin;</span><span>T</span></span>, <span><span>c</span><span>&alpha;</span><span>&isin;</span><span class='var'>Cons</span></span>, <span><span>u</span><span>&alpha;</span><span>&isin;</span><span class='var'>Vars</span></span>, </span></div><div class="atom"><div class="molecule" id="constants"><div class="title">Constants</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">c<sub>&alpha;</sub></div><div class="post">&#x27e7;</div></div><div class="after"><span class='set sup'>M</span></div></div><div class="conn">=</div><div class="rhs"><span class='set'>V</span>(c<sub>&alpha;</sub>)</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="variables"><div class="title">Variables</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">u<sub>&alpha;</sub></div><div class="post">&#x27e7;</div></div><div class="after"><span class='var sup'>g</span></div></div><div class="conn">=</div><div class="rhs"><span class='var'>g</span>(u<sub>&alpha;</sub>)</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="top"><div class="title">Top</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&top;<sub>&alpha;</sub></div><div class="post">&#x27e7;</div></div></div><div class="conn">=</div><div class="rhs"><span class='set'>D</span><sub>&alpha;</sub></div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="application"><div class="title">Application</div><div class="atom"><span class="categorical">For all <span><span>&alpha;</span><span>&isin;</span><span>T</span></span>, <span><span>u</span><sub>&alpha;</sub><span>&isin;</span><span class='var'>Vars</span></span>, <span></span><span>d</span><sub>&alpha;</sub><span>&isin;</span><span class='set'>D</span></span>, <span><span>terms</span><span>A</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&lambda;u<sub>&alpha;</sub>(A)</div><div class="post">&#x27e7;</div></div><div class="after"><span class='var sup'>g</span></div></div><div class="conn">=</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">A</div><div class="post">&#x27e7;</div></div><div class="after"><span class='sup'><span class='var'>g</span>[u<sub>&alpha;</sub>&rarr;d]</span></div></div><div class="post"></div></div></div></div>
+  
+    
+    <div class="molecule" id="identity"><div class="title">Identity</div><div class="atom"><span class="categorical">For all <span><span>&alpha;</span><span>&isin;</span><span class='set'>T</span></span>, <span><span>terms</span><span>A</span><span>and</span><span>B</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A<sub>&alpha;</sub></div><div class="conn">=</div><div class="rhs">B<sub>&alpha;</sub></div><div class="post"></div></div></div><div class="post">&#x27e7;</div></div></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">A<sub>&alpha;</sub></div><div class="post">&#x27e7;</div></div></div><div class="conn">=</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">B<sub>&alpha;</sub></div><div class="post">&#x27e7;</div></div></div><div class="post"></div></div></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
+  
+    
+    <div class="molecule" id="booleans"><div class="title">Booleans</div><div class="atom"><span class="categorical">For all <span>A : (et)</span>, <span>B : (et)t</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&not;&phi;</div><div class="post">&#x27e7;</div></div></div><div class="conn">=</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="bit"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&top;</div><div class="post">&#x27e7;</div></div></span></div><div class="conn">/</div><div class="rhs">&phi;</div><div class="post"></div></div></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;&and;&psi;</div><div class="post">&#x27e7;</div></div></div><div class="conn">=</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;</div><div class="post">&#x27e7;</div></div></div><div class="conn">&#x22C2;</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&psi;</div><div class="post">&#x27e7;</div></div></div><div class="post"></div></div></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;&or;&psi;</div><div class="post">&#x27e7;</div></div></div><div class="conn">=</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;</div><div class="post">&#x27e7;</div></div></div><div class="conn">&#x22C3;</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&psi;</div><div class="post">&#x27e7;</div></div></div><div class="post"></div></div></div><div class="post"></div></div></div></div>
+  
+    
+    <div class="molecule" id="quantifiers"><div class="title">Quantifiers</div><div class="atom"><span class="categorical">For all <span>u<sub>e</sub>&isin;<span class='var'>Vars</span></span>, <span>&phi; : (st)</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&forall;u<sub>e</sub>&phi;</div><div class="post">&#x27e7;</div></div><div class="after"><span class='var sup'>g</span></div></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;</div><div class="post">&#x27e7;</div></div><div class="after"><span class='sup'><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</span></div></div><div class="conn">=</div><div class="rhs">1 for all u<sub>e</sub></div><div class="post"></div></div></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&exist;u<sub>e</sub>&phi;</div><div class="post">&#x27e7;</div></div><div class="after"><span class='var sup'>g</span></div></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;</div><div class="post">&#x27e7;</div></div><div class="after"><span class='sup'><span class='var'>g</span>[x&rarr;u<sub>e</sub>]</span></div></div><div class="conn">=</div><div class="rhs">1 for some u<sub>e</sub></div><div class="post"></div></div></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
+  
+    
+    <div class="molecule" id="bare-plurals"><div class="title">Bare plurals</div><div class="atom"><span class="categorical">For all <span>A : (et)</span>, <span>B : (et)t</span>, <span><span class='set'>R</span> : &pi;</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&forall;<sub><span class='set'>R</span></sub>(A)(B)</div><div class="post">&#x27e7;</div></div></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">A</div><div class="post">&#x27e7;</div></div></div><div class="conn">&isin;</div><div class="rhs"><span class='set'>R</span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">A</div><div class="post">&#x27e7;</div></div></div><div class="conn">&sube;</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">B</div><div class="post">&#x27e7;</div></div></div><div class="post"></div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
+  
+</div>
+
+<div class="area model" style="display:none;">
+  <h2>A model</h2>
+  
+    
+    <div class="molecule" id="domains"><div class="title">Domains</div><div class="atom"><div class="molecule" id="situations"><div class="title">Situations</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>D</span><sub><span class='var'>s</span></sub></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit"><span class='var'>s</span><sub>1</sub></span><span class="bit"><span class='var'>s</span><sub>2</sub></span><span class="bit"><span class='var'>s</span><sub>3</sub></span><span class="bit">&hellip;</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="individuals"><div class="title">Individuals</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>D</span><sub><span class='var'>e</span></sub></div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span><span class="bit">b</span><span class="bit">c</span><span class="bit">d</span><span class="bit">e</span><span class="bit">&hellip;</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></div></div></div></div>
+  
+    
+    <div class="molecule" id="predicates"><div class="title">Predicates</div><div class="atom"><div class="molecule" id="bears"><div class="title">Bears</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>V</span>(<span class='var'>bears</span>)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>1</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span><span class="bit">b</span><span class="bit">e</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>2</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span><span class="bit">b</span><span class="bit">c</span><span class="bit">d</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>3</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="dangerous"><div class="title">Dangerous</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>V</span>(<span class='var'>dangerous</span>)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>1</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span><span class="bit">b</span><span class="bit">d</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>2</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>3</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">b</span><span class="bit">d</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="grizzly"><div class="title">Grizzly</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>V</span>(<span class='var'>grizzly</span>)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>1</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>2</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span><span class="bit">c</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>3</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">a</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="koala"><div class="title">Koala</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>V</span>(<span class='var'>koala</span>)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>1</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">b</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>2</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">b</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>3</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">b</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="polar"><div class="title">Polar</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='set'>V</span>(<span class='var'>polar</span>)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>1</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">&nbsp;</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>2</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">d</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class='var'>s</span><sub>3</sub></div><div class="conn">&rArr;</div><div class="rhs"><span class="bit"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><span class="bit">e</span></div><div class="post">}</div></div></span></div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div></div>
+  
+</div>
+
+<!--<div class="area relations" style="display:none;">
+  <h2>Predication in <span class='set'>CU</span></h2>
+</div>
+
+<div class="area definitions" style="display:none;">
+  <h2>Definitions</h2>
+
+</div>-->
+
+</div>
+
+
+</div>
+
+<div class="page-end">
+
+  <footer class="site-footer">
+
+<div class="footer-col-wrapper">
+  <div class="footer-col  footer-col-1">
+    <span><a href="/">Discourse as collaborative inquiry</a></span>
+    <ul class="social-media-list">
+      
+      <li>
+        <a href="mailto:ehovers10@gmail.com">
+          <img class="icon" src="/images/mail.svg" />
+          <span class="username">ehovers10@gmail.com</span>
+        </a>
+      </li>
+      
+
+      
+      <li>
+        <a href="https://github.com/ehovers10">
+          <img class="icon" src="/images/github.svg" />
+          <span class="username">ehovers10</span>
+        </a>
+      </li>
+      
+
+      
+
+      
+      <li>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img class="icon" src="/images/creative-commons.svg" />
+          <img class="icon" src="/images/creative-commons-attribution.svg" />        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="footer-col  footer-col-2"></div>
+
+  <div class="footer-col  footer-col-3">
+    <span>I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.</span>
+  </div>
+</div>
+
+</footer>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

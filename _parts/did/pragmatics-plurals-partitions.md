@@ -142,22 +142,28 @@ The initiation utterance of the [Bears](#bears-ex){: #bears-show .tooled} dialog
 
 The homogeneity presupposition operates on the result of the predication in three stages. First, it implements a structuring update, grouping the table by value of the **sit** attribute. Second, it performs an aggregation and comparisonfunction on the **ent** and **subj** attributes within each group. This consists of counting the number of **ent** of any value, and the number of **subj** of positive value, and comparing them. Groups for for which either the **ent** count equals the **subj** count or the **subj* count is zero pass through; other groups are rejected. The final phase is a restriction, where rejected groups are eliminated from the table.
 
+{% comment %}
 {% table Standard plural predication %}
   {{ "Standard plural predication" | popbox: "snippets" }}
 {% endtable %}
+{% endcomment %}
 
 The use of contrastive focus in the follow up performs three roles. The first two roles pertain to the modification of the subject. First, it introduces the alternative set of the modifier expression. The focus tells us to fill the modifer attribute with values drawn from the alternative set, rather than simple on/off values of an ordinary semantic value. Subject modification is implemented by a function that takes this focus derived modifier table and the unmodified subject table as inputs and outputs their *full outer join*. The full outer join is significant. Since it keeps rows from the modifier table even when there is no shared **ent** in the subject table, as well as vice versa, this is a way for the continuation utterance to genuinely *correct* the initiation. It may add rows to the table for which the original table made no evaluation.
 
 The second role of contrastive focus is to mark the utterance as a continuation, thus linking it to the previous presentation in the sandbox. We represent this by a *refinement*, in which we **project** just the **sit**, **ent**, and **mod** attributes, renaming the **mod** attribute to **subj**. Thus, the continuation is fully integrated.
 
+{% comment %}
 {% table Contrastive modification %}
   {{ "Contrastive modification" | popbox: "snippets" }}
 {% endtable %}
+{% endcomment %}
 
 Once we have the refined subject in place, we can use it as input to the right outer join implemented by the plural predication of the continuation. The final role of contrastive focus is to overwrite the default homogeneity presupposition, indicating the nature of the structuring update it substitutes -- a partition along the lines of the alternative set of the focused element. This is performed by a grouping operation. In standard plural predication, we only needed to group by the **sit** attribute, but this simplification was made possible by the nature of the values in the **subj** attribute. Since being a bear was taken as an on/off property, and the model determines only its positive extension, there was no need to refine our grouping in order to implement the comparison. The situation is more complex, however, in the case of contrastive plural predication. Here, our presupposition demands that dangerousness be uniform across type of bear. This means that we must additionally group by **subj**
 values in order to get the appropriate comparison. We should thus view standard plural predication as a degenerative case of homogeneity presupposition, where there is only one value group within the **subj** attribute.
 
+{% comment %}
 {% table Corrective update %}{{ "Corrective update" | popbox: "snippets" }}{% endtable %}
+{% endcomment %}
 
 The final, presupposition-restricted table is stored in the structuring component **R** of the sandbox information state. And it is this relation against which the semantic value of the contribution will be evaluated.
 

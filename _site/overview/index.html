@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="jekyll" />
+
+  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <title>Conjecture, Distributed Contributions, and Update Semantics</title>
+
+  <link rel="canonical" href="http://erikhoversten.org/overview/">
+  <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
+
+  
+    
+  
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+  <!-- Data-tables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+  <script src="/js/typology.js"></script>
+
+  <script src="/js/open.js"></script>
+  
+    <script src="/js/toc.js"></script>
+  
+  
+    <script src="/js/toc2.js"></script>
+  
+  <script src="/js/bibjs.js"></script>
+  <script src="/js/footnav.js"></script>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<div class="page-front">
+
+  
+<ul class="nav head">
+<li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
+<li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
+<li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>
+<ol class="nav2 hid" id="chap-hid" start=0>
+  
+  
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
+  
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
+  
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
+  
+  <li><a href="/practice/">Dispute in discourse</a></li>
+  
+</ol>
+<ul class="nav2 hid" id="appen-hid">
+  
+  
+  <li><a href="/bibliography/">Bibliography</a></li>
+  
+  <li><a href="/formalism/">Formalism</a></li>
+  
+  <li><a href="/glossary/">Glossary</a></li>
+  
+  <li><a href="/models-discourse/">Models of discourse</a></li>
+  
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
+  
+  <li><a href="/typologies/">Typologies</a></li>
+  
+</ul>
+</ul>
+
+
+  <div class="title">Conjecture, Distributed Contributions, and Update Semantics</div>
+  <div class="subtitle"></div>
+  <div class="divider"></div>
+
+  <div class="footnav">
+  <div class="button title">
+    Conjecture, Distributed Contributions, and Update Semantics
+  </div>
+  <div class="button">
+    <a href="#" class="pop" id="nav-pop" title="Site navigation"><img class="icon" src="/images/open-book.svg" /></a>
+    <div class="lightbox" id="nav-pop-hid">
+      <div class="popclose"></div>
+      <div class="popbox">
+        <div class="popmain">
+          <h4>Site navigation<h4>
+          
+<ul class="nav foot-pop">
+<li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
+
+<ol class="nav2" id="chap-hid" start=0>
+  Chapters
+  
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
+  
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
+  
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
+  
+  <li><a href="/practice/">Dispute in discourse</a></li>
+  
+</ol>
+<ul class="nav2" id="appen-hid">
+  Appendices
+  
+  <li><a href="/bibliography/">Bibliography</a></li>
+  
+  <li><a href="/formalism/">Formalism</a></li>
+  
+  <li><a href="/glossary/">Glossary</a></li>
+  
+  <li><a href="/models-discourse/">Models of discourse</a></li>
+  
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
+  
+  <li><a href="/typologies/">Typologies</a></li>
+  
+</ul>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="button">
+    <a href="#" class="pop" id="toc-pop" title="Page contents"><img class="icon" src="/images/list.svg" /></a>
+    <div class="lightbox" id="toc-pop-hid">
+      <div class="popclose"></div>
+      <div class="popbox">
+        <div class="popmain">
+          <h4>Table of contents</h4>
+          <div class="toc-table"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="button">
+    <a href="#" class="pop" id="searchable-bib" title="Search sources"><img class="icon" src="/images/magnifying-glass.svg" /></a>
+  </div>
+  <div class="button">
+    <a href="#" id="totop" title="Return to top"><img class="icon" src="/images/chevron-with-circle-up.svg" /></a>
+  </div>
+</div>
+
+</div>
+
+<div class="page-content">
+
+  
+
+<div class="chapter-front">
+  
+    <div class="subtitle">Abstract</div>
+    <div class="abstract body fence"><p>I contend that exploring the speech act of <em>conjecture</em> reveals that discourse is a collaborative effort in which interlocutors contribute in parallel rather than just serially. To capture this, we must take the basic component of discourse update to be the <em>distributed contribution</em>, the initiation of which may be made by a different interlocutor than the completion. I motivate the development of an model of the conversational scoreboard that is expanded to accommodate distributed contributions by examining David Lewis’ conception of language modeling. And I offer the framework for a formal system based on update semantics and augmented with a sandbox – an isolated workspace within which interlocutors can hash out their collaborative efforts.</p>
+</div>
+  
+
+  <div class="subtitle">Table of contents</div>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('.toc-table').toc();
+  });
+  </script>
+  <div class="toc-table abstract body fence"></div>
+  <div class="divider"></div>
+
+</div>
+
+<div class="chapter-content">
+  <h1 id="from-cooperation-to-collaboration">From cooperation to collaboration</h1>
+
+<p>One important function of <a id="discourse" href="/glossary#discourse" class="tooled gloss">discourse</a><span id="discourse-tip" class="tooltip glossary"><b>discourse</b>: A communicative exchange among two or more people.</span> is to serve as a <em>cooperative exchange of information</em>.  In this capacity, discourses involve two or more individuals engaged in a project of increasing their mutual knowledge by using each other’s stock of information to augment their own. In this form, discourse implements a jointly undertaken <a id="inquiry" href="/glossary#inquiry" class="tooled gloss">inquiry</a><span id="inquiry-tip" class="tooltip glossary"><b>inquiry</b>: The enterprise of forming, testing, and revising beliefs.</span>, which in the words of Robert Stalnaker is, “the enterprise of forming, testing, and revising beliefs” (<a id="stalnaker1987" class="ref tooled" href="#ref-stalnaker1987"><span class="date"><span class="year">1987</span></span><span class="pages">,  p. ix</span></a>).</p>
+
+<p>Discourse that implements a joint inquiry is <a id="cooperation" href="/glossary#cooperation" class="tooled gloss">cooperative</a><span id="cooperation-tip" class="tooltip glossary"><b>cooperation</b>: Alignment of the contributions of two or more individuals engaged in a joint activity. Each person ensures that their contribution accords with the contributions that have come previously and anticipates contributions to come.</span> in the sense of Paul Grice, who suggests that that basic maxim of conversation is “make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged” (<a id="grice1989" class="ref tooled" href="#ref-grice1989"><span class="author">Grice </span><span class="date"><span class="year">1989</span></span></a>). A speaker presents some content in a way that makes room for responses that she anticipates her <a id="interlocutor" href="/glossary#interlocutor" class="tooled gloss">interloctors</a><span id="interlocutor-tip" class="tooltip glossary"><b>interlocutor</b>: Any participant in a discourse.</span> are able to provide. A hearer considers the contribution, adds it to her personal model of the conversation, and adjusts her response to accord with the expanded model. The process iterates with the discourse participants alternating roles, always trying to make their contribution fit with what has predeeded it.</p>
+
+<p>But discourse isn’t just cooperative in this sense – it is frequently <a id="collaboration" href="/glossary#collaboration" class="tooled gloss">collaborative</a><span id="collaboration-tip" class="tooltip glossary"><b>collaboration</b>: Integrated action of two or more individuals engaged in a joint activity. Each person provides an essential element to the contribution.</span>. To explain the distinction, let’s consider a metaphor:</p>
+
+<div class="def" id="wall-building-ex"><div class="title"><span class="head">Example 1&nbsp;</span><span>(Wall Building)</span></div><div class="body fence">
+<p>You and I are set to build a stone wall. We have before us a pile of stones of various sizes, as well as mortar and wheel-barrows and other tools necessary for the job. Some of the stones are small enough for a single person to move into position. To productively add these stones to the wall, one of us need only recognize the positioning of previously laid stones and place the new stone next to them in a neat fashion. This requries that we <em>cooperate</em> with each other in our placement of smaller stones. But some of the stones are quite large; they require us both to lift in unison and carefully place into position on the wall. To get these stones in place, we must the willing to <em>collaborate</em> in our efforts. While placing these larger stones requires an increased demand on coordination, the having them in place is potentially greatly minimizes the overall effort required to bring our wall building task to a close.</p>
+</div></div>
+<div id="wall-building-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Wall Building</b><br />
+You and I are set to build a stone wall. We have before us a pile of stones of various sizes, as well as mortar and wheel-barrows and other tools necessary for the job. Some of the stones are small enough for a single person to move into position. To productively add these stones to the wall, one of us need only recognize the positioning of previously laid stones and place the new stone next to them in a neat fashion. This requries that we *cooperate* with each other in our placement of smaller stones. But some of the stones are quite large; they require us both to lift in unison and carefully place into position on the wall. To get these stones in place, we must the willing to *collaborate* in our efforts. While placing these larger stones requires an increased demand on coordination, the having them in place is potentially greatly minimizes the overall effort required to bring our wall building task to a close.
+</div>
+
+<p>In many ways, inquiry is a similar endeavor to wall-building. <a id="information" href="/glossary#information" class="tooled gloss">Information</a><span id="information-tip" class="tooltip glossary"><b>information</b>: Any bit of data about the world (an event or state-of-affairs) that is communicable and available to cognition. Also, the content of a contribution in discourse.</span> takes the place of stones as the building blocks participants collectively heft, and <a id="not-found" href="/glossary#not-found" class="tooled gloss">utterances</a><span id="not-found-tip" class="tooltip glossary"><b>Word not found</b>: </span> take the place of hands and wheelbarrows as the conveyances of the building materials. Finally, our metaphor maps resolution of the <a id="issue" href="/glossary#issue" class="tooled gloss">issue</a><span id="issue-tip" class="tooltip glossary"><b>issue</b>: An uncertainty within the common ground. A bit of information that is lacking. A set of alternatives none of which is settled upon as correct.</span> that spurred our entering into the inquiry to the completed wall.</p>
+
+<p>To say that discourse commonly realizes a collaborative inquiry is to claim that successfully contributing to the discourse requires the efforts of multiple parties working in concert, not just serially. The goal of this paper is to both motivate this idea and provide a model for how it can be implemented in a formal semantic/pragmatic system. I label the result <em>collaborative discourse dynamics</em>.</p>
+
+<p>[The paper is divided into three parts: Development of collaborative inquiry, Collaborative discourse contributions by way of conjecture, Incorporating collaboration into an update semantics framework.]</p>
+
+<p>In suggesting that the locus of information state update be shifted from single utterances to distributed contributions, we take on the burden of motivating the need for this departure and providing a formal system for its implementation. This project is my attempt to discharge this burden and offer a framework for <em>collaborative discourse dynamics</em>.</p>
+
+<h1 id="collaborative-inquiry">Collaborative inquiry</h1>
+
+<p>C.S. Peirce recognized that no human agent will be content to stand pat with their knowledge. “The iritation of doubt causes a struggle to attain a state of belief,” and this iritation is “the only immediate motive for the struggle to attain belief” (<a id="peirce1877" class="ref tooled" href="#ref-peirce1877"><span class="date"><span class="year">1877/1955</span></span><span class="pages">,  10</span></a>). While such iritation is a natural state for human inquirers, most models of rational inquiry have little to say about of the conditions under which a rational agent chooses to scratch, instead dismissing the impluse as arational belief change.[^ Levi on distinction. Abduction as context of discovery]</p>
+
+<p>William James (<a id="james1896" class="ref tooled" href="#ref-james1896"><span class="date"><span class="year">1896/2009</span></span></a>) felt that it was within the purview of inquiry to characterize the proper response to doubt, and he drew a distinction between two independent and sometimes conflicting goals for those engaged in the pursuit of knowledge: (i) to avoid believing falsehoods and (ii) to acquire true beliefs.  A clever agent could meet the goal of avoiding falsehoods by simply believing nothing at all, but they would thereby forfeit the virtue of believing truths. One could, alternatively, meet the goal of believing truths simply by believing everything, but doing so sacrifices entirely achieving the second goal. As James saw it, a strategy of inquiry that floats between these extremes is the path we ought to search for. This suggests that the motive to attain belief is not merely an incidental consequence of our inquisitive minds. It is, instead, an ocassional mandate of proper inquiry that the agent <em>strive</em> to believe truths, even if doing so risks importing error.</p>
+
+<p>James famously argued that if one’s belief choice is <em>live</em>, <em>momentous</em>, and <em>forced</em>, then the will to believe rationally outstrips the fear of being wrong. But as a set of necessary requirements, this restricts speculative endeavors too much. Inquiry need not be momentous or forced for jumping to a conclusion to be epistemically fruitful. Mere time-sensitivity may be enough. Inquiry is a process that is undertaken by fallible individuals in real time. Such agents have limited access to information and limited resources to dedicate to the process of inquiry. Frequently, action is required before certainty can be obtained. And on many quotidian decision points, the risk of being incorrect is fairly low. It is <em>because</em> not every inquiry is momentous that striving for truth (and risking falsehood) is sometimes to be prefered. Let us call this extended conception of the rational development of inquiry the <em>Jamesian Amendment</em>.</p>
+
+<!-- Jamesian amendment -->
+<div class="def" id="jamesian-amendment-def"><div class="title"><span class="head">Definition 1&nbsp;</span><span>(Jamesian amendment)</span></div><div class="body fence">
+<p>Rational information state revision is governed by two goals: avoiding error and acquiring truth.</p>
+</div></div>
+<div id="jamesian-amendment-show-tip" class="tooltip defn">
+  Rational information state revision is governed by two goals: avoiding error and acquiring truth.
+</div>
+
+<p>The Jamesian amendment makes inquiry an optimization task between taking on too many falsehoods and leaving out too many truths. To accommodate this idea, we need to expand our structural representation of inquiry. The information state model from epistemic logic can account for the error-avoidance goal, but we need a way of representing two elements entailed by the goal of acquiring truth. The first is the <em>impetus to revise</em> – information state structure that captures an inquirer’s motivation to strive for knowledge. The second is the <em>will to believe</em> – an account of acceptance of a belief in the absence of certainty in its truth, and an explanation of how this maneuver can be rationally viable.[^informationpotential]</p>
+
+<h4 id="impetus-to-revise">Impetus to revise</h4>
+
+<p>To have a call for revision of one’s information state is to recognize an inadequacy therein. Inadequacies can be of the sort in which an agent <em>knows too much</em>, in the sense that their information state is contradictory and thereby contains too much information.[^knowtoomuch] The means of rectifying this sort of inadequacy is accommodated on the Levi model, in the form of conditions on contraction. While all information states are, for Levi, equal in terms of adequacy, we can set the trivial state aside as the one state that always demands revision, and in particular, revision by contraction out of epistemic hell.</p>
+
+<p>Inadequacies can also arise when one acknowledges that they <em>know too little</em>, in the sense that there is an issue that is not settled by their state of information. This sort of inadequacy is not to be accommodated in Levi’s model. As defined so far, information states are nothing more than their members, and each state (potentially) contains infinitely many points. Aside from the situation in which one state strictly contains another, there is no way of saying that one state is more informative than another.[^contain]</p>
+
+<p>Recognition of information state incompleteness is a principal impetus to revise, and we can represent this impetus by adding a new structural element to the information state pertaining to an inquiry. To have an unsettled issue is to have a non-uniformity across the information state with respect to a particular subject matter; certain points represent one resolution of the subject matter, other points a different resolution. Recognition of a non-uniform pattern holding across an information state can be modeled formally by means of a relation <em>R</em> defined over the membership of the information state, such that for any two elements of the state, <em>x</em> and <em>y</em>, <em>R(x,y)</em> just in case <em>x</em> and <em>y</em> agree on the subject matter of <em>R</em>. The effect is a partitioning of the information state into equivalence classes with respect to the issue that the agent’s information state is unable to settle. The result is an information state that calls for revision, in particular, expansion by elimination of complete cells in the partition.</p>
+
+<h4 id="will-to-believe">Will to believe</h4>
+
+<p>As it currently stands, our model of inquiry allows for propositions to be incorporated into information states in two ways. They can be consequences of evidence the agent acquires through their observational faculties, or they can be entailed by other propositions that are themselves consequences of such evidence. It follows from the Jamesian amendment that a rational inquirer may, at times, be warranted in taking on belief that is not conclusively established by either of these means. But we could easily incorporate this mandate, without modifying the structure of inquiry at all, by loosening the requirement for when a proposition counts as a consequence of an agent’s evidence. The most natural constraint involves restricting our evidence to direct observation, but there is nothing in principle from incorporating propositions that merely have the <em>balance of reasons</em> tilted in their favor.</p>
+
+<p>The problem with this proposal is the threat it poses to the first epistemic goal of error-avoidance. Once a belief is incorporated into an information state, it can be difficult to excise. And as more beliefs become incorporated, tracing the countours of their relative entrenchment becomes exceedingly tedious. The will to believe carries a risk of being wrong. Information states must be insured against this risk, and simply reducing entry requirements for membership in the information state does not provide any assurance.</p>
+
+<p>Additionally, there does seem to be a difference between the two cognitive goals of the Jamesian Amendment. It isn’t a difference in terms of their significance to the inquiry, but it does provide us with reason to represent differently the incorporation of propositions stemming from the two goals.</p>
+
+<p>James’ characterization of the motivation for the will to believe emphasizes that it is the <em>choice</em> that is genuine and calls for resolution. The essence of the genuine choice is that no particular resolution of the uncertainty demands selection, but still a selection must be made. We can capture this feature of proposition integration via the will to believe by focusing on the selected proposition’s position within the partition we introduced to capture the impetus to revise. The will to believe is nothing more than selecting a prefered resolution of a recognized incompleteness in one’s information state. Formally, this amendment requires only that the relation <em>R</em> that represents the partition impose an <em>order</em> on the members of the state. The result is an information state that both calls for revision and selects a preferred means of doing so.</p>
+
+<p>This extension of inquiry based on the Jamesian amendment is intended to capture the abductive phase of inquiry. The two parts of the extension happen to map onto a commonly cited distinction within the abductive phase (<a id="campos2011" class="ref tooled" href="#ref-campos2011"><span class="author">Campos </span><span class="date"><span class="year">2011</span></span></a>, <a id="shanahan1986" class="ref tooled" href="#ref-shanahan1986"><span class="author">Shanahan </span><span class="date"><span class="year">1986</span></span></a>). <em>Creative abduction</em> is associated with the scientific context of discovery. It is involved when an inquirer recognizes a scientifically fruitful question and develops a set of hypotheses that serve as potential answers to that question. Incompleteness, modeled as a partition on an information state, represents the output of creative abduction. The extension does not provide us, specifically, with an account of the conditions under which an information state comes to represent its own incompleteness. And this is all to the good, for creative abduction is notoriously unamenable to logical characterization. We don’t have, nor do we want, a topic-neutral story of revision into incompleteness. But the extension does provide a uniform representation of what a state that <em>calls for</em> revision looks like.</p>
+
+<p>The second part captures the value of <em>striving</em> for truth, which closely resembles the <em>selective</em> phase of abduction, in which the scientist chooses from amongst the set of viable hypotheses the one that best answers the question on the basis of a set of criteria that perhaps don’t eliminate all other answers completely. This is the mode of reasoning known as <em>inference to the best explanation</em>. James’ proposal was that, ocassionally, elimination of incompleteness is rationally preferred to remaining ambivalent even at the risk of being wrong. Modeling inquiry in this way thus makes it part of the domain of logic to specify the conditions under which selective abduction is warranted. What makes it the case, for a particular incomplete information state, that it is epistemically appropriate to complete it at the risk importing error?</p>
+
+<p>For the deductive phase, a new structural posit answers only to the error-avoidance goal of proper inquiry. Specific properties of the revision operator are justified piece meal by way of a demonstration that each rule of expansion or contraction preserves truth, and thus avoids error.</p>
+
+<p>But the motivation for the structural posits necessary to incorporate the abductive phase construed as above changes the game entirely. Demonstration is not the proper method of justification for a solution to an optimization problem. In its place, we want two things: (i) assurance that each criterion optimized over is secured to a high degree, and (ii) insurance that success on each criterion is insulated against success on the others. As applied to the Jamesian amendment, the first condition is met by reliability testing on the outputs of the selective abductive phase. To the extent that the inquirer tends to settle on true hypotheses, her process of inquiry is well calibrated. The second condition requires that the goal of truth acquisition does not radically undermine the goal of error avoidance. To meet this, our account of inquiry must incorporate protective insurance against the wanton incorporation of error in the course of the abductive phase. This, I contend, is provided by corrective mechanisms inherent in proper inquiry, mechanisms residing in the jurisdiction of the <em>inductive</em> phase of inquiry.</p>
+
+<h1 id="contribution-types">Contribution types</h1>
+
+<p>Speakers can perform a variety of tasks in uttering meaningful strings in a discourse. The class of such possible illocutionary acts, or <a id="speech-act" href="/glossary#speech-act" class="tooled gloss">speech acts</a><span id="speech-act-tip" class="tooltip glossary"><b>speech act</b>: Any action performed by way of uttering meaningful words in discourse.</span>, is incredibly numerous and nuanced (<a id="searle1976" class="ref tooled" href="#ref-searle1976"><span class="author">Searle </span><span class="date"><span class="year">1976</span></span></a>). We can draw subtle distinctions between, for instance, commanding and imploring or suggesting and hinting at.</p>
+
+<p>But a more coarse classification of conversational moves can also be theoretically useful. While a hearer might respond slightly differently to a command versus a request, perhaps giving the content of one higher priority, the update to her model of the conversation that is required to process the new information is the same. The proposed classification, into what we might call <em>contribution types</em>, links speech acts to the procedure needed to incorporate them into the discourse model.</p>
+
+<p>In attempting to motivate a particular classification into contribution types, Craige Roberts offers some <em>Linguistic desiderata for speech act theory</em>:</p>
+
+<blockquote>
+  <p>A theory of speech acts should be linguistically motivated – grounded in the conventional content of the utterances used to make them –  and explanatory, offering testable predictions about both (a) the kinds of speech acts attested across languages, and (b) in particular utterances, the kind of speech act we would take a speaker to proffer, given the conventional content of what she says and the context of utterance. (<a id="roberts2016" class="ref tooled" href="#ref-roberts2016"><span class="author">Roberts </span><span class="date"><span class="year">2016</span></span><span class="pages">,  pp. 1-2</span></a>)</p>
+</blockquote>
+
+<p>There is a clear connection between a contribution type of an utterance and the force or mood the utterance carries, though the connection is not direct (<a id="starr2010" class="ref tooled" href="#ref-starr2010"><span class="author">Starr </span><span class="date"><span class="year">2010</span></span></a>, <a id="portner1997" class="ref tooled" href="#ref-portner1997"><span class="author">Portner </span><span class="date"><span class="year">1997</span></span></a>). The indicative, interrogative, and imperative moods are well-attested across languages. So, there is reason to think that the space of contribution types traces this division. Paul Portner suggests that utterances are connected to force by way of the semantic object that the utterance expresses.</p>
+
+<blockquote>
+  <p>Atoms of morphosyntax contribute to meaning in a compostitional way, but force is not one of the aspects of meaning they contribute. Rather the result of compositional interpretation is always a traditional semantic object like a proposition or property (along with associated presuppositions and so forth, or course). Accorditing to our hypothesis, force is determined only indirectly, on the basis of those meanings. (<a id="portner1997" class="ref tooled" href="#ref-portner1997"><span class="author">Portner </span><span class="date"><span class="year">1997</span></span><span class="pages">,  p. 2</span></a>)</p>
+</blockquote>
+
+<p>Portner proposes a division of discourse models into three parts based on semantic object types.</p>
+
+<div class="def" id="portner-s-discourse-model-def"><div class="title"><span class="head">Definition 2&nbsp;</span><span>(Portner's Discourse Model)</span></div><div class="body fence">
+<p><strong>Common ground:</strong> A set of propositions representing the information that is taken for granted in the conversation.</p>
+
+<blockquote>
+  <p>“The sentential force of declarative clauses is assertion, which is to say that they are conventionally used to add the propositions that they denote to the Common Ground.” (p. 3)</p>
+</blockquote>
+
+<p><strong>Question Set:</strong> A set of sets of propositions representing the issues the interlocutors mutually agree to resolve.</p>
+
+<blockquote>
+  <p>“The conventional force of interrogatives, Asking, is then the addition of the set of propositions denoted by the interrogatve to the Question Set.” (p. 3)</p>
+</blockquote>
+
+<p><strong>To-do List:</strong> A set of properties, linked to a particular interlocutor, representing the states the interlocutor is committed to realizing.</p>
+
+<blockquote>
+  <p>“In this context, the natural proposal to make for imperatives is that they are associated with a discourse object which is a set of imperative denotations…. Imperatives represent actions which the addressee should take; accordingly, we label this kind of set of imperative denotations a To-Do List…. The conventional force of imperatives, what we call Requiring, is to add the property denoted by the imperative to the addressee’s To-Do List.” (p. 3)</p>
+</blockquote>
+</div></div>
+<div id="portner-s-discourse-model-show-tip" class="tooltip defn">
+**Common ground:** A set of propositions representing the information that is taken for granted in the conversation. 
+
+&gt; "The sentential force of declarative clauses is assertion, which is to say that they are conventionally used to add the propositions that they denote to the Common Ground." (p. 3)
+
+**Question Set:** A set of sets of propositions representing the issues the interlocutors mutually agree to resolve. 
+    
+&gt; "The conventional force of interrogatives, Asking, is then the addition of the set of propositions denoted by the interrogatve to the Question Set." (p. 3)
+
+**To-do List:** A set of properties, linked to a particular interlocutor, representing the states the interlocutor is committed to realizing. 
+    
+&gt; "In this context, the natural proposal to make for imperatives is that they are associated with a discourse object which is a set of imperative denotations.... Imperatives represent actions which the addressee should take; accordingly, we label this kind of set of imperative denotations a To-Do List.... The conventional force of imperatives, what we call Requiring, is to add the property denoted by the imperative to the addressee's To-Do List." (p. 3)
+</div>
+
+<p>The idea of treating discourse models as articulated information states is well-trod ground in formal semantics and pragmatics. In addition to Portner’s model, articulated states have been developed in (<a id="murray2010" class="ref tooled" href="#ref-murray2010"><span class="author">Murray </span><span class="date"><span class="year">2010</span></span></a>, <a id="starr2010" class="ref tooled" href="#ref-starr2010"><span class="author">Starr </span><span class="date"><span class="year">2010</span></span></a>, <a id="farkas2010" class="ref tooled" href="#ref-farkas2010"><span class="author">Farkas and Bruce </span><span class="date"><span class="year">2010</span></span></a>, <a id="anderbois2013" class="ref tooled" href="#ref-anderbois2013"><span class="author">Anderbois et al. </span><span class="date"><span class="year">2013</span></span></a>, <a id="brasoveanua" class="ref tooled" href="#ref-brasoveanua"><span class="author">Brasoveanu </span><span class="date"><span class="year">n/a</span></span></a>, <a id="bittner2011" class="ref tooled" href="#ref-bittner2011"><span class="author">Bittner </span><span class="date"><span class="year">2011</span></span></a>, <a id="groenendijk2009" class="ref tooled" href="#ref-groenendijk2009"><span class="author">Groenendijk and Roelofsen </span><span class="date"><span class="year">2009</span></span></a>). These accounts take the elements of information states to be composed of set-theoretic constructs of basic semantic objects. The divisions are determined by particular functional roles the components of these elements play in the discourse. The classification into contribution types represents one such functional role articulation.</p>
+
+<p>While mood is a good guide to the scope of contribution types, the desiderata for an adequate classification do not force us to trace the countours of mood precisely. Rather, Portner’s classification points to a generalization of the classification procedure. In certifying a new contribution type genuine and distinct, we are looking to verify that instances of that type <em>operate on</em> information in a distinctive way. Assertions expand the context set, and questions partition it. The currency of inquiry is information, and its value is tied to the ways in which information can be put to use to advance the inquiry toward its goal.</p>
+
+<p>It’s a reasonable additional constraint that genuine contribution types are performed by way of a <em>conventionalized linguistic tool</em>. If a contribution belongs to a specific type, language will have found a way to implement that type. Assertions, questions, and commands are stronly tied to linguistic mood, but mood needn’t be the only realization of contribution types. In fact, it is my contention that the speech act of <a id="conjecture" href="/glossary#conjecture" class="tooled gloss">conjecture</a><span id="conjecture-tip" class="tooltip glossary"><b>conjecture</b>: A conversational move that initiates an uncertain but potentially viable proposal for further investigation in the inquiry.</span> forms a genuine contribution type based on a distinctive mode of operating on information in an inquiry.</p>
+
+<h2 id="conjecture-versus-assertion">Conjecture versus assertion</h2>
+
+<p>In the course of conversation, individuals will ocassionally put forward information for which they do not possess conclusive evidence. Sometimes, the basis for such a maneuver is laziness, deceit, or obstinance. But often, this kind of move is just what the conversation needs to move forward. For instance, in brainstorming sessions, the scientific context of discovery, or tip-of-the-tongue style paralysis, discurrsants set aside the restriction that all contributions be considered to be accurate in favor of entering into the <a id="not-found" href="/glossary#not-found" class="tooled gloss">conversational record</a><span id="not-found-tip" class="tooltip glossary"><b>Word not found</b>: </span> something that the parties can use as a jumping off point. In these situations, speculative profferments serve to advance the inquiry.</p>
+
+<p>Conjecture is often subsumed under a more general speech act category that also includes assertion. This category is for <a id="not-found" href="/glossary#not-found" class="tooled gloss">world-directed</a><span id="not-found-tip" class="tooltip glossary"><b>Word not found</b>: </span> speech acts that update the information state by adding information to the common ground. The sub-cateogries then differ in terms of the level of commitment to the utterance content that a speaker incurs in using that speech act. Robert Stalnaker’s model for distinguishing among these speech acts involves the discourse-wide notion of acceptance that governs membership in the common ground.</p>
+
+<blockquote>
+  <p>Whether an indicative speech act counts as an assertion or not will be partly a matter of what kind of discourse it is – what its common purposes are taken to be. A more general kind of speech, still governed by the same context-change rule. will include conjectures and other less committal conversational rules. Just as what is mutually accepted for purposes of the conversation may in some cases involve a mutally recognized pretense, so in the right kind of context, the speech act itself may be a proposal to accept something only in a sense of acceptance that diversges from belief. (<a id="stalnaker2014" class="ref tooled" href="#ref-stalnaker2014"><span class="author">Stalnaker </span><span class="date"><span class="year">2014</span></span><span class="pages">,  Sect. 4.2</span></a>)</p>
+</blockquote>
+
+<p>This is a coarse-grained model of speech act variation. For Stalnaker, the common ground is merely a set of propositions. It does not also contain an additional marker for the commitment level of each member. Rather, the purposes of the conversation contrain membership in the common ground for all proposed contributions in that conversation. This doesn’t clearly do justice to the evolution of natural conversations. Conjectures and assertions are commonly interspersed throughout a discourse. Keeping track of the varying levels of commitment would require a nest of different common grounds and a set of rules for how their members are shared. Depending on the fineness of grain for commitment levels, there is a potential explosion of sub-contexts for every conversation.</p>
+
+<p>This is not to say that an account of the differences between conjecture and assertion based on discourse-wide commitment levels can’t be provided, but it is not a simple task. And I believe that an alternative account of conjecture based on a distinctive mode of operating on information in an inquiry is forthcoming.</p>
+
+<p>Stalnaker’s approach to conjecture treats it as introducing a proposition for entry into the common ground with a less than assertoric commitment, but an alternative interpretation of the sense that conjecture carries a lower commitment level is that a conjecture’s impact on the information state is <em>unsettled</em> in a way that assertions are not.</p>
+
+<p>A speaker who puts forward a conjecture does not stand behind its content in the way that she does when she asserts. To treat the two types of act the same risks muddling the inquiry. If, instead, a conjecture is treated as merely a jumping off point, something to be settled after further discussion, we can capture the sense that it carries less commitment while keeping its impact distinct from that of an assertion. In essence, we recognize that a conjecture <em>calls out</em> for a particular response.</p>
+
+<h2 id="distributed-contributions">Distributed contributions</h2>
+
+<p>Discourse is an essentially collaborative process. At a superficial level, successful discourse requires that the participants accurately understand each others’ contributions.  This requires constant feedback, step retracing, and repair to keep everyone on the same page.  But the importance of collaboration goes deeper than this.</p>
+
+<p>Herb Clark and his contributors (<a id="clark1992" class="ref tooled" href="#ref-clark1992"><span class="date"><span class="year">1992</span></span></a>) have documented a variety of discourse maneuvers in which individuals other than the interlocutor who offer a contribution provide input essential to its meaningfulness. This has led Clark to suggest that discourse contribututions involve two distinct phases: the <a id="initiation" href="/glossary#initiation" class="tooled gloss">initiation</a><span id="initiation-tip" class="tooltip glossary"><b>initiation</b>: An utterance that constitutes the opening phase of a contribution to inquiry. An initiation is paired with a completion, and the resulting discourse pair provides the contribution to the inquiry.</span> and the <a id="completion" href="/glossary#completion" class="tooled gloss">completion</a><span id="completion-tip" class="tooltip glossary"><b>completion</b>: An utterance that constitutes the closing phase of a contribution to inquiry. A completion is paired with an initiation, and the resulting discourse pair provides the contribution to the inquiry.</span>. Crucially (and in general), responsibility for the two phases of contribution is distributed among the conversational participants. The very act of adding information to the discourse model is a collaborative, rather than merely cooperative, effort.</p>
+
+<p>Contribution is thus dilated process, and interlocutors have a number of tools at their disposal for invoking and bringing the process to an end Clark and Schlegloff (<a id="clark1992a" class="ref tooled" href="#ref-clark1992a"><span class="date"><span class="year">1992</span></span></a>). A <em>try-marker</em> is a refering expression within an utterance that is marked to indicate the speaker’s understanding that the hearer may not pick up on the reference. The speaker, not wanting to derail the conversation to conclusively rectify the potential for confusion, offers the reference as a suggestion. She additionally marks the suggestion, usually by means of an upward intonational contour followed by brief pause, to allow the hearer an opportunity to pursue further clarification if such is needed. The try-marker is a text-book example of the preference in successful conversation for minimum effort over assured uptake.</p>
+
+<p>The initiation needn’t be followed in the next utterance by the completion. The interlocutors may need a few rounds of discussion before mutual recognition is achieved. To carry this out, they engage in a back and forth that is marked to indicate that it is happening alongside the primary discussion. This <em>side-talk</em> remains isolated until any confusion is resolved; the result is then used to carry on the initial inquiry.</p>
+
+<p>Because initiations do not serve as contributions on their own, the interlocutors must have a tool for bringing a contribution to a close. A <em>recognition symbol</em> can be a simple “uh-huh”, “I see”, or a nod. This is an interlocutor’s way of signaling that recognition has been achieved and the contribution is ready to be added to the disourse model.</p>
+
+<p>These collaborative tools in the domain of reference recognition (try-markers, side-talk, and recognition symbols) have analogues in the domain of speech acts as well. In fact, the idea that conversational moves can be understood partly in terms of the constraints they place on appopriate responses is widely accepted. Mats Rooth’s alternative semantics theory of focus interpretation is motivated by the fact that felicity demands that answers be <em>congruent with</em> the questions that elicit them (<a id="rooth1992" class="ref tooled" href="#ref-rooth1992"><span class="author">Rooth </span><span class="date"><span class="year">1992</span></span></a>). Questions anticipate an answer, and restrict responses to those assertions that at least partially resolve the issue raised. The model of discourse developed by (<a id="farkas2010" class="ref tooled" href="#ref-farkas2010"><span class="author">Farkas and Bruce </span><span class="date"><span class="year">2010</span></span></a>) includes a slot fot the default response to an utterance contribution. Even assertion can be understood in part in terms of the appropriate response to it. It is common to distinguish between content that is <em>imposed</em> on the common ground versus content that is <em>proposed</em> as an addition (<a id="murray2014" class="ref tooled" href="#ref-murray2014"><span class="author">Murray </span><span class="date"><span class="year">2014</span></span></a>, <a id="anderbois2010" class="ref tooled" href="#ref-anderbois2010"><span class="author">Anderbois </span><span class="date"><span class="year">2010</span></span></a>). As a proposal to update the common ground, assertion anticipates either acceptance or rejection on the part of the hearer, and (modulo repair tactics for failed presuppositions) it restricts responses to either acceptance or rejection of the content.</p>
+
+<h2 id="conjecture-and-correction">Conjecture and correction</h2>
+
+<p>It’s thus natural to think of conversational moves as distributed contributions that are complete only when the interlocutors come to mutual agreement on how to adjust the information state. My contention is that when we view conversational moves in this way, conjecture can be seen to be a distinct move based on the contraints it puts on appropriate responses.</p>
+
+<p>Offering a conjecture is an attempt to impose a restriction on the common ground in the absence of certainty that all conversational commitments are in place for the restriction. The conjecturer may not know that the content of their utterance is true, but it is more than just a haphazard guess. It is appropriate in a situation where the inquiry is stagnated and needs to be spurred along, even at the risk of moving it down a dead end path. The significance of conjecture in conversation highlights a preference for advancing the flow of inquiry over achieving certainty.</p>
+
+<p>But this uncertain nature of conjecture means that it cannot serve to update the information state on its own. A conjecture must be vetted, and the canonical response to a conjecture is a move that provides this – a <a id="correction" href="/glossary#correction" class="tooled gloss">correction</a><span id="correction-tip" class="tooltip glossary"><b>correction</b>: An attempted contribution to inquiry that involves a <em>denial</em> of some element of the preceding attempted contribution to discourse and a <em>positive contribution</em> that is related in a salient way to the preceding attempted contribution.</span>. Corrections can take many forms, but they normally involve two parts, a <em>denial</em> of some portion of the information previously put forward and a <em>substitution</em> for the denied information. The conjecture lays a rough foundation, and the correction builds upon it. Conjecture thus differs from assertion in that it calls out for a different form of response – one that is more nuanced than merely acceptance or rejection.</p>
+
+<p>I suggest that the dual speech acts of conjecture and correction together form a distributed contribution. That is, we do not represent the conjecturer and corrector as each providing indvidually complete and jointly cooperative contributions to the discourse. Instead, the conjecture/correction pair together contribute to the inquiry; the parts are individually inert. Discourse is different than wall building in that the nature of discourse processing requires all individual contributions to take place in serial fashion. It isn’t possible for two interlocutors to contribute to a single discourse update simultaneously. However, they can contribute in tandem by delaying the impact of an update until after both individuals have contributed.</p>
+
+<h1 id="scoreboards-and-best-systems">Scoreboards and best systems</h1>
+
+<p>Let’s begin by motivating it…</p>
+
+<p>David Lewis’ (<a id="lewis1979f" class="ref tooled" href="#ref-lewis1979f"><span class="date"><span class="year">1979</span></span></a>) suggestion that utterances in a conversation function as updates to values housed in the various slots of a conversational <a id="scoreboard" href="/glossary#scoreboard" class="tooled gloss">scoreboard</a><span id="scoreboard-tip" class="tooltip glossary"><b>scoreboard</b>: The structural recording platform for the semantico-pragmantic features of a conversation. Interpretation in discourse takes place relative to a scoreboard, and dicourse contributions serve to update the scoreboard. Scoreboards may be accessable to a single discursant, or they may be shared.</span> posits a logical platform on which the conversation is built. The scoreboard serves as a record of the contributions that have been made to the conversation, and it dictates both whether a new utterance is deemed to provide an acceptable contribution to the conversation and how acceptable utterances are to be interpreted. A crucial feature of the scoreboard is that it is not merely an unstructured list of information. Rather, the information is formatted in such a way as to maximize its robustness and simplicity as an interpretive tool.</p>
+
+<p>As a first pass, we can think of the scoreboard as a field of slots and participants to the conversation as wielding a set of pegs. There is a many-to-one relationship between pegs and slots, but certain pegs can only fit in certain slots. The pegs represent the content of utterances viewed in relation to the specific issues the inquiry is out to resolve, while the slots are features of conversation generally, determined by the basic nature of inquiry.</p>
+
+<p>Before we start filling out the conversational scoreboard with specific bells and pulleys, we face the question of what the posit of such a recording surface amounts to, and how this crucial interpretive device is instantiated. Lewis frames his preferred answer as such:</p>
+
+<blockquote>
+  <p>Conversational score is, by definition, whatever the mental scoreboards say it is; but we refrain from trying to say just what the conversationalists’ mental scoreboards are. We assume that some or other mental representations are present that play the role of a scoreboard, in the following sense: what they register depends on the history of the conversation in a way that score should according to the rules. The rules specifying the kinematics of score thereby specify the role of a scoreboard; the scoreboard is whatever best fits this role; and the score is whatever this scoreboard registers. (<a id="lewis1979f" class="ref tooled" href="#ref-lewis1979f"><span class="date"><span class="year">1979</span></span><span class="pages">,  p. 346</span></a>)</p>
+</blockquote>
+
+<p>Under this characterization, determination of the conversational score, and the structure of the board on which it is represented is a project of <em>best system</em>-style theory determination:</p>
+
+<blockquote>
+  <p>Whatever we may or may not ever come to know, there exist (as abstract objects) innumerable true deductive systems: deductively closed, axiomatizable sets of true sentences. Of these true deductive systems, some can be axiomatized more <em>simply</em> than others. Also, some of them have more <em>strength</em>, or <em>information content</em>, than others. The virtues of simplicity and strength tend to conflict. Simplicity without strength can be had from pure logic, strength without simplicity from (the deductive closure of) an almanac. Some deductive systems, of course, are neither simple nor strong. What we value in a deductive system is a properly balanced combination of simplicity and strength – as much of both as truth and our way of balancing will permit. (<a id="lewis1973a" class="ref tooled" href="#ref-lewis1973a"><span class="author">Lewis </span><span class="date"><span class="year">1973</span></span><span class="pages">,  p. 73</span></a>)</p>
+</blockquote>
+
+<p>Theory choice amounts to selecting the top scorer among the empirically adequate alternatives judged against a set of constraints, principal among which are the criteria of <em>simplicity</em> and <em>strength</em> from the perspective of the theorizer.[^Bestsystem]</p>
+
+<p>The motivation for this approach to scoreboards is brought out in the account of intentionality generally that Lewis gives in <em>Radical Interpretation</em> (<a id="lewis1974b" class="ref tooled" href="#ref-lewis1974b"><span class="author">Lewis </span><span class="date"><span class="year">1974</span></span></a>). For Lewis, the <em>goal</em> in theorizing about intentionality is to say how facts about speakers expressed in purely physical terms determine facts about the speakers’ attitudes and the meanings of their utterances. The resources available to the theorist in this effort include the whole physical story, past and present, of a speaker’s behavior as well as a <em>basic ideology</em> of intentional systems, which supplies the theorist with a store of <em>beliefs</em> and <em>desires</em> driving physically specifiable behavior and a collection of <em>truth conditions</em> to be associated with sentences, the principal meaningful elements of language.</p>
+
+<p>The <em>methodology</em>[^method] for theory construction using these basic tools is to optimize the theory against a set of constraints specific to the domain of the intentional in addition to the general theoretical criteria. Lewis’ prefered constraints stem from “the fundamental principles of our general theory of persons. They tell us how beliefs and desires and meanings are normally related to one another, to behavioral output, and to sensory input” (<a id="lewis1974b" class="ref tooled" href="#ref-lewis1974b"><span class="date"><span class="year">1974</span></span><span class="pages">,  p. 334</span></a>).</p>
+
+<p>The constraint that is of interest for us is the truthfulness constraint:</p>
+
+<!-- Constraints on a theory of meaning -->
+<div class="def" id="truthfulness-constraint-def"><div class="title"><span class="head">Definition 3&nbsp;</span><span>(Truthfulness Constraint)</span></div><div class="body fence">
+<p><span>The system assigns meanings that accord with the speaker participating in a convention of truthfulness with other speakers of his language.</span>&lt;/p&gt;</p>
+</div></div>
+<div id="truthfulness-constraint-show-tip" class="tooltip defn">
+
+  <span>The system assigns meanings that accord with the speaker participating in a convention of truthfulness with other speakers of his language.</span>
+</div>
+
+<p>This contraint stems from Lewis’ work on convention…</p>
+
+<h3 id="a-collaborative-extension-to-the-basic-ideology">A collaborative extension to the basic ideology</h3>
+
+<p>There is no guarantee that a theoretical process carried out along these lines will result in a unique best theory of a speaker’s intentional system; it may be that no single theory fits the constraints perfectly, and many may be equally distant from perfection. Additionally, truth conditions almost certainly provide an incomplete reductive base for sentence meaning. Lewis is well aware of these potential indeterminacies, but he wishes to hold his ground against the claim that there could be multiple distinct theories of meaning for a language, all of which perfectly meet the constraints:</p>
+
+<blockquote>
+  <p>“<em>Credo</em>: if ever you prove to me that all the constraints we have yet found could permit two perfect solutions, differing otherwise than in the auxiliary apparatus of <strong>M</strong>, then you will have proved that we have not yet found all the constraints” (<a id="lewis1974b" class="ref tooled" href="#ref-lewis1974b"><span class="date"><span class="year">1974</span></span><span class="pages">,  p. 343</span></a>).</p>
+</blockquote>
+
+<p>The motivation for a collaborative discourse dynamics takes Lewis’ model of linguistic theory, grounded in the best systems account and realized in the conversational scoreboard, as providing the appropriate groundwork. But I contest that we have, in Lewis’ explicit proposal, the complete set of constraints to appropriately capture meaning in discourse. I don’t base this challenge on a claim to have found multiple perfect theories of any speaker’s intentional system based on Lewis’ constraints. Rather, I do so on the basis of a claim that Lewis has not adnumbrated the complete basic ideology from which the constraints arise.</p>
+
+<p>There is more to speech behavior than what it reveals about an individual’s beliefs and desires. The patterns of interaction in discourse explored by Clark and his collaborators (<a id="clark1992" class="ref tooled" href="#ref-clark1992"><span class="date"><span class="year">1992</span></span></a>) reveal that interlocutors are participants in an extended, distributed process of advancing the inquiry. If the basic ideology, and in turn the constraints, come from our common sense theory of persons, then our theory is incomplete to the extent that it ignores the fact that persons are <em>social</em> beings, whose attitudes develop over the course of many collaborative inquiries.</p>
+
+<div class="def" id="collaborative-extension-of-the-basic-ideology-def"><div class="title"><span class="head">Definition 4&nbsp;</span><span>(Collaborative extension of the basic ideology)</span></div><div class="body fence">
+<p>The mental attitudes of humans are developed through continual application of the process of collaborative inquiry.</p>
+</div></div>
+<div id="collaborative-extension-of-the-basic-ideology-show-tip" class="tooltip defn">
+  The mental attitudes of humans are developed through continual application of the process of collaborative inquiry.
+</div>
+
+<p>Our common sense theory of persons represents them as social creatures, and provides us with attitudes necessary to capture their collaborative efforts.[^collabattitudes] The collaborative extension forces us to reconsider how acceptance of these attitudes exerts itself within our constraints. It seems to me that at least two of the Lewisian constraints require modification in light of it: <em>generativity</em> and <em>truthfulness</em>.</p>
+
+<h2 id="truthfulness-honesty-and-trust">Truthfulness, honesty, and trust</h2>
+
+<p>Lewis envisions language use within a community as determined by a set of conventions (<a id="lewis1975b" class="ref tooled" href="#ref-lewis1975b"><span class="date"><span class="year">1975</span></span></a>). In particular, he thinks that language use is governed by dual conventions of <em>truth</em> and <em>trust</em>, the first of which applies to speakers in the language community, the second to hearers. Speakers agree (and presume others also agree, etc.) to utter only truths to the extent they are able, and hearers agree to take on beliefs as their own in response to speakers’ utterances.</p>
+
+<p>But if discourse is collaborative, as displayed in the distributed contribution of conjecture and correction, then the truthfulness convention is incomplete as stated. Speakers cannot be counted on to utter only truths to the extent this is possible. In fact, the success of inquiry demands that they courageously utter what may well be falsehoods. What hearers can expect of their partners in conversation is that they put forward their contributions with <em>honesty</em>, uttering only what they take to provide genuine advancement of the inquiry in accordance with the specified plan.</p>
+
+<p>The demands of honesty allow for uttering non-truths, but it still counts as a convention because it offers a solution to a coordination problem. Only in this case, the participants to the convention bring to bear, in addition to their understanding of the semantic content of utterances, the structure of the plan of inquiry recorded within the current conversational scoreboard. The convention is thus relativized to the inquiry at hand.</p>
+
+<p>The collaborative extension also implies that lingusitic conventions cannot be easily factored on the basis of the role of a participant. It is not merely hearers who must rely on their interlocutors to properly advance the inquiry. Speakers, too, depend upon their interlocutors to provide checks on their speculative contributions. Thus, the contention of <em>trust</em> must be expanded to apply to speakers and hearers <em>mutually</em> – hearers in taking on the attitudes required by the proposed advancement of the inquiry and speakers in speculating freely, trusting that hearer’s will correct them to the extent they are able.</p>
+
+<p>Language use in a community, I suggest, is governed by the dual conventions of <em>honesty</em> and <em>mutual trust</em>.</p>
+
+<h2 id="anaphora-and-coherence">Anaphora and coherence</h2>
+
+<p>(Jamesian striving, coherence, need for propositions, Lewis <em>ICC</em>)</p>
+
+<p>To represent as rational is not just to represent as believing truths. For being rational is advancing the inquiry in suitable ways at suitable times, and advancing the inquiry is more than simply relating and accepting truths. Frequently, one advances the inquiry by taking up for consideration known falsehoods. (This is systematic, not an aberation to be swept under the rug.)</p>
+
+<p>In <em>Index, Context, and Content</em>, Lewis suggests that the function of a grammar is to characterize a fair amount of our shared linguistic knowledge. But not all of it. There are elements of what we know about using our language in particular contexts that it doesn’t deal with. Which ones? “Conversational appropriateness and implicature, disambiguation, taxonomy of speech acts, or what it is about us that makes some grammars rights and others wrong” (<a id="lewis1980" class="ref tooled" href="#ref-lewis1980"><span class="author">Lewis </span><span class="date"><span class="year">1980</span></span><span class="pages">,  p. 80</span></a>). And why not? Because grammar’s key role is in imparting information. To do that, I need to say the right thing. The grammar supplies me with semantic values for sentences, which is how I determine what is the right thing to say. To impart information, all I need is that the semantic value get me the truth value of the sentence were I to say it in my current context. A convention of truthfulness and trust (not part of the grammar) will ensure that the message gets properly disambiguated and instilled with the appropriate force.</p>
+
+<blockquote>
+  <p>The foremost thing we do with words is to impart information, and this is how we do it. Suppose (1) that you do not know whether <em>A</em> or <em>B</em> or …; and (2) that I do know; and (3) that I want you to know; and (4) that no extraneous reasons much constrain my choice of words; and (5) that we both know that the conditions (1)-(5) obtain. Then I will be truthful and you will be trusing and thereby you will come to share my knowledge.</p>
+</blockquote>
+
+<p>But this isn’t <em>all</em> I want to do with words! I also want to use your knowledge to increase my own. And I want to help you bring up that knowledge even if it may not be at the tip of your mind. That is, I want to engage in an <em>inquiry</em> with words. The grammar can help me fulfill this desire as well, but it needs more support than the convention of truthfulness and trust can provide.</p>
+
+<blockquote>
+  <p>Meaning in natural language manifests itself as the semantic competence of the language user, this competence is demonstrated in the interpretation and production of utterances, and language production and interpretation involve mental representations, which are derived from linguistic input in language interpretation and converted into linguistic output in language production. (Hamm, Kamp, van Lambalgan, pp. 5-6)</p>
+</blockquote>
+
+<p>Hamm et al. suggest that the representational account of semantics is motivated by a <em>cognitive perspective</em> on semantic theory, in which the objective to to model the conceptual framework of language users that allows them to interact linguistically with the world.</p>
+
+<blockquote>
+  <p>For someone who thinks of meaning along these lines it is tempting to see the formal properties of discourse contexts which DRT identifies as defining the interpretational possibilities for anaphoric pronouns as features of the mental representations which are constructed in the course of interpreting a text or piece of discourse; and this encourages a view of DRSs as models for mental representations, which capture some of the formal properties of those representations in addition to their truth conditional content.</p>
+</blockquote>
+
+<p>Inquiry is an extended process. Carrying it out fruitfully requires us to maintain a record of what has transpired thus far in the inquiry. We can use this record to refer back to earlier discussion and connect bits of information into an extended web. Through a simple complication of the grammar, we greatly expand our information imparting capabilities. <em>Anaphora resolution</em> is one process that fits into an inquiry-extended picture of grammar. Natural language speakers have an ability to use explicit pronouns as well as implicit refering devices to link to previously introduced <em>discourse referents</em>. This ability is vital to the project of realizing inquiry in discourse. The grammar should help explain how it is done, but truth determination alone won’t carry the load. Anaphora extends beyond linking individuals across sentence boundaries. The information web in a healthy inquiry has temporal ties between events (<a id="partee1973" class="ref tooled" href="#ref-partee1973"><span class="author">Partee </span><span class="date"><span class="year">1973</span></span><span class="pages">,  p. 602</span></a>):</p>
+
+<div class="def" id="tense-ex"><div class="title"><span class="head">Example 2&nbsp;</span><span>(Tense)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="content">I didn't turn off the stove.</span></div></div>
+</div></div>
+<div id="tense-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Tense</b><br />
+  <div class="example"><div class="item"><span class="content">I didn't turn off the stove.</span></div></div>
+</div>
+
+<p>It’s quite likely that there is a stove turning off somewhere in my past. But this fact means little to the interpretation of <a href="#tense">Tense</a> if no such event occured within the time frame it gestures at.</p>
+
+<p>The information web also ties states of affairs together via subordination relations between modalized sentences (<a id="stone1999" class="ref tooled" href="#ref-stone1999"><span class="author">Stone </span><span class="date"><span class="year">1999</span></span><span class="pages">,  p. 2</span></a>):</p>
+
+<div class="def" id="modality-ex"><div class="title"><span class="head">Example 3&nbsp;</span><span>(Modality)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="content">A wolf might walk in. It would eat you.</span></div></div>
+</div></div>
+<div id="modality-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Modality</b><br />
+  <div class="example"><div class="item"><span class="content">A wolf might walk in. It would eat you.</span></div></div>
+</div>
+
+<p>Anaphora resolution is an important interpretive tool for connecting utterances, but it is not the only one. Language users are also able to suss out conceptual connections between bits of information. Discourses lacking such <em>coherence</em> connections can be very difficult, or even impossible to process (<a id="kehler2000" class="ref tooled" href="#ref-kehler2000"><span class="author">Kehler </span><span class="date"><span class="year">2000</span></span></a>):</p>
+
+<div class="def" id="coherence-ex"><div class="title"><span class="head">Example 4&nbsp;</span><span>(Coherence)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">A: </span><span class="content">Bill was about to be impeached.</span></div><div class="item"><span class="name">B: </span><span class="content">He called his lawyer.</span></div><div class="item"><span class="name">B': </span><span class="content">He bought six pounds of zucchini.</span></div></div>
+</div></div>
+<div id="coherence-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Coherence</b><br />
+  <div class="example"><div class="item"><span class="name">A: </span><span class="content">Bill was about to be impeached.</span></div><div class="item"><span class="name">B: </span><span class="content">He called his lawyer.</span></div><div class="item"><span class="name">B': </span><span class="content">He bought six pounds of zucchini.</span></div></div>
+</div>
+
+<p>In virtue of its role in systematizing language users’ shared knowledge about advancing an inquiry, a grammar for a language provides more than just the makings for truth determination.[^compositionality] It also provides the makings for anaphora and coherence relations. A <em>dynamic</em> grammar assigns anaphoric connections between sentences, and propositions can be anaphorically connected, as in modal subordination. A <em>collaborative</em> grammar assigns coherence connections between utterances.</p>
+
+<p>To the extent that collaboration can be integrated into our constraints on language theorizing, we have reason to look for collaborative structure in the scoreboard representation of conversation. But what do collaborative score markers look like?</p>
+
+<h2 id="language-as-a-best-system">Language as a best system</h2>
+
+<p>There are challenges to the best systems account in application to the governing principles of the physical structure of the world. Primary among these is its reliance on the notion of <em>simplicity</em>. Even if we grant as a methodological principle of scientific theorizing that simpler rules are to be preferred, there is no agreed upon criterion for relative simplicity that makes the decision procedure in any way objective. Lewis unabashedly relativized simplicity to the language within which the theorizing takes place, suggesting that simplicity be measured in terms of the length of the basic syntactic structures appearing in the laws. But as Nelson Goodman (<a id="goodman1983" class="ref tooled" href="#ref-goodman1983"><span class="date"><span class="year">1983</span></span></a>) has taught us, languages can vary drastically in syntactic specification of basic concepts, with no one language claiming pride of place over another. Unless one language can be separated from the rest, as Ted Sider (<a id="sider2013" class="ref tooled" href="#ref-sider2013"><span class="date"><span class="year">2013</span></span></a>), has argued is possible the best system account treats status as a law of nature as a dependent upon the theorizer’s concept of elegance.</p>
+
+<p>This modicum of <em>irrealism</em> inherent in the best system account is a second issue for its application in the realm of physical structure. It is well-accepted that there are limits to what is available empirically to human observers of the world, and some extreme empiricists go so far as to infer that there is nothing to posit beyond the empirically verifiable elements of our scientific models (<a id="churchland1982" class="ref tooled" href="#ref-churchland1982"><span class="author">Churchland </span><span class="date"><span class="year">1982</span></span></a>), but it is difficult to shake the idea that there is a physical reality out there that our theoretical efforts attempt to <em>describe</em> rather than <em>determine</em>.</p>
+
+<p>Despite these concerns in the realm of the physical sciences, the best systems account fares well in application to <em>linguistic interpretation</em>.</p>
+
+<h1 id="collaborative-update-semantics">Collaborative update semantics</h1>
+
+<p>And now we provide the framework for a formal model…</p>
+
+<p>Standard update semantics is build upon a system of sequential additions to and operations on a shared <a id="discourse" href="/glossary#discourse" class="tooled gloss">discourse space</a><span id="discourse-tip" class="tooltip glossary"><b>discourse</b>: A communicative exchange among two or more people.</span>. By supplementing this framework with a middle ground working space, a discourse <a id="not-found" href="/glossary#not-found" class="tooled gloss">sandbox</a><span id="not-found-tip" class="tooltip glossary"><b>Word not found</b>: </span>, we can represent interlocutors’ joint contributions, decomposed into <a id="initiation" href="/glossary#initiation" class="tooled gloss">initiation</a><span id="initiation-tip" class="tooltip glossary"><b>initiation</b>: An utterance that constitutes the opening phase of a contribution to inquiry. An initiation is paired with a completion, and the resulting discourse pair provides the contribution to the inquiry.</span> and <a id="completion" href="/glossary#completion" class="tooled gloss">completion</a><span id="completion-tip" class="tooltip glossary"><b>completion</b>: An utterance that constitutes the closing phase of a contribution to inquiry. A completion is paired with an initiation, and the resulting discourse pair provides the contribution to the inquiry.</span> phases.</p>
+
+<p>I consider accounting for conjecture to be an adequacy condition on semantic theory in that conjectures form a well-defined class of linguistic tools that do important interpretive work that cannot be done better by some other (set of) tool(s).</p>
+
+<h2 id="levels-of-dynamism">Levels of dynamism</h2>
+
+<p>It is folly, Frege (<a id="frege1884" class="ref tooled" href="#ref-frege1884"><span class="date"><span class="year">1884/1997</span></span></a>) warned, to ask for the meaning of a word in isolation, prescribing instead that the sentence as a whole be the proper unit of semantic investigation. The dynamic turn in semantics did Frege’s <em>context principle</em> one better. On the basis of anomolous linguistic data involving anaphora resolution, attention was shifted from single sentences to the broader linguistic context in which their specific instantiations appear. Thus it has been suggested that the proper units of linguistic evaluation are extended texts or conversations, what I refer to here as <a id="discourse" href="/glossary#discourse" class="tooled gloss">discourses</a><span id="discourse-tip" class="tooltip glossary"><b>discourse</b>: A communicative exchange among two or more people.</span>.</p>
+
+<p>The many varieties of dynamic semantic accounts share in common a model of discourses in which there is exists a theoretical platform upon which information is built in a stepwise manner throughout the discourse. Each subsequent contribution to the discourse is analyzed in terms of what it constructs upon the platform or what previous construction it wipes away. The materials of which discourses are built include <em>possible worlds</em>, <em>situations</em>, <em>events</em>, <em>discourse referents</em>, and set-theoretic constructs thereof. This platform and its associated construction go variously by names such as <em>discourse representation</em>, <em>conversational scoreboard</em>, <em>common ground</em>, and <em>information state</em>. I couch my discussion within this broad tradition of theories and refer to the semantic representation variously as the <em>information state</em> or <em>state of information</em> of the discourse.</p>
+
+<p>These semantic theories are dynamic in that they describe how new contributions to a discourse <em>respond to</em> and <em>modify</em> what has preceded, and discourse is very much dynamic in this sense. But by and large, they fail to capture another way in which discourse is dynamic. Contributions to discourse also <em>anticipate</em> what is to follow in the discussion, and this feature of how discourses proceed ought to be brought under the umbrella of semantic theory.</p>
+
+<h2 id="initiations-defaults-and-sandboxes">Initiations, defaults, and sandboxes</h2>
+
+<p>To capture this anticipatory level of dynamics, I propose that we treat individual utterances as together forming a single evaluable contribution. We can model this idea by incorporating another Fregean insight into update semantics, treating the initiation phase of discourse contributions as <em>incomplete</em>, with the completion phase <em>saturating</em> it with the requisite informational material. It is only once saturated that the discourse content of an utterance is brought to light. However, initiations will ocasionally be treated on their own for purposes of evaluation. While I contend that instances where this is done are limited to non-canonical contexts such as presuppostion repair, it isn’t strictly true that initations are <em>inevaluable</em> without a complementary completion. For this reason, we must also incorporate a notion of <a id="not-found" href="/glossary#not-found" class="tooled gloss">default</a><span id="not-found-tip" class="tooltip glossary"><b>Word not found</b>: </span> <a id="not-found" href="/glossary#not-found" class="tooled gloss">saturation</a><span id="not-found-tip" class="tooltip glossary"><b>Word not found</b>: </span>, in which context supplies the material needed for evaluation of the initiation. Defaults turn an initiation into a complete contribution, but they are also subject to override by a standard completion presented by a discourse participant.</p>
+
+<p>The resulting picture is one of an extended and evolving, collaborative process surrounding each contribution to discourse. Initiations undergo a vetting procedure before they are entered into the official conversational record. To avoid contamination of the common ground with the untreated mess that many initiations carry, interlocutors must isolate the collaborative process from the conversational space. For this purpose, I draw the notion of a <em>sandbox</em> from the field of computer programming. A sandbox is platform cordoned off within a system where untested code can be executed and debugged under real conditions but without infecting the system as a whole if things go wrong. If the executed code is found to be functional, the restrictions can be lifted and it can be incorporated into the system. By introducing a sandbox-style working space within the conversational space as a whole, we can incorporate collaboration into standard update semantics.</p>
+
+<p>The system of initiations, defaults, and completions, encompassed within a sandbox operating theater, provides our update semantics with a new type of dynamism. Standard dynamic accounts have it that utterance meaning depends on the surrounding linguistic context. But in collaborative update semantics, utterance meaning can actually change as the conversation progresses, and the status of an utterance evolves from initiation saturated with a default, through the sandbox vetting, and into the conversational record as a completed contribution.</p>
+
+
+</div>
+
+<div class="chapter-end" markdown="1">
+
+
+
+
+
+  <!-- References -->
+  <div class="refereces print-only">
+    <h1>References</h1>
+    
+
+<ul class='bib'>
+
+  
+    <li>
+      <a name="ref-anderbois2010"></a><span class='author'>Anderbois, Scott </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title">Sluicing as anaphora to issues</span>. <span class='journal'>Proceedings of SALT, <span class='edition'>20.</span> </span><ul class='url'><a href="https://app.box.com/s/8xc9ruau39i5vlxfut65" target="_blank">https://app.box.com/s/8xc9ruau39i5vlxfut65</a></ul>
+      <div class="tooltip reference" id="anderbois2010-tip"><a name="ref-anderbois2010"></a><span class='author'>Anderbois, Scott </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title">Sluicing as anaphora to issues</span>. <span class='journal'>Proceedings of SALT, <span class='edition'>20.</span> </span><ul class='url'><a href="https://app.box.com/s/8xc9ruau39i5vlxfut65" target="_blank">https://app.box.com/s/8xc9ruau39i5vlxfut65</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-anderbois2013"></a><span class='author'>Anderbois, Scott and Adrian Brasoveanu and R. Henderson </span><span class='date'>(<span class='month'>Nov</span> <span class='year'>2013</span>). </span><span class="title">At-issue Proposals and Appositive Impositions in Discourse</span>. <span class='journal'>Journal of Semantics. </span><span class='publication'><span class='publisher'>Oxford University Press</span>. </span><ul class='url'><a href="http://dx.doi.org/10.1093/jos/fft014" target="_blank">http://dx.doi.org/10.1093/jos/fft014</a></ul>
+      <div class="tooltip reference" id="anderbois2013-tip"><a name="ref-anderbois2013"></a><span class='author'>Anderbois, Scott and Adrian Brasoveanu and R. Henderson </span><span class='date'>(<span class='month'>Nov</span> <span class='year'>2013</span>). </span><span class="title">At-issue Proposals and Appositive Impositions in Discourse</span>. <span class='journal'>Journal of Semantics. </span><span class='publication'><span class='publisher'>Oxford University Press</span>. </span><ul class='url'><a href="http://dx.doi.org/10.1093/jos/fft014" target="_blank">http://dx.doi.org/10.1093/jos/fft014</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-bittner2011"></a><span class='author'>Bittner, Maria </span><span class='date'>(<span class='year'>2011</span>). </span><span class="title">Time and modality without tenses or modals</span>. <span class="title book">Tenses across Languages</span>. <span class="editor">R. Musan and M. Rathert (eds). </span><span class='publication'><span class='publisher'>Niemeyer, Tubingen</span>. </span><ul class='url'><a href="https://app.box.com/s/fafymrmxm8qw7zgzfq9p" target="_blank">https://app.box.com/s/fafymrmxm8qw7zgzfq9p</a><br /><a href="http://www.rci.rutgers.edu/~mbittner/bittner11_tam.pdf" target="_blank">http://www.rci.rutgers.edu/~mbittner/bittner11_tam.pdf</a><br /></ul>
+      <div class="tooltip reference" id="bittner2011-tip"><a name="ref-bittner2011"></a><span class='author'>Bittner, Maria </span><span class='date'>(<span class='year'>2011</span>). </span><span class="title">Time and modality without tenses or modals</span>. <span class="title book">Tenses across Languages</span>. <span class="editor">R. Musan and M. Rathert (eds). </span><span class='publication'><span class='publisher'>Niemeyer, Tubingen</span>. </span><ul class='url'><a href="https://app.box.com/s/fafymrmxm8qw7zgzfq9p" target="_blank">https://app.box.com/s/fafymrmxm8qw7zgzfq9p</a><br /><a href="http://www.rci.rutgers.edu/~mbittner/bittner11_tam.pdf" target="_blank">http://www.rci.rutgers.edu/~mbittner/bittner11_tam.pdf</a><br /></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-brasoveanua"></a><span class='author'>Brasoveanu, Adrian </span><span class='date'>(<span class='year'>n/a</span>). </span><span class="title">Structured Anaphora to Quantifier Domains: A Unified Account of Quantificational and Modal Subordination</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="brasoveanua-tip"><a name="ref-brasoveanua"></a><span class='author'>Brasoveanu, Adrian </span><span class='date'>(<span class='year'>n/a</span>). </span><span class="title">Structured Anaphora to Quantifier Domains: A Unified Account of Quantificational and Modal Subordination</span>. <span class='unpub'>Unpublished manuscript. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-campos2011"></a><span class='author'>Campos, Daniel G. </span><span class='date'>(<span class='year'>2011</span>). </span><span class="title">On the Distinction Between Peirce's Abduction and Lipton's Inference to the Best Explanation</span>. <span class='journal'>Synthese, <span class='edition'>180.3.</span> </span><span class="pages">pp. 419-442. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="campos2011-tip"><a name="ref-campos2011"></a><span class='author'>Campos, Daniel G. </span><span class='date'>(<span class='year'>2011</span>). </span><span class="title">On the Distinction Between Peirce's Abduction and Lipton's Inference to the Best Explanation</span>. <span class='journal'>Synthese, <span class='edition'>180.3.</span> </span><span class="pages">pp. 419-442. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-churchland1982"></a><span class='author'>Churchland, Paul M. </span><span class='date'>(<span class='year'>1982</span>). </span><span class="title">The Anti-Realist Epistemology of van Fraasen's 'The Scientific Image'</span>. <span class='journal'>Pacific Philosophical Quarterly, <span class='edition'>63.3.</span> </span><span class='publication'><span class='publisher'>Wiley-Blackwell</span>. </span><span class="pages">pp. 226. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="churchland1982-tip"><a name="ref-churchland1982"></a><span class='author'>Churchland, Paul M. </span><span class='date'>(<span class='year'>1982</span>). </span><span class="title">The Anti-Realist Epistemology of van Fraasen's 'The Scientific Image'</span>. <span class='journal'>Pacific Philosophical Quarterly, <span class='edition'>63.3.</span> </span><span class='publication'><span class='publisher'>Wiley-Blackwell</span>. </span><span class="pages">pp. 226. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-clark1992"></a><span class='author'>Clark, Herbert H. </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title book">Arenas of language use</span>. <span class='publication'><span class='publisher'>University of Chicago Press</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="clark1992-tip"><a name="ref-clark1992"></a><span class='author'>Clark, Herbert H. </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title book">Arenas of language use</span>. <span class='publication'><span class='publisher'>University of Chicago Press</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-clark1992a"></a><span class='author'>Clark, Herbert H. and Edward F. Schaefer </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">Contributing to discourse</span>. <span class="title book">Arenas of Language Use</span>. <span class='publication'><span class='publisher'>University of Chicago Press</span>. </span><span class="pages">pp. 144-175. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="clark1992a-tip"><a name="ref-clark1992a"></a><span class='author'>Clark, Herbert H. and Edward F. Schaefer </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">Contributing to discourse</span>. <span class="title book">Arenas of Language Use</span>. <span class='publication'><span class='publisher'>University of Chicago Press</span>. </span><span class="pages">pp. 144-175. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-farkas2010"></a><span class='author'>Farkas, D. F. and K. B. Bruce </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title">On Reacting to Assertions and Polar Questions</span>. <span class='journal'>Journal of Semantics, <span class='edition'>27.1.</span> </span><span class="pages">pp. 81-118. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="farkas2010-tip"><a name="ref-farkas2010"></a><span class='author'>Farkas, D. F. and K. B. Bruce </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title">On Reacting to Assertions and Polar Questions</span>. <span class='journal'>Journal of Semantics, <span class='edition'>27.1.</span> </span><span class="pages">pp. 81-118. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-frege1884"></a><span class='author'>Frege, Gottlob </span><span class='date'>(<span class='year'>1884/1997</span>). </span><span class="title">The Foundations of Arithmetic</span>. <span class="title book">The Frege Reader</span>. <span class="editor">Michael Beaney (ed). </span><span class='publication'><span class='publisher'>Blackwell Publishing</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="frege1884-tip"><a name="ref-frege1884"></a><span class='author'>Frege, Gottlob </span><span class='date'>(<span class='year'>1884/1997</span>). </span><span class="title">The Foundations of Arithmetic</span>. <span class="title book">The Frege Reader</span>. <span class="editor">Michael Beaney (ed). </span><span class='publication'><span class='publisher'>Blackwell Publishing</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-goodman1983"></a><span class='author'>Goodman, Nelson </span><span class='date'>(<span class='year'>1983</span>). </span><span class="title book">Fact, Fiction, and Forecast</span>. <span class='publication'><span class='publisher'>Harvard University Press</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="goodman1983-tip"><a name="ref-goodman1983"></a><span class='author'>Goodman, Nelson </span><span class='date'>(<span class='year'>1983</span>). </span><span class="title book">Fact, Fiction, and Forecast</span>. <span class='publication'><span class='publisher'>Harvard University Press</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-grice1989"></a><span class='author'>Grice, Paul </span><span class='date'>(<span class='year'>1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class='publication'><span class='publisher'>Harvard University Press</span>. </span><ul class='url'><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul>
+      <div class="tooltip reference" id="grice1989-tip"><a name="ref-grice1989"></a><span class='author'>Grice, Paul </span><span class='date'>(<span class='year'>1989</span>). </span><span class="title book">Studies in the Way of Words</span>. <span class='publication'><span class='publisher'>Harvard University Press</span>. </span><ul class='url'><a href="https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611" target="_blank">https://app.box.com/s/iq4wokku2efpyflkqnbbvqjhb3pri611</a><br /><a href="https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce" target="_blank">https://app.box.com/s/k6ijhb7dkrzex8vzt79djvfpyoytxhce</a><br /></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-groenendijk2009"></a><span class='author'>Groenendijk, Jeroen and Floris Roelofsen </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Inquisitive Semantics and Pragmatics</span>. <ul class='url'><a href="http://bit.ly/groenendijk2009" target="_blank">http://bit.ly/groenendijk2009</a></ul>
+      <div class="tooltip reference" id="groenendijk2009-tip"><a name="ref-groenendijk2009"></a><span class='author'>Groenendijk, Jeroen and Floris Roelofsen </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Inquisitive Semantics and Pragmatics</span>. <ul class='url'><a href="http://bit.ly/groenendijk2009" target="_blank">http://bit.ly/groenendijk2009</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-james1896"></a><span class='author'>James, William </span><span class='date'>(<span class='year'>1896/2009</span>). </span><span class="title">The will to believe and other essays</span>. <span class='publication'><span class='publisher'>Project Gutenberg</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="james1896-tip"><a name="ref-james1896"></a><span class='author'>James, William </span><span class='date'>(<span class='year'>1896/2009</span>). </span><span class="title">The will to believe and other essays</span>. <span class='publication'><span class='publisher'>Project Gutenberg</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-kehler2000"></a><span class='author'>Kehler, Andrew </span><span class='date'>(<span class='year'>2000</span>). </span><span class="title">Coherence and the Resolution of Ellipsis</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>23.6.</span> </span><span class='publication'><span class='publisher'>Springer</span><span class='location'>: Netherlands</span>. </span><span class="pages">pp. 533-575. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="kehler2000-tip"><a name="ref-kehler2000"></a><span class='author'>Kehler, Andrew </span><span class='date'>(<span class='year'>2000</span>). </span><span class="title">Coherence and the Resolution of Ellipsis</span>. <span class='journal'>Linguistics and Philosophy, <span class='edition'>23.6.</span> </span><span class='publication'><span class='publisher'>Springer</span><span class='location'>: Netherlands</span>. </span><span class="pages">pp. 533-575. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-lewis1973a"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title book">Counterfactuals</span>. <span class='publication'><span class='publisher'>Blackwell Publishing</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="lewis1973a-tip"><a name="ref-lewis1973a"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title book">Counterfactuals</span>. <span class='publication'><span class='publisher'>Blackwell Publishing</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-lewis1974b"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1974</span>). </span><span class="title">Radical Interpretation</span>. <span class='journal'>Synthese, <span class='edition'>27.3-4.</span> </span><span class="pages">pp. 331-344. </span><ul class='url'><a href="https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/" target="_blank">https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/</a></ul>
+      <div class="tooltip reference" id="lewis1974b-tip"><a name="ref-lewis1974b"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1974</span>). </span><span class="title">Radical Interpretation</span>. <span class='journal'>Synthese, <span class='edition'>27.3-4.</span> </span><span class="pages">pp. 331-344. </span><ul class='url'><a href="https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/" target="_blank">https://spideroak.com/browse/share/ehovers10/works-of-phil/lewis/</a></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    
+  
+    <li>
+      <a name="ref-lewis1975b"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1975</span>). </span><span class="title">Languages and Language</span>. <span class="title book">Minnesota Studies in the Philosophy of Science</span>. <span class='publication'><span class='publisher'>University of Minnesota Press</span>. </span><span class="pages">pp. 3-35. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="lewis1975b-tip"><a name="ref-lewis1975b"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1975</span>). </span><span class="title">Languages and Language</span>. <span class="title book">Minnesota Studies in the Philosophy of Science</span>. <span class='publication'><span class='publisher'>University of Minnesota Press</span>. </span><span class="pages">pp. 3-35. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-lewis1979f"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1979</span>). </span><span class="title">Scorekeeping in a Language Game</span>. <span class='journal'>Journal of Philosophical Logic, <span class='edition'>8.1.</span> </span><span class="pages">pp. 339-59. </span><ul class='url'><a href="https://app.box.com/s/ah5uylb4a8pktexm9apeqxz70z8vto3u" target="_blank">https://app.box.com/s/ah5uylb4a8pktexm9apeqxz70z8vto3u</a></ul>
+      <div class="tooltip reference" id="lewis1979f-tip"><a name="ref-lewis1979f"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1979</span>). </span><span class="title">Scorekeeping in a Language Game</span>. <span class='journal'>Journal of Philosophical Logic, <span class='edition'>8.1.</span> </span><span class="pages">pp. 339-59. </span><ul class='url'><a href="https://app.box.com/s/ah5uylb4a8pktexm9apeqxz70z8vto3u" target="_blank">https://app.box.com/s/ah5uylb4a8pktexm9apeqxz70z8vto3u</a></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-lewis1980"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1980</span>). </span><span class="title">Index, Context, and Content</span>. <span class="title book">Philosophy and Grammar</span>. <span class="editor">S. Kanger and S. O&#x0308;hman (eds). </span><span class='publication'><span class='publisher'>Reidel Publishing Company</span>. </span><span class="pages">pp. 79-100. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="lewis1980-tip"><a name="ref-lewis1980"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1980</span>). </span><span class="title">Index, Context, and Content</span>. <span class="title book">Philosophy and Grammar</span>. <span class="editor">S. Kanger and S. O&#x0308;hman (eds). </span><span class='publication'><span class='publisher'>Reidel Publishing Company</span>. </span><span class="pages">pp. 79-100. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-murray2010"></a><span class='author'>Murray, Sarah </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title book">Evidentiality and the Structure of Speech Acts</span>. <ul class='url'></ul>
+      <div class="tooltip reference" id="murray2010-tip"><a name="ref-murray2010"></a><span class='author'>Murray, Sarah </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title book">Evidentiality and the Structure of Speech Acts</span>. <ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-murray2014"></a><span class='author'>Murray, Sarah E. </span><span class='date'>(<span class='month'>March</span> <span class='year'>2014</span>). </span><span class="title">Varieties of update</span>. <span class='journal'>Semantics and Pragmatics, <span class='edition'>7.2.</span> </span><span class="pages">pp. 1-53. </span><ul class='url'><a href="https://app.box.com/s/gksdg1ul62z37h56uu2gioyb45pjqkuo" target="_blank">https://app.box.com/s/gksdg1ul62z37h56uu2gioyb45pjqkuo</a></ul>
+      <div class="tooltip reference" id="murray2014-tip"><a name="ref-murray2014"></a><span class='author'>Murray, Sarah E. </span><span class='date'>(<span class='month'>March</span> <span class='year'>2014</span>). </span><span class="title">Varieties of update</span>. <span class='journal'>Semantics and Pragmatics, <span class='edition'>7.2.</span> </span><span class="pages">pp. 1-53. </span><ul class='url'><a href="https://app.box.com/s/gksdg1ul62z37h56uu2gioyb45pjqkuo" target="_blank">https://app.box.com/s/gksdg1ul62z37h56uu2gioyb45pjqkuo</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-partee1973"></a><span class='author'>Partee, Barbara Hall </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title">Some Structural Analogies between Tenses and Pronouns in English</span>. <span class='journal'>The Journal of Philosophy, <span class='edition'>70.18.</span> </span><span class="pages">pp. 601-609. </span><ul class='url'><a href="http://www.jstor.org/stable/2025024" target="_blank">http://www.jstor.org/stable/2025024</a><br /><a href="https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur" target="_blank">https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur</a><br /></ul>
+      <div class="tooltip reference" id="partee1973-tip"><a name="ref-partee1973"></a><span class='author'>Partee, Barbara Hall </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title">Some Structural Analogies between Tenses and Pronouns in English</span>. <span class='journal'>The Journal of Philosophy, <span class='edition'>70.18.</span> </span><span class="pages">pp. 601-609. </span><ul class='url'><a href="http://www.jstor.org/stable/2025024" target="_blank">http://www.jstor.org/stable/2025024</a><br /><a href="https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur" target="_blank">https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur</a><br /></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-peirce1877"></a><span class='author'>Peirce, Charles Sanders </span><span class='date'>(<span class='year'>1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class='publication'><span class='publisher'>Dover Publications, Inc.</span><span class='location'>: New York</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="peirce1877-tip"><a name="ref-peirce1877"></a><span class='author'>Peirce, Charles Sanders </span><span class='date'>(<span class='year'>1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class='publication'><span class='publisher'>Dover Publications, Inc.</span><span class='location'>: New York</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-portner1997"></a><span class='author'>Portner, Paul </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">The Semantics of Mood, Completion, and Conversational Force</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>5.</span> </span><span class="pages">pp. 167-212. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="portner1997-tip"><a name="ref-portner1997"></a><span class='author'>Portner, Paul </span><span class='date'>(<span class='year'>1997</span>). </span><span class="title">The Semantics of Mood, Completion, and Conversational Force</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>5.</span> </span><span class="pages">pp. 167-212. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-roberts2016"></a><span class='author'>Roberts, Craige </span><span class='date'>(<span class='year'>2016</span>). </span><span class="title">Speech Acts in Discourse Context</span>. <span class="title book">New Work on Speech Acts</span>. <span class="editor">Daniel Fogal, Daniel Harris, and Matt Moss (eds). </span><span class='publication'><span class='publisher'>Oxford University Press</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="roberts2016-tip"><a name="ref-roberts2016"></a><span class='author'>Roberts, Craige </span><span class='date'>(<span class='year'>2016</span>). </span><span class="title">Speech Acts in Discourse Context</span>. <span class="title book">New Work on Speech Acts</span>. <span class="editor">Daniel Fogal, Daniel Harris, and Matt Moss (eds). </span><span class='publication'><span class='publisher'>Oxford University Press</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul>
+      <div class="tooltip reference" id="rooth1992-tip"><a name="ref-rooth1992"></a><span class='author'>Rooth, Mats </span><span class='date'>(<span class='year'>1992</span>). </span><span class="title">A Theory of Focus Interpretation</span>. <span class='journal'>Natural Language Semantics, <span class='edition'>1.</span> </span><span class="pages">pp. 75-116. </span><ul class='url'><a href="https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw" target="_blank">https://app.box.com/s/qzhm31x5wfchzxnx2rsvdfenri903ybw</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-searle1976"></a><span class='author'>Searle, John R. </span><span class='date'>(<span class='year'>1976</span>). </span><span class="title">A Classification of Illocutionary Acts</span>. <span class='journal'>Language in Society, <span class='edition'>5.1.</span> </span><span class='publication'><span class='publisher'>Cambridge University Press</span>. </span><span class="pages">pp. 1-23. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="searle1976-tip"><a name="ref-searle1976"></a><span class='author'>Searle, John R. </span><span class='date'>(<span class='year'>1976</span>). </span><span class="title">A Classification of Illocutionary Acts</span>. <span class='journal'>Language in Society, <span class='edition'>5.1.</span> </span><span class='publication'><span class='publisher'>Cambridge University Press</span>. </span><span class="pages">pp. 1-23. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-shanahan1986"></a><span class='author'>Shanahan, Timothy </span><span class='date'>(<span class='year'>1986</span>). </span><span class="title">The First Moment of Scientific Inquiry: C. S. Peirce on the Logic of Abduction</span>. <span class='journal'>Transactions of the Charles S. Peirce Society, <span class='edition'>22.4.</span> </span><span class='publication'><span class='publisher'>Indiana University Press</span>. </span><span class="pages">pp. 449-466. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="shanahan1986-tip"><a name="ref-shanahan1986"></a><span class='author'>Shanahan, Timothy </span><span class='date'>(<span class='year'>1986</span>). </span><span class="title">The First Moment of Scientific Inquiry: C. S. Peirce on the Logic of Abduction</span>. <span class='journal'>Transactions of the Charles S. Peirce Society, <span class='edition'>22.4.</span> </span><span class='publication'><span class='publisher'>Indiana University Press</span>. </span><span class="pages">pp. 449-466. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-sider2013"></a><span class='author'>Sider, Theodore </span><span class='date'>(<span class='year'>2013</span>). </span><span class="title book">Writing the Book of the World</span>. <span class='publication'><span class='publisher'>Oxford University Press Uk</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="sider2013-tip"><a name="ref-sider2013"></a><span class='author'>Sider, Theodore </span><span class='date'>(<span class='year'>2013</span>). </span><span class="title book">Writing the Book of the World</span>. <span class='publication'><span class='publisher'>Oxford University Press Uk</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-stalnaker1987"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title book">Inquiry</span>. <span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="stalnaker1987-tip"><a name="ref-stalnaker1987"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title book">Inquiry</span>. <span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-stalnaker2014"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>2014</span>). </span><span class="title">Context</span>. <span class='publication'><span class='publisher'>Oxford University Press</span>. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="stalnaker2014-tip"><a name="ref-stalnaker2014"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>2014</span>). </span><span class="title">Context</span>. <span class='publication'><span class='publisher'>Oxford University Press</span>. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
+      <a name="ref-starr2010"></a><span class='author'>Starr, William B. </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title book">Conditionals, meaning, and mood</span>. <ul class='url'><a href="https://app.box.com/s/eeozbemt8rihbeu67pwnvtnvw3igb1ij" target="_blank">https://app.box.com/s/eeozbemt8rihbeu67pwnvtnvw3igb1ij</a></ul>
+      <div class="tooltip reference" id="starr2010-tip"><a name="ref-starr2010"></a><span class='author'>Starr, William B. </span><span class='date'>(<span class='year'>2010</span>). </span><span class="title book">Conditionals, meaning, and mood</span>. <ul class='url'><a href="https://app.box.com/s/eeozbemt8rihbeu67pwnvtnvw3igb1ij" target="_blank">https://app.box.com/s/eeozbemt8rihbeu67pwnvtnvw3igb1ij</a></ul></div>
+    </li>
+    
+  
+
+  
+    
+  
+    <li>
+      <a name="ref-stone1999"></a><span class='author'>Stone, Matthew </span><span class='date'>(<span class='year'>1999</span>). </span><span class="title">Reference to possible worlds</span>. <span class='journal'>Technical Report 49, Rutgers University Center for Cognitive Science. </span><ul class='url'><a href="https://app.box.com/s/o6pk81wn5kb201sgqcju1r5ag1gvl893" target="_blank">https://app.box.com/s/o6pk81wn5kb201sgqcju1r5ag1gvl893</a></ul>
+      <div class="tooltip reference" id="stone1999-tip"><a name="ref-stone1999"></a><span class='author'>Stone, Matthew </span><span class='date'>(<span class='year'>1999</span>). </span><span class="title">Reference to possible worlds</span>. <span class='journal'>Technical Report 49, Rutgers University Center for Cognitive Science. </span><ul class='url'><a href="https://app.box.com/s/o6pk81wn5kb201sgqcju1r5ag1gvl893" target="_blank">https://app.box.com/s/o6pk81wn5kb201sgqcju1r5ag1gvl893</a></ul></div>
+    </li>
+    
+  
+
+</ul>
+
+  </div>
+
+</div>
+
+
+
+</div>
+
+<div class="page-end">
+
+  <footer class="site-footer">
+
+<div class="footer-col-wrapper">
+  <div class="footer-col  footer-col-1">
+    <span><a href="/">Discourse as collaborative inquiry</a></span>
+    <ul class="social-media-list">
+      
+      <li>
+        <a href="mailto:ehovers10@gmail.com">
+          <img class="icon" src="/images/mail.svg" />
+          <span class="username">ehovers10@gmail.com</span>
+        </a>
+      </li>
+      
+
+      
+      <li>
+        <a href="https://github.com/ehovers10">
+          <img class="icon" src="/images/github.svg" />
+          <span class="username">ehovers10</span>
+        </a>
+      </li>
+      
+
+      
+
+      
+      <li>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img class="icon" src="/images/creative-commons.svg" />
+          <img class="icon" src="/images/creative-commons-attribution.svg" />        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="footer-col  footer-col-2"></div>
+
+  <div class="footer-col  footer-col-3">
+    <span>I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.</span>
+  </div>
+</div>
+
+</footer>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

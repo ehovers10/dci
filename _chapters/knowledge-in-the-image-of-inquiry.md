@@ -15,7 +15,7 @@ append:
   - "Levi on goal generated constraints"
   - "Bratman et al. on plans"
   - "Peirce and van Fraassen on induction"
-permalink: /concept
+permalink: /concept/
 ---
 
 ## Finding our way to knowledge

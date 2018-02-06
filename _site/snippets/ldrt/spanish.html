@@ -1,0 +1,90 @@
+<p>Juan speaks spanish</p>
+<table class="drswrap">
+  <tr>
+    <td class="contribution">&nbsp;</td>
+    <td>
+      <table class="drswrap">
+        <tr>
+          <td class="drs left top"></td>
+          <td class="dref" rowspan="2">x<sub>k</sub></td>
+          <td class="condition">juan<sub>k</sub>(x)</td>
+          <td class="drs right top"></td>
+        </tr>
+        <tr>
+          <td class="drs left bottom"></td>
+          <td class="condition">speak.spanish<sub>fr</sub>(x)</td>
+          <td class="drs right bottom"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div style="margin: 1em;"></div>
+<p>Well, he is Argentinian, but he doesn't speak Spanish.</p>
+<table class="drswrap">
+  <tr>
+    <td class="contribution">&rArr;</td>
+    <td>
+      <table class="drswrap">
+        <tr>
+          <td class="drs left top"></td>
+          <td class="dref" rowspan="3">x<sub>k</sub></td>
+          <td class="condition">juan<sub>k</sub>(x)</td>
+          <td class="drs right top"></td>
+        </tr>
+        <tr>
+          <td class="drs left"></td>
+          <td class="condition">speak.spanish<sub>fr</sub>(x)</td>
+          <td class="drs right"></td>
+        </tr>
+        <tr>
+          <td class="drs left bottom"></td>
+          <td class="condition">argentinian<sub>fr</sub>(x)</td>
+          <td class="drs right bottom"></td>
+        </tr>
+      </table>
+    </td>
+    <td class="symbol contribution">&darr;</td>
+    <td>
+      <table class="drswrap">
+        <tr>
+          <td class="drs left top"></td>
+          <td class="dref" rowspan="3">x<sub>k</sub></td>
+          <td class="condition">juan<sub>k</sub>(x)</td>
+          <td class="drs right top"></td>
+        </tr>
+        <tr>
+          <td class="drs left bottom"></td>
+          <td class="condition">&not;<sub>fr</sub>speak.spanish<sub>fr</sub>(x)</td>
+          <td class="drs right bottom"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div style="margin: 1em;"></div>
+
+<table class="drswrap">
+  <tr>
+    <td class="contribution">&rArr;</td>
+    <td>
+      <table class="drswrap">
+        <tr>
+          <td class="drs left top">&nbsp;</td>
+          <td class="dref" rowspan="2">x<sub>k</sub></td>
+          <td class="condition">juan<sub>k</sub>(x)</td>
+          <td class="condition">argentinian<sub>fr</sub>(x)</td>
+          <td class="drs right top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="drs left bottom">&nbsp;</td>
+          <td class="condition downdate">speak.spanish<sub>fr</sub>(x)</td>
+          <td class="condition">&not;<sub>fr</sub>speak.spanish<sub>fr</sub>(x)</td>
+          <td class="drs right bottom"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

@@ -72,7 +72,7 @@ collections:
     output: true
     permalink: /parts/:path
   snippets:
-    output: false
+    output: true
   chapters:
     output: true
   appendices:

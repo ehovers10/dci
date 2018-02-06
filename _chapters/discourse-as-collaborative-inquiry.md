@@ -1,13 +1,16 @@
 ---
-title: Project overview
+title: Conjecture, Distributed Contributions, and Update Semantics
 date: 2018-01-31
 level: 1
 biblio: true
 references: ""
 js: [toc]
 count:
-  ex: 0
-permalink: /overview
+  ex: 1
+  def: 1
+permalink: /overview/
+abstract: >
+  I contend that exploring the speech act of *conjecture* reveals that discourse is a collaborative effort in which interlocutors contribute in parallel rather than just serially. To capture this, we must take the basic component of discourse update to be the *distributed contribution*, the initiation of which may be made by a different interlocutor than the completion. I motivate the development of an model of the conversational scoreboard that is expanded to accommodate distributed contributions by examining David Lewis' conception of language modeling. And I offer the framework for a formal system based on update semantics and augmented with a sandbox -- an isolated workspace within which interlocutors can hash out their collaborative efforts. 
 ---
 
 # From cooperation to collaboration
@@ -24,9 +27,54 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 
 In many ways, inquiry is a similar endeavor to wall-building. {% gloss Information %} takes the place of stones as the building blocks participants collectively heft, and {% gloss utterances %} take the place of hands and wheelbarrows as the conveyances of the building materials. Finally, our metaphor maps resolution of the {% gloss issue %} that spurred our entering into the inquiry to the completed wall.
 
-To say that discourse commonly realizes a collaborative inquiry is to claim that successfully contributing to the discourse requires the efforts of multiple parties working in concert, not just serially. The goal of this project is to both motivate this idea and provide a model for how it can be implemented in a formal semantic/pragmatic system.
+To say that discourse commonly realizes a collaborative inquiry is to claim that successfully contributing to the discourse requires the efforts of multiple parties working in concert, not just serially. The goal of this paper is to both motivate this idea and provide a model for how it can be implemented in a formal semantic/pragmatic system. I label the result *collaborative discourse dynamics*.
 
-## Contribution types
+[The paper is divided into three parts: Development of collaborative inquiry, Collaborative discourse contributions by way of conjecture, Incorporating collaboration into an update semantics framework.]
+
+In suggesting that the locus of information state update be shifted from single utterances to distributed contributions, we take on the burden of motivating the need for this departure and providing a formal system for its implementation. This project is my attempt to discharge this burden and offer a framework for *collaborative discourse dynamics*.
+
+# Collaborative inquiry
+
+C.S. Peirce recognized that no human agent will be content to stand pat with their knowledge. "The iritation of doubt causes a struggle to attain a state of belief," and this iritation is "the only immediate motive for the struggle to attain belief" {% cite peirce1877 | pages: 10 | noname %}. While such iritation is a natural state for human inquirers, most models of rational inquiry have little to say about of the conditions under which a rational agent chooses to scratch, instead dismissing the impluse as arational belief change.[^ Levi on distinction. Abduction as context of discovery]
+
+William James {% cite james1896 | noname %} felt that it was within the purview of inquiry to characterize the proper response to doubt, and he drew a distinction between two independent and sometimes conflicting goals for those engaged in the pursuit of knowledge: (i) to avoid believing falsehoods and (ii) to acquire true beliefs.  A clever agent could meet the goal of avoiding falsehoods by simply believing nothing at all, but they would thereby forfeit the virtue of believing truths. One could, alternatively, meet the goal of believing truths simply by believing everything, but doing so sacrifices entirely achieving the second goal. As James saw it, a strategy of inquiry that floats between these extremes is the path we ought to search for. This suggests that the motive to attain belief is not merely an incidental consequence of our inquisitive minds. It is, instead, an ocassional mandate of proper inquiry that the agent *strive* to believe truths, even if doing so risks importing error.
+
+James famously argued that if one's belief choice is *live*, *momentous*, and *forced*, then the will to believe rationally outstrips the fear of being wrong. But as a set of necessary requirements, this restricts speculative endeavors too much. Inquiry need not be momentous or forced for jumping to a conclusion to be epistemically fruitful. Mere time-sensitivity may be enough. Inquiry is a process that is undertaken by fallible individuals in real time. Such agents have limited access to information and limited resources to dedicate to the process of inquiry. Frequently, action is required before certainty can be obtained. And on many quotidian decision points, the risk of being incorrect is fairly low. It is *because* not every inquiry is momentous that striving for truth (and risking falsehood) is sometimes to be prefered. Let us call this extended conception of the rational development of inquiry the *Jamesian Amendment*.
+
+<!-- Jamesian amendment -->
+{% def Jamesian amendment %}
+  {{ site.data.definitions["jamesian amendment"] }}
+{% enddef %}
+
+The Jamesian amendment makes inquiry an optimization task between taking on too many falsehoods and leaving out too many truths. To accommodate this idea, we need to expand our structural representation of inquiry. The information state model from epistemic logic can account for the error-avoidance goal, but we need a way of representing two elements entailed by the goal of acquiring truth. The first is the *impetus to revise* -- information state structure that captures an inquirer's motivation to strive for knowledge. The second is the *will to believe* -- an account of acceptance of a belief in the absence of certainty in its truth, and an explanation of how this maneuver can be rationally viable.[^informationpotential]
+
+#### Impetus to revise
+
+To have a call for revision of one's information state is to recognize an inadequacy therein. Inadequacies can be of the sort in which an agent *knows too much*, in the sense that their information state is contradictory and thereby contains too much information.[^knowtoomuch] The means of rectifying this sort of inadequacy is accommodated on the Levi model, in the form of conditions on contraction. While all information states are, for Levi, equal in terms of adequacy, we can set the trivial state aside as the one state that always demands revision, and in particular, revision by contraction out of epistemic hell.
+
+Inadequacies can also arise when one acknowledges that they *know too little*, in the sense that there is an issue that is not settled by their state of information. This sort of inadequacy is not to be accommodated in Levi's model. As defined so far, information states are nothing more than their members, and each state (potentially) contains infinitely many points. Aside from the situation in which one state strictly contains another, there is no way of saying that one state is more informative than another.[^contain]
+
+Recognition of information state incompleteness is a principal impetus to revise, and we can represent this impetus by adding a new structural element to the information state pertaining to an inquiry. To have an unsettled issue is to have a non-uniformity across the information state with respect to a particular subject matter; certain points represent one resolution of the subject matter, other points a different resolution. Recognition of a non-uniform pattern holding across an information state can be modeled formally by means of a relation *R* defined over the membership of the information state, such that for any two elements of the state, *x* and *y*, *R(x,y)* just in case *x* and *y* agree on the subject matter of *R*. The effect is a partitioning of the information state into equivalence classes with respect to the issue that the agent's information state is unable to settle. The result is an information state that calls for revision, in particular, expansion by elimination of complete cells in the partition.
+
+#### Will to believe
+
+As it currently stands, our model of inquiry allows for propositions to be incorporated into information states in two ways. They can be consequences of evidence the agent acquires through their observational faculties, or they can be entailed by other propositions that are themselves consequences of such evidence. It follows from the Jamesian amendment that a rational inquirer may, at times, be warranted in taking on belief that is not conclusively established by either of these means. But we could easily incorporate this mandate, without modifying the structure of inquiry at all, by loosening the requirement for when a proposition counts as a consequence of an agent's evidence. The most natural constraint involves restricting our evidence to direct observation, but there is nothing in principle from incorporating propositions that merely have the *balance of reasons* tilted in their favor.
+
+The problem with this proposal is the threat it poses to the first epistemic goal of error-avoidance. Once a belief is incorporated into an information state, it can be difficult to excise. And as more beliefs become incorporated, tracing the countours of their relative entrenchment becomes exceedingly tedious. The will to believe carries a risk of being wrong. Information states must be insured against this risk, and simply reducing entry requirements for membership in the information state does not provide any assurance.
+
+Additionally, there does seem to be a difference between the two cognitive goals of the Jamesian Amendment. It isn't a difference in terms of their significance to the inquiry, but it does provide us with reason to represent differently the incorporation of propositions stemming from the two goals.
+
+James' characterization of the motivation for the will to believe emphasizes that it is the *choice* that is genuine and calls for resolution. The essence of the genuine choice is that no particular resolution of the uncertainty demands selection, but still a selection must be made. We can capture this feature of proposition integration via the will to believe by focusing on the selected proposition's position within the partition we introduced to capture the impetus to revise. The will to believe is nothing more than selecting a prefered resolution of a recognized incompleteness in one's information state. Formally, this amendment requires only that the relation *R* that represents the partition impose an *order* on the members of the state. The result is an information state that both calls for revision and selects a preferred means of doing so.
+
+This extension of inquiry based on the Jamesian amendment is intended to capture the abductive phase of inquiry. The two parts of the extension happen to map onto a commonly cited distinction within the abductive phase {% cite campos2011 + shanahan1986 %}. *Creative abduction* is associated with the scientific context of discovery. It is involved when an inquirer recognizes a scientifically fruitful question and develops a set of hypotheses that serve as potential answers to that question. Incompleteness, modeled as a partition on an information state, represents the output of creative abduction. The extension does not provide us, specifically, with an account of the conditions under which an information state comes to represent its own incompleteness. And this is all to the good, for creative abduction is notoriously unamenable to logical characterization. We don't have, nor do we want, a topic-neutral story of revision into incompleteness. But the extension does provide a uniform representation of what a state that *calls for* revision looks like.
+
+The second part captures the value of *striving* for truth, which closely resembles the *selective* phase of abduction, in which the scientist chooses from amongst the set of viable hypotheses the one that best answers the question on the basis of a set of criteria that perhaps don't eliminate all other answers completely. This is the mode of reasoning known as *inference to the best explanation*. James' proposal was that, ocassionally, elimination of incompleteness is rationally preferred to remaining ambivalent even at the risk of being wrong. Modeling inquiry in this way thus makes it part of the domain of logic to specify the conditions under which selective abduction is warranted. What makes it the case, for a particular incomplete information state, that it is epistemically appropriate to complete it at the risk importing error?
+
+For the deductive phase, a new structural posit answers only to the error-avoidance goal of proper inquiry. Specific properties of the revision operator are justified piece meal by way of a demonstration that each rule of expansion or contraction preserves truth, and thus avoids error.
+
+But the motivation for the structural posits necessary to incorporate the abductive phase construed as above changes the game entirely. Demonstration is not the proper method of justification for a solution to an optimization problem. In its place, we want two things: (i) assurance that each criterion optimized over is secured to a high degree, and (ii) insurance that success on each criterion is insulated against success on the others. As applied to the Jamesian amendment, the first condition is met by reliability testing on the outputs of the selective abductive phase. To the extent that the inquirer tends to settle on true hypotheses, her process of inquiry is well calibrated. The second condition requires that the goal of truth acquisition does not radically undermine the goal of error avoidance. To meet this, our account of inquiry must incorporate protective insurance against the wanton incorporation of error in the course of the abductive phase. This, I contend, is provided by corrective mechanisms inherent in proper inquiry, mechanisms residing in the jurisdiction of the *inductive* phase of inquiry.
+
+# Contribution types
 
 Speakers can perform a variety of tasks in uttering meaningful strings in a discourse. The class of such possible illocutionary acts, or {% gloss speech acts %}, is incredibly numerous and nuanced {% cite searle1976 %}. We can draw subtle distinctions between, for instance, commanding and imploring or suggesting and hinting at.
 
@@ -40,21 +88,29 @@ There is a clear connection between a contribution type of an utterance and the 
 
 > Atoms of morphosyntax contribute to meaning in a compostitional way, but force is not one of the aspects of meaning they contribute. Rather the result of compositional interpretation is always a traditional semantic object like a proposition or property (along with associated presuppositions and so forth, or course). Accorditing to our hypothesis, force is determined only indirectly, on the basis of those meanings. {% cite portner1997 | pages: p. 2 %}
 
-Portner proposes a division of discourse models into three parts based on semantic object types.[^articulation]
+Portner proposes a division of discourse models into three parts based on semantic object types.
 
-{% def Discourse Model (Portner) %}
-+ *Common ground:* A set of propositions representing the information that is taken for granted in the conversation. "The sentential force of declarative clauses is assertion, which is to say that they are conventionally used to add the propositions that they denote to the Common Ground." (p. 3)
-+ *Question Set:* A set of sets of propositions representing the issues the interlocutors mutually agree to resolve. "The conventional force of interrogatives, Asking, is then the addition of the set of propositions denoted by the interrogatve to the Question Set." (p. 3)
-+ *To-do List:* A set of properties, linked to a particular interlocutor, representing the states the interlocutor is committed to realizing. "In this context, the natural proposal to make for imperatives is that they are associated with a discourse object which is a set of imperative denotations.... Imperatives represent actions which the addressee should take; accordingly, we label this kind of set of imperative denotations a To-Do List.... The conventional force of imperatives, what we call Requiring, is to add the property denoted by the imperative to the addressee's To-Do List." (p. 3)
+{% def Portner's Discourse Model %}
+**Common ground:** A set of propositions representing the information that is taken for granted in the conversation. 
+
+> "The sentential force of declarative clauses is assertion, which is to say that they are conventionally used to add the propositions that they denote to the Common Ground." (p. 3)
+
+**Question Set:** A set of sets of propositions representing the issues the interlocutors mutually agree to resolve. 
+    
+> "The conventional force of interrogatives, Asking, is then the addition of the set of propositions denoted by the interrogatve to the Question Set." (p. 3)
+
+**To-do List:** A set of properties, linked to a particular interlocutor, representing the states the interlocutor is committed to realizing. 
+    
+> "In this context, the natural proposal to make for imperatives is that they are associated with a discourse object which is a set of imperative denotations.... Imperatives represent actions which the addressee should take; accordingly, we label this kind of set of imperative denotations a To-Do List.... The conventional force of imperatives, what we call Requiring, is to add the property denoted by the imperative to the addressee's To-Do List." (p. 3)
 {% enddef %}
 
-[^articulation]: The idea of treating discourse models as articulated information states is well-trod ground in formal semantics and pragmatics. See, for instance, {% cite murray2010 + starr2010 + farkas + anderbois2013 + brasoveanua + bittner2011 + groenendijk2009 %} These accounts take the elements of information states to be composed of set-theoretic constructs of basic semantic objects. The divisions are determined by particular functional roles the component of these elements play in the discourse. The classification into contribution types represents one such functional role articulation.
+The idea of treating discourse models as articulated information states is well-trod ground in formal semantics and pragmatics. In addition to Portner's model, articulated states have been developed in {% cite murray2010 + starr2010 + farkas2010 + anderbois2013 + brasoveanua + bittner2011 + groenendijk2009 %}. These accounts take the elements of information states to be composed of set-theoretic constructs of basic semantic objects. The divisions are determined by particular functional roles the components of these elements play in the discourse. The classification into contribution types represents one such functional role articulation.
 
 While mood is a good guide to the scope of contribution types, the desiderata for an adequate classification do not force us to trace the countours of mood precisely. Rather, Portner's classification points to a generalization of the classification procedure. In certifying a new contribution type genuine and distinct, we are looking to verify that instances of that type *operate on* information in a distinctive way. Assertions expand the context set, and questions partition it. The currency of inquiry is information, and its value is tied to the ways in which information can be put to use to advance the inquiry toward its goal.
 
 It's a reasonable additional constraint that genuine contribution types are performed by way of a *conventionalized linguistic tool*. If a contribution belongs to a specific type, language will have found a way to implement that type. Assertions, questions, and commands are stronly tied to linguistic mood, but mood needn't be the only realization of contribution types. In fact, it is my contention that the speech act of {% gloss conjecture %} forms a genuine contribution type based on a distinctive mode of operating on information in an inquiry.
 
-## Conjecture as a contribution type
+## Conjecture versus assertion
 
 In the course of conversation, individuals will ocassionally put forward information for which they do not possess conclusive evidence. Sometimes, the basis for such a maneuver is laziness, deceit, or obstinance. But often, this kind of move is just what the conversation needs to move forward. For instance, in brainstorming sessions, the scientific context of discovery, or tip-of-the-tongue style paralysis, discurrsants set aside the restriction that all contributions be considered to be accurate in favor of entering into the {% gloss conversational record %} something that the parties can use as a jumping off point. In these situations, speculative profferments serve to advance the inquiry.
 
@@ -70,104 +126,148 @@ Stalnaker's approach to conjecture treats it as introducing a proposition for en
 
 A speaker who puts forward a conjecture does not stand behind its content in the way that she does when she asserts. To treat the two types of act the same risks muddling the inquiry. If, instead, a conjecture is treated as merely a jumping off point, something to be settled after further discussion, we can capture the sense that it carries less commitment while keeping its impact distinct from that of an assertion. In essence, we recognize that a conjecture *calls out* for a particular response.
 
-## Discourse Pairs
+## Distributed contributions
 
-The idea that conversational moves can be understood partly in terms of the constraints they place on appopriate responses is widely accepted. Mats Rooth's alternative semantics theory of focus interpretation is motivated by the fact that felicity demands that answers be *congruent with* the questions that elicit them {% cite rooth1992 %}. Questions anticipate an answer, and restrict responses to those assertions that at least partially resolve the issue raised.[^QACongruence] The model of discourse developed by {% cite farkas2010 %} includes a slot fot the default response to an utterance contribution. Even assertion can be understood in part in terms of the appropriate response to it. It is common to distinguish between content that is *imposed* on the common ground versus content that is *proposed* as an addition {% cite murray 2012 + anderbois2012 %}. As a proposal to update the common ground, assertion anticipates either acceptance or rejection on the part of the hearer, and (modulo repair tactics for failed presuppositions) it restricts responses to either acceptance or rejection of the content. 
+Discourse is an essentially collaborative process. At a superficial level, successful discourse requires that the participants accurately understand each others' contributions.  This requires constant feedback, step retracing, and repair to keep everyone on the same page.  But the importance of collaboration goes deeper than this. 
 
-This anticipatory nature of utterances is indicative of the fact that discourse is an essentially collaborative process. At a superficial level, successful discourse requires that the participants accurately understand each others' contributions.  This requires constant feedback, step retracing, and repair to keep everyone on the same page.  But the importance of collaboration goes deeper than this.  Herb Clark and his contributors {% cite clark1992 | noname %} have documented a variety of discourse maneuvers in which individuals other than the interlocutor who initiates the contribution provide input essential to its completion. This has led Clark to suggest that discourse contribututions involve two distinct phases: the *initiation* and the *completion*. Crucially (and in general), responsibility for the two phases of contribution is distributed among the conversational participants.
+Herb Clark and his contributors {% cite clark1992 | noname %} have documented a variety of discourse maneuvers in which individuals other than the interlocutor who offer a contribution provide input essential to its meaningfulness. This has led Clark to suggest that discourse contribututions involve two distinct phases: the {% gloss initiation %} and the {% gloss completion %}. Crucially (and in general), responsibility for the two phases of contribution is distributed among the conversational participants. The very act of adding information to the discourse model is a collaborative, rather than merely cooperative, effort.
 
-Clark is primarily concerned with the phonological and syntactic representation of discourse contribtutions, and with how the collaborative process determines the reference of individual words. But the same insights extend to the level of semantico-pragmatic representation as well.
+Contribution is thus dilated process, and interlocutors have a number of tools at their disposal for invoking and bringing the process to an end Clark and Schlegloff {% cite clark1992a | noname %}. A *try-marker* is a refering expression within an utterance that is marked to indicate the speaker's understanding that the hearer may not pick up on the reference. The speaker, not wanting to derail the conversation to conclusively rectify the potential for confusion, offers the reference as a suggestion. She additionally marks the suggestion, usually by means of an upward intonational contour followed by brief pause, to allow the hearer an opportunity to pursue further clarification if such is needed. The try-marker is a text-book example of the preference in successful conversation for minimum effort over assured uptake. 
 
-At its base, this common conversational move, a {% gloss conjecture %}, is a distinctive kind of {% gloss speech act %} in which the speaker offers up her content with a {% gloss world-directed %}, but less than {% gloss assertoric %}, force. But a conjecture does not advance the inquiry on its own. 
+The initiation needn't be followed in the next utterance by the completion. The interlocutors may need a few rounds of discussion before mutual recognition is achieved. To carry this out, they engage in a back and forth that is marked to indicate that it is happening alongside the primary discussion. This *side-talk* remains isolated until any confusion is resolved; the result is then used to carry on the initial inquiry.
 
-A conjecture needs to be vetted, and the canonical response to a conjecture is a move that provides this -- a {% gloss correction %}. Corrections can take many forms, but they normally involve two parts, a *denial* of some portion of the information previously put forward and a *substitution* for the denied information. The conjecture lays a rough foundation, and the correction builds upon it.
+Because initiations do not serve as contributions on their own, the interlocutors must have a tool for bringing a contribution to a close. A *recognition symbol* can be a simple "uh-huh", "I see", or a nod. This is an interlocutor's way of signaling that recognition has been achieved and the contribution is ready to be added to the disourse model.
 
-The dual conversational moves of conjecture and correction are what I call a {% gloss discourse pair %}. The key precept of collaborative discourse dynamics is that discourse pairs are the basic units by which {% gloss contributions %} to the inquiry are made. That is, we do not represent the conjecturer and corrector as each providing indvidually complete and jointly cooperative contributions to the discourse. Instead, the conjecture/correction pair together contribute to the inquiry; the parts are individually inert.
+These collaborative tools in the domain of reference recognition (try-markers, side-talk, and recognition symbols) have analogues in the domain of speech acts as well. In fact, the idea that conversational moves can be understood partly in terms of the constraints they place on appopriate responses is widely accepted. Mats Rooth's alternative semantics theory of focus interpretation is motivated by the fact that felicity demands that answers be *congruent with* the questions that elicit them {% cite rooth1992 %}. Questions anticipate an answer, and restrict responses to those assertions that at least partially resolve the issue raised. The model of discourse developed by {% cite farkas2010 %} includes a slot fot the default response to an utterance contribution. Even assertion can be understood in part in terms of the appropriate response to it. It is common to distinguish between content that is *imposed* on the common ground versus content that is *proposed* as an addition {% cite murray2014 + anderbois2010 %}. As a proposal to update the common ground, assertion anticipates either acceptance or rejection on the part of the hearer, and (modulo repair tactics for failed presuppositions) it restricts responses to either acceptance or rejection of the content. 
+
+## Conjecture and correction
+
+It's thus natural to think of conversational moves as distributed contributions that are complete only when the interlocutors come to mutual agreement on how to adjust the information state. My contention is that when we view conversational moves in this way, conjecture can be seen to be a distinct move based on the contraints it puts on appropriate responses.
+
+Offering a conjecture is an attempt to impose a restriction on the common ground in the absence of certainty that all conversational commitments are in place for the restriction. The conjecturer may not know that the content of their utterance is true, but it is more than just a haphazard guess. It is appropriate in a situation where the inquiry is stagnated and needs to be spurred along, even at the risk of moving it down a dead end path. The significance of conjecture in conversation highlights a preference for advancing the flow of inquiry over achieving certainty.
+
+But this uncertain nature of conjecture means that it cannot serve to update the information state on its own. A conjecture must be vetted, and the canonical response to a conjecture is a move that provides this -- a {% gloss correction %}. Corrections can take many forms, but they normally involve two parts, a *denial* of some portion of the information previously put forward and a *substitution* for the denied information. The conjecture lays a rough foundation, and the correction builds upon it. Conjecture thus differs from assertion in that it calls out for a different form of response -- one that is more nuanced than merely acceptance or rejection.
+
+I suggest that the dual speech acts of conjecture and correction together form a distributed contribution. That is, we do not represent the conjecturer and corrector as each providing indvidually complete and jointly cooperative contributions to the discourse. Instead, the conjecture/correction pair together contribute to the inquiry; the parts are individually inert. Discourse is different than wall building in that the nature of discourse processing requires all individual contributions to take place in serial fashion. It isn't possible for two interlocutors to contribute to a single discourse update simultaneously. However, they can contribute in tandem by delaying the impact of an update until after both individuals have contributed.
 
 
+# Scoreboards and best systems
 
-The project of using the notion of discourse pairs to develop and motivate a theory of collaborative {% gloss discourse dynamics %} has 3 parts:
+Let's begin by motivating it...
 
-> **[Conceptual](#concept):** Deriving collaborative discourse from inquiry by way of knowledge. Inquiry is deeply collaborative, and via a mutual, conceptual connection to knowledge, so too is discourse.
+David Lewis' {% cite lewis1979f | noname %} suggestion that utterances in a conversation function as updates to values housed in the various slots of a conversational {% gloss scoreboard %} posits a logical platform on which the conversation is built. The scoreboard serves as a record of the contributions that have been made to the conversation, and it dictates both whether a new utterance is deemed to provide an acceptable contribution to the conversation and how acceptable utterances are to be interpreted. A crucial feature of the scoreboard is that it is not merely an unstructured list of information. Rather, the information is formatted in such a way as to maximize its robustness and simplicity as an interpretive tool.
 
+As a first pass, we can think of the scoreboard as a field of slots and participants to the conversation as wielding a set of pegs. There is a many-to-one relationship between pegs and slots, but certain pegs can only fit in certain slots. The pegs represent the content of utterances viewed in relation to the specific issues the inquiry is out to resolve, while the slots are features of conversation generally, determined by the basic nature of inquiry.
 
-> **[Theoretical](#theory):** Development of a deeply {% gloss collaborative %} account of discourse dynamics and a formal model of {% gloss conjectures %} and {% gloss corrections %} within the {% gloss update semantics %} tradition.
+Before we start filling out the conversational scoreboard with specific bells and pulleys, we face the question of what the posit of such a recording surface amounts to, and how this crucial interpretive device is instantiated. Lewis frames his preferred answer as such:
 
-> **[Practical](#practice):** Application of the collaborative framework to the phenomenon of {% gloss contrastive topic %}, implications of the collaborative model for the concept of linguistic {% gloss disagreement %}, and the {% gloss contextualism %} v. {% gloss relativism %} debate in semantics.
+> Conversational score is, by definition, whatever the mental scoreboards say it is; but we refrain from trying to say just what the conversationalists' mental scoreboards are. We assume that some or other mental representations are present that play the role of a scoreboard, in the following sense: what they register depends on the history of the conversation in a way that score should according to the rules. The rules specifying the kinematics of score thereby specify the role of a scoreboard; the scoreboard is whatever best fits this role; and the score is whatever this scoreboard registers. {% cite lewis1979f | pages: p. 346 | noname %}
 
-# Knowledge in the image of inquiry {#concept}
+Under this characterization, determination of the conversational score, and the structure of the board on which it is represented is a project of *best system*-style theory determination:
 
-It is tempting to maintain that the {% gloss end of inquiry %} is truth. While possession of the truth may be what the inquirer is after, she wishes to possess it in such a way that she both *recognizes* and *accepts* it as the truth. The goal of engaging in inquiry is to achieve a *cognitive* state with true propositions as its content.
+> Whatever we may or may not ever come to know, there exist (as abstract objects) innumerable true deductive systems: deductively closed, axiomatizable sets of true sentences. Of these true deductive systems, some can be axiomatized more *simply* than others. Also, some of them have more *strength*, or *information content*, than others. The virtues of simplicity and strength tend to conflict. Simplicity without strength can be had from pure logic, strength without simplicity from (the deductive closure of) an almanac. Some deductive systems, of course, are neither simple nor strong. What we value in a deductive system is a properly balanced combination of simplicity and strength -- as much of both as truth and our way of balancing will permit. {% cite lewis1973a | pages: p. 73 %}
 
-In contrast, C.S. Peirce and others following in his wake {% cite levi1980 %}, have suggested that truth is too lofty a goal; that the most we can genuinely hope for at the end of inquiry is the *settlement of opinion*, for:
+Theory choice amounts to selecting the top scorer among the empirically adequate alternatives judged against a set of constraints, principal among which are the criteria of *simplicity* and *strength* from the perspective of the theorizer.[^Bestsystem]
 
-> "it is clear that nothing out of the sphere of our knowlege can be our object, for nothing which does not affect the mind can be the motive for mental effort. The most that can be maintained is, that we seek for a belief that we shall *think* to be true. But we think each one of our beliefs to be true, and indeed, it is mere tautology to say so." {% cite peirce1877 | pages: p. 11 %}
+The motivation for this approach to scoreboards is brought out in the account of intentionality generally that Lewis gives in *Radical Interpretation* {% cite lewis1974b %}. For Lewis, the *goal* in theorizing about intentionality is to say how facts about speakers expressed in purely physical terms determine facts about the speakers' attitudes and the meanings of their utterances. The resources available to the theorist in this effort include the whole physical story, past and present, of a speaker's behavior as well as a *basic ideology* of intentional systems, which supplies the theorist with a store of *beliefs* and *desires* driving physically specifiable behavior and a collection of *truth conditions* to be associated with sentences, the principal meaningful elements of language.
 
-In response, we could take the pragmatist bait and insist that truth is the end of inquiry simply because whatever is output from the process of inquiry *just is* truth. But we needn't take this line. We can cleave to a correspondence account of truth while maintaining that final aim of inquiry involves {% gloss wide content %} by delimiting a natural, restricted category of *proper* inquiry that can be reliably expected to produce true propositions.
+The *methodology*[^method] for theory construction using these basic tools is to optimize the theory against a set of constraints specific to the domain of the intentional in addition to the general theoretical criteria. Lewis' prefered constraints stem from "the fundamental principles of our general theory of persons. They tell us how beliefs and desires and meanings are normally related to one another, to behavioral output, and to sensory input" {% cite lewis1974b | pages: p. 334 | noname %}.
 
-Principally, proper inquiry is a rule governed process. Rule-following has the practical advantage of improving the reliability of the inquiry, but the connection to rule following is a conceptual one. The cognitive state that the inquirer seeks is *praiseworthy*, and one does not garner praise simply by stumbling onto true propositions. Undertaking the process of inquiry is important to earning the accolades that come with possessing the truth.
+The constraint that is of interest for us is the truthfulness constraint:
+  
+<!-- Constraints on a theory of meaning -->
+{% def Truthfulness Constraint %}
+{% assign constraints = site.data.definitions["constraints on a theory of meaning"] %}
+  <span>{{ constraints["truthfulness"] }}</span></p>
+{% enddef %}
 
-The end of inquiry, then is a valuable, cognitive state with true propositions as its content. Specifically, proper inquiry is a process that reliably produces justified, true belief. Modulo Gettier-type complications, the end of inquiry is *knowledge*.
+This contraint stems from Lewis' work on convention...
 
-If we had a solid understanding of the nature of knowledge, we could use the *end of* connection to extend our understanding to encompass inquiry as well. But the nature of knowledge is highly contested, and connections go both ways. I propose to investigate the basic structure of proper inquiry by looking to specific historical accounts of its importance, to take at face value the idea that the outputs of the process of inquiry are knowledge, and thereby to provide insight into the structure of the knowledge relation.
+### A collaborative extension to the basic ideology
 
-The key insight that arises from this investigation into proper inquiry is that it is a deeply collaborative process. By way of the *end of* connection, we have reason to represent the knowledge relation as similarly collaborative. In one sense, this idea is quite radical, in that it seems to eliminate the potential for solipsitic knowledge. But we can perhaps buff a few of the burrs off this conceptual edge, and the proposal garners support from the puzzles it can help to solve.
+There is no guarantee that a theoretical process carried out along these lines will result in a unique best theory of a speaker's intentional system; it may be that no single theory fits the constraints perfectly, and many may be equally distant from perfection. Additionally, truth conditions almost certainly provide an incomplete reductive base for sentence meaning. Lewis is well aware of these potential indeterminacies, but he wishes to hold his ground against the claim that there could be multiple distinct theories of meaning for a language, all of which perfectly meet the constraints:
 
-## Knowledge and the process of justification
+> "*Credo*: if ever you prove to me that all the constraints we have yet found could permit two perfect solutions, differing otherwise than in the auxiliary apparatus of **M**, then you will have proved that we have not yet found all the constraints" {% cite lewis1974b | pages: p. 343 | noname %}.
 
-One such puzzle derives from the fact that knowledge is more valuable than mere true belief, but as far as all one wants is to get to Larissa, a merely true belief will do as well as a justified, true one. The *swamping problem* is that there seems to be no value over and above the truth of the justified belief provided by its being so justified.
+The motivation for a collaborative discourse dynamics takes Lewis' model of linguistic theory, grounded in the best systems account and realized in the conversational scoreboard, as providing the appropriate groundwork. But I contest that we have, in Lewis' explicit proposal, the complete set of constraints to appropriately capture meaning in discourse. I don't base this challenge on a claim to have found multiple perfect theories of any speaker's intentional system based on Lewis' constraints. Rather, I do so on the basis of a claim that Lewis has not adnumbrated the complete basic ideology from which the constraints arise.
 
-Reliabilist accounts of knowledge offer a reasonable story about the justification process, but they go wrong in suggesting that the value inherent in the process transfers over to its product. Linda Zagzebski {% cite zagzebski2003 | noname %} maintains that this problem suffices to undermine the reliabilist approach. But this is true only if we commit to treating knowledge as merely the output of a justifiying process. If we build the process into the knowledge relation, there is no need for the value to *transfer* at all.
+There is more to speech behavior than what it reveals about an individual's beliefs and desires. The patterns of interaction in discourse explored by Clark and his collaborators {% cite clark1992 | noname %} reveal that interlocutors are participants in an extended, distributed process of advancing the inquiry. If the basic ideology, and in turn the constraints, come from our common sense theory of persons, then our theory is incomplete to the extent that it ignores the fact that persons are *social* beings, whose attitudes develop over the course of many collaborative inquiries.
 
-The reliability of beliefs formed via inquiry is incidental. The central virtue of inquiry is that it provides one with an account. It allows an individual to stand up to challenges of their belief. And possessing this is more valuable than merely possessing the true belief. Socrates speculates with Meno that what separates knowledge from true belief is that knowledge is tied down by an account. The account doesn't get you to Larissa any more surely, but it can help you respond to detractors you find along the route. And this ability is worth posessing.
+{% def Collaborative extension of the basic ideology %}
+  {{ site.data.definitions["collaborative extension of the basic ideology"] }}
+{% enddef %}
 
-The inquiry-first account of knowledge is compatible with a view in which knowledge is the constitutive norm of {% gloss assertion %}. But it is ecumenical, in that this does not mean giving up on the virutes of a commitment-based account of the speech act {% cite macfarlane2005 %}. Since knowledge contains the commitment fulfilling process of inquiry as a part, it can serve as both the norm of assertion and ground the constitutivity of other commitments engendered by assertion.
+Our common sense theory of persons represents them as social creatures, and provides us with attitudes necessary to capture their collaborative efforts.[^collabattitudes] The collaborative extension forces us to reconsider how acceptance of these attitudes exerts itself within our constraints. It seems to me that at least two of the Lewisian constraints require modification in light of it: *generativity* and *truthfulness*.
 
-## Dispute and collaborate
+## Truthfulness, honesty, and trust
 
-Disagreement has been a bit of a star figure in recent debates in the philosophy of language. Primarily, it has been used as a tool for assessing the adequacy of different proposals for the semantic contribution of certain expressions. Genuine disagreements, as opposed to spurious or merely apparent ones, intuitively require in the linguistic context or the minds of the disputants, the presence of some kind of content toward which the participants have incompatible commitments.
+Lewis envisions language use within a community as determined by a set of conventions {% cite lewis1975b | noname %}. In particular, he thinks that language use is governed by dual conventions of *truth* and *trust*, the first of which applies to speakers in the language community, the second to hearers. Speakers agree (and presume others also agree, etc.) to utter only truths to the extent they are able, and hearers agree to take on beliefs as their own in response to speakers' utterances.
 
-The contestants in battle disagreement are *absolutism*, *contextualism*, and *relativism*, and the standard scorecard has absolutism and relativism coming out on top in virtue of their ability to secure the requisite constant content across uses of the expression. Contextualism, it is charged, assigns contents to the utterances and thoughts of different individuals that have them incurring different, compatible commitments as a result of their utterances or thoughts.
+But if discourse is collaborative, as displayed in the distributed contribution of conjecture and correction, then the truthfulness convention is incomplete as stated. Speakers cannot be counted on to utter only truths to the extent this is possible. In fact, the success of inquiry demands that they courageously utter what may well be falsehoods. What hearers can expect of their partners in conversation is that they put forward their contributions with *honesty*, uttering only what they take to provide genuine advancement of the inquiry in accordance with the specified plan.
 
-Whatever stance we take on the outcome of this debate, disagreement does seem to be a valuable tool to have in the linguist's toolkit.  Language users have intuitions about the compatibility of sentences used in discourse, and linguistic theories ought to respect those intutions. But simply marking the presence of incompatible contents in a discourse is a relatively peripheral role for disagreement to play in lingusitic theorizing. As they stand, the semantic theories considered above give no insight into disputative discourse itself; they merely accord to a greater or lesser extent with one interesting consequence of such discourse.
+The demands of honesty allow for uttering non-truths, but it still counts as a convention because it offers a solution to a coordination problem. Only in this case, the participants to the convention bring to bear, in addition to their understanding of the semantic content of utterances, the structure of the plan of inquiry recorded within the current conversational scoreboard. The convention is thus relativized to the inquiry at hand.
 
-The previous discussion has shown that dispute plays a significant role in the very structure of knowledge. Given broadly accepted connections between knowledge and discourse maneuvers, it also has implications for understanding the nature of discourse dynamics.
+The collaborative extension also implies that lingusitic conventions cannot be easily factored on the basis of the role of a participant. It is not merely hearers who must rely on their interlocutors to properly advance the inquiry. Speakers, too, depend upon their interlocutors to provide checks on their speculative contributions. Thus, the contention of *trust* must be expanded to apply to speakers and hearers *mutually* -- hearers in taking on the attitudes required by the proposed advancement of the inquiry and speakers in speculating freely, trusting that hearer's will correct them to the extent they are able.
 
-# Collaborative update semantics {#theory}
+Language use in a community, I suggest, is governed by the dual conventions of *honesty* and *mutual trust*.
 
-Conjectures are best understood as one half of a pair of moves in a discourse. A contribution is incomplete without both parts being incorporated. In general, discourse pairs are completed by someone other than the one who initiates them {% cite clark1986 %}. Thus, discourse pairs represent genuinely collaborative contributions to the inquiry, which can be fruitfully modeled within a natural extension to the {% gloss update semantics %} framework.
+## Anaphora and coherence
+
+(Jamesian striving, coherence, need for propositions, Lewis *ICC*)
+
+To represent as rational is not just to represent as believing truths. For being rational is advancing the inquiry in suitable ways at suitable times, and advancing the inquiry is more than simply relating and accepting truths. Frequently, one advances the inquiry by taking up for consideration known falsehoods. (This is systematic, not an aberation to be swept under the rug.)
+
+In *Index, Context, and Content*, Lewis suggests that the function of a grammar is to characterize a fair amount of our shared linguistic knowledge. But not all of it. There are elements of what we know about using our language in particular contexts that it doesn't deal with. Which ones? "Conversational appropriateness and implicature, disambiguation, taxonomy of speech acts, or what it is about us that makes some grammars rights and others wrong" {% cite lewis1980 | pages: p. 80 %}. And why not? Because grammar's key role is in imparting information. To do that, I need to say the right thing. The grammar supplies me with semantic values for sentences, which is how I determine what is the right thing to say. To impart information, all I need is that the semantic value get me the truth value of the sentence were I to say it in my current context. A convention of truthfulness and trust (not part of the grammar) will ensure that the message gets properly disambiguated and instilled with the appropriate force.
+
+> The foremost thing we do with words is to impart information, and this is how we do it. Suppose (1) that you do not know whether *A* or *B* or ...; and (2) that I do know; and (3) that I want you to know; and (4) that no extraneous reasons much constrain my choice of words; and (5) that we both know that the conditions (1)-(5) obtain. Then I will be truthful and you will be trusing and thereby you will come to share my knowledge.
+
+But this isn't *all* I want to do with words! I also want to use your knowledge to increase my own. And I want to help you bring up that knowledge even if it may not be at the tip of your mind. That is, I want to engage in an *inquiry* with words. The grammar can help me fulfill this desire as well, but it needs more support than the convention of truthfulness and trust can provide.
+
+> Meaning in natural language manifests itself as the semantic competence of the language user, this competence is demonstrated in the interpretation and production of utterances, and language production and interpretation involve mental representations, which are derived from linguistic input in language interpretation and converted into linguistic output in language production. (Hamm, Kamp, van Lambalgan, pp. 5-6)
+
+Hamm et al. suggest that the representational account of semantics is motivated by a *cognitive perspective* on semantic theory, in which the objective to to model the conceptual framework of language users that allows them to interact linguistically with the world.
+
+> For someone who thinks of meaning along these lines it is tempting to see the formal properties of discourse contexts which DRT identifies as defining the interpretational possibilities for anaphoric pronouns as features of the mental representations which are constructed in the course of interpreting a text or piece of discourse; and this encourages a view of DRSs as models for mental representations, which capture some of the formal properties of those representations in addition to their truth conditional content.
+
+Inquiry is an extended process. Carrying it out fruitfully requires us to maintain a record of what has transpired thus far in the inquiry. We can use this record to refer back to earlier discussion and connect bits of information into an extended web. Through a simple complication of the grammar, we greatly expand our information imparting capabilities. *Anaphora resolution* is one process that fits into an inquiry-extended picture of grammar. Natural language speakers have an ability to use explicit pronouns as well as implicit refering devices to link to previously introduced *discourse referents*. This ability is vital to the project of realizing inquiry in discourse. The grammar should help explain how it is done, but truth determination alone won't carry the load. Anaphora extends beyond linking individuals across sentence boundaries. The information web in a healthy inquiry has temporal ties between events {% cite partee1973 | pages: p. 602 %}:
+
+{% ex Tense %}
+  {{ "tense" | example: "sent" }}
+{% endex %}
+
+It's quite likely that there is a stove turning off somewhere in my past. But this fact means little to the interpretation of [Tense](#tense) if no such event occured within the time frame it gestures at.
+
+The information web also ties states of affairs together via subordination relations between modalized sentences {% cite stone1999 | pages: p. 2 %}:
+
+{% ex Modality %}
+  {{ "modality" | example: "sent" }}
+{% endex %}
+
+Anaphora resolution is an important interpretive tool for connecting utterances, but it is not the only one. Language users are also able to suss out conceptual connections between bits of information. Discourses lacking such *coherence* connections can be very difficult, or even impossible to process {% cite kehler2000 %}:
+
+{% ex Coherence %}
+  {{ "coherence" | example: "sent" }}
+{% endex %}
+
+In virtue of its role in systematizing language users' shared knowledge about advancing an inquiry, a grammar for a language provides more than just the makings for truth determination.[^compositionality] It also provides the makings for anaphora and coherence relations. A *dynamic* grammar assigns anaphoric connections between sentences, and propositions can be anaphorically connected, as in modal subordination. A *collaborative* grammar assigns coherence connections between utterances.
+
+To the extent that collaboration can be integrated into our constraints on language theorizing, we have reason to look for collaborative structure in the scoreboard representation of conversation. But what do collaborative score markers look like?
+
+## Language as a best system
+
+There are challenges to the best systems account in application to the governing principles of the physical structure of the world. Primary among these is its reliance on the notion of *simplicity*. Even if we grant as a methodological principle of scientific theorizing that simpler rules are to be preferred, there is no agreed upon criterion for relative simplicity that makes the decision procedure in any way objective. Lewis unabashedly relativized simplicity to the language within which the theorizing takes place, suggesting that simplicity be measured in terms of the length of the basic syntactic structures appearing in the laws. But as Nelson Goodman {% cite goodman1983 | noname %} has taught us, languages can vary drastically in syntactic specification of basic concepts, with no one language claiming pride of place over another. Unless one language can be separated from the rest, as Ted Sider {% cite sider2013 | noname %}, has argued is possible the best system account treats status as a law of nature as a dependent upon the theorizer's concept of elegance.
+
+This modicum of *irrealism* inherent in the best system account is a second issue for its application in the realm of physical structure. It is well-accepted that there are limits to what is available empirically to human observers of the world, and some extreme empiricists go so far as to infer that there is nothing to posit beyond the empirically verifiable elements of our scientific models {% cite churchland1982 %}, but it is difficult to shake the idea that there is a physical reality out there that our theoretical efforts attempt to *describe* rather than *determine*.
+
+Despite these concerns in the realm of the physical sciences, the best systems account fares well in application to *linguistic interpretation*.
+
+# Collaborative update semantics
+
+And now we provide the framework for a formal model...
 
 Standard update semantics is build upon a system of sequential additions to and operations on a shared {% gloss discourse space %}. By supplementing this framework with a middle ground working space, a discourse {% gloss sandbox %}, we can represent interlocutors' joint contributions, decomposed into {% gloss initiation %} and {% gloss completion %} phases.
 
 I consider accounting for conjecture to be an adequacy condition on semantic theory in that conjectures form a well-defined class of linguistic tools that do important interpretive work that cannot be done better by some other (set of) tool(s).
-
-## Genuine contribution types
-
-A conjecture is a kind of conversational move. It is defined in terms of the role it plays in advancing the inquiry in which it occurs. While speech acts are finely individuated, there is a small set of {% gloss contribution %} types derivable from the goals of inqury.[^ConversationalForce]
-
-[^ConversationalForce]: The notion in the text of *contribution type* is related to Paul Portner's *conversational force*, which he sees of as a notion, distinct from illocutionary force, that has implications for aspects of the grammatical system relating to syntax, semantics, and pragmatics.
-
-The primary goal of inquiry is to come to know something one did not know at its outset.[^Kitioi] Thus, an individual can advance us toward that goal by submitting (proposing) information to be taken on as mutually accepted. We call this kind of contribution an {% gloss assertion %}.
-
-[^Kitioi]: Knowledge as the goal of inquiry.
-
-The end point of an inquiry depends in part on its starting point, which is the *issue* that is to be resolved by the process of inquiry. An individual can submit a new issue to the inquiry to be taken on as providing a new goal for the inquiry.  We call this contribution a {% gloss question %}.[^command][^mood]
-
-[^command]: Sometimes added to this list of contribution types is the *command*, which proposes a non-linguistic demand upon a participant in the inquiry. The appropriate response to such a contribution is to make the world such that the demand is met (or to reject the demand itself).
-
-[^mood]: Each of these contribution types has an associated linguistic mood. Inquiry is a structured process, in which it is important not only what information is available but also how it is to be put to use in reaching the goal. As an implementation of inquiry, linguistic discourse has conventional means of representing how the information is being put to use by a contribution. But the scope of contribution types is not limited by the set of conventional moods. Nor do I think the concept of *linguistic mood* cuts along the same joints as that of *contribution type*. What is important for a contribution type is that there is a recognizably unique way in which information is put to use to further the goals of the inquiry.
-
-These commonly cited examples do not provide an exhaustive list of conceptually possible contribution types. I don't intend to provide identity conditions for types of contribution, but the examples do share certain things in common, and their common traits can provide us with criteria for recognizing novel contribution types.
-
-+ Genuine contribution types *operate on* {% gloss information %} in a distinctive way. Assertions expand the context set, and questions partition it. The currency of inquiry is information, and its value is tied to the ways in which information can be put to use to advance the inquiry toward its goal.
-+ Conversational moves that contribute to inquiry *anticipate an appropriate response*, and *place constraints on the form of the response*. Assertion anticipates either acceptance or rejection of the asserted content, and (modulo repair tactics for failed presuppositions) restricts responses to either acceptance or rejection. Questions anticipate an answer, and restrict responses to those assertions that at least partially resolve the issue raised.[^QACongruence]
-+ Genuine contribution types are performed by way of a *conventionalized linguistic tool*. If a contribution belongs to a specific type, language will have found a way to implement that type. Assertions and questions are stronly tied to linguistic mood, although the connection between these contribution types and mood is a tricky one {% cite portner1997 %} (starr2010).
-
-[^QACongruence]: We'll revisit the anticipation and restriction of questions later on when we discuss focus and Q/A Congruence in [Chapter 3](/chapters/collaborative-disagreement.html)
-
-I maintain that conjecture, when paired with a corresponding correction, constitutes a distinct, genuine contribution type. Conjecture is similar to assertion in that it seems to provide a proposal of added information. And similarly to questions, conjectures seem to present an issue that is up for further discussion.[^supposition] But conjectures are distinct from each of these, and call for a unique treatment. That they earn such status is what I hope to show throughout the course of this project.
-
-[^supposition]: They are also similar to suppositions in that they seem to be less than fully committal on the part of the speaker. Assertion is generally associated with a commitment that it generates for the speaker.  This commitment involves some evidential relation between the asserter and the information conveyed, though it is controversial just what relation it is. But whatever the relation amounts to, it seems clear that we sometimes offer contributions to discourse that go beyond the evidence we have available. And we do this not just as a means of flouting the rules of discourse, but frequently in order to respect the project of the communicative exchange.
 
 ## Levels of dynamism
 
@@ -185,49 +285,4 @@ The resulting picture is one of an extended and evolving, collaborative process 
 
 The system of initiations, defaults, and completions, encompassed within a sandbox operating theater, provides our update semantics with a new type of dynamism. Standard dynamic accounts have it that utterance meaning depends on the surrounding linguistic context. But in collaborative update semantics, utterance meaning can actually change as the conversation progresses, and the status of an utterance evolves from initiation saturated with a default, through the sandbox vetting, and into the conversational record as a completed contribution.
 
-# Collaborative disagreement {#practice}
 
-Disputes can be frivolous, fractured, and fraudulent. They can derail conversations, and generate so much animosity that perpetuating the dispute itself comes to mean more than the prospect of resolving it.  These disputes may have very little to do with actual conflict over the informational potential of the disputative language used to express them, instead being driven by *ad hominem* and *ad ideologiam* tendencies.
-
-But dispute can also be a fruitful tool for people involved in an honest, cooperative attempt to further mutual knowledge. There is the ancillary fact that interlocutors sometimes lose track of the cooperative effort, and it is valuable to have a means of correcting them to bring them back on to the task at hand.  But dispute can play also more central role in the project of inquiry. As we have seen, the speech act of correction, in which an individual denies a proposal initiated by an interlocutor is a crucial element in properly vetting conjectures in discourse. As such, some element of dispute is central to the enterprise of inquiry. I contend that the conjecture/correction discourse pair provides a genuine contribution to inquiry. In the previous chapter, I motivated this status by providing a model of discourse dynamics that carves out a distinctive operation on information that this contribution makes. In this chapter I explore another criterion for genuine contributions: that it be represented in some conventionalized linguistic tool. I think that this tool is {% gloss focus %}, and that the virtues of collaborative discourse dynamics come to prominence in explaining focus interpretation when we examine {% gloss contrastive topic %} specifically.
-
-Consider the following little discourse:
-
-{% ex Grizzly %}
-  {{ "grizzly" | example: "sent" }}
-{% endex %}
-
-Pretheoretically, the response utterance seems to do two things:
-
-+ It denies an element of the preceding contribution to discourse.
-+ It provides a positive contribution that is related in a salient way to the previous contribution.
-
-I think that it pulls off this dual task because it serves as a completion of the initiation provided by the first utterance. To motivate this claim, I look at two alternative accounts of this sort of disputative discourse and find them lacking.
-
-## Questions under discussion and plans of inquiry
-
-A salient feature of the [Bears](#bears) dialogue is the presence of {% gloss focus %} on *grizzly* in the response utterance. Focus is a lingusitic tool whose use serves primarily to *package* information as opposed to providing its own contribution. It distinguishes the elements of a sentence that are new to the discussion from those that have already been introduced, thus showing to the other participants in the discourse how the contribution is intended to fit in with what has preceeded. In this sense, focus has a distinctly *backward looking* function. It depends on, and responds to, previous moves in the conversation. So it makes sense that the most common analyses of focus interpretation assign it a *presuppositional* pragmatic function. Focus adds a *felicity condition* to the overall import of a sentence; the sentence is interpretable in situ only if material matching the focus semantic value of the sentence can be found in the previously constructed conversation.
-
-The Question Under Discussion model of discourse dynamics, developed principally by Craige Roberts {% cite roberts1998 | noname %}, expounds on the alternative semantics account by treating discourse as governed by a stack of questions. The governing question at any point in a discourse may have been explicitly asked or it may be implicit, presumed by the discourse participants and revealed in the information packaging of their utterances.
-
-Daniel Bu&#x0308;ring {% cite buering2003 | noname %} (,buering2008) extends the QUD model to capture second-occurrence focus, also called *contrastive topic*. But there is an issue in this extension when applied to cases such as the [Bears](#bears) dialogue. It is not so much an issue of empirical coverage as it is a conceptual issue having to do with the role of corrections in discourse evolution. The QUD model of contrastive topic makes its discourse contribution entirely backward looking. Whatever role the focus plays is just a matter of checking prior discourse for an antecedent to the focus-generated alternative set.
-
-The [Bears](#bears) dialogue is an example of felicitous use of contrastive focus in which there is no expicit question on the table at all. It seems to me that the role of the focus in [Bears](#bears) is more than simply to mark the way the response fits into previous discourse; it genuinely advances the inquiry along by correcting what predeeded. But to capture this added feature, we needn't dispose of Bu&#x0308;ring's useful {% gloss plan of inquiry %} entirely. What we need is an expansion of the structure involved in such plans to include conjecture/correction congruence in addition to question/answer congruence. Focus, fundamentally, serves to indicate information structure, but information structure includes much more than just what is given and new. It incorporates a record of where the inquiry has been as well as where it is going.
-
-## Correction as downdate
-
-Equally salient in the [Bears](#bears) dialogue is the disputative nature of the response statement. It seems to simultaneously *deny* the original statement and *substitute* an alternative to it. Let's call utterances with this dual function *corrections*. Jennifer Spenader and Emar Maier {% cite spenader2009 | noname %}, expanding on work of Maier and Bart Geurts {% cite geurts1998a | noname %} (,geurtsa), attempt to treat corrections as *downdating* the information state. On this proposal, the function of corrections is to remove from the discourse representation something that was previous added to it. A wrinkle is that corrections do not eliminate information wholesale. Consider, fo example:
-
-{% ex Movie %}
-  {{ "movie" | example: "sent" }}
-{% endex %}
-
-Crucially, the correction above does not eliminate the information that the movie was funny. In fact, the replacement is perfectly compatible with this information. What the correction denies is the presupposition of the initial statement that the moview was *merely* funny. To account for the nuanced nature of corrections, Spendader and Maier develop their proposal within the framework of Layered Discourse Representation Theory (LDRT), in which information states are segmented and different information contributed to discourse is tagged and placed in different segments depending on its import. Corrections can eliminate information from one segment without affecting the information in any other segment.
-
-The challenge is to track information across utterance boundaries. LDRT allows for a single bit of information to be added to multiple segments, but when corrections take place at a remove from the utterance they correct, the proposal runs into a *binding problem*. This problem is, I think, undermining, and it reveals an inherent limitation of the LDRT account. LDRT treats utterances as providing independent contributions to the discourse either in the form of updates or downdates. But the [Bears](#bears) dialogue is not just a pair of independent utterances. They cohere in an important way that should be accounted for in any representation of the discourse.
-
-## Collaborative update semantics
-
-If we treat the [Bears](#bears) dialogue as a minimal example of collaborative discourse, we can capture the forward-looking import of corrections while representing the strong coherence of the utterances in the dilogue.
-
-According to collaborative update semantics, the first utterance in the dialogue initiates a contribution that is completed by the second, correcting utterance. Focus is treated as a sandboxing marker and denial serves to replace the default saturation of the propositional radical with an alternative one.

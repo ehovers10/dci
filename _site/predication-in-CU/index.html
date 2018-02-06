@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="jekyll" />
+
+  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <title>Predication in <strong>CU</strong></title>
+
+  <link rel="canonical" href="http://erikhoversten.org/predication-in-CU/">
+  <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
+
+  
+    
+  
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+  <!-- Data-tables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+  <script src="/js/typology.js"></script>
+
+  <script src="/js/open.js"></script>
+  
+    <script src="/js/bunch.js"></script>
+  
+  
+  <script src="/js/bibjs.js"></script>
+  <script src="/js/footnav.js"></script>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<div class="page-front">
+
+  
+<ul class="nav head">
+<li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
+<li class="inline"><a href="#" id="chap" class="open">Chapters</a></li>
+<li class="inline"><a href="#" id="appen" class="open">Appendices</a></li>
+<ol class="nav2 hid" id="chap-hid" start=0>
+  
+  
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
+  
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
+  
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
+  
+  <li><a href="/practice/">Dispute in discourse</a></li>
+  
+</ol>
+<ul class="nav2 hid" id="appen-hid">
+  
+  
+  <li><a href="/bibliography/">Bibliography</a></li>
+  
+  <li><a href="/formalism/">Formalism</a></li>
+  
+  <li><a href="/glossary/">Glossary</a></li>
+  
+  <li><a href="/models-discourse/">Models of discourse</a></li>
+  
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
+  
+  <li><a href="/typologies/">Typologies</a></li>
+  
+</ul>
+</ul>
+
+
+  <div class="title">Predication in <strong>CU</strong></div>
+  <div class="subtitle"></div>
+  <div class="divider"></div>
+
+  <div class="footnav">
+  <div class="button title">
+    Predication in <strong>CU</strong>
+  </div>
+  <div class="button">
+    <a href="#" class="pop" id="nav-pop" title="Site navigation"><img class="icon" src="/images/open-book.svg" /></a>
+    <div class="lightbox" id="nav-pop-hid">
+      <div class="popclose"></div>
+      <div class="popbox">
+        <div class="popmain">
+          <h4>Site navigation<h4>
+          
+<ul class="nav foot-pop">
+<li><a href="/">Discourse as collaborative inquiry</a> <br />by Erik Hoversten</li>
+<li><a href="/table-of-contents">Table of contents</a></li>
+<li><a href="#" class="pop" id="searchable-bib">Search sources</a>
+<div class="lightbox" id="searchable-bib-hid">
+  <div class="popclose"></div>
+  <div class="popbox">
+    <div class="popmain"><table id="bib"></table></div>
+  </div>
+</div></li>
+
+<ol class="nav2" id="chap-hid" start=0>
+  Chapters
+  
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
+  
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
+  
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
+  
+  <li><a href="/practice/">Dispute in discourse</a></li>
+  
+</ol>
+<ul class="nav2" id="appen-hid">
+  Appendices
+  
+  <li><a href="/bibliography/">Bibliography</a></li>
+  
+  <li><a href="/formalism/">Formalism</a></li>
+  
+  <li><a href="/glossary/">Glossary</a></li>
+  
+  <li><a href="/models-discourse/">Models of discourse</a></li>
+  
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
+  
+  <li><a href="/typologies/">Typologies</a></li>
+  
+</ul>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="button">
+    <a href="#" class="pop" id="searchable-bib" title="Search sources"><img class="icon" src="/images/magnifying-glass.svg" /></a>
+  </div>
+  <div class="button">
+    <a href="#" id="totop" title="Return to top"><img class="icon" src="/images/chevron-with-circle-up.svg" /></a>
+  </div>
+</div>
+
+</div>
+
+<div class="page-content">
+
+  <h3>Predicates</h3>
+
+
+
+
+
+
+
+
+<div class="bunch">
+<ul class="body-nav">
+  
+  <li><a href="#" class="bears">Bears</a></li>
+  
+  <li><a href="#" class="dangerous">Dangerous</a></li>
+  
+  <li><a href="#" class="grizzly">Grizzly</a></li>
+  
+</ul>
+<div class="area offset bears">
+  <div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute +-bears">bears</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity +-bears">+</div></div></div>
+</div>
+<div class="area offset dangerous">
+  <div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute +-dangerous">dangerous</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">b</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-dangerous">+</div></div></div>
+</div>
+<div class="area offset grizzly">
+  <div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute grizzly-bears">bears</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity grizzly-bears">grizzly</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div></div></div>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<h3>Standard modification</h3>
+
+
+
+
+<div class="bunch">
+<ul class="body-nav">
+  
+  <li><a href="#" class="modify">Modify</a></li>
+  
+  <li><a href="#" class="restrict">Restrict</a></li>
+  
+</ul>
+
+<div class="area offset modify">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute mod">mod</div><div class="attribute subj">subj</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity grizzly-bears">&omega;</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity grizzly-bears">&omega;</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity grizzly-bears">&omega;</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity grizzly-bears">&omega;</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div></div>
+</div>
+<div class="area offset restrict">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute mod">mod</div><div class="attribute subj">subj</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity grizzly-bears">grizzly</div><div class="entity +-bears">+</div></div></div>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<h3>Standard plural predication</h3>
+
+
+
+
+<div class="bunch">
+<ul class="body-nav">
+  
+  <li><a href="#" class="predicate">Predicate</a></li>
+  
+  <li><a href="#" class="group">Group</a></li>
+  
+  <li><a href="#" class="compare">Compare</a></li>
+  
+  <li><a href="#" class="restrict">Restrict</a></li>
+  
+</ul>
+
+<div class="area offset predicate">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div><div class="attribute pred">pred</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-bears">&omega;</div><div class="entity +-dangerous">+</div></div></div>
+</div>
+<div class="area offset group">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div><div class="attribute pred">pred</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">e</div></div><div class="entity +-bears"><div class="div">+</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">d</div></div><div class="entity +-bears"><div class="div">+</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">d</div></div><div class="entity +-bears"><div class="div">&omega;</div></div><div class="entity +-dangerous"><div class="div">+</div></div></div></div>
+</div>
+<div class="area offset compare">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div><div class="attribute pred">pred</div><div class="attribute keep">keep</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous"><span class="count">+</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div><div class="entity +-dangerous"><span class="count">+</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-bears">&omega;</div><div class="entity +-dangerous">+</div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">e</div></div><div class="entity +-bears"><div class="div">+</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous"><span class="count">+</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div><div class="entity +-dangerous"><span class="count">+</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">d</div></div><div class="entity +-bears"><div class="div">+</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">&omega;</div><div class="entity +-dangerous">+</div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">d</div></div><div class="entity +-bears"><div class="div">&omega;</div></div><div class="entity +-dangerous"><div class="div">+</div></div></div></div>
+</div>
+<div class="area offset restrict">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div><div class="attribute pred">pred</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity +-bears">+</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity +-bears">+</div><div class="entity +-dangerous">&omega;</div></div></div>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+<h3>Contrastive modification</h3>
+
+
+
+
+<div class="bunch">
+<ul class="body-nav">
+  
+  <li><a href="#" class="alt">Alt</a></li>
+  
+  <li><a href="#" class="modify">Modify</a></li>
+  
+  <li><a href="#" class="refine">Refine</a></li>
+  
+</ul>
+
+<div class="area offset alt">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute all-bears">bears</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">polar</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity all-bears">polar</div></div></div>
+</div>
+<div class="area offset modify">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute mod">mod</div><div class="attribute subj">subj</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity all-bears">&omega;</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">polar</div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-bears">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div><div class="entity +-bears">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity all-bears">polar</div><div class="entity +-bears">&omega;</div></div></div>
+</div>
+<div class="area offset refine">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity all-bears">&omega;</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">polar</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity all-bears">polar</div></div></div>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<h3>Contrastive plural predication</h3>
+
+
+
+
+<div class="bunch">
+<ul class="body-nav">
+  
+  <li><a href="#" class="predicate">Predicate</a></li>
+  
+  <li><a href="#" class="group">Group</a></li>
+  
+  <li><a href="#" class="compare">Compare</a></li>
+  
+  <li><a href="#" class="restrict">Restrict</a></li>
+  
+</ul>
+
+<div class="area offset predicate">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div><div class="attribute pred">pred</div></div><div class="state"><div class="entity sit">s1</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity all-bears">&omega;</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">c</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">polar</div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">s3</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-dangerous">&omega;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">b</div><div class="entity all-bears">koala</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">e</div><div class="entity all-bears">polar</div><div class="entity +-dangerous">&omega;</div></div></div>
+</div>
+<div class="area offset group">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div><div class="attribute pred">pred</div></div><div class="state"><div class="entity sit"><div class="subdiv">s1</div></div><div class="entity ent"><div class="subdiv">a</div></div><div class="entity all-bears"><div class="subdiv"><span class="focus">grizzly</span></div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">b</div></div><div class="entity all-bears"><div class="subdiv">koala</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">e</div></div><div class="entity all-bears"><div class="div">&omega;</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">c</div></div><div class="entity all-bears"><div class="subdiv"><span class="focus">grizzly</span></div></div><div class="entity +-dangerous"><div class="subdiv">&omega;</div></div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">b</div></div><div class="entity all-bears"><div class="subdiv">koala</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">d</div></div><div class="entity all-bears"><div class="div">polar</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div></div><div class="state"><div class="entity sit"><div class="subdiv">s3</div></div><div class="entity ent"><div class="subdiv">a</div></div><div class="entity all-bears"><div class="subdiv"><span class="focus">grizzly</span></div></div><div class="entity +-dangerous"><div class="subdiv">&omega;</div></div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">b</div></div><div class="entity all-bears"><div class="subdiv">koala</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">d</div></div><div class="entity all-bears"><div class="subdiv">&omega;</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">e</div></div><div class="entity all-bears"><div class="div">polar</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div></div></div>
+</div>
+<div class="area offset compare">
+<div class="relation"><div class="continued">&#10649;</div><div class="head"><div class="attribute sit">sit</div><div class="attribute ent">ent</div><div class="attribute subj">subj</div><div class="attribute pred">pred</div><div class="attribute keep">keep</div></div><div class="state"><div class="entity sit"><div class="subdiv">s1</div></div><div class="entity ent"><div class="subdiv">a</div></div><div class="entity all-bears"><div class="subdiv"><span class="focus">grizzly</span></div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">b</div></div><div class="entity all-bears"><div class="subdiv">koala</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit">&#10649;</div><div class="entity ent">d</div><div class="entity all-bears">&omega;</div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">e</div></div><div class="entity all-bears"><div class="div">&omega;</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit">s2</div><div class="entity ent">a</div><div class="entity all-bears"><span class="focus">grizzly</span></div><div class="entity +-dangerous">+</div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">b</div></div><div class="entity all-bears"><div class="subdiv">koala</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">c</div></div><div class="entity all-bears"><div class="subdiv"><span class="focus">grizzly</span></div></div><div class="entity +-dangerous"><div class="subdiv">&omega;</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">d</div></div><div class="entity all-bears"><div class="div">polar</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="subdiv">s3</div></div><div class="entity ent"><div class="subdiv">a</div></div><div class="entity all-bears"><div class="subdiv"><span class="focus">grizzly</span></div></div><div class="entity +-dangerous"><div class="subdiv">&omega;</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">b</div></div><div class="entity all-bears"><div class="subdiv">koala</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="subdiv">&#10649;</div></div><div class="entity ent"><div class="subdiv">d</div></div><div class="entity all-bears"><div class="subdiv">&omega;</div></div><div class="entity +-dangerous"><div class="subdiv">+</div></div><div class="entity keep">&#x2713;</div></div><div class="state"><div class="entity sit"><div class="div">&#10649;</div></div><div class="entity ent"><div class="div">e</div></div><div class="entity all-bears"><div class="div">polar</div></div><div class="entity +-dangerous"><div class="div">&omega;</div></div><div class="entity keep">&#x2713;</div></div></div>
+</div>
+<div class="area offset restrict">
+
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+</div>
+
+<div class="page-end">
+
+  <footer class="site-footer">
+
+<div class="footer-col-wrapper">
+  <div class="footer-col  footer-col-1">
+    <span><a href="/">Discourse as collaborative inquiry</a></span>
+    <ul class="social-media-list">
+      
+      <li>
+        <a href="mailto:ehovers10@gmail.com">
+          <img class="icon" src="/images/mail.svg" />
+          <span class="username">ehovers10@gmail.com</span>
+        </a>
+      </li>
+      
+
+      
+      <li>
+        <a href="https://github.com/ehovers10">
+          <img class="icon" src="/images/github.svg" />
+          <span class="username">ehovers10</span>
+        </a>
+      </li>
+      
+
+      
+
+      
+      <li>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img class="icon" src="/images/creative-commons.svg" />
+          <img class="icon" src="/images/creative-commons-attribution.svg" />        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="footer-col  footer-col-2"></div>
+
+  <div class="footer-col  footer-col-3">
+    <span>I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.</span>
+  </div>
+</div>
+
+</footer>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -19,8 +19,8 @@ This account of induction and its grounding is an example of the motivation impl
 But an epistemology based on the security of ampliative reasoning is bound to be ungrounded, for reasons that Peirce well understood:
 
 > The relative probability of this or that arrangement of Nature is something which we should have a right to talk about if universes were as plenty as blackberries, if we could put a quantity of them in a bag, shake them up well, draw out a sample, and examine them to see what proportion of them had one arrangement and what proportion another. But, even in that case, a higher universe would contain us, in regard to whose arrangements the conception of probability could have no applicability.
-
-    We have examined the problem proposed by the conceptualists, which, translated into clear language, is this: Given a synthetic conclusion; required to know out of all the possible states of things how many will accord, to any assigned extent, with this conclusion; and we have found that it is only an absurd attempt to reduce synthetic to analytic reason, and that no definite solution is possible. {% cite peirce1877a | pages: 184-5 %}
+> 
+> We have examined the problem proposed by the conceptualists, which, translated into clear language, is this: Given a synthetic conclusion; required to know out of all the possible states of things how many will accord, to any assigned extent, with this conclusion; and we have found that it is only an absurd attempt to reduce synthetic to analytic reason, and that no definite solution is possible. {% cite peirce1877a | pages: 184-5 %}
 
 Of course, Peirce's self-correction thesis can be maintained so long as we guarantee that Nature cooperates, and we can do this by switching her out with a proxy of our own creation. Peirce is none too opposed to the switch:
 

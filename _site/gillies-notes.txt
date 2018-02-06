@@ -16,6 +16,8 @@
   <link rel="icon" href="/images/infinity.png">
 
   
+    
+  
 
   <link rel="stylesheet" href="/css/main.css">
   <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -57,29 +59,29 @@
 <ol class="nav2 hid" id="chap-hid" start=0>
   
   
-  <li><a href="/overview">Project overview</a></li>
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
   
-  <li><a href="/concept">Knowledge in the image of inquiry</a></li>
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
   
-  <li><a href="/theory">Collaborative discourse dynamics</a></li>
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
   
-  <li><a href="/practice">Dispute in discourse</a></li>
+  <li><a href="/practice/">Dispute in discourse</a></li>
   
 </ol>
 <ul class="nav2 hid" id="appen-hid">
   
   
-  <li><a href="/bibliography">Bibliography</a></li>
+  <li><a href="/bibliography/">Bibliography</a></li>
   
-  <li><a href="/formalism">Formalism</a></li>
+  <li><a href="/formalism/">Formalism</a></li>
   
-  <li><a href="/glossary">Glossary</a></li>
+  <li><a href="/glossary/">Glossary</a></li>
   
   <li><a href="/models-discourse/">Models of discourse</a></li>
   
-  <li><a href="/predication-in-CU">Predication in <strong>CU</strong></a></li>
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
   
-  <li><a href="/typologies">Typologies</a></li>
+  <li><a href="/typologies/">Typologies</a></li>
   
 </ul>
 </ul>
@@ -115,29 +117,29 @@
 <ol class="nav2" id="chap-hid" start=0>
   Chapters
   
-  <li><a href="/overview">Project overview</a></li>
+  <li><a href="/overview/">Conjecture, Distributed Contributions, and Update Semantics</a></li>
   
-  <li><a href="/concept">Knowledge in the image of inquiry</a></li>
+  <li><a href="/concept/">Knowledge in the image of inquiry</a></li>
   
-  <li><a href="/theory">Collaborative discourse dynamics</a></li>
+  <li><a href="/theory/">Collaborative discourse dynamics</a></li>
   
-  <li><a href="/practice">Dispute in discourse</a></li>
+  <li><a href="/practice/">Dispute in discourse</a></li>
   
 </ol>
 <ul class="nav2" id="appen-hid">
   Appendices
   
-  <li><a href="/bibliography">Bibliography</a></li>
+  <li><a href="/bibliography/">Bibliography</a></li>
   
-  <li><a href="/formalism">Formalism</a></li>
+  <li><a href="/formalism/">Formalism</a></li>
   
-  <li><a href="/glossary">Glossary</a></li>
+  <li><a href="/glossary/">Glossary</a></li>
   
   <li><a href="/models-discourse/">Models of discourse</a></li>
   
-  <li><a href="/predication-in-CU">Predication in <strong>CU</strong></a></li>
+  <li><a href="/predication-in-CU/">Predication in <strong>CU</strong></a></li>
   
-  <li><a href="/typologies">Typologies</a></li>
+  <li><a href="/typologies/">Typologies</a></li>
   
 </ul>
 </ul>

@@ -431,14 +431,14 @@ eijck:
   Abstract: "Key ingredients in discourse meaning are reference markers: objects in the formal representation that the discourse is about. It is well-known that reference markers are not like { } rst order variables. Indeed, it is the received view that reference markers are like the variables in imperative programming languages. However, in a computational semantics of discourse that treats reference markers as \textquoteleft { } dynamically bound\textquoteright variables, every noun phrase will get linked to a dynamic variable, so it will give rise to a marker index. Where do these indices come from? How do we handle them when combining or \textquoteleft { } merging\textquoteright pieces of discourse? We will argue that reference markers are better treated as indices into context, and we will present a theory of context and context extension based on this view. In context semantics, noun phrases do not come with { } xed indices, so the merge problem does not arise. This solves a vexing issue with coordination that causes trouble for all current versions of compositional discourse representation theory."
 
 farkas2010:
-  Volume: 27
-	Year: 2010
-	Title: On Reacting to Assertions and Polar Questions
-	Number: 1
-	Journal: Journal of Semantics
-	Pages: 81-118
-	Author: D. F. Farkas and K. B. Bruce
+  Author: D. F. Farkas and K. B. Bruce
   Type: article
+  Year: 2010
+  Title: On Reacting to Assertions and Polar Questions
+  Volume: 27
+  Number: 1
+  Journal: Journal of Semantics
+  Pages: 81-118
 
 vonfintel1997:
   Title: Bare plurals, bare conditionals, and only
@@ -448,7 +448,7 @@ vonfintel1997:
   Year: 1997
   Pages: 1-56
   Volume: 14
-  Url: https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z
+  Url: "https://app.box.com/s/igg77xnyx5nly4f4mnmsmnubzkhvm60z"
 
 vonfintel1999:
   Title: NPI-Licensing, Strawson-Entailment, and Context-Dependency
@@ -458,7 +458,7 @@ vonfintel1999:
   Year: 1999
   Volume: 16
   Number: 1
-  Url: https://app.box.com/s/2j4o189qfpf4178t5e79ruu973tj4l79
+  Url: "https://app.box.com/s/2j4o189qfpf4178t5e79ruu973tj4l79"
 
 vonfintel2004:
   Author: Kai von Fintel

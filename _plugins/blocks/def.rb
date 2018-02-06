@@ -10,7 +10,9 @@ module Jekyll
     def render(context)
       @num = context['page']['count']['ex']
       context['page']['count']['ex'] += 1
-      output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-ex'><div class='title'><span class='head'>Example #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + super + "</div></div>"
+      site = context.registers[:site]
+      converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+      output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-ex'><div class='title'><span class='head'>Example #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + converter.convert(super) + "</div></div>"
       output << %{<div id="#{@title.strip.downcase.gsub /\W+/, '-'}-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid \#fff;">#{@title.strip}</b><br>} + super + %{</div>}
       output
     end
@@ -27,7 +29,9 @@ module Jekyll
     def render(context)
       @num = context['page']['count']['def']
       context['page']['count']['def'] += 1
-      output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-def'><div class='title'><span class='head'>Definition #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + super + "</div></div>"
+      site = context.registers[:site]
+      converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+      output = "<div class='def' id='#{@title.strip.downcase.gsub /\W+/, '-'}-def'><div class='title'><span class='head'>Definition #{@num}&nbsp;</span><span>(#{@title.strip})</span></div><div class='body fence'>" + converter.convert(super) + "</div></div>"
       output << %{<div id="#{@title.strip.downcase.gsub /\W+/, '-'}-show-tip" class="tooltip defn">} + super + %{</div>}
       output
     end

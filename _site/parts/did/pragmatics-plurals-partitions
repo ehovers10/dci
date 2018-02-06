@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="jekyll" />
+
+  <meta name="description" content="I contend that conversation commonly realizes a collaborative inquiry, which is to say that successful contribution to the discourse requires the efforts of multiple parties working in concert, not just serially. It is the goal of this project to explain, motivate, and provide a model of implementation for this idea, what I call <em>collaborative discourse dynamics</em>.">
+  <title>Pragmatics of plurals and partitions</title>
+
+  <link rel="canonical" href="http://erikhoversten.org/parts/did/pragmatics-plurals-partitions">
+  <link rel="alternate" type="application/rss+xml" title="Discourse as collaborative inquiry" href="http://erikhoversten.org/feed.xml">
+  <link rel="icon" href="/images/infinity.png">
+
+  
+    
+  
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+  <!-- Data-tables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+  <script src="/js/typology.js"></script>
+
+  <script src="/js/open.js"></script>
+  
+  
+  <script src="/js/bibjs.js"></script>
+  <script src="/js/footnav.js"></script>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+<div class="page-front">
+
+  <ul class="nav head">
+    <li><a href="/"><b>Home</b></a></li>
+  
+    
+    <li><a href="/parts/did/conclusion3">Observations and outcomes obtained</a></li>
+    
+  
+    
+    <li><a href="/parts/did/correction-as-downdate">Correction as downdate</a></li>
+    
+  
+    
+    <li><a href="/parts/did/features-of-bears">Features of Bears</a></li>
+    
+  
+    
+    <li><a href="/parts/did/focus">Focus</a></li>
+    
+  
+    
+    <li><a href="/parts/did/index">Dispute in discourse</a></li>
+    
+  
+    
+    <li><a href="/parts/did/intro3">Introduction</a></li>
+    
+  
+    
+    <li><a href="/parts/did/observations-on-bears">Observations on *Bears*</a></li>
+    
+  
+    
+    <li><a href="/parts/did/outline3">Outline</a></li>
+    
+  
+    
+    <li><a href="/parts/did/pragmatics-plurals-partitions">Pragmatics of plurals and partitions</a></li>
+    
+  
+    
+    <li><a href="/parts/did/strictness-stickiness-shifts">Strictness, stickiness, and shifts</a></li>
+    
+  
+  </ul>
+
+  <div class="title">Pragmatics of plurals and partitions</div>
+  <div class="subtitle">Dispute in discourse</div>
+  <div class="divider"></div>
+
+</div>
+
+<div class="page-content">
+  <div class="chapter-content">
+    <p>Formally, the natural inclination to treat sentences involving bare plurals as governed by universal quantifiers goes as such:</p>
+
+<!-- Universal Quantifier -->
+<div class="def" id="universal-quantifier-def"><div class="title"><span class="head">Definition 5&nbsp;</span><span>(Universal quantifier)</span></div><div class="body fence">
+<div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;(A)(B)</div><div class="post"></div></div></div></div>
+<div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: <span class="type">et</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
+</div></div>
+<div id="universal-quantifier-show-tip" class="tooltip defn">
+  <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;(A)(B)</div><div class="post"></div></div></div></div>
+  <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: <span class="type">et</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
+</div>
+
+<p>But this treatment runs into its own sticky situation. Consider:</p>
+
+<!-- Hibernation -->
+<div class="def" id="hibernating-bears-ex"><div class="title"><span class="head">Example 20&nbsp;</span><span>(Hibernating bears)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="content">Bears hibernate.</span></div></div>
+</div></div>
+<div id="hibernating-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Hibernating bears</b><br />
+  <div class="example"><div class="item"><span class="content">Bears hibernate.</span></div></div>
+</div>
+
+<p>Most English speakers take <a href="#hibernating-bears-ex" id="hibernating-bears-show" class="tooled">Hibernation</a> to be true, even knowing that a fair number of bears don’t hibernate.[^hibernation] This poses a problem for the strict analysis of bare plurals.</p>
+
+<p>It won’t work to loosen the strictness requirement and interpret bare plurals as bound by, say an existential quantifier or one that requires a few witnesses. For that would render true clearly false sentences such as the following:</p>
+
+<!-- Cuddly bears -->
+<div class="def" id="cuddly-bears-ex"><div class="title"><span class="head">Example 21&nbsp;</span><span>(Cuddly bears)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="content">Bears are cuddly.</span></div></div>
+</div></div>
+<div id="cuddly-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Cuddly bears</b><br />
+  <div class="example"><div class="item"><span class="content">Bears are cuddly.</span></div></div>
+</div>
+
+<p>The existence of Winnie the Pooh and Paddington Bear don’t serve to make <a href="#cuddly-bears" id="cuddly-bears-show" class="tooled">Cuddly bears</a> true. The insight from sentences such as <a href="#hibernating-bears-ex" id="hibernating-bears-show" class="tooled">Hibernation</a> is not simply that bare plurals carry less than universal force. Instead, the most natural interpretation is that the truth of sentences involving bare plurals is sensitive to the presence of a significant sub-class falling under the plural each member of which verifies the predicate.</p>
+
+<p>One standard approach to formalizing this idea is to posit a <em>generic</em> operator that implements a restricted, universal quantification. As in the variably strict approach to counterfactuals, the <em>generally universal</em> account of bare plurals uses context to select a preferred class of individuals within the set determined by the subject and requires for truth that this preferred class be included within the predicate class.<sup id="fnref:relevantquant"><a href="#fn:relevantquant" class="footnote">1</a></sup></p>
+
+<!-- Generally universal quantifier -->
+<div class="def" id="generic-quantifier-def"><div class="title"><span class="head">Definition 6&nbsp;</span><span>(Generic quantifier)</span></div><div class="body fence">
+<div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">GEN(A)(B)</div><div class="post"></div></div></div></div>
+<div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: et</span>, <span>&delta;(i): et &rarr; et a selection function determined by context i</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A<sub>pref</sub></div><div class="conn">=</div><div class="rhs"><span class="bit">&delta;(i)(A)</span></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">GEN(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
+</div></div>
+<div id="generic-quantifier-show-tip" class="tooltip defn">
+  <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">GEN(A)(B)</div><div class="post"></div></div></div></div>
+  <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: et</span>, <span>&delta;(i): et &rarr; et a selection function determined by context i</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A<sub>pref</sub></div><div class="conn">=</div><div class="rhs"><span class="bit">&delta;(i)(A)</span></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">GEN(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
+</div>
+
+<p>It is perfectly possible for context to restrict membership in the preferred class to hibernating bears, thus explaining the truth of <a href="#hibernating-bears-ex" id="hibernating-bears-show" class="tooled">Hibernation</a>. Of course, it is also possible for context to select only cuddly bears in the case of <a href="#cuddly-bears" id="cuddly-bears-show" class="tooled">Cuddly bears</a>. It is the job of the metasemantics to explain why this selection is far less natural. The generically universal approach thus gets us out of the sticky situation, or at least shifts the extraction duties to pragmatics, which, given the <a href="#resilience-obs" id="resilience-show" class="tooled">resilience</a> and <a href="#susceptibility-obs" id="susceptibility-show" class="tooled">Susceptibility</a> of discourse involving bare plurals, seems a not inappropriate delegation of responsibilities.</p>
+
+<p>Despite this de-sticking success, I don’t think that the standard response is the correct extraction method. We can preserve the strict analysis of bare plurals [by allowing them to interact with the context in a specific way]. In particular, if the bare plural is evaluated against a context that incorporates the plan of inquiry structure of the discourse, then the extraction can be pulled off.</p>
+
+<!-- Structurally universal quantifier -->
+<div class="def" id="structurally-universal-quantifier-def"><div class="title"><span class="head">Definition 7&nbsp;</span><span>(Structurally universal quantifier)</span></div><div class="body fence">
+<div class="molecule"><div class="title"></div><div class="molecule" id="translation"><div class="title">Translation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="post"></div></div></div></div><div class="molecule" id="definition"><div class="title">Definition</div><div class="atom"><span class="categorical">For all <span>A: et</span>, <span>B: (et)t</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><span class="bit">{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; <span class="set">R</span></span><span class="bit">&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;</span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div>
+</div></div>
+<div id="structurally-universal-quantifier-show-tip" class="tooltip defn">
+  <div class="molecule"><div class="title"></div><div class="molecule" id="translation"><div class="title">Translation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="post"></div></div></div></div><div class="molecule" id="definition"><div class="title">Definition</div><div class="atom"><span class="categorical">For all <span>A: et</span>, <span>B: (et)t</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><span class="bit">{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; <span class="set">R</span></span><span class="bit">&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;</span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div>
+</div>
+
+<p>The structural analysis is strict in that it demands inclusion of the entire set determined by the bare plural within the properly partitioned predicate set. This is the complete story as far as the semantic component of the interpretive machinery is concerned. The partitioning of the predicate class is the source of the perceived looseness of bare plurals (<a href="#resilience-obs" id="resilience-show" class="tooled">resilience</a>), but the mechanism for leveraging that feature belongs to the pragmatic system, to which we now turn. As with the story about shifty strict counterfactuals, the real work comes in getting clear about how the context evolves in response to bare plural utterances. And it is here that the framework of collaborative update semantics earns its keep.</p>
+
+<h2 id="pragmatics-of-plurals-and-partitions">Pragmatics of plurals and partitions</h2>
+
+<p>I assume that plurals carry a <em>homogeneity presupposition</em>, characterized as follows:</p>
+
+<!-- Homogeneity -->
+<div class="def" id="homogeneity-def"><div class="title"><span class="head">Definition 8&nbsp;</span><span>(Homogeneity)</span></div><div class="body fence">
+<p>Utterances involving bare plural subjects present the set determined by the subject as homogenous with respect to the predicate. The predicate applies either to all members of the subject class or to none of them.</p>
+</div></div>
+<div id="homogeneity-show-tip" class="tooltip defn">
+  Utterances involving bare plural subjects present the set determined by the subject as homogenous with respect to the predicate. The predicate applies either to all members of the subject class or to none of them.
+</div>
+
+<p>That interpretation of plural <em>definite</em> noun phrases is subject to a homogeneity constraint is discussed by Sebastian Löbner, who notes that:</p>
+
+<blockquote>
+  <p>“The referent of a definite NP cannot be split in case the predicate holds only for some part of it, but not for the whole. Without any differentiating modification of the predication, the alternative is just that of global truth or global falsity. If it is impossible to apply the predicate or its negation globally it fails to yield a truth-value.” (<a id="lobner1987" class="ref tooled" href="#ref-lobner1987"><span class="author">Löbner </span><span class="date"><span class="year">1987</span></span><span class="pages">,  185</span></a>)</p>
+</blockquote>
+
+<p>This is why, in reference to a mixed-gender group of young bears engaged in a wrestling match, (a) in the following seems true while (b) seems neither true nor false:</p>
+
+<!-- Playing bears -->
+<div class="def" id="playing-bears-ex"><div class="title"><span class="head">Example 22&nbsp;</span><span>(Playing bears)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">A: </span><span class="content">The cubs are playing.</span></div><div class="item"><span class="name">B: </span><span class="content">The cubs are boys.</span></div></div>
+</div></div>
+<div id="playing-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Playing bears</b><br />
+  <div class="example"><div class="item"><span class="name">A: </span><span class="content">The cubs are playing.</span></div><div class="item"><span class="name">B: </span><span class="content">The cubs are boys.</span></div></div>
+</div>
+
+<p>That a homogeneity constraint extends to the case of <em>bare</em> plurals, has been suggested by Kai von Fintel:<sup id="fnref:schwarzs"><a href="#fn:schwarzs" class="footnote">2</a></sup></p>
+
+<blockquote>
+  <p>“A speaker who chooses a sentence involving GEN rather than one of the overt quantifiers signals that it is presupposed that the cases in the domain of quantification are uniform with respect to the property attributed by the scope of the quantifier.” (<a id="vonfintel1997" class="ref tooled" href="#ref-vonfintel1997"><span class="author">von Fintel </span><span class="date"><span class="year">1997</span></span><span class="pages">,  34</span></a>)</p>
+</blockquote>
+
+<p>That the homogeneity constraint should be understood as a <em>presupposition</em> tied to plurals is supported by the fact that it is cancelable.</p>
+
+<!-- Polar bears -->
+<div class="def" id="polar-bears-ex"><div class="title"><span class="head">Example 23&nbsp;</span><span>(Polar bears)</span></div><div class="body fence">
+<div class="example"><div class="item"><span class="name">A: </span><span class="content">I need a kind of bear which is always white (for my drawing of a bear in a snow storm). I'm considering polar bears, grizzly bears, and koala bears. I've seen white examples of each. Do you know whether any of them are consistently white?</span></div><div class="item"><span class="name">B: </span><span class="content">[Polar]<sub>f</sub> bears are white.</span></div></div>
+</div></div>
+<div id="polar-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Polar bears</b><br />
+  <div class="example"><div class="item"><span class="name">A: </span><span class="content">I need a kind of bear which is always white (for my drawing of a bear in a snow storm). I'm considering polar bears, grizzly bears, and koala bears. I've seen white examples of each. Do you know whether any of them are consistently white?</span></div><div class="item"><span class="name">B: </span><span class="content">[Polar]<sub>f</sub> bears are white.</span></div></div>
+</div>
+
+<p>The (b) utterance in <a href="#polar" id="polar-bears-show" class="tooled">Polar bears</a> (adapted from (<a id="vonfintel1997" class="ref tooled" href="#ref-vonfintel1997"><span class="author">von Fintel </span><span class="date"><span class="year">1997</span></span><span class="pages">,  34</span></a>)) doesn’t presuppose that Polar bears are uniformly white; any such assumption is explicitly eliminated by the nature of the question in (a). And characterization as a presupposition fits the discourse role of homogeneity. Instead of making a claim of individual membership in a class, homogeneity is a property of a class as a whole. Thus, a claim of homogeneity <em>tests</em> a set, passing the whole thing through if the test is met and derailing the conversation if it isn’t (<a id="veltman1996" class="ref tooled" href="#ref-veltman1996"><span class="author">Veltman </span><span class="date"><span class="year">1996</span></span></a>). That is exactly what presuppositions do, and in our framework, tests are <em>structuring updates</em>.</p>
+
+<p>An additional important feature of <a href="#homogeneity" id="homogeneity-show" class="tooled">Homogeneity</a> is that it does not represent the subject class as uniform <em>full-stop</em>. It is only so <em>with respect to</em> the predicate class. What this mandates, then, is that the subject class be fully contained within a single cell of a partition defined over the predicate set.</p>
+
+<p>In the framework of collaborative update semantics, the homogeneity presupposition is captured by the presence of a default, trivial partitioning of the common ground, which is itself catalogued by a relation in i<sub><strong>R</strong></sub>. If no such partition is present, it is accommodated. The sentence is then evaluated as a universal quantifier evaluated against this partition as outlined in <a href="#structurally-universal-quantifier-def" id="structurally-universal-quantifier-show" class="tooled">Structurally universal quantifier</a>.</p>
+
+<p>But unlike for Gillies’ story regarding counterfactuals, which idles if accommodation of the entertainability presupposition fails, the real virtue of the structural universal account of bare plurals shines through when the homogeneity presupposition is challenged, as it is in <a href="#bears-ex" id="bears-show" class="tooled">Bears</a>.</p>
+
+<h3 id="informal-explication">Informal explication</h3>
+
+<p>In the framework of collaborative update semantics, the pragmatic process surrounding an utterance of a sentence with a bare plural subject goes, roughly, like this:</p>
+
+<p>The utterance is just like any other in that it initiates a sandbox and presents a proposition for consideration. In this case, the proposition presented is composed of a radical with a default saturation. The plural sentence, as a <a href="#correction-obs" id="correction-show" class="tooled">correctible</a>, is essentially incomplete, and must be filled in. The semantics provided above takes bare plural involving sentences to be evaulated against the backdrop of a partition of the domain of individuals. This is what the plural sentence alone lacks, and it is what the homoegeneity presupposition provides. The default saturation is the trivial, homogeneous partition, which divides the domain (relativized to the common ground) into the set of individuals satisfying the plural subject and the set of individuals that fail to.</p>
+
+<p>If the line of inquiry proposed by the initiation is not accepted, then the conversation derails, and the sandbox is tossed out. But assuming the proposal is picked up by the initiator’s interlocutors, there are two avenues for continuing the dialogue:</p>
+
+<p>The presupposition is accommodated, in which case the completion accepts the proposed restriction of the common ground. The worlds that do not represent the set of individuals satisfying the subject as included in the positive partition cell determined by the predicate are tossed out. The implicit acceptance of accommodation closes the sandbox and merges the result into the information state.</p>
+
+<p>The presupposition is rejected (while the line of inquiry is still accepted). At this point, an interlocutor has an opportunity to correct the utterance by offering an alternative saturation of the propositional radical.</p>
+
+<p>The presence of contrastive focus in the completion of <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> serves to indicate the corrective role of the completion utterance. It signifies a denial of the homogeneity presupposition, but because the presupposition is structurally distinct from the propositional radical, this denial does not derail the inquiry. A substitution for homogeneity can be inserted into the surviving propositional radical. <a href="#refinement-obs" id="refinement-show" class="tooled">Coherence</a> is retained.</p>
+
+<p>The substitution is enacted by re-partitioning the domain in a way that carves along the lines of the alternative set determined by focus interpretation. The result is a new presentation of the propositional radical, differently saturated, and the process iterates.</p>
+
+<p>At the close of collaboration on this issue, the resulting sandbox information state is merged into the primary conversational scoreboard and a new issue can be raised.</p>
+
+<h3 id="the-general-formal-framework">The general formal framework</h3>
+
+<p>In collaborative update semantics, the primary update units are <em>discourse-pairs</em>, which include (at minimum) an <em>initiation</em> and a <em>completion</em>. To represent the the integrated functioning of two (or more) utterances issued in serial, we introduce the concept of a <em>conversational sandbox</em>. Sandboxes are of the same type as information states, and a sandbox is initiated with much of the current information state copied into it. But the sandbox is isolated from the rest of the information state, so that operations performed within it do not infect the broader state. The effect is that sandboxes can function as a collaborative space, allowing interlocutors to try out various contributions and modify them before committing to their result. When collaboration is complete, the sandbox contents are <em>merged</em> into the primary information state, and the update is enacted.</p>
+
+<p>The function of an initiation utterance is two-fold: It <em>checks out</em> a new sandbox, and it <em>commits</em> a proposition to the inquiry. The checkout opens a new sandbox, copying over (relevant) structural elements (common ground, relation sequence, drefs) from the primary information state. The commit presents the proposition by way of a discourse referent update within the sandbox. Some commits don’t lend themselves to collaboration; they elicit either acceptance or denial with no room room for further investigation. But speakers can also commit <em>correctibles</em>, which are decomposable into an incomplete, <em>propositional radical</em> and a <em>saturation</em>.</p>
+
+<p>Assuming the correctible inspires a corrective effort by a discourse participant, the continuation overrides the initiation commitment, replacing it with a substitution of the original saturation. This process can iterate until all participants are satisfied with the lastest commit. At this point, a completion utterance implements the latest commit, imposing its update effect upon the sandbox information state. Finally, the updated sandbox contents are <em>merged</em> into the primary information state.</p>
+
+<!-- General collaborative update -->
+<div class="def" id="general-collaborative-update-def"><div class="title"><span class="head">Definition 9&nbsp;</span><span>(General collaborative update)</span></div><div class="body fence">
+<div class="molecule" id="collaborative-update"><div class="title">Collaborative update</div><div class="atom"><div class="molecule" id="initialization"><div class="title">Initialization</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>init</sup></div><div class="conn">&#x21a5;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>&sigma;</sub></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>sand</sub></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="propagation"><div class="title">Propagation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>prop</sup></div><div class="conn">&#x21a6;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref"><span class="var">dref</span><sup>prop</sup></div><div class="conditions">U<sup>prop</sup><sub>(st)t</sub></div><div class="post"><span class="drs right top bottom"></span></div></div></div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="present"><div class="title">Present</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">dref</span><sup>prop</sup></div><div class="conn">&#x29c0;</div><div class="rhs"><span class="set">dref</span><sup>sand</sup></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="partition"><div class="title">Partition</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">R</span><sup>prop</sup></div><div class="conn">&#x22CA;</div><div class="rhs"><span class="set">R</span><sup>sand</sup></div><div class="post"></div></div></div></div></div></div></div><div class="atom"><div class="molecule" id="merge"><div class="title">Merge</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>merge</sup></div><div class="conn">&#x21a7;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">i<sub>&lt;span class='set'R</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">dref<sub>&sigma;</sub> += dref<sub>sand</sub></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></div><div class="post"></div></div></div></div></div></div>
+</div></div>
+<div id="general-collaborative-update-show-tip" class="tooltip defn">
+  <div class="molecule" id="collaborative-update"><div class="title">Collaborative update</div><div class="atom"><div class="molecule" id="initialization"><div class="title">Initialization</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>init</sup></div><div class="conn">&#x21a5;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>&sigma;</sub></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>sand</sub></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="propagation"><div class="title">Propagation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>prop</sup></div><div class="conn">&#x21a6;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref"><span class="var">dref</span><sup>prop</sup></div><div class="conditions">U<sup>prop</sup><sub>(st)t</sub></div><div class="post"><span class="drs right top bottom"></span></div></div></div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="present"><div class="title">Present</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">dref</span><sup>prop</sup></div><div class="conn">&#x29c0;</div><div class="rhs"><span class="set">dref</span><sup>sand</sup></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="partition"><div class="title">Partition</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">R</span><sup>prop</sup></div><div class="conn">&#x22CA;</div><div class="rhs"><span class="set">R</span><sup>sand</sup></div><div class="post"></div></div></div></div></div></div></div><div class="atom"><div class="molecule" id="merge"><div class="title">Merge</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>merge</sup></div><div class="conn">&#x21a7;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">i<sub>&lt;span class='set'R</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">dref<sub>&sigma;</sub> += dref<sub>sand</sub></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></div><div class="post"></div></div></div></div></div></div>
+</div>
+
+<h3 id="plurals-specific-formal-story">Plurals specific formal story</h3>
+
+<p>All contributions to discourse proceed in the manner of the general formalism outlined above. The specifics of the update procedure depend on the nature of the correctible presented in a sandbox.</p>
+
+<p>In the case of the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue, we treat the evolution of discourse as introducing a series of queries on a <em>database</em> and introduce a framework of <em>relational algebra</em> to represent the particulars of plural predication.<sup id="fnref:maximization"><a href="#fn:maximization" class="footnote">3</a></sup></p>
+
+<h4 id="basics-of-relational-algebra">Basics of relational algebra</h4>
+
+<p>A <a id="database" href="/glossary#database" class="tooled gloss">database</a><span id="database-tip" class="tooltip glossary"><b>database</b>: A collection of data structured by a series of tables</span> is a collection of data structured by a series of <a id="table" href="/glossary#table" class="tooled gloss">tables</a><span id="table-tip" class="tooltip glossary"><b>table</b>: A structural element of a database that represents interrelations between points of data. A table consists of a header, which is a set of attributes, and a body which is a set of tuples of values for each of the attributes.</span> that represent interrelations among the points of data. The information contained in a database can be manipulated in a variety of ways principal among which is the <a id="not-found" href="/glossary#not-found" class="tooled gloss">query</a><span id="not-found-tip" class="tooltip glossary"><b>Word not found</b>: </span>, which pulls specific information from one or more tables, packaging it into a <a id="view" href="/glossary#view" class="tooled gloss">view</a><span id="view-tip" class="tooltip glossary"><b>view</b>: A virtual table, which presents information culled from a database and allows a user to make use of that information without impacting the underlying structure of the database.</span>, itself a table in form, but a mere image of the underlying database. Views allow the user to access and make use of data without impacting the underlying structure of the database.</p>
+
+<p>A <a id="relativism" href="/glossary#relativism" class="tooled gloss">relational algebra</a><span id="relativism-tip" class="tooltip glossary"><b>relativism</b>: The thesis that semantic value is, at least occasionally, determined in some way by the context of the interpreter of an utterance. Usually contrasted to contextualism and absolutism.</span> extends standard set theoretic operations with a set of operations on tables and provides a means of representing manipulations of structured data in a neat way (<a id="codd1970" class="ref tooled" href="#ref-codd1970"><span class="author">Codd </span><span class="date"><span class="year">1970</span></span></a>). For the purposes of representing the discourse evolution of disputative dialogue involving plural predication, we add a subset of the relational algebra framework to collaborative update. Namely, we co-opt operations of: <a id="projection" href="/glossary#projection" class="tooled gloss">projection</a><span id="projection-tip" class="tooltip glossary"><b>projection</b>: Selection of a subset of attributes from a header and presentation of the resulting restricted table.</span>, <a id="outer-join" href="/glossary#outer-join" class="tooled gloss">outer join</a><span id="outer-join-tip" class="tooltip glossary"><b>outer join</b>: An operation that takes two tables as input and outputs a table whose header is the union of the input headers and whose body includes the union of all tuples with shared values from each table. In addition, a tuple from a preferred table that has no overlap with any tuple from the other table is included with NULL values inserted for the attributes specific to the preferred table. In a</span>, <a id="group" href="/glossary#group" class="tooled gloss">grouping</a><span id="group-tip" class="tooltip glossary"><b>group</b>: An operation that takes one table and returns the same table with tuples organized by the values of selected attributes.</span>, <a id="count" href="/glossary#count" class="tooled gloss">counting</a><span id="count-tip" class="tooltip glossary"><b>count</b>: An aggregation operation, which takes one table and returns the number of tuples satisfying some condition. Conditions are usually specified in terms of values for certain attributes and are optionally restricted by a grouping operation.</span>, and <a id="rename" href="/glossary#rename" class="tooled gloss">renaming</a><span id="rename-tip" class="tooltip glossary"><b>rename</b>: An opertaion that updates a table by changing the name of one or more of its attributes.</span>.</p>
+
+<h4 id="application-to-collaborative-update">Application to collaborative update</h4>
+
+<p>The initiation utterance of the <a href="#bears-ex" id="bears-show" class="tooled">Bears</a> dialogue consists of a propositional radical, a plural predication, saturated by a homogeneity presupposition. The utterance serves to open a sandbox, within which the interpretive system treats the predication as a function taking the tables for subject and predicate as input and outputting their <em>right outer join</em>.</p>
+
+<p>The homogeneity presupposition operates on the result of the predication in three stages. First, it implements a structuring update, grouping the table by value of the <strong>sit</strong> attribute. Second, it performs an aggregation and comparisonfunction on the <strong>ent</strong> and <strong>subj</strong> attributes within each group. This consists of counting the number of <strong>ent</strong> of any value, and the number of <strong>subj</strong> of positive value, and comparing them. Groups for for which either the <strong>ent</strong> count equals the <strong>subj</strong> count or the <em>*subj</em> count is zero pass through; other groups are rejected. The final phase is a restriction, where rejected groups are eliminated from the table.</p>
+
+<p>The use of contrastive focus in the follow up performs three roles. The first two roles pertain to the modification of the subject. First, it introduces the alternative set of the modifier expression. The focus tells us to fill the modifer attribute with values drawn from the alternative set, rather than simple on/off values of an ordinary semantic value. Subject modification is implemented by a function that takes this focus derived modifier table and the unmodified subject table as inputs and outputs their <em>full outer join</em>. The full outer join is significant. Since it keeps rows from the modifier table even when there is no shared <strong>ent</strong> in the subject table, as well as vice versa, this is a way for the continuation utterance to genuinely <em>correct</em> the initiation. It may add rows to the table for which the original table made no evaluation.</p>
+
+<p>The second role of contrastive focus is to mark the utterance as a continuation, thus linking it to the previous presentation in the sandbox. We represent this by a <em>refinement</em>, in which we <strong>project</strong> just the <strong>sit</strong>, <strong>ent</strong>, and <strong>mod</strong> attributes, renaming the <strong>mod</strong> attribute to <strong>subj</strong>. Thus, the continuation is fully integrated.</p>
+
+<p>Once we have the refined subject in place, we can use it as input to the right outer join implemented by the plural predication of the continuation. The final role of contrastive focus is to overwrite the default homogeneity presupposition, indicating the nature of the structuring update it substitutes – a partition along the lines of the alternative set of the focused element. This is performed by a grouping operation. In standard plural predication, we only needed to group by the <strong>sit</strong> attribute, but this simplification was made possible by the nature of the values in the <strong>subj</strong> attribute. Since being a bear was taken as an on/off property, and the model determines only its positive extension, there was no need to refine our grouping in order to implement the comparison. The situation is more complex, however, in the case of contrastive plural predication. Here, our presupposition demands that dangerousness be uniform across type of bear. This means that we must additionally group by <strong>subj</strong>
+values in order to get the appropriate comparison. We should thus view standard plural predication as a degenerative case of homogeneity presupposition, where there is only one value group within the <strong>subj</strong> attribute.</p>
+
+<p>The final, presupposition-restricted table is stored in the structuring component <strong>R</strong> of the sandbox information state. And it is this relation against which the semantic value of the contribution will be evaluated.</p>
+
+<p>If the corrective continuation is accepted, and no further development is required, the state of the sandbox is merged into the primary information state. Generally, an acceptance will be effected by a nod of agreement or some other <em>Sounds good!</em> token. The merge operation involves updating each component of the primary information state with its cognate component from the sandbox state. The primary common ground is intersected with the sandbox common ground, which, recall, was initially seeded with the worlds from the primary common ground. The sandbox table is appended to the primary database. And any drefs introduced in the course of the sandbox procedure are likewise appended to the dref list of the primary information state. Since the propositional commits introduced in the course of the sandbox procedure have at this point either been incorporated into the sandbox table or have been overwritten, it is assumed that these are destroyed with the closing of the sandbox. However, some record of the fact that the sandbox procedure was carried out is valuable. To record this, the merge operation also adds a <em>version</em> token to the primary information state, housed in the <strong>XX</strong> component. This serves as a checksum, to allow interlocutors to test discourse integrity over the course of an extended dialogue, and also as a backup marker, which allows interlocutors to restore the conversation at a previous point if things start to go off the rails.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:relevantquant">
+      <p>This proposal is roughly equivalent to the <em>Relevant Quantification</em> approach outlined in (<a id="pelletierms" class="ref tooled" href="#ref-pelletierms"><span class="author">Pelletier and Asher </span><span class="date"><span class="year">n/a</span></span></a>). <a href="#fnref:relevantquant" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:schwarzs">
+      <p>See also Roger Schwarzschild’s discussion of distributive contexts for plurals. For Schwarzschild, homogeneity is lexically encoded by the distributivity operator as applied to plurals and falls out of his understanding of plurals in terms of quantification over parts of pluralities combined with a four-valued semantics in which presupposition failure is understood as identity between the positive and negative extensions of a sentence (<a id="schwarzschild1994" class="ref tooled" href="#ref-schwarzschild1994"><span class="date"><span class="year">1994</span></span><span class="pages">,  222</span></a>). <a href="#fnref:schwarzs" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:maximization">
+      <p>Maria Bittner’s system of UC<sub>Ω</sub>, which builds on the work of van den Berg on plural dynamics, captures many of the same phenomena, though the formulation is couched more centrally in the dynamic semantics tradition. I feel that database theory provides a natural implementation of these ideas. Plus, it strikes me as a potentially fruitful expansion of the update semantics tradition. <a href="#fnref:maximization" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+</div>
+
+<div class="page.end">
+  <div class="chapter-end" markdown="1">
+
+
+
+
+
+</div>
+
+</div>
