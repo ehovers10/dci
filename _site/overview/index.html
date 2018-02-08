@@ -199,11 +199,9 @@
 </div>
 
 <div class="chapter-content">
-  <h1 id="from-cooperation-to-collaboration">From cooperation to collaboration</h1>
+  <h2 id="from-cooperation-to-collaboration">From cooperation to collaboration</h2>
 
-<p>One important function of <a id="discourse" href="/glossary#discourse" class="tooled gloss">discourse</a><span id="discourse-tip" class="tooltip glossary"><b>discourse</b>: A communicative exchange among two or more people.</span> is to serve as a <em>cooperative exchange of information</em>.  In this capacity, discourses involve two or more individuals engaged in a project of increasing their mutual knowledge by using each other’s stock of information to augment their own. In this form, discourse implements a jointly undertaken <a id="inquiry" href="/glossary#inquiry" class="tooled gloss">inquiry</a><span id="inquiry-tip" class="tooltip glossary"><b>inquiry</b>: The enterprise of forming, testing, and revising beliefs.</span>, which in the words of Robert Stalnaker is, “the enterprise of forming, testing, and revising beliefs” (<a id="stalnaker1987" class="ref tooled" href="#ref-stalnaker1987"><span class="date"><span class="year">1987</span></span><span class="pages">,  p. ix</span></a>).</p>
-
-<p>Discourse that implements a joint inquiry is <a id="cooperation" href="/glossary#cooperation" class="tooled gloss">cooperative</a><span id="cooperation-tip" class="tooltip glossary"><b>cooperation</b>: Alignment of the contributions of two or more individuals engaged in a joint activity. Each person ensures that their contribution accords with the contributions that have come previously and anticipates contributions to come.</span> in the sense of Paul Grice, who suggests that that basic maxim of conversation is “make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged” (<a id="grice1989" class="ref tooled" href="#ref-grice1989"><span class="author">Grice </span><span class="date"><span class="year">1989</span></span></a>). A speaker presents some content in a way that makes room for responses that she anticipates her <a id="interlocutor" href="/glossary#interlocutor" class="tooled gloss">interloctors</a><span id="interlocutor-tip" class="tooltip glossary"><b>interlocutor</b>: Any participant in a discourse.</span> are able to provide. A hearer considers the contribution, adds it to her personal model of the conversation, and adjusts her response to accord with the expanded model. The process iterates with the discourse participants alternating roles, always trying to make their contribution fit with what has predeeded it.</p>
+<p>One important function of <a id="discourse" href="/glossary#discourse" class="tooled gloss">discourse</a><span id="discourse-tip" class="tooltip glossary"><b>discourse</b>: A communicative exchange among two or more people.</span> is to serve as a <em>cooperative exchange of information</em>. In this capacity, discourses involve two or more individuals engaged in a project of increasing their mutual knowledge by using each other’s stock of information to augment their own. Agents involved in this sort of discourse rely on eachother to be <a id="cooperation" href="/glossary#cooperation" class="tooled gloss">cooperative</a><span id="cooperation-tip" class="tooltip glossary"><b>cooperation</b>: Alignment of the contributions of two or more individuals engaged in a joint activity. Each person ensures that their contribution accords with the contributions that have come previously and anticipates contributions to come.</span> in the sense of Paul Grice, who suggests that that basic maxim of conversation is “make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged” (<a id="grice1989" class="ref tooled" href="#ref-grice1989"><span class="author">Grice </span><span class="date"><span class="year">1989</span></span></a>). A speaker presents some content in a way that makes room for responses that she anticipates her <a id="interlocutor" href="/glossary#interlocutor" class="tooled gloss">interloctors</a><span id="interlocutor-tip" class="tooltip glossary"><b>interlocutor</b>: Any participant in a discourse.</span> are able to provide. A hearer considers the contribution, adds it to her personal model of the conversation, and adjusts her response to accord with the expanded model. The process iterates with the discourse participants alternating roles, always trying to make their contribution fit with what has predeeded it.</p>
 
 <p>But discourse isn’t just cooperative in this sense – it is frequently <a id="collaboration" href="/glossary#collaboration" class="tooled gloss">collaborative</a><span id="collaboration-tip" class="tooltip glossary"><b>collaboration</b>: Integrated action of two or more individuals engaged in a joint activity. Each person provides an essential element to the contribution.</span>. To explain the distinction, let’s consider a metaphor:</p>
 
@@ -222,23 +220,43 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 
 <p>In suggesting that the locus of information state update be shifted from single utterances to distributed contributions, we take on the burden of motivating the need for this departure and providing a formal system for its implementation. This project is my attempt to discharge this burden and offer a framework for <em>collaborative discourse dynamics</em>.</p>
 
-<h1 id="collaborative-inquiry">Collaborative inquiry</h1>
+<h2 id="collaborative-inquiry">Collaborative inquiry</h2>
 
-<p>C.S. Peirce recognized that no human agent will be content to stand pat with their knowledge. “The iritation of doubt causes a struggle to attain a state of belief,” and this iritation is “the only immediate motive for the struggle to attain belief” (<a id="peirce1877" class="ref tooled" href="#ref-peirce1877"><span class="date"><span class="year">1877/1955</span></span><span class="pages">,  10</span></a>). While such iritation is a natural state for human inquirers, most models of rational inquiry have little to say about of the conditions under which a rational agent chooses to scratch, instead dismissing the impluse as arational belief change.[^ Levi on distinction. Abduction as context of discovery]</p>
+<p>Let us take as given that discourse participants carry a mental model of the conversation that both guides their interpretation of others’ utterances and informs their own contributions. I’ll follow David Lewis’ (<a id="lewis1979f" class="ref tooled" href="#ref-lewis1979f"><span class="date"><span class="year">1979</span></span></a>) lead in referring to these mental models as conversational <em><a id="scoreboard" href="/glossary#scoreboard" class="tooled gloss">scoreboards</a><span id="scoreboard-tip" class="tooltip glossary"><b>scoreboard</b>: The structural recording platform for the semantico-pragmantic features of a conversation. Interpretation in discourse takes place relative to a scoreboard, and dicourse contributions serve to update the scoreboard. Scoreboards may be accessable to a single discursant, or they may be shared.</span></em>. The nature of the scoreboard is determined by the functions in performs in the process of discourse.</p>
 
-<p>William James (<a id="james1896" class="ref tooled" href="#ref-james1896"><span class="date"><span class="year">1896/2009</span></span></a>) felt that it was within the purview of inquiry to characterize the proper response to doubt, and he drew a distinction between two independent and sometimes conflicting goals for those engaged in the pursuit of knowledge: (i) to avoid believing falsehoods and (ii) to acquire true beliefs.  A clever agent could meet the goal of avoiding falsehoods by simply believing nothing at all, but they would thereby forfeit the virtue of believing truths. One could, alternatively, meet the goal of believing truths simply by believing everything, but doing so sacrifices entirely achieving the second goal. As James saw it, a strategy of inquiry that floats between these extremes is the path we ought to search for. This suggests that the motive to attain belief is not merely an incidental consequence of our inquisitive minds. It is, instead, an ocassional mandate of proper inquiry that the agent <em>strive</em> to believe truths, even if doing so risks importing error.</p>
+<h3 id="basic-structure-and-cooperative-inquiry">Basic structure and cooperative inquiry</h3>
 
-<p>James famously argued that if one’s belief choice is <em>live</em>, <em>momentous</em>, and <em>forced</em>, then the will to believe rationally outstrips the fear of being wrong. But as a set of necessary requirements, this restricts speculative endeavors too much. Inquiry need not be momentous or forced for jumping to a conclusion to be epistemically fruitful. Mere time-sensitivity may be enough. Inquiry is a process that is undertaken by fallible individuals in real time. Such agents have limited access to information and limited resources to dedicate to the process of inquiry. Frequently, action is required before certainty can be obtained. And on many quotidian decision points, the risk of being incorrect is fairly low. It is <em>because</em> not every inquiry is momentous that striving for truth (and risking falsehood) is sometimes to be prefered. Let us call this extended conception of the rational development of inquiry the <em>Jamesian Amendment</em>.</p>
+<p>At base, discourse implements a jointly undertaken <a id="inquiry" href="/glossary#inquiry" class="tooled gloss">inquiry</a><span id="inquiry-tip" class="tooltip glossary"><b>inquiry</b>: The enterprise of forming, testing, and revising beliefs.</span>, which in the words of Robert Stalnaker is, “the enterprise of forming, testing, and revising beliefs” (<a id="stalnaker1987" class="ref tooled" href="#ref-stalnaker1987"><span class="date"><span class="year">1987</span></span><span class="pages">,  p. ix</span></a>). To model this role, the scoreboard must, at minimum, include a representation of one’s state of belief at a given time. Since we are concerned with inquiries jointly undertaken, we refer to this state representation as the <em><a id="common-ground" href="/glossary#common-ground" class="tooled gloss">common ground</a><span id="common-ground-tip" class="tooltip glossary"><b>common ground</b>: The sum total of information taken for granted by participants to a discourse, perhaps with the addition of structural elements to organize the information. Cooperative discourse both responds to and amends the common ground.</span></em>’ – those propositions taken to be mutually agreed upon by the participants. The common ground is common currency among theories of scoreboard structure, starting with (<a id="stalnaker1978" class="ref tooled" href="#ref-stalnaker1978"><span class="author">Stalnaker </span><span class="date"><span class="year">1978</span></span></a>). Being a set of propositions, the common ground determines a possibility space – those possible worlds that are compatible with the mutually agreed upon information.</p>
 
-<!-- Jamesian amendment -->
-<div class="def" id="jamesian-amendment-def"><div class="title"><span class="head">Definition 1&nbsp;</span><span>(Jamesian amendment)</span></div><div class="body fence">
-<p>Rational information state revision is governed by two goals: avoiding error and acquiring truth.</p>
-</div></div>
-<div id="jamesian-amendment-show-tip" class="tooltip defn">
-  Rational information state revision is governed by two goals: avoiding error and acquiring truth.
-</div>
+<p>This basic structure is informed by the way the scoreboard evolves throughout conversation – the process of revising the common ground as new information comes to light. Different types of contribution call for different organization of this information. Individual inquiries are guided by particular <a id="issue" href="/glossary#issue" class="tooled gloss">issues</a><span id="issue-tip" class="tooltip glossary"><b>issue</b>: An uncertainty within the common ground. A bit of information that is lacking. A set of alternatives none of which is settled upon as correct.</span>. These are uncertainities that the inquirer sets our to resolve. To say that a proposition is uncertain in the context of inquiry is to say that it is neither ruled out by nor entailed by the common ground. Thinking in terms of the possibility space, issues divide the common ground into distinct regions, where worlds are grouped by the particular way the issue is resolved there. Thus, the introduction of issues as a means of guiding inquiry brings with it additional scoreboard structure (<a id="groenendijk1999" class="ref tooled" href="#ref-groenendijk1999"><span class="author">Groenendijk and Stokhof </span><span class="date"><span class="year">1999</span></span></a>, <a id="murray2014" class="ref tooled" href="#ref-murray2014"><span class="author">Murray </span><span class="date"><span class="year">2014</span></span></a>). The common ground is partitioned by the guiding issue, and cooperative inquirers will attempt to contribute by revising along the lines it draws.</p>
 
-<p>The Jamesian amendment makes inquiry an optimization task between taking on too many falsehoods and leaving out too many truths. To accommodate this idea, we need to expand our structural representation of inquiry. The information state model from epistemic logic can account for the error-avoidance goal, but we need a way of representing two elements entailed by the goal of acquiring truth. The first is the <em>impetus to revise</em> – information state structure that captures an inquirer’s motivation to strive for knowledge. The second is the <em>will to believe</em> – an account of acceptance of a belief in the absence of certainty in its truth, and an explanation of how this maneuver can be rationally viable.[^informationpotential]</p>
+<h3 id="speculative-leaps-in-inquiry">Speculative leaps in inquiry</h3>
+
+<p>But it’s common that inquirers not know what issues exist at the outset of an inquiry. Human reasoners do not have perfect introspection, and we don’t know the full extent of what we don’t know. Being satisfied with merely revising by eliminating known uncertainties when new information comes along will not inspire many interesting inquiries. We need a way of introducing new lines of inquiry even when doing so goes beyond the information we currently have. There’s no way around this need for ampliative contribution to inquiry. Moreover, the problem of intuction shows us that there is no way of providing certain ground for any such contribution. As Bas van Fraassen has put it:</p>
+
+<blockquote>
+  <p>Given that traditional epistemology embodies false hopes never to be satisfied, we must try to find a different view of our epistemic condition, with new hopes and new dreams of its own. So here is our tragic protagonist, thrown into a world she never made, and she asks us: What does it take?</p>
+
+  <p>We answer her: it takes luck, courage, and technique; but the greatest of these is luck. (<a id="vanfraassen2000" class="ref tooled" href="#ref-vanfraassen2000"><span class="author">van Fraassen </span><span class="date"><span class="year">2000</span></span><span class="pages">,  273</span></a>)</p>
+</blockquote>
+
+<p>And so, in pursuing genuine increases our knowledge via inquiry, we must be courageous – believing beyond our right to certainty – and we must also be lucky – finding ourselves in a circumstance where our courageous leaps are rewarded. Foregoing the blind scramble for security and succumbing to the necessity of luck is not, however, a submission to skepticism. But van Fraassen gives us some solace: luck is not blind, and it has a tendency to open its arms and soften our fall.</p>
+
+<blockquote>
+  <p>If our pursuit of knowledge, however broadly or feebly construed, is to be successful, we must be lucky – we have no way to constrain such fortune. This is the verdict on modern philosophy’s misguided search for security. The history of Earth has seen great disasters that spelled the extinction of almost all life, including the dominant, best adapted among species. In each case, some forms of life happened to be suited to the radically and suddenly transformed circumstances – thus evolution on Earth continued after all. See who was lucky and who was not! Look to those survivors, they weave not; neither do they spin; but fortune smiles on them. (<a id="vanfraassen2000" class="ref tooled" href="#ref-vanfraassen2000"><span class="author">van Fraassen </span><span class="date"><span class="year">2000</span></span><span class="pages">,  273</span></a>)</p>
+</blockquote>
+
+<p>The lucky ones are the survivors. They have no claim to having earned the traits that led them to survive, but they have the traits none the less. Thus, mechanisms of ampliative reasoning can provide a semblance of security, just not security in their lasting security. So long as we acknowledge their domain specificity and resign ourselves to their being subject to the whims of fortune, we can embrace them and reason with them while we remain so fortunate.</p>
+
+<p>Us modern human inquirers are the lucky ones, and we can limn the nature of inquiry by looking to the tools we use get where our inquiries go. The collaborative nature of joint inquiry is one such tool. We can be courageous in our speculative leaps because our interlocutors possess the technique for correcting our course when we jump too far.</p>
+
+<h3 id="collaboration-and-error-avoidance">Collaboration and error-avoidance</h3>
+
+<p>William James (<a id="james1896" class="ref tooled" href="#ref-james1896"><span class="date"><span class="year">1896/2009</span></span></a>) famously noted that there are two independent and sometimes conflicting goals for those engaged in the pursuit of knowledge: (i) to avoid believing falsehoods and (ii) to acquire true beliefs. A clever agent could meet the goal of avoiding falsehoods by simply believing nothing at all, but they would thereby forfeit the virtue of believing truths. One could, alternatively, meet the goal of believing truths simply by believing everything, but doing so sacrifices entirely achieving the second goal. As James saw it, a strategy of inquiry that floats between these extremes is the path we ought to search for. This suggests that the motive to attain belief is not merely an incidental consequence of our inquisitive minds. It is, instead, an ocassional mandate of proper inquiry that the agent <em>strive</em> to believe truths, even if doing so risks importing error.</p>
+
+<p>James maintained that if one’s belief choice is <em>live</em>, <em>momentous</em>, and <em>forced</em>, then the will to believe rationally outstrips the fear of being wrong. But as a set of necessary requirements, this restricts speculative endeavors too much. Inquiry need not be momentous or forced for jumping to a conclusion to be epistemically fruitful. Mere time-sensitivity may be enough. Inquiry is a process that is undertaken by fallible individuals in real time. Such agents have limited access to information and limited resources to dedicate to the process of inquiry. Frequently, action is required before certainty can be obtained. And on many quotidian decision points, the risk of being incorrect is fairly low. It is <em>because</em> not every inquiry is momentous that striving for truth (and risking falsehood) is sometimes to be prefered.</p>
+
+<p>Striving for truth has two components. The first is an <em>impetus to revise</em>, a recognition of an inadequacy in our current state of information. The second is the <em>will to believe</em>, the process of adding a proposition to the common ground in the absence of certainty in its truth. Our task is to accommodate these elements into the conversational scoreboard in a way that explains of how this maneuver can be rationally viable.</p>
 
 <h4 id="impetus-to-revise">Impetus to revise</h4>
 
@@ -286,7 +304,7 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 
 <p>Portner proposes a division of discourse models into three parts based on semantic object types.</p>
 
-<div class="def" id="portner-s-discourse-model-def"><div class="title"><span class="head">Definition 2&nbsp;</span><span>(Portner's Discourse Model)</span></div><div class="body fence">
+<div class="def" id="portner-s-discourse-model-def"><div class="title"><span class="head">Definition 1&nbsp;</span><span>(Portner's Discourse Model)</span></div><div class="body fence">
 <p><strong>Common ground:</strong> A set of propositions representing the information that is taken for granted in the conversation.</p>
 
 <blockquote>
@@ -396,7 +414,7 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 <p>The constraint that is of interest for us is the truthfulness constraint:</p>
 
 <!-- Constraints on a theory of meaning -->
-<div class="def" id="truthfulness-constraint-def"><div class="title"><span class="head">Definition 3&nbsp;</span><span>(Truthfulness Constraint)</span></div><div class="body fence">
+<div class="def" id="truthfulness-constraint-def"><div class="title"><span class="head">Definition 2&nbsp;</span><span>(Truthfulness Constraint)</span></div><div class="body fence">
 <p><span>The system assigns meanings that accord with the speaker participating in a convention of truthfulness with other speakers of his language.</span>&lt;/p&gt;</p>
 </div></div>
 <div id="truthfulness-constraint-show-tip" class="tooltip defn">
@@ -418,7 +436,7 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 
 <p>There is more to speech behavior than what it reveals about an individual’s beliefs and desires. The patterns of interaction in discourse explored by Clark and his collaborators (<a id="clark1992" class="ref tooled" href="#ref-clark1992"><span class="date"><span class="year">1992</span></span></a>) reveal that interlocutors are participants in an extended, distributed process of advancing the inquiry. If the basic ideology, and in turn the constraints, come from our common sense theory of persons, then our theory is incomplete to the extent that it ignores the fact that persons are <em>social</em> beings, whose attitudes develop over the course of many collaborative inquiries.</p>
 
-<div class="def" id="collaborative-extension-of-the-basic-ideology-def"><div class="title"><span class="head">Definition 4&nbsp;</span><span>(Collaborative extension of the basic ideology)</span></div><div class="body fence">
+<div class="def" id="collaborative-extension-of-the-basic-ideology-def"><div class="title"><span class="head">Definition 3&nbsp;</span><span>(Collaborative extension of the basic ideology)</span></div><div class="body fence">
 <p>The mental attitudes of humans are developed through continual application of the process of collaborative inquiry.</p>
 </div></div>
 <div id="collaborative-extension-of-the-basic-ideology-show-tip" class="tooltip defn">
@@ -646,6 +664,14 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 
   
     <li>
+      <a name="ref-groenendijk1999"></a><span class='author'>Groenendijk, Jeroen and Martin Stokhof </span><span class='date'>(<span class='year'>1999</span>). </span><span class="title">Meaning in Motion</span>. <span class='journal'>. </span><ul class='url'><a href="https://app.box.com/s/hkpx4vzrr7hvmiybb374vo5lu50cawk2" target="_blank">https://app.box.com/s/hkpx4vzrr7hvmiybb374vo5lu50cawk2</a></ul>
+      <div class="tooltip reference" id="groenendijk1999-tip"><a name="ref-groenendijk1999"></a><span class='author'>Groenendijk, Jeroen and Martin Stokhof </span><span class='date'>(<span class='year'>1999</span>). </span><span class="title">Meaning in Motion</span>. <span class='journal'>. </span><ul class='url'><a href="https://app.box.com/s/hkpx4vzrr7hvmiybb374vo5lu50cawk2" target="_blank">https://app.box.com/s/hkpx4vzrr7hvmiybb374vo5lu50cawk2</a></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
       <a name="ref-groenendijk2009"></a><span class='author'>Groenendijk, Jeroen and Floris Roelofsen </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Inquisitive Semantics and Pragmatics</span>. <ul class='url'><a href="http://bit.ly/groenendijk2009" target="_blank">http://bit.ly/groenendijk2009</a></ul>
       <div class="tooltip reference" id="groenendijk2009-tip"><a name="ref-groenendijk2009"></a><span class='author'>Groenendijk, Jeroen and Floris Roelofsen </span><span class='date'>(<span class='year'>2009</span>). </span><span class="title">Inquisitive Semantics and Pragmatics</span>. <ul class='url'><a href="http://bit.ly/groenendijk2009" target="_blank">http://bit.ly/groenendijk2009</a></ul></div>
     </li>
@@ -707,6 +733,8 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
   
     
   
+    
+  
     <li>
       <a name="ref-lewis1980"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1980</span>). </span><span class="title">Index, Context, and Content</span>. <span class="title book">Philosophy and Grammar</span>. <span class="editor">S. Kanger and S. O&#x0308;hman (eds). </span><span class='publication'><span class='publisher'>Reidel Publishing Company</span>. </span><span class="pages">pp. 79-100. </span><ul class='url'></ul>
       <div class="tooltip reference" id="lewis1980-tip"><a name="ref-lewis1980"></a><span class='author'>Lewis, David </span><span class='date'>(<span class='year'>1980</span>). </span><span class="title">Index, Context, and Content</span>. <span class="title book">Philosophy and Grammar</span>. <span class="editor">S. Kanger and S. O&#x0308;hman (eds). </span><span class='publication'><span class='publisher'>Reidel Publishing Company</span>. </span><span class="pages">pp. 79-100. </span><ul class='url'></ul></div>
@@ -731,17 +759,11 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
   
 
   
+    
+  
     <li>
       <a name="ref-partee1973"></a><span class='author'>Partee, Barbara Hall </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title">Some Structural Analogies between Tenses and Pronouns in English</span>. <span class='journal'>The Journal of Philosophy, <span class='edition'>70.18.</span> </span><span class="pages">pp. 601-609. </span><ul class='url'><a href="http://www.jstor.org/stable/2025024" target="_blank">http://www.jstor.org/stable/2025024</a><br /><a href="https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur" target="_blank">https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur</a><br /></ul>
       <div class="tooltip reference" id="partee1973-tip"><a name="ref-partee1973"></a><span class='author'>Partee, Barbara Hall </span><span class='date'>(<span class='year'>1973</span>). </span><span class="title">Some Structural Analogies between Tenses and Pronouns in English</span>. <span class='journal'>The Journal of Philosophy, <span class='edition'>70.18.</span> </span><span class="pages">pp. 601-609. </span><ul class='url'><a href="http://www.jstor.org/stable/2025024" target="_blank">http://www.jstor.org/stable/2025024</a><br /><a href="https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur" target="_blank">https://app.box.com/s/accvphuldvxlnie6a6l397nl1a8tbbur</a><br /></ul></div>
-    </li>
-    
-  
-
-  
-    <li>
-      <a name="ref-peirce1877"></a><span class='author'>Peirce, Charles Sanders </span><span class='date'>(<span class='year'>1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class='publication'><span class='publisher'>Dover Publications, Inc.</span><span class='location'>: New York</span>. </span><ul class='url'></ul>
-      <div class="tooltip reference" id="peirce1877-tip"><a name="ref-peirce1877"></a><span class='author'>Peirce, Charles Sanders </span><span class='date'>(<span class='year'>1877/1955</span>). </span><span class="title">The Fixation of Belief</span>. <span class="title book">Philosophical Writings of Peirce</span>. <span class="editor">Justus Buchler (ed). </span><span class='publication'><span class='publisher'>Dover Publications, Inc.</span><span class='location'>: New York</span>. </span><ul class='url'></ul></div>
     </li>
     
   
@@ -798,6 +820,14 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
 
   
     <li>
+      <a name="ref-stalnaker1978"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1978</span>). </span><span class="title">Assertion</span>. <span class='journal'>Syntax and Semantics New York Academic Press, <span class='edition'>9.</span> </span><span class='publication'><span class='publisher'>New York Academic Press</span>. </span><span class="pages">pp. 315-332. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="stalnaker1978-tip"><a name="ref-stalnaker1978"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1978</span>). </span><span class="title">Assertion</span>. <span class='journal'>Syntax and Semantics New York Academic Press, <span class='edition'>9.</span> </span><span class='publication'><span class='publisher'>New York Academic Press</span>. </span><span class="pages">pp. 315-332. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    <li>
       <a name="ref-stalnaker1987"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title book">Inquiry</span>. <span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul>
       <div class="tooltip reference" id="stalnaker1987-tip"><a name="ref-stalnaker1987"></a><span class='author'>Stalnaker, Robert </span><span class='date'>(<span class='year'>1987</span>). </span><span class="title book">Inquiry</span>. <span class='publication'><span class='publisher'>MIT Press</span>. </span><ul class='url'></ul></div>
     </li>
@@ -830,6 +860,16 @@ You and I are set to build a stone wall. We have before us a pile of stones of v
     
   
 
+  
+    <li>
+      <a name="ref-vanfraassen2000"></a><span class='author'>van Fraassen, Bas C.  </span><span class='date'>(<span class='year'>2000</span>). </span><span class="title">The False Hopes of Traditional Epistemology</span>. <span class='journal'>Philosophy and Phenomenological Research, <span class='edition'>LX.2.</span> </span><span class="pages">pp. 253-280. </span><ul class='url'></ul>
+      <div class="tooltip reference" id="vanfraassen2000-tip"><a name="ref-vanfraassen2000"></a><span class='author'>van Fraassen, Bas C.  </span><span class='date'>(<span class='year'>2000</span>). </span><span class="title">The False Hopes of Traditional Epistemology</span>. <span class='journal'>Philosophy and Phenomenological Research, <span class='edition'>LX.2.</span> </span><span class="pages">pp. 253-280. </span><ul class='url'></ul></div>
+    </li>
+    
+  
+
+  
+    
 </ul>
 
   </div>

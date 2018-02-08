@@ -105,7 +105,7 @@
 <p>One of the most influential accounts of focus interpretation is the <em>alternative semantics</em> developed by Mats Rooth (<a id="rooth1985" class="ref tooled" href="#ref-rooth1985"><span class="date"><span class="year">1985</span></span></a>, <a id="rooth1992" class="ref tooled" href="#ref-rooth1992"><span class="date"><span class="year">1992</span></span></a>). The idea behind alternative semantics is that focus-sensitive constructions have two semantic values: an <em>ordinary</em> semantic value and a <em>focus</em> semantic value. The ordinary semantic value is whatever linguistic theory minus a theory of focus comes up with. And the focus semantic value for an expression is a set of <em>alternatives</em> to the ordinary semantic value. That is, the focus semantic value collects together all elements from the domain of discourse that are type-identical to the focused element of a phrase. More formally:</p>
 
 <!-- Focus semantic values -->
-<div class="def" id="focus-semantic-value-def"><div class="title"><span class="head">Definition 3&nbsp;</span><span>(Focus Semantic Value)</span></div><div class="body fence">
+<div class="def" id="focus-semantic-value-def"><div class="title"><span class="head">Definition 107&nbsp;</span><span>(Focus Semantic Value)</span></div><div class="body fence">
 <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span><span class="set">D</span> a domain of discourse</span>, <span><span class="var">t</span> a type</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&phi;<sub>t</sub></div><div class="post">&#x27e7;</div></div><div class="after"><sup>f</sup></div></div><div class="conn">=</div><div class="rhs"><div class="fxn curlywrap"><div class="pre">{</div><div class="inside"><div class="fxn eqn"><div class="pre"></div><div class="lhs">d</div><div class="conn">&isin;</div><div class="rhs"><span class="set">D</span><sub>t</sub></div><div class="post"></div></div></div><div class="post">}</div></div></div><div class="post"></div></div></div></div>
 </div></div>
 <div id="focus-semantic-value-show-tip" class="tooltip defn">
@@ -121,7 +121,7 @@
 <p>A feather in the cap of alternative semantics is the explanation it gives for the phenomenon of question/answer congruence. QA-congruence is exhibited in the following example:</p>
 
 <!-- Cookie -->
-<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 9&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
+<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 201&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">Who ate the last cookie?</span></div><div class="item"><span class="name">B: </span><span class="content">[Caitlin]<sub>f</sub> ate the last cookie.</span></div><div class="item"><span class="name">B': </span><span class="content"># Caitlin ate the last [cookie]<sub>f</sub>.</span></div></div>
 </div></div>
 <div id="cookie-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Cookie</b><br />
@@ -133,7 +133,7 @@
 <p>The alternative semantics for focus provides us with the framework needed to explain the presence of this pragmatic rule. Questions are generally understood to have as their semantic value the set of propositions that constitute answers to the question (<a id="hamblin1958" class="ref tooled" href="#ref-hamblin1958"><span class="author">Hamblin </span><span class="date"><span class="year">1958</span></span></a>, <a id="groenendijk1984" class="ref tooled" href="#ref-groenendijk1984"><span class="author">Groenendijk and Stokhof </span><span class="date"><span class="year">1984</span></span></a>). So, a (suitably contextually constrained) semantic value for the question in <a href="#cookie" id="cookie-show" class="tooled">Cookie</a> might be as in <strong>A</strong> below, which is identical to the focus semantic value of the first response but differs from that of the second:</p>
 
 <!-- Cookie sem -->
-<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 10&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
+<div class="def" id="cookie-ex"><div class="title"><span class="head">Example 202&nbsp;</span><span>(Cookie)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }</span></div><div class="item"><span class="name">B: </span><span class="content">{ <em>Albert ate the last cookie</em>, <em>Betsy ate the last cookie</em>, <em>Caitlin ate the last cookie</em>, ... }</span></div><div class="item"><span class="name">B': </span><span class="content">{ <em>Caitlin ate the last apple</em>, <em>Caitlin ate the last beet</em>, <em>Caitlin ate the last cookie</em>, ... }</span></div></div>
 </div></div>
 <div id="cookie-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Cookie</b><br />
@@ -143,7 +143,7 @@
 <p>Thus, we supplement the dual-semantic values framework of alternative semantics with a pragmatic rule to the effect that a felicitous response to a question must have a focus semantic value that matches the ordinary semantic value of the question.[^roothgen] Formally:</p>
 
 <!-- QA-congruence -->
-<div class="def" id="question-answer-congruence-def"><div class="title"><span class="head">Definition 4&nbsp;</span><span>(Question-Answer Congruence)</span></div><div class="body fence">
+<div class="def" id="question-answer-congruence-def"><div class="title"><span class="head">Definition 108&nbsp;</span><span>(Question-Answer Congruence)</span></div><div class="body fence">
 <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">&#x27e8; &psi;, &alpha; &#x27e9; a question/answer pair</span>, </div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&psi;</div><div class="post">&#x27e7;</div></div><div class="after"><sup>o</sup></div></div><div class="conn">&sube;</div><div class="rhs"><div class="fxn semwrap"><div class="pre">&#x27e6;</div><div class="inside">&alpha;</div><div class="post">&#x27e7;</div></div><div class="after"><sup>f</sup></div></div><div class="post"></div></div></div></div>
 </div></div>
 <div id="question-answer-congruence-show-tip" class="tooltip defn">
@@ -159,7 +159,7 @@
 <p>Accommodation is a powerful tool, but it cannot be comissioned to fix every gap in a theory of pragmatics, and the QUD model seems to have an issue right out of the gate. There are perfectly felicitous responses to questions that do not eliminate cells from the question’s partition space.</p>
 
 <!-- Picnic -->
-<div class="def" id="picnic-ex"><div class="title"><span class="head">Example 11&nbsp;</span><span>(Picnic)</span></div><div class="body fence">
+<div class="def" id="picnic-ex"><div class="title"><span class="head">Example 203&nbsp;</span><span>(Picnic)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">What did people bring to the picinic?</span></div><div class="item"><span class="name">B: </span><span class="content">The [children]<sub>cf</sub> brought [unbridled enthusiasm]<sub>f</sub></span></div></div>
 </div></div>
 <div id="picnic-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Picnic</b><br />
@@ -169,7 +169,7 @@
 <p>The response in <a href="#picnic" id="picnic-show" class="tooled">Picnic</a> involves two focused elements. For both elements, it is easy enough to generate the requisite alternative sets.</p>
 
 <!-- Picnic sem -->
-<div class="def" id="picnic-semantic-values-ex"><div class="title"><span class="head">Example 12&nbsp;</span><span>(Picnic semantic values)</span></div><div class="body fence">
+<div class="def" id="picnic-semantic-values-ex"><div class="title"><span class="head">Example 204&nbsp;</span><span>(Picnic semantic values)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">B<sub>cf</sub>: </span><span class="content">{ <em>Everyone brought unbridled enthusiasm</em>, <em>The Robbins family brought unbridled enthusiasm</em>, <em>The children brought unbridled enthusiasm</em>, ... }</span></div><div class="item"><span class="name">B<sub>f</sub>: </span><span class="content">{ <em>People brought potato salad</em>, <em>People brought frisbees</em>, <em>People brought unbridled enthusiasm</em>, ... }</span></div></div>
 </div></div>
 <div id="picnic-semantic-values-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Picnic semantic values</b><br />
@@ -183,7 +183,7 @@
 <p>Daniel Büring (<a id="buering2003" class="ref tooled" href="#ref-buering2003"><span class="date"><span class="year">2003</span></span></a>) develops a technique to locate the requisite antecedent.  Building on the <em>QUD</em> model, Büring posits the existence of a <em>discourse tree</em>, which generates additional structure in the inquiry. Each question governing the inqury is a node in the tree and is associated with an array of subquestions, complete answers to which constitute partial answers to the parent question.  The idea is that the subquestions provide a <em>plan of inquiry</em> for addressing the parent question. The objective of the inquiry is to answer the top-most question in the tree. The plan for doing so is to answer each of the subquestions in turn.[^stratq] Thus, the implicit structure of the <a href="#picnic" id="picnic-show" class="tooled">Picnic</a> can be made explicit as:</p>
 
 <!-- Picnic structure -->
-<div class="def" id="picnic-structure-ex"><div class="title"><span class="head">Example 13&nbsp;</span><span>(Picnic structure)</span></div><div class="body fence">
+<div class="def" id="picnic-structure-ex"><div class="title"><span class="head">Example 205&nbsp;</span><span>(Picnic structure)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">What did the Robbins family bring?</span></div><div class="item"><span class="name">B: </span><span class="content">What did the children bring?</span></div><div class="item"><span class="name">C: </span><span class="content">What did the francophiles bring?</span></div><div class="item"><span class="name">D: </span><span class="content">The [Robertson's dogs]<sub>cf</sub> brought [their favorite chew toys]<sub>f </sub>.</span></div></div>
 </div></div>
 <div id="picnic-structure-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Picnic structure</b><br />

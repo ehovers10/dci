@@ -99,7 +99,7 @@
     <p>Formally, the natural inclination to treat sentences involving bare plurals as governed by universal quantifiers goes as such:</p>
 
 <!-- Universal Quantifier -->
-<div class="def" id="universal-quantifier-def"><div class="title"><span class="head">Definition 5&nbsp;</span><span>(Universal quantifier)</span></div><div class="body fence">
+<div class="def" id="universal-quantifier-def"><div class="title"><span class="head">Definition 109&nbsp;</span><span>(Universal quantifier)</span></div><div class="body fence">
 <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;(A)(B)</div><div class="post"></div></div></div></div>
 <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: <span class="type">et</span></span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&nbsp;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
 </div></div>
@@ -111,7 +111,7 @@
 <p>But this treatment runs into its own sticky situation. Consider:</p>
 
 <!-- Hibernation -->
-<div class="def" id="hibernating-bears-ex"><div class="title"><span class="head">Example 20&nbsp;</span><span>(Hibernating bears)</span></div><div class="body fence">
+<div class="def" id="hibernating-bears-ex"><div class="title"><span class="head">Example 212&nbsp;</span><span>(Hibernating bears)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="content">Bears hibernate.</span></div></div>
 </div></div>
 <div id="hibernating-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Hibernating bears</b><br />
@@ -123,7 +123,7 @@
 <p>It won’t work to loosen the strictness requirement and interpret bare plurals as bound by, say an existential quantifier or one that requires a few witnesses. For that would render true clearly false sentences such as the following:</p>
 
 <!-- Cuddly bears -->
-<div class="def" id="cuddly-bears-ex"><div class="title"><span class="head">Example 21&nbsp;</span><span>(Cuddly bears)</span></div><div class="body fence">
+<div class="def" id="cuddly-bears-ex"><div class="title"><span class="head">Example 213&nbsp;</span><span>(Cuddly bears)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="content">Bears are cuddly.</span></div></div>
 </div></div>
 <div id="cuddly-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Cuddly bears</b><br />
@@ -135,7 +135,7 @@
 <p>One standard approach to formalizing this idea is to posit a <em>generic</em> operator that implements a restricted, universal quantification. As in the variably strict approach to counterfactuals, the <em>generally universal</em> account of bare plurals uses context to select a preferred class of individuals within the set determined by the subject and requires for truth that this preferred class be included within the predicate class.<sup id="fnref:relevantquant"><a href="#fn:relevantquant" class="footnote">1</a></sup></p>
 
 <!-- Generally universal quantifier -->
-<div class="def" id="generic-quantifier-def"><div class="title"><span class="head">Definition 6&nbsp;</span><span>(Generic quantifier)</span></div><div class="body fence">
+<div class="def" id="generic-quantifier-def"><div class="title"><span class="head">Definition 110&nbsp;</span><span>(Generic quantifier)</span></div><div class="body fence">
 <div class="molecule"><div class="title"></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">GEN(A)(B)</div><div class="post"></div></div></div></div>
 <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">For all <span>A,B: et</span>, <span>&delta;(i): et &rarr; et a selection function determined by context i</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">A<sub>pref</sub></div><div class="conn">=</div><div class="rhs"><span class="bit">&delta;(i)(A)</span></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">GEN(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs">&#x27e6;&nbsp;A<sub>pref</sub>&nbsp;&#x27e7;<sup>i</sup>&nbsp;&sube;&#x27e6;&nbsp;B&nbsp;&#x27e7;<sup>i</sup></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div>
 </div></div>
@@ -149,7 +149,7 @@
 <p>Despite this de-sticking success, I don’t think that the standard response is the correct extraction method. We can preserve the strict analysis of bare plurals [by allowing them to interact with the context in a specific way]. In particular, if the bare plural is evaluated against a context that incorporates the plan of inquiry structure of the discourse, then the extraction can be pulled off.</p>
 
 <!-- Structurally universal quantifier -->
-<div class="def" id="structurally-universal-quantifier-def"><div class="title"><span class="head">Definition 7&nbsp;</span><span>(Structurally universal quantifier)</span></div><div class="body fence">
+<div class="def" id="structurally-universal-quantifier-def"><div class="title"><span class="head">Definition 111&nbsp;</span><span>(Structurally universal quantifier)</span></div><div class="body fence">
 <div class="molecule"><div class="title"></div><div class="molecule" id="translation"><div class="title">Translation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&#x231c;As&#x231d; are &#x231c;B&#x231d;</div><div class="conn">&rArr;</div><div class="rhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="post"></div></div></div></div><div class="molecule" id="definition"><div class="title">Definition</div><div class="atom"><span class="categorical">For all <span>A: et</span>, <span>B: (et)t</span>, </span></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&forall;<sub><span class="set">R</span></sub>(A)(B)</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">1</div><div class="conn">if</div><div class="rhs"><span class="bit">{ &#x27e6;&nbsp;A&nbsp;&#x27e7; } &isin; <span class="set">R</span></span><span class="bit">&#x27e6;&nbsp;A&nbsp;&#x27e7; &sube; &#x27e6;&nbsp;B&nbsp;&#x27e7;</span></div><div class="post"></div></div></span><span class="bit"><div class="fxn eqn"><div class="pre"></div><div class="lhs">0</div><div class="conn">otherwise</div><div class="rhs">&nbsp;</div><div class="post"></div></div></span></div><div class="post"></div></div></div></div></div>
 </div></div>
 <div id="structurally-universal-quantifier-show-tip" class="tooltip defn">
@@ -163,7 +163,7 @@
 <p>I assume that plurals carry a <em>homogeneity presupposition</em>, characterized as follows:</p>
 
 <!-- Homogeneity -->
-<div class="def" id="homogeneity-def"><div class="title"><span class="head">Definition 8&nbsp;</span><span>(Homogeneity)</span></div><div class="body fence">
+<div class="def" id="homogeneity-def"><div class="title"><span class="head">Definition 112&nbsp;</span><span>(Homogeneity)</span></div><div class="body fence">
 <p>Utterances involving bare plural subjects present the set determined by the subject as homogenous with respect to the predicate. The predicate applies either to all members of the subject class or to none of them.</p>
 </div></div>
 <div id="homogeneity-show-tip" class="tooltip defn">
@@ -179,7 +179,7 @@
 <p>This is why, in reference to a mixed-gender group of young bears engaged in a wrestling match, (a) in the following seems true while (b) seems neither true nor false:</p>
 
 <!-- Playing bears -->
-<div class="def" id="playing-bears-ex"><div class="title"><span class="head">Example 22&nbsp;</span><span>(Playing bears)</span></div><div class="body fence">
+<div class="def" id="playing-bears-ex"><div class="title"><span class="head">Example 214&nbsp;</span><span>(Playing bears)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">The cubs are playing.</span></div><div class="item"><span class="name">B: </span><span class="content">The cubs are boys.</span></div></div>
 </div></div>
 <div id="playing-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Playing bears</b><br />
@@ -195,7 +195,7 @@
 <p>That the homogeneity constraint should be understood as a <em>presupposition</em> tied to plurals is supported by the fact that it is cancelable.</p>
 
 <!-- Polar bears -->
-<div class="def" id="polar-bears-ex"><div class="title"><span class="head">Example 23&nbsp;</span><span>(Polar bears)</span></div><div class="body fence">
+<div class="def" id="polar-bears-ex"><div class="title"><span class="head">Example 215&nbsp;</span><span>(Polar bears)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">I need a kind of bear which is always white (for my drawing of a bear in a snow storm). I'm considering polar bears, grizzly bears, and koala bears. I've seen white examples of each. Do you know whether any of them are consistently white?</span></div><div class="item"><span class="name">B: </span><span class="content">[Polar]<sub>f</sub> bears are white.</span></div></div>
 </div></div>
 <div id="polar-bears-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Polar bears</b><br />
@@ -237,7 +237,7 @@
 <p>Assuming the correctible inspires a corrective effort by a discourse participant, the continuation overrides the initiation commitment, replacing it with a substitution of the original saturation. This process can iterate until all participants are satisfied with the lastest commit. At this point, a completion utterance implements the latest commit, imposing its update effect upon the sandbox information state. Finally, the updated sandbox contents are <em>merged</em> into the primary information state.</p>
 
 <!-- General collaborative update -->
-<div class="def" id="general-collaborative-update-def"><div class="title"><span class="head">Definition 9&nbsp;</span><span>(General collaborative update)</span></div><div class="body fence">
+<div class="def" id="general-collaborative-update-def"><div class="title"><span class="head">Definition 113&nbsp;</span><span>(General collaborative update)</span></div><div class="body fence">
 <div class="molecule" id="collaborative-update"><div class="title">Collaborative update</div><div class="atom"><div class="molecule" id="initialization"><div class="title">Initialization</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>init</sup></div><div class="conn">&#x21a5;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>&sigma;</sub></span><span class="bit"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside">dref</div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>sand</sub></div></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="propagation"><div class="title">Propagation</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>prop</sup></div><div class="conn">&#x21a6;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref"><span class="var">dref</span><sup>prop</sup></div><div class="conditions">U<sup>prop</sup><sub>(st)t</sub></div><div class="post"><span class="drs right top bottom"></span></div></div></div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="present"><div class="title">Present</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">dref</span><sup>prop</sup></div><div class="conn">&#x29c0;</div><div class="rhs"><span class="set">dref</span><sup>sand</sup></div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="partition"><div class="title">Partition</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><span class="var">R</span><sup>prop</sup></div><div class="conn">&#x22CA;</div><div class="rhs"><span class="set">R</span><sup>sand</sup></div><div class="post"></div></div></div></div></div></div></div><div class="atom"><div class="molecule" id="merge"><div class="title">Merge</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">U<sup>merge</sup></div><div class="conn">&#x21a7;<sub>&sigma;</sub></div><div class="rhs"><div class="fxn seqwrap"><div class="pre">&#x27e8;</div><div class="inside"><span class="bit">i<sub>s</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">i<sub>&lt;span class='set'R</sub> += C<sub>&xi;</sub>(k<sub>&chi;</sub>)</span><span class="bit">dref<sub>&sigma;</sub> += dref<sub>sand</sub></span></div><div class="post">&#x27e9;</div></div><div class="after"><sub>&sigma;</sub></div></div><div class="post"></div></div></div></div></div></div>
 </div></div>
 <div id="general-collaborative-update-show-tip" class="tooltip defn">

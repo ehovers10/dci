@@ -109,7 +109,7 @@
 <p>In his discussion of negation in its denial making use, Bart Geurts (<a id="geurts1998a" class="ref tooled" href="#ref-geurts1998a"><span class="date"><span class="year">1998</span></span></a>) maintains that denial is neither <em>unitary</em> nor <em>swamping</em>. It is not unitary beacause there are a wide variety of ways in which negation can encode denial, and there is little reason to believe that a single mechanism subsumes tham all. It is not swamping in that negation selectively denies bits of information conveyed by an utterance, granting other bits space in the conversational record.[^facets]</p>
 
 <!-- Movie -->
-<div class="def" id="movie-ex"><div class="title"><span class="head">Example 1&nbsp;</span><span>(Movie)</span></div><div class="body fence">
+<div class="def" id="movie-ex"><div class="title"><span class="head">Example 193&nbsp;</span><span>(Movie)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">The movie was funny.</span></div><div class="item"><span class="name">B': </span><span class="content">The movie wasn't [funny]<sub>f</sub>, it was [hilarious]<sub>f</sub>.</span></div><div class="item"><span class="name">B'': </span><span class="content">[The]<sub>f</sub> movie wasn't funny, they [all]<sub>f</sub> were.</span></div><div class="item"><span class="name">B''': </span><span class="content">The [movie]<sub>f</sub> wasn't funny, the [film]<sub>f</sub> was.</span></div></div>
 </div></div>
 <div id="movie-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Movie</b><br />
@@ -121,7 +121,7 @@
 <p>In standard DRT, extended discourse is represented by a <em>discourse representation structure</em> (DRS), which is a pair of sequences of <em>discourse referents</em> (dref) and <em>conditions</em> (cond). Conditions place constraints on the model against which sentences are evaluated for truth, and drefs serve as the referents of pronouns and other anaphoric expressions invoked in the conditions. Sentences in context contribute conditions and drefs to the DRS by adding them to the appropriate sequence.</p>
 
 <!-- DRT -->
-<div class="def" id="standard-drt-def"><div class="title"><span class="head">Definition 1&nbsp;</span><span>(Standard DRT)</span></div><div class="body fence">
+<div class="def" id="standard-drt-def"><div class="title"><span class="head">Definition 105&nbsp;</span><span>(Standard DRT)</span></div><div class="body fence">
 <div class="molecule" id="drs"><div class="title">Drs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;</div><div class="conn">=</div><div class="rhs"><span class="bit"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref">&phi;<sup>d</sup></div><div class="conditions">&phi;<sup>c</sup></div><div class="post"><span class="drs right top bottom"></span></div></div></span></div><div class="post"></div></div></div><div class="conn">is</div><div class="rhs">a discourse representation structure (DRS)</div><div class="post"></div></div></div><div class="atom"><div class="molecule" id="drefs"><div class="title">Drefs</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;<sup>d</sup></div><div class="conn">is</div><div class="rhs">a sequence of drefs introduced in the discourse</div><div class="post"></div></div></div></div></div><div class="atom"><div class="molecule" id="conditions"><div class="title">Conditions</div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;<sup>c</sup></div><div class="conn">is</div><div class="rhs">a sequence of conditions, imposing constraints on the <br />model against which sentences are evaluated</div><div class="post"></div></div></div></div></div></div>
 <hr />
 
@@ -150,7 +150,7 @@
 <p>The upshot is that the propositional content of the evidence that initiates the downdate is not sufficient to determine the extent of the downdate; we need, also, a way of representing the source of certain propositions that are candidates for removal. The standard solution is to supplement the information state structure with an <em>entrenchment relation</em>, which serves to rank elements of the state in terms of their susceptibility to removal. This puts constraints on how and information state is revised in response to its falling into incoherence: remove the information needed to restore coherence as well as any unentrenched information relevant to the retracted information.[^entrench] Crucially, the entrenchment relation constrains appropriate retraction, but it does not fix a unique revision strategy.</p>
 
 <!-- Downdate -->
-<div class="def" id="correction-as-downdate-def"><div class="title"><span class="head">Definition 2&nbsp;</span><span>(Correction as downdate)</span></div><div class="body fence">
+<div class="def" id="correction-as-downdate-def"><div class="title"><span class="head">Definition 106&nbsp;</span><span>(Correction as downdate)</span></div><div class="body fence">
 <div class="molecule"><div class="title"></div><div class="atom"><span class="categorical">&phi;,&psi;,&chi;: <span class="var">drs</span></span>, </div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&chi;</div><div class="conn">&#x2291;</div><div class="rhs">&phi;</div><div class="post"></div></div></div><div class="conn">iff</div><div class="rhs">&exist;m [ ( m &isin; &phi;<sup>d</sup> &and; m &isin; &chi;<sup>d</sup> ) &or; ( m &isin; &phi;<sup>c</sup> &and; m &isin; &chi;<sup>c</sup> ) ]</div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&chi;</div><div class="conn">=</div><div class="rhs">max(&phi;)</div><div class="post"></div></div></div><div class="conn">iff</div><div class="rhs">&chi;  &#x2291; &phi; &and; &forall;<span class="var">c</span> &isin; &phi;<sup>c</sup> [ entrench(<span class="var">c</span>) ] &and; &not;&exist;&phi; ( &psi;  &#x2291; &phi; &and; &chi;  &#x2291; &psi; )</div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;</div><div class="conn">&#x229E;</div><div class="rhs">&psi;</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs"><div class="fxn drswrap"><div class="pre"><span class="drs left top bottom"></span></div><div class="dref">&phi;<sup>d</sup> &oplus; S<sup>d</sup></div><div class="conditions">&phi;<sup>c</sup> &oplus; S<sup>c</sup></div><div class="post"><span class="drs right top bottom"></span></div></div></div><div class="post"></div></div></div><div class="atom"><div class="fxn eqn"><div class="pre"></div><div class="lhs"><div class="fxn eqn"><div class="pre"></div><div class="lhs">&phi;</div><div class="conn"><span class="symbol">&darr;</span></div><div class="rhs">&psi;</div><div class="post"></div></div></div><div class="conn">=</div><div class="rhs">&psi; &oplus; max( &chi; &#x2291; &phi; | &chi; &#x229E; &phi; &ne; &empty; )</div><div class="post"></div></div></div></div>
 </div></div>
 <div id="correction-as-downdate-show-tip" class="tooltip defn">
@@ -164,7 +164,7 @@
 <p>The binding problem, originally introduced in a endnote to Karttunen and Peters’ <em>Conventional Implicature</em> (<a id="karttunen1979" class="ref tooled" href="#ref-karttunen1979"><span class="date"><span class="year">1979</span></span></a>). In the system expounded in that paper, conventional implicature is set apart as a distinct dimension of content from the standard semantic content derived from the meaning of the words in a sentence and the way they are put together. Cleaving implicature from semantic content allows us to explain a number of interesting features about how conventional implicatures work, but it also makes it more difficult to explain the ways in which elements of semantic content can interact with elements of the implicature.</p>
 
 <!-- Managed -->
-<div class="def" id="managed-ex"><div class="title"><span class="head">Example 2&nbsp;</span><span>(Managed)</span></div><div class="body fence">
+<div class="def" id="managed-ex"><div class="title"><span class="head">Example 194&nbsp;</span><span>(Managed)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">Someone managed to succeed George V on the throne of England.</span></div><div class="item"><span class="name">B: </span><span class="content">If someone managed to succeed George V on the throne of England, then that country is still a monarchy.</span></div></div>
 </div></div>
 <div id="managed-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Managed</b><br />
@@ -174,7 +174,7 @@
 <p>The (a) sentence in <a href="#managed-ex" id="managed-show" class="tooled">Managed</a> seems to implicate that the person who succeeded George V on the throne had difficulty in doing so. But the most natural way of representing the implicature as derived from the utterred sentence is does not capture this.</p>
 
 <!-- Managed -->
-<div class="def" id="managed-semantics-ex"><div class="title"><span class="head">Example 3&nbsp;</span><span>(Managed semantics)</span></div><div class="body fence">
+<div class="def" id="managed-semantics-ex"><div class="title"><span class="head">Example 195&nbsp;</span><span>(Managed semantics)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A<sub>sem</sub>: </span><span class="content">&exist;x,y ( george(x) &and; succeeded(y,x) )</span></div><div class="item"><span class="name">A<sub>imp</sub>: </span><span class="content">&exist;x,y ( george(x) &and; succeeded(y,x) &and; had-difficulty(x) )</span></div></div>
 </div></div>
 <div id="managed-semantics-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Managed semantics</b><br />
@@ -188,7 +188,7 @@
 <p>At least, they avoid binding worries associated with drefs, such as Geurts and Maier’s problem with madrigals.</p>
 
 <!-- Madrigals -->
-<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 4&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
+<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 196&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="content">Some of the madrigals are nice.</span></div></div>
 </div></div>
 <div id="madrigals-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Madrigals</b><br />
@@ -200,7 +200,7 @@
 <p>However, by allowing drefs to transcend layers, we can adequately link the conditions. Here is Geurts and Maier’s analysis:[^madrigals]</p>
 
 <!-- Madrigals -->
-<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 5&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
+<div class="def" id="madrigals-ex"><div class="title"><span class="head">Example 197&nbsp;</span><span>(Madrigals)</span></div><div class="body fence">
 <div class="example"><div class="item">madrigals</div></div>
 </div></div>
 <div id="madrigals-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Madrigals</b><br />
@@ -210,7 +210,7 @@
 <p>Jennifer Spenader joins Maier (<a id="spenader2009" class="ref tooled" href="#ref-spenader2009"><span class="date"><span class="year">2009</span></span></a>) in extending this approach to account also for the corrective potential of <em>contrast</em>. According to the extension, contrast is a general means of preventing material from entering the common ground. It’s presence signifies that the information in its scope is being presented for a downdate operation.</p>
 
 <!-- Spanish -->
-<div class="def" id="spanish-ex"><div class="title"><span class="head">Example 6&nbsp;</span><span>(Spanish)</span></div><div class="body fence">
+<div class="def" id="spanish-ex"><div class="title"><span class="head">Example 198&nbsp;</span><span>(Spanish)</span></div><div class="body fence">
 <div class="example"><div class="item"><span class="name">A: </span><span class="content">Juan speaks Spanish.</span></div><div class="item"><span class="name">B: </span><span class="content">Well, he is Argentinian, but he doesn't speak Spanish.</span></div></div>
 </div></div>
 <div id="spanish-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Spanish</b><br />
@@ -220,7 +220,7 @@
 <p>In the completion of <a href="#spanish-ex" id="spanish-show" class="tooled">Spanish</a>, the choice of connective (<em>but</em>) carries contrastive import; the second conjunct, in its scope, is a downdating correction of the initiation sentence. The first conjuct, preceded by the hedge term <em>well</em>, provides a concession to the initiation, indicating that the response is intended as a <em>refinement</em> rather than a swamping denial.</p>
 
 <!-- Spanish ldrt -->
-<div class="def" id="spanish-semantics-ex"><div class="title"><span class="head">Example 7&nbsp;</span><span>(Spanish semantics)</span></div><div class="body fence">
+<div class="def" id="spanish-semantics-ex"><div class="title"><span class="head">Example 199&nbsp;</span><span>(Spanish semantics)</span></div><div class="body fence">
 <div class="example"><div class="item">spanish</div></div>
 </div></div>
 <div id="spanish-semantics-show-tip" class="tooltip defn"><b style="border-bottom: 1px solid #fff;">Spanish semantics</b><br />
